@@ -23,16 +23,24 @@ h2{
   font-size: 18px;
   color: #173618;
  }
- table, th, td{
-  border: 1px solid bkack;
-  border-collapse: collapse;
- }
- th{
-  text-transform: uppercase;
-  text-align: left;
-  background-color: #04AA6D;
+ .obs{
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    color: red;
   }
-/* body {font-family: Arial, Helvetica, sans-serif;}*/
+/*FORMATAÇÃO PARA OS LINKS - INICIO*/
+  a:link, a:visited, a:active{
+    text-decoration: underline;
+    font-style: italic;
+    }
+  a:hover {
+    text-decoration: underline;
+    color: #04AA6D
+    }
+/*FORMATAÇÃO PARA OS LINKS - FINAL/
+ /* body {font-family: Arial, Helvetica, sans-serif;}*/
 *{font-family: Arial, Helvetica, sans-serif;}
  * {box-sizing: border-box;}
 
