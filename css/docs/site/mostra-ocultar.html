@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+<!--CONTEÚDO APARECE QUANDO CARREGA A PÁGINA-->
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide(1500);
+  });
+  $("#show").click(function(){
+    $("p").show(1500);
+  });
+});
+<!--CONTEÚDO APARECE QUANDO CARREGA A PÁGINA-->
+
+
+<!--CONTEÚDO NÃO APARECE QUANDO CARREGA A PÁGINA-->
+$(function() {
+  $(".btn-toggle").click(function(e) {
+    e.preventDefault();
+    el = $(this).data('element');
+    $(el).toggle();
+  });
+});
+
+<!--ALERTA CONTEUDO PARA IMPROPRIO PARA MENORES-->
+$(document).ready(function(){
+  $(".btn-toggle").click(function(){
+    alert("acesseecompre.org alerta! Conteúdo impróprio para menores.");
+  });
+});
+
+
+<!--CONTEÚDO NÃO APARECE QUANDO CARREGA A PÁGINA-->
+
+</script>
+
+</head>
+<body>
+
+<p>Se clicar o conteúdo vai sumir e depois desaparecer, porém ele carrega junto com a página.</p>
+
+
+
+<br />
+<div align="center">
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</div><br />
+
+<div class="modhdg2 lines">&nbsp;</div>
+<div class="modhdg1 lines">&nbsp;</div> 
+
+<hr />
+
+<p>Se clicar o conteúdo vai sumir ou aparecer, porém o mesmo não aparece quando carrega a página</p>
+
+
+
+<br />
+<div align="center">
+<button type="button" class="btn-toggle" data-element="#minhaDiv">Mostrar / Esconder</button>
+</div><br /><br />
+
+
+
+<div id="minhaDiv" style="display:none">Conteudo.........</div>
+
+
+
+
+
+
+
+</body>
+</html>

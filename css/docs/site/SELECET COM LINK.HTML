@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+<meta charset="UTF-8"></meta>
+
+<!------------------------------SCRIPTS--------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/acesseecompre.js"></script>
+<script src="./chosen_select/chosen.jquery.js"></script>
+
+<!------------------------------LINKS--------------------------------------------->
+<link rel="stylesheet" href="./css/acesseecompre.css">
+<link rel="stylesheet" href="./chosen_select/chosen.css">
+
+</head>
+
+<body>
+
+
+<select id="link">
+   <option value="" selected>Escolha o site</option>
+   <option value="http://www.google.com">Google</option>
+   <option value="http://www.youtube.com">YouTube</option>
+   <option value="http://pt.stackoverflow.com/">Stack</option>
+</select>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+    $('#link').on('change', function () {
+         var url = $(this).val(); 
+         if (url) { 
+             window.open(url, '_blank');
+          }
+          return false;
+        });
+     });
+</script>

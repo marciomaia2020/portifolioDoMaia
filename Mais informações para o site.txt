@@ -1,0 +1,24 @@
+<!--
+
+	Mais inteligencia artificial
+https://rows.com/ai
+
+	-->
+
+
+	<!--
+Ferramentas para utilizar o brouwser para programar
+ codepen.io (frontend)
+ jsfddle.net
+ stackblitz.com
+ codenvy.com
+ codeanywhere.com ***
+ gitpod.io quase igual ao vscode... 
+
+
+
+
+
+
+
+	-->

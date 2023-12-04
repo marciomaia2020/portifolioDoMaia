@@ -1,0 +1,33 @@
+/*
+33333333333333333333333333333333
+Inicio-acesseecompre.org_3.html
+*/
+
+
+/*
+<div id="container"><img src="../images/afiliados/inicio/site/saucony.gif" alt="" /></div>
+*/
+/*pertence ao **<div class="w3-container w3-tea">**/
+#container > img {
+	border-radius: 50px;
+	width: 100%;
+	width: 347px;
+	height: 197px;
+}
+
+
+/*
+<div class="box"><a href="https://click.linksynergy.com/fs-bin/click?id=zl6Vd5pmJ54&offerid=436530.64&type=3&subid=0" target="_blank">
+<div><img src="../images/afiliados/inicio/logo/saucony.png" alt="saucony" style="border: 1px solid #0088cc" /></div></a></div>
+*/
+/*pertence à **<div class="box">*/
+/*
+div > img {
+	border: 1px solid #0088cc;border-radius: 30px;width: 100%;height: 100%;padding: 1px;
+}*/
+
+
+
+.container > img {
+	border-radius: 8px;	width: 100%;height: 100%;padding: 1px;position: relative;border: 1px solid #0088cc;border-bottom-left-radius: 150px 20px;border-bottom-right-radius: 150px 20px;
+}

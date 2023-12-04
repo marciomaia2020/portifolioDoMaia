@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+/* TEXTOS */
+
+p.intro{
+text-align: center;
+font-size: 14pt;
+font-family: arial;
+color: #0088cc;
+}
+
+p.intro1{
+text-align: center;
+font-size: 12pt;
+font-family: arial;
+color: #878787;
+}
+
+
+.obs{
+text-align: justify;
+font-size: 10pt;
+font-family: arial ;
+color: #2e2e2e;
+}
+
+p {
+text-align: justify;
+font-size: 12pt;
+font-family: arial;
+color: #878787;
+}
+
+
+p.img {
+text-align: center;
+font-size: 12pt;
+font-family: arial;
+color: #878787;
+}
+
+p.titulo{
+text-align: left;
+font-size: 15pt;
+font-family: arial black;
+color: #9a9a9a;
+}
+
+
+p.titulocentro{
+text-align: center;
+font-size: 15pt;
+font-family: arial black;
+color: #878787;
+}
+
+p.chamadapequena{
+text-align: left;
+font-size: 12pt;
+font-family: arial black;
+color: #424242;
+
+}
+
+
+
+div.figure {
+ float: left;
+ border: 1px solid white;
+ padding: 50px;
+ border-radius: 5px;
+ margin: 0.5em;
+ padding: 0.8em;
+ text-align: center;
+ font-style: italic;
+ font-size: smaller;
+ text-indent: 0;
+ width: 320px;
+ height: 220px;
+ animation: mymove 5s infinite;
+}
+img.scaled {
+ float: left;
+ border: 1px solid #0088cc;
+ padding: -5px;
+ margin: -15px;
+ padding: 13px;
+ width: 300px;
+ height: 200px;
+ animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+ 50% {border-radius: 50px;}
+}
+
+
+/* TABELAS */
+
+#customers {
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+max-width:auto;
+height:auto;
+border-collapse:collapse;
+}
+
+#customers td, #customers th {
+font-size:1em;
+border:1px solid #24C0EB;
+padding:3px 7px 2px 7px;
+}
+
+#customers th {
+font-size:1.1em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#c0d6ee;
+color:#000000;
+}
+
+#customers tr.alt td {
+color:#878787;
+font-size:12pt;
+}
+
+
+
+/*SELECT*/
+select{
+width:200px;
+}
+hr{
+margin-top:50px;
+border-color:#a1a1a1;
+}
+.country-mul{
+with:450px;
+}
+body{
+font-family:roboto;
+}
+/*SELECT*/
+
+
+
+</style>
+
+<!--INICIO BOTÃO MOSTRAR - OCULTAR-->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="chosen.jquery.js"></script>
+
+
+<link rel="stylesheet" href="chosen.css">
+
+
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p.1").hide(1000);
+  });
+  $(".btn2").click(function(){
+    $("p.1").show(1000);
+  });
+});
+
+<!--FINAL BOTÃO MOSTRAR - OCULTAR-->
+
+<!--INICIO-LINK PARA CADA ITEM DO SELECT-->
+$(document).ready(function(){
+
+    $('#link').on('change', function () {
+         var url = $(this).val(); 
+         if (url) { 
+             window.open(url, '_blank');
+          }
+          return false;
+        });
+     });
+<!--FINAL - LINK PARA CADA ITEM DO SELECT-->
+<!--INICIO - LINK CSS PARA O SELECT-->
+	$(document).ready(function(){
+		$(".country-mul").chosen();
+	});
+<!--FINAL - LINK CSS PARA O SELECT-->
+</script>
+
+</head>
+<body>
+
+
+<div class="modhdg2 lines">&nbsp;</div>
+
+<select id="link" class="country-mul">
+<option value="" selected>Plataformas para Lojas Virtuais:</option>
+<option value="https://sites.bagy.com.br">Bagy</option>
+<option value="https://betalabs.com.br">Betalabs</option>
+<option value="https://www.bigcommerce.com">BigCommerce</option>
+<option value="https://www.boxloja.com">Boxloja</option>
+<option value="https://www.brasilnaweb.com.br/">Brasil na Web</option>
+<option value="https://www.e-com.club">E-Com Club</option>
+<option value="https://www.ecwid.com/">Ecwid</option>
+<option value="https://www.irroba.com.br">Irroba</option>
+<option value="https://www.iset.com.br/">iSET</option>
+<option value="https://www.jn2.com.br/criar-loja-virtual">Jn2</option>
+<option value="https://jumpseller.com/">Jumpseller</option>
+<option value="https://lojaintegrada.com.br/">Loja Integrada</option>
+<option value="https://www.lojavirtual.com.br">Loja Virtual</option>
+<option value="https://magento.com/pt/products/magento-commerce">Magento</option>
+<option value="https://www.mercadoshops.com.br/">Mercado Shops</option>
+<option value="https://www.minestore.com.br">Minestore</option>
+<option value="https://www.nuvemshop.com.br/">Nuvemshop</option>
+<option value="https://www.opencartbrasil.com.br">OpenCart</option>
+<option value="https://www.oruc.com.br/">Oruc</option>
+<option value="https://www.prestashop.com/pt?">PrestaShop</option>
+<option value="https://pt.shopify.com/">Shopify</option>
+<option value="https://www.simplo7.com.br/home?">Simplo7</option>
+<option value="https://pt.site123.com/">SITE123</option>
+<option value="https://www.tray.com.br/">Tray</option>
+<option value="https://www.volusion.com">Volusion</option>
+<option value="https://www.vtex.com/pt-br">VTEX</option>
+<option value="https://www.webnode.com.br/">Webnode</option>
+<option value="http://www.webstore.net.br">Webstore</option>
+<option value="https://www.weebly.com/br?lang=pt">Weebly</option>
+<option value="https://pt.wix.com">Wix</option>
+<option value="https://woocommerce.com">WooCommerce</option>
+</select><br />
+
+
+
+</body>
+</html>

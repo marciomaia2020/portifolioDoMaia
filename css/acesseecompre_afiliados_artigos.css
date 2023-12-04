@@ -1,0 +1,76 @@
+/*
+111111111111111111111111111111111111
+Inicio-acesseecompre.org_3.html
+*/
+
+/*Para que este hover funcione em todos os artigos
+set no artigo de cada menu raiz ex: inicio japao outros paisez lojas virtuais guia de compra etc
+
+*/
+
+
+
+/*Para que a borda apareça na imagem dentro do artigo set
+set *** style="border: 1px solid #0088cc" *** dentro de cada artigo
+neste caso - os que começam com **afiliados-footer-menu-guias-de-compras.html**
+*/
+
+/*HABILITE A DIV PARA QUE OS EFEITOS ENTREM EM AÇÃO PORÉM ESTA 
+AFETANTO O APARECIMENTO DO CARRINHO EM DJ-IMAGESLIDER*/
+
+/*
+div > img {
+	border: 1px solid #0088cc;
+	border-radius: 8px; 
+	width: 80%;
+	height: 100%;
+	padding: 1px;
+}*/
+
+/*
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+*/
+
+/*
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+<a href="paris.jpg">
+  <img src="paris.jpg" alt="Paris">
+</a>
+*/
+
+
+/*RESPONSISVE
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+
+/*CENTER
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+*/
+

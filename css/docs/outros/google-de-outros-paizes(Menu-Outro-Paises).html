@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+<meta charset="UTF-8"></meta>
+
+<!------------------------------SCRIPTS--------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/acesseecompre.js"></script>
+<script src="./chosen_select/chosen.jquery.js"></script>
+
+<!------------------------------LINKS--------------------------------------------->
+<link rel="stylesheet" href="./css/acesseecompre.css">
+<link rel="stylesheet" href="./chosen_select/chosen.css">
+
+</head>
+
+<body>
+
+ 
+<div class="modhdg2 lines">&nbsp;</div>
+
+<select id="link" class="country-mul">
+<option value="" selected>Acesse o Google de outro país:</option>
+<option value="https://www.google.dz"> Algérie</option>
+<option value="https://www.google.it.ao"> Angola</option>
+<option value="https://www.google.bj"> Benin</option>
+<option value="https://www.google.co.bw"> Botswana</option>
+<option value="https://www.google.bf"> Burkina Faso</option>
+<option value="https://www.google.bi"> Burundi</option>
+<option value="https://www.google.cm"> Cameroun</option>
+<option value="https://www.google.cv"> Cabo Verde</option>
+<option value="https://www.google.cf"> República Centro-Africano</option>
+<option value="https://www.google.td"> Tchad</option>
+<option value="https://www.google.cd"> República Democrática do Congo</option>
+<option value="https://www.google.cg"> República do Congo</option>
+<option value="https://www.google.ci"> Costa do Marfim</option>
+<option value="https://www.google.dj"> Djibouti</option>
+<option value="https://www.google.com.eg"> Egito</option>
+<option value="https://www.google.com.et"> Etiópia</option>
+<option value="https://www.google.gm"> Gâmbia</option>
+<option value="https://www.google.gh"> Gana</option>
+<option value="https://www.google.co.ke"> Quênia</option>
+<option value="https://www.google.co.ls"> Lesotho</option>
+<option value="https://www.google.com.ly"> Líbia</option>
+<option value="https://www.google.mg"> Madagascar</option>
+<option value="https://www.google.mw"> Malawi</option>
+<option value="https://www.google.m"> Mali</option>
+<option value="https://www.google.mu"> Mauritius</option>
+<option value="https://www.google.co.ma"> Marrocos</option>
+<option value="https://www.google.co.mz"> Moçambique</option>
+<option value="https://www.google.com.na"> Namíbia</option>
+<option value="https://www.google.ne"> Niger</option>
+<option value="https://www.google.ng"> Nigéria</option>
+<option value="https://www.google.rw">Ruanda</option>
+<option value="https://www.google.sh"> Santa Helena</option>
+<option value="https://www.google.sn"> Senegal</option>
+<option value="https://www.google.sc"> Seychelles</option>
+<option value="https://www.google.com.sl"> Serra Leoa</option>
+<option value="https://www.google.com.so"> Somália</option>
+<option value="https://www.google.co.za"> África do Sul</option>
+<option value="https://www.google.co.tz"> Tanzânia</option>
+<option value="https://www.google.tg"> Togo</option>
+<option value="https://www.google.com.tn"> Tunísia</option>
+<option value="https://www.google.co.ug"> Uganda</option>
+<option value="https://www.google.co.zm"> Zâmbia</option>
+<option value="https://www.google.co.zw"> Zimbabwe</option>
+
+<optgroup label="Ásia, Incluindo o Oriente Médio">
+<option value="https://www.google.com.af"> Afeganistão</option>
+<option value="https://www.google.am">Armênia</option>
+<option value="https://www.google.az"> Azerbaijão</option>
+<option value="https://www.google.com.bh"> Bahrain</option>
+<option value="https://www.google.com.bd"> Bangladesh</option>
+<option value="https://www.google.bt"> Butão</option>
+<option value="https://www.google.com.bn"> Brunei Darussalam</option>
+<option value="https://www.google.cn"> China</option>
+<option value="https://www.google.ge"> Georgia</option>
+<option value="https://www.google.com.hk"> Hong Kong</option>
+<option value="https://www.google.co.in"> Índia</option>
+<option value="https://www.google.com.iq"> Iraque</option>
+<option value="https://www.google.co.il"> Israel</option>
+<option value="https://www.google.co.jp"> Japão</option>
+<option value="https://www.google.jo"> Jordan</option>
+<option value="https://www.google.kz"> Cazaquistão</option>
+<option value="https://www.google.co.kr"> Coréia do Sul (Reública da Coréia)</option>
+<option value="https://www.google.com.kw"> Kuwait</option>
+<option value="https://www.google.kg"> Quirguistão</option>
+<option value="https://www.google.la"> Lao</option>
+<option value="https://www.google.com.lb"> Líbano</option>
+<option value="https://www.google.com.my"> Malásia</option>
+<option value="https://www.google.bs"> Maldivas</option>
+<option value="https://www.google.mn"> Mongólia</option>
+<option value="https://www.google.com.np"> NepaL</option>
+<option value="https://www.google.com.om"> Oman</option>
+<option value="https://www.google.com.pk"> Paquistão</option>
+<option value="https://www.google.ps"> Territórios Palestinos</option>
+<option value="https://www.google.com.ph"> Filipinas</option>
+<option value="https://www.google.com.qa"> Qatar</option>
+<option value="https://www.google.ru"> Rússia</option>
+<option value="https://www.google.com.sa"> Arábia Saudita</option>
+<option value="https://www.google.com.sg"> Cingapura</option>
+<option value="https://www.google.lk"> Sri Lanka</option>
+<option value="https://www.google.com.tw"> Taiwan</option>
+<option value="https://www.google.co.th"> Tailândia</option>
+<option value="https://www.google.tl"> timor- Leste</option>
+<option value="https://www.google.com.tj"> Tajiquistão</option>
+<option value="https://www.google.com.tr"> Turquia</option>
+<option value="https://www.google.tm"> Turcomenistão</option>
+<option value="https://www.google.ae"> Emirados Árabes Unidos</option>
+<option value="https://www.google.co.uz"> Uzbequistão</option>
+<option value="https://www.google.com.vn"> Vietnam</option>
+</optgroup>
+<optgroup label="Europa, Incluindo a União Européia">
+<option value="https://www.google.ad"> Andorra</option>
+<option value="https://www.google.at"> Áustria</option>
+<option value="https://www.google.by"> Balarus</option>
+<option value="https://www.google.be"> Bélgica</option>
+<option value="https://www.google.ba"> Bósnia e Herzegovina</option>
+<option value="https://www.google.bg"> Bulgária</option>
+<option value="https://www.google.hr"> Croácia</option>
+<option value="https://www.google.cz"> República Checa</option>
+<option value="https://www.google.dk"> Dinamarca</option>
+<option value="https://www.google.ee"> Estónia</option>
+<option value="https://www.google.fi"> Finlândia</option>
+<option value="https://www.google.fr"> França</option>
+<option value="https://www.google.de"> Alemanha</option>
+<option value="https://www.google.com.gi"> Gibraltar</option>
+<option value="https://www.google.gr"> Grécia</option>
+<option value="https://www.google.gg">Guernsey</option>
+<option value="https://www.google.nl"> Holanda</option>
+<option value="https://www.google.co.hu"> Hungria</option>
+<option value="https://www.google.is"> Islândia</option>
+<option value="https://www.google.ie"> Irlanda</option>
+<option value="https://www.google.co.im"> Ilha de Man</option>
+<option value="https://www.google.it"> Itália</option>
+<option value="https://www.google.co.je"> Jersey</option>
+<option value="https://www.google.lv">Látvia</option>
+<option value="https://www.google.li"> Liechtenstein</option>
+<option value="https://www.google.lt"> Lituânia</option>
+<option value="https://www.google.lu"> Luxemburgo</option>
+<option value="https://www.google.mk"> Macedônia</option>
+<option value="https://www.google.com.mt"> Malta</option>
+<option value="https://www.google.md"> Moldova</option>
+<option value="https://www.google.me"> Montenegro</option>
+<option value="https://www.google.no"> Noruega</option>
+<option value="https://www.google.pl"> Polônia</option>
+<option value="https://www.google.pt"> Portugal</option>
+<option value="https://www.google.ro"> Roménia</option>
+<option value="https://www.google.ru"> Rússia</option>
+<option value="https://www.google.sm"> San Marino</option>
+<option value="https://www.google.rs"> Sérvia</option>
+<option value="https://www.google.sk"> Eslováquia</option>
+<option value="https://www.google.es"> Espanha</option>
+<option value="https://www.google.se"> Suécia</option>
+<option value="https://www.google.ch"> Suíça</option>
+<option value="https://www.google.com.tr"> Turquia</option>
+<option value="https://www.google.com.ua"> Ucrânia</option>
+<option value="https://www.google.co.uk"> Reino Unido</option>
+</optgroup>
+<optgroup label="América do Norte (incluindo a América Central e Caribe)">
+<option value="https://www.google.com.ai"> Anguilla</option>
+<option value="https://www.google.com.ag"> Antigua e Barbuda</option>
+<option value="https://www.google.bs"> Bahamas</option>
+<option value="https://www.google.com.bz"> Belize</option>
+<option value="https://www.google.bs"> Bermuda</option>
+<option value="https://www.google.vg"> Ilhas Virgens Britânicas</option>
+<option value="https://www.google.ca"> Canadá</option>
+<option value="https://www.google.co.cr"> Costa Rica</option>
+<option value="https://www.google.com.cu"> Cuba</option>
+<option value="https://www.google.dm"> Dominica</option>
+<option value="https://www.google.com.do"> Dominicana</option>
+<option value="https://www.google.com.sv"> El Salvador</option>
+<option value="https://www.google.gl"> Groenlândia</option>
+<option value="www.https://www.google.gd"> Grenada</option>
+<option value="www.https://www.google.gp"> Guadalupe</option>
+<option value="https://www.google.com.gt"> Guatemala</option>
+<option value="https://www.google.ht"> Haiti</option>
+<option value="https://www.google.hn"> Honduras</option>
+<option value="https://www.google.com.jm"> Jamaica</option>
+<option value="https://www.google.com.mx"> México</option>
+<option value="https://www.google.ms"> Montserrat</option>
+<option value="https://www.google.com.ni"> Nicarágua</option>
+<option value="https://www.google.com.pa"> Panamá</option>
+<option value="https://www.google.com.pr"> Porto Rico</option>
+<option value="https://www.google.com.vc"> São Vicente e Granadinas</option>
+<option value="https://www.google.tt"> Trinidad e Tobago</option>
+<option value="https://www.google.com"> Estados Unidos </option>
+<option value="https://www.google.co.vi"> Ilhas Virgens dos EUA</option>
+</optgroup>
+<optgroup label="América do Sul">
+<option value="https://www.google.com.ar"> Argentina</option>
+<option value="https://www.google.com.bo"> Bolívia</option>
+<option value="https://www.google.com.br"> Brasil</option>
+<option value="https://www.google.cl"> Chile</option>
+<option value="https://www.google.com.co"> Colômbia</option>
+<option value="https://www.google.com.ec"> Equador</option>
+<option value="https://www.google.com.py"> Paraguay</option>
+<option value="https://www.google.com.pe"> Peru</option>
+<option value="www.https://www.google.sr"> Suriname</option>
+<option value="https://www.google.com.uy"> Uruguai</option>
+<option value="https://www.google.co.ve"> Venezuela</option>
+</optgroup>
+<optgroup label="Pacífico, Austrália e Oceania">
+<option value="https://www.google.com.au"> Austrália</option>
+<option value="https://www.google.as"> Samoa americana</option>
+<option value="www.https://www.google.cc"> Ilhas Cocos</option>
+<option value="https://www.google.co.ck"> Ilhas Cook</option>
+<option value="https://www.google.com.fj"> Fiji</option>
+<option value="https://www.google.co.id"> Indonésia</option>
+<option value="www.https://www.google.ki"> Kiribati</option>
+<option value="https://www.google.fm"> Micronésia</option>
+<option value="https://www.google.nr"> Nauru.nr</option>
+<option value="https://www.google.co.nz"> Nova Zelândia</option>
+<option value="https://www.google.nu"> Niue</option>
+<option value="https://www.google.com.nf"> Ilha Norfolk</option>
+<option value="https://www.google.pn"> Ilhas Pitcairn</option>
+<option value="https://www.google.ws"> Samoa</option>
+<option value="https://www.google.com.sb"> Ilhas Salomão</option>
+<option value="https://www.google.tk"> Tokelau</option>
+<option value="https://www.google.to"> Tonga</option>
+<option value="https://www.google.vu"> Vanuatu</option>
+</optgroup>
+<optgroup label="Rússia">
+<option value="https://www.google.ru"> Rússia</option>
+</optgroup>
+</select><br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

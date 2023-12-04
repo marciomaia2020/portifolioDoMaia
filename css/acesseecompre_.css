@@ -1,0 +1,554 @@
+/* INICIO CSS PARA PADRÃO NORMAL*/
+
+/* colors
+#0088cc
+#01557D
+#4B4B4B
+#E8E8E8
+#20C1EE
+#C0D6EE
+#C7C7C7
+#FFFCC8
+*/
+
+/*RODAPÉ
+
+/*parceiros
+.parceiros {
+	text-align: justify;
+	}
+/*sobre-o-aec
+.direita {
+	float: left;
+	width: 50%;
+	}
+.esquerda{
+	float: right;
+	width: 50%;
+	
+}
+/*redes sociais
+p.intro {
+	align: center;
+	}
+*/
+
+/*FORMATO PARA TABELAS DE COMPARAÇÃO*/
+#tabela{
+	overflow-x: auto;
+}
+
+/*FORMATO PARA TABELAS DE COMPARAÇÃO*/
+
+/*FORMATO PARA O INICIO ARTIGO _1 e _2*/
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*IMAGENS ABAIXO DO TOP.MENU.OUT.LINE*/
+
+.box img {
+  border: 1px solid #08c;
+  border-radius: 50%;
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+  display: inline-block!important;
+  float: left;
+  margin-right: 5px;
+  }
+  
+
+.propaganda img {
+  border: 1px solid #ddd;
+  padding: 3px;
+  width: 80px;
+  height: 50px;
+  display: inline-block!important;
+  float: left;
+  margin-right: 5px;
+  }
+
+
+/*HABILITE A DIV PARA QUE OS EFEITOS ENTREM EM AÇÃO PORÉM ESTA 
+AFETANTO O APARECIMENTO DO CARRINHO EM DJ-IMAGESLIDER
+ou pode simplismente tirar estas linhas pois ja está setado em outro arquivo
+acesseecompre_afiliados_artigos.css deixe aqui para teste*/
+
+/*
+div > img {
+	border: 1px solid #0088cc;
+	border-radius: 8px; 
+	width: 80%;
+	height: 100%;
+	padding: 1px;
+}*/
+
+
+/*----------------TOOLTIP-----------------*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  border-color: #FFF;
+  background-color: #e6f7ff;
+  color: #0088cc;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*----------------TOOLTIP-----------------*/
+
+
+
+
+
+
+
+
+#para1 {
+	text-align: center;
+	color: pacificBlue;
+	font-family: arial;
+	font-size: 24px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #0088cc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #ccc;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 41;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+/*TEXTO SOBRE A IMAGEM NOS MENUS INICIO*/
+
+
+
+
+/* Texto invisivel*/
+figcaption {
+  display:none; 
+  transition: all .5s;
+}
+/* Texto visível */
+figure:hover > figcaption {
+  display:block;
+  transition: all .5s;
+}
+/*TEXTO SOBRE A IMAGEM NOS MENUS - FIM*/
+
+
+/*BootStrap Grid*/
+div.col-sm-4{
+background-color: #e6f7ff;
+border: 1px solid #24C0EB;
+}
+
+div.col-sm-8{
+background-color: #e6f7ff;
+border: 1px solid #24C0EB;
+}
+
+/* TEXTOS */
+div.menu {
+    border: 1px solid #0088cc;
+	border-radius: 10px 20px 30px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: #0088cc;
+}
+
+
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+	color:green;
+}
+
+color.vermelho{
+font-size: 12pt;
+font-family: arial;
+color:  #fb2a1c;	
+}
+
+
+
+
+color.pacificBlue{
+font-size: 12pt;
+font-family: arial;
+color: #0088cc;
+}
+
+p.rodape{
+	text-align: justify;
+	font-size: 8pt;
+	font-family: arial;
+	color: #878787;
+}
+
+
+
+p {
+text-align: justify;
+font-size: 12pt;
+font-family: arial;
+color: #878787;
+
+}
+
+
+p.intro{
+text-align: center;
+font-size: 14pt;
+font-family: arial;
+color: #0088cc;
+
+text-decoration: bold;
+}
+
+p.intro1{
+text-align: center;
+font-size: 14pt;
+font-family: arial;
+color: #878787;
+
+text-decoration: bold;
+}
+
+
+.obs{
+text-align: center;
+font-size: 10pt;
+font-family: arial ;
+color: #2e2e2e;
+
+
+}
+
+
+p.img {
+text-align: center;
+font-size: 12pt;
+font-family: arial;
+color: #878787;
+}
+
+p.titulo{
+text-align: left;
+font-size: 14pt;
+font-family: arial ;
+color: #4a4a4a;
+
+}
+
+
+p.titulocentro{
+text-align: center;
+font-size: 16pt;
+font-family: arial;
+color: #373737;
+
+}
+
+p.chamadapequena{
+text-align: left;
+font-size: 12pt;
+font-family: arial black;
+color: green;
+color: white;
+}
+
+
+span.a {
+  display: inline-block; /* the default for span */
+  height: auto;
+  width: auto;
+  padding: 5px;
+  border: 1px solid #0088cc;  
+  background-color: #878787; 
+  float: left%;
+  }
+
+/****************************/
+/*FIGURA FIM DOS ARTIGOS - TABELAS*/
+div.picture {
+ float: center;
+ border: 1px solid white;
+ padding: 50px;
+ border-radius: 1px;
+ margin: 0.1em;
+ padding: 0.8em;
+ text-align: center;
+ font-style: italic;
+ font-size: smaller;
+ text-indent: 0;
+ width: 320px;
+ height: 233px;
+ animation: mymove 5s infinite;
+}
+img.scaledd {
+ float: center;
+ padding: -5px;
+ margin: -15px;
+ padding: 13px;
+ width: 290px;
+ height: 180px;
+ animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+ 50% {border-radius: 50px;}
+}
+/****************************/
+/*FIGURA INICIO DOS ARTIGOS - AO LADO*/
+div.figure {
+ float: left;
+ border: 1px solid white;
+ padding: 50px;
+ border-radius: 5px;
+ margin: 0.5em;
+ padding: 0.8em;
+ text-align: center;
+ font-style: italic;
+ font-size: smaller;
+ text-indent: 0;
+ width: 320px;
+ height: 220px;
+ animation: mymove 5s infinite;
+}
+img.scaled {
+ float: left;
+ border: 1px solid #0088cc;
+ padding: -5px;
+ margin: -15px;
+ padding: 13px;
+ width: 300px;
+ height: 200px;
+ animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+ 50% {border-radius: 50px;}
+}
+/****************************/
+
+/* TABELAS */
+/*PARA ALTERAR O FORMATO DA TABELA BASTA COMENTAR O FORMATO CUSTOMERS
+PARA ASSUMIR O TABLE ABAIXO*/
+
+table {
+  border-spacing: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ }
+
+/*FOTOS INICIO GUIA DE COMPRAS - QUER COMODIDADE*/
+tabledicas, td {
+  border: 1px solid #24C0EB;
+  padding: 5px;
+ color:#878787;
+  color:#FFFFFF;
+  font-size:12pt;
+  text-align: justify;
+  font-family: Arial;
+ }
+tabledicas, th {
+  border: 1px solid #24C0EB;
+  padding: 5px;
+  color:#878787;
+  color:#FFFFFF;
+  font-size:12pt;
+  text-align: center;
+  font-family: Arial;
+  /*background-color: #e0eaf7;
+  background-
+ }
+/****************************/
+/*FOTOS 223X79 ARTIGOS* PARA ALTERAR O FORMATO DA TABELA BASTA COMENTAR 
+O FORMATO CUSTOMERS */
+
+#customers {
+text-align: center;
+font-family: Arial;
+width:100%;
+border-collapse:collapse;
+}
+#customers td, #customers th {
+font-size:1em;
+border:1px solid #24C0EB;
+padding:3px 7px 2px 7px;
+text-align: center;
+}
+
+#customers th {
+font-size:1.1em;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#c0d6ee;
+color:#878787;
+}
+
+#customers tr.alt td {
+color:#878787;
+font-size:12pt;
+}
+/****************************/
+/*TABELAS COMPLETA*/
+#tabelacompleta table{
+text-align: center;	
+}
+#tabelacompleta{
+font-family: Arial;
+width:100%;
+border-collapse:collapse;
+}
+/****************************/
+#tabelacompleta td, #tabelacompleta th {
+font-size:1em;
+border:1px solid #333333;
+padding:3px 7px 2px 7px;
+}
+#tabelacompleta th {
+font-size:1.1em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+/*background-color:#999999;
+background-color:#FFFFFF;
+color:#ffffff;
+} 
+#tabelacompleta tr.alt td {
+color:#000000;
+/*background-color:#CCCCCC;
+background-color:#FFFFFF;
+
+}
+/****************************/
+
+/*SELECT CHOSEN*/
+select{
+	width:200px;
+}
+hr{
+	margin-top:50px;
+	/*border-color:#a1a1a1;
+	border-color:#FFFFFF;
+}
+.country-mul{
+	width:300Ppx;
+	margin-left: auto;
+    margin-right: auto;
+}
+body{
+	font-family:roboto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+/****************************/
+
+/* LISTA SUBLINHADO*/
+ol.lista_ li{
+  font-size: 12pt; 
+  font-family: arial; 
+  color: #878787;
+  
+}
+
+ul.lista li {
+  font-size: 12pt; 
+	font-family: arial; 
+	color: #9a9a9a;
+	
+}
+
+dl.lista dt {
+    font-size: 14pt;
+	font-family: arial; 
+	color: #9a9a9a;
+	
+}  
+/****************************/
+
+/* FORMATAÇÃO TEXTO INDIVIDUAL*/
+u.sublinhado {
+	font-size: 12pt;
+	font-family: arial; 
+    text-decoration: underline;
+}
+b.negrito {
+	font-size: 12pt;
+	font-family: arial; 
+    font-weight: bold;
+}
+/****************************/
+/* FORMATAÇÃO BOTÕES*/
+div.btn{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ }
+ /****************************/
+
+/***********BOOSTRAP IMAGE*****************/
+.bgimage {
+background-image: url('../images/headers/blue-flower.jpg');
+background-position: center center;
+background-size: cover;
+height: 200px;
+}
+/* FINAL CSS PARA PADRÃO NORMAL*/
+

@@ -1,0 +1,48 @@
+PARA BLACK-FRIDAY ALTERE O ARQUIVO ABAIXO NA LINHA 7
+
+
+Ou seja o:
+defaul.css (Black-fraday)
+defaul_.css (Padrão branco)
+
+Ou ainda
+modules.css (Black-fraday)
+modules_.css (Padrão Branco)
+
+Ou ainda
+bootstrap.css (Black-fraday)
+bootstrap_.css Padrão Branco)
+
+
+
+BLACK (mudando a cor de fundo) 
+C:\wamp64\www\aec\acesseecompre.shop\web\templates\blue_design\css\default.css
+Linha 72
+
+
+C:\wamp64\www\aec\acesseecompre.shop\web\templates\blue_design\css\modules.css
+Linha 20 E 31
+
+
+C:\wamp64\www\aec\acesseecompre.shop\web\templates\blue_design\css\bootstrap.css
+234
+
+-------------------------
+
+
+
+
+
+
+
+
+
+BLACK FRIDAY
+acesseecompre.css
+
+PADRÃO NORMAL
+acesseecompre_.css
+
+TESTANDO PADRÃO
+acesseecompre__.css
+

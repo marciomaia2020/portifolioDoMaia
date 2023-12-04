@@ -1,0 +1,35 @@
+#DROP DATABASE intranet;
+
+#CREATE DATABASE intranet;
+
+SELECT * FROM formularios_abandono_novo;
+
+/*
+INSERT INTO Persons (LastName, FirstName, Address, City)
+VALUES ('Maia','Márcio Fernando','José Machado 32','Cosmópolis'); 
+*/
+
+
+/*
+CREATE TABLE IF NOT EXISTS `formularios_abandono_novo` (
+  `id_formularios_abandono_novo` int(11) NOT NULL AUTO_INCREMENT,
+  `origem_solicitacao` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `turno` time NOT NULL,
+  `colaborador` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `campanha` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `site` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `qtd_faltas` int(11) NOT NULL,
+  `faltando_desde` date NOT NULL,
+  `data_solicitacao` date NOT NULL,
+  `cargo` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `cpf` char(11) CHARACTER SET utf8 NOT NULL,
+  `id` int(11) NOT NULL,
+  `matricula` int(11) NOT NULL,
+  PRIMARY KEY (`id_formularios_abandono_novo`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+*/
+
+
+INSERT INTO formularios_abandono_novo (origem_solicitacao, turno, colaborador, site, qtd_faltas, faltando_desde,data_solicitacao,cargo,cpf,id,matricula)
+VALUES ('Tarde','Márcio Maia','Vivo','Hortolandia','3','13/05/1969','12/03/2004','Padeiro','11752400879','123456987','321456'); 
+
