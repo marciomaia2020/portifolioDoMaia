@@ -3354,14 +3354,22 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 													</div>
 													<button onclick="myFunction('Aplicacao')" class="w3-button w3-block w3-left-align w3-green"><b>Aplicações</b> - Comerciais e Domésticas</button>
 													<div id="Aplicacao" class="w3-hide w3-container">
-														 <p><b>Aplicações comerciais</b></p>
-														 <p>A necessidade de compartilhar entre as pessoas de uma empresa informações ou até mesmo equipamentos entre computadores, coloca Redes de computadores em evidência. Quando falamos de aplicações comerciais a palavra chave é compartilhamento de recursos, todos os integrantes de uma rede de computadores comercial necessitam ter acesso aos dados e equipamentos independentemente de sua localização física e recursos computacionais. Um cenário clássico que descreve muito bem o compartilhamento de recursos é o de uma empresa em que cada funcionário possui uma impressora de porte pequeno individualmente, é evidente que uma ou mais impressoras de um porte maior compartilhado entre os empregados seria mais vantajoso que privatizar individualmente uma única unidade para cada um, visto que nem todos usam com a mesma frequência e logo não há a necessidade de se gastar tanto recuso financeiro para comprar e manter impressoras individuais.</p>
-														 <p>Na contemporaneidade, cada vez mais empresas tem dependência de dados computacionais, portanto mais importante que o compartilhamento de equipamentos talvez seja o de dados comerciais entre membros de uma companhia. Uma pane em uma rede de qualquer empresa seria um golpe fatal para o funcionamento dela, talvez menos em empresas menores mas com certeza causaria prejuízos tanto temporais quanto financeiros para qualquer uma e de qualquer porte.</p>
-														 <p>O modelo de distribuição de dados nomeado servidor é bastante utilizado, os dados são mantidos em um computador e local isolado e controlado por um administrador de sistemas. Os clientes (usuários usando seu computador) através da rede local acessam essa máquina chamada servidor, e com isso conseguem obter os dados que estão centralizados. Esse modelo exemplificado é chamado de modelo cliente-servidor e é bastante usado principalmente em aplicações Web.</p>
-														<p>Aplicações domésticas</p>
-														<p>Hoje em dia diversos dispositivos eletrônicos domésticos estão integrados a rede doméstica, como lâmpadas inteligentes, sistema de câmeras de segurança, dispositivos de som, computadores, impressoras entre outros onde os usuários conectados à rede podem acessar e controlar os dispositivos, ou também os usuários podem realizar o compartilhamento de informações entre si.</p>
-														<p>O acesso doméstico a internet também possibilita que os usuários possam acessar computadores (servidores) remotamente para fins de comércios eletrônicos, se comunicar com outras pessoas através de redes sociais, contratar serviços, ler jornais publicados online, comprar livros disponibilizados digitalmente. O usuário pode também pesquisar por qualquer coisa que lhe interesse como: notícias e informações sobre política, famosos, saúde, entretenimento e educação. Pode também utilizar da rede para o seu lazer como: jogos, receitas culinárias, esportes, e filmes/séries, entre outras infinitas possibilidades de conteúdos e atividades que podem ser encontradas pela rede mundial de computadores (World Wide Web).</p>
-													</div>
+														<div class="w3-bar">
+															<button class="w3-bar-item w3-button" onclick="classificacaoRedes('AplicacoesComerciais')">Aplicações comerciais</button>
+															<button class="w3-bar-item w3-button" onclick="classificacaoRedes('AplicacoesDomesticas')">Aplicações domésticas</button>
+														 </div><br />
+														   <div id="AplicacoesComerciais" class="city" style="display:none">
+														   <h2>Aplicações comerciais</h2>
+																<p>A necessidade de compartilhar entre as pessoas de uma empresa informações ou até mesmo equipamentos entre computadores, coloca Redes de computadores em evidência. Quando falamos de aplicações comerciais a palavra chave é compartilhamento de recursos, todos os integrantes de uma rede de computadores comercial necessitam ter acesso aos dados e equipamentos independentemente de sua localização física e recursos computacionais. Um cenário clássico que descreve muito bem o compartilhamento de recursos é o de uma empresa em que cada funcionário possui uma impressora de porte pequeno individualmente, é evidente que uma ou mais impressoras de um porte maior compartilhado entre os empregados seria mais vantajoso que privatizar individualmente uma única unidade para cada um, visto que nem todos usam com a mesma frequência e logo não há a necessidade de se gastar tanto recuso financeiro para comprar e manter impressoras individuais.</p>
+																<p>Na contemporaneidade, cada vez mais empresas tem dependência de dados computacionais, portanto mais importante que o compartilhamento de equipamentos talvez seja o de dados comerciais entre membros de uma companhia. Uma pane em uma rede de qualquer empresa seria um golpe fatal para o funcionamento dela, talvez menos em empresas menores mas com certeza causaria prejuízos tanto temporais quanto financeiros para qualquer uma e de qualquer porte.</p>
+																<p>O modelo de distribuição de dados nomeado servidor é bastante utilizado, os dados são mantidos em um computador e local isolado e controlado por um administrador de sistemas. Os clientes (usuários usando seu computador) através da rede local acessam essa máquina chamada servidor, e com isso conseguem obter os dados que estão centralizados. Esse modelo exemplificado é chamado de modelo cliente-servidor e é bastante usado principalmente em aplicações Web.</p>
+														  </div>
+														  <div id="AplicacoesDomesticas" class="city" style="display:none">
+														  <h2>Aplicações domésticas</h2>
+																<p>Hoje em dia diversos  eletrônicos domésticos estão integrados a rede doméstica, como lâmpadas inteligentes, sistema de câmeras de segurança, dispositivos de som, computadores, impressoras entre outros onde os usuários conectados à rede podem acessar e controlar os dispositivos, ou também os usuários podem realizar o compartilhamento de informações entre si.</p>
+																<p>O acesso doméstico a internet também possibilita que os usuários possam acessar computadores (servidores) remotamente para fins de comércios eletrônicos, se comunicar com outras pessoas através de redes sociais, contratar serviços, ler jornais publicados online, comprar livros disponibilizados digitalmente. O usuário pode também pesquisar por qualquer coisa que lhe interesse como: notícias e informações sobre política, famosos, saúde, entretenimento e educação. Pode também utilizar da rede para o seu lazer como: jogos, receitas culinárias, esportes, e filmes/séries, entre outras infinitas possibilidades de conteúdos e atividades que podem ser encontradas pela rede mundial de computadores (World Wide Web).</p>
+														  </div>
+											        </div>
 													<button onclick="myFunction('Propriedades')" class="w3-button w3-block w3-left-align w3-green"><b>Propriedades</b> - Físicas e Lógicas <small>Outras propriedades - (Segurança, Performance e Confiabilidade)</small></button>
 													<div id="Propriedades" class="w3-hide w3-container">
 														<p>As propriedades de uma rede de computadores são as características que a definem e a diferenciam de outras redes. Essas propriedades podem ser divididas em dois grupos principais:</p>
@@ -3399,7 +3407,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('extensaoGeografica')">extensão geográfica</button>
 														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('topologia')">topologia</button>
 														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('meioDeTransmissao')">meio de transmissão</button>
-													  </div><br />
+													</div><br />
 													   <div id="arquiteturaDeRede" class="city" style="display:none">
 																<ul class="w3-ul">
 																	<li>Arcnet (Attached Resource Computer Network)</li>
@@ -3448,20 +3456,70 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 																		<dd>- rádio</dd>
 																</dl>
 													  </div>
-
-													
-													
-													
-													
-													
-													
-													
-													
 													</div>
-												
+													<button onclick="myFunction('SoftwaresDeRede')" class="w3-button w3-block w3-left-align w3-green"><b>Softwares de Rede</b> - Tipo de software que permite que os computadores se comuniquem entre si</button>
+													<div id="SoftwaresDeRede" class="w3-hide w3-container">
+													<p>Ele é essencial para a operação de redes de computadores, incluindo redes locais (LANs), redes metropolitanas (MANs) e redes de longa distância (WANs).</p>
+													<p>O software de rede é usado para uma variedade de propósitos, incluindo:</p>
+														<ul>
+															<li><b>Conexão de computadores</b>: O software de rede permite que os computadores se conectem uns aos outros usando diferentes tipos de tecnologias, como Ethernet, Wi-Fi e Bluetooth.</li>
+															<li><b>Compartilhamento de recursos</b>: O software de rede permite que os computadores compartilhem recursos, como arquivos, impressoras e dispositivos de armazenamento.</li>
+															<li><b>Proteção</b>: O software de rede pode ser usado para proteger as redes de computadores contra ataques cibernéticos.</li>
+															<li><b>Gerenciamento</b>: O software de rede pode ser usado para gerenciar as redes de computadores, incluindo monitoramento do desempenho, solução de problemas e registro de eventos.</li>
+														</ul>
+													<p>Os tipos de software de rede mais usados atualmente incluem:</p>
+													<ul>
+														<li><b>Sistemas operacionais de rede</b>: Linux, Windows Server e macOS Server.</li>
+														<li><b>Serviços de rede</b>: Servidores web, servidores de arquivos, servidores de banco de dados e servidores de impressão.</li>
+														<li><b>Software de segurança de rede</b>: Firewalls, antivírus e outros aplicativos de segurança - (Evita ataque cibernéticos). Cisco ASA, Palo Alto Networks PA-Series e Fortinet FortiGate.</li>
+														<li><b>Software de análise de rede</b>: SolarWinds Network Performance Monitor, ManageEngine OpManager e PRTG Network Monitor.</li>
+														<li><b>Software de sumulação de rede</b>:  Packet Tracer, GNS3, EVE-NG e OPNET Modeler</li>
+													</ul>
+														<p class="obs">Os softwares simuladores de redes de computadores são ferramentas valiosas para o ensino, a pesquisa e o treinamento de redes de computadores. Eles permitem que os usuários criem e experimentem redes virtuais sem a necessidade de hardware físico.</p>
 
 
-					</div>
+
+
+													</div>
+
+
+													<button onclick="myFunction('HardwareDeRede')" class="w3-button w3-block w3-left-align w3-green"><b>Hardware de rede</b> - Elementos de cabeamanto, repetidores, servidores etc.</button>
+													<div id="HardwareDeRede" class="w3-hide w3-container">
+														<ul class="w3-ul">
+															<dl>
+																<dt>Elementos de Cabeamento</dt>
+																<dd>Cabo Coaxial</dd>
+																<dd>Cabo de Fibra ótica</dd>
+																<dd>Cabo de Par trançado</dd>
+																<dd>Repetidor</dd>
+																<dd>Transceptor</dd>
+															</dl>
+																<lI>Estação de trabalho</li>
+																<lI>Placa de rede</li>
+																<lI>Concentrador (hub)</li>
+																<lI>Comutador (switch)</li>
+																<lI>Roteador (router/gateway)</li>
+																<lI>Modem</li>
+																<lI>Porta de ligação (gateway router)</li>
+																<lI>Ponte (bridge)</li>
+																<lI>Firewall</li>
+															<dl>
+																<dt>Servidores</dt>
+																<dd>Aplicação</dd>
+																<dd>Arquivos</dd>
+																<dd>Banco de dados</dd>
+																<dd>Bluetooth</dd>
+																<dd>Comunicações</dd>
+																<dd>Disco</dd>
+																<dd>DNS</dd>
+																<dd>E-mail</dd>
+																<dd>impressão</dd>
+																<dd>Jogos</dd>
+																<dd>Mídia</dd>
+															</dl>
+														</ul>
+												  </div>
+
 		</div12>
 
 
