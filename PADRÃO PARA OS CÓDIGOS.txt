@@ -91,3 +91,18 @@ SAML
 					}
 					}
 		</script>
+
+
+<!--LISTA-->
+
+<ul class="w3-ul">
+ <li>SAN (Storage Area Network)</li>
+</ul>						
+
+					
+<dl class="w3-ul">
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
