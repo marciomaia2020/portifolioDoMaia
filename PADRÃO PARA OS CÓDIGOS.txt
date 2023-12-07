@@ -93,6 +93,72 @@ SAML
 		</script>
 
 
+
+<!--PÓS ACORDION COM 10 ITENS-- C>
+
+<div id="Classificacao" class="w3-hide w3-container">
+	<div class="w3-bar">
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+		<button class="w3-bar-item w3-button" onclick="classificacaoRedes('')"></button>
+	</div><br />
+	<div id="" class="city" style="display:yes">
+		<p></p>
+		<p></p>
+		<p></p>
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>										
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>										
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+		<p></p>
+		<p></p>
+		<p></p>												
+	</div>
+	<div id="" class="city" style="display:none">
+													
+	</div>
+</div>
+
 <!--LISTA-->
 
 <ul class="w3-ul">
