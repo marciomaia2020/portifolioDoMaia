@@ -3358,12 +3358,14 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 															<button class="w3-bar-item w3-button" onclick="classificacaoRedes('AplicacoesComerciais')">Aplicações comerciais</button>
 															<button class="w3-bar-item w3-button" onclick="classificacaoRedes('AplicacoesDomesticas')">Aplicações domésticas</button>
 														 </div>
-														   <div id="AplicacoesComerciais" class="city" style="display:none">
+														   <div id="AplicacoesComerciais" class="city" style="display:yes">
+															<h3>Aplicações comerciais</h3>
 														   		<p>A necessidade de compartilhar entre as pessoas de uma empresa informações ou até mesmo equipamentos entre computadores, coloca Redes de computadores em evidência. Quando falamos de aplicações comerciais a palavra chave é compartilhamento de recursos, todos os integrantes de uma rede de computadores comercial necessitam ter acesso aos dados e equipamentos independentemente de sua localização física e recursos computacionais. Um cenário clássico que descreve muito bem o compartilhamento de recursos é o de uma empresa em que cada funcionário possui uma impressora de porte pequeno individualmente, é evidente que uma ou mais impressoras de um porte maior compartilhado entre os empregados seria mais vantajoso que privatizar individualmente uma única unidade para cada um, visto que nem todos usam com a mesma frequência e logo não há a necessidade de se gastar tanto recuso financeiro para comprar e manter impressoras individuais.</p>
 																<p>Na contemporaneidade, cada vez mais empresas tem dependência de dados computacionais, portanto mais importante que o compartilhamento de equipamentos talvez seja o de dados comerciais entre membros de uma companhia. Uma pane em uma rede de qualquer empresa seria um golpe fatal para o funcionamento dela, talvez menos em empresas menores mas com certeza causaria prejuízos tanto temporais quanto financeiros para qualquer uma e de qualquer porte.</p>
 																<p>O modelo de distribuição de dados nomeado servidor é bastante utilizado, os dados são mantidos em um computador e local isolado e controlado por um administrador de sistemas. Os clientes (usuários usando seu computador) através da rede local acessam essa máquina chamada servidor, e com isso conseguem obter os dados que estão centralizados. Esse modelo exemplificado é chamado de modelo cliente-servidor e é bastante usado principalmente em aplicações Web.</p>
 														  </div>
 														  <div id="AplicacoesDomesticas" class="city" style="display:none">
+															<h3>Aplicações domésticas</h3>
 														  		<p>Hoje em dia diversos  eletrônicos domésticos estão integrados a rede doméstica, como lâmpadas inteligentes, sistema de câmeras de segurança, dispositivos de som, computadores, impressoras entre outros onde os usuários conectados à rede podem acessar e controlar os dispositivos, ou também os usuários podem realizar o compartilhamento de informações entre si.</p>
 																<p>O acesso doméstico a internet também possibilita que os usuários possam acessar computadores (servidores) remotamente para fins de comércios eletrônicos, se comunicar com outras pessoas através de redes sociais, contratar serviços, ler jornais publicados online, comprar livros disponibilizados digitalmente. O usuário pode também pesquisar por qualquer coisa que lhe interesse como: notícias e informações sobre política, famosos, saúde, entretenimento e educação. Pode também utilizar da rede para o seu lazer como: jogos, receitas culinárias, esportes, e filmes/séries, entre outras infinitas possibilidades de conteúdos e atividades que podem ser encontradas pela rede mundial de computadores (World Wide Web).</p>
 														  </div>
@@ -3371,12 +3373,12 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 													<button onclick="myFunction('Propriedades')" class="w3-button w3-block w3-left-align w3-green"><b>Propriedades</b> - Físicas e Lógicas <small>Outras propriedades - (Segurança, Performance e Confiabilidade)</small> Definen e Diferem de outras redes.</button>
 														<div id="Propriedades" class="w3-hide w3-container">
 															<div class="w3-bar">
-																<button class="w3-bar-item w3-button" onclick="classificacaoRedes('PropriedadesFisicas')">Propriedades físicas</button>
+										f						<button class="w3-bar-item w3-button" onclick="classificacaoRedes('PropriedadesFisicas')">Propriedades físicas</button>
 																<button class="w3-bar-item w3-button" onclick="classificacaoRedes('PropriedadesLogicas')">Propriedades lógicas</button>
 															</div>
-															<div id="PropriedadesFisicas" class="city" style="display:none">
-																<p><b>Propriedades físicas</b>: Essas propriedades se referem à <u>infraestrutura física da rede, incluindo os dispositivos, os cabos e as mídias de transmissão</u></p>
+															<div id="PropriedadesFisicas" class="city" style="display:yes">
 																<p><c class="configurado3">Propriedades físicas</c></p>
+																<p><b>Infraestrutura física da rede, incluindo os dispositivos, os cabos e as mídias de transmissão</b></p>
 																<p>As propriedades físicas de uma rede de computadores incluem:</p>
 																	<ul>
 																		<li><b>Topologia</b>: A topologia de uma rede <u>é o arranjo físico dos dispositivos da rede</u>. Existem vários tipos de topologias de rede, como a topologia em estrela, a topologia em barramento e a topologia em malha.</li>
@@ -3386,8 +3388,8 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 																	</ul>
 															</div>
 															<div id="PropriedadesLogicas" class="city" style="display:none">
-																<p><b>Propriedades lógicas</b>: Essas propriedades se referem ao <u>funcionamento da rede, incluindo os protocolos de comunicação e os serviços oferecidos</u>.</p>
 																<p><c class="configurado3">Propriedades logicas</c></p>
+																<p><b>Funcionamento da rede, incluindo os protocolos de comunicação e os serviços oferecidos</b>.</p>
 																<p>As propriedades lógicas de uma rede de computadores incluem:</p>
 																	<ul>
 																		<li><b>Protocolos de comunicação</b>: Os protocolos de comunicação são as regras que definem como os dispositivos da rede se comunicam entre si. Os protocolos de comunicação mais comuns são o TCP/IP, o UDP e o HTTP.</li>
@@ -3430,12 +3432,13 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 												   <button onclick="myFunction('Classificacao')" class="w3-button w3-block w3-left-align w3-green"><b>Classificação</b> - Arquiterura de Rede, Extensão Geográfica, Topologia e Meios de Transmissão</button>
 												   <div id="Classificacao" class="w3-hide w3-container">
 												    <div class="w3-bar">
-														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('arquiteturaDeRede')"> arquitetura de rede</button>
-														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('extensaoGeografica')">extensão geográfica</button>
-														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('topologia')">topologia</button>
-														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('meioDeTransmissao')">meio de transmissão</button>
+														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('arquiteturaDeRede')">Arquitetura de rede</button>
+														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('extensaoGeografica')">Extensão geográfica</button>
+														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('topologia')">Topologia</button>
+														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('meioDeTransmissao')">Meios de transmissão</button>
 													</div><br />
-													   <div id="arquiteturaDeRede" class="city" style="display:none">
+													   <div id="arquiteturaDeRede" class="city" style="display:yes">
+														<h3>Arquitetura de rede</h3>
 																<ul class="w3-ul">
 																	<li>Arcnet (Attached Resource Computer Network)</li>
 																	<li>ATM (Asynchronous Transfer Mode)</li>
@@ -3449,6 +3452,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 																</ul>
 													  </div>
 													  <div id="extensaoGeografica" class="city" style="display:none">
+														<h3>Extensão geográfica</h3>
 																<ul class="w3-ul">
 																	<li>SAN (Storage Area Network)</li>
 																	<li>LAN (Local Area Network)</li>
@@ -3462,6 +3466,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 																</ul>
 													  </div>
 													  <div id="topologia" class="city" style="display:none">
+														<h3>Topologia</h3>
 																<ul class="w3-ul">
 																	<li>Anel (Ring)</li>
 																	<li>Árvore</li>
@@ -3472,6 +3477,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 																</ul>
 											  			</div>
 													  <div id="meioDeTransmissao" class="city" style="display:none">
+														<h3>Meios de transmissão</h3>
 																<dl class="w3-ul">
 																	<dt>Rede por cabo</dt>
 																		<dd>- coaxial</dd>
@@ -3581,67 +3587,78 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('NormasdeComunicacaodedados')">Normas de Comunicação de dados</button>
 													</div><br />
 													<div id="PadroesdeComunicacao" class="city" style="display:yes">
+														<h3>Padrões de Comunicação</h3>
 														<ul>
 															<li><b>TCP/IP (Transmission Control Protocol/Internet Protocol)</b>: Protocolo padrão para comunicação na Internet.</li>
 															<li><b>IEEE 802</b>: Define padrões para redes locais (LANs) e redes metropolitanas (MANs), incluindo Ethernet e Wi-Fi.</li>
 															<li><b>DNS (Domain Name System)</b>: Define como os nomes de domínio são traduzidos em endereços IP.</li>
-														</ul><br />
+														</ul>
 													</div>
 													<div id="SegurancadaRede" class="city" style="display:none">
+														<h3>Segurança da Rede</h3>
 														<ul>
 															<li><b>ISO/IEC 27001</b>: Define padrões para sistemas de gestão de segurança da informação.</li>
 															<li><b>PCI DSS (Payment Card Industry Data Security Standard)</b>: Requisitos para proteger informações de cartões de pagamento.</li>
 															<li><b>NIST (National Institute of Standards and Technology)</b>: Fornece diretrizes de segurança, como o Framework NIST para melhorar a segurança da infraestrutura crítica.</li>
-														</ul><br />									
+														</ul>								
 													</div>
 													<div id="GerenciamentodeRede" class="city" style="display:none">
+														<h3>Gerenciamento de Rede</h3>
 														<ul>
 															<li><b>SNMP (Simple Network Management Protocol)</b>: Protocolo para gerenciamento de dispositivos em redes IP.</li>
 															<li><b>ITIL (Information Technology Infrastructure Library)</b>: Conjunto de práticas para o gerenciamento de serviços de TI.</li>
-														</ul><br />									
+														</ul>							
 													</div>
 													<div id="PrivacidadedeDados" class="city" style="display:none">
+														<h3>Privacidade de Dados</h3>
 														<ul>
 															<li><b>GDPR (General Data Protection Regulation)</b>: Regulamentação da União Europeia para proteção de dados pessoais.</li>
 															<li><b>HIPAA (Health Insurance Portability and Accountability Act)</b>: Regula a segurança e privacidade de informações de saúde nos Estados Unidos.</li>
-														</ul><br />											
+														</ul>										
 													</div>
 													<div id="NormasdeCaboseConectores" class="city" style="display:none">
+														<h3>Normas de Cabos e Conectores</h3>
 														<ul>
 															<li><b>EIA/TIA-568</b>: Padrão para cabeamento de telecomunicações em edifícios comerciais.</li>
 															<li><b>USB (Universal Serial Bus)</b>: Define os padrões para conexão e comunicação de dispositivos.</li>
-														</ul><br />											
+														</ul>
 													</div>
 													<div id="NormasdeWireless" class="city" style="display:none">
+														<h3>Normas de Wireless</h3>
 														<ul>
 															<li><b>Wi-Fi (IEEE 802.11)</b>: Padrões para redes sem fio.</li>
 															<li><b>Bluetooth</b>: Padrão para comunicação sem fio de curto alcance entre dispositivos.</li>
-														</ul><br />											
+														</ul>										
 													</div>
 													<div id="PadroesdeVirtualizacao" class="city" style="display:none">
+														<h3>Padrões de Virtualização</h3>
 														<ul>
 															<li><b>IEEE 802.1Q (VLAN)</b>: Define a marcação de VLAN em redes Ethernet.</li>
 															<li><b>VMware vSphere</b>: Plataforma de virtualização para servidores.</li>
-														</ul><br />										
+														</ul>							
 													</div>
 													<div id="NormasdeCertificacao" class="city" style="display:none">
+														<h3>Normas de Certificação</h3>
 														<ul>
 															<li><b>CompTIA Network+</b>: Certificação que abrange conhecimentos fundamentais em redes.</li>
 															<li><b>Cisco CCNA (Cisco Certified Network Associate)</b>: Certificação para profissionais de redes Cisco.</li>
-														</ul><br />										
+														</ul>									
 													</div>
 													<div id="NormasAmbientais" class="city" style="display:none">
+														<h3>Normas Ambientais</h3>
 														<ul>
 															<li><b>RoHS (Restriction of Hazardous Substances)</b>: Diretrizes para a restrição do uso de substâncias perigosas em equipamentos eletrônicos.</li>
-														</ul><br />											
+														</ul>									
 													</div>
 													<div id="NormasdeConformidade" class="city" style="display:none">
+														<h3>Normas de Conformidade</h3>
 														<ul>
 															<li><b>ISO/IEC 20000</b>: Padrões para gerenciamento de serviços de TI.</li>
 															<li><b>COBIT (Control Objectives for Information and Related Technologies)</b>: Framework para governança de TI.</li>
-														</ul><br />											
+														</ul>										
 													</div>
 													<div id="NormasdeComunicacaodedados" class="city" style="display:none">
+														<h3>Normas de Comunicação de dados</h3>
 																<p><b>X.25</b>:  conjunto de protocolos de acesso a redes de comunicação de dados com tecnologia de comutação de pacotes, especificado pela Recomendação X.25 do ITU-T</p>
 														<ul>
 															<p>Define três camadas de protocolo:</p>
@@ -3677,41 +3694,49 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 															<button class="w3-bar-item w3-button" onclick="classificacaoRedes('TopologiasRede')">Topologias de Rede</button>
 														</div><br />
 														<div id="TransmissaoAnalogica" class="city" style="display:yes">
+															<h3>Transmissão Analógica</h3>
 															<ul>
 																<li><b>Sinal Contínuo</b>: Usa ondas analógicas para representar dados. O sinal é contínuo e pode assumir qualquer valor em um intervalo.</li>
 															</ul><br />
 														</div>
 														<div id="TransmissaoDigital" class="city" style="display:none">
+															<h3>Transmissão Digital</h3>
 															<ul>
 																<li><b>Sinal Discreto</b>: Os dados são representados por bits discretos (0s e 1s). É mais resistente a interferências e permite uma maior precisão na reconstrução do sinal original.</li>
 															</ul><br />									
 														</div>
 														<div id="TransmissaoSerial" class="city" style="display:none">
+															<h3>Transmissão Serial</h3>
 															<ul>
 																<li><b>Um Bit de Cada Vez</b>: Os bits são enviados sequencialmente, um após o outro, ao longo do mesmo canal de comunicação. Menos cabos são necessários, mas a transmissão pode ser mais lenta.</li>
 															</ul><br />									
 														</div>
 														<div id="TransmissaoParalela" class="city" style="display:none">
+															<h3>Transmissão Paralela</h3>
 															<ul>
 																<li><b>Vários Bits Simultaneamente</b>: Vários bits são transmitidos simultaneamente através de canais paralelos. Isso pode ser mais rápido, mas requer mais cabos e pode ser suscetível a interferências.</li>
 															</ul><br />												
 														</div>
 														<div id="Modulacao" class="city" style="display:none">
+															<h3>Modulação</h3>
 															<ul>
 																<li><b>Variação de Propriedades da Onda</b>: Altera uma propriedade da onda (amplitude, frequência, fase) para representar dados. Exemplos incluem modulação de amplitude (AM) e modulação de frequência (FM).</li>
 															</ul><br />											
 														</div>
 														<div id="CodificacaoLinha" class="city" style="display:none">
+															<h3>Codificação de Linha</h3>
 															<ul>
 																<li><b>Representação dos Bits na Linha</b>: Define como os bits são representados eletricamente na linha de transmissão. Exemplos incluem Manchester, NRZ (Non-Return-to-Zero), e NRZI (Non-Return-to-Zero Inverted).</li>
 															</ul><br />											
 														</div>
 														<div id="Multiplexacao" class="city" style="display:none">
+															<h3>Multiplexação</h3>
 															<ul>
 																<li><b>Compartilhamento de Meios de Transmissão</b>: Permite que vários sinais compartilhem o mesmo meio de transmissão. Exemplos incluem TDM (Time Division Multiplexing) e FDM (Frequency Division Multiplexing).</li>
 															</ul><br />										
 														</div>
 														<div id="ComunicaçãoHalfDuplexFullDuplex" class="city" style="display:none">
+															<h3>Comunicação Half-Duplex e Full-Duplex</h3>
 															<ul>
 																<li><b>Half-Duplex</b>: A comunicação ocorre em ambas as direções, mas não simultaneamente.</li>
 																	<p>Dados transmitidos em ambas as direções Ex: Rários PTT, Walkie-Talkies </p>
@@ -3723,12 +3748,14 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 															</ul><br />											
 														</div>
 														<div id="ComunicacaoAnalogicaDigital" class="city" style="display:none">
+															<h3>Comunicação Analógica e Digital</h3>
 															<ul>
 																<li><b>Analógica</b>: Utiliza sinais analógicos para transmitir informações.</li>
 																<li><b>Digital</b>: Utiliza sinais digitais (bits) para representar informações.</li>
 															</ul><br />											
 														</div>
 														<div id="TopologiasRede" class="city" style="display:none">
+															<h3>Topologias de Rede</h3>
 															<ul>
 																<li><b>Estrela</b>: Todos os dispositivos conectam-se a um ponto central.</li>
 																<li><b>Anel</b>: Os dispositivos formam um anel, cada dispositivo está conectado aos dois vizinhos.</li>
