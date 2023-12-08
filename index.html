@@ -3321,8 +3321,8 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 						<button class="w3-bar-item w3-button" onclick="openIA('Rede')">Rede</button>
 					</div>
 				</div>
-				<div12>
-					    <div id="Rede" class="w3-container ia" style="display:yes">
+					<div id="Rede" class="w3-container ia" style="display:yes">
+
 							<h3>Rede de computadores ou redes de dados</h3>
 								<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 								<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
@@ -3333,7 +3333,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 									<p>Os exemplo mais comuns de redes de computadores, são: <b>Internet</b>; <b>Intranet de uma empresa</b>; <b>rede local</b> doméstica; entre outras.</p>
 									<!--fonte: https://pt.wikipedia.org/wiki/Rede_de_computadores-->
 										<div class="w3-container">
-												<button onclick="myFunction('Objetivo')" class="w3-button w3-block w3-left-align w3-green">Objetivo</button>
+													<button onclick="myFunction('Objetivo')" class="w3-button w3-block w3-left-align w3-green">Objetivo</button>
 													<div id="Objetivo" class="w3-hide w3-container">
 														<h2>Permitir a troca de dados entre computadores e a partilha de recursos de hardware e software.</h2>
 
@@ -3346,7 +3346,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 															<li>Novos negócios e oportunidades</li>
 														</ul>
 													</div>
-												<button onclick="myFunction('Comunicacao')" class="w3-button w3-block w3-left-align w3-green">Comunicação</button>
+													<button onclick="myFunction('Comunicacao')" class="w3-button w3-block w3-left-align w3-green">Comunicação</button>
 												   <div id="Comunicacao" class="w3-hide w3-container">
 													<h2>Troca de informações entre duas ou mais pessoas.</h2>
 
@@ -3382,6 +3382,8 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 
 															<div class="w3-bar">
 														<button class="w3-bar-item w3-button" onclick="classificacaoRedes('PropriedadesFisicas')">Propriedades físicas</button>
+
+
 																<button class="w3-bar-item w3-button" onclick="classificacaoRedes('PropriedadesLogicas')">Propriedades lógicas</button>
 															</div>
 															<div id="PropriedadesFisicas" class="city" style="display:yes">
@@ -3760,6 +3762,10 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 												</div>
 					</div>
 				</div12>
+
+									 </div>
+			    </div>
+
 
 
 		<div class="w3-container w3-center">
@@ -4252,7 +4258,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 							href="https://www.varonis.com/pt-br/blog/windows-powershell-tutorials"
 							target="_blank">consulte</a>.</p>
 				</div>
-		</div>
+			</div>
 		</div1>
 
 		<div class="w3-container w3-center">
@@ -7425,7 +7431,7 @@ https://www.oneidentity.com/what-is-scim/
 			</div>
 		 </div4>
 			<div class="w3-container w3-center">
-				<h2>Inteligência Artificial - IA</h2>
+				<h2>Inteligência Artificial - <i class="fa-solid fa-laptop"></i></h2>
 				<button id="btn10" class="fa-solid fa-plus"></button>
 				<button id="btn9" class="fa-solid fa-minus"></button>
 			</div><br />
@@ -8367,9 +8373,13 @@ https://www.oneidentity.com/what-is-scim/
 									src="https://i.postimg.cc/3NsRYr29/AS.jpg" alt="Learning Studio AI"
 									style="width:100%"></a>
 						</div>
-					</div>
-			</div><br />
-			</div5>
+					 </div>
+			      </div><br />
+			    </div5>
+
+					
+
+
 
 							     <!--BARS - BARRA-->
 								 <div class="w3-container w3-center">
@@ -8612,8 +8622,9 @@ https://www.oneidentity.com/what-is-scim/
 									style="width:100%"></a>
 						</div>
 					</div>
+				</div6>
 			</div><br />
-			</div6>
+			
 			<!--FONTE https://encontreumnerd.com.br/blog/sites-para-profissionais-ti-->
 			<!--NOTICIAS FINAL-->
 
@@ -9164,7 +9175,7 @@ fonte: https://www.alura.com.br/artigos/o-que-e-json#introducao
 					});
 				});
 				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
-				/*INICIO BOTÃO MOSTRAR - OCULTAR btn9/btn10/div5  Inteligência Artificial - IA*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn9/btn10/div5  Inteligência Artificial - IA Desktop*/
 				$(document).ready(function () {
 					$("#btn9").click(function () {
 						$("div5").hide(1000);
@@ -9224,6 +9235,18 @@ fonte: https://www.alura.com.br/artigos/o-que-e-json#introducao
 					});
 				});
 				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+		/*INICIO BOTÃO MOSTRAR - OCULTAR btn25/btn26/div13  Inteligência Artificial - IA Whattsap*/
+		$(document).ready(function () {
+					$("#btn25").click(function () {
+						$("div13").hide(1000);
+					});
+					$("#btn26").click(function () {
+						$("div13").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
 
 			//TABS on classificação on Redes
 		function classificacaoRedes(cityName) {
