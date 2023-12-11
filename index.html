@@ -7411,6 +7411,7 @@ https://www.oneidentity.com/what-is-scim/
 				<div class="w3-bar w3-green">
 					<button class="w3-bar-item w3-button" onclick="openIA('SSLvsTLS')">SSL vs TLS</button>
 					<button class="w3-bar-item w3-button" onclick="openIA('WebSocketsvsHTTP')">WebSockets vs HTTP</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('AMPQvsMQTT')">AMPQ vs MQTT</button>
 					<button class="w3-bar-item w3-button" onclick="openIA('SAMLvsOIDC')">SAML vs OIDC</button>
 					<button class="w3-bar-item w3-button" onclick="openIA('AssinaturavsCertificado')">Assinatura Digital vs Certificado Ditigal</button>
 					<button class="w3-bar-item w3-button" onclick="openIA('SimetricavsAsimetrica')">Criptografia Simétrica vs Criptografia Assimétrica</button>
@@ -7527,10 +7528,60 @@ https://www.oneidentity.com/what-is-scim/
 					<div id="WebSocketsvsHTTP" class="w3-container ia" style="display:none">
 						<h3>WebSockets vs HTTP</h3>
 						<p><c class="configurado">WebSockets</c> e <c class="configurado">HTTP</c> são ...</p>
-					
 					<!--Fonte: pegar daqui...
 					https://blogs.windows.com/windowsdeveloper/2016/03/14/when-to-use-a-http-call-instead-of-a-websocket-or-http-2-0/-->
-					
+					</div>
+					<div id="AMPQvsMQTT" class="w3-container ia" style="display:none">
+						<h3>AMPQ vs MQTT</h3>
+						<p><c class="configurado">AMPQ</c> e <c class="configurado">MQTT</c> - São dois protocolos de mensagens muito populares, cada um com suas próprias vantagens e desvantagens.</p>
+						
+						<p><c class="configurado3">AMPQ</c> é um protocolo de mensagens de propósito geral projetado para ser robusto e escalável. Ele oferece uma ampla gama de recursos, incluindo:</p>
+							<ul>
+								<li>QoS (Quality of Service) de 0 a 2, garantindo que as mensagens sejam entregues com segurança e confiabilidade.</li>
+								<li>Transações, permitindo que um grupo de mensagens seja tratado como uma única unidade.</li>
+								<li>Roteamento, permitindo que as mensagens sejam enviadas para destinos específicos.</li>
+								<li>Armazenamento de mensagens, permitindo que as mensagens sejam armazenadas para posterior processamento.</li>
+							</ul>
+						<p><c class="configurado3">MQTT</c> é um protocolo de mensagens leve projetado para dispositivos com recursos limitados. Ele é simples e fácil de implementar, e oferece os seguintes recursos:</p>
+							<ul>
+								<li>QoS de 0 a 2, garantindo que as mensagens sejam entregues com segurança e confiabilidade.</li>
+								<li>Publicação/assinatura, permitindo que os dispositivos publiquem mensagens que possam ser consumidas por outros dispositivos.</li>
+							</ul>
+						<p><b>Diferenças entre AMPQ e MQTT</b></p>
+							<table class="w3-table-all">
+								<thead>
+									<tr>
+										<th>Característica</th>
+										<th>MQTT</th>
+										<th>AMPQ</th>
+									</tr>
+								</thead>
+								<tr>
+									<td>Objetivo</td>
+									<td>IoT</td>
+									<td>Geral</td>
+								</tr>
+								<tr>
+									<td>Recursos</td>
+									<td>Leve, simples, QoS de 0 a 2, publicação/assinatura</td>
+									<td>Robusto, escalável, QoS de 0 a 2, transações, roteamento, armazenamento de mensagens</td>
+								</tr>
+								<tr>
+									<td>Arquitetura</td>
+									<td>Cliente/broker</td>
+									<td>Cliente/servidor ou cliente/broker</td>
+								</tr>
+								<tr>
+									<td>Eficiência</td>
+									<td>Mais eficiente</td>
+									<td>Menos eficiente</td>
+								</tr>
+								<tr>
+									<td>Segurança</td>
+									<td>Menos segura</td>
+									<td>Mais segura</td>
+								</tr>
+							</table>
 					</div>
 
 					<div id="SAMLvsOIDC" class="w3-container ia" style="display:none">
