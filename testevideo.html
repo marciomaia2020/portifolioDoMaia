@@ -1,41 +1,269 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Portifólio Márcio Maia</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!--IMPORTAÇÃO DA BIBLIOTECA PARA GRÁFICOS-->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/stilo.css">
+<script defer src="js/script.js"></script>
 
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/bFr342CmDc?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
-  </div>
-  <p><i class="fa-solid fa-video"></i> - 2</p>
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/Qh4NwhybRo4?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ&t=4"></iframe>
-  </div>
-  <p><i class="fa-solid fa-video"></i> - 3</p>
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/5wV1j41y_o4?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
-  </div>
-  <p><i class="fa-solid fa-video"></i> - 4</p>
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/lzP5SRiCtxg?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
-  </div>
-  <p><i class="fa-solid fa-video"></i> - 5</p>
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/CsxzQ2JWdns?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
-  </div>
-  <p><i class="fa-solid fa-video"></i> - 6</p>
-  <div class="containertovideo">
-    <iframe class="responsive-iframe" style="border:none;"
-    src="https://youtube.com/embed/Nrn9fQMl4BI?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
-  </div>
-  
+
+<!---CHOSEN SELECT----->
+<script src="./chosen_select/chosen.jquery.js"></script>
+<link rel="stylesheet" href="./chosen_select/chosen.css">
+
+
+<!----======== Font Awesome 5 JAVASCRIPT  ENTRE NO SITE E PEGUE O CÓDIGO (afb02bf9ac)======== -->
+<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
+<!--Márciofernando.maia@yahoo.com.br-->
+<script src="https://kit.fontawesome.com/2fa2c650ed.js" crossorigin="anonymous"></script>
+
+<script>
+	/*TABS */
+	function openIA(InteligenciaArtificial) {
+		var i;
+		var x = document.getElementsByClassName("ia");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		document.getElementById(InteligenciaArtificial).style.display = "block";
+	}
+</script>
+<!--Pegue o código direto do site fontawesome.com-->
+<!----======== Font Awesome 5  CSS ======== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+	<style>
+		.mySlides {
+			display: none;
+		}
+	</style>
+
+<!--
+<div class="containertovideo">
+  <iframe class="responsive-iframe" style="border:none;"
+  src="https://youtube.com/embed/bFr342CmDc?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+</div>
+-->
+
+
+
+    <!--BARS - BARRA-->
+    <div class="w3-container w3-center">
+      <h2>Designer Partner</h2>
+        <button id="btn30" class="fa-solid fa-plus"></button>
+        <button id="btn29" class="fa-solid fa-minus"></button>
+    </div> <br />
+    <div class="w3-container">
+      <div class="w3-bar w3-green">
+        <button class="w3-bar-item w3-button" onclick="openIA('DesignerPartner')">Designer Partner <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+        <div15><!--DIV INICIO PARA O JQUERY-->
+          <div id="DesignerPartner" class="w3-container ia" style="display:yes">
+            <h3>Designer Partner</h3>
+            <!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+            <div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+              <p><c class="configurado">Designer Partner</c> e <c class="configurado">Designer de Software</c> não são a mesma coisa.</p>
+            </div>
+          </div>
+        </div15><!--DIV FIM PARA O JQUERY-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<footer class="rodape">
+				<div>Técnico em Informática / WEB | Analista e Desenvolvedor de sistemas - Todos os direitos reservado -
+					2024</div>
+			</footer>
+
+			<!-- End page content -->
+			<script>
+				/*INICIO BOTÃO MOSTRAR - OCULTAR show/hide/article */
+				$(document).ready(function () {
+					$("#hide").click(function () {
+						$("article").hide(1000);
+					});
+					$("#show").click(function () {
+						$("article").show(1000);
+					});
+				});
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn1/btn2/div1 Hardwares*/
+				$(document).ready(function () {
+					$("#btn1").click(function () {
+						$("div1").hide(1000);
+					});
+					$("#btn2").click(function () {
+						$("div1").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn3/btn4/div2 Mensageria*/
+				$(document).ready(function () {
+					$("#btn3").click(function () {
+						$("div2").hide(1000);
+					});
+					$("#btn4").click(function () {
+						$("div2").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn15/btn16/div8   Sistema de Autenticação*/
+				$(document).ready(function () {
+					$("#btn15").click(function () {
+						$("div8").hide(1000);
+					});
+					$("#btn16").click(function () {
+						$("div8").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn5/btn6/div3  Sistema de Comunicação*/
+				$(document).ready(function () {
+					$("#btn5").click(function () {
+						$("div3").hide(1000);
+					});
+					$("#btn6").click(function () {
+						$("div3").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn7/btn8/div4  Protocolos*/
+				$(document).ready(function () {
+					$("#btn7").click(function () {
+						$("div4").hide(1000);
+					});
+					$("#btn8").click(function () {
+						$("div4").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn9/btn10/div5  Inteligência Artificial - IA Desktop*/
+				$(document).ready(function () {
+					$("#btn9").click(function () {
+						$("div5").hide(1000);
+					});
+					$("#btn10").click(function () {
+						$("div5").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn11/btn12/div6  Sites de notícias sobre TI*/
+				$(document).ready(function () {
+					$("#btn11").click(function () {
+						$("div6").hide(1000);
+					});
+					$("#btn12").click(function () {
+						$("div6").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn13/btn14/div7  Instalando programas automaticamente!*/
+				$(document).ready(function () {
+					$("#btn13").click(function () {
+						$("div7").hide(1000);
+					});
+					$("#btn14").click(function () {
+						$("div7").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn17/btn18/div9  Símbolos e Termos Abreviados*/
+				$(document).ready(function () {
+					$("#btn18").click(function () {
+						$("div9").hide(1000);
+					});
+					$("#btn17").click(function () {
+						$("div9").show(1000);
+					});
+				});
+		/* INICIO BOTÃO MOSTRAR - OCULTAR btn22/btn21/div11 Malwares*/
+		$(document).ready(function () {
+					$("#btn21").click(function () {
+						$("div11").hide(1000);
+					});
+					$("#btn22").click(function () {
+						$("div11").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+		/* INICIO BOTÃO MOSTRAR - OCULTAR btn23/btn24/div11 Rede*/
+		$(document).ready(function () {
+					$("#btn23").click(function () {
+						$("div12").hide(1000);
+					});
+					$("#btn24").click(function () {
+						$("div12").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+		/*INICIO BOTÃO MOSTRAR - OCULTAR btn25/btn26/div13  Inteligência Artificial - IA Whattsap*/
+		$(document).ready(function () {
+					$("#btn25").click(function () {
+						$("div13").hide(1000);
+					});
+					$("#btn26").click(function () {
+						$("div13").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+				/*INICIO BOTÃO MOSTRAR - OCULTAR btn27/btn28/div14  Ciência de Dados*/
+		$(document).ready(function () {
+					$("#btn27").click(function () {
+						$("div14").hide(1000);
+					});
+					$("#btn28").click(function () {
+						$("div14").show(1000);
+					});
+				});
+				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+
+			//TABS on classificação on Redes
+		function classificacaoRedes(cityName) {
+		var i;
+		var x = document.getElementsByClassName("city");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+		}
+		document.getElementById(cityName).style.display = "block";  
+		}
+
+
+					</script>
+
 
 </body>
 </html>
+
 
