@@ -3391,6 +3391,7 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 										  <p>Considera a experiência do usuário em todos os pontos de contato com um serviço, desde a descoberta até a pós-utilização.</p>
 										</div>
 									</div>
+									<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
 							</div>	
 							<div id="DesignerDeSoftware" class="w3-container ia" style="display:none">
 								<h3>Designer de Software</h3>
@@ -3462,20 +3463,20 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 									<li><b>Teste e Iterações</b>: O sistema de software deve ser testado para garantir que atende aos requisitos e é eficiente, eficaz e agradável de usar.</li>				
 								</ol>
 							<p><i class="fa-solid fa-check"></i><c class="configurado1"> Padrões de Design de Software:</c> - CCE</p> 
-							<p><c class="configurado3">Comportamentais - COSSTV</p>
+							<p><c class="configurado3">Padrão Comportamentais (Comportamento)- CrCOSSTmV</p>
 								<!--ACORDION até o dia 12/12/2023 parei o demo19 - inicio 20-->
 								<div class="w3-container">
 									<button onclick="myFunction('ChainofResponsibility')" class="w3-button w3-block w3-left-align w3-green">Chain of Responsibility:</button>
 										<div id="ChainofResponsibility" class="w3-hide w3-container">
-										<p>Transfere a responsabilidade por uma solicitação de um objeto para outro.</p>
+										<p>Permite que uma solicitação seja passada por uma cadeia de objetos.</p>
 										</div>
-									<button onclick="myFunction('Observer')" class="w3-button w3-block w3-left-align w3-green">Command:</button>
-										<div id="Observer" class="w3-hide w3-container">
+									<button onclick="myFunction('Command')" class="w3-button w3-block w3-left-align w3-green">Command:</button>
+										<div id="Command" class="w3-hide w3-container">
 											<p>Encapsula uma solicitação como um objeto.</p>
 										</div>
 									<button onclick="myFunction('Observer')" class="w3-button w3-block w3-left-align w3-green">Observer:</button>
 										<div id="Observer" class="w3-hide w3-container">
-										<p>Permite que objetos observem um outro objeto e sejam notificados quando seu estado mudar.</p>
+											<p>Permite que um objeto notifique outros objetos de suas mudanças.</p>
 										</div>
 									<button onclick="myFunction('State')" class="w3-button w3-block w3-left-align w3-green">State:</button>
 										<div id="State" class="w3-hide w3-container">
@@ -3483,74 +3484,144 @@ DESCOMENTAR PARA VERIFICAR ESTRUTURA-->
 										</div>
 									<button onclick="myFunction('Strategy')" class="w3-button w3-block w3-left-align w3-green">Strategy:</button>
 										<div id="Strategy" class="w3-hide w3-container">
-										<p>Permite que a implementação de um algoritmo seja alterada sem alterar o código que o chama.</p>
+										<p>Permite que você selecione uma implementação de uma estratégia específica em tempo de execução.</p>
 										</div>
 										<button onclick="myFunction('TemplateMethod')" class="w3-button w3-block w3-left-align w3-green">Template Method:</button>
 										<div id="TemplateMethod" class="w3-hide w3-container">
-											<p>Define um esqueleto de um algoritmo, deixando os detalhes para as subclasses.</p>
+											<p>Define um esqueleto de um algoritmo e permite que os subclasses implementem etapas específicas.</p>
 										</div>
 									<button onclick="myFunction('Visitor')" class="w3-button w3-block w3-left-align w3-green">Visitor:</button>
 										<div id="Visitor" class="w3-hide w3-container">
-										<p>Permite que um objeto aplique uma operação a todos os elementos de uma coleção.</p>
+										<p>Permite que você aplique uma operação a todos os elementos de uma estrutura de dados.</p>
 										</div>
 								</div>
 				
-							<p><c class="configurado3">Criacionais - ABFPS</c></p>
+							<p><c class="configurado3">Padrão Criacionais (Criação) - ABCDFFFPPS</c></p>
 							<!--ACORDION até o dia 12/12/2023 parei o demo19 - inicio 20-->
 								<div class="w3-container">
-									<button onclick="myFunction('AbstractFactory')" class="w3-button w3-block w3-left-align w3-green">Abstract Factory</button>
-										<div id="AbstractFactory" class="w3-hide w3-container">
-											<p>Fornece uma interface para criar famílias de objetos relacionadas sem revelar sua implementação.</p>
+									<button onclick="myFunction('Adapter')" class="w3-button w3-block w3-left-align w3-green">Adapter:</button>
+										<div id="Adapter" class="w3-hide w3-container">
+											<p>Permite que objetos com interfaces incompatíveis se comuniquem entre si.</p>
 										</div>
-									<button onclick="myFunction('Builder')" class="w3-button w3-block w3-left-align w3-green">Builder:</button>
-										<div id="Builder" class="w3-hide w3-container">
-											<p>Separa a construção de um objeto de sua representação.</p>
+									<button onclick="myFunction('Bridge')" class="w3-button w3-block w3-left-align w3-green">Bridge:</button>
+										<div id="Bridge" class="w3-hide w3-container">
+											<p>Separa a interface de uma classe de sua implementação.</p>
+										</div>
+									<button onclick="myFunction('Composite')" class="w3-button w3-block w3-left-align w3-green">Composite:</button>
+										<div id="Composite" class="w3-hide w3-container">
+											<p>Permite que objetos sejam compostos de outros objetos.</p>
+										</div>
+									<button onclick="myFunction('Decorator')" class="w3-button w3-block w3-left-align w3-green">Decorator:</button>
+										<div id="Decorator" class="w3-hide w3-container">
+											<p>Adiciona funcionalidade a um objeto sem modificar sua classe.</p>
+										</div>
+									<button onclick="myFunction('Facade')" class="w3-button w3-block w3-left-align w3-green">Facade:</button>
+										<div id="Facade" class="w3-hide w3-container">
+											<p>Fornece uma interface simples para um sistema complexo.</p>
 										</div>
 									<button onclick="myFunction('Factory')" class="w3-button w3-block w3-left-align w3-green">Factory:</button>
 										<div id="Factory" class="w3-hide w3-container">
-											<p>Fornece uma interface para criar objetos sem revelar sua implementação.</p>
+											<p>Fornece uma maneira de criar objetos de forma flexível.</p>
+										</div>
+									<button onclick="myFunction('Flyweight')" class="w3-button w3-block w3-left-align w3-green">Flyweight:</button>
+										<div id="Flyweight" class="w3-hide w3-container">
+											<p>Compartilha objetos para reduzir o uso de memória.</p>
 										</div>
 									<button onclick="myFunction('Prototype')" class="w3-button w3-block w3-left-align w3-green">Prototype:</button>
 										<div id="Prototype" class="w3-hide w3-container">
-											<p>Cria novos objetos clonando um objeto existente.</p>
+											<p>Fornece uma maneira de criar objetos copiando um objeto existente.</p>
+										</div>
+									<button onclick="myFunction('Proxy')" class="w3-button w3-block w3-left-align w3-green">Proxy:</button>
+										<div id="Proxy" class="w3-hide w3-container">
+											<p>Fornece um objeto substituto que representa outro objeto.</p>
 										</div>
 									<button onclick="myFunction('Singleton')" class="w3-button w3-block w3-left-align w3-green">Singleton:</button>
 										<div id="Singleton" class="w3-hide w3-container">
-											<p>Garante que haja apenas uma instância de uma classe em um sistema.</p>
+											<p>Garante que apenas uma instância de uma classe seja criada.</p>
 										</div>
-								</div>
-							<p><c class="configurado3">Estruturais - ABCDFFP</p>
+
+							<p><c class="configurado3">Padrão de Uso (Usuabilidade)- ABCDaoFmIIMMNoOPPSSSTmV</p>
 											<!--ACORDION até o dia 12/12/2023 parei o demo19 - inicio 20-->
 											<div class="w3-container">
-												<button onclick="myFunction('Adapter')" class="w3-button w3-block w3-left-align w3-green">Adapter:</button>
-													<div id="Adapter" class="w3-hide w3-container">
-														<p>Permite que classes com interfaces incompatíveis interajam.</p>
-													</div>
-												<button onclick="myFunction('Bridge')" class="w3-button w3-block w3-left-align w3-green">Bridge:</button>
-													<div id="Bridge" class="w3-hide w3-container">
-														<p>Decouples uma abstração de sua implementação.</p>
-													</div>
-												<button onclick="myFunction('Composite')" class="w3-button w3-block w3-left-align w3-green">Composite:</button>
-													<div id="Composite" class="w3-hide w3-container">
-														<p>Trata objetos individuais e coleções de objetos de forma uniforme.</p>
-													</div>
-												<button onclick="myFunction('Decorator')" class="w3-button w3-block w3-left-align w3-green">Decorator:</button>
-													<div id="Decorator" class="w3-hide w3-container">
-														<p>Adiciona responsabilidades adicionais a um objeto sem alterar sua classe.</p>
-													</div>
-												<button onclick="myFunction('Facade')" class="w3-button w3-block w3-left-align w3-green">Facade:</button>
-													<div id="Facade" class="w3-hide w3-container">
-														<p>Fornece uma interface simples para um sistema complexo.</p>
-													</div>
-													<button onclick="myFunction('Flyweight')" class="w3-button w3-block w3-left-align w3-green">Flyweight:</button>
-													<div id="Flyweight" class="w3-hide w3-container">
-														<p>Compartilha objetos indivisíveis para economizar memória.</p>
-													</div>
-												<button onclick="myFunction('Proxy')" class="w3-button w3-block w3-left-align w3-green">Proxy:</button>
-													<div id="Proxy" class="w3-hide w3-container">
-														<p>Fornece um objeto substituto que representa outro objeto.</p>
-													</div>
+												<button onclick="myFunction('Abstract Factory')" class="w3-button w3-block w3-left-align w3-green">Abstract Factory:</button>
+												<div id="Abstract Factory" class="w3-hide w3-container">
+													<p>Fornece uma maneira de criar famílias de objetos relacionados de forma independente de suas implementações específicas.</p>
+												</div>
+															
+												<button onclick="myFunction('Builder')" class="w3-button w3-block w3-left-align w3-green">Builder:</button>
+												<div id="Builder" class="w3-hide w3-container">
+													<p>Fornece uma maneira de construir objetos complexos passo a passo.</p>
+												</div>
+												<button onclick="myFunction('Command')" class="w3-button w3-block w3-left-align w3-green">Command:</button>
+												<div id="Command" class="w3-hide w3-container">
+													<p>Encapsula uma solicitação como um objeto.</p>
+												</div>
+												<button onclick="myFunction('Data Access Object (DAO)')" class="w3-button w3-block w3-left-align w3-green">Data Access Object (DAO):</button>
+												<div id="Data Access Object (DAO)" class="w3-hide w3-container">
+													<p>Fornece uma interface para acessar dados.</p>
+												</div>
+												<button onclick="myFunction('Factory Method')" class="w3-button w3-block w3-left-align w3-green">Factory Method:</button>
+												<div id="Factory Method" class="w3-hide w3-container">
+													<p>Fornece uma maneira de criar objetos de forma flexível.</p>
+												</div>
+												<button onclick="myFunction('Interpreter')" class="w3-button w3-block w3-left-align w3-green">Interpreter:</button>
+												<div id="Interpreter" class="w3-hide w3-container">
+													<p>Fornece uma maneira de interpretar uma linguagem.</p>
+												</div>
+												<button onclick="myFunction('Iterator')" class="w3-button w3-block w3-left-align w3-green">Iterator:</button>
+												<div id="Iterator" class="w3-hide w3-container">
+													<p>Fornece uma maneira de iterar sobre uma coleção de objetos.</p>
+												</div>
+												<button onclick="myFunction('Mediator')" class="w3-button w3-block w3-left-align w3-green">Mediator:</button>
+												<div id="Mediator" class="w3-hide w3-container">
+													<p>Fornece um ponto central de comunicação entre objetos.</p>
+												</div>
+												<button onclick="myFunction('Memento')" class="w3-button w3-block w3-left-align w3-green">Memento:</button>
+												<div id="Memento" class="w3-hide w3-container">
+													<p>Permite que você salve o estado de um objeto sem violar o princípio de encapsulamento.</p>
+												</div>
+												<button onclick="myFunction('Null Object')" class="w3-button w3-block w3-left-align w3-green">Null Object:</button>
+												<div id="Null Object" class="w3-hide w3-container">
+													<p>Fornece um valor nulo para objetos.</p>
+												</div>
+												<button onclick="myFunction('Observer')" class="w3-button w3-block w3-left-align w3-green">Observer:</button>
+												<div id="Observer" class="w3-hide w3-container">
+													<p>Permite que um objeto notifique outros objetos de suas mudanças.</p>
+												</div>
+												<button onclick="myFunction('Pool')" class="w3-button w3-block w3-left-align w3-green">Pool:</button>
+												<div id="Pool" class="w3-hide w3-container">
+													<p>Fornece um pool de objetos que podem ser reutilizados.</p>
+												</div>
+												<button onclick="myFunction('Prototype')" class="w3-button w3-block w3-left-align w3-green">Prototype:</button>
+												<div id="Prototype" class="w3-hide w3-container">
+													<p>Fornece uma maneira de criar objetos copiando um objeto existente.</p>
+												</div>
+												<button onclick="myFunction('Singleton')" class="w3-button w3-block w3-left-align w3-green">Singleton:</button>
+												<div id="Singleton" class="w3-hide w3-container">
+													<p>Garante que apenas uma instância de uma classe seja criada.</p>
+												</div>
+												<button onclick="myFunction('State')" class="w3-button w3-block w3-left-align w3-green">State:</button>
+												<div id="State" class="w3-hide w3-container">
+													<p>Permite que um objeto altere seu comportamento de acordo com seu estado atual.</p>
+												</div>
+												<button onclick="myFunction('Strategy')" class="w3-button w3-block w3-left-align w3-green">Strategy:</button>
+												<div id="Strategy" class="w3-hide w3-container">
+													<p>Permite que você selecione uma implementação de uma estratégia específica em tempo de execução.</p>
+												</div>
+												<button onclick="myFunction('Template')" class="w3-button w3-block w3-left-align w3-green">Template Method:</button>
+												<div id="Template" class="w3-hide w3-container">
+													<p>Define um esqueleto de um algoritmo e permite que os subclasses implementem etapas específicas.</p>
+												</div>
+												<button onclick="myFunction('Visitor')" class="w3-button w3-block w3-left-align w3-green">Visitor:</button>
+												<div id="Visitor" class="w3-hide w3-container">
+													<p>Permite que você aplique uma operação a todos os elementos de uma estrutura de dados.</p>
+												</div>
 											</div>
+											<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+
+											
+
+											
 							</div>
 						  </div15><!--DIV FIM PARA O JQUERY-->
 					  </div>
