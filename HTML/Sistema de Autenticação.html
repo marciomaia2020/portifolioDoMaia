@@ -1,0 +1,1717 @@
+		<div class="w3-container w3-center">
+			<h2>Sistema de Autenticação</h2>
+			<button id="btn6" class="fa-solid fa-plus"></button>
+			<button id="btn5" class="fa-solid fa-minus"></button>
+		</div><br />
+		<div class="w3-container">
+			<div class="w3-bar w3-green">
+				<button class="w3-bar-item w3-button" onclick="openIA('Autenticacao')">Sistema de Autenticação</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('LogineSenha')">Login e Senha</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('2FAMFA')">2FA / MFA</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('Biometria')">Biometria</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('TokendeAcesso')">Token de Acesso</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('OpenIDConnect')">OpenID Connect (OIDC)</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('SAML')">SAML</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('LDAP')">LDAP</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('Kerberos')">Kerberos</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('JWT')">JWT</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('Keycloak')">Keycloak</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('SingleSignOn')">Single sign-on (SSO)</button>
+				<button class="w3-bar-item w3-button" onclick="openIA('IAM')">Identidade e acesso (IAM)</button>
+			</div>
+			<div3>
+				<div id="Autenticacao" class="w3-container ia" style="display:yes">
+					<h3>Autenticação, Autoriazação e Identificação</h3>
+					<!--
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/XvngC85C/idauthauth.jpg" alt="SisAut" style="width:100%">
+					</div>
+					-->
+					<p>Antes de tudo saiba diferenciar estes três termos: <u>Autenticação</u>, <u>Autorização<u> e Identificação</u>!</u></p>
+					
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado1">Autenticação</c>: Prova a identidade […] de um usuário do sistema de computador (por exemplo, comparando a senha inserida com a senha armazenada no banco de dados).</p>
+						<p><c class="configurado1">Autorização</c>: Especifica direitos/privilégios de acesso aos recursos.</p>
+						<p><c class="configurado1">Identificação</c>: Indica a identidade de uma pessoa ou coisa.</p>
+						<p>Resumindo</p>
+						<ul>
+							<li><b>Autentica</b> = Prova identidade</li>
+							<li><b>Autoriza</b> = Dá direitos e previlêgios (de acesso)</li>
+							<li><b>Identifica</b> = Indica a identidade</li>
+						</ul>
+					</div>
+					<ul>
+						<li><b>Quais são os sistemas de autenticação existentes?</b></li>
+					</ul>
+					<p>
+						<c class="configurado1">Login e Senha</c>: O método mais básico de autenticação, onde os
+						usuários fornecem um nome de usuário e uma senha para acessar um sistema ou serviço.
+					</p>
+					<p>
+						<c class="configurado1">Autenticação de Dois Fatores (2FA) e Multifatores (MFA)</c>: Além do
+						nome de usuário e senha, esse método exige uma segunda forma de verificação, como um código
+						enviado por mensagem de texto, aplicativo autenticador ou token de hardware.
+					</p>
+					<p>
+						<c class="configurado1">Biometria</c>: Utiliza características físicas ou comportamentais únicas
+						de um indivíduo, como impressão digital, reconhecimento facial, íris, voz, para autenticação.
+					</p>
+					<p>
+						<c class="configurado1">Token de Acesso</c>: Geração de tokens exclusivos que são usados para
+						autenticar um usuário por um período específico de tempo.
+					</p>
+					<p>
+						<c class="configurado1">OAuth (Open Authorization)</c>: Um protocolo de autorização que permite
+						que aplicativos obtenham acesso a recursos em nome de um usuário sem compartilhar suas
+						credenciais.
+					</p>
+					<p>
+						<c class="configurado1">OpenID Connect</c>: Um protocolo de autenticação que permite aos
+						usuários autenticar-se em vários sites usando uma única identidade.
+					</p>
+					<p>
+						<c class="configurado1">LDAP (Lightweight Directory Access Protocol)</c>: Um protocolo padrão
+						para acessar e manter serviços de diretório, frequentemente utilizado para autenticação em
+						sistemas corporativos.
+					</p>
+					<p>
+						<c class="configurado1">SAML (Security Assertion Markup Language</c>: Um padrão XML para trocar
+						informações de autenticação e autorização entre partes, especialmente em ambientes de
+						autenticação única (Single Sign-On - SSO).
+					</p>
+					<p>
+						<c class="configurado1">Kerberos</c>: Um protocolo de autenticação de rede que fornece um forte
+						serviço de autenticação por meio de criptografia.
+					</p>
+					<p>
+						<c class="configurado1">JWT (JSON Web Token)</c>: Um formato compacto e autossuficiente para
+						representar informações entre partes, frequentemente utilizado para autenticação e autorização.
+					</p>
+				</div>
+				<div id="LogineSenha" class="w3-container ia" style="display:none">
+					<h3>Login e Senha</h3>
+					
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado1">Login e Senha</c>: O método mais básico de autenticação, onde os	usuários fornecem um nome de usuário e uma senha para acessar um sistema ou serviço.</p>
+						<p><c class="configurado">Login</c>: O usuário fornece um identificador único, como um nome de	usuário, endereço de e-mail ou número de identificação.	</p>
+						<p><c class="configurado">Senha:</c> O usuário também fornece uma senha associada ao login. A senha	é uma sequência de caracteres que deve ser conhecida apenas pelo usuário.</p>
+					</div>
+					<p>Essas credenciais (login e senha) são então verificadas por um sistema de autenticação para	determinar se o usuário é quem ele afirma ser. Se as credenciais estiverem corretas, o acesso é	concedido; caso contrário, o acesso é negado.</p>
+					<p>Embora seja um método amplamente utilizado, o sistema de login e senha tem algumas limitações e	desafios de segurança:</p>
+					<p>
+						<c class="configurado1">Vulnerabilidade a Senhas Fracas</c>: Senhas fracas são mais suscetíveis	a ataques de força bruta ou adivinhação.
+					</p>
+					<p>
+						<c class="configurado1">Roubo de Credenciais</c>: Se as credenciais (login e senha) forem
+						roubadas ou comprometidas, um invasor pode acessar a conta do usuário.
+					</p>
+					<p>
+						<c class="configurado1">Reutilização de Senhas</c>: Muitos usuários têm o hábito de reutilizar
+						senhas em vários serviços, aumentando o risco se uma senha for comprometida.
+					</p>
+					<p>
+						<c class="configurado1">Phishing</c>: Técnicas de phishing podem enganar os usuários para que
+						revelem suas credenciais.
+					</p>
+					<p>Para mitigar essas preocupações, as melhores práticas incluem o uso de senhas fortes, a
+						implementação de políticas de senha robustas, o monitoramento de atividades suspeitas e a adoção
+						de métodos adicionais de autenticação, como a autenticação de dois fatores (2FA) ou a
+						autenticação multifatorial (MFA).</p>
+				</div>
+				<div id="2FAMFA" class="w3-container ia" style="display:none">
+					<h3>2FA / MFA</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">Autenticação de Dois Fatores (2FA) e Multifatores (MFA)</c>: Além do nome de usuário e senha, esse método exige uma segunda forma de verificação, como um código enviado	por mensagem de texto, aplicativo autenticador ou token de hardware. </p>
+					</div>
+					<p>A Autenticação de Dois Fatores (2FA) e a Autenticação Multifatorial (MFA) são métodos de
+						segurança adicionais que vão além do tradicional nome de usuário e senha para verificar a
+						identidade do usuário. Ambos visam reforçar a segurança das contas online, sistemas e serviços.
+						Vamos entender cada um deles:</p>
+					<p>
+						<c class="configurado">Autenticação de Dois Fatores (2FA):
+					</p>
+					<p><u>O que é</u>: A 2FA envolve o uso de dois métodos de autenticação diferentes antes de conceder
+						o acesso. Normalmente, esses métodos são categorizados em três tipos: algo que você sabe
+						(senha), algo que você tem (dispositivo físico, token) e algo que você é (biometria).</p>
+					<p>Exemplo prático: Após inserir seu nome de usuário e senha (algo que você sabe), você também
+						precisa fornecer um código de verificação enviado para seu smartphone (algo que você tem).</p>
+					<p><b>Benefícios</b>: A 2FA adiciona uma camada adicional de segurança, tornando mais difícil para
+						um invasor obter acesso, mesmo se tiver conhecimento da senha.
+					<p>
+						<c class="configurado">Autenticação Multifatorial (MFA):
+					</p>
+					<p><u>O que é</u>: A MFA é uma extensão da 2FA e envolve o uso de três ou mais métodos de
+						autenticação para verificar a identidade do usuário.</p>
+					<p>Exemplo prático: Além do nome de usuário e senha, o usuário pode ser solicitado a fornecer uma
+						impressão digital (biometria) e inserir um código de verificação recebido por mensagem de texto
+						(algo que você tem).</p>
+					<p><b>Benefícios</b>: A MFA oferece uma segurança ainda maior do que a 2FA, pois adiciona mais
+						métodos de autenticação, dificultando ainda mais para um invasor obter acesso não autorizado.
+					</p>
+					<p>Ambas as 2FA e MFA são eficazes para proteger contas online contra ameaças como ataques de
+						phishing, roubo de credenciais e acesso não autorizado. A escolha entre 2FA e MFA depende dos
+						requisitos de segurança específicos do sistema ou serviço em questão. Em muitos casos, a
+						implementação de uma forma de autenticação multifatorial é recomendada para reforçar a
+						segurança.</p>
+					<p>Saiba mais...</p>
+					<p>
+						<c class="configurado">O que é autenticação multifator (MFA)?</c>
+					</p>
+					<p>A autenticação multifator (MFA) é um método de autenticação que exige que o usuário forneça dois
+						ou mais fatores de verificação para obter acesso a um recurso, como um aplicativo, conta online
+						ou VPN. A MFA é um componente central de uma forte política <u>de gerenciamento de identidade e
+							acesso (IAM)</u> . Em vez de apenas solicitar um nome de usuário e uma senha, o MFA exige um
+						ou mais fatores de verificação adicionais, o que diminui a probabilidade de um ataque
+						cibernético bem-sucedido.</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/L8Y3Rysx/high-level-mfa.png" alt="MFA-" style="width:100%">
+					</div>
+
+					<p>
+						<c class="configurado3">Por que o MFA é importante?</c>
+					</p>
+					<p>O principal benefício do MFA é que ele aumentará a segurança da sua organização, exigindo que os
+						usuários se identifiquem por mais do que um nome de usuário e uma senha. Embora importantes, os
+						nomes de usuário e as senhas são vulneráveis ​​a <u>taques de força bruta</u> e podem ser
+						roubados por terceiros. Aplicar o uso de um fator MFA, como uma impressão digital ou uma chave
+						física de hardware, significa maior confiança de que sua organização permanecerá protegida
+						contra criminosos cibernéticos.</p>
+
+					<p>
+						<c class="configurado3">Como funciona o MFA?</c>
+					</p>
+					<p>A MFA funciona exigindo informações adicionais de verificação (fatores). Um dos fatores de MFA
+						mais comuns que os usuários encontram são <u>as senhas de uso único (OTP)</u>. OTPs são aqueles
+						códigos de 4 a 8 dígitos que você costuma receber por e-mail, SMS ou algum tipo de aplicativo
+						móvel. Com OTPs, um novo código é gerado periodicamente ou sempre que uma solicitação de
+						autenticação é enviada. O código é gerado com base em um valor inicial que é atribuído ao
+						usuário quando ele se registra pela primeira vez e em algum outro fator que pode ser
+						simplesmente um contador incrementado ou um valor de tempo.</p>
+
+					<p>
+						<c class="configurado3">Três tipos principais de métodos de autenticação MFA</c>
+					</p>
+					<p>A maior parte da metodologia de autenticação MFA é baseada em um dos três tipos de informações
+						adicionais:</p>
+					<ol>
+						<li>Coisas que você sabe (conhecimento), como uma senha ou PIN</li>
+						<li>Coisas que você possui (posse), como um crachá ou smartphone</li>
+						<li>Coisas que você é (inerência), como dados biométricos, como impressões digitais ou
+							reconhecimento de voz</li>
+					</ol>
+
+					<p>
+						<c class="configurado3">Exemplos de MFA</c>
+					</p>
+					<p>Exemplos de autenticação multifator incluem o uso de uma combinação destes elementos para
+						autenticar:</p>
+					<dl>
+						<dt>Conhecimento</dt>
+						<dd>Senha</dd>
+						<dd>Respostas a perguntas de segurança pessoal</dd>
+						<dd>OTPs (podem ser conhecimento e posse - você conhece o OTP e precisa ter algo em sua posse
+							para obtê-lo, como seu telefone)</dd>
+					</dl>
+					<dl>
+						<dt>Posse</dt>
+						<dd>OTPs gerados por aplicativos de smartphone</dd>
+						<dd>OTPs enviados por texto ou e-mail</dd>
+						<dd>Crachás de acesso, dispositivos USB, cartões inteligentes ou controles remotos ou chaves de
+							segurança</dd>
+						<dd>Tokens e certificados de software</dd>
+					</dl>
+					<dl>
+						<dt>Inerência</dt>
+						<dd>Impressões digitais, reconhecimento facial, leitura de voz, retina ou íris ou outros dados
+							biométricos</dd>
+						<dd>Análise comportamental</dd>
+					</dl>
+					<p>
+						<c class="configurado3">Outros tipos de autenticação multifator</c>
+					</p>
+					<p>À medida que o MFA integra aprendizado de máquina e inteligência artificial (IA), os métodos de
+						autenticação se tornam mais sofisticados, incluindo:</p>
+					<p><b>Baseado em localização</b></p>
+					<p>A MFA baseada em localização geralmente analisa o endereço IP de um usuário e, se possível, sua
+						localização geográfica. Essas informações podem ser usadas para simplesmente bloquear o acesso
+						de um usuário se suas informações de localização não corresponderem ao especificado em uma lista
+						de permissões ou podem ser usadas como uma forma adicional de autenticação, além de outros
+						fatores, como uma senha ou OTP para confirmar a identidade do usuário. identidade.</p>
+
+					<p><b>Autenticação Adaptativa ou Autenticação Baseada em Risco</b></p>
+					<p>Outro subconjunto de MFA é a <u>Autenticação Adaptativa</u>, também conhecida como Autenticação
+						Baseada em Risco. A Autenticação Adaptativa analisa fatores adicionais considerando o contexto e
+						o comportamento durante a autenticação e geralmente usa esses valores para atribuir um nível de
+						risco associado à tentativa de login. Por exemplo:</p>
+					<ul>
+						<li>De onde está o usuário ao tentar acessar as informações?</li>
+						<li>Quando você está tentando acessar informações da empresa? Durante o seu horário normal ou
+							fora do horário de trabalho?</li>
+						<li>Que tipo de dispositivo é usado? É o mesmo usado ontem?</li>
+						<li>A conexão é via rede privada ou rede pública?</li>
+					</ul>
+					<p>O nível de risco é calculado com base em como essas perguntas são respondidas e pode ser usado
+						para determinar se um usuário será solicitado ou não a fornecer um fator de autenticação
+						adicional ou se ele terá ou não permissão para fazer login. este tipo de autenticação é a
+						autenticação baseada em risco.</p>
+					<p>Com a Autenticação Adaptativa implementada, um usuário que faz login em um café tarde da noite,
+						uma atividade que normalmente não faz, pode ser solicitado a inserir um código enviado por
+						mensagem de texto para o telefone do usuário, além de fornecer seu nome de usuário e senha.
+						Considerando que, quando eles fazem login no escritório todos os dias às 9h, eles são
+						simplesmente solicitados a fornecer seu nome de usuário e senha.</p>
+					<p>Os cibercriminosos passam a vida tentando roubar suas informações e uma estratégia de MFA eficaz
+						e aplicada é sua primeira linha de defesa contra eles. Um plano de segurança de dados eficaz
+						economizará tempo e dinheiro para sua organização no futuro.</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/kg85F84j/adaptive-mfa.png" alt="adaptive-mfa-"
+							style="width:100%">
+					</div>
+
+
+					<p>
+						<c class="configurado3">Qual é a diferença entre MFA e autenticação de dois fatores (2FA)?</c>
+					</p>
+					<p>A MFA é frequentemente usada de forma intercambiável com a autenticação de dois fatores (2FA). O
+						2FA é basicamente um subconjunto do MFA, pois o 2FA restringe o número de fatores necessários a
+						apenas dois fatores, enquanto o MFA pode ser dois ou mais.</p>
+					<p>
+						<c class="configurado3">O que é MFA em computação em nuvem</c>
+					</p>
+					<p>Com o advento da Cloud Computing, o MFA tornou-se ainda mais necessário. À medida que as empresas
+						migram seus sistemas para a nuvem, elas não podem mais contar com a presença física de um
+						usuário na mesma rede que um sistema como fator de segurança. É necessário implementar segurança
+						adicional para garantir que aqueles que acedem aos sistemas não sejam maus intervenientes. Como
+						os usuários acessam esses sistemas a qualquer hora e de qualquer lugar, a MFA pode ajudar a
+						garantir que eles sejam quem dizem ser, solicitando fatores de autenticação adicionais que são
+						mais difíceis de serem imitados por hackers ou de usar métodos de força bruta para decifrar.</p>
+					<p>
+						<c class="configurado">MFA para Office 365</c>
+					</p>
+					<p>Muitos sistemas baseados em nuvem fornecem suas próprias ofertas de MFA, como AWS ou o produto
+						Office 365 da Microsoft. Por padrão, o Office 365 usa o Azure Active Directory (AD) como sistema
+						de autenticação. E existem algumas limitações. Por exemplo, você só tem quatro opções básicas
+						quando se trata do tipo de fator de autenticação adicional que eles podem usar: Microsoft
+						Authenticator, SMS, Voice e Oauth Token. Você também pode ter que gastar mais em licenciamento,
+						dependendo dos tipos de opções que deseja disponibilizar e se deseja ou não controlar exatamente
+						quais usuários precisarão usar o MFA.
+
+						Soluções de identidade como serviço (IDaaS), como OneLogin, oferecem muito mais métodos de
+						autenticação MFA quando se trata de fatores <u>de autenticação fortes</u> e se integram mais
+						facilmente a aplicativos fora do ecossistema da Microsoft.</p>
+				</div>
+				<div id="Biometria" class="w3-container ia" style="display:none">
+					<h3>Biometria</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">Biometria</c>: Utiliza características físicas ou comportamentais únicas 	de um indivíduo, como impressão digital, reconhecimento facial, íris, voz, para autenticação.</p>
+					</div>
+					<p>A biometria é uma tecnologia que utiliza características físicas, comportamentais ou fisiológicas
+						únicas de um indivíduo para identificá-lo ou verificar sua identidade. Essas características são
+						usadas para autenticar a identidade de uma pessoa com base em atributos únicos, proporcionando
+						um nível mais elevado de segurança em comparação com métodos tradicionais, como senhas ou
+						cartões.</p>
+					<p>Existem várias modalidades de biometria, incluindo:</p>
+					<p>
+						<c class="configurado1">Biometria de Impressão Digital</c>: Baseia-se na análise das
+						características únicas das impressões digitais de uma pessoa.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento Facial</c>: Usa características faciais
+						únicas, como proporções e características únicas, para identificar uma pessoa.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Íris</c>: Analisa os padrões únicos encontrados na íris dos
+						olhos.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento de Voz</c>: Analisa características vocais
+						únicas, como tom, cadência e entonação.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento de Veias</c>: Analisa os padrões únicos de
+						veias sob a pele.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento de Retina</c>: Analisa os padrões únicos na
+						camada de tecido na parte de trás do olho.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento de Impressão Palmar</c>: Baseia-se nas
+						características únicas das palmas das mãos.
+					</p>
+					<p>
+						<c class="configurado1">Biometria de Reconhecimento de Assinatura</c>: Analisa a forma e o
+						estilo da assinatura de uma pessoa.
+					</p>
+					<p>Como Funciona:</p>
+					<p>
+						<c class="configurado1">Registro</c>: Durante o processo de registro, as características
+						biométricas exclusivas de um indivíduo são capturadas e armazenadas em um formato que permite
+						comparações futuras.
+					</p>
+					<p>
+						<c class="configurado1">Comparação</c>: Quando o indivíduo tenta se autenticar, suas
+						características biométricas são capturadas novamente e comparadas com as armazenadas no banco de
+						dados.
+					</p>
+					<p>
+						<c class="configurado1">Autenticação ou Verificação</c>: Se houver uma correspondência
+						aceitável, a pessoa é autenticada ou verificada com sucesso.
+					</p>
+					</p>Vantagens:</p>
+					<p>
+						<c class="configurado1">Segurança</c>: A biometria oferece um alto nível de segurança, pois é
+						difícil replicar ou falsificar características biométricas únicas.
+					</p>
+					<p>
+						<c class="configurado1">Conveniência</c>: Não requer a lembrança de senhas ou o uso de cartões,
+						tornando o processo de autenticação mais conveniente.
+					</p>
+					</p>Desafios:</p>
+					<p>
+						<c class="configurado1">Privacidade</c>: A coleta e armazenamento de dados biométricos levantam
+						questões de privacidade.
+					</p>
+					<p>
+						<c class="configurado1">Custo</c>: A implementação de sistemas biométricos pode ser mais cara do
+						que métodos tradicionais.
+					</p>
+					<p>A biometria é amplamente utilizada em sistemas de segurança, controle de acesso, dispositivos
+						móveis, sistemas bancários e outros setores onde a autenticação precisa ser segura e eficaz.</p>
+				</div>
+				<div id="TokendeAcesso" class="w3-container ia" style="display:none">
+					<h3>Token de Acesso</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">Token de Acesso</c>: Geração de tokens exclusivos que são usados para autenticar um usuário por um período específico de tempo.</p>
+					</div>
+					<p>Um token de acesso, muitas vezes referido simplesmente como "token," é uma peça de informação que
+						é frequentemente usada em sistemas de segurança para autenticação e autorização. Geralmente, é
+						um código único que é atribuído a um usuário ou aplicativo específico e é usado para acessar
+						recursos específicos.</p>
+					<p>Aqui estão alguns conceitos-chave relacionados a tokens de acesso:</p>
+					<p>
+						<c class="configurado1">Autenticação</c>: O token de acesso é frequentemente utilizado como
+						parte do processo de autenticação. Após fornecer credenciais de autenticação (como nome de
+						usuário e senha), o sistema pode gerar um token de acesso para representar a identidade
+						autenticada do usuário.
+					</p>
+					<p>
+						<c class="configurado1">Autorização</c>: O token de acesso também é usado para autorização. Ele
+						contém informações que especificam quais recursos o usuário ou aplicativo tem permissão para
+						acessar.
+					</p>
+					<p>
+						<c class="configurado1">Duração Limitada</c>: Muitos tokens de acesso têm uma duração limitada.
+						Isso significa que eles são válidos apenas por um período específico de tempo, após o qual é
+						necessário obter um novo token para continuar a acessar os recursos.
+					</p>
+					<p>
+						<c class="configurado1">Renovação</c>: Alguns sistemas oferecem a capacidade de renovar um token
+						de acesso antes de expirar, geralmente através de um processo de renovação automática.
+					</p>
+					<p>
+						<c class="configurado1">Escopo</c>: Os tokens de acesso podem ter escopo, indicando as operações
+						ou recursos específicos que o titular do token está autorizado a acessar.
+					</p>
+					<p>
+						<c class="configurado1"> Segurança</c>: Os tokens de acesso devem ser protegidos contra acesso
+						não autorizado. Métodos comuns incluem o uso de HTTPS para comunicações seguras e práticas de
+						armazenamento seguro.
+					</p>
+					<p>
+						<c class="configurado1">Exemplo prático</c>: Em sistemas web, após efetuar login em uma
+						aplicação, um token de acesso pode ser gerado e incluído nas solicitações subsequentes para
+						autenticar o usuário.
+					</p>
+					<p>Tokens de acesso são frequentemente utilizados em ambientes de desenvolvimento de aplicativos,
+						APIs (interfaces de programação de aplicativos), sistemas de autenticação única (SSO), e em
+						outros contextos onde a segurança é uma prioridade. O tipo específico de token (por exemplo,
+						<u>JSON Web Token</u> - WT, <u>OAuth token</u>) e como ele é utilizado pode variar dependendo do
+						contexto e dos requisitos do sistema.</p>
+
+					<p>
+						<c class="configurado">JSON Web Token (JWT)</c>
+					</p>
+					<p>
+						<c class="configurado1">JSON Web Token (JWT)</c> é um padrão aberto (RFC 7519) que define um
+						formato compacto e autossuficiente para representar informações entre partes como um objeto
+						JSON. Esse token é projetado para ser facilmente verificado e validado, tornando-o adequado para
+						autenticação e troca segura de informações entre diferentes sistemas. Aqui estão alguns
+						conceitos-chave relacionados a JSON Web Tokens:
+					</p>
+					<p>Estrutura Básica:</p>
+					<p>Um JWT é uma string codificada que consiste em três partes separadas por pontos:
+						header.payload.signature.</p>
+					<p>O Header contém informações sobre como o JWT é assinado.</p>
+					<p>O Payload contém as reivindicações (claims). As reivindicações são afirmações sobre uma entidade
+						(geralmente um usuário) e metadados adicionais.</p>
+					<p>A Signature é usada para verificar a integridade do token e garantir que ele não foi alterado.
+					</p>
+					<p>
+						<c class="configurado1">Reivindicações (Claims)</c>:
+					</p>
+					<p>As reivindicações são declarações sobre uma entidade (geralmente o usuário) e informações
+						adicionais.</p>
+					<p>Existem três tipos de reivindicações: registradas, públicas e privadas.</p>
+					<p>Exemplos de reivindicações incluem "iss" (emissor), "sub" (sujeito), "exp" (data de expiração),
+						"iat" (data de emissão), entre outras.</p>
+					<p>
+						<c class="configurado1">Assinatura</c>:
+					</p>
+					<p>A assinatura é gerada usando o cabeçalho codificado, o payload codificado e uma chave secreta (ou
+						certificado).</p>
+					<p>A assinatura é usada para verificar se o token foi alterado durante a transmissão.</p>
+					<p>
+						<c class="configurado1">Uso em Autenticação</c>:
+					</p>
+					<p> JWTs são frequentemente utilizados como tokens de acesso em sistemas de autenticação.</p>
+					<p>Após um usuário se autenticar, um JWT é gerado e enviado para o cliente, que o incluirá em
+						solicitações subsequentes para acessar recursos protegidos.</p>
+					<p>
+						<c class="configurado1">Compactação</c>:
+					</p>
+					<p>Por ser compacto, os JWTs são adequados para ambientes onde o tamanho da mensagem é crítico, como
+						em solicitações HTTP e cookies.</p>
+					<p>
+						<c class="configurado1">Segurança</c>:
+					</p>
+					<p>A segurança de um JWT depende da robustez da assinatura. É importante proteger a chave usada para
+						assinar o token.</p>
+					<p>
+						<c class="configurado1">Libraries e Frameworks</c>:
+					</p>
+					<p>Existem várias bibliotecas e frameworks em várias linguagens de programação que facilitam a
+						geração, validação e manipulação de JWTs.</p>
+					<p>Os JSON Web Tokens são amplamente utilizados em aplicativos web modernos, serviços de
+						autenticação única (SSO), APIs (interfaces de programação de aplicativos) e sistemas
+						distribuídos onde a comunicação segura entre partes é essencial.</p>
+
+					<p>Aqui estão exemplos simples de como criar e verificar JSON Web Tokens (JWT) em algumas linguagens
+						de programação populares. Note que esses são exemplos básicos e na prática você deve tomar
+						medidas adicionais para garantir a segurança, como armazenar chaves secretas de forma segura.
+					</p>
+
+					<p>Exemplo em JavaScript (Node.js):</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/65b9VX9t/Chat-GPT-Firefox-Developer-Edition.jpg" alt="JWT"
+							style="width:100%">
+					</div>
+
+					<p>Exemplo em Python:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/8CQgwkxQ/as.jpg" alt="Python" style="width:100%">
+					</div>
+
+					<p>Exemplo em Java (utilizando a biblioteca jjwt):</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/KjK0dBg9/asdf.jpg" alt="jjwt" style="width:100%">
+					</div>
+					<code>...ken).getBody();</code>
+					<p>Lembre-se de substituir minhaChaveSecreta por uma chave segura e apropriada para o ambiente de
+						produção. Esses são exemplos básicos e a implementação real pode variar dependendo dos
+						requisitos específicos do seu aplicativo.</p>
+
+					<p>
+						<c class="configurado">OAuth token</c>
+					</p>
+					<p>
+						<c class="configurado1">OAuth (Open Authorization)</c> é um protocolo de autorização padrão da
+						indústria que permite que aplicativos de terceiros obtenham acesso restrito a recursos em nome
+						de um usuário, sem que o aplicativo precise ter as credenciais do usuário.O OAuth é amplamente
+						utilizado para fornecer autorização segura e limitada entre aplicativos, especialmente em
+						contextos de APIs (Interfaces de Programação de Aplicações) e serviços web.
+					</p>
+					<p>O conceito chave em OAuth é o "token".</p> Um token OAuth é uma credencial de acesso que é
+					emitida pelo provedor de serviços após uma solicitação bem-sucedida de autorização.Existem
+					diferentes tipos de tokens no OAuth, mas o mais comum é o "Access Token".</p>
+					<p>Como Funciona o Fluxo Básico do OAuth:</p>
+					<p>Registro do Aplicativo:</p>
+					<p>O desenvolvedor do aplicativo registra o aplicativo com o provedor de serviços OAuth, obtendo um
+						client_id e client_secret.</p>
+					<p>Solicitação de Autorização:</p>
+					<p>O aplicativo solicita a autorização do usuário para acessar seus recursos no provedor de
+						serviços.</p>
+					<p>O usuário é redirecionado para uma página de login do provedor de serviços.</p>
+					<p>Concessão de Autorização:</p>
+					<p>O usuário concede permissão para o aplicativo acessar seus recursos.</p>
+					<p>O provedor de serviços gera um código de autorização.</p>
+					<p>Troca de Código por Token de Acesso:</p>
+					<p>O aplicativo troca o código de autorização pelo Access Token, autenticando-se com suas
+						credenciais (client_id e client_secret).</p>
+					<p>O provedor de serviços retorna o Access Token ao aplicativo.</p>
+					<p>Acesso aos Recursos:</p>
+					<p>O aplicativo usa o Access Token para acessar os recursos do usuário no provedor de serviços, sem
+						precisar da senha do usuário.</p>
+					<p>Tipos de Tokens OAuth:</p>
+					<p>
+						<c class="configurado1">Access Token</c>:
+					</p>
+					Concede acesso limitado aos recursos protegidos no provedor de serviços.</p>
+					Pode ter uma vida útil limitada.</p>
+					<p>
+						<c class="configurado1">Refresh Token</c>:
+					</p>
+					Usado para obter um novo Access Token quando o Access Token expira.</p>
+					Permite uma experiência contínua do usuário sem precisar reautenticar.</p>
+					<p>
+						<c class="configurado1">ID Token</c>.
+					</p>
+					<p>Fornece informações de identidade do usuário.</p>
+					<p>Muitas vezes usado em conjunto com OpenID Connect para autenticação.</p>
+					<p>O OAuth é usado por muitos provedores de serviços, como Google, Facebook e GitHub, para permitir
+						que aplicativos de terceiros acessem dados ou recursos em nome de usuários sem compartilhar suas
+						credenciais. Ele é fundamental para a integração segura entre diferentes serviços online.</p>
+
+
+					<p>Exemplo em JavaScript (Node.js) usando a biblioteca oauth:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/8cXdQQXd/n.jpg" alt="Boauth" style="width:100%">
+					</div>
+					<p>Exemplo em Python usando a biblioteca requests_oauthlib:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/KzvgZpM0/p.jpg" alt="Boauth" style="width:100%">
+					</div>
+					<p>Esses são exemplos simples e genéricos. Na prática, você precisaria adaptar o código de acordo
+						com a API específica que está integrando e seguir o fluxo de autenticação OAuth descrito pelo
+						provedor de serviços. Certifique-se de ler a documentação do provedor para obter detalhes
+						específicos.</p>
+				</div>
+				<div id="OpenIDConnect" class="w3-container ia" style="display:none">
+					<h3>OpenID Connect (OIDC)</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					 <p><c class="configurado">OpenID Connect</c>: Um protocolo de autenticação que permite aos usuários autenticar-se em vários sites usando uma única identidade.</p>
+					</div>
+					<p>O OpenID Connect (OIDC) é uma camada de autenticação baseada no protocolo OAuth 2.0. Ele fornece
+						uma extensão para o OAuth, adicionando funcionalidades de identidade e autenticação, permitindo
+						a integração de autenticação única (SSO) e verificação de identidade em aplicativos e serviços.
+					</p>
+					<p>Principais Características do OpenID Connect:</p>
+					<p>
+						<c class="configurado1">Autenticação</c>: O OIDC permite que um aplicativo solicite e verifique
+						a identidade de um usuário usando provedores de identidade compatíveis.
+					</p>
+					<p>
+						<c class="configurado1">Tokens de Identidade</c>: Além dos tokens OAuth padrão (Access Token e
+						Refresh Token), o OIDC introduz um token adicional chamado ID Token. Este token contém
+						informações de identidade do usuário.
+					</p>
+					<p>
+						<c class="configurado1">Fluxos de Autenticação</c>: Oferece diferentes fluxos de autenticação,
+						como o fluxo de código de autorização, o fluxo implícito e o fluxo híbrido, para atender a
+						diferentes casos de uso.
+					</p>
+					<p>
+						<c class="configurado1">UserInfo Endpoint</c>: Fornece um ponto de extremidade UserInfo que
+						permite que os aplicativos obtenham informações adicionais sobre o usuário usando o ID Token.
+					</p>
+					<p>
+						<c class="configurado1">Discovery Endpoint</c>: Fornece metadados sobre o provedor de
+						identidade, incluindo informações sobre endpoints, algoritmos suportados e configurações.
+					</p>
+					<p>
+						<c class="configurado1">Integração com OAuth 2.0</c>: Baseia-se no protocolo OAuth 2.0,
+						aproveitando seus conceitos e estrutura, mas adicionando funcionalidades de autenticação.
+					</p>
+					<p>Exemplo de Fluxo de Autenticação (Fluxo de Código de Autorização):</p>
+					<p>O aplicativo envia o usuário para a página de login do provedor de identidade.</p>
+					<p>O usuário autentica-se no provedor de identidade.</p>
+					<p>O provedor de identidade redireciona o usuário de volta para o aplicativo com um código de
+						autorização.</p>
+					<p>O aplicativo troca o código de autorização por um conjunto de tokens, incluindo o ID Token.</p>
+					<p>Exemplo de Solicitação de Autenticação em JavaScript (uso do pacote oidc-client):</p>
+					<p>Exemplo em Python usando a biblioteca requests_oauthlib:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/fbXhVMxL/a.jpg" alt="OIC" style="width:100%">
+					</div>
+					<p>Esses são exemplos básicos para ilustrar os conceitos do OpenID Connect. A implementação real
+						pode variar dependendo do provedor de identidade utilizado e dos requisitos específicos do seu
+						aplicativo. Certifique-se de consultar a documentação do provedor de identidade para obter
+						instruções detalhadas.</p>
+				</div>
+				<div id="LDAP" class="w3-container ia" style="display:none">
+					<h3>LDAP</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">LDAP (Lightweight Directory Access Protocol)</c>: Um protocolo padrão	para acessar e manter serviços de diretório, frequentemente utilizado para autenticação em	sistemas corporativos.</p>
+						<p>O LDAP (Lightweight Directory Access Protocol) é um protocolo de acesso a diretórios, usado para	acessar e gerenciar informações armazenadas em um serviço de diretório. Um serviço de diretório	é um banco de dados especializado projetado para armazenar e recuperar informações de forma	eficiente. O LDAP é frequentemente utilizado para autenticação e autorização em redes,	armazenamento de informações de usuários, endereços de e-mail, configurações de sistema, entre	outros.</p>
+					</div>
+					<p>Aqui estão alguns pontos-chave sobre o LDAP:</p>	<p>
+						<c class="configurado1">Estrutura Hierárquica</c>:
+					</p>
+					<p>Os dados no LDAP são organizados em uma estrutura hierárquica, semelhante a uma árvore. Cada
+						entrada no diretório é identificada por um Distinguished Name (DN) único.</p>
+					<p>
+						<c class="configurado1">Entradas e Atributos</c>:
+					</p>
+					<p>Uma entrada no LDAP contém informações sobre um objeto específico, como um usuário ou um recurso.
+					</p>
+					<p>Cada entrada possui atributos que representam características do objeto (por exemplo, nome,
+						e-mail, telefone).</p>
+					<p>
+						<c class="configurado1">Protocolo Cliente-Servidor</c>:
+					</p>
+					<p>O LDAP opera em um modelo cliente-servidor, onde um cliente LDAP envia solicitações ao servidor
+						LDAP para recuperar ou modificar dados.</p>
+					<p>
+						<c class="configurado1">Operações LDAP Comuns</c>:
+					</p>
+					<p>Bind: Autenticação do cliente no servidor.</p>
+					<p>Search: Busca por entradas no diretório com base em critérios específicos.</p>
+					<p>Add, Delete, Modify, ModifyDN: Operações para adicionar, excluir, modificar e renomear entradas.
+					</p>
+					<p>
+						<c class="configurado1">Porta Padrão</c>:
+					</p>
+					<p>O LDAP opera na porta TCP 389 (ou 636 para LDAPS, LDAP sobre SSL/TLS).</p>
+					<p>
+						<c class="configurado1">Segurança</c>:
+					</p>
+					<p>O LDAPS (LDAP sobre SSL/TLS) criptografa a comunicação entre o cliente e o servidor,
+						proporcionando segurança durante a transmissão.</p>
+					<p>
+						<c class="configurado1">Exemplos de Implementações</c>:
+					</p>
+					<p>Microsoft Active Directory é uma implementação LDAP utilizada em ambientes Windows.</p>
+					<p>OpenLDAP é uma implementação de código aberto comumente usada em ambientes Unix.</p>
+					<p>Utilização em Autenticação:</p>
+					<p>Muitos sistemas de autenticação, como autenticação única (SSO), utilizam o LDAP para verificar as
+						credenciais dos usuários.</p>
+					<p>Exemplo de Conexão LDAP em Python usando a biblioteca ldap3:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/4yR0jcMb/index-html-portifolio-Do-Maia-Visual-Studio-Code-Insiders.jpg"
+							alt="LDAP" style="width:100%">
+					</div>
+				</div>
+				<div id="SAML" class="w3-container ia" style="display:none">
+					<h3>SAML</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">SAML (Security Assertion Markup Language)</c>: Um padrão XML para trocar informações de autenticação e autorização entre partes, especialmente em ambientes de autenticação única (Single Sign-On - SSO).</p>
+					</div>
+					<p>O SAML (Security Assertion Markup Language) é um padrão de troca de informações de autenticação e
+						autorização entre partes, particularmente em ambientes web. Ele é um padrão XML usado para
+						trocar declarações de segurança entre provedores de identidade (IdPs) e provedores de serviços
+						(SPs).</p>
+					<p>Componentes Principais do SAML:</p>
+					<p>
+						<c class="configurado1">Afirmações (Assertions):
+					</p>
+					<p>As afirmações SAML são declarações sobre um usuário, como sua identidade, atributos e direitos de
+						acesso.</p>
+					<p>Existem diferentes tipos de afirmações, como afirmações de autenticação, afirmações de atributos
+						e afirmações de autorização.</p>
+					<p>
+						<c class="configurado1">Provedor de Identidade (IdP):
+					</p>
+					<p>O IdP é responsável por autenticar o usuário e fornecer afirmações sobre a identidade do usuário.
+					</p>
+					<p>Em um cenário típico, um usuário autentica-se em um IdP, que emite afirmações SAML.</p>
+					<p>
+						<c class="configurado1">Provedor de Serviço (SP):
+					</p>
+					<p>O SP é a aplicação ou serviço que deseja autenticar usuários.</p>
+					<p>Ele confia nas afirmações emitidas pelo IdP e toma decisões de acesso baseadas nessas afirmações.
+					</p>
+					<p>
+						<c class="configurado1">Metadados SAML:
+					</p>
+					<p>Os metadados SAML contêm informações de configuração sobre o IdP e SP, incluindo URLs, chaves
+						públicas, e outras informações relevantes para a troca de afirmações.</p>
+					<p>
+						<c class="configurado1">Fluxo de Autenticação SAML:
+					</p>
+					<p>O usuário acessa o SP.</p>
+					<p>O SP redireciona o usuário para o IdP para autenticação.</p>
+					<p>O IdP autentica o usuário e emite afirmações SAML.</p>
+					<p>O usuário é redirecionado de volta para o SP com as afirmações SAML.</p>
+					<p>O SP confia nas afirmações do IdP e concede ou nega acesso ao usuário.</p>
+					<p>
+						<c class="configurado1">Benefícios do SAML:
+					</p>
+					<p>SSO (Single Sign-On):</p>
+					<p>Permite que um usuário autenticado acesse vários serviços sem precisar autenticar-se novamente.
+					</p>
+					<p>
+						<c class="configurado1">Integração Empresarial:
+					</p>
+					<p>Facilita a integração entre diferentes sistemas e aplicativos em um ambiente empresarial.</p>
+					<p>
+						<c class="configurado1">Segurança:
+					</p>
+					<p>Ajuda a garantir a segurança na troca de informações de autenticação e autorização.</p>
+					<p>
+						<c class="configurado1">Padrão Aberto:
+					</p>
+					<p>SAML é um padrão aberto amplamente adotado, o que facilita a interoperabilidade entre diferentes	sistemas.</p>
+
+
+					<p><c class="configurado3">O que é SAML?</c></p>
+					<p>SAML é um acrônimo usado para descrever a Security Assertion Markup Language (SAML). Sua função principal na segurança online é permitir que você acesse vários aplicativos da web usando um conjunto de credenciais de login. Funciona passando informações de autenticação em um formato específico entre duas partes, geralmente um provedor de identidade (idP) e uma aplicação web.</p>
+					<p><c class="configurado3">O que é SAML e como funciona</c></p>
+					<p>SAML é um padrão aberto usado para autenticação. Com base no formato Extensible Markup Language (XML), os aplicativos da web usam SAML para transferir dados de autenticação entre duas partes – o provedor de identidade (IdP) e o provedor de serviços (SP).</p>
+					<p>A indústria de tecnologia criou o SAML para simplificar o processo de autenticação em que os usuários precisavam acessar vários aplicativos da Web independentes em vários domínios. Antes do SAML, o logon único (SSO) era possível, mas dependia de cookies que só eram viáveis ​​dentro do mesmo domínio. Este objetivo é alcançado centralizando a autenticação do usuário com um provedor de identidade. Os aplicativos Web podem então aproveitar o SAML por meio do provedor de identidade para conceder acesso aos seus usuários. Essa abordagem de autenticação SAML significa que os usuários não precisam se lembrar de vários nomes de usuário e senhas. Também beneficia os prestadores de serviços, pois aumenta a segurança da sua própria plataforma, principalmente ao evitar a necessidade de armazenar palavras-passe (muitas vezes fracas e inseguras) e não ter de resolver problemas de esquecimento de palavras-passe.</p>
+					<p><c class="configurado3">Benefícios SAML</c></p>
+					<p>Devido aos seus muitos benefícios, o SAML é uma solução empresarial amplamente adotada. Primeiro, melhora a experiência do usuário, pois você só precisa fazer login uma vez para acessar vários aplicativos da web. Isso não apenas acelera o processo de autenticação, mas também significa que você só precisa se lembrar de um conjunto de credenciais. A organização também se beneficia desse recurso, pois significa menos chamadas ao Help Desk para redefinições de senha.</p>
+					<p>Além de melhorar a experiência do usuário, o SAML também oferece maior segurança. Como o provedor de identidade armazena todas as informações de login, o provedor de serviços não precisa armazenar nenhuma credencial de usuário em seu sistema. Além disso, como o provedor de identidade é especializado em fornecer autenticação SAML segura, ele tem economias de escala para investir tempo e recursos na implementação de múltiplas camadas de segurança. Por exemplo, os IdPs têm soluções abrangentes de segurança de identidade que incluem recursos integrados, como autenticação multifator (MFA), que protegem contra ataques comuns de senha.</p>
+					<p><c class="configurado3">Como funciona o SAML?</c></p>
+					<p>SAML funciona trocando informações do usuário, como logins, estado de autenticação, identificadores e outros atributos relevantes entre a identidade e o provedor de serviços. Como resultado, simplifica e protege o processo de autenticação, pois o usuário só precisa fazer login uma vez com um único conjunto de credenciais de autenticação. Assim, quando o usuário tenta acessar um site, o provedor de identidade passa a autenticação SAML para o provedor de serviços, que então concede a entrada do usuário. Vamos ilustrar esse conceito com uma analogia do mundo real.</p>
+					<p>Muitas vezes, as organizações precisam confirmar sua identidade antes de conceder acesso. Um bom caso é o setor aéreo. Antes de embarcar em uma aeronave, a companhia aérea precisa confirmar que você é quem diz ser para garantir a segurança dos outros passageiros. Assim, eles verificam sua identidade com alguma forma de identificação com foto emitida pelo governo. Depois de confirmarem que o seu nome na sua identidade corresponde ao nome na sua passagem aérea, eles permitirão que você embarque na aeronave.</p>
+					<p>No exemplo abaixo, o governo é o fornecedor de identidade e a companhia aérea é o fornecedor de serviços. Sua identificação emitida pelo governo é a declaração SAML. Quando você solicita uma identidade governamental, geralmente precisa preencher um formulário, tirar uma foto e, em algumas circunstâncias, também suas impressões digitais. O governo (fornecedor de identidade) então armazena esses atributos de identificação em seu banco de dados e emite a você uma identificação física associada à sua identidade. No exemplo da companhia aérea, quando você chega ao portão, a companhia aérea (prestadora de serviços) verifica a asserção do seu ID (SAML). A companhia aérea aceita sua identidade, pois contém seus dados, e a carteira de identidade ou passaporte é examinada como um documento válido. Após a autenticação bem-sucedida, a companhia aérea permitirá que você embarque na aeronave.</p>
+					<div class="w3-col m12 w3-center">
+						<img src="https://i.postimg.cc/rsHPMCP5/saml.png" alt="SAML" style="width:100%">
+					</div>
+					<p><c class="configurado3">O que é SAML SSO?</c></p>
+					<p><c class="configurado">SAML Single Sign-On</c> é um mecanismo que aproveita o SAML, permitindo que os usuários façam logon em vários aplicativos da web após fazerem login no provedor de identidade. Como o usuário só precisa fazer login uma vez, o SAML SSO oferece uma experiência de usuário mais rápida e contínua.</p>
+					<p>O SSO SAML é fácil de usar e mais seguro do ponto de vista do usuário, pois ele só precisa se lembrar de um conjunto de credenciais de usuário. Ele também fornece acesso rápido e contínuo a um site, já que cada aplicativo que eles acessam não solicita que eles insiram um nome de usuário e uma senha. Em vez disso, o usuário faz login no provedor de identidade e acessa o aplicativo da web relevante clicando em seu ícone ou navegando até o site por meio de seu URL.</p>
+					<p>O SAML SSO também oferece outros benefícios além de uma experiência de usuário aprimorada. Melhora a produtividade tanto para o usuário quanto para o Help Desk. Os usuários não precisam perder tempo fazendo login em vários aplicativos da web com um conjunto exclusivo de credenciais para cada um. Consequentemente, eles não sobrecarregam o Help Desk com solicitações de redefinição de senha, liberando a equipe de atendimento para atender outras questões relacionadas ao serviço.</p>
+					<p>Além de aumentar a satisfação do usuário e melhorar a produtividade, o SAML SSO também ajuda a reduzir custos. Por exemplo, os Help Desks precisam gerenciar menos chamadas. Em vez de criar uma implementação de autenticação local para sua solução, eles podem assinar um provedor de identidade, reduzindo os custos trabalhistas de construção e manutenção interna.</p>
+					<div class="w3-col m12 w3-center">
+						<img src="https://i.postimg.cc/FHpnK489/iam.png" alt="IAM" style="width:100%">
+					</div>
+					<p><c class="configurado3">Como o OAuth se compara ao SAML?</c></p>
+					<p>OAuth e SAML são protocolos que usamos para permitir acesso. No entanto, a principal diferença entre os dois é que usamos SAML para autenticação e OAuth para autorização.</p>
+					<p>Se revisitarmos a analogia da companhia aérea, o ID do passageiro é a asserção SAML e o bilhete é o token OAuth. A companhia aérea usa o documento de identidade para verificar a identidade do passageiro antes de permitir que ele embarque na aeronave. No entanto, uma vez que os passageiros estão no avião, os comissários de bordo utilizam o bilhete para confirmar o status e os direitos dos passageiros. Por exemplo, podem ter um bilhete de primeira classe que lhes dá acesso a lugares e comodidades não acessíveis aos passageiros da classe económica.</p>
+					<p><c class="configurado3">Exemplo de SAML</c></p>
+					<p>SAML usa um fluxo de trabalho de autenticação baseado em declarações. Primeiro, quando um usuário tenta acessar um site, o provedor de serviços solicita ao provedor de identidade que autentique o usuário. Em seguida, o provedor de serviços usa a asserção SAML emitida pelo provedor de identidade para conceder acesso ao usuário. Vamos ilustrar o fluxo de trabalho com um exemplo.</p>
+					<ol>
+						<li>O usuário abre o navegador e navega até o aplicativo Web do provedor de serviços, que usa um provedor de identidade para autenticação.</li>
+						<li>O aplicativo Web responde com uma solicitação SAML.</li>
+						<li>O navegador passa a solicitação SAML ao provedor de identidade.</li>
+						<li>O provedor de identidade analisa a solicitação SAML.</li>
+						<li>O provedor de identidade autentica o usuário solicitando um nome de usuário e senha ou algum outro fator de autenticação. NOTA: O provedor de identidade ignorará esta etapa se o usuário já estiver autenticado.</li>
+						<li>O provedor de identidade gera a resposta SAML e a retorna ao navegador do usuário.</li>
+						<li>O navegador envia a resposta SAML gerada ao aplicativo web do provedor de serviços que a verifica.</li>
+						<li>Se a verificação for bem-sucedida, o aplicativo Web concederá acesso ao usuário.</li>
+					</ol>
+					<p><c class="configurado3">Tutorial SAML</c></p>
+					<p>OneLogin oferece vários <a href="https://developers.onelogin.com/saml" target="_blank"> kits de ferramentas SAML</a> que os desenvolvedores podem usar para habilitar o SSO para seus aplicativos por meio de um provedor de identidade que oferece autenticação SAML. Além disso, ele fornece recursos sobre como adicionar seu aplicativo ao catálogo OneLogin, codificar seu aplicativo para fornecer SSO aos usuários via OneLogin, bem como práticas recomendadas e perguntas frequentes úteis.</p>
+					<p>O OneLogin SAML Toolkit também oferece ferramentas online em https://www.samltool.com. Por exemplo, você pode obter um certificado X.509 autoassinado que pode ser usado em um ambiente de teste. Além disso, como o SAML usa o algoritmo de codificação Base64, os recursos do kit de ferramentas OneLogin oferecem um serviço online onde você pode codificar e decodificar XML para Base64 e vice-versa. O kit de ferramentas também fornece recursos para criptografar nós de XML, assinar AuthNRequests e validar seu XML em relação ao esquema SAML XSD.</p>
+					<p>Além do suporte a certificados e dos serviços de codificação, decodificação, assinatura e validação XML, as ferramentas on-line OneLogin SAML também fornecem outros recursos úteis de desenvolvimento. Por exemplo, você pode criar os metadados XML de um provedor de identidade SAML. Ele também fornece uma ferramenta que extrai o NameID e outros atributos relevantes da asserção de uma resposta SAML. Finalmente, as ferramentas online OneLogin SAML também oferecem um serviço que converte uma mensagem XML ou SAML em um formato legível por humanos.</p>
+			</div>
+				<div id="Kerberos" class="w3-container ia" style="display:none">
+					<h3>Kerberos</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">Kerberos</c>: Um protocolo de autenticação de rede que fornece um forte serviço de autenticação por meio de criptografia.</p>
+					</div>
+						<p>O Kerberos é um protocolo de autenticação de rede que fornece forte segurança por meio da
+						autenticação mútua entre clientes e servidores. Ele foi projetado para autenticar entidades em
+						uma rede de computadores em um ambiente distribuído, garantindo a confidencialidade e a
+						integridade das comunicações.</p>
+					<p>
+						<c class="configurado">Principais Conceitos e Componentes do Kerberos</c>:
+					</p>
+					<p>
+						<c class="configurado1">TGT (Ticket Granting Ticket)</c>:
+					</p>
+					<p>Quando um usuário se autentica no sistema, ele recebe um TGT do KDC (Centro de Distribuição de
+						Chaves).</p>
+					<p>O TGT é um token que permite ao usuário solicitar tickets de serviço para acessar recursos
+						específicos na rede.</p>
+					<p>
+						<c class="configurado1">KDC (Key Distribution Center)</c>:
+					</p>
+					<p>O KDC é responsável por autenticar usuários e fornecer tokens de autenticação.</p>
+					<p>Consiste em dois componentes principais: AS (Authentication Server) e TGS (Ticket Granting
+						Server).</p>
+					<p>
+						<c class="configurado1">AS (Authentication Server)</c>:
+					</p>
+					<p>O AS autentica usuários no início da sessão e emite TGTs.</p>
+					<p>
+						<c class="configurado1">TGS (Ticket Granting Server)</c>:
+					</p>
+					<p>O TGS fornece tickets de serviço (TGS Tickets) que permitem aos usuários acessar recursos
+						específicos.</p>
+					<p>
+						<c class="configurado1">Realm</c>:
+					</p>
+					<p>Um realm é uma parte da rede Kerberos onde todos os servidores compartilham um mesmo banco de
+						dados de autenticação.</p>
+					<p>
+						<c class="configurado1">Princípio de Least Privilege</c>:
+					</p>
+					<p>O Kerberos segue o princípio de "Least Privilege", concedendo aos usuários apenas os privilégios
+						necessários para realizar suas tarefas.</p>
+					<p>
+						<c class="configurado3">Fluxo Básico do Protocolo Kerberos</c>:
+					</p>
+					<p>
+						<c class="configurado1">Autenticação Inicial</c>:
+					</p>
+					<p>O cliente autentica-se no AS para obter um TGT.</p>
+					<p>O AS responde com o TGT criptografado usando a chave do cliente.</p>
+					<p>
+						<c class="configurado1">Solicitação de Ticket de Serviço</c>:
+					</p>
+					<p>O cliente solicita um Ticket de Serviço (TGS Ticket) do TGS para acessar um serviço específico.
+					</p>
+					<p>A solicitação é acompanhada do TGT recebido anteriormente.</p>
+					<p>
+						<c class="configurado1">Acesso ao Serviço</c>:
+					</p>
+					<p>O cliente apresenta o TGS Ticket ao serviço desejado.</p>
+					<p>O serviço autentica o cliente usando o TGS Ticket.</p>
+					<p>
+						<c class="configurado1">Renovação de TGT</c>:
+					</p>
+					<p>Durante a sessão, o cliente pode renovar seu TGT para estender a autenticação sem a necessidade
+						de reautenticação completa.</p>
+					<p>
+						<c class="configurado3">Benefícios do Kerberos</c>:
+					</p>
+					<p>
+						<c class="configurado1">Segurança Forte</c>:
+					</p>
+					<p>Oferece autenticação mútua e criptografia, garantindo a segurança nas comunicações.</p>
+					<p>
+						<c class="configurado1">Single Sign-On (SSO)</c>:
+					</p>
+					<p>Um usuário pode acessar vários serviços após uma única autenticação bem-sucedida.</p>
+					<p>
+						<c class="configurado1">Eficiência</c>:
+					</p>
+					<p>Evita a transmissão contínua de credenciais, reduzindo a exposição a ataques.</p>
+					<p>
+						<c class="configurado1">Integração com Sistemas</c>:
+					</p>
+					<p> Pode ser integrado a sistemas operacionais e aplicativos em diversos ambientes.</p>
+					<p>
+						<c class="configurado1">Política de Senhas</c>:
+					</p>
+					<p>Suporta políticas de senhas fortes e permite alterações de senha seguras.</p>
+					<p>O Kerberos é amplamente utilizado em ambientes corporativos e em sistemas operacionais, como o
+						Microsoft Windows, onde desempenha um papel crucial na autenticação de usuários e na segurança
+						de redes.
+				</div>
+				<div id="JWT" class="w3-container ia" style="display:none">
+					<h3>JWT</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">JWT (JSON Web Token)</c>: Um formato compacto e autossuficiente para representar informações entre partes, frequentemente utilizado para autenticação e autorização.</p>
+					</div>
+					<p>JSON Web Token (JWT) é um padrão aberto (RFC 7519) que define uma maneira compacta e autocontida
+						de representar informações entre duas partes. Essas informações podem ser verificadas e
+						confiáveis, sendo transmitidas como um objeto JSON.Os JWTs são frequentemente usados para
+						autenticação e troca segura de informações entre partes em um formato compacto.</p>
+					<p>
+						<c class="configurado3">Estrutura do JWT</c>:
+					</p>
+					<p>Um JWT consiste em três partes separadas por pontos (.)</c>:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/mrkCG2FP/css.jpg" alt="JWT" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado1">Header (Cabeçalho)</c>:
+					</p>
+					<p>Contém informações sobre o tipo do token (por exemplo, JWT) e o algoritmo de assinatura
+						utilizado.</p>
+					<p>Exemplo (JSON)</c>:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/N0K9zJWT/ja.jpg" alt="JWT" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado1">Payload (Corpo)</c>:
+					</p>
+					<p>Contém as afirmações (claims).As afirmações são declarações sobre uma entidade (geralmente o
+						usuário) e metadados adicionais.</p>
+					<p>Exemplo (JSON)</c>:</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/gcVwQ6BM/fb.jpg" alt="JWT" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado1">As afirmações podem ser do tipo</c>:
+					</p>
+					<b>Registered Claims</b>: Afirmações predefinidas, como "iss" (emissor), "sub" (sujeito), "iat"
+					(data de emissão), etc.</p>
+					<b>Public Claims</b>: Afirmações definidas pelo usuário ou aplicação.</p>
+					<b>Private Claims</b>: Afirmações personalizadas acordadas entre as partes.</p>
+					<p>
+						<c class="configurado1">Signature (Assinatura)</c>:
+					</p>
+					<p>É usada para verificar se a mensagem não foi alterada ao longo do caminho e, em alguns casos,
+						para autenticar a fonte do JWT.</p>
+					<p>A assinatura é gerada usando o cabeçalho, o corpo, uma chave secreta e o algoritmo especificado
+						no cabeçalho.</p>
+					<p>
+						<c class="configurado3">Fluxo Básico de Uso</c>:
+					</p>
+					<p>
+						<c class="configurado1">Autenticação</c>:
+					</p>
+					<p>Um usuário faz login em um sistema e recebe um JWT após a autenticação bem-sucedida.</p>
+					<p>
+						<c class="configurado1">Inclusão do JWT em Requisições</c>:
+					</p>
+					<p>O cliente inclui o JWT nas cabeçalhos ou nos parâmetros da solicitação ao acessar recursos
+						protegidos.</p>
+					<p>
+						<c class="configurado1">Exemplo de Cabeçalho</c>:
+					</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/c1BHXGr2/ma.jpg" alt="JWT" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado1">Verificação no Servidor</c>:
+					</p>
+					<p>O servidor verifica a assinatura do JWT para garantir sua autenticidade e, em seguida, processa
+						as informações contidas no corpo.</p>
+					<p>
+						<c class="configurado3">Benefícios do JWT</c>:
+					</p>
+					<p>
+						<c class="configurado1">Autenticação Compacta</c>:
+					</p>
+					<p>Os JWTs são compactos e podem ser transmitidos facilmente como dados de URL, cabeçalhos HTTP ou
+						como parâmetros de formulário.</p>
+					<p>
+						<c class="configurado1">Autossuficiência</c>:
+					</p>
+					<p>Os JWTs contêm todas as informações necessárias, eliminando a necessidade de consultar um banco
+						de dados durante a verificação.</p>
+					<p>
+						<c class="configurado1">Interoperabilidade</c>:
+					</p>
+					Os JWTs são suportados por diversas linguagens de programação e podem ser usados em diferentes
+					plataformas.</p>
+					<p>
+						<c class="configurado1">Segurança</c>:
+					</p>
+					<p>A assinatura do JWT garante que o conteúdo não foi alterado durante a transmissão.</p>
+					<p>
+						<c class="configurado3">Exemplo de JWT</c>:
+					</p>
+					<p>
+						<c class="configurado1">Um JWT pode parecer assim</c>:
+					</p>
+					<code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</code>
+					<p>Este JWT tem um cabeçalho (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9), um corpo
+						(eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ), e uma assinatura
+						(SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c). Essas partes são separadas por pontos (.).</p>
+				</div>
+				<div id="Keycloak" class="w3-container ia" style="display:none">
+					<h3>Keycloak</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p><c class="configurado">Keycloak</c> é uma plataforma de código aberto para gerenciamento de	<u>identidade e acesso (IAM)</u>, desenvolvida pela Red Hat. Ela oferece uma solução abrangente	para autenticação, autorização e administração de identidades em aplicações e serviços. O objetivo principal do Keycloak é facilitar o desenvolvimento e a implementação de recursos	robustos de segurança em sistemas distribuídos.	</p>
+					</div>
+					<p>Aqui estão alguns conceitos e recursos-chave associados ao Keycloak:</p>
+					Autenticação: O Keycloak suporta vários métodos de autenticação, desde autenticação tradicional
+					baseada em nome de usuário e senha até métodos mais avançados, como autenticação social usando
+					provedores como Google, Facebook, eBay, PayPal, Verizon entre outros.
+					<p>
+						<c class="configurado1">Autorização</c>: Fornece um sistema flexível de controle de acesso,
+						permitindo que os desenvolvedores definam políticas de autorização para proteger recursos e
+						dados.
+					<p>
+						<c class="configurado1">Single Sign-On (SSO)</c>: Um dos principais benefícios do Keycloak é a
+						capacidade de fornecer SSO, o que significa que os usuários podem autenticar-se uma vez e, a
+						partir desse ponto, acessar várias aplicações sem a necessidade de autenticação adicional.
+					<p>
+						<c class="configurado1">Login único (SSO)</c>: O Keycloak pode ser usado para habilitar o SSO,
+						que permite que os usuários se autentiquem uma vez e depois acessem vários aplicativos e
+						serviços sem precisar fazer login novamente.
+					<p>
+						<c class="configurado1">Federação de Identidade</c>: Permite a integração com sistemas de
+						identidade existentes, facilitando a interoperabilidade entre diferentes sistemas.
+					<p>
+						<c class="configurado1">Administração de Identidade</c>: Oferece uma interface de administração
+						para gerenciar usuários, grupos, papéis e outras informações relacionadas à identidade.
+					<p>
+						<c class="configurado1">Adaptadores</c>: O Keycloak fornece adaptadores para diversas
+						plataformas e tecnologias, permitindo a fácil integração com diferentes tipos de aplicações.
+					<p>
+						<c class="configurado1">Extensibilidade</c>: É altamente extensível e personalizável, permitindo
+						que os desenvolvedores criem módulos adicionais para atender a requisitos específicos.
+					<p>
+						<c class="configurado1">Segurança</c>: Oferece recursos avançados de segurança, incluindo
+						criptografia, proteção contra ataques comuns, auditoria e registro de atividades.
+					<p>
+						<c class="configurado1">Autenticação centralizada</c>: O Keycloak fornece um único local para
+						gerenciar usuários e seu acesso a aplicativos e serviços. Isso pode ajudar a melhorar a
+						segurança e reduzir a carga administrativa de gerenciar vários diretórios de usuários.
+					<p>
+						<c class="configurado1">Controle de acesso</c>: O Keycloak pode ser usado para controlar o
+						acesso a aplicativos e serviços com base em uma variedade de fatores, como funções de usuário,
+						grupos e atributos.
+					<p>
+						<c class="configurado1">Federação de usuários</c>: O Keycloak pode ser usado para federar com
+						diretórios de usuários existentes, como LDAP e Active Directory. Isso permite que os usuários se
+						autentiquem usando suas credenciais existentes.
+					<p>
+						<c class="configurado1">Adaptadores de cliente</c>: O Keycloak fornece uma variedade de
+						adaptadores de cliente que facilitam a integração com diferentes tipos de aplicativos e
+						serviços.
+					<p>O Keycloak é uma ferramenta poderosa que pode ser usada para melhorar a segurança e a usabilidade
+						de seus aplicativos e serviços. É uma escolha popular para organizações de todos os tamanhos</p>
+					<p>Aqui está um exemplo de como você pode usar o Keycloak para autenticar um usuário em um
+						aplicativo da web:</p>
+					<pre>
+						javaScript
+							const keycloak = new Keycloak({
+							url: "http://localhost:8080/auth",
+							realm: "my-realm",
+							clientId: "my-client",
+							});
+
+							keycloak.login({
+							username: "johndoe",
+							password: "secret",
+							});
+
+							// O usuário agora está autenticado
+					</pre>
+					<p>Este código primeiro cria uma instância do Keycloak usando as informações de configuração do seu
+						servidor Keycloak. Em seguida, chama o método <code>login()</code> para autenticar o usuário. O
+						método <code>login()</code> aceita dois parâmetros: o nome de usuário e a senha do usuário.</p>
+					<p>Após a autenticação do usuário, o código pode então acessar o token de acesso do usuário usando o
+						método <code>token()</code>. O token de acesso pode ser usado para autorizar o usuário a acessar
+						recursos protegidos.</p>
+					<p>Aqui está um exemplo de como você pode usar o Keycloak para autorizar um usuário a acessar um
+						recurso:</p>
+					<pre>
+						JavaScript
+							const keycloak = new Keycloak({
+							url: "http://localhost:8080/auth",
+							realm: "my-realm",
+							clientId: "my-client",
+							});
+							keycloak.login({
+							username: "johndoe",
+							password: "secret",
+							});
+
+							// Obtém o token de acesso do usuário
+							const token = keycloak.token();
+
+							// Verifica se o usuário tem permissão para acessar o recurso
+							if (keycloak.hasAccess("my-resource", token)) {
+							// O usuário tem permissão para acessar o recurso
+							} else {
+							// O usuário não tem permissão para acessar o recurso
+							}
+					</pre>
+					<p>Este código primeiro autentica o usuário usando o código anterior. Em seguida, chama o método
+						<code>hasAccess()</code> para verificar se o usuário tem permissão para acessar o recurso
+						especificado. O método <code>hasAccess()</code> aceita dois parâmetros: o nome do recurso e o
+						token de acesso do usuário.</p>
+					<p>Se o usuário tiver permissão para acessar o recurso, o método <code>hasAccess()</code> retornará
+						<code>true. Caso contrário, ele retornará <code>false</code>.</p>
+					<p>
+						<c class="configurado3">Video explicativo</c>
+					</p>
+					<!--VIDEO RESPONSIVOS-->
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/rgcHXpxxaZ0"></iframe>
+					</div>
+					<p>
+						<c class="configurado3">Saiba mais...</c>
+					</p>
+					<p>Aula 1 - Keycloak Introdução</p>
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/ZiN3NLBro5U"></iframe>
+					</div>
+					<p>Guias</p>
+					<p><a href="https://www.keycloak.org/guides">Aqui</a> tem guias de instalação, configuração e formas
+						de deploy do Keycloak.</p>
+					<p>Server Development</p>
+					<p><a href="https://www.keycloak.org/docs/latest/release_notes/index.html">Aqui</a> tem instruções
+						para configuração e customização de temas, SPIs, configurações administrativas entre outros.</p>
+					<p>Aula 2 - Keycloak UserFederation e Mappers</p>
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/PHbxodkWlxg"></iframe>
+					</div>
+					<p>Aula 3 Keycloak - Client Scopes e Atributos</p>
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/BNwaPazP-rY"></iframe>
+					</div>
+					<p>Todas as APIs disponíveis no Keycloak. Lá você pode, por exemplo, recuperar informações de todos
+						os usuários, grupos, roles, etc.</p>
+					<p>Faça o download do "Apache Directory Studio" com essa ferramenta é muito útil para fazer
+						consultas em repositórios LDAP, AD, etc.</p>
+					<p>Com o "LDAP Online Test Server", você consegue ver as configurações necessárias para integrar seu
+						keycloak com o LDAP para testar algumas funcionalidades.</p>
+				</div>
+				<div id="SingleSignOn" class="w3-container ia" style="display:none">
+					<h3>Single sign on (SSO)</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					  <p><c class="configurado">Single sign on (SSO) </c>refere-se a um sistema de autenticação único, em	que os usuários podem acessar vários aplicativos ou serviços usando um único conjunto de credenciais de login.</p>
+					</div>
+					<p>Em outras palavras, O logon único (SSO) é um método de autenticação que permite aos usuários se
+						autenticarem com segurança em vários aplicativos e sites usando apenas um conjunto de
+						credenciais.</p>
+					<p>
+						<c class="configurado3"></c>Como funciona o SSO?
+					</p>
+					<p>O SSO funciona com base em uma relação de confiança estabelecida entre um aplicativo, conhecido
+						como provedor de serviços, e um provedor de identidade, como o OneLogin. Esta relação de
+						confiança é muitas vezes baseada num certificado que é trocado entre o fornecedor de identidade
+						e o fornecedor de serviços. Este certificado pode ser usado para assinar informações de
+						identidade que estão sendo enviadas do provedor de identidade para o provedor de serviços, para
+						que o provedor de serviços saiba que elas vêm de uma fonte confiável. No SSO, esses dados de
+						identidade assumem a forma de tokens que contêm informações de identificação sobre o usuário,
+						como o endereço de e-mail ou nome de usuário do usuário.</p>
+					<p>O fluxo de login geralmente é assim:></p>
+					<ul>
+						<li>Um usuário navega até o aplicativo ou site ao qual deseja acessar, também conhecido como
+							Provedor de Serviços.</li>
+						<li>O Provedor de Serviços envia um token que contém algumas informações sobre o usuário, como
+							seu endereço de e-mail, para o sistema SSO, também conhecido como Provedor de Identidade,
+							como parte de uma solicitação para autenticar o usuário.</li>
+						<li>O Provedor de Identidade primeiro verifica se o usuário já foi autenticado e, nesse caso,
+							concederá ao usuário acesso ao aplicativo do Provedor de Serviços e pulará para a etapa 5.
+						</li>
+						<li>Se o usuário não tiver feito login, ele será solicitado a fazê-lo, fornecendo as credenciais
+							exigidas pelo Provedor de Identidade. Pode ser simplesmente um nome de usuário e uma senha
+							ou pode incluir alguma outra forma de autenticação, como uma <a href="#OTP">* senha de uso
+								único (OTP)</a>.</li>
+						<li>Assim que o Provedor de Identidade validar as credenciais fornecidas, ele enviará um token
+							de volta ao Provedor de Serviços confirmando uma autenticação bem-sucedida.</li>
+						<li>Este token é passado através do navegador do usuário para o Provedor de Serviços.</li>
+						<li>O token recebido pelo Provedor de Serviços é validado de acordo com a relação de confiança
+							que foi estabelecida entre o Provedor de Serviços e o Provedor de Identidades durante a
+							configuração inicial.</li>
+						<li>O usuário recebe acesso ao Provedor de Serviços.</li>
+					</ul>
+					<P>Quando o usuário tentasse acessar um site diferente, o novo site teria que ter uma relação de
+						confiança semelhante configurada com a solução SSO e o fluxo de autenticação seguiria os mesmos
+						passos.</P>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/8PvhrwJ7/sso-workflow.png" alt="SPIW" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado3">O que é um token SSO?</c>
+					</p>
+					<p>Um token SSO é uma coleção de dados ou informações que são passadas de um sistema para outro
+						durante o processo de SSO. Os dados podem ser simplesmente o endereço de e-mail do usuário e
+						informações sobre qual sistema está enviando o token. Os tokens devem ser assinados digitalmente
+						para que o receptor do token verifique se o token vem de uma fonte confiável. O certificado
+						utilizado para esta assinatura digital é trocado durante o processo de configuração inicial.</p>
+					<p>
+						<c class="configurado3">O SSO é seguro?</c>
+					</p>
+					<p>A resposta a esta pergunta é “Depende”.</p>
+					<p>Existem muitos motivos pelos quais o SSO pode melhorar a segurança. Uma solução de logon único
+						pode simplificar o gerenciamento de nome de usuário e senha para usuários e administradores. Os
+						usuários não precisam mais acompanhar diferentes conjuntos de credenciais e podem simplesmente
+						lembrar uma única senha mais complexa. O SSO geralmente permite que os usuários obtenham acesso
+						aos seus aplicativos com muito mais rapidez.</p>
+					<p>O SSO também pode reduzir o tempo que o suporte técnico gasta ajudando os usuários com senhas
+						perdidas. Os administradores podem controlar centralmente requisitos como complexidade de senha
+						e autenticação multifator (MFA) . Os administradores também podem abrir mão mais rapidamente dos
+						privilégios de login quando um usuário sai da organização.</p>
+					<p>O logon único tem algumas desvantagens. Por exemplo, você pode ter aplicativos que deseja
+						bloquear um pouco mais. Por esse motivo, seria importante escolher uma solução SSO que lhe desse
+						a capacidade de, por exemplo, exigir um fator de autenticação adicional antes que um usuário
+						faça login em um aplicativo específico ou que impeça os usuários de acessar determinados
+						aplicativos, a menos que estejam conectados a uma rede segura. rede.</p>
+					<p>
+						<c class="configurado3">Como o SSO é implementado?</c>
+					</p>
+					<p>As especificações sobre como uma solução de SSO é implementada variam dependendo da solução de
+						SSO exata com a qual você está trabalhando. Mas não importa quais sejam as etapas específicas,
+						você precisa ter certeza de ter definido objetivos e metas claros para sua implementação.
+						Certifique-se de responder às seguintes perguntas:</p>
+					<ul>
+						<li>Que diferentes tipos de usuários você atende e quais são seus diferentes requisitos?</li>
+						<li>Você está procurando uma solução On Prem ou uma solução baseada em nuvem?</li>
+						<li>Esta solução conseguirá crescer com a sua empresa e com as suas necessidades?</li>
+						<li>Quais recursos você procura para garantir que apenas usuários confiáveis ​​façam login? MFA,
+							autenticação adaptativa, confiança de dispositivo, lista de permissões de endereços IP,
+							etc.?</li>
+						<li>Com quais sistemas você precisa se integrar?</li>
+						<li>Você precisa de acesso à API?</li>
+					</ul>
+					<p>
+						<c class="configurado3">O que torna um verdadeiro sistema SSO?</c>
+					</p>
+					<p>É importante entender a diferença entre logon único e cofre de senhas ou gerenciadores de senhas,
+						que às vezes são chamados de SSO, que pode significar logon no mesmo e não logon único. Com o
+						cofre de senhas, você pode ter o mesmo nome de usuário e senha, mas eles precisam ser inseridos
+						sempre que você acessar um aplicativo ou site diferente. O sistema de proteção de senhas
+						simplesmente armazena suas credenciais para todos os diferentes aplicativos e as insere quando
+						necessário. Não há nenhuma relação de confiança estabelecida entre os aplicativos e o sistema de
+						proteção de senhas.</p>
+					<p>om SSO, que significa Single Sign-On, depois de fazer login por meio da solução SSO, você pode
+						acessar todos os aplicativos e sites aprovados pela empresa sem precisar fazer login novamente.
+						Isso inclui aplicativos em nuvem, bem como aplicativos locais, geralmente disponíveis por meio
+						de um portal SSO (também chamado de portal de login).</p>
+					<p>
+						<c class="configurado3">O que é um software SSO versus uma solução SSO</c>
+					</p>
+					<p>Ao pesquisar as opções de SSO disponíveis, você poderá vê-las às vezes chamadas de software SSO
+						versus solução SSO versus provedor de SSO. Em muitos casos, a diferença pode estar simplesmente
+						na forma como as empresas se categorizaram. Um software sugere algo que está instalado no local.
+						Geralmente é projetado para realizar um conjunto específico de tarefas e nada mais. Uma solução
+						sugere que existe a capacidade de expandir ou personalizar os recursos do produto principal. Um
+						provedor seria uma forma de se referir à empresa que está produzindo ou hospedando a solução.
+						Por exemplo, OneLogin é conhecido como provedor de soluções SSO.</p>
+					<p>
+						<c class="configurado3">Existem diferentes tipos de SSO?</c>
+					</p>
+					<p>Existem muitos termos que são usados ​​quando falamos sobre Single Sign-On (SSO).</p>
+					<ul>
+						<li>Gerenciamento de Identidade Federada (FIM)</li>
+						<li>OAuth (especificamente OAuth 2.0 hoje em dia)</li>
+						<li>Conexão OpenID (OIDC)</li>
+						<li>Linguagem de marcação de acesso de segurança (SAML)</li>
+						<li>Mesmo login (SSO)</li>
+					</ul>
+					<p>O SSO é, na verdade, parte de um conceito maior chamado Federated Identity Management, portanto,
+						às vezes, o SSO é chamado de SSO federado. FIM refere-se apenas a uma relação de confiança
+						criada entre dois ou mais domínios ou sistemas de gerenciamento de identidade. O logon único
+						costuma ser um recurso disponível em uma arquitetura FIM.</p>
+					<p>OAuth 2.0 é uma estrutura específica que também pode ser considerada parte de uma arquitetura
+						FIM. OAuth se concentra nesse relacionamento confiável, permitindo que as informações de
+						identidade do usuário sejam compartilhadas entre os domínios.</p>
+					<p>OpenID Connect (OIDC) é uma camada de autenticação criada com base no OAuth 2.0 para fornecer
+						funcionalidade de logon único.</p>
+					<p>O mesmo logon, também conhecido como SSO, na verdade não é o mesmo que logon único porque não
+						envolve nenhuma relação de confiança entre as entidades que estão fazendo a autenticação. É mais
+						dependente da duplicação de credenciais entre sistemas e da simples transmissão dessas
+						credenciais quando necessário. Não é tão seguro quanto qualquer uma das soluções de logon único.
+					</p>
+					<p>Existem também alguns sistemas específicos que comumente surgem quando discutimos o logon único:
+						Active Directory, Active Directory Federation Services (ADFS) e Lightweight Directory Access
+						Protocol (LDAP).</p>
+					<p>O Active Directory, que hoje em dia é especificamente referido como Active Directory Directory
+						Services (ADDS), é o serviço de diretório centralizado da Microsoft. Usuários e recursos são
+						adicionados ao serviço de diretório para gerenciamento central e o ADDS funciona com protocolos
+						de autenticação como NTLM e Kerberos. Assim, os usuários pertencentes ao ADDS podem
+						autenticar-se a partir de suas máquinas e ter acesso a outros sistemas que se integram ao ADDS.
+						Esta é uma forma de login único.</p>
+					<p>O Lightweight Directory Access Protocol (LDAP) é simplesmente um padrão da indústria que define
+						uma maneira de organizar e consultar informações de diretório. O LDAP permite gerenciar
+						centralmente recursos como usuários e sistemas. O LDAP, entretanto, não define como você faz
+						login nesses sistemas, o que significa que não define os protocolos reais usados ​​na
+						autenticação. No entanto, é frequentemente usado como parte do processo de autenticação e
+						processos de controle de acesso. Por exemplo, antes que um usuário possa acessar um recurso
+						específico, o LDAP pode ser usado para consultar esse usuário e quaisquer grupos aos quais ele
+						pertença, a fim de verificar se o usuário tem acesso a esse recurso. Soluções LDAP como OpenLDAP
+						fornecem autenticação por meio do suporte a protocolos de autenticação como Simple
+						Authentication and Security Layer (SASL)</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/v84P3pST/sso-types.png" alt="SAML" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado3">O que é software como serviço SSO?</c>
+					</p>
+					<P>Assim como muitos outros aplicativos passaram a ser executados na Internet, o mesmo aconteceu com
+						a funcionalidade SSO. Plataformas como OneLogin executadas na nuvem podem então ser
+						categorizadas como uma solução SSO de software como serviço (SaaS).</P>
+					<p>
+						<c class="configurado3">O que é SSO de aplicativo para aplicativo?</c>
+					</p>
+					<p>Por último, você deve ter ouvido falar de SSO App-to-App ou Application-to-Application. Este
+						ainda não é exatamente um padrão da indústria. É mais um termo usado pelo SAPCloud para
+						descrever o processo de passagem de uma identidade de usuário de um aplicativo para outro dentro
+						de seu ecossistema. É um pouco semelhante ao OAuth 2.0, mas novamente não é um protocolo ou
+						método padrão e atualmente é específico do SAPCloud.</p>
+					<hr />
+					<p id="OTP">* Senha de uso único (OTP)</p>
+					<p>
+						<c class="configurado3">Qual é a diferença entre OTP, TOTP e HOTP?</c>
+					</p>
+					<p>Fornecer acesso seguro a aplicativos e software baseado em nuvem é um desafio constante para
+						empresas de todos os setores. Capacitar os usuários com segurança simples, mas confiável, é
+						fundamental para proteger as informações dos usuários e os dados confidenciais da empresa.</p>
+					<p>Uma das maneiras pelas quais as empresas de tecnologia combatem o roubo de senhas e outros tipos
+						de ataques cibernéticos é por meio do uso de senhas de uso único (OTPs). OTP é uma forma de
+						<u></u>autenticação multifator (MFA)</u> projetada para dificultar muito o acesso de hackers a
+						informações protegidas.</p>
+					<p>Os MFAs exigem credenciais adicionais além de uma simples senha antes que o usuário final possa
+						obter acesso a um aplicativo ou sistema. Por exemplo, um MFA que usa SMS enviará ao usuário um
+						texto com uma sequência numérica que deverá ser inserida antes de obter acesso. Esse código é um
+						tipo de OTP.</p>
+					<p>Tanto as empresas B2B quanto as B2C têm um incentivo para proteger os dados de seus usuários e da
+						empresa, ao mesmo tempo em que mantêm uma ótima experiência do usuário (UX), o que significa que
+						qualquer solução de segurança que escolherem, ela precisa ser simplificada sem interferir
+						drasticamente no fluxo de trabalho do usuário.</p>
+					<p>A autenticação OTP é uma solução elegante tanto para questões de segurança quanto para UX.
+						Existem dois tipos de OTP: HOTP e TOTP. Veremos as diferenças de cada um abaixo. Mas primeiro,
+						vamos nos aprofundar um pouco mais no OTP.</p>
+					<p>
+						<c class="configurado3">O que é OTP e como funciona?</c>
+					</p>
+					<p>Uma OTP é como uma senha, mas só pode ser usada uma vez, portanto significa senha de uso único.
+						Muitas vezes é usado em combinação com uma senha normal como um mecanismo de autenticação
+						adicional que fornece segurança extra.</p>
+					<p>OTPs são exatamente o que parecem: um e pronto. Depois de usar essa senha uma vez, ela será
+						descartada e, na próxima vez que precisar entrar nesse aplicativo, você usará outra. Fazer isso
+						aumenta a segurança e torna muito mais difícil para os malfeitores penetrarem em contas
+						privadas.</p>
+					<p>Os usuários podem acessar uma OTP para um determinado aplicativo ou site por meio de aplicativos
+						de smartphone, uma mensagem de texto ou um token proprietário (como um chaveiro). OneLogin
+						Protect é um exemplo de gerador de OTP que você pode usar como um aplicativo em seu telefone.
+						Sempre que você recebe um texto SMS com um código para ajudá-lo a entrar em um site ou
+						aplicativo, você está usando um OTP.</p>
+					<p>Existem vários algoritmos padrão da indústria, como SHA-1, que geram OTPs. Todos esses algoritmos
+						usam duas entradas para gerar o código OTP: uma <b>semente</b> e um <b>fator móvel</b>. A
+						semente é um valor estático (chave secreta) criado quando você estabelece uma nova conta no
+						servidor de autenticação.</p>
+					<p>Embora a semente não mude, o fator móvel muda cada vez que uma nova OTP é solicitada. A forma
+						como o fator móvel é gerado é o grande diferencial entre HOTP e TOTP.</p>
+					<p>
+						<c class="configurado3">O que é HOTP?</c>
+					</p>
+					<p>O “H” em HOTP significa Código de Autenticação de Mensagem Baseado em Hash (HMAC). Em termos
+						gerais, o algoritmo de senha única (HOTP) baseado em HMAC é um OTP baseado em eventos onde o
+						fator móvel em cada código é baseado em um contador.</p>
+					<p>Cada vez que o HOTP é solicitado e validado, o fator de movimentação é incrementado com base em
+						um contador. O código gerado é válido até que você solicite ativamente outro e seja validado
+						pelo servidor de autenticação. O gerador OTP e o servidor são sincronizados cada vez que o
+						código é validado e o usuário obtém acesso. O Yubikey de Yubiko é um exemplo de gerador OTP que
+						usa HOTP.</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/QtQnJ5MD/hotp.png" alt="HOTP" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado3">O que é TOTP?</c>
+					</p>
+					<p>A senha única baseada em tempo (TOTP) é uma OTP baseada em tempo. A semente do TOTP é estática,
+						assim como no HOTP, mas o fator móvel em um TOTP é baseado no tempo e não no contador.</p>
+					<p>O período de tempo em que cada senha é válida é chamado de <b>timestep</b>. Como regra, os
+						intervalos de tempo tendem a ter 30 ou 60 segundos de duração. Se você não utilizou sua senha
+						nessa janela, ela não será mais válida e você precisará solicitar uma nova para ter acesso ao
+						seu aplicativo.</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/ZKxvzqWq/totp.png" alt="TOTP" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado3">Limitações e vantagens</c>
+					</p>
+					<p>Embora ambos sejam muito mais seguros do que não usar MFA, existem limitações e vantagens tanto
+						no HOTP quanto no TOTP. TOTP (a mais nova das duas tecnologias) é fácil de usar e implementar,
+						mas o elemento baseado no tempo tem potencial para desvio de tempo (o intervalo entre a criação
+						e o uso da senha). Se o usuário não entrar no TOTP imediatamente, há uma chance de que ele
+						expire antes dele. Portanto, o servidor deve levar isso em conta e facilitar para o usuário
+						tentar novamente sem bloqueá-lo automaticamente.</p>
+					<p>Como o HOTP não tem limitação baseada em tempo, é um pouco mais fácil de usar, mas pode ser mais
+						suscetível a ataques de força bruta. Isso se deve a uma janela potencialmente mais longa em que
+						o HOTP é válido. Algumas formas de HOTP foram responsáveis ​​por essa vulnerabilidade
+						adicionando um componente baseado em tempo ao seu código, confundindo um pouco os limites entre
+						esses dois tipos de OTP./p>
+					<p>
+						<c class="configurado3">Uma palavra final</c>
+					</p>
+					<p>Independentemente do tipo de OTP que você usa, escolher um <a herf="#gerador">** gerador de
+							OTP</a> como um aplicativo autenticador ou chaveiro é uma maneira mais segura de usar o MFA
+						do que as opções de mensagens de texto SMS. Os golpistas encontraram maneiras criativas de
+						interceptar esses códigos SMS, seja por meio de fraude no cartão SIM ou algum outro tipo de hack
+						que os ajude a obter acesso aos seus textos. Embora os MFAs baseados em SMS possam ser melhores
+						do que nenhum MFA, eles são muito menos seguros do que ter um aplicativo autenticador em seu
+						telefone ou usar um gerador de código de chaveiro.</p>
+					<p id="gerador">
+						<c class="configurado">Aplicativo autenticador OneLogin Protect</c>
+					</p>
+					<p>O aplicativo móvel OneLogin Protect com senha única (OTP) oferece usabilidade incomparável.
+						Disponível nas principais plataformas móveis, o OneLogin Protect permite que os usuários
+						realizem autenticação multifator para várias contas com o clique de um botão.</p>
+					<p>Compatibilidade: OneLogin Protect está disponível nas seguintes plataformas móveis.</p>
+					<u>
+						<li>Android e Android Wear</li>
+						<li>iPhone e watchOS</li>
+					</u>
+					<p>
+						<c class="configurado3">Autenticação multifator — Melhor segurança na nuvem</c>
+					</p>
+					<p>Acesso seguro à sua VPN e WiFi corporativa, G Suite, Office 365, Salesforce.com e milhares de
+						aplicativos em nuvem com um segundo fator de autenticação além do nome de usuário e da senha. No
+						caso de alguém roubar as credenciais de um usuário, a adição de um token de senha única é uma
+						barreira significativa para impedir o acesso de intrusos. OneLogin Protect está disponível para
+						Android, Android Wear, Apple iOS e Apple watchOS.</p>
+					<p>
+						<c class="configurado3">Usabilidade incomparável – O processo de login</c>
+					</p>
+					<p>O gerador OTP do OneLogin Protect elimina o atrito da autenticação multifator (MFA), permitindo
+						que os usuários simplesmente respondam a uma notificação push em seus smartphones ou assistam
+						durante o processo de login. O OneLogin Protect OTP (senha de uso único) é enviado através do
+						seu telefone para o OneLogin, onde é validado e então o usuário está logado. Se o dispositivo
+						móvel do usuário não estiver conectado à Internet, o usuário pode inserir a senha de uso único
+						no portal do aplicativo OneLogin. Assim que o OneLogin receber uma senha de uso único válida, o
+						usuário estará logado.</p>
+					<p>
+						<c class="configurado3">Implementação fácil</c>
+					</p>
+					<p>Primeiro, os usuários instalam o aplicativo móvel OneLogin Protect OTP, disponível nas lojas de
+						aplicativos Apple e Android . Em seguida, os usuários fazem login no OneLogin App Portal e
+						seguem as instruções para registrar sua instância de aplicativo móvel com sua conta OneLogin.
+						Uma vez registrado, o usuário pode fornecer uma senha de uso único válida ao entrar no OneLogin.
+					</p>
+					<p>
+						<c class="configurado3">Algoritmo</c>
+					</p>
+					<p>A solução OTP do OneLogin Protect é baseada no <u>RFC 6238</u> — Um algoritmo de senha única
+						baseado em tempo (TOTP), que foi projetado pela VeriSign, Symantec e outros. A RFC descreve como
+						dois endpoints com relógios sincronizados podem trocar uma senha segura de uso único com base no
+						<u>algoritmo HMAC</u>. As senhas de uso único são válidas por 30 segundos, mas a implementação
+						do algoritmo é capaz de tolerar algum desvio de tempo no dispositivo móvel para aumentar a
+						confiabilidade da solução</p>
+				</div>
+
+				<div id="IAM" class="w3-container ia" style="display:none">
+					<h3>Identidade e acesso (IAM)</h3>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p>O gerenciamento de <c class="configurado">identidade e acesso (IAM) </c>garante que as pessoas e	funções certas em sua organização (identidades) possam acessar as ferramentas necessárias para	realizar seu trabalho. Os sistemas de gerenciamento e acesso de identidade permitem que sua	organização gerencie aplicativos de funcionários sem fazer login em cada aplicativo como administrador. Os sistemas de gerenciamento de identidade e acesso permitem que sua organização	gerencie uma variedade de identidades, incluindo pessoas, software e hardware, como robótica e	dispositivos IoT.</p>
+					</div>	
+					<p>	<c class="configurado3">Definição - o que significa gerenciamento de identidade e acesso?</c>
+					</p>
+					<p>O gerenciamento de identidade e acesso (IAM) garante que as pessoas e funções certas em sua
+						organização (identidades) possam acessar as ferramentas necessárias para realizar seu trabalho.
+						Os sistemas de gerenciamento e acesso de identidade permitem que sua organização gerencie
+						aplicativos de funcionários sem fazer login em cada aplicativo como administrador. Os sistemas
+						de gerenciamento de identidade e acesso permitem que sua organização gerencie uma variedade de
+						identidades, incluindo pessoas, software e hardware, como robótica e dispositivos IoT.</p>
+					<p>
+						<c class="configurado3">Porque sou eu?</c>
+					</p>
+					<p>As empresas precisam do IAM para fornecer segurança online e aumentar a produtividade dos
+						funcionários.</p>
+					<ul>
+						<li>
+							<c class="configurado1">Segurança</c>. A segurança tradicional geralmente tem um ponto de
+							falha: a senha. Se a senha de um usuário for violada – ou pior ainda, o endereço de e-mail
+							para recuperação de senha – sua organização se tornará vulnerável a ataques. Os serviços IAM
+							restringem os pontos de falha e os respaldam com ferramentas para detectar erros quando eles
+							são cometidos.
+						</li>
+						<li>
+							<c class="configurado1">Produtividade</c>. Depois de fazer login no portal principal do IAM,
+							seu funcionário não precisa mais se preocupar em ter a senha correta ou o nível de acesso
+							correto para desempenhar suas funções. Além de cada funcionário ter acesso ao conjunto
+							perfeito de ferramentas para seu trabalho, seu acesso pode ser gerenciado como um grupo ou
+							função, em vez de individualmente, reduzindo a carga de trabalho de seus profissionais de
+							TI.
+						</li>
+					</ul>
+					<p>
+						<c class="configurado3">O IAM melhora a conformidade regulatória?</c>
+					</p>
+					<p>A segurança também é uma questão de lei, regulamentação e contratos. Padrões de proteção de
+						dados, como o Regulamento Geral de Proteção de Dados da Europa e o HIPPA, e a Lei Sarbanes-Oxley
+						nos EUA, impõem padrões rígidos de segurança de dados. Com uma solução IAM, seus usuários e sua
+						organização podem garantir que os mais altos padrões de segurança, rastreamento e transparência
+						administrativa sejam uma coisa natural em suas operações diárias.</p>
+
+					<p>
+						<c class="configurado3">Como funciona o IAM?</c>
+					</p>
+					<p>As soluções de gerenciamento de identidade geralmente executam duas tarefas:</p>
+					<ol>
+						<li>O IAM confirma que o usuário, software ou hardware é quem diz ser, autenticando suas
+							credenciais em um banco de dados. As ferramentas de identidade em nuvem IAM são mais seguras
+							e flexíveis do que as soluções tradicionais de nome de usuário e senha.</li>
+						<li>Os sistemas de gerenciamento de acesso de identidade concedem apenas o nível de acesso
+							apropriado. Em vez de um nome de usuário e senha permitindo acesso a um conjunto inteiro de
+							software, o IAM permite que fatias estreitas de acesso sejam divididas, ou seja, editor ,
+							visualizador e comentarista em um sistema de gerenciamento de conteúdo.</li>
+					</ol>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/sDm7bq5V/authentication-authorization.png"
+							alt="Authentication-Authorization" style="width:100%">
+					</div>
+					<p>
+						<c class="configurado3">O que o IAM faz?</c>
+					</p>
+					<p>Os sistemas IAM fornecem esta funcionalidade principal:</p>
+					<table style="width: 100%;">
+						<tr>
+							<th>Tarefa</th>
+							<th>Ferramentas</th>
+						</tr>
+						<tr>
+							<td>Gerenciar identidades de usuários</td>
+							<td>Os sistemas IAM podem ser o único diretório usado para criar, modificar e excluir
+								usuários ou podem ser integrados a um ou mais diretórios e sincronizados com eles. O
+								gerenciamento de identidades e acessos também pode criar novas identidades para usuários
+								que precisam de um tipo especializado de acesso às ferramentas de uma organização.</td>
+						</tr>
+						<tr>
+							<td>Provisionando e desprovisionando usuários</td>
+							<td>Especificar quais ferramentas e níveis de acesso (editor, visualizador, administrador)
+								conceder a um usuário é chamado de provisionamento. As ferramentas IAM permitem que os
+								departamentos de TI provisionem usuários por função, departamento ou outro agrupamento,
+								em consulta com os gerentes desse departamento. Como é demorado especificar o acesso de
+								cada indivíduo a cada recurso, os sistemas de gerenciamento de identidade permitem o
+								provisionamento por meio de políticas definidas com base no controle de acesso baseado
+								em função (RBAC). Os usuários recebem uma ou mais funções, geralmente com base na função
+								do trabalho, e o sistema RBAC IAM concede-lhes acesso automaticamente. O provisionamento
+								também funciona ao contrário; para evitar riscos de segurança apresentados por
+								ex-funcionários que mantêm acesso aos sistemas, o IAM permite que sua organização remova
+								rapidamente o acesso deles.</td>
+						</tr>
+						<tr>
+							<td>Autorizando usuários</td>
+							<td>Os sistemas IAM autenticam um usuário confirmando que ele é quem diz ser. Hoje,
+								autenticação segura significa <u>autenticação multifator (MFA)</u> e, preferencialmente,
+								<u>autenticação adaptativa</u>.</td>
+						</tr>
+						<tr>
+							<td>Comunicando</td>
+							<td>As ferramentas IAM geram relatórios após a maioria das ações realizadas na plataforma
+								(como horário de login, sistemas acessados ​​e tipo de autenticação) para garantir a
+								conformidade e avaliar riscos de segurança.</td>
+						</tr>
+						<tr>
+							<td>Logon único</td>
+							<td>As soluções de gerenciamento de identidade e acesso com <u>logon único (SSO)</u>
+								permitem que os usuários autentiquem sua identidade com um portal em vez de vários
+								recursos diferentes. Uma vez autenticado, o sistema IAM atua como fonte de verdade da
+								identidade para os demais recursos disponíveis ao usuário, eliminando a necessidade de o
+								usuário lembrar de várias senhas.</td>
+						</tr>
+					</table>
+					<p>
+						<c class="configurado3">Qual é a diferença entre gerenciamento de identidade e gerenciamento de
+							acesso?</c>
+					</p>
+					<p><i>O gerenciamento de identidade</i> confirma que você é você e armazena informações sobre você.
+						Um banco de dados de gerenciamento de identidade contém informações sobre sua identidade – por
+						exemplo, seu cargo e seus subordinados diretos – e autentica que você é, de fato, a pessoa
+						descrita no banco de dados.</p>
+					<p><i>O gerenciamento de acesso</i> usa as informações sobre sua identidade para determinar a quais
+						pacotes de software você tem permissão de acesso e o que você pode fazer ao acessá-los. Por
+						exemplo, o gerenciamento de acesso garantirá que todos os gerentes com subordinados diretos
+						tenham acesso a um aplicativo para aprovação de planilhas de horas, mas não tanto acesso que
+						possam aprovar suas próprias planilhas de horas.</p>
+
+					<p>
+						<c class="configurado3">IAM na nuvem versus local</c>
+					</p>
+					<p>No passado, a maior parte do gerenciamento de identidade e acesso era gerenciada por um servidor
+						nas instalações físicas de uma organização, chamado local. A maioria dos serviços IAM agora são
+						gerenciados por um provedor na nuvem para evitar custos de manutenção física para a organização,
+						bem como para garantir tempo de atividade, sistemas distribuídos e redundantes e SLAs curtos.
+					</p>
+
+					<p>
+						<c class="configurado3">O que é AWS Identity and Access Management?</c>
+					</p>
+					<p>O gerenciamento de identidade e acesso da Amazon Web Services (AWS) é simplesmente o sistema IAM
+						integrado à AWS. Ao usar o AWS IAM, você pode criar usuários e grupos da AWS e conceder ou
+						negar-lhes acesso aos serviços e recursos da AWS. AWS IAM está disponível gratuitamente.</p>
+					<p>O serviço AWS IAM fornece:</p>
+					<ul>
+						<li>Controle de acesso refinado aos recursos da AWS</li>
+						<li>Autenticação multifator AWS</li>
+						<li>Recursos de análise para validar e ajustar políticas</li>
+						<li>Integração com soluções externas de gerenciamento de identidade</li>
+					</ul>
+					<p>
+						<c class="configurado3">Quais ferramentas eu preciso para implementar o gerenciamento de
+							identidade e acesso?</c>
+					</p>
+					<p>As ferramentas necessárias para implementar o IAM incluem ferramentas de gerenciamento de senhas,
+						software de provisionamento, aplicativos de aplicação de políticas de segurança, aplicativos de
+						relatórios e monitoramento e repositórios de identidade. As ferramentas IAM podem incluir, mas
+						não estão limitadas a:</p>
+					<ul>
+						<li>A autenticação multifator <b>MFA significa que seu provedor IAM exige mais de um tipo de
+								prova de que você é quem diz ser</b>. Um exemplo típico é exigir uma senha e uma
+							impressão digital. Outras opções de MFA incluem reconhecimento facial, varredura de íris e
+							tokens físicos como um Yubikey.</li>
+						<li><b>SSO</b> significa logon único. Se sua solução IAM fornecer logon único, isso significa
+							que seus usuários poderão fazer login apenas uma vez e então tratar a ferramenta de
+							gerenciamento de identidade e acesso como um "portal" para os outros pacotes de software aos
+							quais eles têm acesso, tudo sem fazer login em cada um deles</li>
+					</ul>
+					<p>
+						<c class="configurado3">O que inclui uma estratégia de implementação de IAM?</c>
+					</p>
+					<p>Como pedra angular de uma <u>arquitetura de confiança zero</u> , uma solução IAM deve ser
+						implementada usando princípios de confiança zero, como acesso com privilégios mínimos e
+						políticas de segurança baseadas em identidade.</p>
+					<ul>
+						<li><b>Gestão central de identidades</b></li>
+						<p>Um princípio fundamental da confiança zero é a gestão do acesso aos recursos ao nível da
+							identidade, pelo que ter uma gestão centralizada dessas identidades pode tornar esta
+							abordagem muito mais simples. Isso pode significar migrar usuários de outros sistemas ou
+							pelo menos sincronizar seu IAM com outros diretórios de usuários em seu ambiente, como um
+							diretório de Recursos Humanos.</p>
+					</ul>
+					<ul>
+						<li><b>Acesso seguro</b></li>
+						<p>Como a segurança no nível da identidade é fundamental, um IAM deve certificar-se de que está
+							confirmando as identidades daqueles que estão fazendo login. Isso pode significar a
+							implementação de MFA ou uma combinação de MFA e autenticação adaptativa para poder levar em
+							consideração o contexto da tentativa de login: localização, hora, dispositivo, etc.</p>
+					</ul>
+					<ul>
+						<li><b>Controle baseado em políticas</b></li>
+						<p>Os usuários devem receber apenas autorização para executar as tarefas exigidas e não mais
+							privilégios do que o necessário. Um IAM deve ser projetado para fornecer aos usuários acesso
+							a recursos com base em sua função, departamento ou quaisquer outros atributos que pareçam
+							apropriados. Como parte da solução de identidade gerenciada centralmente, essas políticas
+							podem garantir que os recursos estejam seguros, independentemente de onde sejam acessados.
+						</p>
+					</ul>
+					<ul>
+						<li><b>Política de confiança zero</b></li>
+						<p>Uma política de confiança zero significa que a solução IAM de uma organização monitora e
+							protege constantemente a identidade e os pontos de acesso de seus usuários. No passado, as
+							organizações operavam com uma política de “uma vez dentro, você tem acesso”, mas as
+							políticas de confiança zero garantem que cada membro da organização seja constantemente
+							identificado e seu acesso gerenciado.</p>
+					</ul>
+					<ul>
+						<li><b>Contas privilegiadas seguras</b></li>
+						<p>Nem todas as contas em um sistema de gerenciamento de acesso são criadas iguais. Contas com
+							ferramentas especiais ou <u>acesso privilegiado</u> a informações confidenciais podem
+							receber um nível de segurança e suporte adequado ao seu status de guardião da organização.
+						</p>
+					</ul>
+					<ul>
+						<li><b>Treinamento e suporte</b></li>
+						<p>Os provedores de IAM fornecem treinamento para os usuários que estarão mais envolvidos com o
+							produto – incluindo usuários e administradores – e geralmente fornecem atendimento ao
+							cliente para a integridade de longo prazo de sua instalação IAM e de seus usuários.</p>
+					</ul>
+					<p>
+						<c class="configurado3">Tecnologias IAM</c>
+					</p>
+					<p>Espera-se que um sistema IAM seja capaz de se integrar com muitos sistemas diferentes. Por causa
+						disso, existem certos padrões ou tecnologias que todos os sistemas IAM devem suportar:
+						<i>Security Access Markup Language , OpenID Connect e System for Cross-domain Identity
+							Management</i>.</p>
+					<ul>
+						<li><b>Security Access Markup Language (SAML)</b></li>
+						<p>
+							<c class="configurado"><a href="#SAML">SAML</c></a> é um padrão aberto usado para trocar
+							informações de autenticação e autorização entre um sistema provedor de identidade, como um
+							IAM, e um serviço ou aplicativo. Este é o método mais comumente usado para um IAM fornecer
+							ao usuário a capacidade de fazer login em um aplicativo que foi integrado à plataforma IAM.
+						</p>
+					</ul>
+					<ul>
+						<li><b>OpenID Connect (OIDC)</b></li>
+						<p>
+							<c class="configurado"><a href="#OIDC">OIDC</c></a> é um padrão aberto mais recente que
+							também permite que os usuários façam login em seus aplicativos a partir de um provedor de
+							identidade. É muito semelhante ao SAML, mas é baseado nos padrões OAuth 2.0 e usa JSON para
+							transmitir os dados em vez de XML, que é o que o SAML usa.
+						</p>
+					</ul>
+
+					<ul>
+						<li><b>Sistema para gerenciamento de identidade entre domínios (SCIM)</b></li>
+						<p>O<c class="configurado"><a href="#SCIM">SCIM</c></a> é um padrão usado para trocar
+							automaticamente informações de identidade entre dois sistemas. Embora tanto o SAML quanto o
+							OIDC possam passar informações de identidade para um aplicativo durante o processo de
+							autenticação, o SCIM é usado para manter as informações do usuário atualizadas sempre que
+							novos usuários são atribuídos ao serviço ou aplicativo, os dados do usuário são atualizados
+							ou os usuários são excluídos. SCIM é um componente chave do provisionamento de usuários no
+							espaço IAM.</p>
+					</ul>
+					<p id="SAML">SAML - Veja mais informações sobre SAML em (Sistema de Autenticação, SAML)</p>
+					<p id="OIDC">OIDC - Veja mais informações sobre OIDC em (Sistema de Autenticação, OIDC)</p>
+					<p id="SCIM">SCIM - Veja mais informações sobre SCIM em (Sistema de Autenticação, SCIM)</p>
+				</div>
+			</div3>
+		</div>

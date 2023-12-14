@@ -1,0 +1,243 @@
+			<div class="w3-container w3-center">
+				<h2>Sistema de Comunicação</h2>
+				<button id="btn16" class="fa-solid fa-plus"></button>
+				<button id="btn15" class="fa-solid fa-minus"></button>
+			</div><br />
+
+			<div class="w3-container">
+				<div class="w3-bar w3-green">
+					<button class="w3-bar-item w3-button" onclick="openIA('Webhook')">Webhook</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('WebSocket')">WebSocket</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('WebSock')">WebSock</button>
+				</div>
+				<div8>
+					<div id="Webhook" class="w3-container ia" style="display:yes">
+						<h3>Webhook</h3>
+						<div class="w3-row-padding w3-padding-16">
+							<img src="https://i.postimg.cc/7bvSwgVv/webhook-vs-apis-differences.png" alt="SisAut"
+								style="width:100%">
+						</div>
+						<p>
+							<c class="configurado">Webhooks são mecanismos de comunicação</c>; Costumam ser chamadas de "API REVERSA" <u>que permitem que
+								aplicativos enviem informações em tempo real entre si por meio de HTTP</u>. Eles são
+							usados para notificar eventos ou atualizações instantaneamente, eliminando a necessidade de
+							que um aplicativo consulte repetidamente outro para obter informações atualizadas
+						</p>
+						<p>É uma tecnologia utilizada para permitir a comunicação entre duas aplicações e enviar
+							notificações quase em tempo real. O envio ou o recebimento de dados é disparado quando
+							determinado evento acontecer em uma das aplicações.</p>
+
+
+						<p><a href="#whatis">O que são webhooks?</a></p>
+						<p><a href="#howwork">Como eles funcionam?</a></p>
+						<p><a href="#diference">Quais as diferenças entre APIs e webhooks?</a></p>
+						<p><a href="#whenuse">Quando usar webhooks?</a></p>
+						<p><a href="#implement"></a>Como fazer a implementação do webhook?</p>
+
+						<p id="whatis">
+							<c class="configurado3">O que são webhooks?</c>
+						</p>
+						<p>O termo webhook foi criado em 2007, pelo desenvolvedor Jeff Lindsay, para <b>definir o
+								tratamento de callback, ou o retorno de uma requisição <c class="configurado">HTTP</c>
+								iniciada por um evento</b>.</p>
+						<p>Na prática, quando um evento acontece em um sistema, ele envia uma notificação para outro
+							sistema, que será o receptor desse evento. Portanto, esse é um recurso utilizado para
+							permitir a troca de dados entre duas aplicações.</p>
+						<p>Para ilustrar esse conceito, imagine que temos um site de <c class="configurado">e-commerce
+							</c> em que um consumidor faz a compra de determinado produto. Ao efetuar o pagamento, há
+							uma comunicação entre o site da loja e a instituição de pagamento, que pode ser uma <c
+								class="configurado">carteira digital</c>, por exemplo.</p>
+						<p>A comunicação para realizar o pagamento é feita por meio de uma API, que envia todos os dados
+							necessários para a instituição financeira.</p>
+						<p>Acontece que, apesar de a transação ter sido finalizada no site, ainda há a pendência sobre a
+							confirmação do pagamento, que pode levar certo tempo até que seja processada pelo sistema da
+							carteira digital.</p>
+						<p>É nesse momento que um webhook pode ser utilizado. Quando o pagamento for aprovado pela
+							carteira digital, essa informação precisa ser devolvida para o sistema de origem.</p>
+						<p>Esse, por sua vez, utiliza o registro para atualizar o pedido e para notificar o comprador
+							sobre a aprovação ou não da compra realizada.</p>
+
+						<p id="howwork">
+							<c class="configurado3">Como eles funcionam?</c>
+						</p>
+						<p>Agora, vamos à parte técnica para verificar como tudo isso acontece na prática. Como
+							mencionamos, o webhook permite a comunicação entre dois sistemas. Para isso, ele precisa de
+							um endpoint, que <b>é uma URL que funciona como um serviço de recepção para atender aos
+								eventos que chegam</b>.</p>
+						<p>Os eventos representam alguma mudança em uma condição inicial de um dado. Portanto, a mudança
+							no status de pagamento de pendente para aprovado é considerada um evento, e podemos utilizar
+							um webhook para promover a comunicação entre as aplicações.</p>
+						<p>No nosso exemplo sobre a atualização do status de pagamento, o site de <c
+								class="configurado">e-commerce</c> é o sistema receptor que disponibiliza essa URL para
+							receber os eventos ocorridos no sistema da carteira digital, que será o provedor da
+							informação.</p>
+						<p>Portanto, no momento em que o pagamento for aprovado por ela, será enviada uma notificação de
+							volta ao site, para informar que mudou o status do pagamento.</p>
+						<p>Além de disponibilizar a URL, <b>precisamos informar ao sistema provedor qual será o gatilho
+								para o envio do webhook</b>, ou seja, em que momento será feito o disparo para a
+							comunicação entre os dois sistemas.</p>
+						<p>Os dados recebidos em um webhook podem ser no formato <a
+								href="https://www.json.org/json-en.html" target="_blank">JSON</a>, <a
+								href="https://www.xml.com/" target="_blank">XML</a> ou como dados de formulário
+							(application/x-www-form-urlencoded ou multipart/form-data).</p>
+						<p>Vale ressaltar que o formato mais utilizado é o JSON. É importante dizer que o webhook tanto
+							pode receber quanto enviar dados, e ele pode ser utilizado para algumas funções específicas,
+							como:</p>
+
+						<p><b>push</b>: para enviar notificações em tempo real em aplicações web;</p>
+						<p><b>pipes</b>: para permitir a integração entre aplicações por meio do processamento dos dados
+							recebidos ou enviados pelo webhook;</p>
+						<p><b>plugins</b>: para o desenvolvimento de plugins para adicionar funcionalidades em
+							aplicações web, como a integração entre sistemas e o envio de notificações.</p>
+
+						<p id="diference">
+							<c class="configurado3">Quais as diferenças entre APIs e webhooks?</c>
+						</p>
+
+						<p>A API e os webhooks podem ser utilizados para promover a comunicação entre dois sistemas.
+							Entretanto, existem diferenças em relação à finalidade de cada um e a forma como isso
+							acontece.</p>
+						<p><b>Tanto a API quanto o webhook necessitam de um endpoint para funcionar</b>. Entretanto, a
+							API não funciona automaticamente, ou seja, é preciso que alguém ou algum processo faça uma
+							solicitação para que ela seja executada.</p>
+						<p>Nesse momento, ela faz a conexão com o servidor para enviar ou receber os dados
+							correspondentes à requisição. Após a conclusão dessa ação, a conexão com o servidor é
+							fechada e não há mais o envio ou o recebimento de dados, até que algo ou alguém execute a
+							API novamente.</p>
+						<p><b>Para obter dados por meio de uma API, usamos um processo chamado * pooling</b>, que
+							representa as solicitações feitas periodicamente ao servidor para verificar se há novos
+							dados disponíveis. Portanto, sua arquitetura é baseada em requisições, também chamada de
+							request-driven.</p>
+						<p>No nosso exemplo sobre a aprovação de pagamento, se fizéssemos a atualização do status por
+							meio de uma API, seria necessário disparar periodicamente uma requisição para a carteira
+							digital, a fim de verificar se o pagamento já foi aprovado.</p>
+						<p>Já o webhook funciona como um serviço que está sempre disponível para receber algo assim que
+							determinado evento ocorrer no sistema provedor. Ele utiliza a arquitetura que em tempo real,
+							e é disparada por um gatilho.</p>
+						<p>* Existem dois tipos principais de polling:</p>
+						<p><b>Polling por interrupção</b>: Nesse método, o programa <u>verifica constantemente a
+								presença de uma interrupção ou evento</u>. Se um evento ocorre, ele interrompe a
+							execução normal do programa para lidar com o evento. Isso é comum em sistemas que usam
+							hardware para gerar interrupções, como dispositivos de entrada/saída.</p>
+						<p><b>Polling por consulta</b>: Neste método, o programa faz <u></u>consultas regulares para
+							verificar o estado de um dispositivo ou condição</u>. Se o estado atender a determinadas
+							condições, o programa realiza ações apropriadas. Isso é comum em sistemas que não têm
+							suporte a interrupções ou quando a interrupção constante seria ineficiente.</p>
+
+						<p id="whenuse">
+							<c class="configurado3">Quando usar webhooks?</c>
+						</p>
+						<p>Apesar de ser um facilitador para a comunicação entre duas aplicações, nem sempre a
+							utilização de webhooks é a escolha ideal. Portanto, confira algumas situações em que esse
+							recurso representa uma boa alternativa.</p>
+
+						<ul>
+							<li>Quando você não tem um padrão de mudança nos dados</li>
+						</ul>
+						<p>O webhook é uma boa escolha quando precisamos obter alguma informação de um sistema externo,
+							mas não sabemos em que momento ela estará disponível. Se utilizarmos uma API nesse caso,
+							precisaremos enviar a requisição várias vezes, até que os dados necessários estejam
+							disponíveis.</p>
+						<p>O webhook é uma forma de evitar esse excesso de requisições feitas pela API, pois será feita
+							apenas uma comunicação no momento em que o sistema provedor tiver a informação que
+							precisamos.</p>
+						<ul>
+							<li>Para realizar atualizações rápidas</li>
+						</ul>
+						<p>Os webhooks são uma excelente alternativa quando precisamos realizar pequenas atualizações
+							quase em tempo real. As notificações de pagamento quando utilizamos os cartões bancários são
+							um bom exemplo da importância desse recurso.</p>
+						<p>Ele permite notificar o cliente sempre que uma transação for realizada. Dessa forma, a pessoa
+							consegue identificar movimentações indevidas e pode tomar uma ação imediata para evitar
+							maiores prejuízos.</p>
+						<ul>
+							<li>Quando a aplicação não oferece API</li>
+						</ul>
+						<p>Nem sempre o sistema de que precisamos obter informações tem uma API disponível ou, mesmo que
+							tenha, pode ser que ela não atenda às necessidades da aplicação.</p>
+						<p>Nesse caso, é possível utilizar ou desenvolver um webhook para promover a comunicação entre
+							os sistemas e viabilizar a troca de dados entre eles.</p>
+
+
+						<p id="implement">
+							<c class="configurado3">Como fazer a implementação do webhook?</c>
+						</p>
+						<p>Nada melhor que visualizar na prática como esse recurso funciona. Para isso, vamos fazer a
+							implementação de um webhook no WordPress para fazer uma pequena demonstração. Vamos utilizar
+							o plugin WP Webhook, que permite enviar e receber dados para diversos sistemas externos,
+							como WooCommerce, FluentCRM e muitos outros.</p>
+						<p>É importante entender o fluxo de implementação do webhook, pois a forma de configuração em
+							cada sistema é feita de acordo com a finalidade da comunicação com a aplicação. Quando
+							enviamos dados para um sistema receptor, é preciso que ele disponibilize uma URL para que a
+							aplicação provedora possa fazer o envio.</p>
+						<p>Além disso, ao receber esses dados, o sistema receptor precisa tratá-lo de alguma forma, pois
+							lembre-se de que essa comunicação é feita no formato JSON.</p>
+						<p>Portanto, a aplicação que recebe dados fornece uma URL de recepção, e a aplicação que envia
+							cria uma URL (que é uma API), que só será disparada quando acontecer determinado evento
+							nesse sistema. Confira o funcionamento desse fluxo, a seguir.</p>
+						<p>Para maiores informações visite o site <a
+								href="https://rockcontent.com/br/blog/o-que-e-um-webhook/"
+								target="_blank">Rockcontent</a>, e fique por dentro de tudo para executar uma boa
+							implementação do webhooks</p>
+
+					</div>
+					<div id="WebSocket" class="w3-container ia" style="display:yes">
+						<h3>WebSocket</h3>
+						<div class="w3-row-padding w3-padding-16">
+							<img src="https://i.postimg.cc/0j706Wr5/63fe48adb8834a29a618ce84-148-3.png" alt="SisAut"
+								style="width:100%">
+						</div>
+						<p>
+							<c class="configurado">WebSocket é um protocolo de comunicação bidirecional</c>, <u>que pode
+								enviar os dados do cliente para o servidor, ou do servidor para o cliente reutilizando o
+								canal de conexão estabelecido (bidirecional)</u>. A conexão é mantida ativa até ser
+							encerrada pelo cliente ou pelo servidor. Os WebSockets permitem que o servidor e o cliente
+							enviem mensagens a qualquer momento, sem qualquer relação com uma solicitação anterior. Uma
+							vantagem notável de usar WebSockets, é que quase todos os navegadores suportam o protocolo.
+						</p>
+
+						<p>Em outras palavras, o protocolo WebSockets:</p>
+						<p><i><b>Por sua vez, <b><i>possui a finalidade muito mais específica de ser implementado em navegadores web para comunicação persistente do código JavaScript com o servidor web, comunicando-se geralmente através da porta 80 e sempre sobre o protocolo TCP</i></b>. O formato do protocolo é em texto e o handshake que inicia a comunicação é muito parecido com o HTTP, assim servidores web podem facilmente servir HTTP e WebSockets na mesma porta.</i></b></p>
+
+						<p><a href="#prot">Veja mais no artigo protocolos</a>.</p>
+					
+
+					</div>
+					<div id="WebSock" class="w3-container ia" style="display:none">
+						<h3>WebSock</h3>
+						<div class="w3-row-padding w3-padding-16">
+							<img src="https://i.postimg.cc/zfy1LbkM/osi-Sockets.gif" alt="Winsock" style="width:20%">
+						</div>
+						<p>A <c class="configurado">API do Windows Socket</c>, também conhecida como Winsock, é um tipo	de interface de programação de aplicativos (API) <u>usada para comunicação entre o software de	rede do Windows e os serviços de rede</u>. É baseado principalmente no Transmission Control	Protocol/Internet Protocol (TCP/IP) e suas raízes derivam da interface de soquetes Berkeley	</p>
+						<ul>
+							<li>Os soquetes cabem na camada de sessão no modelo OSI, acima do TCP/IP.</li>
+							<li>Sockets são a abstração usada pelos programadores.</li>
+							<li>Um soquete pode ser considerado um cabo de comunicação que vai de uma máquina a outra.	Você pode colocar ou obter dados deste cabo.</li>
+							<li>Sockets são uma abstração que transcende as linguagens de programação. Quase todas as	línguas possuem soquetes.</li>
+						</ul>
+						<p>Em outras palavras, o protocolo Websock é:</p>
+						<p><i><b>Usado para comunicação entre processos através da rede, transmitindo dados em formato binário. Para a comunicação na rede, ele opera sobre algum protocolo de como TCP ou UDP para abstrair as complexidades inerentes do meio de transmissão. Cada Socket conecta-se a uma porta específica</i></b>. Sockets são soluções genéricas, geralmente usados para comunicação de alto desempenho entre diferentes plataformas.</p>
+						<p>Comunicações de soquete:</p>
+						<table class="w3-table-all">
+							<tr>
+								<th>Cliente</th>
+								<th>Servidor</th>
+							</tr>
+							<tr>
+								<td>Conectar</td>
+								<td>Vincular à porta</td>
+							</tr>
+							<tr>
+								<td>Enviar ou Receber</td>
+								<td>Ouvir</td>
+							</tr>
+							<tr>
+								<td>Fechar</td>
+								<td>Aceitar conexões</td>
+							</tr>
+						</table>
+						<p>Por exemplo, http liga e escuta na porta 80.</p>
+						<p>Sua primeira decisão é se o seu programa é um cliente ou um servidor.</p>
+					</div>
+			</div8>
+		</div>

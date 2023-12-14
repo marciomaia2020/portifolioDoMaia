@@ -1,0 +1,946 @@
+			<div class="w3-container w3-center">
+				<h2>Inteligência Artificial - <i class="fa-solid fa-laptop"></i></h2>
+				<button id="btn10" class="fa-solid fa-plus"></button>
+				<button id="btn9" class="fa-solid fa-minus"></button>
+			</div><br />
+			<div class="w3-container">
+				<div class="w3-bar w3-green">
+					<button class="w3-bar-item w3-button" onclick="openIA('ChatGPT')">ChatGPT</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Bard')">Bard (Google)</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Copy.ai')">Copy.ai</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('DALL-E2')">DALL-E 2</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Midjourney')">Midjourney</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('NVIDIABroadcast1.4')">NVIDIA Broadcastb1.4</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('StableDiffusion')">Stable Diffusion</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('CanvaMagicText')">Canva Magic Text</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Refraction')">Refraction</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('AdobePodcastShasta')">Adobe PodcastSha sta</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('BlackBoxAI')">BlackBox AI</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('GithubCopilot')">Github Copilot</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Baseten')">Baseten</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('HugginFace')">Huggin Face</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('NightCafe')">NightCafe</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Rytr')">Rytr</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Pixel­hunter')">Pixel­hunter</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('QuillBot')">QuillBot</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Craiyon')">Craiyon</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Krisp')">Krisp</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Melobytes')">Melobytes</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Jasper')">Jasper</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Beatoven')">Beatoven</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Cleanvoice')">Cleanvoice</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Podcastle')">Podcastle</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Flair')">Flair</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Illustroke')">Illustroke</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('PatternedAI')">PatternedAI</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('StockimgAI')">Stockimg AI</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('CopyMonkey')">CopyMonkey</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Ocoya')">Ocoya</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Unbounce')">Unbounce</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('VidyoAI')">Vidyo AI</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Maverick')">Maverick</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Quickchat')">Quickchat</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Puzzlelabs')">Puzzlelabs</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Soundraw')">Soundraw</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('CleanupPictures')">Cleanup Pictures</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('ResumeWorded')">Resume Worded</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Looka')">Looka</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Synthesia')">Synthesia</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Descript')">Descript</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Otter')">Otter</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Inkforall')">Inkforall</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Thundercontent')">Thundercontent</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Laura')">Laura</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('Make-A-Video')">Make-A-Video</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('LearningStudioAI')">Learning Studio AI</button>
+				</div>
+				<div5>
+					<div id="ChatGPT" class="w3-container ia" style="display:yes">
+						<h3>ChatGPT</h3>
+						<p>ChatGPT é um modelo de linguagem de grande porte treinado pela OpenAI. Essa Inteligência
+							Artificial é capaz de
+							<c class="configurado">gerar texto</c> de forma autônoma, com base em dados de treinamento
+							fornecidos, e pode ser usado para aplicações
+							como <c class="configurado">geração de texto</c>, <c class="configurado">tradução automática
+							</c> e </c>
+							<c class="configurado">diálogo</c>.
+						</p>
+						<div class="w3-col m12">
+							<a href="https://chat.openai.com/chat" target="_blank"><img
+									src="https://i.postimg.cc/zDjFVZTd/chatgpt-1024x566-png.webp" alt="ChatGPT"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Bard" class="w3-container ia" style="display:none">
+						<h3>Bard (Google)</h3>
+						<p>Bard <c class="configurado">é um chatbot desenvolvido pelo Google</c>, baseado na família de
+							modelos de linguagem LaMDA. Foi criado como uma resposta direta ao <c class="configurado">
+								ChatGPT</c> da OpenAI, e foi lançado em uma capacidade limitada em março de 2023 com
+							respostas mornas</p>
+						<p>Posso colaborar com você usando minha criatividade e disposição para ajudar. Eu tenho algumas
+							limitações e confesso que nem sempre acerto tudo, mas com seu feedback eu vou melhorar.</p>
+						<div class="w3-col m12">
+							<a href="https://bard.google.com/chat" target="_blank"><img
+									src="https://i.postimg.cc/hPNVPTtm/bard.jpg" alt="Bard" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Copy.ai" class="w3-container ia" style="display:none">
+						<h3>Copy.ai</h3>
+						<p>Copy.ai é uma plataforma de inteligência artificial que permite aos usuários <c
+								class="configurado">gerar conteúdo de texto</c> de alta
+							qualidade de forma rápida e fácil. Ele usa técnicas de processamento de linguagem natural
+							para gerar textos com
+							base em um determinado tópico ou palavras-chave. Ele pode ser usado para tarefas como
+							escrever e-mails, artigos
+							de blog, postagens nas redes sociais e outros tipos de conteúdo. Ele é projetado para ser
+							uma ferramenta útil
+							para profissionais de marketing, redatores, empresários e outros que precisam de conteúdo de
+							texto de alta
+							qualidade rapidamente.</p>
+						<div class="w3-col m12">
+							<a href="https://www.copy.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/tTcLSy3t/copyai-1024x544-png.webp" alt="Copy.ai"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="DALL-E2" class="w3-container ia" style="display:none">
+						<h3>DALL-E 2</h3>
+						<p>DALL-E 2 é uma atualização do <c class="configurado">gerador de imagens</c> DALL-E original,
+							desenvolvido pela OpenAI. DALL-E 2 essa
+							Inteligência Artificial é capaz de criar imagens a partir de descrições de texto mais
+							complexas e precisas, além
+							de ser treinado com uma base de dados mais ampla. Ele também possui uma interface de usuário
+							atualizada para
+							facilitar a criação de imagens personalizadas.</p>
+						<div class="w3-col m12">
+							<a href="https://openai.com/dall-e-2/ " target="_blank"><img
+									src="https://i.postimg.cc/26HLyJzq/dalle2-1024x530-png.webp" alt="DALL-E 2"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Midjourney" class="w3-container ia" style="display:none">
+						<h3>Midjourney</h3>
+						<p>Midjourney é uma ferramenta de <c class="configurado">geração de texto para imagem</c>
+							baseada em inteligência artificial que permite a
+							colaboração entre usuários dentro do aplicativo Discord. Ele se concentra em produzir
+							imagens criativas e
+							abstratas, ao invés de reproduções realistas, e é comparado a outras ferramentas de geração
+							de imagens como o
+							DALL-E.</p>
+						<div class="w3-col m12">
+							<a href="https://midjourney.com/home/ " target="_blank"><img
+									src="https://i.postimg.cc/13ct4TB9/midjourney-1024x507-png.webp" alt="Midjourney"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="NVIDIABroadcast1.4" class="w3-container ia" style="display:none">
+						<h3>NVIDIA Broadcast 1.4</h3>
+						<p>NVIDIA Broadcast é uma série de ferramentas de <c class="configurado">melhoria de áudio e
+								vídeo</c> alimentadas por AI desenvolvidas pela
+							NVIDIA Corporation que podem ser usadas para melhorar a qualidade do streaming ao vivo,
+							videoconferência e
+							podcasting. Ele requer uma placa gráfica NVIDIA para funcionar e pode ser usado para remover
+							ruído de fundo,
+							melhorar clareza de fala, substituir planos de fundo, manter a pessoa no centro do quadro,
+							reduzir o ruído de
+							vídeo e melhorar a espacialização de áudio. Ele também inclui um novo efeito de contato
+							ocular que move os olhos
+							do falante para simular contato visual com a câmera.</p>
+						<div class="w3-col m12">
+							<a href="https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/ "
+								target="_blank"><img
+									src="https://i.postimg.cc/mrnPwz5d/Inteligencia-Artificial-1024x676-png.webp"
+									alt="NVIDIA Broadcast 1.4" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="StableDiffusion" class="w3-container ia" style="display:none">
+						<h3>Stable Diffusion</h3>
+						<p>Stable Diffusion é um modelo de <c class="configurado">geração de imagem a partir de texto
+							</c>, capaz de criar imagens fotorrealistas com
+							base em qualquer entrada de texto. Ele cultiva autonomia para produzir imagens incríveis e
+							possibilita que
+							bilhões de pessoas criem arte impressionante em questão de segundos. Ele utiliza uma
+							combinação de técnicas como
+							Latent Diffusion e GANs (Redes Geradoras Adversariais) para gerar imagens altamente
+							detalhadas e realistas. O
+							modelo é capaz de gerar imagens com uma alta grau de autonomia, tornando fácil para usuários
+							com pouca ou
+							nenhuma experiência em edição ou criação de imagens produzir resultados profissionais.</p>
+						<div class="w3-col m12">
+							<a href="https://stablediffusionweb.com/ " target="_blank"><img
+									src="https://i.postimg.cc/J4Rzj5hr/stablediffusion-1024x495-png.webp"
+									alt="Stable Diffusion" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="CanvaMagicText" class="w3-container ia" style="display:none">
+						<h3>Canva Magic Text</h3>
+						<p>Canva Magic Text é uma ferramenta de <c class="configurado">design gráfico</c> oferecida pela
+							Canva, uma plataforma popular de criação de
+							designs para usuários sem experiência em design. Magic Text permite que os usuários
+							transformem texto digitado
+							em uma variedade de estilos de texto automáticamente, sem a necessidade de conhecimentos
+							avançados de
+							ferramentas de edição de texto ou de tipografia. A ferramenta utiliza inteligência
+							artificial e algoritmos de
+							aprendizado de máquina para produzir resultados profissionais e estilos de texto
+							personalizados. Ele permite aos
+							usuários economizar tempo e aumentar a eficiência ao criar designs.</p>
+						<div class="w3-col m12">
+							<a href="https://www.canva.com/pt_br/gerador-de-textos/ " target="_blank"><img
+									src="https://i.postimg.cc/sgQdWM5f/canvamagictext-1024x442-png.webp"
+									alt="Canva Magic Text" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Refraction" class="w3-container ia" style="display:none">
+						<h3>Refraction</h3>
+						<p>Refraction é uma ferramenta de <c class="configurado">desenvolvimento de software</c> que
+							usa inteligência artificial para automatizar
+							tarefas tediosas e demoradas como testes unitários, documentação, refatoração, detecção de
+							bugs e explicação de
+							código. Isso permite que os desenvolvedores se concentrem nas partes mais importantes do
+							desenvolvimento de
+							software, como a solução de problemas, o desenvolvimento de recursos e a inovação. Ao usar o
+							Refraction, os
+							desenvolvedores podem melhorar a qualidade do seu código, torná-lo mais legível, manutenível
+							e menos suscetível
+							a bugs. A ferramenta também ajuda os desenvolvedores a seguir as melhores práticas, aderir a
+							padrões de
+							codificação e melhorar sua produtividade.</p>
+						<div class="w3-col m12">
+							<a href="https://www.refraction.dev/ " target="_blank"><img
+									src="https://i.postimg.cc/6qmb6hjr/refraction-1024x486-png.webp" alt="Refraction"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="AdobePodcastShasta" class="w3-container ia" style="display:none">
+						<h3>Adobe Podcast Shasta</h3>
+						<p>Adobe Podcast é uma <c class="configurado"></c>plataforma de hospedagem</c> e <c
+								class="configurado">publicação de podcasts</c> desenvolvida pela Adobe. Ela permite que
+							os
+							usuários façam upload e distribuam facilmente seu conteúdo de áudio e oferece uma variedade
+							de ferramentas para
+							criação, edição e publicação de podcasts, além disso inclui uma função de melhoria de fala
+							que usa algoritmos
+							avançados e Inteligência Artificial para reduzir o ruído de fundo e melhorar a qualidade
+							sonora geral das
+							gravações de voz, tornando-as mais agradáveis ​​de ouvir e mais fáceis de entender.</p>
+						<div class="w3-col m12">
+							<a href="https://podcast.adobe.com/enhance " target="_blank"><img
+									src="https://i.postimg.cc/L4bx1NDf/adobeshasta-1024x478-png.webp"
+									alt="Adobe Podcast Shasta" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="BlackBoxAI" class="w3-container ia" style="display:none">
+						<h3>BlackBox AI</h3>
+						<p>"BlackBox AI é uma ferramenta baseada em inteligência artificial que <c class="configurado">
+								permite extrair códigos de qualquer vídeo</c>,
+							converter perguntas em linguagem natural em códigos e fornecer sugestões de autocompletar
+							códigos para várias
+							linguagens de programação.Ela é projetada para ser usada em uma ampla variedade de ambientes
+							de desenvolvimento
+							e pode ser usada para melhorar a experiência geral de codificação, sem distrações.Pode ser
+							usada com qualquer
+							editor de texto, ambiente de desenvolvimento integrado (IDE), navegador web ou outro
+							software, sem a necessidade
+							de plugins ou configurações adicionais, permitindo aumentar a produtividade e eficiência dos
+							desenvolvedores,
+							reduzindo a necessidade de codificação manual, reduzindo a possibilidade de erros e tornando
+							o processo de
+							aprendizado mais eficiente."</p>
+						<div class="w3-col m12">
+							<a href="https://www.useblackbox.io/search " target="_blank"><img
+									src="https://i.postimg.cc/Mp8Nn9Z5/blackbox-1024x441-png.webp" alt="BlackBox AI"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="GithubCopilot" class="w3-container ia" style="display:none">
+						<h3>Github Copilot</h3>
+						<p>GitHub Copilot é uma nova ferramenta de <c class="configurado">autocompletar código</c>
+							alimentada por Inteligência Artificial desenvolvida
+							pelo GitHub. Ela foi projetada para ajudar os desenvolvedores a escrever código de forma
+							mais eficiente,
+							fornecendo sugestões de trechos de código conscientes de contexto e completando linhas de
+							código. Ele usa
+							modelos de aprendizado de máquina para entender o código do desenvolvedor e a linguagem de
+							programação que eles
+							estão usando. Com o Copilot, o desenvolvedor pode se concentrar na lógica do código e deixar
+							que o Copilot
+							complete as tarefas de codificação comuns e tediosas, melhorando a produtividade e
+							eficiência.</p>
+						<div class="w3-col m12">
+							<a href="https://github.com/features/copilot " target="_blank"><img
+									src="https://i.postimg.cc/G2Bq7Dh9/githubcopilot-1024x517-png.webp"
+									alt="Github Copilot" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Baseten" class="w3-container ia" style="display:none">
+						<h3>Baseten</h3>
+						<p>Baseten é uma aplicação de <c class="configurado">restauração de fotos</c> que utiliza um
+							modelo gerativo chamado GFP-GAN (Rede Geradora
+							Adversarial de Pirâmide de Características Gerativas) para restaurar fotos antigas e
+							danificadas. O GFP-GAN é um
+							modelo gerativo que usa uma combinação de uma rede geradora e uma rede discriminadora para
+							gerar novas imagens
+							com base nas imagens de entrada, no caso, as fotos antigas ou danificadas. A aplicação
+							Baseten aplica esse
+							modelo GFP-GAN para restaurar fotos antigas, gerando novas versões de alta qualidade das
+							imagens de entrada.
+							Isso pode ser útil para preservar e restaurar imagens históricas importantes ou memórias
+							pessoais, tornando-as
+							mais claras e atraentes visualmente.</p>
+						<div class="w3-col m12">
+							<a href="https://app.baseten.co/apps/QPp4nPE/operator_views/RqgOnqV " target="_blank"><img
+									src="https://i.postimg.cc/1zbpzjs5/basent-1024x433-png.webp" alt="Baseten"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="HugginFace" class="w3-container ia" style="display:none">
+						<h3>Huggin Face</h3>
+						<p>Hugging Face é uma empresa americana que desenvolve ferramentas de inteligência artificial
+							(IA) e aprendizado de
+							máquina (ML) para facilitar o desenvolvimento de aplicativos baseados em linguagem natural.
+							Eles oferecem uma
+							variedade de bibliotecas e modelos pré-treinados que podem ser usados para tarefas como <c
+								class="configurado">processamento de
+								linguagem natural</c>, <c class="configurado">restauração de fotos</c> que utiliza um
+							modelo gerativo chamado GFP-GAN (Rede Geradora
+							Adversarial de Pirâmide de Características Gerati <c class="configurado">geração de texto
+							</c>, <c class="configurado">tradução automática</c> e <c class="configurado">reconhecimento
+								de fala</c>, entre outras. Eles também
+							oferecem serviços de treinamento de modelos personalizados para atender às necessidades
+							específicas de um
+							cliente. A missão da Hugging Face é tornar a IA acessível para desenvolvedores e cientistas
+							de dados, permitindo
+							que eles criem aplicativos baseados em linguagem natural mais avançados e sofisticados.</p>
+						<div class="w3-col m12">
+							<a href="https://huggingface.co/ " target="_blank"><img
+									src="https://i.postimg.cc/Y9fhwnSP/huggingface-1024x401-png.webp" alt="Huggin Face"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="NightCafe" class="w3-container ia" style="display:none">
+						<h3>NightCafe</h3>
+						<p>"NightCafe Studio é uma empresa que busca democratizar o processo de <c class="configurado">
+								criação de arte</c>, fornecendo ferramentas que
+							permitem que pessoas de todos os níveis de habilidade criem arte única e pessoal gerada por
+							Inteligência
+							Artificial . A empresa foi fundada em novembro de 2019 por Angus Russell e está sediada em
+							Cairns, Austrália.A
+							NightCafe Studio oferece uma ampla variedade de ferramentas de criação de arte baseadas em
+							IA, como Stable
+							Diffusion, DALL-E 2, CLIP-Guided Diffusion, VQGAN+CLIP e Neural Style Transfer, que estão
+							disponíveis em sua
+							plataforma.A empresa também fornece desafios diários de arte IA para os usuários
+							participarem e cresceu
+							rapidamente desde o seu lançamento, com mais de 35 milhões de obras de arte geradas por IA
+							criadas na
+							plataforma. O objetivo final da NightCafe Studio é tornar a criação de arte acessível às
+							massas com a ajuda da
+							IA."</p>
+						<div class="w3-col m12">
+							<a href="https://nightcafe.studio/ " target="_blank"><img
+									src="https://i.postimg.cc/639BC99H/nightcafe-1024x484-png.webp" alt="NightCafe"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Rytr" class="w3-container ia" style="display:none">
+						<h3>Rytr</h3>
+						<p>"Rytr é uma assistente de escrita IA que ajuda a <c class="configurado">criar conteúdo</c> de
+							alta qualidade em poucos segundos e a um custo
+							muito menor. Ele oferece vários recursos como geração de ideias de blog, escrita de
+							introdução e seções de
+							blogs, geração de nomes de marca, escrita de cartas de apresentação, gerador de ideias de
+							negócios, geração de
+							chamadas para ação, ferramenta de estruturação de copywriting, gerador de descrições de
+							produtos, gerador de
+							letras de música, gerador de histórias, gerador de taglines e títulos, gerador de perguntas
+							e respostas, geração
+							de descrições de SEO e muito mais.Ele também tem recursos adicionais como análise de SERP,
+							gerador de
+							palavras-chave, extrator de palavras-chave, modo escuro, guias detalhados e uma comunidade
+							de usuários para
+							compartilhar ideias e dúvidas. Além disso, ele oferece uma API para que qualquer pessoa
+							possa integrar seus
+							recursos em seus próprios projetos."</p>
+						<div class="w3-col m12">
+							<a href="https://rytr.me/ " target="_blank"><img
+									src="https://i.postimg.cc/y8mqjwp2/rytr-1024x554-png.webp" alt="Rytr"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Pixel­hunter" class="w3-container ia" style="display:none">
+						<h3>Pixel­hunter</h3>
+						<p>"Pixelhunter é um <c class="configurado">resizer de imagem gratuito para mídias sociais</c>
+							que utiliza a API de Inteligência Uploadcare
+							para reconhecer objetos e recortar imagens automaticamente, de forma mais inteligente.Com o
+							Pixelhunter, basta
+							fazer o upload de sua imagem de qualquer tamanho e ela será automaticamente redimensionada
+							para as 102 dimensões
+							que o Pixelhunter suporta. A Inteligência Artificial garante que sua imagem seja
+							redimensionada da melhor forma
+							possível. Além disso, o Pixelhunter possui dicas profissionais que realmente ajudam a
+							melhorar suas imagens."
+						</p>
+						<div class="w3-col m12">
+							<a href="https://pixelhunter.io/ " target="_blank"><img
+									src="https://i.postimg.cc/v84ZhZrj/pixelhunter-1024x490-png.webp" alt="Pixel­hunter"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="QuillBot" class="w3-container ia" style="display:none">
+						<h3>QuillBot</h3>
+						<p>QuillBot é um <c class="configurado">assistente de escrita</c> baseado em inteligência
+							artificial que ajuda os usuários a melhorar sua
+							escrita e gerar conteúdo de qualidade. Ele oferece recursos como correção gramatical,
+							sugestões de palavras,
+							reescrita de frases e muito mais. QuillBot também pode ser usado para ajudar na criação de
+							conteúdo para blogs,
+							artigos, e-mails e outros tipos de escrita. Ele é fácil de usar e pode ser acessado através
+							de uma interface de
+							usuário na web ou como uma extensão para navegadores.</p>
+						<div class="w3-col m12">
+							<a href="https://quillbot.com/ " target="_blank"><img
+									src="https://i.postimg.cc/9MrCLL7T/quillbot-1024x410-png.webp" alt="QuillBot"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Craiyon" class="w3-container ia" style="display:none">
+						<h3>Craiyon</h3>
+						<p>Craiyon é uma ferramenta de inteligência artificial que pode <c class="configurado">desenhar
+								imagens a partir de qualquer prompt de
+								texto</c>. Ele foi criado a partir do modelo DALL·E mini, que foi treinado usando o
+							Google TRC. Com Craiyon, os
+							usuários podem gerar ilustrações, imagens fotorrealistas e imagens de alta definição a
+							partir de suas próprias
+							descrições ou palavras-chave. A ferramenta também oferece dicas e truques para ajudar os
+							usuários a obter os
+							melhores resultados possíveis.</p>
+						<div class="w3-col m12">
+							<a href="https://www.craiyon.com/ " target="_blank"><img
+									src="https://i.postimg.cc/65NxZWYC/craiyon-1024x545-png.webp" alt="Craiyon"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Krisp" class="w3-container ia" style="display:none">
+						<h3>Krisp</h3>
+						<p>Krisp é um software de <c class="configurado">ruído de fundo de áudio</c> que utiliza
+							inteligência artificial para remover ruídos
+							indesejados de fundo, como barulhos de tráfego, crianças brincando, máquinas de escrever e
+							muito mais, deixando
+							somente a sua voz clara e nítida. Ele é projetado para melhorar a qualidade de chamadas de
+							áudio em ferramentas
+							de comunicação como Zoom, Skype, Teams e outros. Ele também pode ser usado para melhorar a
+							qualidade de
+							gravações de áudio e podcasts.</p>
+						<div class="w3-col m12">
+							<a href="https://krisp.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/RVPGBG6q/krisp-1024x552-png.webp" alt="Krisp"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Melobytes" class="w3-container ia" style="display:none">
+						<h3>Melobytes</h3>
+						<p>Melobytes é uma ferramenta baseada em inteligência artificial que permite a <c
+								class="configurado">criação de música</c>s e <c class="configurado">vídeos de música</c>
+							de computador com apenas um clique. Ele também permite que os usuários postem suas criações
+							e as marquem para
+							compartilhar com a comunidade.</p>
+						<div class="w3-col m12">
+							<a href="https://melobytes.com/en/ " target="_blank"><img
+									src="https://i.postimg.cc/qvhcdrHZ/melobytes-1024x582-png.webp" alt="Melobytes"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Jasper" class="w3-container ia" style="display:none">
+						<h3>Jasper</h3>
+						<p>Jasper é um assistente de inteligência artificial (AI) que ajuda as pessoas a <c
+								class="configurado">criar conteúdo</c> e <c class="configurado"></c>cópia de alta
+							conversão</c>, gerar novas ideias, aumentar a produção de conteúdo, escrever em diversas
+							situações, e trabalhar com
+							equipes de conteúdo. Ele pode ler e escrever conteúdo em 25 idiomas, incluindo inglês,
+							espanhol, japonês e
+							português. Ele também pode ser usado para melhorar processos e produtos empresariais.</p>
+						<div class="w3-col m12">
+							<a href="https://www.jasper.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/4x9cS1pD/jasper-1024x626-png.webp" alt="Jasper"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Beatoven" class="w3-container ia" style="display:none">
+						<h3>Beatoven</h3>
+						<p>Beatoven é um assistente de inteligência artificial (AI) que permite <c class="configurado">
+								criar música única</c> para seu conteúdo de
+							forma fácil e rápida. Ele oferece uma seleção de 8 gêneros diferentes e 16 estilos de humor
+							para escolher, e
+							permite fazer cortes no conteúdo para adicionar diferentes estilos de música. Além disso,
+							ele permite selecionar
+							e deselecionar instrumentos e personalizar cada seção com as opções de música disponíveis.
+							Beatoven também
+							oferece tutoriais para ajudar os usuários a criar suas primeiras músicas usando o assistente
+							AI.</p>
+						<div class="w3-col m12">
+							<a href="https://www.beatoven.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/QtxHhgWx/beatoven-1024x509-png.webp" alt="Beatoven"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Cleanvoice" class="w3-container ia" style="display:none">
+						<h3>Cleanvoice</h3>
+						<p>Cleanvoice é uma ferramenta de remoção de ruído de áudio que utiliza inteligência artificial
+							para <c class="configurado">melhorar a
+								qualidade do som em gravações</c>. Ele pode remover ruídos de fundo como o barulho do
+							trânsito, conversas, etc,
+							melhorando a clareza e a compreensão do áudio. Ele pode ser usado em diversas aplicações,
+							como gravações de
+							podcast, entrevistas, gravações de vídeo, etc.</p>
+						<div class="w3-col m12">
+							<a href="https://cleanvoice.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/Hk9MmkPz/cleanvoice-1024x531-png.webp" alt="Cleanvoice"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Podcastle" class="w3-container ia" style="display:none">
+						<h3>Podcastle</h3>
+						<p>Podcastle é uma ferramenta de <c class="configurado">criação de conteúdo para podcasts</c>.
+							Ele oferece uma variedade de recursos, incluindo
+							gravação de estúdio de alta qualidade, edição de áudio e vídeo, transcrição de áudio,
+							conversão de texto para
+							fala, remoção de ruído de fundo e muito mais. Além disso, possui uma aplicação mobile iOS
+							para gravação e edição
+							de conteúdo on-the-go. Podcastle é projetado para tornar o processo de criação de podcasts
+							fácil e acessível
+							para todos.</p>
+						<div class="w3-col m12">
+							<a href="https://podcastle.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/wvy31qFS/podcastle-1024x505-png.webp" alt="Podcastle"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Flair" class="w3-container ia" style="display:none">
+						<h3>Flair</h3>
+						<p>Flair AI é uma ferramenta revolucionária para <c class="configurado">criar conteúdo
+								personalizado para redes sociais</c> que utiliza
+							Inteligência Artificial . Com uma interface de arrastar e soltar, a ferramenta permite que
+							você construa cenas
+							em torno de seu produto usando ativos personalizados e acessórios, e preenche
+							automaticamente os espaços em
+							branco. A ferramenta por ser de alta qualidade, fácil de usar, rápida e acessível, torna o
+							processo de criação
+							de conteúdo para as redes sociais menos demorado e menos estressante.</p>
+						<div class="w3-col m12">
+							<a href="https://flair.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/W1Y20RDj/flair-1024x483-png.webp" alt="Flair"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Illustroke" class="w3-container ia" style="display:none">
+						<h3>Illustroke</h3>
+						<p>"llustroke é uma plataforma que usa tecnologia de inteligência artificial (IA) para <c
+								class="configurado">converter solicitações de
+								texto em ilustrações SVG</c>. Ele permite que os usuários criem ilustrações bonitas e
+							personalizáveis ​​para usar em
+							sites ou mídias sociais facilmente.O usuário insere uma descrição em texto e a plataforma
+							gera uma ilustração
+							baseada nessa entrada. É uma ferramenta para pessoas que desejam criar ilustrações
+							rapidamente, sem precisar ter
+							habilidades e conhecimento da criação tradicional de ilustrações. Foi lançado na categoria
+							de ferramentas de
+							design e utiliza inteligência artificial para gerar ilustrações a partir de solicitações de
+							texto."</p>
+						<div class="w3-col m12">
+							<a href="https://illustroke.com/ " target="_blank"><img
+									src="https://i.postimg.cc/wMFKHJLH/illustroke-1024x511-png.webp" alt="Illustroke"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="PatternedAI" class="w3-container ia" style="display:none">
+						<h3>PatternedAI</h3>
+						<p>PatternedAI oferece uma ferramenta que usa inteligência artificial para <c
+								class="configurado">gerar padrões únicos</c>. A ferramenta recebe
+							palavras-chave fornecidas pelo usuário e gera desenhos personalizados de acordo com essas
+							palavras-chave,
+							permitindo a criação de milhares de padrões únicos e livres de direitos autorais. A
+							ferramenta é projetada para
+							ser fácil de usar e pode ser útil para designers, fabricantes e outros profissionais que
+							precisam de padrões
+							exclusivos para seus produtos.</p>
+						<div class="w3-col m12">
+							<a href="https://www.patterned.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/Wp5fNsx2/patternedia-1024x514-png.webp" alt="PatternedAI"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="StockimgAI" class="w3-container ia" style="display:none">
+						<h3>Stockimg AI</h3>
+						<p>Stockimg AI usa inteligência artificial para <c class="configurado">gerar imagens para
+								equipes</c> e <c class="configurado">empresas</c>. A ferramenta permite que os
+							usuários gerem logotipos, capas de livros, cartazes e outros tipos de imagens. É uma
+							ferramenta útil para
+							empresas, equipes de marketing e outros profissionais que precisam gerar rapidamente imagens
+							de alta qualidade
+							para uso em materiais de marketing, publicidade e outras aplicações. A tecnologia AI usada
+							permite a criação de
+							imagens personalizadas de acordo com as necessidades e projetadas para serem únicas e de
+							alta qualidade.</p>
+						<div class="w3-col m12">
+							<a href="https://stockimg.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/pVcqNqnr/stockingimgai-1024x433-png.webp"
+									alt="Stockimg AI" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="CopyMonkey" class="w3-container ia" style="display:none">
+						<h3>CopyMonkey</h3>
+						<p>CopyMonkey é uma ferramenta alimentada por inteligência artificial que <c
+								class="configurado">ajuda os vendedores na Amazon a otimizar
+								suas listagens</c>. Ele usa algoritmos de inteligência artificial para analisar as
+							listagens dos concorrentes e
+							identificar as melhores práticas, além de sugerir palavras-chave relevantes para aumentar a
+							visibilidade e as
+							vendas dos produtos. Ele também pode sugerir melhorias na listagem baseadas nos resultados
+							de vendas. Isso pode
+							ajudar os vendedores a se manterem competitivos e a aumentar suas vendas.</p>
+						<div class="w3-col m12">
+							<a href="https://copymonkey.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/ZYpS7BQW/copymonkey-1024x472-png.webp" alt="CopyMonkey"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Ocoya" class="w3-container ia" style="display:none">
+						<h3>Ocoya</h3>
+						<p>Ocoya é uma plataforma para <c class="configurado">gerenciamento de conteúdo de mídias
+								sociais</c>, que permite criar, programar e
+							automatizar publicações. Oferece recursos como modelos de imagens e vídeos, análise de
+							desempenho, ferramentas
+							de e-commerce, encurtador de links e colaboração em equipe. Com Ocoya, as empresas podem
+							economizar tempo e
+							esforço na criação e gerenciamento de suas presenças nas redes sociais e aumentar o alcance
+							e engajamento com
+							seus seguidores.</p>
+						<div class="w3-col m12">
+							<a href="https://www.ocoya.com/ " target="_blank"><img
+									src="https://i.postimg.cc/J4M9pTJF/ocoya-1024x532-png.webp" alt="Ocoya"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Unbounce" class="w3-container ia" style="display:none">
+						<h3>Unbounce</h3>
+						<p>Unbounce é uma plataforma para <c class="configurado">construção de sites</c> e <c
+								class="configurado">otimização de páginas de destino</c>, que permite criar e
+							otimizar páginas de destino e outras páginas da web facilmente, sem necessidade de
+							habilidades técnicas ou
+							codificação. Oferece recursos como construção de páginas arrastando e soltando, testes A/B,
+							otimização de taxa
+							de conversão e análise. Com Unbounce, as empresas podem aumentar sua presença online, gerar
+							leads e aumentar
+							conversões, melhorando a performance de suas páginas de destino.</p>
+						<div class="w3-col m12">
+							<a href="https://unbounce.com/ " target="_blank"><img
+									src="https://i.postimg.cc/5thrLpbn/unbounce-1024x512-png.webp" alt="Unbounce"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="VidyoAI" class="w3-container ia" style="display:none">
+						<h3>Vidyo AI</h3>
+						<p>Vidyo AI é uma plataforma que usa tecnologia de inteligência artificial para <c
+								class="configurado">ajudar os usuários a criar vídeos
+								curtos para as mídias sociais a partir de vídeos maiores</c>. Ele seleciona, edita e
+							adiciona legendas
+							automaticamente os melhores momentos de um vídeo, permitindo que os usuários personalizem
+							suas preferências. A
+							plataforma inclui recursos como legendagem automática, redimensionamento de vídeo e recorte,
+							além de modelos
+							para mídias sociais. É útil para criadores de vídeo e equipes de conteúdo que desejam
+							aumentar sua presença
+							online e obter resultados melhores com seus esforços de marketing de conteúdo.</p>
+						<div class="w3-col m12">
+							<a href="https://vidyo.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/X7YsZt9n/vidyoai-1024x513-png.webp" alt="Vidyo AI"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Maverick" class="w3-container ia" style="display:none">
+						<h3>Maverick</h3>
+						<p>Maverick é uma plataforma tecnológica que usa inteligência artificial para <c
+								class="configurado">ajudar as lojas e-commerce a
+								personalizar suas interações com os clientes através de vídeos</c>. Ele permite gravar
+							um vídeo uma vez e, em
+							seguida, personalizá-lo automaticamente para todos os clientes, chamando-os pelo nome. A
+							plataforma tem como
+							objetivo aumentar a satisfação do cliente e construir relações verdadeiras com os clientes,
+							além de proporcionar
+							mensagens de vídeo personalizadas por e-mail e páginas de vídeo com marca. Maverick afirma
+							que pode aumentar as
+							vendas e o engajamento e prolongar o valor de vida do cliente através de vídeos
+							personalizados, além de ser
+							fácil de configurar e se integrar com diversas plataformas e-commerce e ferramentas de
+							marketing por e-mail.</p>
+						<div class="w3-col m12">
+							<a href="https://www.trymaverick.com/ " target="_blank"><img
+									src="https://i.postimg.cc/0Q9pTJf9/maverick-1024x558-png.webp" alt="Maverick"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Quickchat" class="w3-container ia" style="display:none">
+						<h3>Quickchat</h3>
+						<p>"Quickchat é uma plataforma de inteligência artificial que <c class="configurado">permite a
+								criação de assistentes virtuais</c> que se
+							comunicam como se fossem humanos. Ela utiliza a tecnologia GPT-3 e não requer conhecimentos
+							de programação. Os
+							usuários podem começar com um assistente virtual genérico e adicionar sua própria base de
+							conhecimento.A
+							plataforma oferece integrações e uma API, possibilitando a incorporação do widget Quickchat
+							em um site ou a
+							integração com outros aplicativos de mensagens, softwares de chat ao vivo ou aplicativos
+							próprios.A assistente
+							virtual do Quickchat é multilíngue, podendo ser usada a mesma base de conhecimento escrita
+							em inglês para criar
+							uma assistente virtual que se comunica em qualquer idioma. Ele é voltado para donos de
+							sites, desenvolvedores e
+							empresas que buscam automatizar a comunicação com seus clientes, aumentando suas vendas e
+							melhorando o suporte
+							ao cliente."</p>
+						<div class="w3-col m12">
+							<a href="https://www.quickchat.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/cC2tLKQg/quickchat-1024x491-png.webp" alt="Quickchat"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Puzzlelabs" class="w3-container ia" style="display:none">
+						<h3>Puzzlelabs</h3>
+						<p>Puzzlelabs é uma empresa que <c class="configurado">oferece uma solução para facilitar a
+								compreensão de produtos complexos e
+								terminologias através da criação de glossários dinâmicos</c>. Estes glossários fornecem
+							definições claras e concisas
+							de termos e conceitos importantes e podem ser incorporados em blogs ou documentações para
+							destacar, definir e
+							vincular conteúdos relevantes. O objetivo é ajudar os clientes a entender melhor o produto
+							sem precisar recorrer
+							a buscas na internet. A empresa acredita que a compreensão de informações complexas deve ser
+							fácil e agradável,
+							e está desenvolvendo ferramentas para tornar a experiência de educação dos clientes ainda
+							melhor.</p>
+						<div class="w3-col m12">
+							<a href="https://puzzlelabs.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/sgR1HCKr/puzzlelabs-1024x621-png.webp" alt="Puzzlelabs"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Soundraw" class="w3-container ia" style="display:none">
+						<h3>Soundraw</h3>
+						<p>Soundraw é uma plataforma que <c class="configurado">permite que os usuários criem música
+								livre de direitos autorais</c> usando tecnologia
+							AI. Os usuários podem selecionar o humor, o gênero e o comprimento da música que desejam
+							criar e o AI gerará
+							músicas para eles. Os usuários também podem personalizar as músicas para atender às suas
+							necessidades e
+							combiná-las com seus vídeos. A plataforma garante que não há risco de golpes de direitos
+							autorais, pois a música
+							gerada é livre de direitos autorais e pode ser usada tanto para uso pessoal quanto
+							comercial. A música gerada
+							pode ser usada para uma variedade de conteúdos, como vídeos, podcasts, programas de rádio,
+							vídeos corporativos,
+							transmissões ao vivo, jogos, aplicativos e muito mais.</p>
+						<div class="w3-col m12">
+							<a href="https://soundraw.io/ " target="_blank"><img
+									src="https://i.postimg.cc/mZtj3Jmj/soundraw-1024x511-png.webp" alt="Soundraw"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="CleanupPictures" class="w3-container ia" style="display:none">
+						<h3>Cleanup Pictures</h3>
+						<p>Cleanup.Pictures é uma ferramenta de edição de imagens que utiliza inteligência artificial
+							para remover elementos
+							indesejáveis em questão de segundos. Ele permite remover objetos, pessoas, textos,
+							logotipos, marcas d’água,
+							borrões e outros defeitos presentes nas <c class="configurado">imagens</c>. Sua interface é
+							fácil de usar e ele é indicado para
+							profissionais de fotografia, design gráfico e marketing, assim como para uso pessoal, pois
+							ajuda a deixar as
+							imagens limpas e perfeitas.</p>
+						<div class="w3-col m12">
+							<a href="https://cleanup.pictures/ " target="_blank"><img
+									src="https://i.postimg.cc/Hk2b19Sj/cleanuppictures-1024x469-png.webp"
+									alt="Cleanup Pictures" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="ResumeWorded" class="w3-container ia" style="display:none">
+						<h3>Resume Worded</h3>
+						<p>Resume Worded é uma ferramenta ou serviço para ajudar as pessoas a melhorar o seu <c
+								class="configurado">currículo</c>, geralmente com o
+							objetivo de conseguir um emprego. Ele pode ajudar os usuários a escrever e formatar seus
+							currículos, bem como
+							fornecer dicas e sugestões para melhorar o conteúdo e destacar as suas habilidades e
+							experiência. Ele pode usar
+							algoritmos de inteligência artificial para analisar currículos e oferecer feedback
+							personalizado para cada
+							usuário. Ele pode também ajudar os usuários a criar currículos personalizados para
+							diferentes oportunidades de
+							emprego.</p>
+						<div class="w3-col m12">
+							<a href="https://resumeworded.com/ " target="_blank"><img
+									src="https://i.postimg.cc/Y91pTb3s/resumeworrded-1024x466-png.webp"
+									alt="Resume Worded" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Looka" class="w3-container ia" style="display:none">
+						<h3>Looka</h3>
+						<p>Looka é uma ferramenta de design de logotipo que <c class="configurado">permite criar
+								logotipos personalizados</c> para sua marca ou negócio
+							usando inteligência artificial. Ele oferece uma variedade de opções de design pré-fabricadas
+							e permite que os
+							usuários personalizem o logotipo escolhido, selecionando cores, fontes e outros elementos de
+							design. Ele também
+							permite a exportação de arquivos para uso em diferentes plataformas, como impressão e redes
+							sociais. Além disso,
+							pode oferecer outros recursos como criação de cartões de visita, papel timbrado e outros
+							elementos de branding.
+						</p>
+						<div class="w3-col m12">
+							<a href="https://looka.com/ " target="_blank"><img
+									src="https://i.postimg.cc/rsfLLbtQ/looka-1024x520-png.webp" alt="Looka"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Synthesia" class="w3-container ia" style="display:none">
+						<h3>Synthesia</h3>
+						<p>Synthesia é uma plataforma de criação de vídeo baseada em inteligência artificial que <c
+								class="configurado">permite criar vídeos a
+								partir de texto</c> simples em minutos. Ele é usado por milhares de empresas para criar
+							vídeos em 120 idiomas,
+							economizando até 80% do tempo e orçamento. A plataforma é usada por equipes de treinamento,
+							suporte e marketing
+							e é fácil de usar e escalável. Ele também oferece recursos como atores virtuais e avatares
+							personalizados para
+							marcas.</p>
+						<div class="w3-col m12">
+							<a href="https://www.synthesia.io/ " target="_blank"><img
+									src="https://i.postimg.cc/4yNrw5Ft/synthesia-1024x522-png.webp" alt="Synthesia"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Descript" class="w3-container ia" style="display:none">
+						<h3>Descript</h3>
+						<p>Descript é uma ferramenta de edição de vídeo e áudio fácil de usar que <c
+								class="configurado">permite aos usuários editar vídeos</c> e
+							podcasts de maneira simples e intuitiva, com recursos como edição multitrack, captura de
+							tela, transcrição
+							automática e criação de clips. Além disso, o Descript também permite aos usuários publicar e
+							hospedar seus
+							vídeos em um player incorporável e oferece integrações com outras ferramentas de trabalho
+							para facilitar a
+							colaboração e a comunicação.</p>
+						<div class="w3-col m12">
+							<a href="https://www.descript.com/ " target="_blank"><img
+									src="https://i.postimg.cc/bJqMNgPM/descript-1024x472-png.webp" alt="Descript"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Otter" class="w3-container ia" style="display:none">
+						<h3>Otter</h3>
+						<p>Otter AI é uma ferramenta de <c class="configurado">transcrição automática de áudio</c> e <c
+								class="configurado">vídeo</c> que ajuda os usuários a transformar arquivos
+							de áudio e vídeo em texto. Ele usa inteligência artificial para reconhecer a fala e produzir
+							transcrições
+							precisas e completas. Ele também inclui recursos de edição e compartilhamento, permitindo
+							que os usuários editem
+							e compartilhem as transcrições facilmente. Otter AI é amplamente utilizado para aplicativos
+							de notas de reunião,
+							transcrição de entrevistas, transcrição de palestras, transcrição de podcast e outros fins
+							profissionais.</p>
+						<div class="w3-col m12">
+							<a href="https://otter.ai/ " target="_blank"><img
+									src="https://i.postimg.cc/gjTBsPhF/otter-1024x471-png.webp" alt="Otter"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Inkforall" class="w3-container ia" style="display:none">
+						<h3>Inkforall</h3>
+						<p>O Inkforall é uma plataforma de <c class="configurado">marketing de conteúdo</c> baseada em
+							IA que ajuda as empresas a criar conteúdo de
+							qualidade sem correr o risco de violar as políticas de plataformas como o Google. A
+							plataforma oferece cursos,
+							vídeos, suporte e comunidade para ajudar os usuários a dominar a criação e o desempenho de
+							conteúdo.</p>
+						<div class="w3-col m12">
+							<a href="https://inkforall.com/ " target="_blank"><img
+									src="https://i.postimg.cc/Y92nwSfB/ink-1024x540-png.webp" alt="Inkforall"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Thundercontent" class="w3-container ia" style="display:none">
+						<h3>Thundercontent</h3>
+						<p>"Thundercontent é uma ferramenta de inteligência artificial que ajuda você e sua equipe a <c
+								class="configurado">superar o bloqueio
+								criativo</c> e <c class="configurado">gerar qualquer tipo de conteúdo único</c> e de
+							alta qualidade, em qualquer idioma, à velocidade da luz.
+							Ele funciona com um assistente de escrita alimentado por IA para automatizar sua escrita de
+							cópias e gerar
+							conteúdo de alta qualidade. Também possui um editor de texto limpo e claro, que permite
+							escrever com
+							tranquilidade. Além disso, o conteúdo gerado é único e passa com sucesso em todos os
+							verificadores de plágio.
+							Ele também possui ferramentas de exportação para formatos como Texto, PDF, Markdown e até
+							mesmo HTML. Suporta
+							mais de 12 idiomas, incluindo inglês, francês, espanhol, italiano, polonês, português,
+							holandês, alemão, russo,
+							chinês e japonês."</p>
+						<div class="w3-col m12">
+							<a href="https://thundercontent.com/ " target="_blank"><img
+									src="https://i.postimg.cc/vTJtD89B/thundercontent-1024x549-png.webp"
+									alt="Thundercontent" style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Laura" class="w3-container ia" style="display:none">
+						<h3>Laura</h3>
+						<p>A Laura é uma empresa de tecnologia criada por Jac Fressatto, um arquiteto de sistemas, que
+							desenvolve soluções
+							de inteligência artificial com o objetivo de <c class="configurado">melhorar o acesso a
+								cuidados de saúde</c> e diminuir o número de mortes
+							por sepse. Seu primeiro produto é a Robô Laura, um robô cognitivo gerenciador de riscos que
+							ajuda a identificar
+							precocemente os riscos de deterioração clínica e priorizar o atendimento em hospitais. A
+							Robô Laura já ajudou a
+							salvar cerca de 24 mil vidas e reduziu em 25% a taxa de mortalidade hospitalar. A empresa
+							também tem um braço
+							sem fins lucrativos chamado Instituto Laura, que tem como objetivo desenvolver e validar
+							cientificamente
+							tecnologias de ponta com aplicações práticas no dia-a-dia.</p>
+						<div class="w3-col m12">
+							<a href="http://www.laura-br.com/ " target="_blank"><img
+									src="https://i.postimg.cc/xCqZzCky/laura-1024x515-png.webp" alt="Laura"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="Make-A-Video" class="w3-container ia" style="display:none">
+						<h3>Make-A-Video</h3>
+						<p>"Make-A-Video é um sistema de inteligência artificial da Meta AI de última geração que <c
+								class="configurado">gera vídeos a partir de
+								texto</c>. Ele usa imagens com descrições para aprender como o mundo é representado e
+							como é descrito. Ele também
+							usa vídeos não rotulados para aprender como o mundo se move. Com esses dados, o Make-A-Video
+							permite que você dê
+							vida à sua imaginação, gerando vídeos únicos e criativos com apenas algumas palavras ou
+							linhas de texto. Ele
+							também tem recursos adicionais para criar variações do vídeo original, adicionar movimento a
+							uma única imagem ou
+							preencher o movimento entre duas imagens. É uma forma criativa de adicionar movimento e vida
+							a suas imagens
+							estáticas."</p>
+						<div class="w3-col m12">
+							<a href="https://makeavideo.studio/ " target="_blank"><img
+									src="https://i.postimg.cc/7PFR5qq0/makeavideo-1024x538-png.webp" alt="Make-A-Video"
+									style="width:100%"></a>
+						</div>
+					</div>
+					<div id="LearningStudioAI" class="w3-container ia" style="display:none">
+						<h3>Learning Studio AI</h3>
+						<p>Apresentando LearningStudioAI, a ferramenta de <c class="configurado">criação de cursos
+								on-line</c> de última geração</p>
+						<div class="w3-col m12">
+							<a href="https://learningstudioai.com/" target="_blank"><img
+									src="https://i.postimg.cc/3NsRYr29/AS.jpg" alt="Learning Studio AI"
+									style="width:100%"></a>
+						</div>
+					 </div>
+			      </div><br />
+			    </div5>

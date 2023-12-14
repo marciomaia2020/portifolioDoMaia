@@ -1,0 +1,595 @@
+
+		<div class="w3-container w3-center">
+			<h2>Mensageria</h2>
+			<button id="btn4" class="fa-solid fa-plus"></button>
+			<button id="btn3" class="fa-solid fa-minus"></button>
+		</div><br />
+		<div class="w3-container">
+				<div class="w3-bar w3-green">
+					<button class="w3-bar-item w3-button" onclick="openIA('MessageBrokers')">Message Brokers </button>
+					<button class="w3-bar-item w3-button" onclick="openIA('RabbitMQ')">RabbitMQ</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('ActiveMQ')">ActiveMQ</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('ApacheKafka')">Apache Kafka</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('AMQP')">AMQP</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('MQTT')">MQTT</button>
+				</div>
+		 <div2>
+				<!--PERGUNTA VALIOSA USADO NO https://chat.openai.com/
+				Apache Kafka fale sobre ele, o que é, pra que serve, onde usar, como usar e implementar-->
+				<div id="MessageBrokers" class="w3-container ia" style="display:yes">
+					<h3>Message Brokers</h3>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Message Broker? </c><a href="https://medium.com/@devbrito91/mensageria-1330c6032049" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+							<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+						<p>Os <c class="configurado">message brokers</c> são sistemas que facilitam a comunicação entre diferentes aplicações, permitindo o envio e recebimento de mensagens. Eles são usados para criar arquiteturas de software distribuídas e escaláveis. Você pode implementá-los usando tecnologias como Apache Kafka, RabbitMQ ou ActiveMQ.</p>
+
+					</div>
+					<p>Os message brokers são uma ferramenta poderosa que pode ser usada para simplificar a <u>comunicação assíncrona</u> entre aplicativos, sistemas e serviços. Eles oferecem uma variedade de benefícios, incluindo:</p>
+					<p>Um Message Broker é frequentemente utilizado em ambientes onde há necessidade de comunicação assíncrona e troca de mensagens entre diferentes componentes de um sistema distribuído. Aqui estão alguns exemplos de aplicação e implementação de Message Brokers:</p>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve um Message Broker?</c></p>
+					<p>Os Message Brokers têm várias finalidades, incluindo:</p>
+					<ol>
+						<li><b>Comunicação Assíncrona</b>: Permitem a comunicação assíncrona entre diferentes partes de um sistema, o que é crucial em ambientes distribuídos para melhorar a escalabilidade e a flexibilidade.</li>
+						<li><b>Desacoplamento</b>: Reduzem o acoplamento entre componentes do sistema, permitindo que eles operem independentemente uns dos outros.</li>
+						<li><b>Integração de Sistemas</b>: Facilitam a integração de sistemas heterogêneos, permitindo a comunicação entre aplicativos desenvolvidos em diferentes linguagens e plataformas./li>
+						<li><b>Garantia de Entrega</b>: Oferecem mecanismos para garantir a entrega confiável de mensagens, mesmo em situações de falha.</li>
+						<li><b>Escalabilidade</b>: Permitem a construção de sistemas distribuídos escaláveis, onde diferentes partes do sistema podem escalar de forma independente.</li>
+					</ol>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar um Message Broker?</c></p>
+					<p>Message Brokers são aplicáveis em diversos cenários, incluindo</b>:</p>
+						<ol>
+							<li><b>Microsserviços</b>: Em arquiteturas de microsserviços, onde diferentes serviços precisam se comunicar de forma eficiente e assíncrona.</li>
+							<li><b>Processamento de Eventos em Tempo Real</b>: Em situações que exigem o processamento rápido de eventos em tempo real, como análise de streaming.</li>
+							<li><b>Integração de Sistemas Empresariais</b>: Para facilitar a comunicação entre sistemas empresariais que utilizam tecnologias diferentes.</li>
+							<li><b>Sistemas de Filas de Mensagens</b>: Para implementar filas de mensagens e processamento assíncrono, úteis em casos como sistemas de notificações, processamento de tarefas em segundo plano, etc.</li>
+						</ol>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar e implementar um Message Broker</b>:</c></p>
+					<p>A implementação de um Message Broker envolve vários passos</b>:</p>
+						<ol>
+							<li><b>Escolha da Tecnologia</b>: Selecione a tecnologia de Message Broker adequada para as necessidades do seu sistema. Exemplos incluem RabbitMQ, Apache Kafka, MQTT, etc.</li>
+							<li><b>Instalação e Configuração</b>: Instale e configure o Message Broker no seu ambiente de execução.</li>
+							<li><b>Definição de Mensagens</b>: Estabeleça o formato e o conteúdo das mensagens que serão trocadas entre os diferentes componentes do sistema.</li>
+							<li><b>Produtor e Consumidor</b>: Desenvolva a lógica para os produtores (quem envia mensagens para o broker) e consumidores (quem recebe e processa as mensagens).</li>
+							<li><b>Configuração de Filas ou Tópicos</b>: Configure filas (para mensagens entregues a apenas um consumidor) ou tópicos (para mensagens entregues a vários consumidores).</li>
+							<li><b>Segurança e Autenticação</b>: Implemente medidas de segurança, como autenticação e autorização, para proteger o Message Broker contra acessos não autorizados.</li>
+							<li><b>Monitoramento</b>: Implemente ferramentas de monitoramento para acompanhar o desempenho do Message Broker.</li>
+							<li><b>Escalabilidade</b>: Configure e ajuste o Message Broker para lidar com a escalabilidade conforme o sistema cresce.</li>
+						</ol>
+					<p>A implementação específica pode variar dependendo da tecnologia escolhida e dos requisitos do sistema. Cada Message Broker possui sua própria sintaxe e conjunto de recursos, portanto, é importante consultar a documentação específica da ferramenta escolhida.</p>
+					<div class="w3-col m12 w3-center">
+						<img src="https://i.postimg.cc/FKkxJbz0/exchanges-topic-fanout-direct-1541960343.png" alt="Exchanges" style="width:100%">
+					</div>
+					<p>Lista de software de alguns outros Mensage Broker</p>
+					<ul>
+						<li>Amazon MQ</li>
+						<li>Kinesis</li>
+						<ul>
+							<li><b>Apache</b></li>
+							<ul>
+								<li>Apache ActiveMQ</li>
+								<li>Apache Artemis</li>
+								<li>Apache Camel</li>
+								<li>Apache Kafka</li>
+								<li>Apache Qpid</li>
+								<li>Apache Thrift</li>
+								<li>Apache Pulsar</li>
+								<li>Clique <a href="https://en.wikipedia.org/wiki/Message_broker" target="_blank">aqui</a> para mais</li>
+							</ul>
+						</ul>
+					</ul>
+					<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+					<p>Para praticar e aprender sobre o Message Brokers, você pode seguir esta tabela:</p>
+					 <table class="w3-table-all">
+						<thead>
+							<tr>
+								<th>Mensage Broker</th>
+								<th>Acesse</th>
+							</tr>
+						</thead>
+							<tr>
+								<td>Amazon MQ</td>
+								<td><a href="https://activemq.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></td>
+							</tr>
+							<tr>
+								<td>Apache ActiveMQ</td>
+								<td><a href="https://activemq.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a>							</td>
+							</tr>
+							<tr>
+								<td>Apache Artemis</td>
+								<td><a href="https://activemq.apache.org/components/artemis/" target="_blank"><i class="fa-solid fa-globe"></i></a>	</td>
+							</tr>
+							<tr>
+								<td>Apache Camel</td>
+								<td><a href="https://camel.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></td>
+							</tr>
+							<tr>
+								<td>Apache Kafka</td>
+								<td><a href="https://kafka.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a>	</td>
+							</tr>
+							<tr>
+								<td>Apache Qpid</td>
+								<td><a href="https://qpid.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a>	</td>
+							</tr>
+							<tr>
+								<td>Apache Thrift</td>
+								<td><a href="https://thrift.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a>							
+								</td>
+							</tr>
+							<tr>
+								<td>Apache Pulsar</td>
+								<td><a href="https://pulsar.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></td>	
+							</tr>
+						</table>
+
+				</div>
+				<div id="RabbitMQ" class="w3-container ia" style="display:none">
+					<h3>RabbitMQ</h3>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é o RabbitMQ? </c><a href="https://www.rabbitmq.com/" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+						<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+							<p><c class="configurado">RabbitMQ</c> - É um sistema de mensageria de código aberto que implementa o protocolo Advanced Message Queuing Protocol (AMQP). Ele é projetado para ser um intermediário entre aplicativos distribuídos, permitindo que eles se comuniquem de forma eficiente e confiável.</p>
+						</div>
+					<p>A ideia fundamental por trás do RabbitMQ é permitir que diferentes partes de um sistema
+						distribuído se comuniquem entre si, mesmo que estejam em máquinas diferentes e possam estar
+						usando tecnologias diferentes. Isso é alcançado por meio do conceito de filas de mensagens. Aqui
+						estão alguns conceitos-chave:</p>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve o RabbitMQ?</c></p>
+					<p>O RabbitMQ é utilizado para facilitar a comunicação entre sistemas ou componentes de software de maneira assíncrona. Suas principais finalidades incluem:</p>
+						<ol>
+							<li><b>Desacoplamento</b>: Permite que partes distintas de um sistema se comuniquem sem a necessidade de estar cientes uma da outra, promovendo o desacoplamento e a flexibilidade da arquitetura.</li>
+							<li><b>Escalabilidade</b>: Facilita a construção de sistemas distribuídos escaláveis, onde diferentes partes podem processar mensagens de forma concorrente.</li>
+							<li><b>Garantia de Entrega</b>: Oferece garantias de entrega confiável de mensagens, mesmo em situações de falha.</li>
+							<li><b>Padrões de Integração</b>: Suporta diversos padrões de integração, incluindo filas de mensagens, tópicos e roteamento, permitindo uma variedade de cenários de comunicação.</li>
+						</ol>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar o RabbitMQ?</c></p>
+					<p>O RabbitMQ é apropriado para uma variedade de cenários, incluindo:</p>
+						<ol>
+							<li><b>Microsserviços</b>: Em arquiteturas baseadas em microsserviços, o RabbitMQ é utilizado para a comunicação assíncrona entre serviços.</li>
+							<li><b>Processamento Assíncrono</b>: É aplicado em situações em que é necessário processar tarefas em segundo plano de maneira assíncrona para melhorar a eficiência e a escalabilidade.</li>
+							<li><b>Integração de Sistemas</b>: Usado para integrar sistemas empresariais heterogêneos, possibilitando a comunicação entre diferentes tecnologias.</li>
+							<li><b>Sistemas Distribuídos</b>: Em geral, é empregado sempre que a comunicação assíncrona é necessária para melhorar a eficiência e a confiabilidade do sistema.</li>
+						</ol>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar e implementar o RabbitMQ:</c></p>
+						<ol>
+							<li><b>Instalação e Configuração</b>:</li>
+								<ul>
+									<li>Baixe e instale o RabbitMQ no ambiente desejado.</li>
+									<li>Configure o RabbitMQ conforme as necessidades do sistema.</li>
+								</ul>
+							<li><b>Conceitos Básicos</b>:</li>
+								<ul>
+									<li>Entenda conceitos fundamentais como produtores (quem envia mensagens) e consumidores (quem recebe e processa mensagens), exchanges, queues e bindings.</li>
+								</ul>
+							<li><b>Escolha da Linguagem de Programação</b>:</li>
+								<ul>
+									<li>Utilize uma biblioteca cliente compatível com a linguagem de programação do seu sistema. O RabbitMQ suporta diversas linguagens, incluindo Python, Java, JavaScript, Ruby, entre outras.</li>
+								</ul>
+							<li><b>Desenvolvimento de Produtores e Consumidores</b>:</li>
+								<ul>
+									<li>Implemente a lógica para produtores e consumidores. Produtores enviam mensagens para o RabbitMQ, enquanto consumidores as recebem e processam.</li>
+								</ul>
+							<li><b>Configuração de Exchanges e Queues</b>:</li>
+								<ul>
+									<li>Configure exchanges para rotear mensagens e queues para armazenar mensagens até que sejam processadas pelos consumidores.</li>
+								</ul>
+							<li><b>Monitoramento</b>:</li>
+								<ul>
+									<li>Implemente ferramentas de monitoramento para acompanhar o desempenho do RabbitMQ e identificar possíveis problemas.</li>
+								</ul>
+							<li><b>Segurança</b>:</li>
+								<ul>
+									<li>Configure medidas de segurança, como autenticação e autorização, para proteger o RabbitMQ contra acessos não autorizados.</li>
+								</ul>
+							<li><b>Tunning de Performance</b>:</li>
+								<ul>
+									<li>Faça ajustes de performance conforme necessário para garantir que o RabbitMQ atenda aos requisitos de escalabilidade e tempo de resposta do sistema.</li>
+								</ul>
+							<li><b>Documentação e Boas Práticas</b>:</li>
+								<ul>
+									<li>Consulte a documentação oficial do RabbitMQ para obter informações detalhadas sobre configuração, boas práticas e solução de problemas.</li>
+								</ul>
+							<li><b>Backup e Recuperação</b>:</li>
+								<ul>
+									<li>Implemente estratégias de backup e recuperação para garantir a disponibilidade contínua do RabbitMQ, mesmo em casos de falha.</li>
+								</ul>
+						</ol>
+						<p>A implementação específica pode variar dependendo das necessidades do seu sistema e da linguagem de programação utilizada. O RabbitMQ oferece uma variedade de recursos e opções de configuração para se adequar a diferentes cenários. Certifique-se de revisar a documentação oficial e seguir as melhores práticas ao implementar o RabbitMQ em seu ambiente.</p>
+					<p><c class="configurado1">Produtores (Producers)</c>: São aplicativos ou componentes que enviam
+						mensagens para o RabbitMQ.</p>
+					<p><c class="configurado1">Filas (Queues)</c>: São buffers que armazenam mensagens. Um produtor
+						envia mensagens para uma fila e um consumidor as retira da fila.</p>
+					<p><c class="configurado1">Consumidores (Consumers)</c>: São aplicativos ou componentes que recebem
+						mensagens do RabbitMQ.</p>
+					<p><c class="configurado1">Exchange</c>: É um ponto de entrada para as mensagens no RabbitMQ. Os
+						produtores enviam mensagens para um Exchange, que as encaminha para filas baseando-se em regras
+						específicas (por exemplo, roteamento).</p>
+					<p><c class="configurado1">Binding</c>: É a relação entre uma fila e um exchange. Define as regras
+						para encaminhar mensagens do exchange para a fila.</p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/wT4PpJP5/RabbitMQ.jpg" alt="Binding" style="width:100%"></div>
+					<p>Ele é um software flexível e escalável que pode ser usado em uma variedade de aplicações,
+						incluindo:</p>
+					<ul>
+						<li>Arquiteturas de microsserviços</li>
+						<li>Processamento de dados em tempo real</li>
+						<li>Aplicativos de IoT</li>
+					</ul>
+					<p>O RabbitMQ funciona como um intermediário entre os aplicativos que precisam se comunicar. Ele
+						recebe mensagens de um aplicativo, as armazena em uma fila e as entrega a outro aplicativo
+						quando estiver pronto para recebê-las.</p>
+					<p>Por exemplo, imagine que você tem um aplicativo que coleta dados de sensores IoT. Você pode usar
+						o RabbitMQ para enviar essas mensagens para um aplicativo de processamento de dados. O
+						aplicativo de processamento de dados pode então analisar os dados e tomar medidas apropriadas.
+					</p>
+					<p>Outro exemplo é um sistema de e-commerce. Você pode usar o RabbitMQ para enviar mensagens de um
+						aplicativo de front-end para um aplicativo de back-end. O aplicativo de back-end pode então
+						processar o pedido e enviar um e-mail de confirmação ao cliente.</p>
+					<p>Aqui estão alguns exemplos específicos de como o RabbitMQ pode ser usado:</p>
+					<p><c class="configurado1">Arquiteturas de microsserviços</c>: O RabbitMQ pode ser usado para
+						conectar microsserviços de forma assíncrona. Isso permite que os microsserviços sejam executados
+						de forma independente, sem a necessidade de esperar que um microsserviço responda a outro.
+					</p>
+					<p>
+						<c class="configurado1">Processamento de dados em tempo real</c>: O RabbitMQ pode ser usado para
+						enviar dados de sensores IoT para um aplicativo de processamento de dados em tempo real. Isso
+						permite que o aplicativo de processamento de dados tome decisões rapidamente com base nos dados
+						mais recentes.
+					</p>
+					<p><c class="configurado1">Aplicativos de IoT</c>: O RabbitMQ pode ser usado para conectar
+						dispositivos IoT a aplicativos de back-end. Isso permite que os aplicativos de back-end
+						controlem e monitorem os dispositivos IoT.</p>
+					<p>Vamos ver um exemplo básico em Python usando a biblioteca Pika (uma biblioteca para interagir com
+						o RabbitMQ), em linha de cógido.</p>
+					<p><c class="configurado3">Exemplo Básico - Produtor</c>, <small>Python</small></p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/vT3B0X06/produtor.jpg" alt="Produtor" style="width:100%">
+					</div>
+					<p><c class="configurado3">Exemplo Básico - Consumidor</c>, <small>Python</small></p>
+					<div class="w3-row-padding w3-padding-16">
+						<img src="https://i.postimg.cc/9M2QVsS7/Consumidor.jpg" alt="Consumidor" style="width:100%">
+					</div>
+					<p>Neste exemplo, o produtor envia a mensagem "Hello, RabbitMQ!" para a fila chamada 'hello', e o
+						consumidor está esperando por mensagens nesta fila e imprime qualquer mensagem que recebe. Este
+						é um exemplo muito simples para ilustrar os conceitos básicos. Em um cenário real, você pode ter
+						várias filas, trocas e configurações mais avançadas para roteamento e manipulação de mensagens.
+					</p>
+					<p>O RabbitMQ é um recurso poderoso que pode ser usado para melhorar a comunicação entre aplicativos. Ele é flexível e escalável, o que o torna adequado para uma variedade de
+						aplicações.</p>
+
+					<p><c class="configurado3">Video explicativo</c></p>
+					<!--VIDEO RESPONSIVOS-->
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+							src="https://www.youtube.com/embed/FcF5iufd2P0"></iframe>
+					</div>
+					<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+					<p>Para praticar e aprender sobre o RabbitMQ, você pode seguir estas etapas:</p>
+						<ol>
+							<li>Instalação do RabbitMQ:</li>
+								<ul>
+									<li>Visite o site oficial do <a href="https://www.rabbitmq.com/">RabbitMQ</a> para obter informações sobre a instalação em seu sistema operacional específico.</li>
+								</ul>
+							<li>Configuração e Administração:</li>
+								<ul>
+									<li>Após a instalação, você pode configurar e administrar o RabbitMQ por meio da interface de administração web padrão, geralmente disponível em <code>http://localhost:15672/</code>. As credenciais padrão são "guest/guest".</li>
+									<li>
+										<p><c class="configurado3">Video explicativo</c></p>
+										<div class="containertovideo">
+											<iframe class="responsive-iframe" style="border:none;"
+											src="https://youtube.com/embed/PESoVKv0Spo"></iframe>
+										</div>
+									</li>
+								</ul>
+							<li>Utilize o simulador:</li>
+								<ul>
+									<li><a href="https://tryrabbitmq.com/" target="_blank"> RabbitMQ Simulator</a></li>
+								</ul>
+							<li>Desenvolvimento de Produtores e Consumidores:</li>
+								<ul>
+									<li>Desenvolva produtores (aplicativos que enviam mensagens para o RabbitMQ) e consumidores (aplicativos que recebem e processam mensagens) em sua linguagem de programação preferida utilizando as bibliotecas cliente do RabbitMQ.</li>
+								</ul>
+							<li>Exploração de Funcionalidades:</li>
+								<ul>
+									<li>Explore as funcionalidades do RabbitMQ, como filas, exchanges, tópicos, políticas de mensagens, e assim por diante, por meio da interface de administração e implementando diferentes padrões de mensagens.</li>
+								</ul>
+							<li>Utilização de Exemplos e Tutoriais:</li>
+								<ul>
+									<li>Explore exemplos e tutoriais disponíveis na documentação oficial do RabbitMQ e em outros recursos online.</li>
+								</ul>
+						</ol>
+				
+				</div>
+		
+		<div id="ActiveMQ" class="w3-container ia" style="display:none">
+				<h3>ActiveMQ</h3>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é o ActiveMQ? </c> <a href="https://activemq.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+				<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+				<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					<p><c class="configurado">ActiveMQ</c> - É um message broker open source que é amplamente utilizado. Ele pode ser implementado em uma variedade de plataformas, incluindo Java, .NET e C++.</p>
+				</div>
+				<p>O ActiveMQ é um Message Broker de código aberto baseado em Java que implementa os protocolos Java Message Service (JMS) e Message Queuing Telemetry Transport (MQTT). Ele fornece uma solução robusta para a troca de mensagens assíncronas em sistemas distribuídos.</p>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve o ActiveMQ?</c></p>
+				<p>O ActiveMQ é utilizado para facilitar a comunicação assíncrona entre diferentes partes de um sistema distribuído. Suas principais finalidades incluem:</p>
+				<ol>
+					<li><b>Comunicação Assíncrona</b>: Permite que aplicativos se comuniquem de forma assíncrona, o que é essencial para sistemas distribuídos, microsserviços e arquiteturas orientadas a eventos.</li>
+					<li><b>Padrão JMS</b>: Implementa o Java Message Service, um padrão para mensagens em Java, facilitando a interoperabilidade entre diferentes aplicativos Java.</li>
+					<li><b>Filas e Tópicos</b>: Oferece suporte a filas de mensagens (ponto a ponto) e tópicos (pub/sub), proporcionando flexibilidade na implementação de diferentes padrões de comunicação.</li>
+					<li><b>Integração com Diversas Linguagens</b>: Embora seja baseado em Java, o ActiveMQ suporta integração com várias linguagens de programação por meio de diferentes protocolos, como o protocolo OpenWire e o protocolo STOMP.</li>
+				</ol>
+			<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar o ActiveMQ?</c></p>
+			<p>O ActiveMQ é aplicável em diversos cenários, incluindo</b>:</p>
+				<ol>
+					<li><b>Arquiteturas de Microsserviços</b>: Facilita a comunicação assíncrona entre diferentes microsserviços, promovendo a flexibilidade e o desacoplamento.</li>
+					<li><b>Processamento Assíncrono</b>: Pode ser usado para implementar processamento assíncrono, onde tarefas são executadas de forma independente e eficiente.</li>
+					<li><b>Integração de Sistemas</b>: Utilizado para integrar sistemas heterogêneos em ambientes empresariais, onde a comunicação assíncrona é necessária.</li>
+				<li><b>Sistemas Distribuídos e Orientados a Eventos</b>: Adequado para cenários onde a troca de mensagens assíncronas é crucial, como em sistemas distribuídos e orientados a eventos.</li>
+				</ol>
+			<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar e implementar o ActiveMQ:</c></p>
+				<ol>
+					<li><b>Instalação e Configuração</b>:</li>
+						<ul>
+							<li>Faça o download e instale o ActiveMQ no seu ambiente.</li>
+							<li>Configure o ActiveMQ conforme as necessidades do seu sistema.</li>
+						</ul>
+					<li><b>Conceitos Básicos</b>:</li>
+						<ul>
+							<li>Entenda os conceitos básicos do ActiveMQ, incluindo filas, tópicos, produtores, consumidores, etc.</li>
+						</ul>
+					<li><b>Desenvolvimento de Produtores e Consumidores</b>:</li>
+						<ul>
+							<li>Implemente a lógica para os produtores (quem envia mensagens para o ActiveMQ) e consumidores (quem recebe e processa as mensagens).</li>
+						</ul>
+					<li><b>Escolha do Protocolo</b>:</li>
+						<ul>
+							<li>Escolha o protocolo adequado para a sua aplicação (OpenWire, STOMP, MQTT) e configure o ActiveMQ para suportar esse protocolo.</li>
+						</ul>
+					<li><b>Integração com Linguagens de Programação</b>:</li>
+						<ul>
+							<li>Utilize bibliotecas cliente para a linguagem de programação do seu sistema para facilitar a interação com o ActiveMQ.</li>
+						</ul>
+					<li><b>Configuração de Filas e Tópicos</b>:</li>
+						<ul>
+							<li>Configure filas para implementar o padrão ponto a ponto e tópicos para o padrão pub/sub, conforme necessário.</li>
+						</ul>
+					<li><b>Segurança e Autenticação</b>:</li>
+						<ul>
+							<li>Implemente medidas de segurança, como autenticação e autorização, para proteger o ActiveMQ contra acessos não autorizados.</li>
+						</ul>
+					<li><b>Monitoramento e Administração</b>:</li>
+						<ul>
+							<li>Implemente ferramentas de monitoramento para acompanhar o desempenho do ActiveMQ.</li>
+						</ul>
+					<li><b>Escalabilidade</b>:</li>
+						<ul>
+							<li>Configure e ajuste o ActiveMQ para lidar com a escalabilidade conforme o sistema cresce.</li>
+						</ul>
+				</ol>
+				<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+				<p>Para praticar e aprender sobre o Apache ActiveMQ, você pode seguir estas etapas:</p>
+				<ol>
+					<li><b>Instalação do Apache ActiveMQ</b>:</li>
+						<ul>
+							<li>Visite o site oficial do <a href="http://activemq.apache.org/" target="_blank">Apache ActiveMQ</a> para obter informações sobre a instalação em seu sistema operacional específico.</li>
+						</ul>
+					<li><b>Configuração e Administração</b>:</li>
+						<ul>
+							<li>Após a instalação, você pode acessar a interface de administração do ActiveMQ, geralmente disponível em <code>http://localhost:8161/admin</code> (por padrão). As credenciais padrão podem ser "admin/admin". Aqui, você pode configurar filas, tópicos, e outros aspectos do sistema.</li>
+						</ul>
+				</ol>
+			</div>
+			<div id="ApacheKafka" class="w3-container ia" style="display:none">
+				<h3>Apache Kafka</h3>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é o Apache Kafka? </c><a href="https://kafka.apache.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></p> 
+				<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+				<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					<p><c class="configurado">Apache Kafka</c> - É um message broker de streaming de dados open source. Ele é usado para transmitir dados em tempo real para aplicações de análise, machine learning e IoT.</p>
+				</div>
+				<p>É uma plataforma de streaming distribuído de código aberto, projetada para lidar com fluxos massivos de dados em tempo real. Ele foi inicialmente desenvolvido pelo LinkedIn e posteriormente tornado um projeto de código aberto da Apache Software Foundation.</p>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve o Apache Kafka?</c></p>
+				<p>O Apache Kafka é utilizado para:</p>
+				<ol>
+					<li><b>Streaming de Dados</b>: Facilita a transmissão em tempo real de grandes volumes de dados entre sistemas.</li>
+					<li><b>Processamento de Eventos</b>: Suporta o processamento de eventos em tempo real e a construção de sistemas orientados a eventos.</li>
+					<li><b>Integração de Microsserviços</b>: Permite a comunicação assíncrona entre microsserviços em ambientes distribuídos.</li>
+					<li><b>Logs Distribuídos</b>: Funciona como um log distribuído, permitindo que diferentes partes de um sistema leiam e gravem eventos de maneira eficiente.</li>
+				</ol>
+			<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar o Apache Kafka?</c></p>
+			<p>O Apache Kafka é aplicável em vários cenários, incluindo</b>:</p>
+				<ol>
+					<li><b>Arquiteturas de Microsserviços</b>: Para facilitar a comunicação assíncrona e a troca de eventos entre microsserviços.</li>
+					<li><b>Processamento em Tempo Real</b>: Em sistemas que exigem processamento em tempo real de eventos, como análise de streaming, monitoramento de logs, etc.</li>
+					<li><b>Event Sourcing</b>: Em implementações de arquiteturas baseadas em eventos, como o padrão de design Event Sourcing.</li>
+					<li><b>Coleta de Dados</b>: Para a coleta eficiente de dados de diferentes fontes e sua distribuição para sistemas de destino.</li>
+				</ol>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar e implementar o Apache Kafka:</c></p>
+					<ol>
+						<li><b>Instalação e Configuração</b>:</li>
+							<ul>
+								<li>Faça o download e instale o Apache Kafka no seu ambiente.</li>
+								<li>Configure o Kafka conforme necessário para atender aos requisitos do seu sistema.</li>
+							</ul>
+						<li><b>Conceitos Básicos</b>:</li>
+							<ul>
+								<li>Entenda conceitos fundamentais do Apache Kafka, como tópicos, partições, produtores, consumidores, etc.</li>
+							</ul>
+						<li><b>Desenvolvimento de Produtores e Consumidores</b>:</li>
+						<ul>
+							<li>Implemente a lógica para produtores (quem envia mensagens para o Kafka) e consumidores (quem recebe e processa as mensagens).</li>
+						</ul>
+						<li><b>Criação de Tópicos e Partições</b>:</li>
+							<ul>
+								<li>Configure tópicos para organizar mensagens e partições para distribuir a carga de dados de maneira eficiente.</li>
+							</ul>
+						<li><b>Integração com Linguagens de Programação</b>:</li>
+							<ul>
+								<li>Utilize bibliotecas cliente para a linguagem de programação do seu sistema para interagir com o Kafka.</li>
+							</ul>
+						<li><b>Configuração de Produtores e Consumidores</b>:</li>
+							<ul>
+								<li>Configure os produtores e consumidores para se alinharem com os requisitos de segurança, desempenho e escalabilidade.</li>
+							</ul>
+						<li><b>Segurança e Autenticação</b>:</li>
+							<ul>
+								<li>Implemente medidas de segurança, como autenticação e autorização, para proteger o Kafka contra acessos não autorizados.</li>
+							</ul>
+						<li><b>Monitoramento e Administração</b>:</li>
+							<ul>
+								<li>Utilize ferramentas de monitoramento para rastrear o desempenho do Kafka e administrar o cluster.</li>
+							</ul>
+						<li><b>Escalabilidade</b>:</li>
+							<ul>
+								<li>Configure e ajuste o Apache Kafka para lidar com a escalabilidade conforme o volume de dados aumenta.</li>
+							</ul>
+					</ol>
+				<p>O Apache Kafka oferece uma documentação extensa e recursos robustos. Consulte a documentação oficial do Apache Kafka para obter informações detalhadas sobre instalação, configuração e melhores práticas de uso.</p>
+				<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+				<p>Para praticar e aprender sobre o Apache Kafka, você pode seguir estas etapas:</p>
+					<ol>
+						<li><b>Instalação do Apache Kafka</b>:</li>
+							<ul>
+								<li>Visite o site oficial do <a href="https://kafka.apache.org/" target="_blank">Apache Kafka</a> para obter informações sobre a instalação em seu sistema operacional específico.</li>
+							</ul>
+						<li><b>Configuração e Administração</b>:</li>
+							<ul>
+								<li>Após a instalação, você pode configurar e administrar o Kafka. A interface de administração padrão não é tão gráfica quanto a de alguns outros serviços, mas você pode usar ferramentas como o Kafka Manager para simplificar a administração.</li>
+							</ul>
+						<li><b>Desenvolvimento de Produtores e Consumidores</b>:</li>
+							<ul>
+								<li>Desenvolva produtores (aplicativos que enviam mensagens para o Kafka) e consumidores (aplicativos que recebem e processam mensagens) em sua linguagem de programação preferida utilizando as bibliotecas cliente do Kafka.</li>
+							</ul>
+						<li><b>Exploração de Funcionalidades</b>:</li>
+							<ul>
+								<li>Explore as funcionalidades do Kafka, como tópicos, partições, retenção de mensagens, e assim por diante, por meio da interface de administração e implementando diferentes padrões de mensagens.</li>
+							</ul>
+						<li><b>Utilização de Exemplos e Tutoriais</b>:</li>
+							<ul>
+								<li>Explore exemplos e tutoriais disponíveis na documentação oficial do Kafka e em outros recursos online.</li>
+							</ul>
+					</ol>
+					<p>Se você está interessado em ambientes de aprendizado prático, pode considerar plataformas que oferecem ambientes virtualizados para aprendizado, mas essas geralmente são configuradas para simular o ambiente do Kafka e não são "simuladores" no sentido tradicional.</p>
+		  </div>
+			<div id="AMQP" class="w3-container ia" style="display:none">
+				<h3>AMQP</h3>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é o AMQP? </c> <a href="https://www.amqp.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+				<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+				<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					<p><c class="configurado">AMQP (Advanced Message Queuing Protocol)</c> - Protocolo de mensagens aberto e padronizado para sistemas distribuídos. Ele foi projetado para facilitar a comunicação assíncrona entre diferentes aplicações, permitindo a troca eficiente de mensagens entre sistemas heterogêneos.</p>
+				</div>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve o AMQP?:</c></p>
+					<p>O principal propósito do AMQP é facilitar a comunicação entre aplicações distribuídas, especialmente em ambientes onde a confiabilidade, a escalabilidade e a interoperabilidade são essenciais. Ele é particularmente útil em cenários em que há a necessidade de trocar mensagens entre sistemas independentes de maneira eficiente e confiável.</p>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar o AMQP?:</c></p>
+				<p>O AMQP é utilizado em diversas situações, incluindo:</p>
+					<ol>
+						<li><b>Sistemas de Mensageria</b>: Implementação de sistemas de mensageria assíncrona para permitir a comunicação eficiente entre componentes distribuídos.</li>
+						<li><b>Integração de Sistemas</b>: Facilitação da integração entre sistemas heterogêneos, permitindo que eles troquem mensagens de forma padronizada.</li>
+						<li><b>Filas de Mensagens</b>: Criação de filas de mensagens para garantir a entrega confiável de mensagens entre produtores e consumidores.</li>
+						<li><b>Sistemas Financeiros</b>: </li>Uso em sistemas financeiros para garantir a entrega segura e confiável de mensagens em ambientes distribuídos.</li>
+					</ol>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar o AMQP?:</c></p>
+				<p>Para usar o AMQP, você geralmente segue esses passos:</p>
+					<ol>
+						<li><b>Escolha uma Implementação</b>:Existem várias implementações do AMQP, como Apache Qpid e RabbitMQ. Escolha a que melhor atenda às suas necessidades.</li>
+						<li><b>Configuração do Sistema de Mensageria</b>: Configure um sistema de mensageria utilizando a implementação escolhida. Isso envolve a criação de filas, definição de políticas de troca, etc.</li>
+						<li><b>Desenvolvimento de Produtores e Consumidores</b>:Desenvolva as aplicações produtoras (que enviam mensagens) e consumidoras (que recebem e processam mensagens) usando bibliotecas compatíveis com AMQP.</li>
+						<li><b>Envio e Recebimento de Mensagens</b>: Utilize as APIs fornecidas pela implementação AMQP para enviar e receber mensagens. Geralmente, você precisará definir o formato da mensagem e especificar a troca (exchange) ou fila de destino.</p>
+						<li><b>Configuração de Filas e Tópicos</b>:Configure filas e tópicos conforme necessário para rotear as mensagens entre produtores e consumidores.</li>
+					</ol>
+				 <p><i class="fa-solid fa-check"></i><c class="configurado1"> Implementação:</c></p>
+				 <p>A implementação do AMQP varia dependendo da escolha da biblioteca ou broker.</p>
+				 <p>Abaixo, uma visão geral dos passos gerais de implementação:</p>
+					<ol>
+						<li><b>Escolha do Broker</b>:Escolha um broker AMQP, como RabbitMQ, Apache Qpid, ActiveMQ, entre outros.</li>
+						<li><b>Configuração do Broker</b>: Configure o broker com as filas, trocas, políticas de troca e outras configurações necessárias para seu cenário específico.</li>
+						<li><b>Desenvolvimento de Aplicações</b>:Desenvolva aplicações que atuem como produtores e consumidores de mensagens, utilizando bibliotecas cliente compatíveis com AMQP.</li>
+						<li><b>Conexão ao Broker</b>:As aplicações se conectam ao broker para enviar ou receber mensagens.</li>
+						<li><b>Envio e Recebimento de Mensagens</b>: As aplicações enviam mensagens para trocas (exchanges) ou filas no broker e as recebem conforme necessário.</li>
+						<li><b>Tratamento de Erros e Garantia de Entrega</b>: Implemente mecanismos para lidar com erros e garantir a entrega confiável de mensagens.</li>
+					</ol>
+					<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+					<p><a href="https://www.amqp.org/about/what" target="_blank"><i class="fa-solid fa-book"></i></a> Tutorial</p>
+					<p><c class="configurado3">Video explicativo</c></p>
+					<p><i class="fa-solid fa-video"></i> - 1</p>
+						<div class="containertovideo">
+							<iframe class="responsive-iframe" style="border:none;"
+							src="https://youtube.com/embed/awiUDbZEvAA"></iframe>
+						</div>
+
+			</div>
+			<div id="MQTT" class="w3-container ia" style="display:none">
+				<h3>MQTT</h3>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é o MQTT? </c><a href="https://mqtt.org/" target="_blank"><i class="fa-solid fa-globe"></i></a></p> 
+				<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+				<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+					<p><c class="configurado">ActiveMQ</c> - É um message broker open source que é amplamente utilizado. Ele pode ser implementado em uma variedade de plataformas, incluindo Java, .NET e C++.</p>
+				</div>
+				<p><c class="configurado">MQTT (Message Queuing Telemetry Transport)</c> - Protocolo de comunicação leve e eficiente projetado para ambientes de redes instáveis e com largura de banda limitada. Ele é especialmente adequado para a Internet das Coisas (IoT), mas também é usado em uma variedade de cenários onde a comunicação assíncrona de baixa latência é necessária.</p>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Para que serve é o MQTT?:</c></p>
+				<p>O MQTT é projetado para permitir a comunicação eficiente entre dispositivos em redes com recursos limitados. Ele é usado para a troca de mensagens entre dispositivos conectados, como sensores, atuadores e outros dispositivos IoT. Sua eficiência e baixo consumo de recursos o tornam ideal para ambientes onde a largura de banda é limitada e a energia é um recurso crítico.</p>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Onde usar é o MQTT?:</c></p>
+				<p>O MQTT é comumente usado nos seguintes cenários:</p>
+					<ol>
+						<li><b>Internet das Coisas (IoT)</b>: Comunicação entre dispositivos IoT para coleta e envio de dados.</li>
+						<li><b>Monitoramento Remoto</b>: Monitoramento e controle remoto de dispositivos, como sensores e equipamentos.</li>
+						<li><b>Aplicações Móveis</b>:  Comunicação assíncrona eficiente entre aplicativos móveis e servidores.</li>
+						<li><b>Sistemas de Mensageria</b>: Integração em sistemas de mensageria para troca eficiente de mensagens em sistemas distribuídos.</li>
+					</ol>
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Como usar é o MQTT?:</c></p>
+				<p>Para usar MQTT, siga estes passos gerais:</p>
+					<ol>
+						<li><b>scolha um Broker MQTT</b>: Escolha um servidor ou broker MQTT. Exemplos incluem Mosquitto, HiveMQ, e Eclipse Mosquitto.</li>
+						<li><b>Instalação e Configuração do Broker</b>: Instale e configure o broker MQTT no seu ambiente de escolha.</li>
+						<li><b>Desenvolvimento de Produtores e Consumidores</b>: Desenvolva aplicações que atuem como produtores (dispositivos que enviam mensagens) e consumidores (dispositivos que recebem e processam mensagens).</li>
+						<li><b>Conexão e Publicação de Mensagens</b>: As aplicações se conectam ao broker, publicam mensagens em tópicos específicos e/ou se inscrevem para receber mensagens em determinados tópicos.</li>
+						<li><b>Configuração de Tópicos</b>: Tópicos são usados para categorizar mensagens. Produtores publicam mensagens em tópicos, e consumidores se inscrevem em tópicos para receber mensagens específicas.</li>
+					</ol>	
+				<p><i class="fa-solid fa-check"></i><c class="configurado1"> Implementação:</c></p>
+				<p>A implementação específica pode variar dependendo do broker e da linguagem de programação que você escolher. Abaixo estão alguns passos gerais:</p>
+					<ol>
+						<li><b>Escolha do Broker</b>: Escolha um broker MQTT. Muitos deles são de código aberto e disponíveis para várias plataformas.</li>
+						<li><b>Instalação e Configuração</b>: Instale e configure o broker no servidor ou dispositivo que será responsável pela comunicação.</li>
+						<li><b>Desenvolvimento de Aplicações</b>: Desenvolva aplicações usando bibliotecas MQTT compatíveis com a linguagem de programação escolhida.</li>
+						<li><b>Conexão e Comunicação</b>: As aplicações se conectam ao broker, estabelecem uma conexão persistente e começam a trocar mensagens.</li>
+						<li><b>Gerenciamento de Tópicos</b>: Configure e gerencie tópicos para organizar e categorizar as mensagens.</li>
+						<li><b>Segurança</b>: Considere a implementação de medidas de segurança, como autenticação e criptografia, dependendo dos requisitos do seu ambiente.</li>
+					</ol>
+					<p class="configurado3"><i class="fa-solid fa-hand"></i> na massa</c></p>
+					<p><a href="https://www.hivemq.com/mqtt/" target="_blank"><i class="fa-solid fa-book"></i></a> Tutorial</p>
+
+					<p><c class="configurado3">Video explicativo</c></p>
+					<p><i class="fa-solid fa-video"></i> - 1</p>
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/bFr342CmDc?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+					  </div>
+					  <p><i class="fa-solid fa-video"></i> - 2</p>
+					  <div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/Qh4NwhybRo4?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ&t=4"></iframe>
+					  </div>
+					  <p><i class="fa-solid fa-video"></i> - 3</p>
+					  <div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/5wV1j41y_o4?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+					  </div>
+					  <p><i class="fa-solid fa-video"></i> - 4</p>
+					  <div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/lzP5SRiCtxg?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+					  </div>
+					  <p><i class="fa-solid fa-video"></i> - 5</p>
+					  <div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/CsxzQ2JWdns?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+					  </div>
+					  <p><i class="fa-solid fa-video"></i> - 6</p>
+					  <div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;"
+						src="https://youtube.com/embed/Nrn9fQMl4BI?list=PLJgot22WaOlY4Ed6hI8sy26Zy2VB8_TbJ"></iframe>
+					  </div>
+					  
+					
+			</div>
+		</div>
+	</div2>
+		
+	

@@ -1,0 +1,528 @@
+		<!--Mais informações sobre bat agora
+     	 https://blog.betrybe.com/tecnologia/comandos-bat/-->
+			<div class="w3-container w3-center">
+				<h2 id="prot">Protocolos & Outros</h2>
+				<button id="btn8" class="fa-solid fa-plus"></button>
+				<button id="btn7" class="fa-solid fa-minus"></button>
+			</div><br />
+
+			<div class="w3-container">
+				<div class="w3-bar w3-green">
+					<button class="w3-bar-item w3-button" onclick="openIA('SSLvsTLS')">SSL vs TLS</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('WebSocketsvsHTTP')">WebSockets vs HTTP</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('AMPQvsMQTT')">AMPQ vs MQTT</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('SAMLvsOIDC')">SAML vs OIDC</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('AssinaturavsCertificado')">Assinatura Digital vs Certificado Ditigal</button>
+					<button class="w3-bar-item w3-button" onclick="openIA('SimetricavsAsimetrica')">Criptografia Simétrica vs Criptografia Assimétrica</button>
+				</div>
+				<div4>
+					<div id="SSLvsTLS" class="w3-container ia" style="display:yes">
+						<h3>SSL vs TLS</h3>
+						<p><c class="configurado">SSL (Secure Sockets Layer)</c> e <c class="configurado">TLS
+								(Transport Layer Security)</c> são ambos protocolos criptográficos projetados para fornecer comunicação segura em uma rede de computadores. O TLS é basicamente uma versão	atualizada e mais segura do SSL. Aqui estão alguns pontos-chave de comparação:</p>
+						<p>Foram criados para a comunicação FIM a FIM, usando criptografia simétrica e assimétrica.</p>
+						<p>Visam promover a segurança em comuncações na internet, buscando gatantir a:</p>
+						<ul>
+							<li>Confidencialidade (...se os <u>dados estão protegidos</u>);</li>
+							<li>Autenticidade (...de <u>onde vieram, qual a autoria, garantia do não repudio</u>);</li>
+							<li>Integridade (...se os dados <u>não foram alterados</u>).</li>
+						</ul>
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/Pf23nC5V/cia.jpg" alt="CIA" style="width:100%">
+						</div>
+						<p>Usamos todos os dias para fazer compras, falar com o banco e até mesmo navegação normal,
+							Lembre-se do cadeado que fica ao lado direito antes do endereço.</p>
+						<b>Dicas</b>
+						<ul>
+							<li>Se você clicar neste cadeado pode ver o Certificado Digital para saber qual servidor
+								está sendo conectado;</li>
+							<li>O protocolo HTTPS indica que a sua navegação é segura, alias o S está ligado ao
+								protocolo TLS;</li>
+							<li>O Certificado Digital está por trás de tudo isso;</li>
+							<li>O TLS usa os dois tipos de criptografia;</li>
+							<li>O TLS faz o famoso <u>Handshake</u> - o aperto de mão;</l>
+							<li>Pode aparecer nas camadas, 4, 5 e 6, embora seja independente.</li>
+						</ul>
+						<p>
+							<c class="configurado1">1. Desenvolvimento</c>:
+						</p>
+						<p>O TLS é o sucessor do SSL e foi introduzido para abordar vulnerabilidades e deficiências
+							encontradas no SSL.</p>
+
+						<p>
+							<c class="configurado1">2. Versões</c>:
+						</p>
+						<p>O SSL possui várias versões, incluindo SSL 2.0 e SSL 3.0.</p>
+						<p>O TLS tem múltiplas versões, incluindo TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3 e potencialmente
+							mais no futuro.</p>
+
+						<p>
+							<c class="configurado1">3. Compatibilidade Retroativa</c>:
+						</p>
+						<p>O TLS é projetado para ser retrocompatível com o SSL. Isso significa que um servidor
+							habilitado para TLS pode suportar conexões de clientes usando SSL.</p>
+
+						<p>
+							<c class="configurado1">4. Melhorias de Segurança</c>:
+						</p>
+						<p>O TLS inclui várias melhorias de segurança em relação ao SSL. Por exemplo, o TLS possui
+							algoritmos de criptografia mais fortes, métodos de troca de chaves mais seguros e
+							verificações de integridade aprimoradas.</p>
+
+						<p>
+							<c class="configurado1">5. Vulnerabilidades</c>:
+						</p>
+						<p>O SSL foi encontrado com vulnerabilidades, especialmente em suas versões mais antigas (SSL
+							2.0 e SSL 3.0).</p>
+						<p>O TLS é projetado para abordar as fraquezas de segurança do SSL, e novas versões do TLS
+							buscam constantemente aprimorar a segurança.</p>
+
+						<p>
+							<c class="configurado1">6. Últimas Versões</c>:
+						</p>
+						<p>A última versão do SSL é a SSL 3.0, mas não é recomendada para uso devido a vulnerabilidades
+							conhecidas.</p>
+						<p>Até a minha última atualização de conhecimento em janeiro de 2022, o TLS 1.3 é a versão mais
+							recente e segura. O TLS 1.3 inclui melhorias significativas em termos de desempenho e
+							segurança.</p>
+
+						<c class="configurado1">7. Perfect Forward Secrecy (PFS)</c>:</p>
+						<p>O TLS enfatiza mais fortemente a Perfect Forward Secrecy (PFS) por padrão, garantindo que,
+							mesmo se uma chave secreta de longo prazo for comprometida, as comunicações passadas
+							permaneçam seguras.</p>
+
+						<p>
+							<c class="configurado1">8. Adoção pela Indústria</c>:
+						</p>
+						<p>O SSL é obsoleto e considerado inseguro, sendo fortemente desencorajado seu uso.</p>
+						<p>O TLS é amplamente adotado e considerado o padrão para garantir comunicações pela Internet.
+						</p>
+
+						<p>
+							<c class="configurado1">QUAIS SÃO OS PROTOCOLOS USADOS COM O TLS?</c>:
+						</p>
+						<ul>
+							<li>Chaves Secreta (sim.)</li>
+							<li>Chaves Públicas e Privadas (assim.)</li>
+							<li>Algritimo de Hash <small>(MD4, MD5, SHA-1, WHIRLPOOL)</small></li>
+							<li>DH - Diffie-Hellman <small>(A troca de chaves de Diffie-Hellman é um método de
+									criptografia para trocas de chaves de maneira segura em canal público)</small></li>
+						</ul>
+						<p>
+							<c class="configurado1">HANDSHAKE</c>:
+						</p>
+						<ul>
+							<li>Exitem duas forma de explicar isso.</li>
+						</ul>
+						<p>1º <b>Forma Simples</b>: Mais fácil de entender, menos custo.</p>
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/QxDN9xG3/TLS-HS-simples.jpg" alt="TLS-HS-SIMPLES"
+								style="width:100%">
+						</div><br /><br />
+						<p>2º <b>Forma Completa</b>: Mais dificil de entender, mais caro.</p>
+						<a href="https://www.youtube.com/watch?v=YmfjbwWYOQc&list=RDCMUCz9M2hHURsenUWxXBk3TR8A&index=3"
+							target="_blank">Veja o video aqui</a>
+					</div>
+
+					<div id="WebSocketsvsHTTP" class="w3-container ia" style="display:none">
+						<h3>WebSockets vs HTTP</h3>
+						<p><c class="configurado">WebSockets</c> e <c class="configurado">HTTP</c> são ...</p>
+					<!--Fonte: pegar daqui...
+					https://blogs.windows.com/windowsdeveloper/2016/03/14/when-to-use-a-http-call-instead-of-a-websocket-or-http-2-0/-->
+					</div>
+					<div id="AMPQvsMQTT" class="w3-container ia" style="display:none">
+						<h3>AMPQ vs MQTT</h3>
+						<p><c class="configurado">AMPQ</c> e <c class="configurado">MQTT</c> - São dois protocolos de mensagens muito populares, cada um com suas próprias vantagens e desvantagens.</p>
+						
+						<p><c class="configurado3">AMPQ</c> é um protocolo de mensagens de propósito geral projetado para ser robusto e escalável. Ele oferece uma ampla gama de recursos, incluindo:</p>
+							<ul>
+								<li>QoS (Quality of Service) de 0 a 2, garantindo que as mensagens sejam entregues com segurança e confiabilidade.</li>
+								<li>Transações, permitindo que um grupo de mensagens seja tratado como uma única unidade.</li>
+								<li>Roteamento, permitindo que as mensagens sejam enviadas para destinos específicos.</li>
+								<li>Armazenamento de mensagens, permitindo que as mensagens sejam armazenadas para posterior processamento.</li>
+							</ul>
+						<p><c class="configurado3">MQTT</c> é um protocolo de mensagens leve projetado para dispositivos com recursos limitados. Ele é simples e fácil de implementar, e oferece os seguintes recursos:</p>
+							<ul>
+								<li>QoS de 0 a 2, garantindo que as mensagens sejam entregues com segurança e confiabilidade.</li>
+								<li>Publicação/assinatura, permitindo que os dispositivos publiquem mensagens que possam ser consumidas por outros dispositivos.</li>
+							</ul>
+						<p><b>Diferenças entre AMPQ e MQTT</b></p>
+							<table class="w3-table-all">
+								<thead>
+									<tr>
+										<th>Característica</th>
+										<th>MQTT</th>
+										<th>AMPQ</th>
+									</tr>
+								</thead>
+								<tr>
+									<td>Objetivo</td>
+									<td>IoT</td>
+									<td>Geral</td>
+								</tr>
+								<tr>
+									<td>Recursos</td>
+									<td>Leve, simples, QoS de 0 a 2, publicação/assinatura</td>
+									<td>Robusto, escalável, QoS de 0 a 2, transações, roteamento, armazenamento de mensagens</td>
+								</tr>
+								<tr>
+									<td>Arquitetura</td>
+									<td>Cliente/broker</td>
+									<td>Cliente/servidor ou cliente/broker</td>
+								</tr>
+								<tr>
+									<td>Eficiência</td>
+									<td>Mais eficiente</td>
+									<td>Menos eficiente</td>
+								</tr>
+								<tr>
+									<td>Segurança</td>
+									<td>Menos segura</td>
+									<td>Mais segura</td>
+								</tr>
+							</table>
+					</div>
+
+					<div id="SAMLvsOIDC" class="w3-container ia" style="display:none">
+						<h3>SAML vs OIDC</h3>
+						<p><c class="configurado">SAML</c> e <c class="configurado">OIDC</c> são protocolos para configuração para conexões de autenticação para aplicativos.</p>
+						
+						
+						<p>Como  fornecedor de soluções de <u>gerenciamento de identidade e acesso (IAM)</u> , oferecemos aos nossos usuários diversas opções quando eles precisam configurar conexões de autenticação para aplicativos. Dois dos principais protocolos de autenticação são:</p>
+						<ul>
+							<li>Linguagem de marcação de acesso de segurança (SAML)</li>
+							<li>Conexão OpenID (OIDC)</li>
+						</ul>
+						<p>A maioria dos aplicativos oferece suporte apenas a uma dessas opções, mas ocasionalmente você pode ter que escolher entre SAML e OIDC . Portanto, pode ser útil saber qual é a diferença para que você possa escolher qual funcionará melhor para sua organização.</p>
+						<p><c class="configurado3">Como o SAML e o OIDC são semelhantes?</c></p>
+						<p>Tanto SAML quanto OIDC são considerados protocolos de identidade. Eles fornecem um meio pelo qual os usuários podem ser autenticados e as informações do usuário podem ser transmitidas com segurança entre o sistema que está fazendo a autenticação, também conhecido como Provedor de Identidade (IdP) e o serviço ou aplicativo que o usuário está tentando acessar. Uma das principais etapas para habilitar esta forma de Single Sign-On (SSO) é que uma relação de confiança deve ser estabelecida entre o IdP e o aplicativo. SAML e OIDC são protocolos importantes usados ​​em qualquer solução de SSO porque o objetivo de uma solução de SSO é que os usuários precisarão se autenticar apenas uma vez com o IdP e então poderão acessar qualquer um dos aplicativos que foram configurados para confiar no IdP.</p>
+						<p>O fluxo básico de login para ambos é o mesmo.</p>
+						<ol>
+							<li>Um usuário efetua login no provedor de identidade.</li>
+							<li>Eles selecionam qual aplicativo desejam acessar.</li>
+							<li>As informações do usuário são passadas do IdP para o navegador do usuário.</li>
+							<li>Suas informações são então repassadas para o aplicativo.</li>
+							<li>O aplicativo confirma que eles estão autorizados a acessar os recursos.</li>
+							<li>O usuário tem permissão para entrar no aplicativo.</li>
+						</ol>
+						<!--**-------FOTOS - APENAS-->
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/Fz32rGz4/saml-oidc-flow.png" alt="saml-oidc-flow" style="width:100%">
+						</div>
+						<p>O fluxo de login também pode ser assim.</p>
+						<ol>
+							<li>Um usuário tenta fazer login diretamente no aplicativo.</li>
+							<li>O aplicativo redireciona a solicitação de login através do navegador do usuário para o IdP.</li>
+							<li>O usuário efetua login no IdP ou é confirmado que já está conectado ao IdP</li>
+							<li>O IdP confirma que o usuário tem acesso ao aplicativo que enviou a solicitação.</li>
+							<li>As informações do usuário são passadas do IdP para o navegador do usuário.</li>
+							<li>Suas informações são então repassadas para o aplicativo.</li>
+							<li>O aplicativo confirma que eles estão autorizados a acessar os recursos.</li>
+							<li>O usuário tem permissão para entrar no aplicativo.</li>
+						</ol>
+						<!--**-------FOTOS - APENAS-->
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/Gh9y5N4V/saml-oidc-flow2.png" alt="saml-oidc-flow2" style="width:100%">
+						</div>
+						<p><c class="configurado3">Qual a diferença entre SAML e OIDC?</c></p>
+						<p><b>SAML</b></p>
+						<p>SAML é mais antigo que OIDC. O SAML entrou em cena pela primeira vez em 2005. Ele transmite dados como nomes de usuário, nomes, sobrenomes dos usuários, etc.</p>
+						<p>SAML refere-se ao aplicativo como Provedor de Serv</p>
+						<p>Na verdade, o primeiro fluxo descrito acima é conhecido como SSO iniciado pelo provedor de identidade (iniciado pelo IdP).</p>
+						<!--**-------FOTOS - APENAS-->
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/G2KxRyJp/saml-oidc-flow3.png" alt="saml-oidc-flow3" style="width:100%">
+						</div>
+						<p>O fluxo que começa com o usuário tentando fazer login diretamente no aplicativo ou SP primeiro é chamado de SSO iniciado pelo provedor de serviços (iniciado pelo SP).</p>
+						<!--**-------FOTOS - APENAS-->
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/7ZPGvWtS/saml-oidc-flow4.png" alt="saml-oidc-flow4" style="width:100%">
+						</div>
+						<p>SAML ainda é um dos protocolos SSO mais populares em uso atualmente.</p>
+
+
+						<p><b>OIDC</b></p>
+						<p>OIDC é baseado no protocolo OAuth 2.0. Enquanto o OAuth 2.0 é usado para configurar dois aplicativos, como dois sites, que podem confiar um no outro e enviar e receber dados, o OIDC funciona no nível individual ou do usuário.</p>
+						<p>Em comparação com SAML, os fluxos de login do OIDC funcionam da mesma maneira. Mas existem três diferenças principais:</p>
+						<ol>
+							<li>SAML transmite dados do usuário em formato XML. OIDC transmite dados do usuário no formato JSON.</li>
+							<li>SAML chama os dados do usuário e envia uma asserção SAML. OIDC chama as declarações de dados.</li>
+							<li>SAML chama o aplicativo ou sistema que o usuário está tentando acessar para o provedor de serviços. OIDC chama isso de Parte Confiante.</li>
+						</ol>						
+						<p>Portanto, o fluxo geral parece o mesmo, apenas os rótulos são diferentes.</p>
+						<!--**-------FOTOS - APENAS-->
+						<div class="w3-col m12 w3-center">
+							<img src="https://i.postimg.cc/RVKyrPJC/saml-oidc-flow5.png" alt="saml-oidc-flow5" style="width:100%">
+						</div>
+						<p>OpenID Connect está ganhando popularidade. É muito mais simples de implementar do que SAML e facilmente acessível por meio de APIs porque funciona com endpoints de API RESTful. Isso também significa que funciona muito melhor com aplicativos móveis.</p>
+						<p>Ao configurar o SSO para um aplicativo por meio de um IdP como o OneLogin, você nem sempre terá a opção entre SAML ou OIDC . Suas escolhas são baseadas no que os desenvolvedores de aplicativos escolhem oferecer suporte. Mas se você tiver escolha, é importante entender qual é a diferença entre os dois e qual deles tem maior probabilidade de ser suportado por mais tempo. Neste momento, como os desenvolvedores consideram o OIDC muito mais fácil de trabalhar e por ser mais flexível, o OIDC parece que será o vencedor.</p>
+
+						<p><c class="configurado">SAML (Security Assertion Markup Language) </c><u>é uma linguagem de marcação baseada em XML</u> usada para autenticação via federação de identidade. Em outras palavras, ele permite que um usuário se autentique em um sistema e obtenha acesso a outro sistema, fornecendo prova de sua autenticação.</p>
+						<p>O SAML funciona estabelecendo uma conexão segura entre três partes:</p>
+						<ul>
+							<li><b>O usuário</b>: O usuário é a pessoa que está tentando se autenticar.</li>
+							<li><b>O provedor de identidade (IdP)</b>: O IdP é a entidade que gerencia as credenciais de identidade do usuário.</li>
+							<li><b>O provedor de serviços (SP)</b>: O SP é a entidade que fornece o serviço ao qual o usuário está tentando acessar.</li>
+						</ul>
+						<p>O processo de autenticação SAML ocorre da seguinte forma:</p>
+						<ul>
+							<li>O usuário inicia o processo de autenticação ao fornecer suas credenciais ao IdP.</li>
+							<li>O IdP autentica o usuário e gera uma afirmação de autenticação.</li>
+							<li>O IdP envia a afirmação de autenticação ao SP.</li>
+							<li>O SP verifica a afirmação de autenticação e concede acesso ao usuário ao serviço.</li>
+						</ul>
+						<p>As afirmações de autenticação SAML contêm informações sobre a identidade do usuário, como o nome de usuário, o endereço de e-mail e o grupo do usuário. O SP pode usar essas informações para conceder acesso ao usuário ao serviço.</p>
+						<p>O SAML é um protocolo de autenticação seguro e flexível que pode ser usado em uma variedade de cenários. É frequentemente usado para implementar login único (SSO), que permite que os usuários se autentiquem uma vez e obtenham acesso a vários serviços.</p>
+						<p>Aqui estão alguns exemplos de como o SAML é usado:</p>
+						<ul>
+							<li><b>Login único</b>: O SAML pode ser usado para implementar login único em uma organização. Isso permite que os usuários se autentiquem uma vez com o IdP da organização e obtenham acesso a todos os serviços da organização.</li>
+							<li><b>Federação de identidade</b>: O SAML pode ser usado para federar identidades entre organizações. Isso permite que os usuários se autentiquem com um IdP de uma organização e obtenham acesso aos serviços de outra organização.</li>
+							<li><b>Autenticação de dois fatores</b>: O SAML pode ser usado para implementar autenticação de dois fatores. Isso adiciona uma camada extra de segurança à autenticação, exigindo que os usuários forneçam um código de verificação além de suas credenciais de login.</li>
+						</ul>
+						<p>O SAML é um protocolo de autenticação importante que pode ser usado para melhorar a segurança e a eficiência das comunicações.</p>
+
+						<!--fim fo saml--><hr />
+						<p><c class="configurado">OpenID Connect (OIDC) </c><u>é um protocolo de autenticação de identidade que utiliza os mecanismos de autorização e autenticação do OAuth 2.0.</u> O OIDC é projetado para aplicativos web e móveis e fornece uma maneira segura e fácil para os usuários se autenticarem em aplicativos e serviços.</p>
+						<p>O OIDC funciona da seguinte forma:</p>
+						<ol>
+							<li>O usuário visita um aplicativo que usa o OIDC.</li>
+							<li>O aplicativo solicita ao usuário que se autentique com um provedor de identidade (IdP).</li>
+							<li>O usuário é redirecionado para o IdP para fazer login.</li>
+							<li>O IdP autentica o usuário e emite um token de ID.</li>
+							<li>O usuário é redirecionado de volta para o aplicativo com o token de ID.</li>
+						</ol>
+						<p>O token de ID é um token criptografado que contém informações sobre o usuário, como seu nome, e-mail e endereço IP. O aplicativo usa o token de ID para verificar a identidade do usuário e fornecer acesso ao aplicativo ou serviço.</p>
+						<p>O OIDC oferece uma série de benefícios, incluindo:</p>
+						<ul>
+							<li><b>Segurança</b>: O c usa criptografia para proteger as informações do usuário.</li>
+							<li><b>Facilidade de uso</b>: O OIDC é fácil de implementar e usar.</li>
+							<li><b>Compatibilidade</b>: O OIDC é compatível com muitos aplicativos e serviços.</li>
+						</ul>
+						<p>O OIDC é um protocolo de autenticação de identidade popular que é usado por uma ampla gama de aplicativos e serviços. É uma escolha segura e fácil para aplicativos web e móveis.</p>
+						<p>Aqui estão alguns exemplos de como o OIDC é usado:</p>
+						<ul>
+							<li><b>Aplicativos de mídia social</b>: Os aplicativos de mídia social, como Facebook e Twitter, usam o OIDC para permitir que os usuários se autentiquem com suas contas.</li>
+							<li><b>Aplicativos corporativos</b>: As empresas usam o OIDC para permitir que os funcionários se autentiquem em aplicativos corporativos.</li>
+							<li><b>Sites de comércio eletrônico</b>: Os sites de comércio eletrônico usam o OIDC para permitir que os usuários se autentiquem para fazer compras.</li>
+						</ul>
+						<P>O OIDC é uma tecnologia importante que está sendo cada vez mais adotada por aplicativos e serviços. É uma escolha segura e fácil para aplicativos web e móveis que precisam de autenticação de identidade.</P>
+						
+						<p>Diferença entre eles:</p>
+						<table class="w3-table-all">
+							<thead>
+								<tr>
+									<th>SAML</th>
+									<th>OIDC</th>
+								</tr>
+							</thead>
+								<tr>
+									<td>Linguagem de marcação de acesso de segurança</td>
+									<td>Conexão OpenID</td>
+								</tr>
+								<tr>
+									<td>Mais antigo</td>
+									<td>Mais novo</td>
+								</tr>
+								<tr>
+									<td>Refere-se ao aplicativo (SP)</td>
+									<td>Baseado no protocolo OAuth 2.0</td>
+								</tr>
+								<tr>
+									<td>Transmite dados do usuário em formato XML</td>
+									<td>Transmite dados do usuário no formato JSON</td>
+								</tr>
+								<tr>
+									<td>Chama os dados do usuário e envia uma asserção SAML</td>
+									<td>Chama as declarações de dados</td>
+								</tr>
+								<tr>
+									<td>Chama o aplicativo ou sistema que o usuário está tentando acessar para o provedor de serviços.</td>
+									<td>Chama isso de Parte Confiante.</td>
+								</tr>
+						</table>
+					</div>
+					<div id="AssinaturavsCertificado" class="w3-container ia" style="display:none">
+						<h3>Assinatura Digital vs Certificado Ditigal</h3>
+						<p><c class="configurado">Assinatura digital</c> e <c class="configurado">Certifiado Digital</c> são dois recursos que permitem reforçar a segurança da troca de informações e de negociações formalizadas em ambientes virtuais. Ambos usam a chave ASSIMÉTRICA.</p>
+						<p><c class="configurado">Assinatura Digital </c>é um tipo de formalização de documentos eletrônicos em que os <b>dados do titular de um certificado digital são vinculados ao documento assinado por meio de criptografia complexa</b>.</p>
+						<p><c class="configurado3">Principais informações</c></p>
+						<ol>
+							<li><u>Usa a chave PRIVADA para criptografar um hash do documento ou mensagem a ser assinado</u>;</li>
+							<li><b>Integridade</b> - Garante a não alteração do documento;</li>
+							<li><b>Autenticidade</b> - Garante que foi assinada pelo remetente;</li>
+							<li><b>Não repúdio</b> - Garante que não pode negar a transação eletrôica.</li>
+						</ol>
+						<p><c class="configurado3">Resumo: </c>A chave PRIVADA criar a assinatura, a chave PÚBLICA verifica a assinatura.</p>
+
+						<br />
+						<div class="containertovideo">
+							<iframe class="responsive-iframe" style="border:none;"
+							src="https://www.youtube.com/embed/7GpF4Kx0Q4g"></iframe>
+						</div><br />
+
+
+						<p class="obs">Assinatura Eletrônica:</p>
+						<p>A <c class="configurado">assinatura eletrônica</c> <b>é um conjunto de dados, no formato eletrônico</b>, que é anexado ou logicamente associado a um outro conjunto de dados (o conteúdo que se quer assinar), também no formato eletrônico, para lhe conferir autenticidade ou autoria e, dependendo do tipo de assinatura eletrônica aplicada, integridade do conteúdo assinado eletronicamente.</p>
+						
+						<p>Tabela comparativa entre Assinatura Digital e Eletrônica</p>
+						<table class="w3-table-all">
+							<thead>
+								<tr>
+									<th>Assinatura Digital</th>
+									<th>Assinatura Eletrônica</th>
+								</tr>
+							</thead>
+								<tr>
+									<td>Precisa de certificado digital</td>
+									<td>Não precisa de certificado digital</td>
+								</tr>
+								<tr>
+									<td>Assume outras formas de autenticação</td>
+									<td>Não assume outras formas de autenticação</td>
+								</tr>
+								<tr>
+									<td>Identifica alterações no documento</td>
+									<td>Não identifica alterações no documento</td>
+								</tr>
+								<tr>
+									<td>É usado por pessoas jurídicas</td>
+									<td>Não é usado por pessoas juridicas</td>
+								</tr>
+								<tr>
+									<td>Substitui a assinatura de próprio punho</td>
+									<td>Não substitui a assinatura de próprio punho</td>
+								</tr>
+						</table><br />
+						<table class="w3-table-all">
+							<thead>
+								<tr>
+									<th>Algumas ACs no brasil</th>
+								</tr>
+							</thead>
+								<tr>
+									<td><a href="www.certisign.com.br." target="_blank"></a>Certisign</td>
+									<td><a href="https://valid.com/pt-br/" target="_blank"></a>Valid</td>
+								</tr>
+								<tr>
+									<td><a href="http://www.serpro.gov.br/" target="_blank"></a>Serpro</td>
+									<td><a href="http://www.certisign.com.br/e-cpf" target="_blank"></a>e-CPF</td>
+								</tr>
+								<tr>
+									<td><a href="http://www.idera.com/" target="_blank"></a>Idera</td>
+									<td><a href="http://www.safesign.com.br/" target="_blank"></a>SafeSign</td>
+								</tr>
+						</table><br />
+						<p><c class="configurado">Certificado Digital </c>é um documento eletrônico, ou seja, <b>é semelhante a um CPF ou CNPJ na versão eletrônica</b>. Como um arquivo eletrônico, ele pode ser armazenado em um smart card, token ou até na nuvem. </p>
+						<p><c class="configurado3">Principais informações</c>
+						<ol>
+							<li><u>Associa uma chave PUBLICA a uma identidade</u>;</li>
+							<li>Chave pública e Dados do TITULAR - Garante que a assinatura digital é realmente do titular;</li>
+							<li>Periodo de validade;</li>
+							<li>Nome e Assinatura da Autoridade Certificadora (AC);</li>
+							<li>Número de série.</li>
+						</ol>
+						<p><c class="configurado3">Resumo: </c>A chave PRIVADA assina digitalmente as informações do certificaco, a chave PÚBLICA verifica a autenticidade do certificado.</p>
+						<br />
+						<div class="containertovideo">
+							<iframe class="responsive-iframe" style="border:none;"
+									src="https://www.youtube.com/embed/4bSqrxsx36I"></iframe>
+						</div>
+						<p><c class="configurado3">Tipos de certificado digital</c></p>
+						
+						<br />
+						<div class="containertovideo">
+							<iframe class="responsive-iframe" style="border:none;"
+							src="https://www.youtube.com/embed/B_l57SQl76o"></iframe>
+						</div><br />
+						<!--
+						Autenticidade https://www.youtube.com/watch?v=cL_BuJis_n4
+						Integridade https://www.youtube.com/watch?v=chBAQxW701U
+						Privacidade https://www.youtube.com/watch?v=NtAqTtUibU4
+						Disponibilidade https://www.youtube.com/watch?v=ydj04k2Wc7Y
+						Confidencialidade https://www.youtube.com/watch?v=HMpt0DqYa9c
+						Legalidade https://www.youtube.com/watch?v=D395QkxFL4k
+						-->
+						<p class="obs">Obs: Tanto a Assinatura Digital quanto o Certificado Digital podem utilizar diferentes tipos de criptografia, como RSA, ECC ou DSA.</p>
+						<p><p><c class="configurado1">RSA</c> - (Racional Security Algorithm) - "Algoritmo de Segurança Racional". É um algoritmo de criptografia assimétrica que é amplamente utilizado para garantir a segurança de dados digitais. Ele foi desenvolvido por Ron Rivest, Adi Shamir e Leonard Adleman em 1978 e é baseado na dificuldade de factorizar números primos grandes.</p>
+						<p><p><c class="configurado1">ECC</c> - (Elliptic Curve Cryptography) - "Criptografia de Curva Elíptica". É um tipo de criptografia assimétrica que usa curvas elípticas para gerar chaves públicas e privadas.</p>
+						<p><p><c class="configurado1">DSA</c> - (Digital Signature Algorithm) - "Algoritmo de Assinatura Digital". É um algoritmo de criptografia assimétrica que é usado para assinar digitalmente documentos e mensagens.</p>
+					</div>
+					<div id="SimetricavsAsimetrica" class="w3-container ia" style="display:none">
+						<h3>Criptografia Simétrica vs Criptografia Assimétrica</h3>
+						<p><c class="configurado">Simetrica</c> e <c class="configurado">Assimétrica</c> são dois tipos diferentes de criptografia que têm suas próprias vantagens e desvantagens. A criptografia simétrica é mais rápida e eficiente, mas é menos segura do que a criptografia assimétrica. A criptografia assimétrica é mais segura, mas é menos eficiente. A escolha do tipo de criptografia a ser usada depende da aplicação específica.</p>
+						<p>A principal diferença entre a <c class="configurado">criptografia simétrica</c>e a <c class="configurado"></c>criptografia assimétrica</c> é o número de chaves usadas. A criptografia simétrica usa uma única chave para criptografar e descriptografar os dados, enquanto a criptografia assimétrica usa duas chaves: uma chave pública e uma chave privada.</p>
+						<p><c class="configurado3">Criptografia simétrica </c>- (SSL e TLS)</p>
+						<p>A criptografia simétrica é o tipo mais simples de criptografia. Ela usa uma única chave para criptografar e descriptografar os dados. Essa chave pode ser compartilhada entre as duas partes que desejam se comunicar.</p>
+						<p></p>A criptografia simétrica é rápida e eficiente, pois usa apenas uma chave. No entanto, ela é menos segura do que a criptografia assimétrica, pois a chave secreta pode ser comprometida se cair em mãos erradas.</p>
+						<p><c class="configurado3">Criptografia assimétrica </c>- (SSH e HTTPS)</p>
+						<p>A criptografia assimétrica é mais complexa do que a criptografia simétrica, mas também é mais segura. Ela usa duas chaves: uma chave pública e uma chave privada. A chave pública pode ser divulgada para qualquer pessoa, enquanto a chave privada deve ser mantida em segredo pelo proprietário.</p>
+						<p>Para criptografar os dados, é usada a chave pública do destinatário. Para descriptografar os dados, é usada a chave privada do remetente.</p>
+						<p>A criptografia assimétrica é usada para garantir a autenticidade, a integridade e a confidencialidade dos dados. Ela é usada em aplicações como assinatura digital, comércio eletrônico e troca de chaves.</p>
+					
+					<table class="w3-table-all">
+						<tr>
+							<th>Atributo</th>
+							<th>Simetrica</th>
+							<th>Assimétrica</th>
+							<th>Protocolo</th>
+						</tr>
+						<tr>
+							<td>Nº de Chaves</td>
+							<td style="color:red;">Uma - SECRETA</td>
+							<td style="color:red;">Duas - PRIVADA e PÚBLICA</td>
+							<td style="color:red;">SSL e TLS</td>
+						</tr>
+						<tr>
+							<td>Segurança</td>
+							<td>Menos segura</td>
+							<td>Mais segura</td>
+							<td style="color:red;">SSH e HTTPS</td>
+						</tr>
+						<tr>
+							<td>Eficiência</td>
+							<td>Mais eficiente</td>
+							<td>Menos eficiente</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Aplicações</td>
+							<td>Doc´s e msg´s e arquivos</td>
+							<td>Doc´s e msg´s e arquivos</td>
+							<td>-</td>
+						</tr>
+					</table><br />
+					<p><c class="configurado3">Resumo: </c>A criptografia simétrica é usada em protocolos como SSL (Secure Sockets Layer) e TLS (Transport Layer Security), que são usados para proteger a comunicação entre um cliente e um servidor.</p>
+					<p><c class="configurado3">Resumo: </c>A criptografia assimétrica é usada em protocolos como SSH (Secure Shell), que é usado para acessar remotamente um servidor, e HTTPS (Hypertext Transfer Protocol Secure), que é usado para proteger a comunicação entre um navegador e um servidor web.</p>
+				
+					<p class="obs">SSL (Secure Sockets Layer) é um protocolo de segurança que fornece comunicação criptografada entre dois computadores. É usado para proteger comunicações na Internet, como navegação na web, e-mail e banco online.</p>
+					<p>Uso do SSL:</p>
+					<ul>
+						<li>Quando você visita um site seguro, o endereço do site começa com "https". Isso significa que a comunicação entre seu navegador e o servidor do site é criptografada usando o SSL.</li>
+						<li>Quando você envia um e-mail, o e-mail é criptografado usando o SSL se você estiver usando um provedor de e-mail seguro.</li>
+						<li>Quando você faz compras online, seus dados de pagamento são criptografados usando o SSL para proteger suas informações financeiras.</li>
+						<li>VPNs, VoIP e Transferência de arquivos também são alguns outros exemplos de como o SSL é usado.</li>
+					</ul>
+					<p class="obs">TLS (Transport Layer Security) é um protocolo de segurança utilizado para proteger a comunicação na Internet, garantindo a confidencialidade e integridade dos dados transmitidos. Sucessor do SSL.</p>
+					<p>Uso do TLS:</p>
+					<ul>
+						<li><b>Tráfego HTTPS</b>: O TLS é usado para proteger todo o tráfego HTTPS na Internet. HTTPS é a versão segura do HTTP e é usada para proteger todos os tipos de tráfego da web, incluindo navegação na web, e-mail e banco online.</li>
+						<li><b>Outros aplicativos</b>: O TLS também é usado para proteger outros aplicativos que exigem comunicação segura pela Internet, como VPNs, voz sobre IP (VoIP) e mensagens instantâneas.</li>
+					</ul>
+					<p>Tanto o SSL e o TLS fornecem uma série de recursos de segurança, incluindo:</p>
+					<ul>
+						<li><b>Confidencialidade</b>: Eles criptografam toda a comunicação entre o cliente e o servidor, para que apenas as partes pretendidas possam lê-la.</li>
+						<li><b>Integridade</b>: Eles garantem que a comunicação entre o cliente e o servidor não seja alterada durante o transporte.</li>
+						<li><b>Autenticação</b>: Eles permitem que o cliente verifique a identidade do servidor, para que o cliente possa ter certeza de que está se comunicando com o servidor correto.</li>
+
+					</ul>
+					<p class="obs">SSH (Secure Shell) é um protocolo de rede criptografado que permite a comunicação segura e autenticada entre dois sistemas, geralmente usado para acesso remoto a servidores.</p>
+					<p>Uso do SSH:</p>
+					<ul>
+						<li><b>Login remoto</b>: O SSH é uma maneira popular de fazer login remoto em um computador. Isso permite que os usuários acessem e gerenciem um computador de outro local.</li>
+						<li><b>Transferência de arquivos</b>: O SSH também pode ser usado para transferir arquivos com segurança entre computadores. Esta é uma maneira segura de compartilhar arquivos pela Internet.</li>
+						<li><b>Encaminhamento de portas</b>: O SSH pode ser usado para encaminhar portas entre computadores. Isso pode ser usado para fornecer acesso seguro a serviços que estão sendo executados em outro computador.</li>
+					</ul>
+				
+				</div>
+			</div>
+		 </div4>
