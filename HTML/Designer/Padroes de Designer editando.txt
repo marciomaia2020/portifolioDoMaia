@@ -1,0 +1,115 @@
+Usado no bard
+
+gere o código HTML e css (se tiver e for preciso) para o seguinte texto
+Gere o código HTML e css (se tiver e for preciso) para a informação anterior apresentada, com código exemplo java ou uma figura
+
+
+
+
+**Titulo
+
+* Lista
+
+Texto:
+
+
+* Tabela
+    | Coluna 1 | Coluna 2 |
+    |---|---|
+    | Valor 1 | Valor 2 |
+
+
+* Tabela 
+
+Crie uma tabela com estes pardrões de design de software colocando tambem um exemplo bem enxuto ao lado de cada padrão
+
+
+| Padrões de Disigner de Softeware |
+
+* Adapter 
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Factory
+* Flyweight
+* Prototype
+* Proxy
+* Singleton
+* Chain of Responsibility
+* Command
+* Observer
+* State
+* Strategy
+* Template Method
+* Visitor
+* Abstract Factory
+* Builder
+* Command
+* Data Access Object (DAO)
+* Factory Method
+* Interpreter
+* Iterator
+* Mediator
+* Memento
+* Null Object
+* Observer
+* Pool
+* Prototype
+* Singleton
+* State
+* Strategy
+* Template Method
+* Visitor
+
+
+
+Usos Comuns
+
+traga em **Lista a informação
+
+Crie uma tabela com estes pardrões de design de software colocando tambem um exemplo bem enxuto ao lado de cada padrão
+
+
+| Padrões de Disigner de Softeware |
+
+* Adapter 
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Factory
+* Flyweight
+* Prototype
+* Proxy
+* Singleton
+* Chain of Responsibility
+* Command
+* Observer
+* State
+* Strategy
+* Template Method
+* Visitor
+* Abstract Factory
+* Builder
+* Command
+* Data Access Object (DAO)
+* Factory Method
+* Interpreter
+* Iterator
+* Mediator
+* Memento
+* Null Object
+* Observer
+* Pool
+* Prototype
+* Singleton
+* State
+* Strategy
+* Template Method
+* Visitor
+
+
+
+
+
