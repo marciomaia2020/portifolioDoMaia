@@ -6,9 +6,18 @@ Gere o código HTML e css (se tiver e for preciso) para a informação anterior 
 
 
 
-**Titulo
+Titulo
 
 * Lista
+* Encapsulating complex logic
+    * Sistema de processamento de pagamentos
+        * Processamento de diferentes tipos de pagamentos
+        * Processamento de pagamentos internacionais
+        * Processamento de pagamentos recorrentes
+    * Sistema de gerenciamento de eventos
+        * Gerenciamento de diferentes tipos de eventos
+        * Gerenciamento de eventos virtuais
+        * Gerenciamento de eventos presenciais
 
 Texto:
 
@@ -20,6 +29,20 @@ Texto:
 
 
 * Tabela 
+| Outros exemplos | |
+|---|---|
+* Criar diferentes tipos de formatos de arquivo
+* Criar diferentes tipos de objetos de mídia
+* Criar diferentes tipos de objetos de rede
+
+
+  <table border="1">
+    <tr><th colspan="2">Outros exemplos</th></tr>
+    <tr><td>Criar diferentes tipos de formatos de arquivo</td><td></td></tr>
+    <tr><td>Criar diferentes tipos de objetos de mídia</td><td></td></tr>
+    <tr><td>Criar diferentes tipos de objetos de rede</td><td></td></tr>
+  </table>
+
 
 Crie uma tabela com estes pardrões de design de software colocando tambem um exemplo bem enxuto ao lado de cada padrão
 
@@ -66,50 +89,6 @@ Crie uma tabela com estes pardrões de design de software colocando tambem um ex
 
 Usos Comuns
 
-traga em **Lista a informação
+tudo para praticar e ser um bom Designer de Software
 
-Crie uma tabela com estes pardrões de design de software colocando tambem um exemplo bem enxuto ao lado de cada padrão
-
-
-| Padrões de Disigner de Softeware |
-
-* Adapter 
-* Bridge
-* Composite
-* Decorator
-* Facade
-* Factory
-* Flyweight
-* Prototype
-* Proxy
-* Singleton
-* Chain of Responsibility
-* Command
-* Observer
-* State
-* Strategy
-* Template Method
-* Visitor
-* Abstract Factory
-* Builder
-* Command
-* Data Access Object (DAO)
-* Factory Method
-* Interpreter
-* Iterator
-* Mediator
-* Memento
-* Null Object
-* Observer
-* Pool
-* Prototype
-* Singleton
-* State
-* Strategy
-* Template Method
-* Visitor
-
-
-
-
-
+crie uma * lista html baseado nas seguintes informações
