@@ -1,0 +1,181 @@
+										<div id="DesigndeExperienciadoUsuario" class="w3-container ia" style="display:none">
+											<h3>Design de Experiência do Usuário</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Experiência do Usuário (UX)? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Experiência do Usuário (UX)</c> - Refere-se ao processo de <u>projetar produtos ou serviços com foco na experiência do usuário</u>, levando em consideração aspectos como usabilidade, acessibilidade, eficiência e satisfação geral do usuário. O objetivo é criar uma experiência positiva e significativa para o usuário ao interagir com um produto ou serviço.</p>
+												</div>
+													<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+													<!--ONLINE-->
+													<p><a href="https://brasil.uxdesign.cc/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+										</div> 
+										<div id="DesigndeInteracao" class="w3-container ia" style="display:none">
+											<h3>Design de Interação</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Interação? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Interação</c> - Refere-se ao processo de <u>projetar a forma como os usuários interagem com um produto ou serviço</u>, definindo a maneira como os elementos visuais e funcionais são apresentados e como o usuário pode interagir com eles. O foco está em criar uma experiência fluida, intuitiva e eficiente para o usuário durante a interação com o produto ou serviço.</p>
+												</div>
+													<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+													<!--ONLINE-->
+													<p><a href="https://www.smashingmagazine.com/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+										</div> 
+										<div id="DesigndeInterfacedeUsuario" class="w3-container ia" style="display:none">
+											<h3>Design de Interface de Usuário (UI)</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Interface de Usuário (UI)? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Interface de Usuário (UI)</c> - Refere-se ao processo de <u>projetar a aparência visual e a disposição dos elementos em uma interface</u>, como botões, menus, ícones e outros elementos interativos. O objetivo é criar uma interface atraente, intuitiva e fácil de usar, que facilite a interação do usuário com o produto ou serviço. O design de UI trabalha em conjunto com o design de UX para proporcionar uma experiência completa ao usuário.</p>
+												</div>
+													<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+													<!--ONLINE-->
+													<p><a href="https://www.smashingmagazine.com/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+												
+										</div> 
+										<div id="DesigndeJogos" class="w3-container ia" style="display:none">
+											<h3>Design de Jogos</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Jogos? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Jogos</c> - Refere-se ao <u>processo de criar a estrutura, mecânicas e elementos de um jogo</u>, incluindo a narrativa, personagens, desafios e recompensas. O objetivo é projetar uma experiência divertida, envolvente e satisfatória para os jogadores. O design de jogos envolve a criação de regras, sistemas e interações que permitem aos jogadores interagir com o jogo de forma significativa e proporciona uma experiência única.</p>
+												</div>
+													<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+													<!--ONLINE-->
+													<p><a href="https://gamedevjsweekly.com/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+										</div> 
+										<div id="DesigndeRealidadeAumentada" class="w3-container ia" style="display:none">
+											<h3>Design de Realidade Aumentada (AR)</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Realidade Aumentada (AR)? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Realidade Aumentada (AR)</c> - Refere-se ao processo de <u>projetar a experiência de interação entre o mundo real e elementos virtuais em tempo real</u>. O objetivo é sobrepor informações digitais, como imagens, vídeos ou objetos 3D, ao ambiente físico do usuário, permitindo uma experiência imersiva e interativa. O design de AR envolve a criação de interfaces intuitivas, elementos visuais convincentes e uma integração harmoniosa entre o mundo real e o virtual.</p>
+												</div>
+														<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+															
+														<!--ONLINE-->
+														<p><a href="https://designcollaborative.com/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+										</div> 
+										<div id="DesigndeRealidadeVirtual" class="w3-container ia" style="display:none">
+											<h3>Design de Realidade Virtual (VR)</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Realidade Virtual (VR)? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Realidade Virtual (VR)</c> - Refere-se ao processo de <u>projetar a experiência imersiva em um ambiente virtual simulado</u>. O objetivo é criar um ambiente digital tridimensional que possa ser explorado e interagido pelos usuários por meio de dispositivos como óculos de realidade virtual. O design de VR envolve a criação de cenários, objetos e interações realistas, proporcionando uma experiência envolvente e imersiva aos usuários.</p>
+												</div>
+														<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+															
+														<!--ONLINE-->
+														<p><a href="https://www.xrtoday.com/virtual-reality/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+											
+										</div> 
+										<div id="DesigndeSites" class="w3-container ia" style="display:none">
+											<h3>Design de Sites</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Design de Sites? </c><a href="###" target="_blank"></a></p>
+														  
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">Design de Sites</c> - Refere-se ao processo de <u>projetar a aparência visual e a estrutura de um site</u>, incluindo a disposição dos elementos, as cores, as fontes e a organização do conteúdo. O objetivo é criar uma interface visualmente atraente, fácil de usar e que proporcione uma experiência positiva aos usuários ao navegar pelo site. O design de sites também envolve a consideração da usabilidade, acessibilidade e otimização para dispositivos móveis.</p>
+												</div>
+											<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+											<!--ONLINE-->
+											<p><a href="https://www.smashingmagazine.com/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+											<p><i class="fa-solid fa-plus fa-2xs"></i></p>
+											<p><a href="https://www.awwwards.com/"	target="_blank">Awwwards</a> é um site que premia sites de alto nível, com uma galeria de sites premiados e artigos sobre design de sites.</p>
+											<p><a href="https://dribbble.com/"	target="_blank">Dribbble</a> é um site de portfólio para designers, com uma grande variedade de designs de sites.</p>
+											<p><a href="https://www.behance.net/"	target="_blank">Behance</a> é outro site de portfólio para designers, com uma grande variedade de designs de sites.</p>
+											<p><a href="https://detodaforma.com/o-que-e-pinterest/" target="_blank">Pinterest</a> é uma plataforma de descoberta visual que serve como uma fonte infinita de inspiração.</p>
+											<p><a href="https://color.adobe.com/pt/create/color-wheel"	target="_blank">Adobe Color</a> é uma ferramenta fantástica para explorar e criar esquemas de cores.</p>
+											<p><a href="https://www.canva.com/" target="_blank">Canva</a> é uma ferramenta de design gráfico fácil de usar que capacita designers e não designers.</p>
+										</div>
+<!--NOVOSSSSSSSSSS-->
+										<div id="###" class="w3-container ia" style="display:none">
+											<h3>###</h3>
+												<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um ? </c><a href="###" target="_blank"></a></p>
+												<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+												<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
+													<p><c class="configurado">#####</c> - </p>
+												</div>
+														<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+															
+														<!--ONLINE-->
+														<p><a href="###" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+										</div> 
+
+
+
+
+
+
+
+
+
+Design de Inteligência Artificial (IA):
+Envolve a criação e o desenvolvimento de sistemas e algoritmos que possam simular ou replicar a capacidade humana de tomar decisões, aprender e resolver problemas. O design de IA abrange desde a definição dos objetivos do sistema até a escolha dos algoritmos e técnicas adequadas para alcançar esses objetivos, considerando aspectos éticos, de usabilidade e de eficiência. O objetivo é criar sistemas inteligentes que possam auxiliar ou automatizar tarefas humanas de forma eficaz e confiável.
+
+
+AI Design: Este site é um recurso abrangente para designers de IA, com artigos, tutoriais, casos de estudo e muito mais. Ele é publicado pela AI Design Society, uma organização sem fins lucrativos dedicada a promover o design de IA responsável e ética.
+
+
+Site AI Design
+AI Ethics: Este site é um recurso para designers de IA que desejam aprender mais sobre os aspectos éticos do design de IA. Ele é publicado pelo Center for the Future of Artificial Intelligence, uma organização de pesquisa que se concentra nos impactos sociais e éticos da IA.
+womeninaiethics.org
+
+Site AI Ethics
+AI for Good: Este site é um recurso para designers de IA que desejam usar a IA para resolver problemas sociais. Ele é publicado pela AI for Good Global Network, uma rede de organizações que trabalham para usar a IA para o bem.
+broadbandcommission.org
+
+Site AI for Good
+Designing for AI: Este site é um recurso para designers que desejam aprender mais sobre como projetar para sistemas de IA. Ele é publicado pela IBM, uma empresa de tecnologia que está investindo pesadamente em IA.
+designmodo.com
+
+
+
+Site Designing for AI
+AI Design Resources: Este site é um recurso para designers de IA que desejam encontrar recursos, como ferramentas, tutoriais e cursos. Ele é publicado pela Interaction-Design.org, uma organização sem fins lucrativos que promove o design de interação.
+bootcamp.uxdesign.cc
+
+
+
+
+Design de Interatividade: 
+É a disciplina que se concentra na criação de experiências interativas entre os usuários e os produtos ou sistemas digitais. Envolve a concepção de interfaces intuitivas, funcionais e agradáveis, que facilitem a interação do usuário com o produto, seja um aplicativo, um site ou qualquer outra forma de interface digital. O objetivo do design de interatividade é proporcionar uma experiência positiva e satisfatória ao usuário durante a interação com o produto.
+
+Interaction-Design.org
+
+
+Design Visual: 
+É a disciplina que se concentra na criação e na comunicação visual de elementos como cores, tipografia, layout e imagens. É responsável por transmitir uma mensagem visualmente atraente e eficaz em diversos meios, como design gráfico, design de interfaces, design de produtos, entre outros.
+
+AIGA
+
+
+
+Design Thinking: 
+É uma abordagem de resolução de problemas que enfatiza a empatia com os usuários, a geração de ideias criativas e a prototipagem rápida. É um processo iterativo que envolve entender as necessidades dos usuários, definir o problema, gerar soluções, prototipar e testar.
+
+IDEO
+
+
+
+
+Design de produtos digitais: 
+É o processo de projetar produtos digitais, como aplicativos, software e sites. Os designers de produtos digitais trabalham para criar produtos que sejam úteis, agradáveis e fáceis de usar.
+
+Dribbble
+

@@ -1,0 +1,49 @@
+Design de Interatividade: 
+É a disciplina que se concentra na criação de experiências interativas entre os usuários e os produtos ou sistemas digitais. Envolve a concepção de interfaces intuitivas, funcionais e agradáveis, que facilitem a interação do usuário com o produto, seja um aplicativo, um site ou qualquer outra forma de interface digital. O objetivo do design de interatividade é proporcionar uma experiência positiva e satisfatória ao usuário durante a interação com o produto.
+
+Interaction-Design.org
+
+Design Visual: 
+É a disciplina que se concentra na criação e na comunicação visual de elementos como cores, tipografia, layout e imagens. É responsável por transmitir uma mensagem visualmente atraente e eficaz em diversos meios, como design gráfico, design de interfaces, design de produtos, entre outros.
+
+AIGA
+
+Design Thinking: 
+É uma abordagem de resolução de problemas que enfatiza a empatia com os usuários, a geração de ideias criativas e a prototipagem rápida. É um processo iterativo que envolve entender as necessidades dos usuários, definir o problema, gerar soluções, prototipar e testar.
+
+IDEO
+
+Design de produtos digitais: 
+É o processo de projetar produtos digitais, como aplicativos, software e sites. Os designers de produtos digitais trabalham para criar produtos que sejam úteis, agradáveis e fáceis de usar.
+
+
+Dribbble
+
+Design de inteligência artificial (IA):
+Envolve a criação e o desenvolvimento de sistemas e algoritmos que possam simular ou replicar a capacidade humana de tomar decisões, aprender e resolver problemas. O design de IA abrange desde a definição dos objetivos do sistema até a escolha dos algoritmos e técnicas adequadas para alcançar esses objetivos, considerando aspectos éticos, de usabilidade e de eficiência. O objetivo é criar sistemas inteligentes que possam auxiliar ou automatizar tarefas humanas de forma eficaz e confiável.
+
+
+
+AI Design: Este site é um recurso abrangente para designers de IA, com artigos, tutoriais, casos de estudo e muito mais. Ele é publicado pela AI Design Society, uma organização sem fins lucrativos dedicada a promover o design de IA responsável e ética.
+www.elegantthemes.com
+
+Site AI Design
+AI Ethics: Este site é um recurso para designers de IA que desejam aprender mais sobre os aspectos éticos do design de IA. Ele é publicado pelo Center for the Future of Artificial Intelligence, uma organização de pesquisa que se concentra nos impactos sociais e éticos da IA.
+womeninaiethics.org
+
+Site AI Ethics
+AI for Good: Este site é um recurso para designers de IA que desejam usar a IA para resolver problemas sociais. Ele é publicado pela AI for Good Global Network, uma rede de organizações que trabalham para usar a IA para o bem.
+broadbandcommission.org
+
+Site AI for Good
+Designing for AI: Este site é um recurso para designers que desejam aprender mais sobre como projetar para sistemas de IA. Ele é publicado pela IBM, uma empresa de tecnologia que está investindo pesadamente em IA.
+designmodo.com
+
+
+
+Site Designing for AI
+AI Design Resources: Este site é um recurso para designers de IA que desejam encontrar recursos, como ferramentas, tutoriais e cursos. Ele é publicado pela Interaction-Design.org, uma organização sem fins lucrativos que promove o design de interação.
+bootcamp.uxdesign.cc
+
+
+
