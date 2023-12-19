@@ -98,7 +98,7 @@
 				
 <!--BARS - BARRA-->
 <div class="w3-container w3-center">
-	<h2>Redes</h2>
+	<h2>Infraestrutura de TI</h2>
 		<button id="btn24" class="fa-solid fa-plus"></button>
 		<button id="btn23" class="fa-solid fa-minus"></button>
 </div><br/>
@@ -108,7 +108,7 @@
 		<button class="w3-bar-item w3-button" onclick="openIA('VLAN')">VLAN </button>
 	</div>
 <div12>
-	<div id="Redes" class="w3-container ia" style="display:none">
+	<div id="Redes" class="w3-container ia" style="display:yes">
 		<h3>Rede de computadores ou redes de dados</h3>
 		<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 		<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
@@ -331,7 +331,7 @@
 					</dl>
 				</ul>
 			</div>
-			<button onclick="myFunction('ModeloOSI')" class="w3-button w3-block w3-left-align w3-green">Modelo OSI</button>
+			<button onclick="myFunction('ModeloOSI')" class="w3-button w3-block w3-left-align w3-green">Modelo de referência OSI <i class="fa-regular fa-eye fa-2xs"></i></button>
 			<div id="ModeloOSI" class="w3-hide w3-container">
 				<h2>Modelo de rede de computador referência da ISO dividido em camadas de funções.</h2>
 
@@ -346,14 +346,195 @@
 					<a href="https://pt.wikipedia.org/wiki/Modelo_OSI" target="_blank">
 					<img src="https://i.postimg.cc/j5kC75r0/Prt-Scr-capture-3.jpg" alt="MOSI" style="width:50%"/></a>
 				</div>
-
-
-							<!--UM VIDEO RESPONSIVOS-->
-							<p><c class="configurado3">Video explicativo</c></p>
-							<div class="containertovideo">
-								<iframe class="responsive-iframe" style="border:none;"
+						<!--UM VIDEO RESPONSIVOS-->
+						<p><c class="configurado3">Video explicativo</c></p>
+						<div class="containertovideo">
+							<iframe class="responsive-iframe" style="border:none;"
 								        src="https://youtube.com/embed/KOrWZnGbx7s"></iframe>
-							</div>
+						</div>
+
+			</div>
+			<button onclick="myFunction('ArquiteturaTCP/IP')" class="w3-button w3-block w3-left-align w3-green">Arquitetura TCP/IP <i class="fa-regular fa-eye fa-2xs"></i></button>
+			<div id="ArquiteturaTCP/IP" class="w3-hide w3-container">
+				<h2>A arquitetura TCP/IP é um <u>conjunto de protocolos</u> de comunicação que permite a conexão de dispositivos em redes de computadores. É a base da internet.</h2>
+				<p>Mais usados:</p>
+				<table>
+					<thead>
+					  <tr>
+						<th>Protocolo</th>
+						<th>Significado</th>
+						<th>Descrição</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td><b>TCP (Transmission Control Protocol)</b></td>
+						<td><b>Protocolo de Controle de Transmissão</b></td>
+						<td>Fornece uma conexão confiável e ordenada entre dois computadores. Os dados são enviados em blocos chamados de segmentos, e o TCP garante que todos os segmentos sejam recebidos na ordem correta e sem erros.</td>
+					  </tr>
+					  <tr>
+						<td><b>IP (Internet Protocol)</b></td>
+						<td><b>Protocolo de Internet</b></td>
+						<td>Fornece um endereço único para cada dispositivo na rede. O IP é responsável por entregar os dados ao dispositivo correto.</td>
+					  </tr>
+					  <tr>
+						<td><b>UDP (User Datagram Protocol)</b></td>
+						<td><b>Protocolo de Datagrama de Usuário</b></td>
+						<td>Fornece uma conexão não confiável e desordenada entre dois computadores. Os dados são enviados em blocos chamados de datagramas, e o UDP não garante que todos os datagramas sejam recebidos na ordem correta ou sem erros.</td>
+					  </tr>
+					  <tr>
+						<td><b>HTTP (Hypertext Transfer Protocol)</b></td>
+						<td><b>Protocolo de Transferência de Hipertexto</b></td>
+						<td>Fornece o transporte de dados da World Wide Web. O HTTP é responsável pela transferência de páginas da web, imagens, vídeos e outros recursos da web.</td>
+					  </tr>
+					  <tr>
+						<td><b>HTTPS (Hypertext Transfer Protocol Secure)</b></td>
+						<td><b>Protocolo de Transferência de Hipertexto Seguro</b></td>
+						<td>Fornece uma conexão segura para o HTTP. O HTTPS usa criptografia para proteger os dados enviados pela rede.</td>
+					  </tr>
+					  <tr>
+						<td><b>SMTP (Simple Mail Transfer Protocol)</b></td>
+						<td><b>Protocolo de Transferência de Correio Simples</b></td>
+						<td>Fornece o transporte de e-mail. O SMTP é responsável pela entrega de e-mails entre dois computadores.</td>
+					  </tr>
+					  <tr>
+						<td><b>POP3 (Post Office Protocol 3)</b></td>
+						<td><b>Protocolo de Correio do Escritório 3</b></td>
+						<td>Fornece o recebimento de e-mail. O POP3 é responsável pelo download de e-mails do servidor de e-mail para o computador do usuário.</td>
+					  </tr>
+					  <tr>
+						<td><b>IMAP (Internet Message Access Protocol)</b></td>
+						<td><b>Protocolo de Acesso a Mensagens da Internet</b></td>
+						<td>Fornece o recebimento e o envio de e-mail. O IMAP permite que os usuários visualizem, baixem ou excluam e-mails sem baixá-los completamente para o computador.</td>
+					  </tr>
+					</tbody>
+				  </table>
+				  <p>Mais comuns:</p>
+				  <table>
+					<thead>
+					  <tr>
+						<th>Protocolo</th>
+						<th>Significado</th>
+						<th>Descrição</th>
+					  </tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td><b>ICMP (Internet Control Message Protocol)</b></td>
+							<td><b>Protocolo de Mensagens de Controle da Internet</b></td>
+							<td>Fornece mensagens de controle para a rede, como mensagens de erro e aviso.</td>
+						</tr>
+						<tr>
+							<td><b>DNS (Domain Name System)</b></td>
+							<td><b>Sistema de Nomes de Domínio</b></td>
+							<td>Traduz nomes de domínio em endereços IP.</td>
+						</tr>
+						<tr>
+							<td><b>DHCP (Dynamic Host Configuration Protocol)</b></td>
+							<td><b>Protocolo de Configuração Dinâmica de Host</b></td>
+							<td>Fornece endereços IP automaticamente para dispositivos na rede.</td>
+						</tr>
+						<tr>
+							<td><b>ARP (Address Resolution Protocol)</b></td>
+							<td><b>Protocolo de Resolução de Endereço</b></td>
+							<td>Traz endereços IP para endereços MAC.</td>
+						</tr>
+						<tr>
+							<td><b>RIP (Routing Information Protocol)</b></td>
+							<td><b>Protocolo de Informação de Roteamento</b></td>
+							<td>Fornece informações de roteamento para dispositivos na rede.</td>
+						</tr>
+						<tr>
+							<td><b>OSPF (Open Shortest Path First)</b></td>
+							<td><b>Protocolo de Primeiro Caminho Mais Curto Aberto</b></td>
+							<td>Fornece informações de roteamento para dispositivos na rede.</td>
+						</tr>
+						<tr>
+							<td><b>BGP (Border Gateway Protocol)</b></td>
+							<td><b>Protocolo de Gateway de Borda</b></td>
+							<td>Fornece informações de roteamento entre redes diferentes.</td>
+						</tr>
+						<tr>
+							<td><b>SSH (Secure Shell)</b></td>
+							<td><b>Camada de Shell Segura</b></td>
+							<td>Fornece uma conexão segura entre dois dispositivos.</td>
+						</tr>
+						<tr>
+							<td><b>SFTP (Secure File Transfer Protocol)</b></td>
+							<td><b>Protocolo de Transferência de Arquivos Seguro</b></td>
+							<td>Fornece uma transferência de arquivos segura entre dois dispositivos.</td>
+						</tr>
+						<tr>
+							<td><b>FTP (File Transfer Protocol)</b></td>
+							<td><b>Protocolo de Transferência de Arquivos</b></td>
+							<td>Fornece a transferência de arquivos entre dois dispositivos.</td>
+						</tr>
+						<tr>
+							<td><b>Telnet</b></td>
+							<td><b>Fornece uma conexão de terminal remoto para um dispositivo.</b></td>
+							<td>Fornece uma conexão de terminal remoto para um dispositivo.</td>
+						</tr>
+						<tr>
+							<td><b>NTP (Network Time Protocol)</b></td>
+							<td><b>Protocolo de Tempo de Rede</b></td>
+							<td>Sincroniza os relógios de dispositivos na rede.</td>
+						</tr>
+						<tr>
+							<td><b>TLS (Transport Layer Security)</b></td>
+							<td><b>Segurança da Camada de Transporte</b></td>
+							<td>Fornece uma conexão segura para protocolos de transporte, como o HTTP e o FTP.</td>
+						</tr>
+						<tr>
+							<td><b>SSL (Secure Sockets Layer)</b></td>
+							<td><b>Camada de Soquetes Seguros</b></td>
+							<td>Fornece uma conexão segura para protocolos de transporte, como o HTTP e o FTP.</td>
+					   </tr>
+					  <tbody>
+				</table>
+<!--INICIO DE APRENDA-->
+			<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+			1 - Endereço de internet
+			2 - Tutorial
+			3 - Video
+			--> 
+		<!--APRENDA!-->
+		<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c></p>
+													
+		<!--ONLINE-->
+		<p><a href="https://tecnoblog.net/responde/o-que-e-tcp-ip/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+
+		<!--SIMULADORES ON-LINE-->
+		<i class="fa-solid fa-gear"></i> Simulador on-line
+		<p>	
+			<a href="https://netsim.erinn.io/" target="_blank">CS4G Netsim</a>
+			| <a href="https://www.nsnam.org/documentation/" target="_blank">NS-3</a>
+		</p>
+		
+			
+		<!--TUTORIAL-->
+		<p><a href="http://www.linhadecodigo.com.br/artigo/134/tutorial-de-tcp_ip-parte-1.aspxGOO" target="_blank"><i class="fa-solid fa-book"></i></a> Tutorial</p>
+
+		<!--VIDEO--> <!--Terá o video na página e o link dele-->
+		<p><a href="https://youtu.be/zheD2o16Lb0" target="_blank"><i class="fa-solid fa-video"></i></a> Video</p>
+		<div class="containertovideo">
+			<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+			src="https://www.youtube.com/embed/zheD2o16Lb0"></iframe>
+		</div>	
+		<!--OBSERVAÇÃO SE PRECISAR-->
+		<p class="obs">Clique <a href="EDITAR" target="_blank">aqui</a> para ver a playlist inteira</p>
+		
+		<!--ENCURTADOR DE LINK-->
+			<!--
+			https://www.encurtador.com.br/url-encurtada.php
+			-->
+			<!--PERGUNTA PARA FAZER AO BARD
+			o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
+			-->
+			<!--FIM DE APRENDA-->
+		<!--FIM DE APRENDA-->
+
+
+				
 
 			</div>
 
@@ -558,7 +739,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="VLAN" class="w3-container ia" style="display:yes">
+				<div id="VLAN" class="w3-container ia" style="display:none">
 					<h3>VLAN</h3>
 					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é uma VLAN?</c><a href="EDITAR" target="_blank"></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
@@ -632,23 +813,19 @@
 			<p class="obs">Clique <a href="EDITAR" target="_blank">aqui</a> para ver a playlist inteira</p>
 			-->
 			<!--ENCURTADOR DE LINK-->
+			
 			<!--
 			https://www.encurtador.com.br/url-encurtada.php
 			-->
-		<!--FIM DE APRENDA-->
+			<!--FIM DE APRENDA-->
+					</div>
+				</div12>
+			<!--PERGUNTA PARA FAZER AO BARD
+			o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
+			-->
+		</div><br/>
 
 
-
-
-				</div>
-		
-			</div12>
-		</div>
-			<br/>
-
-<!--PERGUNTA PARA FAZER AO BARD
-o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
--->
 
 				
 
