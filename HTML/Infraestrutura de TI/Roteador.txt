@@ -1,0 +1,73 @@
+<h1>O que é roteador?</h1>
+
+<p>Um roteador é um dispositivo de rede que conecta redes diferentes. Ele é usado para encaminhar pacotes de dados de uma rede para outra.</p>
+
+[Image of Roteador]
+
+<h2>Para que serve roteador?</h2>
+
+<ul>
+  <li>Conectar redes diferentes:** Um roteador pode ser usado para conectar redes diferentes, como uma rede doméstica à Internet ou uma rede de uma empresa a outra rede de uma empresa.
+  <li>Melhorar o desempenho de uma rede:** Um roteador pode ser usado para melhorar o desempenho de uma rede, dividindo o tráfego de rede entre vários caminhos.
+  <li>Aumentar a segurança de uma rede:** Um roteador pode ser usado para aumentar a segurança de uma rede, filtrando o tráfego de rede e aplicando políticas de segurança.
+</ul>
+
+<h2>Onde usar roteador?</h2>
+
+<p>Um roteador pode ser usado em qualquer lugar onde seja necessário conectar redes diferentes. Ele é comumente usado em:</p>
+
+<ul>
+  <li>Casas:** Um roteador é usado para conectar uma rede doméstica à Internet.
+  <li>Empresas:** Um roteador é usado para conectar redes de uma empresa a outras redes de uma empresa ou à Internet.
+  <li>Instituições educacionais:** Um roteador é usado para conectar redes de uma instituição educacional à Internet ou a outras redes de instituições educacionais.
+</ul>
+
+<h2>Como implementar roteador?</h2>
+
+<p>A implementação de um roteador depende do tipo de roteador e da aplicação. Em geral, a implementação envolve as seguintes etapas:</p>
+
+<ol>
+  <li>Selecione um roteador adequado para suas necessidades.</li>
+  <li>Instale o roteador no local apropriado.</li>
+  <li>Configure o roteador de acordo com suas necessidades.</li>
+</ol>
+
+<h2>Ferramentas em geral</h2>
+
+<p>As ferramentas necessárias para implementar um roteador variam de acordo com o tipo de roteador e a aplicação. Em geral, as ferramentas necessárias incluem:</p>
+
+<ul>
+  <li>Cabos de rede</li>
+  <li>Crimpador de cabos</li>
+  <li>Ferramentas de teste de rede</li>
+</ul>
+
+<h2>Tipos de roteadores</h2>
+
+<p>Existem dois tipos principais de roteadores:</p>
+
+<ul>
+  <li><b>Roteadores domésticos:**</b> Esses roteadores são projetados para uso doméstico. Eles são geralmente relativamente baratos e fáceis de configurar.
+[Image of Roteadores domésticos]
+  <li><b>Roteadores empresariais:**</b> Esses roteadores são projetados para uso empresarial. Eles são geralmente mais caros e complexos do que os roteadores domésticos.
+</ul>
+
+<h2>Roteadores domésticos</h2>
+
+<p>Os roteadores domésticos são o tipo mais comum de roteador. Eles são geralmente relativamente baratos e fáceis de configurar. Os roteadores domésticos geralmente incluem recursos básicos, como:</p>
+
+<ul>
+  <li>Conexão à Internet:** Os roteadores domésticos geralmente incluem uma porta WAN que pode ser usada para conectar o roteador à Internet.
+  <li>Conexão de rede:** Os roteadores domésticos geralmente incluem várias portas LAN que podem ser usadas para conectar dispositivos à rede doméstica.
+  <li>Segurança:** Os roteadores domésticos geralmente incluem recursos de segurança básicos, como filtragem de endereços IP e portas.
+</ul>
+
+<h2>Roteadores empresariais</h2>
+
+<p>Os roteadores empresariais são projetados para uso empresarial. Eles são geralmente mais caros e complexos do que os roteadores domésticos. Os roteadores empresariais geralmente incluem recursos avançados, como:</p>
+
+<ul>
+  <li>Performance:** Os roteadores empresariais são geralmente projetados para lidar com um grande volume de tráfego de rede.
+  <li>Segurança:** Os roteadores empresariais são geralmente projetados para incluir recursos de segurança avançados, como autenticação de dois fatores e criptografia.
+  <li>Gerenciamento:** Os roteadores empresariais são geralmente projetados para incluir recursos de gerenciamento avançados, como gerenciamento remoto e relatórios.
+</ul>

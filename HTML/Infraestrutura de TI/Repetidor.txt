@@ -1,0 +1,65 @@
+<h1>O que é repetidor?</h1>
+
+<p>Um repetidor é um dispositivo de rede que amplifica e retransmite um sinal de rede. Ele é usado para estender o alcance de uma rede ou melhorar a qualidade do sinal.</p>
+
+[Image of Repetidor]
+
+<h2>Para que serve repetidor?</h2>
+
+<ul>
+  <li>Estender o alcance de uma rede:** Um repetidor pode ser usado para estender o alcance de uma rede sem fio ou cabeada. Isso pode ser útil em áreas onde o sinal da rede é fraco ou intermitente.
+  <li>Melhorar a qualidade do sinal:** Um repetidor pode ser usado para melhorar a qualidade do sinal de uma rede. Isso pode ser útil em áreas onde o sinal está sujeito a interferências.
+</ul>
+
+<h2>Onde usar repetidor?</h2>
+
+<p>Um repetidor pode ser usado em qualquer lugar onde seja necessário estender o alcance ou melhorar a qualidade do sinal de uma rede. Ele é comumente usado em:</p>
+
+<ul>
+  <li>Casas:** Um repetidor pode ser usado para estender o alcance da rede sem fio de uma casa para áreas onde o sinal é fraco, como o quintal ou o porão.
+  <li>Empresas:** Um repetidor pode ser usado para estender o alcance da rede sem fio de uma empresa para áreas onde o sinal é fraco, como o estacionamento ou o pátio.
+  <li>Lojas:** Um repetidor pode ser usado para estender o alcance da rede sem fio de uma loja para áreas onde o sinal é fraco, como o estoque ou a área de vendas.
+</ul>
+
+<h2>Como implementar repetidor?</h2>
+
+<p>A implementação de um repetidor depende do tipo de repetidor e da aplicação. Em geral, a implementação envolve as seguintes etapas:</p>
+
+<ol>
+  <li>Selecione um repetidor adequado para suas necessidades.</li>
+  <li>Instale o repetidor no local apropriado.</li>
+  <li>Configure o repetidor de acordo com suas necessidades.</li>
+</ol>
+
+<h2>Ferramentas em geral</h2>
+
+<p>As ferramentas necessárias para implementar um repetidor variam de acordo com o tipo de repetidor e a aplicação. Em geral, as ferramentas necessárias incluem:</p>
+
+<ul>
+  <li>Cabos de rede</li>
+  <li>Crimpador de cabos</li>
+  <li>Ferramentas de teste de rede</li>
+</ul>
+
+<h2>Tipos de repetidores</h2>
+
+<p>Existem dois tipos principais de repetidores:</p>
+
+<ul>
+  <li><b>Repetidores sem fio:**</b> Esses repetidores amplificam e retransmitem sinais sem fio.
+[Image of Repetidores sem fio]
+  <li><b>Repetidores cabeados:**</b> Esses repetidores amplificam e retransmitem sinais cabeados.
+
+</ul>
+
+<h2>Repetidores sem fio</h2>
+
+<p>Os repetidores sem fio são o tipo mais comum de repetidor. Eles são relativamente fáceis de instalar e usar.</p>
+
+<h2>Repetidores cabeados</h2>
+
+<p>Os repetidores cabeados são menos comuns do que os repetidores sem fio. Eles são mais difíceis de instalar e usar, mas oferecem melhor desempenho em áreas com interferências eletromagnéticas.</p>
+
+<h2>Conclusão</h2>
+
+<p>Os repetidores são dispositivos essenciais para estender o alcance ou melhorar a qualidade do sinal de uma rede. Eles estão disponíveis em uma variedade de tipos e preços, para atender às necessidades de qualquer usuário.</p>

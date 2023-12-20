@@ -1,0 +1,71 @@
+<h1>O que é switch?</h1>
+
+<p>Um switch é um dispositivo de rede que conecta dispositivos em uma rede local (LAN). Ele faz isso encaminhando pacotes de dados entre os dispositivos conectados.</p>
+
+[Image of Switch de rede]
+
+<h2>Para que serve switch?</h2>
+
+<ul>
+  <li>Conectar dispositivos em uma LAN:** Um switch é essencial para conectar dispositivos em uma LAN. Sem um switch, os dispositivos não seriam capazes de se comunicar entre si.
+  <li>Melhorar o desempenho de uma LAN:** Um switch pode melhorar o desempenho de uma LAN ao dividir o tráfego de rede entre vários caminhos.
+  <li>Aumentar a segurança de uma LAN:** Um switch pode aumentar a segurança de uma LAN ao fornecer recursos de segurança, como filtragem de endereços IP e portas.
+</ul>
+
+<h2>Onde usar switch?</h2>
+
+<p>Um switch pode ser usado em qualquer lugar onde seja necessário conectar dispositivos em uma LAN. Ele é comumente usado em:</p>
+
+<ul>
+  <li>Casas:** Um switch pode ser usado para conectar dispositivos em uma rede doméstica, como computadores, impressoras e dispositivos de streaming.
+  <li>Empresas:** Um switch pode ser usado para conectar dispositivos em uma rede empresarial, como servidores, estações de trabalho e dispositivos de armazenamento.
+  <li>Instituições educacionais:** Um switch pode ser usado para conectar dispositivos em uma rede educacional, como computadores, laboratórios e bibliotecas.
+</ul>
+
+<h2>Como implementar switch?</h2>
+
+<p>A implementação de um switch depende do tipo de switch e da aplicação. Em geral, a implementação envolve as seguintes etapas:</p>
+
+<ol>
+  <li>Selecione um switch adequado para suas necessidades.</li>
+  <li>Instale o switch no local apropriado.</li>
+  <li>Configure o switch de acordo com suas necessidades.</li>
+</ol>
+
+<h2>Ferramentas em geral</h2>
+
+<p>As ferramentas necessárias para implementar um switch variam de acordo com o tipo de switch e a aplicação. Em geral, as ferramentas necessárias incluem:</p>
+
+<ul>
+  <li>Cabos de rede</li>
+  <li>Crimpador de cabos</li>
+  <li>Ferramentas de teste de rede</li>
+</ul>
+
+<h2>Tipos de switches</h2>
+
+Existem dois tipos principais de switches:
+
+* **Switches não gerenciados:** Esses switches são simples de configurar e usar. Eles geralmente não incluem recursos avançados, como filtragem de endereços IP e portas.
+[Image of Switch não gerenciado]
+* **Switches gerenciados:** Esses switches são mais complexos de configurar e usar. Eles geralmente incluem recursos avançados, como filtragem de endereços IP e portas, QoS e relatórios.
+[Image of Switch gerenciado]
+
+<h2>Switches não gerenciados</h2>
+
+Os switches não gerenciados são o tipo mais comum de switch. Eles são geralmente relativamente baratos e fáceis de configurar. Os switches não gerenciados geralmente incluem recursos básicos, como:
+
+* **Conexão de dispositivos:** Os switches não gerenciados geralmente incluem várias portas que podem ser usadas para conectar dispositivos à rede.
+* **Encaminhamento de pacotes:** Os switches não gerenciados usam tabelas de encaminhamento para encaminhar pacotes de dados entre os dispositivos conectados.
+
+<h2>Switches gerenciados</h2>
+
+Os switches gerenciados são projetados para uso empresarial. Eles são geralmente mais caros e complexos do que os switches não gerenciados. Os switches gerenciados geralmente incluem recursos avançados, como:
+
+* **Filtragem de endereços IP e portas:** Os switches gerenciados podem ser usados para restringir o tráfego de rede de determinados endereços IP ou portas.
+* **QoS:** Os switches gerenciados podem ser usados para priorizar o tráfego de rede de determinados aplicativos ou dispositivos.
+* **Relatórios:** Os switches gerenciados podem gerar relatórios sobre o tráfego de rede e o desempenho do switch.
+
+<h2>Conclusão</h2>
+
+Os switches são dispositivos essenciais para conectar dispositivos em uma LAN. Eles são disponíveis em uma variedade de tipos e preços, para atender às necessidades de qualquer usuário.

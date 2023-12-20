@@ -1,0 +1,46 @@
+<h1>O que é um bridge?</h1>
+
+<p>Um bridge é um dispositivo de rede que conecta duas redes diferentes. Ele funciona na camada de enlace do modelo OSI e é usado para conectar redes com protocolos diferentes ou para estender o alcance de uma rede.</p>
+
+<h2>Para que serve um bridge?</h2>
+
+<ul>
+  <li>Conectar duas redes com protocolos diferentes, como Ethernet e Wi-Fi.</li>
+  <li>Extender o alcance de uma rede.</li>
+  <li>Segmentar uma rede para melhorar o desempenho ou a segurança.</li>
+</ul>
+
+<h2>Onde usar um bridge?</h2>
+
+<p>Um bridge pode ser usado em qualquer lugar onde seja necessário conectar duas redes diferentes. Ele é comumente usado em empresas para conectar redes de escritórios diferentes, ou em residências para conectar redes de computadores e dispositivos móveis.</p>
+
+<h2>Como implementar um bridge?</h2>
+
+<p>Para implementar um bridge, você precisará conectar os dois cabos de rede do bridge às duas redes que deseja conectar. O bridge irá então aprender o endereço MAC de cada dispositivo conectado a cada rede e usará essa informação para encaminhar os pacotes de dados entre as redes.</p>
+
+<h2>Ferramentas em geral</h2>
+
+<ul>
+  <li>Cabos de rede</li>
+  <li>Crimpador de cabos</li>
+  <li>Ferramentas de teste de rede</li>
+</ul>
+
+<h2>Tipos de bridges</h2>
+
+<ul>
+  <li><b>Bridges de hardware:</b> Esses bridges são dispositivos físicos que implementam o protocolo de bridge.</li>
+  <li><b>Bridges de software:</b> Esses bridges são softwares que são executados em um computador ou dispositivo de rede.</li>
+</ul>
+
+<h2>Bridges de hardware</h2>
+
+<p>Os bridges de hardware são o tipo mais comum de bridge. Eles são dispositivos físicos que implementam o protocolo de bridge. Os bridges de hardware são geralmente mais rápidos e eficientes do que os bridges de software.</p>
+
+<h2>Bridges de software</h2>
+
+<p>Os bridges de software são softwares que são executados em um computador ou dispositivo de rede. Os bridges de software são geralmente mais baratos e flexíveis do que os bridges de hardware.</p>
+
+<h2>Conclusão</h2>
+
+<p>Os bridges são dispositivos essenciais para conectar duas redes diferentes. Eles são usados em uma ampla variedade de aplicações, incluindo empresas, residências e infraestruturas críticas.</p>

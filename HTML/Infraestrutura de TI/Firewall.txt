@@ -1,0 +1,66 @@
+<h1>O que é firewall?</h1>
+
+<p>Um firewall é um dispositivo de segurança de rede que monitora o tráfego de rede e permite ou bloqueia o tráfego com base em regras predefinidas. Ele é usado para proteger uma rede de computadores de acessos não autorizados ou maliciosos.</p>
+
+<h2>Para que serve um firewall?</h2>
+
+<ul>
+  <li>Proteger uma rede de computadores de acessos não autorizados ou maliciosos.</li>
+  <li>Segmentar uma rede para melhorar o desempenho ou a segurança.</li>
+  <li>Filtrar o tráfego de rede para melhorar o desempenho ou a segurança.</li>
+</ul>
+
+<h2>Onde usar um firewall?</h2>
+
+<p>Um firewall pode ser usado em qualquer lugar onde seja necessário proteger uma rede de computadores. Ele é comumente usado em:</p>
+
+<ul>
+  <li>Redes domésticas</li>
+  <li>Redes de pequenas empresas</li>
+  <li>Redes de grandes empresas</li>
+  <li>Redes governamentais</li>
+</ul>
+
+<h2>Como implementar um firewall?</h2>
+
+<p>A implementação de um firewall depende do tipo de firewall e da aplicação. Em geral, a implementação de um firewall envolve as seguintes etapas:</p>
+
+<ol>
+  <li>Selecione um firewall adequado para suas necessidades.</li>
+  <li>Instale o firewall no dispositivo de rede apropriado.</li>
+  <li>Configure o firewall de acordo com suas necessidades.</li>
+</ol>
+
+<h2>Ferramentas em geral</h2>
+
+<p>As ferramentas necessárias para implementar um firewall variam de acordo com o tipo de firewall e a aplicação. Em geral, as ferramentas necessárias incluem:</p>
+
+<ul>
+  <li>Software de firewall</li>
+  <li>Cabos de rede</li>
+  <li>Crimpador de cabos</li>
+  <li>Ferramentas de teste de rede</li>
+</ul>
+
+<h2>Tipos de firewalls</h2>
+
+<p>Existem dois tipos principais de firewalls:</p>
+
+<ul>
+  <li><b>Firewalls de hardware:**</b> Esses firewalls são dispositivos físicos que implementam o protocolo de firewall.
+[Image of Firewall de hardware]
+  <li><b>Firewalls de software:**</b> Esses firewalls são softwares que são executados em um computador ou dispositivo de rede.
+[Image of Firewall de software]
+</ul>
+
+<h2>Firewalls de hardware</h2>
+
+<p>Os firewalls de hardware são o tipo mais comum de firewall. Eles são geralmente mais rápidos e eficientes do que os firewalls de software.</p>
+
+<h2>Firewalls de software</h2>
+
+<p>Os firewalls de software são geralmente mais baratos e flexíveis do que os firewalls de hardware. Eles podem ser instalados em qualquer computador ou dispositivo de rede.</p>
+
+<h2>Conclusão</h2>
+
+<p>Os firewalls são dispositivos essenciais para proteger uma rede de computadores de acessos não autorizados ou maliciosos. Eles são usados em uma ampla variedade de aplicações, incluindo redes domésticas, redes de pequenas empresas e redes de grandes empresas.</p>
