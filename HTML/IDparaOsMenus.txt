@@ -1,0 +1,17 @@
+idcienciadedados
+iddesigners&designs
+idhardwares
+idinstalandoprogramasautomaticamente
+idinteligenciaartificialpc
+idinteligenciaartificialzap
+idmalwares
+idmensageria
+idnovidadesemti
+idprotocoloseoutros
+idinfraestruturadeti
+idsistemadeautenticacao
+idsistemadecomunicacao
+idsitesdenoticiassobreti
+idtermoseabreviaturas
+idcertificacao
+
