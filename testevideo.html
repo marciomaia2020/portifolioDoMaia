@@ -106,17 +106,19 @@
 <div class="w3-container">
 	<div class="w3-bar w3-green">
 		<button class="w3-bar-item w3-button" onclick="openIA('Redes')">Redes <i class="fa-solid fa-arrow-right"></i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('ProjetoRedes')">Projeto de Redes</button>
 		<button class="w3-bar-item w3-button" onclick="openIA('VLAN')">VLAN </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('IPV4')">IPV4 </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('IPV6')">IPV6 </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('CIDR')">CIDR </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('EIR')">Elementos de Interconexão de redes </button>
-		<button class="w3-bar-item w3-button" onclick="openIA('CabeamentoEstruturado')">Cabeamento Estruturado/button>
-
-		
+		<button class="w3-bar-item w3-button" onclick="openIA('CabeamentoEstruturado')">Cabeamento Estruturado</button>
+		<button class="w3-bar-item w3-button" onclick="openIA('RedesSemFio')">Redes sem fio</button>
+		<button class="w3-bar-item w3-button" onclick="openIA('TCS')">Técnicas de codificação de sinal</button>
+		<button class="w3-bar-item w3-button" onclick="openIA('FibrasOpticas')">Fibras ópticas</button>
 	</div>
 <div12>
-	<div id="Redes" class="w3-container ia" style="display:yes">
+	<div id="Redes" class="w3-container ia" style="display:none">
 		<h3>Rede de computadores ou redes de dados</h3>
 		<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 		<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
@@ -364,9 +366,9 @@
 			</div>
 			<button onclick="myFunction('ArquiteturaTCP/IP')" class="w3-button w3-block w3-left-align w3-green">Arquitetura TCP/IP <i class="fa-regular fa-eye fa-2xs"></i></button>
 			<div id="ArquiteturaTCP/IP" class="w3-hide w3-container">
-				<h2>A arquitetura TCP/IP é um <u>conjunto de protocolos</u> de comunicação que permite a conexão de dispositivos em redes de computadores. É a base da internet.</h2>
-				<p>Mais usados:</p>
-				<table class="w3-table-all">
+					<h2>A arquitetura TCP/IP é um <u>conjunto de protocolos</u> de comunicação que permite a conexão de dispositivos em redes de computadores. É a base da internet.</h2>
+					<p>Mais usados:</p>
+					<table class="w3-table-all">
 					<thead>
 					  <tr>
 						<th>Protocolo</th>
@@ -497,48 +499,48 @@
 							<td><b> Camada de Soquetes Seguros </b></td>
 							<td>Fornece uma conexão segura para protocolos de transporte, como o HTTP e o FTP.</td>
 					   </tr>
-					  <tbody>
-				</table>
-			<!--INICIO DE APRENDA-->
-			<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
-			1 - Endereço de internet
-			2 - Tutorial
-			3 - Video
-			--> 
-				<!--APRENDA!-->
-				<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c> </p>
-															
-				<!--ONLINE-->
-				<p><a href="https://tecnoblog.net/responde/o-que-e-tcp-ip/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+							<tbody>
+						</table>
+					<!--INICIO DE APRENDA-->
+					<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+					1 - Endereço de internet
+					2 - Tutorial
+					3 - Video
+					--> 
+						<!--APRENDA!-->
+						<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c> </p>
+																	
+						<!--ONLINE-->
+						<p><a href="https://tecnoblog.net/responde/o-que-e-tcp-ip/" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
 
-				<!--SIMULADORES ON-LINE-->
-				<i class="fa-solid fa-gear"></i> Simulador on-line
-				<p>	
-					<a href="https://netsim.erinn.io/" target="_blank">CS4G Netsim</a>
-					| <a href="https://www.nsnam.org/documentation/" target="_blank">NS-3</a>
-				</p>
-				
+						<!--SIMULADORES ON-LINE-->
+						<i class="fa-solid fa-gear"></i> Simulador on-line
+						<p>	
+							<a href="https://netsim.erinn.io/" target="_blank">CS4G Netsim</a>
+							| <a href="https://www.nsnam.org/documentation/" target="_blank">NS-3</a>
+						</p>
+						
 					
-				<!--TUTORIAL-->
-				<p><a href="http://www.linhadecodigo.com.br/artigo/134/tutorial-de-tcp_ip-parte-1.aspxGOO" target="_blank"><i class="fa-solid fa-book"></i></a> Tutorial</p>
+					<!--TUTORIAL-->
+					<p><a href="http://www.linhadecodigo.com.br/artigo/134/tutorial-de-tcp_ip-parte-1.aspxGOO" target="_blank"><i class="fa-solid fa-book"></i></a> Tutorial</p>
 
-				<!--VIDEO--> <!--Terá o video na página e o link dele-->
-				<p><a href="https://youtu.be/zheD2o16Lb0" target="_blank"><i class="fa-solid fa-video"></i></a> Video</p>
-				<div class="containertovideo">
-					<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
-					src="https://www.youtube.com/embed/zheD2o16Lb0"></iframe>
-				</div>	
-				
-				<!--ENCURTADOR DE LINK-->
-					<!--
-					https://www.encurtador.com.br/url-encurtada.php
-					-->
-					<!--PERGUNTA PARA FAZER AO BARD
-					o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
-					-->
+					<!--VIDEO--> <!--Terá o video na página e o link dele-->
+					<p><a href="https://youtu.be/zheD2o16Lb0" target="_blank"><i class="fa-solid fa-video"></i></a> Video</p>
+					<div class="containertovideo">
+						<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+						src="https://www.youtube.com/embed/zheD2o16Lb0"></iframe>
+					</div>	
+					
+					<!--ENCURTADOR DE LINK-->
+						<!--
+						https://www.encurtador.com.br/url-encurtada.php
+						-->
+						<!--PERGUNTA PARA FAZER AO BARD
+						o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
+						-->
+						<!--FIM DE APRENDA-->
 					<!--FIM DE APRENDA-->
-				<!--FIM DE APRENDA-->
-			</div>
+					</div>
 
 						<button onclick="myFunction('Normas')" class="w3-button w3-block w3-left-align w3-green">Normas</button>
 						<div id="Normas" class="w3-hide w3-container">
@@ -740,10 +742,108 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div id="VLAN" class="w3-container ia" style="display:none">
+					</div>
+
+					<div id="ProjetoRedes" class="w3-container ia" style="display:yes"> 
+					<h3>Projeto de LANs e WANs</h3>
+					<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Projeto de LANs e WANs?</c><a href="EDITAR" target="_blank"> </a></p>
+					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+						<p><c class="configurado"> Projeto de LANs e WANs</c> - Refere-se ao </p>
+					</div>
+					
+					<p>Quando se fala de "Projeto de LANs e WANs (especificação de infraestrutura, cabeamentos, ativos, aspectos de gerenciamento, intranet, extranets e internet)", é necessário estudar os seguintes tópicos:</p>
+					<ul>
+						<li>Infraestrutura de redes: Este tópico inclui o estudo dos componentes físicos de uma rede, como cabos, switches, roteadores, servidores e pontos de acesso sem fio. É importante entender as diferentes tecnologias de cabeamento e como elas afetam o desempenho da rede. Também é importante entender como os diferentes dispositivos de rede se comunicam entre si.</li>
+						<li>Cabeamento: Este tópico inclui o estudo dos diferentes tipos de cabos de rede e como eles são instalados. É importante entender as diferentes características dos cabos, como a velocidade de transmissão, o alcance e a resistência a interferências. Também é importante entender as diferentes técnicas de cabeamento, como o cabeamento estruturado.</li>
+						<li>Ativos: Este tópico inclui o estudo dos diferentes tipos de ativos de rede, como servidores, estações de trabalho, impressoras e dispositivos de armazenamento. É importante entender as diferentes características dos ativos, como o desempenho, o consumo de energia e os requisitos de segurança. Também é importante entender como os ativos são gerenciados.</li>
+						<li>Aspectos de gerenciamento: Este tópico inclui o estudo das diferentes ferramentas e técnicas utilizadas para gerenciar uma rede. É importante entender como as redes são monitoradas e como os problemas são resolvidos. Também é importante entender como as redes são planejadas e implantadas.</li>
+						<li>Intranets, extranets e internet: Este tópico inclui o estudo das diferentes redes que podem ser implementadas em uma organização. É importante entender como as intranets, extranets e internet são usadas para compartilhar informações e recursos.</li>
+					</ul>
+					<p>Além desses tópicos, é importante também estudar os seguintes conceitos:</p>
+					<ul>
+						<li>Topologias de rede: As diferentes maneiras como os dispositivos de rede são conectados entre si.</li>
+						<li>Protocolos de rede: As regras que definem como os dispositivos de rede se comunicam entre si.</li>
+						<li>Segurança de rede: As medidas tomadas para proteger a rede contra acessos não autorizados.</li>
+					</ul>
+					
+					<p>Ao estudar esses tópicos, você estará preparado para projetar redes LAN e WAN eficazes que atendam às necessidades de sua organização.</p>
+					<p>Aqui estão alguns recursos que podem ajudá-lo a estudar esses tópicos:</p>
+					<ul>
+						<li>Livros: Existem muitos livros disponíveis sobre projeto de redes LAN e WAN. Alguns exemplos incluem:</li>
+						<ul>
+							<li>"Network Design Essentials" de Keith Barker</li>
+							<li>"Network Design with Cisco" de Todd Lammle</li>
+							<li>"Designing and Implementing Enterprise Networks" de Kevin Miller</li>
+						</ul>
+					</ul>
+					<ul>
+						<li>Cursos online: Existem muitos cursos online disponíveis sobre projeto de redes LAN e WAN. Alguns exemplos incluem:</li>
+						<ul>
+							<li>"Network Design" da Udemy</li>
+							<li>"Cisco CCNA: Network Design" da Pluralsight</li>
+							<li>"Designing Enterprise Networks" da CBT Nuggets</li>
+						</ul>
+					</ul>
+					<ul>
+						<li>Certificações: Existem várias certificações disponíveis que podem ajudá-lo a demonstrar suas habilidades em projeto de redes LAN e WAN. Algumas exemplos incluem:</li>
+						<ul>
+							<li>CCNA: Certified Cisco Network Associate</li>
+							<li>CCNP: Certified Cisco Network Professional</li>
+							<li>CCIE: Certified Cisco Internetwork Expert</li>
+						</ul>
+					</ul>
+
+
+								
+					<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Para que serve Projeto de LANs e WANs?</c></p>
+					
+					<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Onde usar Projeto de LANs e WANs?</c></p>
+					
+					<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Como implementar Projeto de LANs e WANs?</c></p>
+					
+					<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Ferramentas Projeto de LANs e WANs?</c></p>
+					
+					<!--INICIO DE APRENDA-->
+						<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+						1 - Endereço de internet
+						2 - Tutorial
+						3 - Video-->
+			
+					<p class="configurado3"> <i class="fa-solid fa-hand"> </i> Aprenda!</c></p>
+					<!--ONLINE-->
+					<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-globe"> </i></a> On-line</p>
+					
+					<!--SINAL DE MAIS-->
+					<p><i class="fa-solid fa-plus fa-2xs"> </i></p>
+					
+					<!--TUTORIAL-->
+					<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-book"> </i></a> Tutorial</p>
+						
+					<!--VIDEO--> <!--Terá o video na página e o link dele-->
+					<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-video"> </i></a> Video</p>
+					<div class="containertovideo"> 
+						<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+						src="EDITAR"> </iframe>
+					</div>	
+							
+					<!--OBSERVAÇÃO SE PRECISAR-->
+					<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>
+					
+					<!--ENCURTADOR DE LINK-->
+					<!--
+					https</b>://www.encurtador.com.br/url-encurtada.php
+					-->
+					<!--PERGUNTA PARA FAZER AO BARD
+					o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
+					-->
+					<!--FIM DE APRENDA-->
+				 </div>
+		
+
+				 <div id="VLAN" class="w3-container ia" style="display:none">
 					<h3>VLAN</h3>
-					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é uma VLAN?</c> <a href="EDITAR" target="_blank"></a></p>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é uma VLAN?</c> <a href="https://pt.wikipedia.org/wiki/Virtual_LAN" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
 						<p>Uma <c class="configurado">  VLAN (Virtual Local Area Network)</c>  - Refere-se a é uma <u>rede local virtual que divide um único switch de rede físico em várias redes lógicas</u>. As VLANs permitem que os administradores de rede segmentem seus ambientes de rede, isolando grupos de dispositivos e controlando o tráfego entre eles. </p>
@@ -823,7 +923,7 @@
 				</div>
 				<div id="IPV4" class="w3-container ia" style="display:none">
 					<h3>IPV4</h3>
-					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um IPV4?</c> <a href="EDITAR" target="_blank"></a></p>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um IPV4?</c> <a href="https://pt.wikipedia.org/wiki/IPv4" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
 						<p><c class="configurado">  IPV4</c>  - É um protocolo de endereçamento de Internet que usa endereços de 32 bits. </p>
@@ -912,7 +1012,7 @@
 				</div>
 				<div id="IPV6" class="w3-container ia" style="display:none">
 					<h3>IPV6</h3>
-					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um IPV6?</c> <a href="###" target="_blank"></a></p>
+					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um IPV6?</c> <a href="https://pt.wikipedia.org/wiki/IPv6" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
 						<p><c class="configurado">  IPV6</c>  - É um protocolo de endereçamento de Internet que usa endereços de 128 bits.</p>
@@ -1000,7 +1100,7 @@
 				</div>
 				<div id="CIDR" class="w3-container ia" style="display:none">
 					<h3>CIDR</h3>
-						<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um CIDR?</c> <a href="EDITAR" target="_blank"></a></p>
+						<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um CIDR?</c> <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
 						<p><c class="configurado">  CIDR (Classless Inter-Domain Routing) - Comitê Diretor de Incidentes de Resposta</c>  - É um método para a alocação de endereços IP e o roteamento de tráfego na Internet.</p>
@@ -1080,7 +1180,7 @@
 				</div>
 				<div id="EIR" class="w3-container ia" style="display:none">
 					<h3>Elementos de Interconexão de redes</h3>
-						<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Elementos de Interconexão de redes?</c> <a href="EDITAR" target="_blank"></a></p>
+						<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é um Elementos de Interconexão de redes?</c> <a href="https://pt.wikipedia.org/wiki/Hardware_de_rede" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 					<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
 						<p><c class="configurado">  Elementos de Interconexão de redes</c>  - Incluem roteadores, switches, hubs e gateways, etc.</p>
@@ -2147,9 +2247,9 @@
 						<button class="w3-bar-item w3-button" onclick="openIA('EDITAR')"> EDITAR <i class="fa-solid fa-arrow-right"> </i></button>
 					</div>
 					<div15>DIV INICIO PARA O JQUERY-->
-		<div id="CabeamentoEstruturado" class="w3-container ia" style="display:nonr"> 
+		<div id="CabeamentoEstruturado" class="w3-container ia" style="display:none"> 
 			<h3>Cabeamento Estruturado</h3>
-			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Cabeamento Estruturado?</c><a href="EDITAR" target="_blank"> </a></p>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Cabeamento Estruturado? </c><a href="https://pt.wikipedia.org/wiki/Cabeamento_estruturado" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
 				<p><c class="configurado"> Cabeamento Estruturado</c> - Sistema padronizado de cabos e conectores para redes de dados, voz e vídeo em edifícios comerciais.</p>
@@ -2251,6 +2351,127 @@
 				<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
 				src="https://youtube.com/embed/Qu_aKaQx9u0"> </iframe>
 			</div>	
+			<!--OBSERVAÇÃO SE PRECISAR
+			<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>-->
+			
+			<!--ENCURTADOR DE LINK-->
+			<!--
+			https</b>://www.encurtador.com.br/url-encurtada.php
+			-->
+			<!--PERGUNTA PARA FAZER AO BARD
+			o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
+			-->
+			<!--FIM DE APRENDA-->
+		</div>
+	
+		<div id="RedeSemFio" class="w3-container ia" style="display:none"> 
+			<h3>Rede Sem Fio</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Rede Sem Fio?</c><a href="https://pt.wikipedia.org/wiki/Rede_sem_fio" target="_blank"> <i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> Rede Sem Fio</c> - Refere-se a comunicação de dados que não utiliza cabos físicos para conectar dispositivos. </p>
+			</div>
+			<p>Redes sem fio são redes de computadores que <u>usam ondas de rádio ou outro tipo de radiação eletromagnética</u> para conectar dispositivos de rede. As redes sem fio são uma alternativa ao cabeamento estruturado e oferecem uma série de vantagens, incluindo:</p>
+				<ul class="w3-ul">
+					<li><b>Facilidade de instalação</b>: As redes sem fio geralmente são mais fáceis de instalar do que as redes cabeadas.</li>
+					<li><b>Flexibilidade</b>: As redes sem fio podem ser instaladas em qualquer lugar, sem a necessidade de instalar cabos.</li>
+					<li><b>Mobilidade</b>: Os dispositivos conectados a uma rede sem fio podem se mover livremente sem perder a conexão.</li>
+				</ul>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Para que serve Rede Sem Fio?</c></p>
+				<ul class="w3-ul">
+				  <li><b>Acesso à Internet</b>: As redes sem fio são uma maneira conveniente de acessar a Internet em casa, no trabalho ou em locais públicos.  </li>
+				  <li><b>Compartilhamento de arquivos</b>: As redes sem fio podem ser usadas para compartilhar arquivos entre dispositivos.  </li>
+				  <li><b>Impressão compartilhada</b>: As redes sem fio podem ser usadas para compartilhar uma impressora entre vários dispositivos.  </li>
+				  <li><b>Controle de dispositivos domésticos inteligentes</b>: As redes sem fio podem ser usadas para controlar dispositivos domésticos inteligentes, como termostatos, lâmpadas e fechaduras.  </li>
+				</ul>
+			
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Onde usar Rede Sem Fio?</c></p>
+				<ul class="w3-ul">
+				  <li><b>Casas</b>: As redes sem fio são uma ótima maneira de conectar dispositivos em casa, como laptops, smartphones e tablets.  </li>
+				  <li><b>Escritórios</b>: As redes sem fio são uma maneira conveniente de conectar funcionários a recursos de rede, como impressoras e servidores. </li>
+				  <li><b>Escolas</b>: As redes sem fio permitem que os alunos acessem a Internet e recursos educacionais de qualquer lugar da escola.  </li>  
+				  <li><b>Hospitais</b>: As redes sem fio podem ser usadas para conectar dispositivos médicos, como monitores e sistemas de registro eletrônico de saúde (EHR).  </li>
+				  <li><b>Locais públicos</b>: As redes sem fio são uma maneira conveniente de fornecer acesso à Internet aos visitantes de locais públicos, como bibliotecas, aeroportos e cafeterias.  </li>
+				</ul>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Como implementar Rede Sem Fio?</c></p>
+				<ol>
+					  <li><b>Planejamento</b>: O primeiro passo é planejar a rede sem fio, levando em consideração os requisitos da rede, como o número de dispositivos que serão conectados, o tipo de tráfego de rede que será gerado e o orçamento disponível.  </li>
+					  <li><b>Aquisição</b>: Depois de planejar a rede sem fio, é necessário adquirir os materiais necessários, como pontos de acesso, adaptadores sem fio e software de gerenciamento de rede.  </li>
+					  <li><b>Instalação</b>: Depois de adquirir os materiais, é necessário instalar a rede sem fio de acordo com o plano.  </li>
+					  <li><b>Configuração</b>: Depois que a rede sem fio estiver instalada, é necessário configurá-la para atender às necessidades da rede.  </li>
+				</ol>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Ferramentas Rede Sem Fio?</c></p>
+				<ul class="w3-ul">
+				  <li><b>Ferramenta de crimpagem</b>: É usada para crimpar conectores em cabos de rede.  </li>
+				  <li><b>Testador de cabos</b>: É usado para testar a integridade dos cabos de rede.  </li>
+				  <li><b>Antena</b>: É usada para transmitir e receber sinais sem fio.  </li>
+				  <li><b>Ponto de acesso</b>: É um dispositivo que fornece acesso à rede sem fio.  </li>
+				  <li><b>Adaptador sem fio</b>: É um dispositivo que permite que um computador ou dispositivo se conecte a uma rede sem fio.  </li>
+				</ul>
+				
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Lista de tecnologias sem fio</c>:</p>
+				<ol>
+				  <li><b>5G:</b> A quinta geração de tecnologia de rede celular. Oferece velocidades de dados mais rápidas, latência mais baixa e maior capacidade do que as gerações anteriores de tecnologia celular. O 5G usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>802.11ac:</b> Um padrão de Wi-Fi que oferece velocidades de dados mais rápidas do que o Wi-Fi tradicional. O 802.11ac usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>802.11ad:</b> Um padrão de Wi-Fi que oferece velocidades de dados ainda mais rápidas do que o 802.11ac. O 802.11ad usa ondas milimétricas para transmitir dados entre dispositivos.</li>
+				  <li><b>Bluetooth:</b> Uma tecnologia sem fio de curto alcance que é usada para conectar dispositivos próximos, como smartphones, tablets e computadores. O Bluetooth usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>LTE:</b> Uma tecnologia sem fio de banda larga que é usada para fornecer acesso à Internet de alta velocidade. O LTE usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>LTE-A:</b> Uma versão aprimorada da tecnologia LTE que oferece velocidades de dados ainda mais rápidas. O LTE-A usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>NFC:</b> Uma tecnologia sem fio de curto alcance que é usada para realizar pagamentos móveis, compartilhar arquivos e conectar dispositivos. O NFC usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>Wi-Fi:</b> A tecnologia sem fio mais comumente usada. É usado para conectar dispositivos a redes domésticas, empresariais e públicas. O Wi-Fi usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>WiMAX:</b> Uma tecnologia sem fio de banda larga que é usada para fornecer acesso à Internet de alta velocidade. O WiMAX usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				  <li><b>Zigbee:</b> Uma tecnologia sem fio de baixo consumo de energia que é usada para conectar dispositivos domésticos inteligentes, como termostatos, lâmpadas e fechaduras. O Zigbee usa ondas de rádio para transmitir dados entre dispositivos.</li>
+				</ol>
+			
+			 <p><i class="fa-solid fa-check"> </i><c class="configurado1"> Segurança nas redes sem fio</c>:</p>
+				 <ul class="w3-ul">
+				  <li><b>Autenticação</b>: É o processo de verificar a identidade de um dispositivo antes de permitir que ele se conecte a uma rede.  </li>
+				  <li><b>Criptografia</b>: É o processo de codificação de dados para que eles não possam ser lidos por pessoas não autorizadas.  </li>
+				  <li><b>Controle de acesso</b>: É o processo de restringir o acesso a uma rede para usuários autorizados.  </li>
+				  <li><b>Monitoramento</b>: É o processo de coleta de dados sobre o tráfego de rede para identificar possíveis ameaças.  </li>
+				</ul>
+			 <p><i class="fa-solid fa-check"> </i><c class="configurado1"> Protocoloas de Segurança nas redes sem fio</c>:</p>
+				<p>Os principais protocolos de segurança usados ​​hoje para redes sem fio são:</p>	
+					<ul class="w3-ul">
+						<li><b>WPA2</b>: O WPA2 é o protocolo de segurança sem fio mais seguro disponível. Ele usa uma chave de criptografia de 256 bits e um processo de autenticação complexo. O WPA2 é recomendado para uso em todas as redes sem fio, incluindo redes domésticas, empresariais e sensíveis.</li>
+						<li><b>WPA3</b>: O WPA3 é uma versão mais recente do WPA2 que oferece ainda mais segurança. Ele inclui recursos como proteção contra ataques de canal lateral, autenticação de chaves pré-compartilhadas (PSK) e autenticação de 192 bits. O WPA3 ainda não é tão amplamente implementado quanto o WPA2, mas é recomendado para uso em redes sem fio sensíveis.</li>
+						<li><b>WPA3-Personal</b>: O WPA3-Personal é uma versão simplificada do WPA3 que é mais fácil de configurar e usar. Ele ainda inclui os recursos de segurança mais importantes do WPA3, como proteção contra ataques de canal lateral e autenticação de chaves pré-compartilhadas. O WPA3-Personal é uma boa opção para redes domésticas e pequenas empresas.</li>
+					</ul>
+				<p>Outros protocolos de segurança sem fio que ainda são usados ​​em alguns casos incluem:</p>
+					<ul class="w3-ul">
+						<li><b>WPA</b>: O WPA é um protocolo de segurança mais antigo que é menos seguro do que o WPA2 ou o WPA3. Ele ainda pode ser usado em redes sem fio que não suportam WPA2 ou WPA3.</li>
+						<li><b>WEP</b>: O WEP é um protocolo de segurança muito antigo e inseguro que não deve ser usado em nenhuma rede. </li>
+					</ul>
+				<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Padrão IEEE 802.11</c>:</p>
+				<p>O padrão IEEE 802.11 é um conjunto de especificações que definem como os dispositivos sem fio se comunicam entre si. É o padrão mais amplamente utilizado para redes sem fio, incluindo Wi-Fi.</p>
+				<p>O padrão IEEE 802.11 foi inicialmente publicado em 1997 e desde então foi atualizado várias vezes para adicionar novas funcionalidades e melhorias de desempenho. As versões mais recentes do padrão incluem:</p>
+					<ul class="w3-ul">
+						<li><a href="https://fhs.pro.br/?page_id=979" target="_blank"><b>802.11ad</b></a>: Lançado em 2012, o 802.11ad oferece velocidades de dados de até 7 Gbps usando ondas milimétricas.</li>
+						<li><a href="http://www.entelco.com.br/blog/ieee-802-11-ad-o-padrao-wi-fi-revoluciuonario/" target="_blank"><b>802.11ac</b></a>: Lançado em 2014, o 802.11ac oferece velocidades de dados de até 6,9 Gbps.</li>
+						<li><a href="http://labcisco.blogspot.com/2017/10/padrao-ieee-80211ax-de-wifi-de-proxima.html" target="_blank"><b>802.11ax</b></a>: Lançado em 2019, o 802.11ax oferece velocidades de dados de até 9,6 Gbps e eficiência de rede aprimorada.</li>
+					</ul>
+			<!--INICIO DE APRENDA-->
+				<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+				1 - Endereço de internet
+				2 - Tutorial
+				3 - Video-->
+	
+			<p class="configurado3"> <i class="fa-solid fa-hand"> </i> Aprenda!</c></p>
+			<!--ONLINE-->
+			<p><a href="https://embarcados.com.br/tecnologias-de-comunicacao-sem-fio/" target="_blank"> <i class="fa-solid fa-globe"> </i></a> On-line</p>
+			
+			<!--SINAL DE MAIS-->
+			<p><i class="fa-solid fa-plus fa-2xs"> </i></p>
+			
+			<!--TUTORIAL-->
+			<p><a href="https://encurtador.com.br/eouxM" target="_blank"> <i class="fa-solid fa-book"> </i></a> Tutorial</p>
+				
+			<!--VIDEO--> <!--Terá o video na página e o link dele-->
+			<p><a href="https://youtu.be/yDp_ms_Cu2M" target="_blank"> <i class="fa-solid fa-video"> </i></a> Video</p>
+			<div class="containertovideo"> 
+				<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+				src="https://www.youtube.com/embed/yDp_ms_Cu2M?si=S0rV6gxC5FDwmjko"> </iframe>
+			</div>	
 					
 			<!--OBSERVAÇÃO SE PRECISAR
 			<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>-->
@@ -2263,19 +2484,299 @@
 			o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
 			-->
 			<!--FIM DE APRENDA-->
-					</div>
-				</div15><!--DIV FIM PARA O JQUERY-->
-			
+		 </div>
+		 <div id="TCS" class="w3-container ia" style="display:none"> 
+			<h3>Técnicas de codificação de sinal</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Técnicas de codificação de sinal? </c><a href="https://pt.wikipedia.org/wiki/Codifica%C3%A7%C3%A3o" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> Técnicas de codificação de sinal</c> -  São utilizadas para modificar um sinal, tornando-o mais apropriado para uma aplicação específica. </p>
 			</div>
 			
-					</div>
+						
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Para que serve Técnicas de codificação de sinal?</c></p>
+			<p>As técnicas de codificação de sinal servem para dois propósitos principais:</p>
+				<ul class="w3-ul">
+					<li><b>Correção de erros</b>: As técnicas de codificação de canal são usadas para corrigir erros que podem ocorrer durante a transmissão de dados. Os erros podem ocorrer devido a uma variedade de fatores, incluindo interferência, ruído e atenuação.</li>
+					<li><b>Redução de dados</b>: As técnicas de codificação de fonte são usadas para reduzir a quantidade de dados que precisam ser transmitidos. Isso pode ser feito sem perder nenhuma informação importante.</li>
+				</ul>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Onde usar Técnicas de codificação de sinal?</c></p>
+			<p>As técnicas de codificação de sinal são usadas em uma variedade de aplicações, incluindo:</p>
+				<ul class="w3-ul">
+				  <li><b>Comunicação sem fio</b>: As técnicas de codificação de sinal são essenciais para a comunicação sem fio. Elas são usadas para garantir que os dados transmitidos sem fio sejam recebidos com precisão.</li>
+				  <li><b>Comunicação digital</b>: As técnicas de codificação de sinal são usadas em uma variedade de aplicações de comunicação digital, incluindo telefonia, televisão e redes de computadores.</li>
+				  <li><b>Armazenamento de dados</b>: As técnicas de codificação de sinal são usadas para armazenar dados de modo eficiente. Elas são usadas para reduzir o tamanho dos dados que precisam ser armazenados.</li>
+				  <li><b>Processamento de sinais</b>: As técnicas de codificação de sinal são usadas para processar sinais de modo eficiente. Elas são usadas para melhorar a qualidade dos sinais e reduzir a quantidade de processamento necessária.</li>
+				</ul>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Como implementar Técnicas de codificação de sinal?</c></p>
+				<p>Existem uma variedade de ferramentas disponíveis para implementar técnicas de codificação de sinal. Algumas dessas ferramentas são específicas para um determinado tipo de aplicação, enquanto outras são mais gerais.</p>
+			<p>Alguns exemplos de ferramentas para implementar técnicas de codificação de sinal incluem:</p>
+			<ul class="w3-ul">
+			  <li><b>Bibliotecas de software</b>: As bibliotecas de software fornecem funções e classes que podem ser usadas para implementar técnicas de codificação de sinal.</li>
+			  <li><b>Geradores de código</b>: Os geradores de código podem ser usados para gerar código C, C++, Java ou Python que implementa técnicas de codificação de sinal.</li>
+			  <li><b>Ferramentas de simulação</b>: As ferramentas de simulação podem ser usadas para testar e avaliar algoritmos de codificação de sinal.</li>
+			</ul>
+			<p>Bibliotecas de software são uma opção popular para implementar técnicas de codificação de sinal. Elas fornecem uma base sólida para o desenvolvimento de aplicações de codificação de sinal. Algumas bibliotecas de software populares para codificação de sinal incluem:</p>
+
+			<ul class="w3-ul">
+			  <li><b>OpenCV</b>: OpenCV é uma biblioteca de software de código aberto para processamento de imagens e visão computacional. Ela inclui suporte para uma variedade de técnicas de codificação de sinal, incluindo codificação de canal e codificação de fonte.</li>
+			  <li><b>FFmpeg</b>: FFmpeg é uma biblioteca de software de código aberto para processamento de áudio e vídeo. Ela inclui suporte para uma variedade de técnicas de codificação de sinal, incluindo codificação de áudio e vídeo.</li>
+			  <li><b>MATLAB</b>: MATLAB é uma ferramenta de computação matemática que inclui suporte para uma variedade de técnicas de codificação de sinal.</li>
+			</ul>
+			<p>Geradores de código podem ser usados para gerar código C, C++, Java ou Python que implementa técnicas de codificação de sinal. Eles podem ser úteis para acelerar o desenvolvimento de aplicações de codificação de sinal. Alguns geradores de código populares para codificação de sinal incluem:</p>
+				<ul class="w3-ul">
+				  <li><b>Octave</b>: Octave é uma ferramenta de computação matemática gratuita e de código aberto que inclui um gerador de código para codificação de sinal.</li>
+				  <li><b>MATLAB Compiler</b>: O MATLAB Compiler é uma ferramenta que permite compilar código MATLAB para C, C++, Java ou Python.</li>
+				  <li><b>C++Builder</b>: O C++Builder é um ambiente de desenvolvimento integrado (IDE) para C++ que inclui um gerador de código para codificação de sinal.</li>
+				</ul>
+			<p>Ferramentas de simulação podem ser usadas para testar e avaliar algoritmos de codificação de sinal. Elas podem ser úteis para determinar a eficiência e a eficácia de algoritmos de codificação de sinal em diferentes condições. Algumas ferramentas de simulação populares para codificação de sinal incluem:
+				<ul class="w3-ul">
+				  <li><b>Simulink</b>: Simulink é uma ferramenta de simulação de sistemas dinâmicos que inclui suporte para uma variedade de técnicas de codificação de sinal.</li>
+				  <li><b>MATLAB</b>: MATLAB inclui uma variedade de ferramentas de simulação para codificação de sinal.</li>
+				  <li><b>Octave</b>: Octave inclui uma variedade de ferramentas de simulação para codificação de sinal.</li>
+				</ul>
+			<p>A escolha da ferramenta certa para implementar técnicas de codificação de sinal depende das necessidades específicas do projeto. Alguns fatores a serem considerados incluem o tipo de aplicação, o nível de complexidade da implementação e os recursos disponíveis.</p>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Ferramentas Técnicas de codificação de sinal?</c></p>
+			<p>As técnicas de codificação de sinal podem ser divididas em duas categorias principais: codificação de canal e codificação de fonte.</p>
+
+			<p>Codificação de canal</p>
+
+			<p>A codificação de canal é usada para corrigir erros que podem ocorrer durante a transmissão de dados.</p>
+				<ul class="w3-ul">
+				  <li><b>Códigos de correção de erros (ECC)</b>: Os ECCs adicionam bits redundantes aos dados transmitidos. Esses bits redundantes podem ser usados para corrigir erros que ocorrem durante a transmissão.</li>
+				  <li><b>Modulação</b>: A modulação é o processo de alterar as características de um sinal de modo que ele represente dados. A modulação pode ser usada para melhorar a resistência a erros de um sinal.</li>
+				</ul>
+			<p>Codificação de fonte</p>
+			<p>A codificação de fonte é usada para reduzir a quantidade de dados que precisam ser transmitidos.</p>
+				<ul class="w3-ul">
+				  <li><b>Compressão</b>: A compressão é o processo de reduzir o tamanho dos dados sem perder nenhuma informação.</li>
+				  <li><b>Quantização</b>: A quantização é o processo de aproximar valores reais por valores discretos.</li>
+				</ul>
+			<p>Aqui estão alguns exemplos específicos de técnicas de codificação de canal e codificação de fonte:</p>
+			<p>Codificação de canal</p>
+				<ul class="w3-ul">
+					<li>ECCs:** Hamming, Reed-Solomon, BCH</li>
+					<li>Modulação:** AM, FM, PM, QAM</li>
+				</ul>
+			<p>Codificação de fonte</p>
+				<ul class="w3-ul">
+					<li>Compressão:** LZW, Huffman, DEFLATE</li>
+					<li>Quantização:** PCM, DPCM, ADPCM</li>
+				</ul>
+			<p>A escolha da técnica de codificação de sinal certa depende das necessidades específicas da aplicação. Alguns fatores a serem considerados incluem o tipo de dados que estão sendo transmitidos, o ambiente de transmissão e os requisitos de desempenho.</p>
 			
-			</div12>
+			
+			<!--INICIO DE APRENDA-->
+				<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+				1 - Endereço de internet
+				2 - Tutorial
+				3 - Video-->
+	
+			<p class="configurado3"> <i class="fa-solid fa-hand"> </i> Aprenda!</c></p>
+			<!--ONLINE-->
+			<p><a href="https://encurtador.com.br/dpAKP" target="_blank"> <i class="fa-solid fa-globe"> </i></a> On-line</p>
+			
+			<!--SINAL DE MAIS-->
+			<p><i class="fa-solid fa-plus fa-2xs"> </i></p>
+			
+			<!--TUTORIAL-->
+			<p><a href="https://encurtador.com.br/hntwL" target="_blank"> <i class="fa-solid fa-book"> </i></a> Tutorial</p>
+				
+			<!--VIDEO--> <!--Terá o video na página e o link dele-->
+			<p><a href="https://www.youtube.com/watch?v=Y-zX2rjhz7U" target="_blank"> <i class="fa-solid fa-video"> </i></a> Video</p>
+			<div class="containertovideo"> 
+				<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+				src="https://www.youtube.com/embed/Y-zX2rjhz7U?si=507u_72o2LXzcJpK"> </iframe>
+			</div>	
+					
+			<!--OBSERVAÇÃO SE PRECISAR-->
+			<p class="obs"> Clique <a href="https://youtu.be/To8HfPUNe84" target="_blank"> aqui</a> para ver a playlist inteira</p>
+			
+			<!--ENCURTADOR DE LINK-->
+			<!--
+			https</b>://www.encurtador.com.br/url-encurtada.php
+			-->
+			<!--PERGUNTA PARA FAZER AO BARD
+			o que é, Técnicas de codificação de sinal para que serve, onde usar, como implementar e ferramentas em geral
+			-->
+			<!--FIM DE APRENDA-->
+		</div>
+		<div id="FibrasOpticas" class="w3-container ia" style="display:none"> 
+			<h3>Fibra óptica</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Fibra óptica?</c><a href="https://pt.wikipedia.org/wiki/Fibra_%C3%B3ptica" target="_blank"></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> Fibra óptica</c> - São fios finos feitos de vidro ou plástico que transmitem luz para transmitir dados de alta velocidade. </p>
+			</div>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Quais são os tipos de Fibra óptica?</c></p>
+
+			<p class="configurado2">Tipos de fibras ópticas</c></p>
+
+				<p><b>Existem <u>dois tipos</u> principais de fibras ópticas</b>: monomodo e multimodo. A principal diferença entre os dois tipos está no diâmetro do núcleo da fibra.</p>
+				<p class="configurado3">Fibra monomodo (MM)</c></p>
+				<p>  A fibra monomodo tem um núcleo de diâmetro muito pequeno, geralmente entre 8 e 10 micrômetros. Isso significa que a luz só pode se propagar em um único modo, ou seja, em uma única trajetória. Essa característica permite que a fibra monomodo transmita sinais de luz em distâncias muito longas, sem perda de qualidade.</p>
+				<p>  A fibra monomodo é usada principalmente em aplicações de longa distância, como redes de telecomunicações.
+				</p>
+				<p class="configurado3">Fibra multimodo (SM)</c></p>
+				<p>  A fibra multimodo tem um núcleo de diâmetro maior, geralmente entre 50 e 62,5 micrômetros. Isso significa que a luz pode se propagar em vários modos, ou seja, em várias trajetórias. Essa característica permite que a fibra multimodo transmita sinais de luz em velocidades mais altas, mas em distâncias mais curtas.</p>
+				<p>  A fibra multimodo é usada principalmente em aplicações de curta distância, como redes de computadores internas.</p>
+				<p class="configurado3">Outros tipos de fibras ópticas</c></p>
+				<p>  Além dos dois tipos principais, existem outros tipos de fibras ópticas que são usados em aplicações específicas. Por exemplo:</p>
+			
+				<ul>
+				  <li><b>Fibra de plástico</b>: é usada em aplicações onde o custo é uma preocupação, como em redes domésticas.  </li>
+				  <li><b>Fibra de índice variável</b>: é usada em aplicações onde é necessário transmitir dados em altas velocidades, como em redes de telecomunicações de alta velocidade. </li>
+				</ul>
+				
+						
+				
+				<!--FOTOS - APENAS-->
+				<div class="w3-col m12 w3-center">
+					<img src="https://i.postimg.cc/CxNv2C5N/DMEUSSITESEPROJETOSSitesportifolio-Do-Maia-HTMLFibras-pticas-html-Notepad.jpg" alt="TipoFibra" style="width:100%">
+				</div>
+				
+				
+
+			<p> A escolha do tipo de fibra óptica certa para uma aplicação específica depende de vários fatores, incluindo a distância de transmissão, a largura de banda necessária e o custo.</p>
+
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Para que serve Fibra óptica?</c></p>
+			<p>As fibras ópticas são usadas para transmitir dados em uma variedade de aplicações, incluindo:</p>
+				<ul>
+				  <li><b>Comunicação</b>: As fibras ópticas são usadas para transmitir dados em redes de computadores, telecomunicações e televisão.</li>
+				  <li><b>Medição</b>: As fibras ópticas são usadas para medir distâncias, temperatura e outras propriedades físicas.</li>
+				  <li><b>Medicina</b>: As fibras ópticas são usadas em equipamentos médicos, como endoscópios e câmeras cirúrgicas.</li>
+				</ul>
+			<p>As fibras ópticas são um tipo de cabo que usa luz para transmitir dados. Elas são feitas de um núcleo de vidro ou plástico que é rodeado por uma camada de material refletivo. A luz é guiada pelo núcleo da fibra por meio da reflexão interna total.</p>
+			<p>As fibras ópticas têm uma série de vantagens sobre outros tipos de cabos, incluindo:</p>
+				<ul>
+					<li><b>lta velocidade</b>: As fibras ópticas podem transmitir dados a velocidades muito altas, chegando a bilhões de bits por segundo.</li>
+					<li><b>Distâncias longas</b>: As fibras ópticas podem transmitir dados por distâncias muito longas, sem perda significativa de sinal.</li>
+					<li><b>Resistência à interferência</b>: As fibras ópticas são muito resistentes à interferência eletromagnética.</li>
+				</ul>
+			<p>Essas vantagens fazem das fibras ópticas a escolha preferida para uma variedade de aplicações que exigem a transmissão de dados de alta velocidade e confiabilidade.</p>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Onde usar Fibra óptica?</c></p>
+			<p>As fibras ópticas podem ser usadas em uma variedade de ambientes, incluindo:</p>
+				<ul>
+				  <li><b>Subterrâneo</b>: As fibras ópticas são frequentemente usadas em ambientes subterrâneos, como cabos de telecomunicações.</li>
+				  <li><b>Aéreo</b>: As fibras ópticas também podem ser usadas em ambientes aéreos, como linhas de transmissão de energia.</li>
+				  <li><b>Aquático</b>: As fibras ópticas também podem ser usadas em ambientes aquáticos, como cabos submarinos.</li>
+				</ul>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Como implementar Fibra óptica?</c></p>
+			<p>A implementação de fibras ópticas pode ser feita de várias maneiras, dependendo do tipo de aplicação. Em geral, as fibras ópticas são instaladas em cabos de fibra óptica. Os cabos de fibra óptica são compostos por um ou mais filamentos de fibra óptica, bem como um revestimento protetor.</p>
+			<p>As fibras ópticas podem ser instaladas por uma variedade de métodos, incluindo:</p>
+				<ul>
+				  <li><b>Enterramento</b>: As fibras ópticas podem ser enterradas no solo usando uma variedade de métodos, como escavação ou perfuração.</li>
+				  <li><b>Suspensão aérea</b>: As fibras ópticas podem ser suspensas no ar usando postes ou torres.</li>
+				  <li><b>Submersão</b>: As fibras ópticas podem ser submersas na água usando tubos ou cabos submarinos.</li>
+				</ul>
+			<p>O método de implementação de fibras ópticas escolhido depende de uma variedade de fatores, incluindo:</p>
+				<ul>
+					<li><b>Tipo de aplicação</b>: O tipo de aplicação determina as condições ambientais nas quais as fibras ópticas serão instaladas.</li>
+					<li><b>Distância</b>: A distância entre os pontos de conexão determina o tipo de cabo de fibra óptica necessário.</li>
+					<li><b>Custo</b>: O custo da implementação de fibras ópticas varia de acordo com o método escolhido.</li>
+			</ul>
+			<p>A implementação de fibras ópticas é uma tarefa complexa que deve ser realizada por profissionais qualificados.</p>		
+
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Como é feita as Fibra óptica?</c></p>
+			
+			<p>"O material mais comum para a construção das fibras ópticas é a sílica, nome popular do óxido de silício (SiO2). No entanto, de acordo com a aplicação desejada, outros materiais podem ser empregados em sua construção, como vidros derivados do flúor e alguns elementos da família dos calcogênios, como o enxofre."</p>
+
+			
+			<!--INICIO DE APRENDA-->
+				<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+				1 - Endereço de internet
+				2 - Tutorial
+				3 - Video-->
+	
+			<p class="configurado3"> <i class="fa-solid fa-hand"> </i> Aprenda!</c></p>
+			<!--ONLINE-->
+			<p><a href="https://brasilescola.uol.com.br/fisica/fibra-optica.htm" target="_blank"> <i class="fa-solid fa-globe"> </i></a> On-line</p>
+			
+			<!--SINAL DE MAIS-->
+			<p><i class="fa-solid fa-plus fa-2xs"> </i></p>
+			
+			<!--TUTORIAL-->
+			<p><a href="https://portalidea.com.br/cursos/6cea65c9ad40ffcd522f99841d16348f.pdf" target="_blank"> <i class="fa-solid fa-book"> </i></a> Tutorial</p>
+				
+			<!--VIDEO--> <!--Terá o video na página e o link dele-->
+			<p><a href="https://www.youtube.com/watch?v=2zp44bh3N90" target="_blank"> <i class="fa-solid fa-video"> </i></a> Video</p>
+			<div class="containertovideo"> 
+				<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+				src="https://www.youtube.com/embed/2zp44bh3N90?si=boKh_3pgrkNEFNoI"> </iframe>
+			</div>	
+					
+			<!--OBSERVAÇÃO SE PRECISAR
+			<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>-->
+			
+			<!--ENCURTADOR DE LINK-->
+			<!--
+			https</b>://www.encurtador.com.br/url-encurtada.php
+			-->
+			<!--PERGUNTA PARA FAZER AO BARD
+			o que é, Fibra óptica para que serve, onde usar, como implementar e ferramentas em geral
+			-->
+			<!--FIM DE APRENDA-->
+		</div>
+		<div id="ProjetoRedes" class="w3-container ia" style="display:yes"> 
+			<h3>Projeto de LANs e WANs</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Projeto de LANs e WANs?</c><a href="EDITAR" target="_blank"> </a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> Projeto de LANs e WANs</c> - Refere-se ao </p>
+			</div>
+			
+			<p>Quando se fala de "Projeto de LANs e WANs (especificação de infraestrutura, cabeamentos, ativos, aspectos de gerenciamento, intranet, extranets e internet)", é necessário estudar os seguintes tópicos:</p>
+			
+			
+			
+						
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Para que serve Projeto de LANs e WANs?</c></p>
+			
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Onde usar Projeto de LANs e WANs?</c></p>
+			
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Como implementar Projeto de LANs e WANs?</c></p>
+			
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  Ferramentas Projeto de LANs e WANs?</c></p>
+			
+			<!--INICIO DE APRENDA-->
+				<!--Inicio mão  Aprenda! Esta será a estrutura pra MÃO NA MASSA
+				1 - Endereço de internet
+				2 - Tutorial
+				3 - Video-->
+	
+			<p class="configurado3"> <i class="fa-solid fa-hand"> </i> Aprenda!</c></p>
+			<!--ONLINE-->
+			<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-globe"> </i></a> On-line</p>
+			
+			<!--SINAL DE MAIS-->
+			<p><i class="fa-solid fa-plus fa-2xs"> </i></p>
+			
+			<!--TUTORIAL-->
+			<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-book"> </i></a> Tutorial</p>
+				
+			<!--VIDEO--> <!--Terá o video na página e o link dele-->
+			<p><a href="EDITAR" target="_blank"> <i class="fa-solid fa-video"> </i></a> Video</p>
+			<div class="containertovideo"> 
+				<iframe class="responsive-iframe" style="border:none;" modestbranding="1" controlslist="controls"
+				src="EDITAR"> </iframe>
+			</div>	
+					
+			<!--OBSERVAÇÃO SE PRECISAR-->
+			<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>
+			
+			<!--ENCURTADOR DE LINK-->
+			<!--
+			https</b>://www.encurtador.com.br/url-encurtada.php
+			-->
 			<!--PERGUNTA PARA FAZER AO BARD
 			o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
 			-->
-		</div><br/>
+			<!--FIM DE APRENDA-->
+		</div>
 
+
+	</div12>
+</div><br/>
 				
 
 
