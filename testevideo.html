@@ -111,7 +111,7 @@
 	<div class="w3-bar w3-green">
 		<button class="w3-bar-item w3-button" onclick="openIA('Redes')">Redes <i class="fa-solid fa-arrow-right"></i></button>
 		<button class="w3-bar-item w3-button" onclick="openIA('ProjetoRedes')">Projeto de Redes</button>
-		<button class="w3-bar-item w3-button" onclick="openIA('VLAN')">VLAN </button>
+		<button class="w3-bar-item w3-button" onclick="openIA('VirtualLocalAreaNetwork')">VLAN </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('IPV4')">IPV4 </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('IPV6')">IPV6 </button>
 		<button class="w3-bar-item w3-button" onclick="openIA('CIDR')">CIDR </button>
@@ -121,8 +121,8 @@
 		<button class="w3-bar-item w3-button" onclick="openIA('TCS')">Técnicas de codificação de sinal</button>
 		<button class="w3-bar-item w3-button" onclick="openIA('FibrasOpticas')">Fibras ópticas</button>
 	</div>
-<div12>
-	<div id="Redes" class="w3-container ia" style="display:none">
+ <div12>
+	<div id="Redes" class="w3-container ia" style="display:yes">
 		<h3>Rede de computadores ou redes de dados</h3>
 		<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 		<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border">
@@ -748,9 +748,9 @@
 					</div>
 					</div>
 
-					<div id="ProjetoRedes" class="w3-container ia" style="display:yes"> 
+					<div id="ProjetoRedes" class="w3-container ia" style="display:none"> 
 						<h3>Projeto de Redes - LANs e WANs</h3>
-						<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Projeto de Redes - LANs e WANs? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+						<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Projeto de Redes - LANs e WANs? </c><a href="https://memoria.rnp.br/_arquivo/documentos/pal0109.pdf" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 						<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
 						<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
 							<p><c class="configurado"> Projeto de Redes - LANs e WANs</c> - Refere-se ao planejamento e implementação de redes locais e redes de longa distância para conectar dispositivos e facilitar a comunicação e o compartilhamento de recursos.</p>
@@ -804,7 +804,7 @@
 						<p>Você pode usar ferramentas como software de simulação de redes como:
 							<ul class="w3-ul">
 								<li><b>Software de simulação de redes: </b>ex: <a href="https://learningnetwork.cisco.com/s/packet-tracer-alternative-lab-solutions" target="_blank">(Cisco Packet Tracer</a>, <a href="https://www.gns3.com/" target="_blank">GNS3</a>)</li>
-								<li><b>Ferramentas de monitoramento de rede: </b>ex:<a href="https://www.wireshark.org/download.html" target="_blank">(Wireshark</a>, <a href="https://www.paessler.com/prtg/prtg-network-monitor" target="_blank" >PRTG Network Monitor</a>)</b></li>
+								<li><b>Ferramentas de monitoramento de rede: </b>ex:<a href="https://www.wireshark.org/download.html" target="_blank">(Wireshark</a>, <a href="https://www.paessler.com/prtg/prtg-network-monitor" target="_blank">PRTG Network Monitor</a>)</li>
 							    <li><b>Ferramentas de desenho de diagramas de rede:</b> ex: <a href="https://www.microsoft.com/pt-br/microsoft-365/visio/flowchart-software" target="_blank">(Microsoft Visio</a>, <a href="https://encurtador.com.br/fvz34" target="_blank">Lucidchart</a>)</li>
 							</ul>
 
@@ -843,9 +843,9 @@
 						o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
 						-->
 						<!--FIM DE APRENDA-->
-	
+					
 							<!--ACORDION até o dia 12/12/2023 USE NOME DO ASSUNTO EM EDITAR1-->
-							<div class="w3-container">
+							
 								<button onclick="myFunction('AspectosDeGerenciamento')" class="w3-button w3-block w3-left-align w3-green">Aspectos de gerenciamento - <a href="https://pt.wikipedia.org/wiki/Gerenciamento_de_rede" target="_blank"><i class="fa-solid fa-globe"></i></a></button>
 									<div id="AspectosDeGerenciamento" class="w3-hide w3-container">
 										<p>O gerenciamento de projetos de rede envolve o <u>planejamento, implementação e manutenção</u> de redes de computadores para garantir eficiência e segurança. </p>
@@ -902,6 +902,7 @@
 												</div>
 											</div>
 									</div>
+							
 								<!--INFORMAÇÕES PARA PROTOCOLOS (ProtocolosdeRede)
 								Fonte:https://blog.certcube.com/top-40-protocols-a-comprehensive-guide/
 								      https://www.velocenetwork.com/tech/list-of-network-protocols/
@@ -2248,8 +2249,8 @@
 											src="https://www.youtube.com/embed/x6X2JiyM0PQ?si=kklUJdmWQ61x00my"> </iframe>
 										</div>	
 												
-										<!--OBSERVAÇÃO SE PRECISAR-->
-										<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>
+										<!--OBSERVAÇÃO SE PRECISAR
+										<p class="obs"> Clique <a href="EDITAR" target="_blank"> aqui</a> para ver a playlist inteira</p>-->
 										
 										<!--ENCURTADOR DE LINK-->
 										<!--
@@ -2392,7 +2393,7 @@
 										-->
 										<!--FIM DE APRENDA-->
 									</div>
-										<div id="PontoaPonto" class="city" style="display:none">
+									<div id="PontoaPonto" class="city" style="display:none">
 											<h3>Ponto a Ponto</h3>
 											<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é uma topologia do tipo Ponto a Ponto? </c><a href="https://pt.wikipedia.org/wiki/Peer-to-peer" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 											<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
@@ -2459,73 +2460,71 @@
 											o que é, EDITAR para que serve, onde usar, como implementar e ferramentas em geral
 											-->
 											<!--FIM DE APRENDA-->
-							    </div>
-								<p>Confira uma tabela para melhor entendimento</p>
-								<table class="w3-table-all">
-									<thead>
-									  <tr>
-										<th colspan="2">Topologia</th>
-										<th>Características</th>
-										<th>Exemplos de aplicações</th>
-									  </tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>PT</td>
-											<td>En</td>
-											<td colspan="2"></td>
-										  </tr>
-									  <tr>
-										<td>Anel</td>
-										<td>Ring</td>
-										<td>Os nós da rede são conectados em um círculo.</td>
-										<td>Redes de comunicação, redes de segurança, redes de controle de tráfego.</td>
-									  </tr>
-									  <tr>
-										<td>Árvore</td>
-										<td>Tree</td>
-										<td>Os nós da rede são organizados em uma estrutura hierárquica.</td>
-										<td>Redes de distribuição de energia, redes de telecomunicações, redes de transporte.</td>
-									  </tr>
-									  <tr>
-										<td>Barramento</td>
-										<td>Bus</td>
-										<td>Todos os nós da rede estão conectados a um canal de comunicação compartilhado.</td>
-										<td>Redes locais (LAN) de pequeno porte, redes de automação industrial, redes de controle.</td>
-									  </tr>
-									  <tr>
-										<td>Estrela</td>
-										<td>Star</td>
-										<td>Cada nó da rede está conectado a um hub central.</td>
-										<td>Redes domésticas e de escritório, redes de armazenamento de dados, redes de vigilância.</td>
-									  </tr>
-									  <tr>
-										<td>Malha</td>
-										<td>Mesh</td>
-										<td>Todos os nós da rede estão conectados uns aos outros.</td>
-										<td>Redes locais (LAN) e de longa distância (WAN), redes de voz e dados, redes de alta disponibilidade.</td>
-									  </tr>
-									  <tr>
-										<td>Ponto a Ponto</td>
-										<td>P2P</td>
-										<td>Conecta dois dispositivos diretamente, permitindo comunicação direta entre eles sem a necessidade de um servidor central.</td>
-										<td>Geralmente usado em residência, usando um cabo de rede tipo CROSSOVER</td>
-									  </tr>
-									  <tr>
-										<td>Híbrida</td>
-										<td>Mista</td>
-										<td>Combina diferentes tipos de topologias.</td>
-										<td>Um empresa pode configurar várias topologia ao mesmo tempo</td>
-									  </tr>
-									</tbody>
-								  </table>
-
-				             </div>
+									</div>
+									<p>Confira uma tabela para melhor entendimento</p>
+										<table class="w3-table-all">
+											<thead>
+											  <tr>
+												<th colspan="2">Topologia</th>
+												<th>Características</th>
+												<th>Exemplos de aplicações</th>
+											  </tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>PT</td>
+													<td>En</td>
+													<td colspan="2"></td>
+												  </tr>
+											  <tr>
+												<td>Anel</td>
+												<td>Ring</td>
+												<td>Os nós da rede são conectados em um círculo.</td>
+												<td>Redes de comunicação, redes de segurança, redes de controle de tráfego.</td>
+											  </tr>
+											  <tr>
+												<td>Árvore</td>
+												<td>Tree</td>
+												<td>Os nós da rede são organizados em uma estrutura hierárquica.</td>
+												<td>Redes de distribuição de energia, redes de telecomunicações, redes de transporte.</td>
+											  </tr>
+											  <tr>
+												<td>Barramento</td>
+												<td>Bus</td>
+												<td>Todos os nós da rede estão conectados a um canal de comunicação compartilhado.</td>
+												<td>Redes locais (LAN) de pequeno porte, redes de automação industrial, redes de controle.</td>
+											  </tr>
+											  <tr>
+												<td>Estrela</td>
+												<td>Star</td>
+												<td>Cada nó da rede está conectado a um hub central.</td>
+												<td>Redes domésticas e de escritório, redes de armazenamento de dados, redes de vigilância.</td>
+											  </tr>
+											  <tr>
+												<td>Malha</td>
+												<td>Mesh</td>
+												<td>Todos os nós da rede estão conectados uns aos outros.</td>
+												<td>Redes locais (LAN) e de longa distância (WAN), redes de voz e dados, redes de alta disponibilidade.</td>
+											  </tr>
+											  <tr>
+												<td>Ponto a Ponto</td>
+												<td>P2P</td>
+												<td>Conecta dois dispositivos diretamente, permitindo comunicação direta entre eles sem a necessidade de um servidor central.</td>
+												<td>Geralmente usado em residência, usando um cabo de rede tipo CROSSOVER</td>
+											  </tr>
+											  <tr>
+												<td>Híbrida</td>
+												<td>Mista</td>
+												<td>Combina diferentes tipos de topologias.</td>
+												<td>Um empresa pode configurar várias topologia ao mesmo tempo</td>
+											  </tr>
+											</tbody>
+										  </table>
+				                </div>
 					</div>
-				 </div>
-		
+						
 
-				 <div id="VLAN" class="w3-container ia" style="display:none">
+				<div id="VirtualLocalAreaNetwork" class="w3-container ia" style="display:none">
 					<h3>VLAN</h3>
 					<p><i class="fa-solid fa-check"></i><c class="configurado1"> O que é uma VLAN?</c> <a href="https://pt.wikipedia.org/wiki/Virtual_LAN" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
 					<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
@@ -2572,7 +2571,7 @@
 			
 					<p class="configurado3"><i class="fa-solid fa-hand"></i> Aprenda!</c> </p>
 					<!--ONLINE-->
-					<p><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
+					<p><a href="https://pt.wikipedia.org/wiki/Virtual_LAN" target="_blank"><i class="fa-solid fa-globe"></i></a> On-line</p>
 					
 					<!--SIMULADORES ON-LINE-->
 					<i class="fa-solid fa-gear"></i> Simulador on-line
