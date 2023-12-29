@@ -179,3 +179,8 @@ div p{
     font-size: 10px;
   }
 }
+caption{
+  font-size: 15px;
+  color: #43bd0b;
+  font-style: italic;
+}
