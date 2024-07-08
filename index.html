@@ -16596,8 +16596,40 @@ Resoluções: CNJ nº 335/2020, CNJ nº 370/2021, CNJ nº 396/2021 e CNJ nº 522
 								</div15><!--DIV FIM PARA O JQUERY-->
 							</div><br />
 
+							<div class="w3-container w3-center">
+								<h2 id="idtermoseabreviaturas">Editores de Texto</h2>
+								<button id="btn33" class="fa-solid fa-plus"></button>
+								<button id="btn34" class="fa-solid fa-minus"></button>
+							</div> <br />
+							<div class="w3-container">
+								<div class="w3-bar w3-green">
+									<button class="w3-bar-item w3-button" onclick="openIA('Atom')">Atom</button>
+									<button class="w3-bar-item w3-button" onclick="openIA('Bluefish')">Bluefish</button>
+								</div>
+								<div17>
 
+									<div id="Atom" class="w3-container ia" style="display:yes">
+										<h3>Atom</h3>
+										<p>O<c class="configurado"></c> <c class="configurado">Atom</c> é um editor de texto de código aberto, desenvolvido pela GitHub, </p>
+										<p>Ele é muito utilizado por várias pessoas ao redor do mundo. Além haver uma versão para download, o Atom tem uma versão em HTML, permitindo editar o código por meio da internet.
+										   Ele também apresenta a opção de gerenciamento de atualizações, permitindo que você baixe facilmente a versão mais recente ou crie suas próprias atualizações.
+										</p>
+										<a href="https://atom.io/"><i class="fa-solid fa-download"></i></a>
+									</div>
 
+									<div id="Bluefish" class="w3-container ia" style="display:none">
+										<h3>Bluefish</h3>
+										<p>O editor<c class="configurado"> Bluefish</c> é, Um dos editores de texto mais robustos que você pode encontrar</p>
+										<p>É recomendado principalmente para programadores sênior e para webdesigners.
+											Com amplo suporte para todo tipo de linguagem de programação, torna-se uma das opções mais flexíveis para todos os usuários.
+											Seu maior contra é ser programado apenas para Linux, mas, considerando que seu público-alvo já é mais propenso a usar esse sistema operacional, isso não deve ser um problema.
+										</p>	
+										<a href="https://bluefish.openoffice.nl/index.html"><i class="fa-solid fa-download"></i></a>
+									</div>
+							
+										<!--FONTE  https://rockcontent.com/br/blog/editor-de-texto/ -->
+								</div17>
+							</div><br />
 
 
 							<h1>Dicas para um bom TCC...</h1>
@@ -16948,7 +16980,18 @@ https://www.oneidentity.com/what-is-scim/
 										$("div16").show(1000);
 									});
 								});
-								/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+
+					/*FINAL BOTÃO MOSTRAR - OCULTAR*/
+					/*INICIO BOTÃO MOSTRAR - OCULTAR btn33/btn34/div17 Editores de texto*/
+									$(document).ready(function () {
+									$("#btn34").click(function () {
+										$("div17").hide(1000);
+									});
+									$("#btn33").click(function () {
+										$("div17").show(1000);
+									});
+								});
+					/*FINAL BOTÃO MOSTRAR - OCULTAR*/
 
 
 							//TABS on classificação on Redes
