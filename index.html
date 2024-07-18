@@ -16836,10 +16836,13 @@
 									<button class="w3-bar-item w3-button" onclick="openIA('Termux')">Termux</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('Dcoder')">Dcoder</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('Replit')">Repl.it</button>
+									<button class="w3-bar-item w3-button" onclick="openIA('Pycharm')">Pycharm <small>(Python)</small></button>
+									<button class="w3-bar-item w3-button" onclick="openIA('Idle')">Idle <small>(Python)</small></button>
+									<button class="w3-bar-item w3-button" onclick="openIA('Jupyter')">Jupyter <small>(Python)</small></button>
 								</div>
 							
 								<!-- Conteúdo de cada editor -->
-								<div id="VSCode" class="w3-container ia" style="display:none">
+								<div id="VSCode" class="w3-container ia" style="display:yes">
 									<h3>VS Code</h3>
 									<p>O <c class="configurado">Visual Studio Code (VS Code)</c> é um editor de texto multiplataforma desenvolvido pela Microsoft. Ele é extensível e possui suporte para múltiplas linguagens de programação.</p>
 									<a href="https://code.visualstudio.com/" target="_blank"><i class="fa-solid fa-cloud"></i></a>
@@ -17035,6 +17038,49 @@
 									<h3>Oni</h3>
 									<p>O <c class="configurado">Oni</c> é um editor de texto inspirado no Vim, com interface gráfica, suporte a múltiplas linguagens e extensível com plugins.</p>
 									<a href="https://www.onivim.io/" target="_blank"><i class="fa-solid fa-cloud"></i></a>
+								</div>
+								<div id="Pycharm" class="w3-container ia" style="display:none">
+									<h3>Pycharm</h3>
+									<p>O <c class="configurado">Pycharm</c> O IDE Python para ciência de dados e desenvolvimento WEB.				e desenvolvimento web.</p>
+									<ol>
+										<li><strong>Editor de Código Avançado:</strong> PyCharm possui um editor de código inteligente com auto-completação, refatoração de código e verificação de erros em tempo real.</li>
+										<li><strong>Depurador Integrado:</strong> Ferramentas de depuração avançadas que permitem inspecionar variáveis, definir pontos de interrupção e navegar pelo código de forma eficiente.</li>
+										<li><strong>Integração com VCS:</strong> Suporte para sistemas de controle de versão como Git, Subversion e Mercurial, permitindo fácil gerenciamento de repositórios.</li>
+										<li><strong>Testes:</strong> Ferramentas integradas para criação, execução e análise de testes unitários.</li>
+										<li><strong>Suporte a Frameworks:</strong> PyCharm oferece suporte nativo a diversos frameworks web, como Django, Flask e Pyramid, facilitando o desenvolvimento de aplicações web.</li>
+										<li><strong>Desenvolvimento Científico:</strong> Integração com bibliotecas científicas como NumPy, SciPy e matplotlib, além de suporte ao Jupyter Notebook.</li>
+										<li><strong>Ferramentas de Banco de Dados:</strong> PyCharm permite conectar, explorar e gerenciar bases de dados diretamente na IDE.</li>
+										<li><strong>Ambientes Virtuais:</strong> Suporte para criação e gerenciamento de ambientes virtuais Python (virtualenv), permitindo isolar dependências de projetos.</li>
+										<li><strong>Plugins:</strong> Suporte a uma vasta gama de plugins que podem ser instalados para adicionar funcionalidades extras à IDE.</li>
+									</ol>
+									
+									<a href="https://www.jetbrains.com/pycharm/" target="_blank"><i class="fa-solid fa-cloud"></i></a>
+								</div>
+								<div id="Idle" class="w3-container ia" style="display:none">
+									<h3>Idle</h3>
+									<p>O <c class="configurado">Idle (Integrated Development and Learning Environment)</c> é um ambiente de desenvolvimento integrado para a linguagem de programação Python. É uma aplicação que vem instalada com o próprio interpretador Python, tornando-se uma ferramenta padrão para desenvolvimento e aprendizado em Python. Aqui estão algumas características do IDLE:</p>
+									<ol>
+										<li><strong>Editor de Código:</strong> Possui um editor de texto básico com destaque de sintaxe, auto-indentações e outras funcionalidades para facilitar a escrita de código Python.</li>
+										<li><strong>Shell Interativo:</strong> Um ambiente onde você pode digitar comandos Python e ver os resultados imediatamente. Isso é útil para testar pequenos trechos de código de forma rápida.</li>
+										<li><strong>Depuração:</strong> Ferramentas de depuração integradas que permitem definir pontos de interrupção, passo a passo e inspeção de variáveis durante a execução do código.</li>
+										<li><strong>Interface Gráfica:</strong> É uma aplicação gráfica (GUI) construída com a biblioteca Tkinter, que permite que seja usada em diferentes sistemas operacionais.</li>
+										<li><strong>Facilidade de Uso:</strong> Projetado para ser fácil de usar, especialmente para iniciantes que estão aprendendo a programar em Python.</li>
+									</ol>
+									<p>IDLE é uma ferramenta simples e eficiente para começar a programar em Python, mas para projetos maiores ou mais complexos, muitos desenvolvedores optam por IDEs mais robustas como PyCharm, VS Code, ou outras.</p>
+									<p>O Idle pode ser encontrado facilmente no local de instalação do python no endereço <code>...\Lib\idlelib\idle.py</code></p>
+								</div>
+								<div id="Jupyter" class="w3-container ia" style="display:none">
+									<h3>Jupyter</h3>
+									<p>O <c class="configurado">JupyterLab</c> é a evolução do Jupyter Notebook, oferecendo uma interface de usuário mais flexível e poderosa para a computação interativa. Aqui estão algumas características principais do JupyterLab:</p>
+									<ol>
+										<li><strong>Interface de Usuário Flexível:</strong> Proporciona uma interface de usuário moderna e altamente extensível, com suporte para organizar e manipular múltiplos documentos e consoles em uma única janela.</li>
+										<li><strong>Integração de Documentos:</strong> Permite trabalhar com diferentes tipos de conteúdo, incluindo notebooks Jupyter tradicionais, consoles interativos, terminais, editores de texto, visualizações de dados e widgets personalizados.</li>
+										<li><strong>Extensibilidade:</strong> Oferece suporte para extensões que ampliam suas funcionalidades, permitindo integrar novos componentes e personalizar o ambiente de acordo com as necessidades específicas do usuário.</li>
+										<li><strong>Ambiente Interativo:</strong> Mantém a capacidade de executar código diretamente no navegador, facilitando a exploração de dados, análise interativa e experimentação com diferentes algoritmos e técnicas de programação.</li>
+										<li><strong>Suporte a Jupyter Notebooks:</strong> Continua sendo compatível com notebooks Jupyter existentes, permitindo a transição suave de projetos do Jupyter Notebook para o JupyterLab.</li>
+										<li><strong>Integração com Ferramentas de Ciência de Dados:</strong> Facilita a integração com bibliotecas populares de ciência de dados, como pandas, NumPy, matplotlib, scikit-learn, entre outras, para análise e visualização de dados avançadas.</li>
+									</ol>
+									<a href="https://jupyter.org/" target="_blank"><i class="fa-solid fa-cloud"></i></a>
 								</div>
 							</div>
 
@@ -17297,12 +17343,12 @@ São Paulo: Computação – complemento à BNCC-->
 									<button class="w3-bar-item w3-button" onclick="openIA('DesenvolvimentoWebMobile')">Desenvolvimento Web e Mobile</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('ArquiteturasDeSistemas')">Arquiteturas de Sistemas</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('DevOpsDevSecOps')">DevOps e DevSecOps</button>
-									<button class="w3-bar-item w3-button" onclick="openIA('ArquiteturaPDPJBr')">Arquitetura PDPJ-Br</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('SistemasOperacionais')">Sistemas Operacionais</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('RedesDeComputadores')">Redes de Computadores</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('GerenciamentoDeRedes')">Gerenciamento de Redes</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('SegurancaDaInformacao')">Segurança da Informação</button>
-									<button class="w3-bar-item w3-button" onclick="openIA('NormativosPDPJBr')">Normativos PDPJ-Br</button>
+									<button class="w3-bar-item w3-button" onclick="openIA('DesenvolvedorPythonBackendFrontend')">DESENVOLVEDOR <small>(PYTHON-BACKEND-FRONTEND)</small></button>
+									<button class="w3-bar-item w3-button" onclick="openIA('TJbrasil')">DESENVOLVEDOR <small>...no tribunal da justiça</small></button>
 								</div>
 							 <div19><!--DIV INICIO PARA O JQUERY-->
 									<div id="ProcessoDeDesenvolvimento" class="w3-container ia"  style="display:yes">
@@ -17339,12 +17385,6 @@ São Paulo: Computação – complemento à BNCC-->
 										<h3>DevOps e DevSecOps</h3>
 										<p>Jenkins; Maven; CircleCI; Git; GitHub; GitLab CI/CD; Sellenium; Testes Automatizados.</p>
 									</div>
-							
-									<div id="ArquiteturaPDPJBr" class="w3-container ia" style="display:none">
-										<h3>Arquitetura PDPJ-Br</h3>
-										<p>Arquitetura distribuída de microsserviços; API RESTful; JSON; Framework Spring; Spring Cloud; Spring Boot; Spring Eureka; Spring Cloud Gateway; Map Struct; Swagger; Service Discovery; API Gateway; Persistência; JPA 2.0; Hibernate 4.3 ou superior; Hibernate Envers; Biblioteca Flyway; Serviços de autenticação; SSO Single Sign On; Keycloak; Protocolo OAuth2 (RFC 6749); Mensageria e Webhooks; Message Broker; RabbitMQ; Evento negocial; Webhook; APIs reversas; Ferramenta de versionamento Git; Ambiente de clusters; Docker; Kubernetes; Ferramenta de orquestração de contêineres, Rancher; Deploy de aplicações, Continuous Delivery e Continuous Integration (CI/CD).</p>
-									</div>
-							
 									<div id="SistemasOperacionais" class="w3-container ia" style="display:none">
 										<h3>Sistemas Operacionais</h3>
 										<p>Gerenciamento de processos e fluxos de execução (threads): alocação de CPU, comunicação e sincronização entre processos, impasses (deadlocks) e esgotamento de recursos (starvation); Gerenciamento de memória: alocação, segmentação, memória virtual e paginação; Sistemas de entrada e saída: estruturas de armazenamento secundário e terciário, análise de desempenho e confiabilidade; Ambiente Linux (Red Hat e Oracle Linux): instalação, configuração e administração; Utilitários e comandos padrão; Microsoft Windows (Windows 10 e Windows Server 2019): instalação, configuração e administração; Active Directory; Powershell; WSUS.</p>
@@ -17364,11 +17404,156 @@ São Paulo: Computação – complemento à BNCC-->
 										<h3>Segurança da Informação</h3>
 										<p>ABNT NBR ISO/IEC 27001:2022 e ABNT NBR ISO/IEC 27002:2022; Sistemas de proteção (firewall, WAF, UTM, DMZ, Proxy, NAC, Antivírus e Antispam); Sistemas de detecção de intrusão (Intrusion Detection Systems - IDS) e sistemas de prevenção de intrusão (Intrusion Prevention Systems - IPS); Monitoramento de tráfego. Sniffer de rede; Tráfego de dados de serviços e programas usados na internet; Segurança de redes sem fio (EAP, WEP, WPA, WPA2); VPN, VPN-SSL; Interpretação de pacotes; Ataques e ameaças na internet e em redes sem fio; Códigos maliciosos. Ataques de negação de serviço (Denial of Service - DoS) e ataques distribuídos de negação de serviço (Distributed Denial of Service - DDoS); Criptografia assimétrica; Criptografia simétrica; Certificados digitais; Assinaturas digitais; Hashes criptográficos; Controle de acesso: autenticação, autorização e auditoria; controle de acesso baseado em papéis; autenticação baseada em múltiplos fatores; Comunicação segura com Secure Sockets Layer - SSL e Transport Layer Security - TLS.</p>
 									</div>
-							
-									<div id="NormativosPDPJBr" class="w3-container ia" style="display:none">
-										<h3>Normativos PDPJ-Br</h3>
-										<p>Resoluções: CNJ nº 335/2020, CNJ nº 370/2021, CNJ nº 396/2021 e CNJ nº 522/2023. Portarias: CNJ nº 284/2021, CNJ nº 253/2020, CNJ nº 131/2021 e CNJ nº 162/2021. Resolução normativa do TRT da 7ª região nº 14/2023. Inglês técnico.</p>
+									<div id="DesenvolvedorPythonBackendFrontend" class="w3-container ia" style="display:none">
+										<h1>O que voçê precisa saber para ser um...</h1>
+										<h3>Desenvolvedor Python (Backend/Frontend)</h3>
+										<h2>Descrição das principais atividades:</h2>
+										<ul>
+											<li>Apresentação de funcionalidades criadas/alteradas, problemas encontrados e soluções adotadas, progresso do projeto (programas);</li>
+											<li>Criação ou modificação de programas computacionais;</li>
+											<li>Elaboração de relatórios e documentos técnicos (especificações);</li>
+											<li>Realizar estudo de funcionalidades dos métodos, programas e requisitos dos usuários;</li>
+											<li>Realizar teste de programas;</li>
+											<li>Reunião com os usuários para elucidação de requisitos;</li>
+											<li>Revisão de programas computacionais e suporte aos desenvolvedores;</li>
+											<li>Suporte de 2° nível nos programas desenvolvidos;</li>
+											<li>Treinamento de usuários nos programas sob sua responsabilidade;</li>
+											<li>Realizar outras atividades correlatas a critério do seu superior imediato e/ou em relação aos procedimentos do seu processo de trabalho e/ou em relação aos procedimentos do sistema de qualidade.</li>
+										</ul>
+										
+										<h2>Conhecimento(s):</h2>
+										<ul>
+											<li>Ambientes Linux e Windows – nível avançado;</li>
+											<li>Banco de dados relacional e/ou hierárquico;</li>
+											<li>Bibliotecas/frameworks para comunicação entre processos (gRPC, socket ou outras bibliotecas semelhantes);</li>
+											<li>Bibliotecas/frameworks para a criação de gráficos (plotly ou outras bibliotecas semelhantes);</li>
+											<li>Bibliotecas/frameworks para o desenvolvimento de interface (QT, dash, webviz ou outras bibliotecas semelhantes);</li>
+											<li>Boa comunicação oral e escrita;</li>
+											<li>Boas práticas de Engenharia de Software;</li>
+											<li>Desenvolvimento de programas na linguagem Python;</li>
+											<li>Ferramentas de integração contínua;</li>
+											<li>Inglês – nível intermediário;</li>
+											<li>Metodologias ágeis de desenvolvimento;</li>
+											<li>Orientação a objetos, arquitetura de software e estrutura de dados (Model, View, Controller) – nível avançado;</li>
+											<li>Pacote Office – nível intermediário;</li>
+											<li>Processamento paralelo;</li>
+											<li>Versionamento distribuído com o Git.</li>
+										</ul>
+										
+										<h2>Programa para a maioria das provas:</h2>
+										<ul>
+											<li>Banco de dados;</li>
+											<li>Estrutura de dados e arquitetura de software;</li>
+											<li>Inglês técnico;</li>
+											<li>Metodologias ágeis de desenvolvimento;</li>
+											<li>Orientação a objetos;</li>
+											<li>Python.</li>
+										</ul>
+										
+										<h2>Bibliografia:</h2>
+										<ul>
+											<li>ALURA. Python e orientação a objetos. Disponível em: <a href="https://www.caelum.com.br/apostila/apostila-python-orientacao-a-objetos.pdf">https://www.caelum.com.br/apostila/apostila-python-orientacao-a-objetos.pdf</a>. Acesso em: 10 jul 2024.</li>
+											<li>DOWNEY, A. B. Think python: how to think like a computer scientist. 2th edition. O'Reilly Media, 2016.</li>
+											<li>PLOTLY. Dash python user guide. Disponível em: <a href="https://dash.plotly.com/" target="_blank">https://dash.plotly.com/</a>. Acesso em: 10 jul 2024.</li>
+											<li>PYTHON DEVELOPER’S GUIDE. Disponível em: <a href="https://devguide.python.org/" target="_blank">https://devguide.python.org/</a>. Acesso em: 10 jul 2024.</li>
+											<li>SCHWABER, K.; SUTHERLAND, J. O guia do Scrum. Guia definitivo para o Scrum: as regras do jogo. Scrum Guides, 2020. Disponível em: <a href="https://www.funcamp.unicamp.br/url/364">https://www.funcamp.unicamp.br/url/364</a>. Acesso em: 10 jul 2024.</li>
+											<li>SEDGEWICK, R.; WAYNE, K. Algorithms. 4th edition. Addison-Wesley Professional, 2011.</li>
+											<li>SILVA, M. S. Fundamentos de HTML5 e CSS3. 1ª edição. Novatec, 2015.</li>
+											<li>SOMMERVILLE, I. Engenharia de Software. 10ª edição. Pearson, 2019.</li>
+											<li>W3SCHOOLS. SQL tutorial. Disponível em: <a href="https://www.w3schools.com/sql/" target="_blank">https://www.w3schools.com/sql/</a>. Acesso em: 10 jul 2024.</li>
+
+										</ul>
 									</div>
+										<div id="TJbrasil" class="w3-container ia" style="display:none">
+											<h3>Para trabalhar no Tribunal da justiça você deve saber...</h3>
+													<ul>
+														<li><b>1. Introdução à tecnologia da informação e à internet:</b> Sistemas de Numeração (Decimal, 
+															Binário, Octal, Hexadecimal); Sistemas de Interpretação de Informação (ASCII); 
+															Representação de Informação (textos, caracteres, números, imagem, som); Conceito de 
+															Arquivos; Conceitos sobre Internet. 
+														</li><br />
+														<li><b>2. Fundamentos de Sistemas Operacionais:</b> Principais Funções; Instalação e configuração; 
+															Drivers e periféricos (placas de som, de rede, fax-modem etc.). 
+														</li><br />
+														<li><b>3. Linguagens de Programação:</b> Programas-fontes; linkedição; Tradução; Compilação e 
+															Execução; HTML (uso de ferramentas para edição de páginas web); Padrões e tags HTML; 
+															utilização de imagens, tabelas e links; Introdução ao CSS (seletores; formatando estilos com 
+															CSS); alinhamento e posicionamento tableless; classes; pseudo-classes; Programação em 
+															Python. 
+														</li><br />
+														<li><b>4. Noções de usabilidade e arquitetura de informação para páginas web:</b> Conceito de 
+															hospedagem, serviços de hospedagem, registro de domínios, regras para hospedagem de 
+															páginas web. 
+														</li><br />
+														<li><b>5. Lógica de Programação para Internet e front-end:</b> algoritmos; ferramentas para 
+															desenvolvimento de algoritmos; tipos de dados primitivos; declaração de variáveis; 
+															operadores aritméticos; relacionais; lógicos e de atribuição; comandos de Entrada/Saída; 
+															desenvolvimento de algoritmos com: Estruturas Sequenciais, Decisão e Repetição; 
+															Representação de algoritmos por meio de fluxogramas; Desenvolvimento de programas 
+															usando uma linguagem estruturada com Estruturas Sequenciais, de Decisão e de 
+															Repetição; Lógica de Programação para Internet: Modularização: funções e procedimentos; 
+															Vetores e Matrizes; Algoritmos de Ordenação; Aplicação de conceitos de lógica de 
+															programação ao desenvolvimento para internet; Linguagem de script no lado cliente: sintaxe 
+															para declaração de variáveis, estruturas de decisão e repetição, funções e procedimentos; 
+															Strings e operações matemáticas; Manipulação do documento HTML; Eventos e 
+															mensagens; Aplicação dos conceitos de lógica de programação: validação de campos; 
+															inserção automática de texto na página web; formatação automática de caracteres e da 
+															página web. 
+														</li><br />
+														<li><b>6. Desenvolvimento Back-End com Banco de Dados:</b> conceitos de Banco de Dados; Sistema 
+															de Banco de Dados e Sistema Gerenciador de Banco de Dados; Projeto Conceitual de 
+															Banco de Dados usando o Modelo Entidade-Relacionamento e Entidade-Relacionamento 
+															Estendido e Normalização; SQL (Structured Query Language): comandos para definição e 
+															alteração de tabelas e restrições de integridade referencial; comandos para inserção, 
+															alteração e exclusão de linhas; consultas, condições e junção entre tabelas; Linguagem de 
+															script executada no servidor: arquitetura de desenvolvimento de aplicações para Internet. 
+															Conceito de requisição e resposta; Plataformas para desenvolvimento de aplicações para a 
+															web e Servidores web; Sintaxe: Variáveis, operadores e estruturas de controle das 
+															linguagens; Estruturas de dados. Vetores e vetores associativos; Procedimentos e funções; 
+															Uso de sessões; Persistência em banco de dados; Interfaces web e páginas dinâmicas. 
+															Tratamento de requisições assíncronas; Componentes de software e frameworks no lado 
+															servidor e no lado cliente; Sistemas de Gerenciamento de Conteúdo (Content Management 
+															Systems – CMS): conceitos e integração com linguagem de programação; Banco de Dados 
+															NOSQL (Não Relacionais): Banco de Dados Chave-Valor; Banco de Dados Orientado a 
+															Colunas; Banco de Dados Orientado a Documentos; Banco de Dados Orientado a Grafos. 
+														</li><br />
+														<li><b>7. Ciência de Dados:</b> Aprendizagem de Máquina; Análise de Dados e Inteligência de Negócios; 
+															Redes Neurais e Processamento de Linguagem Natural; Estatística para Ciência de Dados; 
+															Computação em Nuvem de Planilhas Eletrônicas. 
+														</li><br />
+														<li><b>8. Fundamentos de Redes de Computadores:</b> Propagação de Sinal Analógico e Digital, Modos 
+															de transmissão e Largura de Banda; Conceito de PAN, LAN, MAN e WAN e topologias de 
+															rede; Modelo OSI, Modelo TCP/IP, IEEE 802, arquiteturas de rede; Ethernet, 
+															Endereçamento IP, Sub redes; Equipamentos de rede, VLAN e Protocolos de Roteamento; 
+															Fundamentos de Sistemas Operacionais: conceitos dos sistemas operacionais; 
+															Gerenciamento Processamento, Memória e Sistema de Arquivos; Sistemas Livres; Sistema 
+															de arquivos e diretórios; Documentação; Editor de textos; Configuração de rede; 
+															Manipulação de hardware e dispositivos. Shell; Agendamento de Tarefas; Administração de 
+															usuário. Grupos e permissões; Níveis de execução, System V e System D; Gerenciador de 
+															processos. Trabalho com módulos; Serviços de rede. Serviço SSH; Serviços de Rede 
+															(WEB); Computação em Nuvem. 
+														</li><br />
+														<li><b>9. Inteligência Artificial:</b> Conceitos Iniciais; Fundamentos da IA Geracional; Aplicações práticas 
+															da IA Geracional; ChatGPT como um exemplo de IA Geracional; Personalização de Mídias.
+														</li><br />
+														<li><b>10. Ensino de Tecnologia na Educação Básica:</b> Histórico da Informática educativa no Brasil; O 
+															uso do computador na escola como recurso pedagógico; Plataformas educativas; Princípios 
+															do desenvolvimento de jogos e animações gráficas; Desenvolvimento de projetos com 
+															JavaScript: desenvolvimento de sites dinâmicos, com linguagem de marcação e estilo e 
+															conteúdo multimídia e páginas web; Introdução à Robótica: plataforma de programação 
+															MakeCode, introdução a conceitos básicos de programação em blocos, componentes 
+															robóticos e introdução a conceitos de eletrônica básica.
+														</li><br />
+														<li><b>11. Diretrizes Curriculares de Tecnologia e Inovação da Secretaria de Educação do Estado de 
+															São Paulo:</b> Computação – complemento à BNCC
+														</li>
+													</ul>
+											
+											</div>
+										
+							
+
+							
 								</div19>
 							</div>
 														
