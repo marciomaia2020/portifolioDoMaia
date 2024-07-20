@@ -38,3 +38,21 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.precode {
+  text-align: rigth;
+}
+
+.precode code  {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  }
+h3{
+  font-size: 24px;
+}

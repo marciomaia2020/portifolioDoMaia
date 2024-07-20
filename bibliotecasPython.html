@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotecas Python</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        button {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bibliotecas Python</h1>
+
+    <button onclick="toggleVisibility('flask-info')">Flask</button>
+    <ul id="flask-info" class="hidden">
+        <li><strong>Propósito:</strong> Flask é um microframework web para Python.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Criação de aplicações web simples e complexas.</li>
+                <li>Desenvolvimento rápido de APIs.</li>
+                <li>Manutenção de aplicações leves com facilidade de extensão.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Simplicidade e flexibilidade.</li>
+                <li>Boa documentação e grande comunidade.</li>
+                <li>Suporte para extensões que podem adicionar funcionalidades, como autenticação de usuário e formulários.</li>
+            </ul>
+        </li>
+        <li><a href="https://flask.palletsprojects.com/" target="_blank">Documentação do Flask</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('dash-info')">Dash</button>
+    <ul id="dash-info" class="hidden">
+        <li><strong>Propósito:</strong> Dash é um framework Python para construir aplicações web analíticas.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Criação de dashboards interativos.</li>
+                <li>Visualização de dados de maneira dinâmica.</li>
+                <li>Integração fácil com bibliotecas de visualização de dados como Plotly.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Constrói aplicações web com a mesma facilidade de escrever scripts Python.</li>
+                <li>Suporte para callbacks interativos.</li>
+                <li>Facilita a criação de gráficos interativos complexos.</li>
+            </ul>
+        </li>
+        <li><a href="https://dash.plotly.com/" target="_blank">Documentação do Dash</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('pandas-info')">Pandas</button>
+    <ul id="pandas-info" class="hidden">
+        <li><strong>Propósito:</strong> Pandas é uma biblioteca de manipulação e análise de dados.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Manipulação de dados tabulares e séries temporais.</li>
+                <li>Limpeza e preparação de dados.</li>
+                <li>Análise estatística e operações de agregação.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>DataFrames para manipulação de dados estruturados.</li>
+                <li>Ferramentas robustas para leitura e escrita de dados em diferentes formatos (CSV, Excel, SQL, etc.).</li>
+                <li>Operações de junção, fusão e agrupamento de dados.</li>
+            </ul>
+        </li>
+        <li><a href="https://pandas.pydata.org/" target="_blank">Documentação do Pandas</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('numpy-info')">NumPy</button>
+    <ul id="numpy-info" class="hidden">
+        <li><strong>Propósito:</strong> NumPy é uma biblioteca para computação numérica.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Manipulação de arrays multidimensionais.</li>
+                <li>Operações matemáticas e estatísticas eficientes.</li>
+                <li>Base para muitas outras bibliotecas científicas em Python.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Arrays n-dimensionais (ndarray).</li>
+                <li>Funções matemáticas rápidas.</li>
+                <li>Suporte para álgebra linear, transformadas de Fourier e geração de números aleatórios.</li>
+            </ul>
+        </li>
+        <li><a href="https://numpy.org/" target="_blank">Documentação do NumPy</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('matplotlib-info')">Matplotlib</button>
+    <ul id="matplotlib-info" class="hidden">
+        <li><strong>Propósito:</strong> Matplotlib é uma biblioteca de plotagem para visualização de dados.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Criação de gráficos estáticos, animados e interativos.</li>
+                <li>Visualização de dados científicos e de engenharia.</li>
+                <li>Integração com Jupyter notebooks.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Suporte para diversos tipos de gráficos (linha, barra, dispersão, etc.).</li>
+                <li>Personalização detalhada dos gráficos.</li>
+                <li>Ferramentas para salvar gráficos em diversos formatos.</li>
+            </ul>
+        </li>
+        <li><a href="https://matplotlib.org/" target="_blank">Documentação do Matplotlib</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('scikit-info')">Scikit-learn</button>
+    <ul id="scikit-info" class="hidden">
+        <li><strong>Propósito:</strong> Scikit-learn é uma biblioteca para aprendizado de máquina.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Implementação de algoritmos de aprendizado supervisionado e não supervisionado.</li>
+                <li>Preparação de dados e engenharia de features.</li>
+                <li>Avaliação de modelos de aprendizado de máquina.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Algoritmos prontos para uso, como regressão, classificação e clustering.</li>
+                <li>Ferramentas para validação cruzada e seleção de modelos.</li>
+                <li>Integração com outras bibliotecas de ciência de dados, como Pandas e NumPy.</li>
+            </ul>
+        </li>
+        <li><a href="https://scikit-learn.org/" target="_blank">Documentação do Scikit-learn</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('tensorflow-info')">TensorFlow e Keras</button>
+    <ul id="tensorflow-info" class="hidden">
+        <li><strong>Propósito:</strong> TensorFlow e Keras são bibliotecas para aprendizado profundo (deep learning).</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Construção e treinamento de redes neurais.</li>
+                <li>Desenvolvimento de modelos de aprendizado profundo para tarefas como visão computacional e processamento de linguagem natural.</li>
+                <li>Deploy de modelos em diversas plataformas.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>TensorFlow: Suporte extensivo para operações matemáticas e execução em GPUs.</li>
+                <li>Keras: Interface de alto nível para construção rápida de modelos de redes neurais.</li>
+                <li>Grande comunidade e abundância de recursos educacionais.</li>
+            </ul>
+        </li>
+        <li><a href="https://www.tensorflow.org/" target="_blank">Documentação do TensorFlow</a></li>
+        <li><a href="https://keras.io/" target="_blank">Documentação do Keras</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('requests-info')">Requests</button>
+    <ul id="requests-info" class="hidden">
+        <li><strong>Propósito:</strong> Requests é uma biblioteca para fazer requisições HTTP.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Consumo de APIs REST.</li>
+                <li>Download de conteúdos web.</li>
+                <li>Envio de dados para servidores web.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Interface simples e intuitiva para enviar requisições HTTP.</li>
+                <li>Suporte para autenticação, sessões e cookies.</li>
+                <li>Tratamento de respostas HTTP.</li>
+            </ul>
+        </li>
+        <li><a href="https://requests.readthedocs.io/" target="_blank">Documentação do Requests</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('beautifulsoup-info')">BeautifulSoup</button>
+    <ul id="beautifulsoup-info" class="hidden">
+        <li><strong>Propósito:</strong> BeautifulSoup é uma biblioteca para parsing de HTML e XML.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Extração de dados de páginas web.</li>
+                <li>Parsing de documentos HTML e XML para análise.</li>
+                <li>Web scraping em combinação com bibliotecas como Requests e Selenium.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Facilidade de navegação e busca em árvores de documentos.</li>
+                <li>Suporte para diferentes parsers, como lxml e html.parser.</li>
+                <li>Tratamento robusto de documentos HTML malformados.</li>
+            </ul>
+        </li>
+        <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Documentação do BeautifulSoup</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('pytest-info')">pytest</button>
+    <ul id="pytest-info" class="hidden">
+        <li><strong>Propósito:</strong> pytest é uma biblioteca para testes em Python.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Criação e execução de testes unitários.</li>
+                <li>Testes de integração e funcionais.</li>
+                <li>Automação de testes em pipelines de CI/CD.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Suporte para fixtures e plugins.</li>
+                <li>Mensagens de erro detalhadas e claras.</li>
+                <li>Flexibilidade e facilidade de uso.</li>
+            </ul>
+        </li>
+        <li><a href="https://docs.pytest.org/" target="_blank">Documentação do pytest</a></li>
+    </ul>
+
+    <button onclick="toggleVisibility('scrapy-info')">Scrapy</button>
+    <ul id="scrapy-info" class="hidden">
+        <li><strong>Propósito:</strong> Scrapy é um framework para web scraping.</li>
+        <li><strong>Usos:</strong>
+            <ul>
+                <li>Extração de dados de sites de maneira estruturada.</li>
+                <li>Automação de navegação e coleta de informações web.</li>
+                <li>Criação de spiders para rastreamento web.</li>
+            </ul>
+        </li>
+        <li><strong>Características principais:</strong>
+            <ul>
+                <li>Alta performance e eficiência.</li>
+                <li>Suporte para pipelines de processamento de dados.</li>
+                <li>Fácil integração com outras bibliotecas e ferramentas.</li>
+            </ul>
+        </li>
+        <li><a href="https://docs.scrapy.org/" target="_blank">Documentação do Scrapy</a></li>
+    </ul>
+
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
+
