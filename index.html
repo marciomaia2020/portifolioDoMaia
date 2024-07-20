@@ -16840,18 +16840,6 @@
 									<button class="w3-bar-item w3-button" onclick="openIA('Idle')">Idle <small>(Python)</small></button>
 									<button class="w3-bar-item w3-button" onclick="openIA('Jupyter')">Jupyter <small>(Python)</small></button>
 								</div>
-							
-								/*INICIO BOTÃO MOSTRAR - OCULTAR btn33/btn34/div17 Editores de texto*/
-								$(document).ready(function () {
-								$("#btn34").click(function () {
-									$("div17").hide(1000);
-								});
-								$("#btn33").click(function () {
-									$("div17").show(1000);
-								});
-							});
-				/*FINAL BOTÃO MOSTRAR - OCULTAR*/
-
 				         <div class="w3-container w3-border w3-large w3-justify"><div17>
 								<!-- Conteúdo de cada editor -->
 								<div id="VSCode" class="w3-container ia" style="display:yes">
@@ -17709,7 +17697,7 @@
 											<li><b>Visual Studio Code (VS Code):</b>
 												<ul>
 													<li>
-														Download: <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>
+														<a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
 													</li>
 													<li>Instale a extensão Python para VS Code.</li>
 												</ul>
@@ -17717,7 +17705,7 @@
 											<li><b>PyCharm:</b>
 												<ul>
 													<li>
-														Download: <a href="https://www.jetbrains.com/pycharm/" target="_blank">jetbrains.com/pycharm</a>
+														<a href="https://www.jetbrains.com/pycharm/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
 													</li>
 													<li>Disponível em versões Community (gratuita) e Professional (paga).</li>
 												</ul>
@@ -17725,7 +17713,17 @@
 											<li><b>Sublime Text:</b>
 												<ul>
 													<li>
-														Download: <a href="https://www.sublimetext.com/" target="_blank">sublimetext.com</a>
+														<a href="https://www.sublimetext.com/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
+													</li>
+												</ul>
+											</li>
+											<li><b>Jupyter Desktop:</b>
+												<ul>
+													<li>
+														Instale usando o comando <code class="PipInstall">pip install notebook</code>
+													</li>
+													<li>
+														<p class="obs"><i class="fa-regular fa-eye"></i> Ao intalar usando o <code>pip</code>, saia da linha de comando do python.</p>
 													</li>
 												</ul>
 											</li>
@@ -17735,8 +17733,8 @@
 										<ul>
 											<li><b>Instale as dependências (Bibliotecas):</b>
 												<ul>
-													<li><code>pip install dash</code> <a href="https://dash.plotly.com/installation" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
-													<li><code>pip install pandas</code></li>
+													<li><code class="PipInstall">pip install dash</code> <a href="https://dash.plotly.com/installation" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
+													<li><code class="PipInstall">pip install pandas</code></li>
 												</ul>
 												<p><small>To update, run: python.exe -m pip install --upgrade pip</small></p>
 												<p>Conheça as principais bibliotecas <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></p>
@@ -17745,12 +17743,12 @@
 
 											<li><b>Servidor local (Uso contínuo):</b>
 												<ul>
-													<li><code>pip install flask</code> <!-- para servidores baseados em Flask --></li>
+													<li><code class="PipInstall">pip install flask</code> <!-- para servidores baseados em Flask --></li>
 												</ul>
 											</li>
 											<li><b>Servidor local (Rápido para testes)</b>
 												<ul>
-													<li>Download: <a href="https://coffops.com/servidor-web-http-em-python-com-http-server-simplehttpserver/" target="_blank">python -m http.server</a></li>
+													<li><code class="PipInstall">python -m http.server</code> <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
 												</ul>
 											</li>
 										</ul>
@@ -17760,7 +17758,7 @@
 										<h3>Usando o Terminal ou Prompt de Comando</h3>
 										<ol>
 											<li>Abra o Terminal (macOS/Linux) ou Prompt de Comando (Windows).</li>
-											<li>Digite <code>python</code> (ou <code>python3</code> se você estiver em um sistema onde
+											<li>Digite <code>python</code> ou <code>py</code> (ou ainda <code>python3</code> se você estiver em um sistema onde
 												<code>python</code> se refere à versão 2.x).</li>
 											<li>
 												Digite o seguinte código e pressione Enter:
