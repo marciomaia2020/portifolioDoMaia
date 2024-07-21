@@ -3,51 +3,69 @@
 <!DOCTYPE html>
 <!--ref https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm-->
 <html>
-<title>Portifólio Márcio Maia</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!--IMPORTAÇÃO DA BIBLIOTECA PARA GRÁFICOS-->
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<head>
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-16XQDPS1FY"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'G-16XQDPS1FY');
+			</script>
+		<title>Portifólio Márcio Maia</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<!--IMPORTAÇÃO DA BIBLIOTECA PARA GRÁFICOS-->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="css/stilo.css">
-<link rel="stylesheet" href="css/stilogradecss.css">
-<script defer src="js/script.js"></script>
+		<link rel="stylesheet" href="css/stilo.css">
+		<link rel="stylesheet" href="css/stilogradecss.css">
+		<script defer src="js/script.js"></script>
 
-<!---CHOSEN SELECT----->
-<script src="./chosen_select/chosen.jquery.js"></script>
-<link rel="stylesheet" href="./chosen_select/chosen.css">
+		<!---CHOSEN SELECT----->
+		<script src="./chosen_select/chosen.jquery.js"></script>
+		<link rel="stylesheet" href="./chosen_select/chosen.css">
 
 
-<!----======== Font Awesome 5 JAVASCRIPT  ENTRE NO SITE E PEGUE O CÓDIGO (afb02bf9ac)======== -->
-<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
-<!--Márciofernando.maia@yahoo.com.br-->
-<script src="https://kit.fontawesome.com/2fa2c650ed.js" crossorigin="anonymous"></script>
+		<!----======== Font Awesome 5 JAVASCRIPT  ENTRE NO SITE E PEGUE O CÓDIGO (afb02bf9ac)======== -->
+		<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
+		<!--Márciofernando.maia@yahoo.com.br-->
+		<script src="https://kit.fontawesome.com/2fa2c650ed.js" crossorigin="anonymous"></script>
 
-<script>
-	/*TABS */
-	function openIA(InteligenciaArtificial) {
-		var i;
-		var x = document.getElementsByClassName("ia");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
-		document.getElementById(InteligenciaArtificial).style.display = "block";
-	}
-</script>
-<!--Pegue o código direto do site fontawesome.com-->
-<!----======== Font Awesome 5  CSS ======== -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+			/*TABS */
+			function openIA(InteligenciaArtificial) {
+				var i;
+				var x = document.getElementsByClassName("ia");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				document.getElementById(InteligenciaArtificial).style.display = "block";
+			}
 
+				fetch('contador.php')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('contador').innerText = data;
+					});
+		</script>
+
+
+		<!--Pegue o código direto do site fontawesome.com-->
+		<!----======== Font Awesome 5  CSS ======== -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
 <body class="w3-light-grey w3-content" style="max-width:1600px" onselectstart="return false;">
 <!--<body>-->
 
@@ -2363,6 +2381,9 @@
 				</div>
 			</div>
 		</div>-->
+		
+		<!--<p>Você é o visitante número: <span id="contador"></span></p>-->
+		
 		<div class="w3-content w3-display-container" style="margin-left:100% margin-rigth:100%">
 			<div class="w3-container w3-center">
 				<h1><b>Alguns Projetos</b></h1>
