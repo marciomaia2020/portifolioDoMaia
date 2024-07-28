@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!----======== Font Awesome 5 JAVASCRIPT  ENTRE NO SITE E PEGUE O CÓDIGO (afb02bf9ac)======== -->
+	<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
+	<!--Márciofernando.maia@yahoo.com.br-->
+	<script src="https://kit.fontawesome.com/2fa2c650ed.js" crossorigin="anonymous"></script>
+
+    <title>Problemas Resolvidos em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a9d8f;
+        }
+        .problema {
+            color: #2a9d8f;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Problemas Resolvidos em Python</h1>
+
+
+<section>
+			<th><h3>Método 5 Q´s, <small>para montar um algoritimo. | Analise criticamente o problema, compreenda o COMPLETAENTE.</small></h3></th>
+		<ul>
+				<li>Quais são os dados de entrada nescessários?</li>
+				<li>Que devo fazer com estes dados?</li>
+				<li>Quais são as restrições deste problema?</li>
+				<li>Qual o resultado esperado?</li>
+				<li>Qual é a sequencia de passos a ser feitos para chegar ao resultado esperado?</li>
+		</ul>
+		
+		<p>Para as <b>restrições</b> observe os if´s da vida.
+			<pre>
+				<code>
+					if len(numeros) == 0:
+						return "A lista de números não pode estar vazia"
+					
+					if numero % 2 == 0:
+						return "Par"
+					else:
+						return "Ímpar"
+					
+					if numero < 0:
+						return "O número deve ser maior ou igual a zero"
+					
+					
+					if horas_trabalhadas == 0:
+						return "O valor das horas trabalhadas não pode ser igual a zero"
+				
+				</code>
+			</pre>
+		</p>
+</section>
+
+
+<section align="center">
+	<a href="https://www.youtube.com/@VideosKaraoke2023/videos/" target="_blank">
+	<i class="fa-brands fa-youtube"></i></a> 
+</section>
+
+
+    <section>
+        <h3><span class="problema">Problema 1:</span> Calcular a média de uma lista de números</h3>
+        <pre>
+def calcular_media(numeros):
+    if len(numeros) == 0:
+        return "A lista de números não pode estar vazia"
+    soma = sum(numeros)
+    media = soma / len(numeros)
+    return media
+
+# Caso de uso
+numeros = [10, 20, 30, 40, 50]
+
+# Chamando a função
+media = calcular_media(numeros)
+print(f"A média é: {media:.2f}")
+
+# Saída esperada
+# A média é: 30.00
+        </pre>
+    </section>
+
+    <section>
+        <h3><span class="problema">Problema 2:</span> Verificar se um número é par ou ímpar</h3>
+        <pre>
+def verificar_par_ou_impar(numero):
+    if numero % 2 == 0:
+        return "Par"
+    else:
+        return "Ímpar"
+
+# Caso de uso
+numero = 15
+
+# Chamando a função
+resultado = verificar_par_ou_impar(numero)
+print(f"O número {numero} é {resultado}.")
+
+# Saída esperada
+# O número 15 é Ímpar.
+        </pre>
+    </section>
+
+    <section>
+        <h3><span class="problema">Problema 3:</span> Calcular o fatorial de um número</h3>
+        <pre>
+def calcular_fatorial(numero):
+    if numero < 0:
+        return "O número deve ser maior ou igual a zero"
+    fatorial = 1
+    for i in range(1, numero + 1):
+        fatorial *= i
+    return fatorial
+
+# Caso de uso
+numero = 5
+
+# Chamando a função
+fatorial = calcular_fatorial(numero)
+print(f"O fatorial de {numero} é {fatorial}.")
+
+# Saída esperada
+# O fatorial de 5 é 120.
+        </pre>
+    </section>
+
+    <section>
+        <h3><span class="problema">Problema 4:</span> Converter graus Celsius para Fahrenheit</h3>
+        <pre>
+def celsius_para_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Caso de uso
+celsius = 25
+
+# Chamando a função
+fahrenheit = celsius_para_fahrenheit(celsius)
+print(f"{celsius}°C é equivalente a {fahrenheit:.2f}°F.")
+
+# Saída esperada
+# 25°C é equivalente a 77.00°F.
+        </pre>
+    </section>
+
+    <section>
+        <h3><span class="problema">Problema 5:</span> Verificar se uma string é um palíndromo</h3>
+        <pre>
+def verificar_palindromo(texto):
+    texto = texto.replace(" ", "").lower()
+    return texto == texto[::-1]
+
+# Caso de uso
+texto = "arara"
+
+# Chamando a função
+eh_palindromo = verificar_palindromo(texto)
+if eh_palindromo:
+    print(f"A palavra '{texto}' é um palíndromo.")
+else:
+    print(f"A palavra '{texto}' não é um palíndromo.")
+
+# Saída esperada
+# A palavra 'arara' é um palíndromo.
+        </pre>
+    </section>
+
+    <section>
+        <h3><span class="problema">Problema 6:</span> Calcular o valor hora de um funcionário</h3>
+        <pre>
+def calcular_valor_hora(salario_mensal, horas_trabalhadas):
+    # Tratando o erro
+    if horas_trabalhadas == 0:
+        return "O valor das horas trabalhadas não pode ser igual a zero"
+    valor_hora = salario_mensal / horas_trabalhadas
+    return valor_hora
+
+# Caso de uso
+salario_mensal = 3000.00
+horas_trabalhadas = 160
+
+# Chamando a função
+valor_hora = calcular_valor_hora(salario_mensal, horas_trabalhadas)
+print(f"R$: {valor_hora:.2f} é o valor hora.")
+
+# Saída esperada
+# R$: 18.75 é o valor hora.
+        </pre>
+    </section>
+</body>
+</html>

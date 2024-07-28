@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila do Desenvolvedor Python</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        pre {
+            background-color: #2e3440;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d8dee9;
+        }
+        .keyword { color: #81a1c1; }
+        .built_in { color: #8fbcbb; }
+        .number { color: #b48ead; }
+        .string { color: #a3be8c; }
+        .comment { color: #616e88; }
+        .function { color: #88c0d0; }
+    </style>
+</head>
+<body>
+    <h1>Apostila do Desenvolvedor Python</h1>
+    <h2>Composição e Herança:</h2>
+    <p>Utilize composição para reutilizar código sem criar uma hierarquia rígida.</p>
+    <pre><code class="python">
+<span class="keyword">class</span> <span class="built_in">Motor</span>:
+    <span class="keyword">def</span> ligar(self):
+        <span class="built_in">print</span>(<span class="string">"Motor ligado"</span>)
+
+<span class="keyword">class</span> <span class="built_in">Carro</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self, motor):
+        self.motor = motor
+
+    <span class="keyword">def</span> ligar_carro(self):
+        self.motor.ligar()
+
+motor = <span class="built_in">Motor</span>()
+carro = <span class="built_in">Carro</span>(motor)
+carro.ligar_carro()  <span class="comment"># Saída: Motor ligado</span>
+    </code></pre>
+
+    <h2>Conceitos Básicos</h2>
+    <h3>Variáveis e Tipos de Dados:</h3>
+    <pre><code class="python">
+nome = <span class="string">"João"</span>  <span class="comment"># String</span>
+idade = <span class="number">25</span>     <span class="comment"># Inteiro</span>
+altura = <span class="number">1.75</span>  <span class="comment"># Float</span>
+ativo = <span class="keyword">True</span>   <span class="comment"># Booleano</span>
+    </code></pre>
+
+    <h3>Estruturas de Controle:</h3>
+    <pre><code class="python">
+<span class="comment"># Condicional</span>
+<span class="keyword">if</span> idade &gt; <span class="number">18</span>:
+    <span class="built_in">print</span>(<span class="string">"Maior de idade"</span>)
+<span class="keyword">else</span>:
+    <span class="built_in">print</span>(<span class="string">"Menor de idade"</span>)
+
+<span class="comment"># Loop</span>
+<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):
+    <span class="built_in">print</span>(i)
+
+<span class="keyword">while</span> idade &lt; <span class="number">30</span>:
+    <span class="built_in">print</span>(<span class="string">"Ainda jovem"</span>)
+    idade += <span class="number">1</span>
+    </code></pre>
+
+    <h3>Funções:</h3>
+    <pre><code class="python">
+<span class="keyword">def</span> soma(a, b):
+    <span class="keyword">return</span> a + b
+
+resultado = soma(<span class="number">2</span>, <span class="number">3</span>)
+<span class="built_in">print</span>(resultado)  <span class="comment"># Saída: 5</span>
+    </code></pre>
+
+    <h3>Manipulação de Arquivos:</h3>
+    <pre><code class="python">
+<span class="comment"># Escrever em um arquivo</span>
+<span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'arquivo.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:
+    f.write(<span class="string">'Escrevendo no arquivo'</span>)
+
+<span class="comment"># Ler de um arquivo</span>
+<span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'arquivo.txt'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:
+    conteudo = f.read()
+    <span class="built_in">print</span>(conteudo)
+    </code></pre>
+
+    <h2>Conceitos Avançados</h2>
+    <h3>List Comprehensions:</h3>
+    <pre><code class="python">
+quadrados = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]
+<span class="built_in">print</span>(quadrados)  <span class="comment"># Saída: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span>
+    </code></pre>
+
+    <h3>Decorators:</h3>
+    <pre><code class="python">
+<span class="keyword">def</span> meu_decorator(func):
+    <span class="keyword">def</span> wrapper():
+        <span class="built_in">print</span>(<span class="string">"Algo antes da função"</span>)
+        func()
+        <span class="built_in">print</span>(<span class="string">"Algo depois da função"</span>)
+    <span class="keyword">return</span> wrapper
+
+@meu_decorator
+<span class="keyword">def</span> diz_oi():
+    <span class="built_in">print</span>(<span class="string">"Oi!"</span>)
+
+diz_oi()
+<span class="comment"># Saída:</span>
+<span class="comment"># Algo antes da função</span>
+<span class="comment"># Oi!</span>
+<span class="comment"># Algo depois da função</span>
+    </code></pre>
+
+    <h3>Generators:</h3>
+    <pre><code class="python">
+<span class="keyword">def</span> meu_generator():
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):
+        <span class="keyword">yield</span> i
+
+<span class="keyword">for</span> valor <span class="keyword">in</span> meu_generator():
+    <span class="built_in">print</span>(valor)
+    </code></pre>
+
+    <h3>Context Managers:</h3>
+    <pre><code class="python">
+<span class="keyword">class</span> MeuContexto:
+    <span class="keyword">def</span> <span class="function">__enter__</span>(self):
+        <span class="built_in">print</span>(<span class="string">"Entrando no contexto"</span>)
+        <span class="keyword">return</span> self
+
+    <span class="keyword">def</span> <span class="function">__exit__</span>(self, exc_type, exc_val, exc_tb):
+        <span class="built_in">print</span>(<span class="string">"Saindo do contexto"</span>)
+
+<span class="keyword">with</span> MeuContexto() <span class="keyword">as</span> contexto:
+    <span class="built_in">print</span>(<span class="string">"Dentro do contexto"</span>)
+<span class="comment"># Saída:</span>
+<span class="comment"># Entrando no contexto</span>
+<span class="comment"># Dentro do contexto</span>
+<span class="comment"># Saindo do contexto</span>
+    </code></pre>
+
+    <h2>Bibliotecas Comuns</h2>
+    <h3>Requests: Para realizar requisições HTTP &#8203;:citation[oaicite:0]{index=0}&#8203;
+        <pre><code class="python">
+            import requests
+            response = requests.get(<span class="string">'https://api.github.com'</span>)
+            <span class="built_in">print</span>(response.status_code)
+                </code></pre>
+            
+                <h3>Pandas: Para manipulação de dados</h3>
+                <pre><code class="python">
+            import pandas as pd
+            df = pd.DataFrame({<span class="string">'Coluna1'</span>: [<span class="number">1</span>, <span class="number">2</span>], <span class="string">'Coluna2'</span>: [<span class="number">3</span>, <span class="number">4</span>]})
+            <span class="built_in">print</span>(df)
+                </code></pre>
+            
+                <h3>NumPy: Para computação numérica</h3>
+                <pre><code class="python">
+            import numpy as np
+            array = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])
+            <span class="built_in">print</span>(array * <span class="number">2</span>)
+                </code></pre>
+            
+                <h3>Django/Flask: Para desenvolvimento web</h3>
+                <pre><code class="python">
+            <span class="comment"># Flask</span>
+            <span class="keyword">from</span> flask <span class="keyword">import</span> Flask
+            app = Flask(__name__)
+            
+            @app.route(<span class="string">'/'</span>)
+            <span class="keyword">def</span> hello():
+                <span class="keyword">return</span> <span class="string">"Hello, World!"</span>
+            
+            <span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+                app.run()
+                </code></pre>
+            </body>
+            </html>

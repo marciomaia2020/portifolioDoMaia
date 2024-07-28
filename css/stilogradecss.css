@@ -38,16 +38,14 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-.precode {
-  text-align: rigth;
-}
+
 
 .precode code  {
-  display: flex;
+   display: flex;
   background-color: black;
   color: #fff;
-  
 }
+
 .PipInstall{
   background-color: yellowgreen;
 }

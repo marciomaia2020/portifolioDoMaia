@@ -17636,357 +17636,376 @@
 								<div class="w3-bar w3-green">
 									<button class="w3-bar-item w3-button" onclick="openIA('Pythom')">Pythom</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('LearningPythom')">Domine Pythom</button>
+									<button class="w3-bar-item w3-button" onclick="openIA('Apostilas')">Apostilas</button>
 								</div>
 							
 								<div class="w3-container w3-border w3-large w3-justify">
-
-
-								<div22>
-									<div id="Pythom" class="w3-container ia" style="display:yes">
-										<h3>Python - Tutorial</h3>
-										<p>
-											Python é uma linguagem de programação poderosa e fácil de aprender, ideal para iniciantes e amplamente
-											utilizada em áreas como desenvolvimento web, análise de dados, inteligência artificial, automação de
-											scripts, entre outras. Este tutorial irá guiá-lo através dos primeiros passos para começar a programar em
-											Python.
-										</p>
+									<div22>
+											<div id="Pythom" class="w3-container ia" style="display:yes">
+												<h3>Python - Tutorial</h3>
+												<p>
+													Python é uma linguagem de programação poderosa e fácil de aprender, ideal para iniciantes e amplamente
+													utilizada em áreas como desenvolvimento web, análise de dados, inteligência artificial, automação de
+													scripts, entre outras. Este tutorial irá guiá-lo através dos primeiros passos para começar a programar em
+													Python.
+												</p>
+									
+												<h1>Tutorial para Iniciar no Python</h1>
+												<p>
+													Python é uma linguagem de programação poderosa e fácil de aprender, ideal para iniciantes e amplamente
+													utilizada em áreas como desenvolvimento web, análise de dados, inteligência artificial, automação de
+													scripts, entre outras. Este tutorial irá guiá-lo através dos primeiros passos para começar a programar em
+													Python.
+												</p>
+									
+												<h2>1. Instalação do Python</h2>
+									
+												<h3>Windows</h3>
+												<ol>
+													<li>
+														Acesse o site oficial do Python: <a href="https://www.python.org/" target="_blank">python.org</a>.
+													</li>
+													<li>Baixe o instalador da versão mais recente de Python para Windows.</li>
+													<li>Execute o instalador e marque a opção <b>"Add Python to PATH"</b> antes de clicar em "Install Now".</li>
+													<li>
+														Após a instalação, abra o Prompt de Comando (cmd) e digite <div class="precode"><pre><code>python --version</code></pre></div> para verificar
+														se o Python foi instalado corretamente. Faça isto tanto para macOS quanto para Linux, quando for o caso.
+													</li>
+												</ol>
+									
+												<h3>macOS</h3>
+												<ol>
+													<li>O Python 2.x vem pré-instalado no macOS, mas você deve instalar o Python 3.x.</li>
+													<li>
+														Baixe o instalador da versão mais recente de Python para macOS em <a href="https://www.python.org/"
+															target="_blank">python.org</a>.
+													</li>
+													<li>Execute o instalador e siga as instruções na tela.</li>
+													<li>
+														Após a instalação, abra o Terminal e digite <code>python3 --version</code> para verificar a instalação.
+													</li>
+												</ol>
+									
+												<h3>Linux</h3>
+												<ol>
+													<li>A maioria das distribuições Linux vem com o Python pré-instalado.</li>
+													<li>
+														Para instalar a versão mais recente, use o gerenciador de pacotes da sua distribuição. Por exemplo, no
+														Ubuntu:
+														
+														<div class="precode"><pre><code>
+				sudo apt update
+				sudo apt install python3
+														</code></pre></div>
+											
+													</li>
+													<li>Verifique a instalação digitando <code>python3 --version</code> no Terminal.</li>
+												</ol>
+									
+												<h2>2. Configuração do Ambiente de Desenvolvimento</h2>
+												<h3>Instalando um Editor de Texto ou IDE</h3>
+												<p>
+													Para escrever código Python, você pode usar um editor de texto simples ou uma IDE (Integrated Development
+													Environment). Algumas opções populares incluem:
+												</p>
+												<ul>
+													<li><b>Visual Studio Code (VS Code):</b>
+														<ul>
+															<li>
+																<a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
+															</li>
+															<li>Instale a extensão Python para VS Code.</li>
+														</ul>
+													</li>
+													<li><b>PyCharm:</b>
+														<ul>
+															<li>
+																<a href="https://www.jetbrains.com/pycharm/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
+															</li>
+															<li>Disponível em versões Community (gratuita) e Professional (paga).</li>
+														</ul>
+													</li>
+													<li><b>IDLE:</b>
+														<ul>
+															<li>
+																Não precisa efetuar o downlod, o programa ja vem na instalação do python.
+															</li>
+															<li>Encontra-se na pasta de instalação do python em "...\Lib\idlelib\idle.py".</li>
+														</ul>
+													</li>
+													<li><b>Jupyter Desktop:</b>
+														<ul>
+															<li>Instale usando o comando <code class="PipInstall">pip install notebook</code></li>
+															<li><p class="obs"><i class="fa-regular fa-eye"></i> Ao intalar usando o <code>pip</code>, saia da linha de comando do python.</p></li>
+															<li>Para executar o Jupyter chame-o no terminal usando <code class="PipInstall">jupyter notebook</code>, aguarde!</li>
+															<li>Veja as intruções no terminal de como parar o servidor, como rodar ele manualmente etc...</li>
+															<li>Será executado no navegador no endereço http://localhost:8888/tree</li>
+														</ul>
+													<li><b>Anaconda:</b>
+														<ul>
+															<li><a href="https://www.anaconda.com/download/success" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+															<li>Anaconda é uma distribuição das linguagens de programação Python e R para computação científica, que visa simplificar o gerenciamento e implantação de pacotes. A distribuição inclui pacotes de ciência de dados adequados para Windows, Linux e macOS</li>
+															<li>A ideia de instalar o Anaconda é que ele traz um pacore com a maioria das bibliotecas inclusive o Jupyter Notebook.</li>
+															<li>Use online Google Colab <a href="https://colab.research.google.com/drive/1f5hbv7Tgm9nQ-nkqRCvO7lkMernrfcNp?authuser=0">Jupyter Notebook </a></li>
+														</ul>
 							
-										<h1>Tutorial para Iniciar no Python</h1>
-										<p>
-											Python é uma linguagem de programação poderosa e fácil de aprender, ideal para iniciantes e amplamente
-											utilizada em áreas como desenvolvimento web, análise de dados, inteligência artificial, automação de
-											scripts, entre outras. Este tutorial irá guiá-lo através dos primeiros passos para começar a programar em
-											Python.
-										</p>
-							
-										<h2>1. Instalação do Python</h2>
-							
-										<h3>Windows</h3>
-										<ol>
-											<li>
-												Acesse o site oficial do Python: <a href="https://www.python.org/" target="_blank">python.org</a>.
-											</li>
-											<li>Baixe o instalador da versão mais recente de Python para Windows.</li>
-											<li>Execute o instalador e marque a opção <b>"Add Python to PATH"</b> antes de clicar em "Install Now".</li>
-											<li>
-												Após a instalação, abra o Prompt de Comando (cmd) e digite <div class="precode"><pre><code>python --version</code></pre></div> para verificar
-												se o Python foi instalado corretamente. Faça isto tanto para macOS quanto para Linux, quando for o caso.
-											</li>
-										</ol>
-							
-										<h3>macOS</h3>
-										<ol>
-											<li>O Python 2.x vem pré-instalado no macOS, mas você deve instalar o Python 3.x.</li>
-											<li>
-												Baixe o instalador da versão mais recente de Python para macOS em <a href="https://www.python.org/"
-													target="_blank">python.org</a>.
-											</li>
-											<li>Execute o instalador e siga as instruções na tela.</li>
-											<li>
-												Após a instalação, abra o Terminal e digite <code>python3 --version</code> para verificar a instalação.
-											</li>
-										</ol>
-							
-										<h3>Linux</h3>
-										<ol>
-											<li>A maioria das distribuições Linux vem com o Python pré-instalado.</li>
-											<li>
-												Para instalar a versão mais recente, use o gerenciador de pacotes da sua distribuição. Por exemplo, no
-												Ubuntu:
-												
+												<h2>2a. Continuação da configuração do Ambiente de Desenvolvimento</h2>
+												<h3>Instalando as dependências</h3>
+												<ul>
+													<li><b>Instale as dependências (Bibliotecas):</b>
+														<ul>
+															<li><code class="PipInstall">pip install dash</code> <a href="https://dash.plotly.com/installation" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
+															<li><code class="PipInstall">pip install pandas</code></li>
+															<li><code class="PipInstall">pip install sympy</code></li>
+														</ul>
+														<li>To update, run: <code class="PipInstall">python.exe -m pip install --upgrade pip</code></li>
+														<p>Conheça as principais bibliotecas <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></p>
+													</li>
+													<li><b>Servidor local (Uso contínuo):</b>
+														<ul>
+															<li><code class="PipInstall">pip install flask</code> <!-- para servidores baseados em Flask --></li>
+														</ul>
+													</li>
+													<li><b>Servidor local (Rápido para testes)</b>
+														<ul>
+															<li><code class="PipInstall">python -m http.server</code> <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+												<h2>3. Escrevendo e Executando seu Primeiro Programa Python</h2>
+												<h3>Usando o Terminal ou Prompt de Comando</h3>
+												<ol>
+													<li>Abra o Terminal (macOS/Linux) ou Prompt de Comando (Windows).</li>
+													<li>Digite <code>python</code> ou <code>py</code> (ou ainda <code>python3</code> se você estiver em um sistema onde
+														<code>python</code> se refere à versão 2.x).</li>
+													<li>
+														Digite o seguinte código e pressione Enter:
+														<div class="precode"><pre><code>
+				print("Olá, Mundo!")
+																</code></pre></div>
+													</li>
+													<li>
+														O resultado será:
+														<div class="precode"><pre><code>
+				Olá, Mundo!
+														</code></pre></div>
+													</li>
+												</ol>
+									
+												<h3>Usando um Editor de Texto ou IDE</h3>
+												<ol>
+													<li>Abra seu editor de texto ou IDE.</li>
+													<li>Crie um novo arquivo e salve-o com a extensão <code>.py</code>, por exemplo, <code>ola_mundo.py</code>.
+													</li>
+													<li>
+														Digite o seguinte código:
+														<div class="precode"><pre><code>
+				print("Olá, Mundo!")
+														</code></pre></div>
+													</li>
+													<li>
+														Salve o arquivo e execute-o. No VS Code, você pode clicar com o botão direito no arquivo e selecionar
+														"Run Python File in Terminal". No PyCharm, clique no ícone de execução ao lado do nome do arquivo.
+													</li>
+												</ol>
+									
+												<h2>4. Conceitos Básicos de Python</h2>
+									
+												<h3>Variáveis e Tipos de Dados</h3>
 												<div class="precode"><pre><code>
-							 sudo apt update
-							 sudo apt install python3
 												</code></pre></div>
 									
-											</li>
-											<li>Verifique a instalação digitando <code>python3 --version</code> no Terminal.</li>
-										</ol>
-							
-										<h2>2. Configuração do Ambiente de Desenvolvimento</h2>
-										<h3>Instalando um Editor de Texto ou IDE</h3>
-										<p>
-											Para escrever código Python, você pode usar um editor de texto simples ou uma IDE (Integrated Development
-											Environment). Algumas opções populares incluem:
-										</p>
-										<ul>
-											<li><b>Visual Studio Code (VS Code):</b>
-												<ul>
-													<li>
-														<a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
-													</li>
-													<li>Instale a extensão Python para VS Code.</li>
-												</ul>
-											</li>
-											<li><b>PyCharm:</b>
-												<ul>
-													<li>
-														<a href="https://www.jetbrains.com/pycharm/" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
-													</li>
-													<li>Disponível em versões Community (gratuita) e Professional (paga).</li>
-												</ul>
-											</li>
-											<li><b>IDLE:</b>
-												<ul>
-													<li>
-														Não precisa efetuar o downlod, o programa ja vem na instalação do python.
-													</li>
-													<li>Encontra-se na pasta de instalação do python em "...\Lib\idlelib\idle.py".</li>
-												</ul>
-											</li>
-											<li><b>Jupyter Desktop:</b>
-												<ul>
-													<li>Instale usando o comando <code class="PipInstall">pip install notebook</code></li>
-													<li><p class="obs"><i class="fa-regular fa-eye"></i> Ao intalar usando o <code>pip</code>, saia da linha de comando do python.</p></li>
-													<li>Para executar o Jupyter chame-o no terminal usando <code class="PipInstall">jupyter notebook</code>, aguarde!</li>
-													<li>Veja as intruções no terminal de como parar o servidor, como rodar ele manualmente etc...</li>
-													<li>Será executado no navegador no endereço http://localhost:8888/tree</li>
-												</ul>
-											<li><b>Anaconda:</b>
-												<ul>
-													<li><a href="https://www.anaconda.com/download/success" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-													<li>Anaconda é uma distribuição das linguagens de programação Python e R para computação científica, que visa simplificar o gerenciamento e implantação de pacotes. A distribuição inclui pacotes de ciência de dados adequados para Windows, Linux e macOS</li>
-													<li>A ideia de instalar o Anaconda é que ele traz um pacore com a maioria das bibliotecas inclusive o Jupyter Notebook.</li>
-													<li>Use online Google Colab <a href="https://colab.research.google.com/drive/1f5hbv7Tgm9nQ-nkqRCvO7lkMernrfcNp?authuser=0">Jupyter Notebook </a></li>
-												</ul>
-	
-										<h2>2a. Continuação da configuração do Ambiente de Desenvolvimento</h2>
-										<h3>Instalando as dependências</h3>
-										<ul>
-											<li><b>Instale as dependências (Bibliotecas):</b>
-												<ul>
-													<li><code class="PipInstall">pip install dash</code> <a href="https://dash.plotly.com/installation" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
-													<li><code class="PipInstall">pip install pandas</code></li>
-													<li><code class="PipInstall">pip install sympy</code></li>
-												</ul>
-												<li>To update, run: <code class="PipInstall">python.exe -m pip install --upgrade pip</code></li>
-												<p>Conheça as principais bibliotecas <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></p>
-											</li>
-											<li><b>Servidor local (Uso contínuo):</b>
-												<ul>
-													<li><code class="PipInstall">pip install flask</code> <!-- para servidores baseados em Flask --></li>
-												</ul>
-											</li>
-											<li><b>Servidor local (Rápido para testes)</b>
-												<ul>
-													<li><code class="PipInstall">python -m http.server</code> <a href="bibliotecasPython.html" target="_blank"><i class="fa-regular fa-eye"></i></a></li>
-												</ul>
-											</li>
-										</ul>
-										<h2>3. Escrevendo e Executando seu Primeiro Programa Python</h2>
-										<h3>Usando o Terminal ou Prompt de Comando</h3>
-										<ol>
-											<li>Abra o Terminal (macOS/Linux) ou Prompt de Comando (Windows).</li>
-											<li>Digite <code>python</code> ou <code>py</code> (ou ainda <code>python3</code> se você estiver em um sistema onde
-												<code>python</code> se refere à versão 2.x).</li>
-											<li>
-												Digite o seguinte código e pressione Enter:
-												<div class="precode"><pre><code>
-							 print("Olá, Mundo!")
-												        </code></pre></div>
-											</li>
-											<li>
-												O resultado será:
-												<div class="precode"><pre><code>
-							 Olá, Mundo!
+												<h3>Estruturas de Controle</h3>
+												<h4>Condicionais</h4>
+												<div class="precode">
+													<pre><code>
+				    idade = 18
+					if idade >= 18:
+						print("Você é maior de idade.")
+					else:
+						print("Você é menor de idade.")
 												</code></pre></div>
-											</li>
-										</ol>
-							
-										<h3>Usando um Editor de Texto ou IDE</h3>
-										<ol>
-											<li>Abra seu editor de texto ou IDE.</li>
-											<li>Crie um novo arquivo e salve-o com a extensão <code>.py</code>, por exemplo, <code>ola_mundo.py</code>.
-											</li>
-											<li>
-												Digite o seguinte código:
+									
+												<h4>Laços</h4>
 												<div class="precode"><pre><code>
-							 print("Olá, Mundo!")
+					# Laço for
+						for i in range(5):
+							print(i)
+									
+					# Laço while
+						contador = 0
+						while contador < 5:
+							print(contador)
+							contador += 1
 												</code></pre></div>
-											</li>
-											<li>
-												Salve o arquivo e execute-o. No VS Code, você pode clicar com o botão direito no arquivo e selecionar
-												"Run Python File in Terminal". No PyCharm, clique no ícone de execução ao lado do nome do arquivo.
-											</li>
-										</ol>
-							
-										<h2>4. Conceitos Básicos de Python</h2>
-							
-										<h3>Variáveis e Tipos de Dados</h3>
-										<div class="precode"><pre><code>
- 										</code></pre></div>
-							
-										<h3>Estruturas de Controle</h3>
-										<h4>Condicionais</h4>
-										<div class="precode"><pre><code>
-							 idade = 18
-							 if idade >= 18:
-								print("Você é maior de idade.")
-							 else:
-								print("Você é menor de idade.")
-										</code></pre></div>
-							
-										<h4>Laços</h4>
-										<div class="precode"><pre><code>
-							 # Laço for
-							 for i in range(5):
-								print(i)
-							
-							 # Laço while
-							 contador = 0
-							 while contador < 5:
-								print(contador)
-								contador += 1
-										</code></pre></div>
-							
-										<h3>Funções</h3>
-										<div class="precode"><pre><code>
-							 def saudacao(nome):
-								print(f"Olá, {nome}!")
-							
-							 saudacao("Maria")
-										</code></pre></div>
-							
-										<h2>5. Trabalhando com Listas e Dicionários</h2>
-							
-										<h3>Listas</h3>
-										<div class="precode"><pre><code>
-							 frutas = ["maçã", "banana", "cereja"]
-							 print(frutas[0])  # Acessando o primeiro elemento
-							 frutas.append("laranja")  # Adicionando um elemento
-							 print(frutas)
-										</code></pre></div>
-							
-										<h3>Dicionários</h3>
-										<div class="precode"><pre><code>
-							 aluno = {"nome": "Carlos", "idade": 22, "curso": "Engenharia"}
-							 print(aluno["nome"])  # Acessando o valor da chave "nome"
-							 aluno["cidade"] = "São Paulo"  # Adicionando uma nova chave-valor
-							 print(aluno)
-										</code></pre></div>
-							
-										<h2>6. Importando Módulos</h2>
-										<p>
-											Python possui uma vasta biblioteca padrão e você pode importar módulos para adicionar funcionalidades ao
-											seu programa.
-										</p>
-										<div class="precode"><pre><code>
-							 import math
-							 print(math.sqrt(16))  # Raiz quadrada de 16
-										</code></pre></div>
-							
-										<h2>7. Próximos Passos</h2>
-										<p>
-											Para continuar aprendendo Python, você pode explorar os seguintes recursos:
-										</p>
-										<ul>
-											<li><b>Documentação Oficial do Python:</b>
-												<a href="https://docs.python.org/3/" target="_blank">docs.python.org</a>
-											</li>
-											<li><b>Cursos Online:</b>
+									
+												<h3>Funções</h3>
+												<div class="precode"><pre><code>
+					def saudacao(nome):
+						print(f"Olá, {nome}!")
+						saudacao("Maria")
+												</code></pre></div>
+									
+												<h2>5. Trabalhando com Listas e Dicionários</h2>
+									
+												<h3>Listas</h3>
+												<div class="precode"><pre><code>
+					frutas = ["maçã", "banana", "cereja"]
+						print(frutas[0])  # Acessando o primeiro elemento
+						frutas.append("laranja")  # Adicionando um elemento
+						print(frutas)
+												</code></pre></div>
+									
+												<h3>Dicionários</h3>
+												<div class="precode"><pre><code>
+			aluno = {"nome": "Carlos", "idade": 22, "curso": "Engenharia"}
+				print(aluno["nome"])  # Acessando o valor da chave "nome"
+				aluno["cidade"] = "São Paulo"  # Adicionando uma nova chave-valor
+				print(aluno)
+												</code></pre></div>
+									
+												<h2>6. Importando Módulos</h2>
+												<p>
+													Python possui uma vasta biblioteca padrão e você pode importar módulos para adicionar funcionalidades ao
+													seu programa.
+												</p>
+												<div class="precode"><pre><code>
+						import math
+							print(math.sqrt(16))  # Raiz quadrada de 16
+												</code></pre></div>
+									
+												<h2>7. Próximos Passos</h2>
+												<p>
+													Para continuar aprendendo Python, você pode explorar os seguintes recursos:
+												</p>
 												<ul>
-													<li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
-													<li><a href="https://www.edx.org/" target="_blank">edX</a></li>
-													<li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+													<li><b>Documentação Oficial do Python:</b>
+														<a href="https://docs.python.org/3/" target="_blank">docs.python.org</a>
+													</li>
+													<li><b>Cursos Online:</b>
+														<ul>
+															<li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+															<li><a href="https://www.edx.org/" target="_blank">edX</a></li>
+															<li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+														</ul>
+													</li>
+													<li><b>Tutoriais e Blogs:</b>
+														<ul>
+															<li><a href="https://realpython.com/" target="_blank">Real Python</a></li>
+															<li><a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">TutorialsPoint</a></li>
+															<li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools</a></li>
+														</ul>
+													</li>
 												</ul>
-											</li>
-											<li><b>Tutoriais e Blogs:</b>
-												<ul>
-													<li><a href="https://realpython.com/" target="_blank">Real Python</a></li>
-													<li><a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">TutorialsPoint</a></li>
-													<li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools</a></li>
-												</ul>
-											</li>
-										</ul>
-										<p>
-											Continue praticando e explorando a linguagem para se tornar um desenvolvedor Python proficiente!
-										</p>
-									</div>
-									<h2>Elementos Básicos em Programação com Python</h2>
-									<h3>1 - Textos, Números e Variáveis</h3>
-									<ul>
-										<li><b>Variáveis:</b> São utilizadas para armazenar dados como strings, inteiros, floats, etc.</li>
-										<li><b>Strings:</b> Sequências de caracteres.</li>
-										<li><b>Inteiros:</b> Números inteiros, como -1, 0, 1, 2, etc.</li>
-										<li><b>Floats:</b> Números decimais, por exemplo, 3.14, 2.718.</li>
-									</ul>
-									<h3>2 - Operações com Elementos Básicos</h3>
-									<ul>
-										<li><b>Operações Matemáticas:</b> Incluem soma, multiplicação, subtração, divisão, etc.</li>
-										<li><b>Substituir um texto por um número:</b> Converter um texto que representa um número em um valor numérico.</li>
-										<li><b>Concatenar textos:</b> Juntar duas ou mais strings.</li>
-										<li><b>Potenciação:</b> Elevar um número a uma potência.</li>
-										<li><b>Porcentagem:</b> Calcular a porcentagem de um valor.</li>
-									</ul>
-									<h3>3 - Condicionais e Comparações</h3>
-									<ul>
-										<li><b>If:</b> Estrutura condicional para executar código se uma condição for verdadeira.</li>
-										<li><b>Else:</b> Parte do if que executa um bloco de código se a condição for falsa.</li>
-									</ul>
-									<h3>4 - Estrutura de Repetição</h3>
-									<ul>
-										<li><b>For e While:</b> Loops para executar um código repetidamente.</li>
-										<li><b>Analisar todos os funcionários:</b> Exemplo de iteração sobre uma lista de funcionários.</li>
-										<li><b>Analisar todos os mêses de vendas:</b> Iterar sobre uma lista de meses para análise.</li>
-										<li><b>Analisar todos os preços dos produtos:</b> Loop para processar uma lista de preços.</li>
-									</ul>
-									<h3>5 - Iterables</h3>
-									<ul>
-										<li><b>Listas:</b> Estruturas de dados para armazenar uma coleção de itens.</li>
-										<li><b>Tuplas:</b> Sequências ordenadas imutáveis de itens.</li>
-										<li><b>Dicionários:</b> Estrutura chave-valor para armazenamento de dados.</li>
-										<li><b>Sets:</b> Coleções desordenadas de itens únicos.</li>
-									</ul>
-									<h3>6 - Bibliotecas & Módulos</h3>
-									<ul>
-										<li><b>Saber importar:</b> Importar bibliotecas e módulos em Python para extender funcionalidades.</li>
-										<li><b>Ler a documentação:</b> Habilidade crucial para entender como usar bibliotecas.</li>
-										<li><b>Exemplo:</b> Análise de dados usando Pandas e NumPy.</li>
-									</ul>
-									<h3>7 - Aprender a Ler uma Documentação / API</h3>
-									<ul>
-										<li><b>APIs prontas:</b> Utilizar APIs existentes como cotação do dólar.</li>
-										<li><b>Interpretar documentação:</b> Habilidade para entender e aplicar documentação de APIs.</li>
-									</ul>
-									<h3>8 - Funções, Expressões Lambda e List Comprehension</h3>
-									<ul>
-										<li><b>Funções:</b> Bloco de código reutilizável que realiza uma tarefa específica.</li>
-										<li><b>Expressões Lambda:</b> Funções anônimas de uma linha.</li>
-										<li><b>List Comprehension:</b> Construir listas de maneira concisa.</li>
-									</ul>
-									<h3>9 e 10 - Áreas Específicas</h3>
-									<ul>
-										<li><b>Ciência de Dados:</b>
-											<ul>
-												<li><b>9. Pandas, NumPy e Bibliotecas de Gráficos:</b> Ferramentas essenciais para análise e visualização de dados.</li>
-												<li><b>10. Obtenção e Tratamento de Dados:</b> Importação de dados de bancos de dados, scraping, tratamento de valores vazios.</li>
-											</ul>
-										</li>
-										<li><b>Desenvolvimento Web:</b>
-											<ul>
-												<li><b>9. Orientação a Objetos:</b> Fundamentos necessários para estruturar projetos web.</li>
-												<li><b>10. Integração Backend Frontend:</b> Uso de frameworks como Flask ou Django.</li>
-											</ul>
-										</li>
-										<li><b>Automação:</b>
-											<ul>
-												<li><b>9. Trabalhar com Arquivos, Caminhos, Tabelas:</b> Manipulação de dados e automação de processos.</li>
-												<li><b>10. Ferramentas de Automação:</b> RPA (Automatização Robótica de Processos) e Web Scraping.</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
+												<p>
+													Continue praticando e explorando a linguagem para se tornar um desenvolvedor Python proficiente!
+												</p>
+											</div>
+											<div id="LearningPythom" class="w3-container ia" style="display:none">
+														<h2>Elementos Básicos</h2>
+														<h3>Elementos Básicos em Programação com Python</h3>
+														<h3>1 - Textos, Números e Variáveis</h3>
+															<ul>
+																<li><b>Variáveis:</b> São utilizadas para armazenar dados como strings, inteiros, floats, etc.</li>
+																<li><b>Strings:</b> Sequências de caracteres.</li>
+																<li><b>Inteiros:</b> Números inteiros, como -1, 0, 1, 2, etc.</li>
+																<li><b>Floats:</b> Números decimais, por exemplo, 3.14, 2.718.</li>
+															</ul>
+															<h3>2 - Operações com Elementos Básicos</h3>
+															<ul>
+																<li><b>Operações Matemáticas:</b> Incluem soma, multiplicação, subtração, divisão, etc.</li>
+																<li><b>Substituir um texto por um número:</b> Converter um texto que representa um número em um valor numérico.</li>
+																<li><b>Concatenar textos:</b> Juntar duas ou mais strings.</li>
+																<li><b>Potenciação:</b> Elevar um número a uma potência.</li>
+																<li><b>Porcentagem:</b> Calcular a porcentagem de um valor.</li>
+															</ul>
+															<h3>3 - Condicionais e Comparações</h3>
+															<ul>
+																<li><b>If:</b> Estrutura condicional para executar código se uma condição for verdadeira.</li>
+																<li><b>Else:</b> Parte do if que executa um bloco de código se a condição for falsa.</li>
+															</ul>
+															<h3>4 - Estrutura de Repetição</h3>
+															<ul>
+																<li><b>For e While:</b> Loops para executar um código repetidamente.</li>
+																<li><b>Analisar todos os funcionários:</b> Exemplo de iteração sobre uma lista de funcionários.</li>
+																<li><b>Analisar todos os mêses de vendas:</b> Iterar sobre uma lista de meses para análise.</li>
+																<li><b>Analisar todos os preços dos produtos:</b> Loop para processar uma lista de preços.</li>
+															</ul>
+															<h3>5 - Iterables</h3>
+															<ul>
+																<li><b>Listas:</b> Estruturas de dados para armazenar uma coleção de itens.</li>
+																<li><b>Tuplas:</b> Sequências ordenadas imutáveis de itens.</li>
+																<li><b>Dicionários:</b> Estrutura chave-valor para armazenamento de dados.</li>
+																<li><b>Sets:</b> Coleções desordenadas de itens únicos.</li>
+															</ul>
+															<h3>6 - Bibliotecas & Módulos</h3>
+															<ul>
+																<li><b>Saber importar:</b> Importar bibliotecas e módulos em Python para extender funcionalidades.</li>
+																<li><b>Ler a documentação:</b> Habilidade crucial para entender como usar bibliotecas.</li>
+																<li><b>Exemplo:</b> Análise de dados usando Pandas e NumPy.</li>
+															</ul>
+															<h3>7 - Aprender a Ler uma Documentação / API</h3>
+															<ul>
+																<li><b>APIs prontas:</b> Utilizar APIs existentes como cotação do dólar.</li>
+																<li><b>Interpretar documentação:</b> Habilidade para entender e aplicar documentação de APIs.</li>
+															</ul>
+															<h3>8 - Funções, Expressões Lambda e List Comprehension</h3>
+															<ul>
+																<li><b>Funções:</b> Bloco de código reutilizável que realiza uma tarefa específica.</li>
+																<li><b>Expressões Lambda:</b> Funções anônimas de uma linha.</li>
+																<li><b>List Comprehension:</b> Construir listas de maneira concisa.</li>
+															</ul>
+															<h3>9 e 10 - Áreas Específicas</h3>
+															<ul>
+																<li><b>Ciência de Dados:</b>
+																	<ul>
+																		<li><b>9. Pandas, NumPy e Bibliotecas de Gráficos:</b> Ferramentas essenciais para análise e visualização de dados.</li>
+																		<li><b>10. Obtenção e Tratamento de Dados:</b> Importação de dados de bancos de dados, scraping, tratamento de valores vazios.</li>
+																	</ul>
+																</li>
+																<li><b>Desenvolvimento Web:</b>
+																	<ul>
+																		<li><b>9. Orientação a Objetos:</b> Fundamentos necessários para estruturar projetos web.</li>
+																		<li><b>10. Integração Backend Frontend:</b> Uso de frameworks como Flask ou Django.</li>
+																	</ul>
+																</li>
+																<li><b>Automação:</b>
+																	<ul>
+																		<li><b>9. Trabalhar com Arquivos, Caminhos, Tabelas:</b> Manipulação de dados e automação de processos.</li>
+																		<li><b>10. Ferramentas de Automação:</b> RPA (Automatização Robótica de Processos) e Web Scraping.</li>
+																	</ul>
+																</li>
+															</ul>
+											</div>
+											<div id="Apostilas" class="w3-container ia" style="display:none">
+												<h3>Apostilas</h3>
+												<h4>Baixe aqui apostilas sobre Python</h4>
+												<p>Estão em *.pdf pronta para impressão.</p>
+												<p class="w3-center">
+													<button class="w3-button w3-green">
+														<i class="fa fa-download w3-margin-right"></i>
+														<a href="docs/1-Algoritimo_e_Programacao.pdf">Algoritimo e Programação</a></button>
+													<button class="w3-button w3-green">
+														<i class="fa fa-download w3-margin-right"></i>
+														<a href="docs/2-Apostila_Python.pdf">Apostila Python</a></button>
+													<button class="w3-button w3-green">
+														<i class="fa fa-download w3-margin-right"></i>
+														<a href="docs/3-Problemas_ResolvidosEmPython.pdf">Problemas Resolvidos</a></button>
+												</p>
+									
+												<h3>Apostilas</h3>
+												<h4>Veja as versões on-line das apostilas.</h4>
+												
+												<a href="docs/apostilas_python.html" target="_blank">Apostila Python</a></button>
+												<a href="docs/problemas_resolvidos_em_python.html" target="_blank">Problemas Resolvidos</a></button>
 
 
 
-
-
-
-
-
-								</div22>
+											</div>
+									</div22>
+								</div>	
 							</div>	
-						</div>	
+							
 									
 							<h1>Dicas para um bom TCC...</h1>
 
@@ -36278,11 +36297,11 @@
 										<h3>Estruturas de Controle</h3>
 										<h4>Condicionais</h4>
 										<div class="precode"><pre><code>
-							 idade = 18
-							 if idade >= 18:
-								print("Você é maior de idade.")
-							 else:
-								print("Você é menor de idade.")
+					idade = 18
+					if idade >= 18:
+					print("Você é maior de idade.")
+					else:
+					print("Você é menor de idade.")
 										</code></pre></div>
 							
 										<h4>Laços</h4>
@@ -36310,18 +36329,18 @@
 							
 										<h3>Listas</h3>
 										<div class="precode"><pre><code>
-							 frutas = ["maçã", "banana", "cereja"]
-							 print(frutas[0])  # Acessando o primeiro elemento
-							 frutas.append("laranja")  # Adicionando um elemento
-							 print(frutas)
+				frutas = ["maçã", "banana", "cereja"]
+					print(frutas[0])  # Acessando o primeiro elemento
+					frutas.append("laranja")  # Adicionando um elemento
+					print(frutas)
 										</code></pre></div>
 							
 										<h3>Dicionários</h3>
 										<div class="precode"><pre><code>
-							 aluno = {"nome": "Carlos", "idade": 22, "curso": "Engenharia"}
-							 print(aluno["nome"])  # Acessando o valor da chave "nome"
-							 aluno["cidade"] = "São Paulo"  # Adicionando uma nova chave-valor
-							 print(aluno)
+				aluno = {"nome": "Carlos", "idade": 22, "curso": "Engenharia"}
+					print(aluno["nome"])  # Acessando o valor da chave "nome"
+					aluno["cidade"] = "São Paulo"  # Adicionando uma nova chave-valor
+					print(aluno)
 										</code></pre></div>
 							
 										<h2>6. Importando Módulos</h2>
@@ -36330,8 +36349,8 @@
 											seu programa.
 										</p>
 										<div class="precode"><pre><code>
-							 import math
-							 print(math.sqrt(16))  # Raiz quadrada de 16
+				import math
+				print(math.sqrt(16))  # Raiz quadrada de 16
 										</code></pre></div>
 							
 										<h2>7. Próximos Passos</h2>
