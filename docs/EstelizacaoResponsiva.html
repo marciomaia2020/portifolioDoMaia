@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding: 20px;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Permite rolagem horizontal se necessário */
+        }
+        button, input {
+            width: 100%;
+            max-width: 200px; /* Limite máximo de largura para botões e inputs */
+            margin: 5px 0; /* Adiciona um pequeno espaçamento */
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .button-container {
+                flex-direction: column; /* Alinha os botões verticalmente */
+                align-items: center;
+            }
+            button {
+                width: 100%; /* Botões ocupam toda a largura disponível */
+                margin: 5px 0;
+            }
+            .number-selection input {
+                width: 100%; /* Inputs ocupam toda a largura disponível */
+                max-width: none; /* Remove o limite máximo de largura */
+            }
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        #jogosGerados {
+            word-wrap: break-word;
+            text-align: center;
+        }
+        #numeros {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto; /* Ajusta automaticamente a largura das colunas */
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        td {
+            background-color: #444;
+        }
+        pre {
+            background-color: #2e3440;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            width: 100%;
+            max-width: 800px;
+        }
+        code {
+            color: #d8dee9;
+        }
+        .keyword { color: #81a1c1; }
+        .built_in { color: #8fbcbb; }
+        .number { color: #b48ead; }
+        .string { color: #a3be8c; }
+        .comment { color: #616e88; }
+        .function { color: #88c0d0; }
+        .explanation {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Design Responsivo</h1>
+        <p>Para garantir que todos os elementos da sua página estejam visíveis e bem ajustados para diferentes tamanhos de tela, você pode usar algumas técnicas de design responsivo. Aqui estão algumas sugestões para melhorar a responsividade da sua página:</p>
+        
+        <h2>1. Flexbox e Grid Layout</h2>
+        <p class="explanation">Utilize o Flexbox ou o Grid Layout para garantir que os elementos se ajustem de forma flexível ao tamanho da tela.</p>
+        <pre><code>
+/* Utilize flexbox para a .container e os elementos internos */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Certifique-se de que a tabela também se ajuste corretamente */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+/* Ajuste o tamanho dos botões e inputs para diferentes tamanhos de tela */
+button, input {
+    width: 100%;
+    max-width: 200px; /* Limite máximo de largura para botões e inputs */
+    margin: 5px 0; /* Adiciona um pequeno espaçamento */
+}
+        </code></pre>
+
+        <h2>2. Media Queries</h2>
+        <p class="explanation">Utilize media queries para ajustar o estilo com base no tamanho da tela.</p>
+        <pre><code>
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .button-container {
+        flex-direction: column; /* Alinha os botões verticalmente */
+        align-items: center;
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura disponível */
+        margin: 5px 0;
+    }
+
+    .number-selection input {
+        width: 100%; /* Inputs ocupam toda a largura disponível */
+        max-width: none; /* Remove o limite máximo de largura */
+    }
+}
+        </code></pre>
+
+        <h2>3. Overflow e Scroll</h2>
+        <p class="explanation">Certifique-se de que elementos que podem exceder a largura da tela sejam roláveis.</p>
+        <pre><code>
+.table-container {
+    overflow-x: auto;
+}
+
+#jogosGerados {
+    word-wrap: break-word;
+    text-align: center;
+}
+        </code></pre>
+
+        <h2>4. Ajuste da Tabela</h2>
+        <p class="explanation">Certifique-se de que a tabela se ajuste corretamente dentro do contêiner.</p>
+        <pre><code>
+#numeros {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Ajusta automaticamente a largura das colunas */
+}
+        </code></pre>
+
+        <h2>5. Verificação e Testes</h2>
+        <p class="explanation">Teste em diferentes dispositivos e ajuste o zoom do navegador para garantir que todos os elementos sejam visíveis e funcionem conforme o esperado.</p>
+    
+        <p>Veja um exemplo <a href="https://megasenades.netlify.app" target="_blank">aqui</a></p>
+
+    </div>
+
+
+</body>
+</html>
