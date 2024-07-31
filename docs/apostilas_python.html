@@ -12,6 +12,7 @@
         }
         pre {
             background-color: #2e3440;
+			display: initial-scale;
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
@@ -28,16 +29,35 @@
         h2 {
             border-bottom: 2px solid #4c566a;
             padding-bottom: 5px;
+			color: red;
         }
+		li{
+			font-size: 11px;
+		}
     </style>
 </head>
 <body>
 
     <h1>Apostila do Desenvolvedor Python</h1>
+	
+	
+	<h3><i><u>Resumo da Instalação do Python</u></i></h3>
 
-<h3>ÎNDICE</h3>
+    <p>Para instalar o Python, siga estes passos:</p>
+    <ul>
+        <li><strong>Baixar o Instalador:</strong> Acesse o site oficial do Python em <a href="https://www.python.org/downloads/" target="_blank" style="color: #81a1c1;">python.org</a> e baixe a versão mais recente do Python para o seu sistema operacional.</li>
+        <li><strong>Executar o Instalador:</strong> Abra o arquivo de instalação baixado e execute-o. Certifique-se de marcar a opção <code>Add Python to PATH</code> antes de clicar em <code>Install Now</code>.</li>
+        <li><strong>Verificar a Instalação:</strong> Após a instalação, abra o terminal ou prompt de comando e digite <code>python --version</code> ou <code>python3 --version</code> para verificar se o Python foi instalado corretamente.</li>
+        <li><strong>Instalar Pacotes Adicionais:</strong> Para gerenciar pacotes adicionais, use o <code>pip</code>, que é o gerenciador de pacotes do Python. Por exemplo, para instalar a biblioteca <code>requests</code>, digite <code>pip install requests</code>.</li>
+    </ul>
 
-    <h4>Programação Orientada a Objetos (POO)</h4>
+	
+	
+	
+
+<h3><i><u>Indice</u></i></h3>
+
+    <h4>1 - Programação Orientada a Objetos (POO)</h4>
     <ul>
         <li>Definição de classes e objetos</li>
         <li>Herança</li>
@@ -48,71 +68,68 @@
         <li>Exemplo de implementação com classes e métodos</li>
     </ul>
 
-    <h4>Manipulação Avançada de Arquivos</h2>
+    <h4>2 - Manipulação Avançada de Arquivos</h2>
     <ul>
         <li>Leitura e escrita de arquivos CSV usando o módulo <code>csv</code></li>
         <li>Leitura e escrita de arquivos JSON usando o módulo <code>json</code></li>
     </ul>
 
-    <h4>Conceitos de Concorrência</h2>
+    <h4>3 - Conceitos de Concorrência</h2>
     <ul>
         <li>Programação com threads usando o módulo <code>threading</code></li>
         <li>Programação assíncrona com corrotinas usando o módulo <code>asyncio</code></li>
     </ul>
 
-    <h4>Desenvolvimento e Deployment de Aplicações</h2>
+    <h4>4 - Desenvolvimento e Deployment de Aplicações</h2>
     <ul>
         <li>Criação e uso de ambientes virtuais com <code>venv</code></li>
         <li>Uso de Docker para containerização de aplicações</li>
         <li>Exemplo de Dockerfile para uma aplicação Python</li>
     </ul>
 
-    <h4>Segurança</h2>
+    <h4>5 - Segurança</h2>
     <ul>
         <li>Criptografia de dados usando a biblioteca <code>cryptography</code></li>
         <li>Exemplos de criptografia e descriptografia</li>
     </ul>
 
-    <h4>Desenvolvimento de Interfaces Gráficas</h2>
+    <h4>6 - Desenvolvimento de Interfaces Gráficas</h2>
     <ul>
         <li>Criação de GUIs com <code>Tkinter</code></li>
         <li>Exemplo de uma aplicação simples com uma janela e um rótulo</li>
     </ul>
 
-    <h4>Interação com Banco de Dados</h2>
+    <h4>7 - Interação com Banco de Dados</h2>
     <ul>
         <li>Criação e manipulação de bancos de dados SQLite</li>
         <li>Exemplos de criação de banco e inserção de dados</li>
     </ul>
 
-    <h4>Automação e Scripts</h2>
+    <h4>8 - Automação e Scripts</h2>
     <ul>
         <li>Automação de tarefas básicas usando o módulo <code>os</code></li>
         <li>Exemplos de listagem de arquivos em um diretório</li>
     </ul>
 
-    <h4>Análise de Dados e Machine Learning</h2>
+    <h4>9 - Análise de Dados e Machine Learning</h2>
     <ul>
         <li>Manipulação de dados com <code>pandas</code></li>
         <li>Visualização de dados com <code>matplotlib</code></li>
         <li>Exemplo de criação e visualização de um DataFrame</li>
     </ul>
 
-    <h4>Princípios de Design de Software</h2>
+    <h4>10 - Princípios de Design de Software</h2>
     <ul>
         <li>Exemplo de padrão de design Singleton</li>
         <li>Aplicação do padrão para garantir uma única instância de uma classe</li>
     </ul>
 
+<h2>Conceitos Básicos</h2>
 
 
 
 
-
-
-    <h2>Conceitos Básicos</h2>
-
-    <h3>Variáveis e Tipos de Dados:</h3>
+    <h4>Variáveis e Tipos de Dados:</h3>
     <pre><code class="python">
 nome = <span class="string">"João"</span>  <span class="comment"># String</span>
 idade = <span class="number">25</span>     <span class="comment"># Inteiro</span>
@@ -120,7 +137,7 @@ altura = <span class="number">1.75</span>  <span class="comment"># Float</span>
 ativo = <span class="keyword">True</span>   <span class="comment"># Booleano</span>
     </code></pre>
 
-    <h3>Estruturas de Controle:</h3>
+    <h4>Estruturas de Controle:</h3>
     <pre><code class="python">
 <span class="comment"># Condicional</span>
 <span class="keyword">if</span> idade &gt; <span class="number">18</span>:
@@ -137,7 +154,7 @@ ativo = <span class="keyword">True</span>   <span class="comment"># Booleano</sp
     idade += <span class="number">1</span>
     </code></pre>
 
-    <h3>Funções:</h3>
+    <h4>Funções:</h3>
     <pre><code class="python">
 <span class="keyword">def</span> soma(a, b):
     <span class="keyword">return</span> a + b
@@ -146,7 +163,7 @@ resultado = soma(<span class="number">2</span>, <span class="number">3</span>)
 <span class="built_in">print</span>(resultado)  <span class="comment"># Saída: 5</span>
     </code></pre>
 
-    <h3>Manipulação de Arquivos:</h3>
+    <h4>Manipulação de Arquivos:</h3>
     <pre><code class="python">
 <span class="comment"># Escrever em um arquivo</span>
 <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'arquivo.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:
@@ -158,15 +175,23 @@ resultado = soma(<span class="number">2</span>, <span class="number">3</span>)
     <span class="built_in">print</span>(conteudo)
     </code></pre>
 
-    <h2>Conceitos Intermediários</h2>
+ 
 
-    <h3>List Comprehensions:</h3>
+
+ <h2>Conceitos Intermediários</h2>
+
+
+
+
+
+
+    <h4>List Comprehensions:</h3>
     <pre><code class="python">
 quadrados = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]
 <span class="built_in">print</span>(quadrados)  <span class="comment"># Saída: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span>
     </code></pre>
 
-    <h3>Decorators:</h3>
+    <h4>Decorators:</h3>
     <pre><code class="python">
 <span class="keyword">def</span> meu_decorator(func):
     <span class="keyword">def</span> wrapper():
@@ -186,7 +211,7 @@ diz_oi()
 <span class="comment"># Algo depois da função</span>
     </code></pre>
 
-    <h3>Generators:</h3>
+    <h4>Generators:</h3>
     <pre><code class="python">
 <span class="keyword">def</span> meu_generator():
     <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):
@@ -196,7 +221,7 @@ diz_oi()
     <span class="built_in">print</span>(valor)
     </code></pre>
 
-    <h3>Context Managers:</h3>
+    <h4>Context Managers:</h3>
     <pre><code class="python">
 <span class="keyword">class</span> MeuContexto:
     <span class="keyword">def</span> <span class="function">__enter__</span>(self):
@@ -213,10 +238,19 @@ diz_oi()
 <span class="comment"># Dentro do contexto</span>
 <span class="comment"># Saindo do contexto</span>
     </code></pre>
+	
+	
+	
+	
+	
 
-    <h2>Conceitos Avançados</h2>
+ <h2>Conceitos Avançados</h2>
 
-    <h3>Programação Orientada a Objetos (POO):</h3>
+
+
+
+
+    <h4>Programação Orientada a Objetos (POO):</h3>
     <pre><code class="python">
 <span class="keyword">class</span> <span class="built_in">Animal</span>:
     <span class="keyword">def</span> <span class="function">__init__</span>(self, nome):
@@ -235,7 +269,7 @@ animal.fazer_som()  <span class="comment"># Saída: Som genérico</span>
 cachorro.fazer_som()  <span class="comment"># Saída: Au au!</span>
     </code></pre>
 
-    <h3>Manipulação Avançada de Arquivos:</h3>
+    <h4>Manipulação Avançada de Arquivos:</h3>
     <pre><code class="python">
 <span class="comment"># Trabalhar com CSV</span>
 import csv
@@ -253,7 +287,7 @@ dados = {<span class="string">'nome'</span>: <span class="string">'Maria'</span>
     json.dump(dados, jsonfile, indent=<span class="number">4</span>)
     </code></pre>
 
-    <h3>Conceitos de Concorrência:</h3>
+    <h4>Conceitos de Concorrência:</h3>
     <pre><code class="python">
 import threading
 
@@ -272,7 +306,7 @@ import asyncio
 <span class="built_in">asyncio</span>.<span class="built_in">run</span>(minha_corrotina())
     </code></pre>
 
-    <h3>Desenvolvimento e Deployment de Aplicações:</h3>
+    <h4>Desenvolvimento e Deployment de Aplicações:</h3>
     <pre><code class="python">
 <span class="comment"># Criar ambiente virtual</span>
 <span class="keyword">python -m venv</span> <span class="string">"meu_ambiente"</span>
@@ -285,7 +319,7 @@ import asyncio
 <span class="keyword">CMD</span> [<span class="string">'python'</span>, <span class="string">'app.py'</span>]
     </code></pre>
 
-    <h3>Segurança:</h3>
+    <h4>Segurança:</h3>
     <pre><code class="python">
 from cryptography.fernet import Fernet
 
@@ -299,7 +333,7 @@ texto_decifrado = fernet.decrypt(texto_criptografado).decode()
 <span class="built_in">print</span>(texto_decifrado)
     </code></pre>
 
-    <h3>Desenvolvimento de Interfaces Gráficas:</h3>
+    <h4>Desenvolvimento de Interfaces Gráficas:</h3>
     <pre><code class="python">
 import tkinter as tk
 
@@ -309,7 +343,7 @@ label.pack()
 root.mainloop()
     </code></pre>
 
-    <h3>Interação com Banco de Dados:</h3>
+    <h4>Interação com Banco de Dados:</h3>
     <pre><code class="python">
 import sqlite3
 
@@ -328,7 +362,7 @@ import sqlite3
     conexao.close()
     </code></pre>
 
-    <h3>Automação e Scripts:</h3>
+    <h4>Automação e Scripts:</h3>
     <pre><code class="python">
 import os
 
@@ -339,7 +373,7 @@ import os
 listar_arquivos()
     </code></pre>
 
-    <h3>Análise de Dados e Machine Learning:</h3>
+    <h4>Análise de Dados e Machine Learning:</h3>
     <pre><code class="python">
 import pandas as pd
 import numpy as np
@@ -358,7 +392,7 @@ dados.plot(x=<span class="string">'Nome'</span>, y=<span class="string">'Idade'<
 plt.show()
     </code></pre>
 
-    <h3>Princípios de Design de Software:</h3>
+    <h4>Princípios de Design de Software:</h3>
     <pre><code class="python">
 <span class="comment"># Exemplo de Padrão Singleton</span>
 class Singleton:
