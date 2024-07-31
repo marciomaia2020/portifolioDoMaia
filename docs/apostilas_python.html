@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostila do Desenvolvedor Python</title>
     <style>
+		* {line-height: 1.5em}
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
+			color: white;
+			background-color: black;
+			font-family: Arial, sans-serif;
         }
         pre {
             background-color: #2e3440;
@@ -26,14 +27,17 @@
         .string { color: #a3be8c; }
         .comment { color: #616e88; }
         .function { color: #88c0d0; }
-        h2 {
+		.center{text-align: center}
+        li{font-size: 12px;}
+		h2 {
             border-bottom: 2px solid #4c566a;
             padding-bottom: 5px;
 			color: red;
         }
-		li{
-			font-size: 11px;
-		}
+		h3{color: blue}
+		h4{color: yellow}
+		footer{text-align: right}
+	
     </style>
 </head>
 <body>
@@ -41,21 +45,22 @@
     <h1>Apostila do Desenvolvedor Python</h1>
 	
 	
-	<h3><i><u>Resumo da Instalação do Python</u></i></h3>
+	<h3>Resumo da Instalação do Python</h3>
 
     <p>Para instalar o Python, siga estes passos:</p>
-    <ul>
-        <li><strong>Baixar o Instalador:</strong> Acesse o site oficial do Python em <a href="https://www.python.org/downloads/" target="_blank" style="color: #81a1c1;">python.org</a> e baixe a versão mais recente do Python para o seu sistema operacional.</li>
-        <li><strong>Executar o Instalador:</strong> Abra o arquivo de instalação baixado e execute-o. Certifique-se de marcar a opção <code>Add Python to PATH</code> antes de clicar em <code>Install Now</code>.</li>
-        <li><strong>Verificar a Instalação:</strong> Após a instalação, abra o terminal ou prompt de comando e digite <code>python --version</code> ou <code>python3 --version</code> para verificar se o Python foi instalado corretamente.</li>
-        <li><strong>Instalar Pacotes Adicionais:</strong> Para gerenciar pacotes adicionais, use o <code>pip</code>, que é o gerenciador de pacotes do Python. Por exemplo, para instalar a biblioteca <code>requests</code>, digite <code>pip install requests</code>.</li>
-    </ul>
-
+	<div class="center">
+		<ol>
+			<li><strong>Baixar o Instalador:</strong>  Acesse o site oficial do Python em <a href="https://www.python.org/downloads/" target="_blank" style="color: #81a1c1;">python.org</a> e baixe a versão mais recente do Python para o seu sistema operacional.</li>
+			<li><strong>Executar o Instalador:</strong>  Abra o arquivo de instalação baixado e execute-o. Certifique-se de marcar a opção <code>Add Python to PATH</code> antes de clicar em <code>Install Now</code>.</li>
+			<li><strong>Verificar a Instalação:</strong>  Após a instalação, abra o terminal ou prompt de comando e digite <code>python --version</code> ou <code>python3 --version</code> para verificar se o Python foi instalado corretamente.</li>
+			<li><strong>Instalar Pacotes Adicionais:</strong>  Para gerenciar pacotes adicionais, use o <code>pip</code>, que é o gerenciador de pacotes do Python. Por exemplo, para instalar a biblioteca <code>requests</code>, digite <code>pip install requests</code>.</li>
+		</ol>
+	</div>
 	
 	
 	
 
-<h3><i><u>Indice</u></i></h3>
+<h3>Indice</h3>
 
     <h4>1 - Programação Orientada a Objetos (POO)</h4>
     <ul>
@@ -407,6 +412,8 @@ singleton1 = Singleton()
 singleton2 = Singleton()
 <span class="built_in">print</span>(singleton1 <span class="keyword">is</span> singleton2)  <span class="comment"># Saída: True</span>
     </code></pre>
+
+<footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
 
 </body>
 </html>
