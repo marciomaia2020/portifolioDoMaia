@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,30 +25,93 @@
         .string { color: #a3be8c; }
         .comment { color: #616e88; }
         .function { color: #88c0d0; }
+        h2 {
+            border-bottom: 2px solid #4c566a;
+            padding-bottom: 5px;
+        }
     </style>
 </head>
 <body>
+
     <h1>Apostila do Desenvolvedor Python</h1>
-    <h2>Composição e Herança:</h2>
-    <p>Utilize composição para reutilizar código sem criar uma hierarquia rígida.</p>
-    <pre><code class="python">
-<span class="keyword">class</span> <span class="built_in">Motor</span>:
-    <span class="keyword">def</span> ligar(self):
-        <span class="built_in">print</span>(<span class="string">"Motor ligado"</span>)
 
-<span class="keyword">class</span> <span class="built_in">Carro</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(self, motor):
-        self.motor = motor
+<h3>ÎNDICE</h3>
 
-    <span class="keyword">def</span> ligar_carro(self):
-        self.motor.ligar()
+    <h4>Programação Orientada a Objetos (POO)</h4>
+    <ul>
+        <li>Definição de classes e objetos</li>
+        <li>Herança</li>
+        <li>Encapsulamento</li>
+        <li>Polimorfismo</li>
+        <li>Herança múltipla</li>
+        <li>Métodos de classe e estáticos</li>
+        <li>Exemplo de implementação com classes e métodos</li>
+    </ul>
 
-motor = <span class="built_in">Motor</span>()
-carro = <span class="built_in">Carro</span>(motor)
-carro.ligar_carro()  <span class="comment"># Saída: Motor ligado</span>
-    </code></pre>
+    <h4>Manipulação Avançada de Arquivos</h2>
+    <ul>
+        <li>Leitura e escrita de arquivos CSV usando o módulo <code>csv</code></li>
+        <li>Leitura e escrita de arquivos JSON usando o módulo <code>json</code></li>
+    </ul>
+
+    <h4>Conceitos de Concorrência</h2>
+    <ul>
+        <li>Programação com threads usando o módulo <code>threading</code></li>
+        <li>Programação assíncrona com corrotinas usando o módulo <code>asyncio</code></li>
+    </ul>
+
+    <h4>Desenvolvimento e Deployment de Aplicações</h2>
+    <ul>
+        <li>Criação e uso de ambientes virtuais com <code>venv</code></li>
+        <li>Uso de Docker para containerização de aplicações</li>
+        <li>Exemplo de Dockerfile para uma aplicação Python</li>
+    </ul>
+
+    <h4>Segurança</h2>
+    <ul>
+        <li>Criptografia de dados usando a biblioteca <code>cryptography</code></li>
+        <li>Exemplos de criptografia e descriptografia</li>
+    </ul>
+
+    <h4>Desenvolvimento de Interfaces Gráficas</h2>
+    <ul>
+        <li>Criação de GUIs com <code>Tkinter</code></li>
+        <li>Exemplo de uma aplicação simples com uma janela e um rótulo</li>
+    </ul>
+
+    <h4>Interação com Banco de Dados</h2>
+    <ul>
+        <li>Criação e manipulação de bancos de dados SQLite</li>
+        <li>Exemplos de criação de banco e inserção de dados</li>
+    </ul>
+
+    <h4>Automação e Scripts</h2>
+    <ul>
+        <li>Automação de tarefas básicas usando o módulo <code>os</code></li>
+        <li>Exemplos de listagem de arquivos em um diretório</li>
+    </ul>
+
+    <h4>Análise de Dados e Machine Learning</h2>
+    <ul>
+        <li>Manipulação de dados com <code>pandas</code></li>
+        <li>Visualização de dados com <code>matplotlib</code></li>
+        <li>Exemplo de criação e visualização de um DataFrame</li>
+    </ul>
+
+    <h4>Princípios de Design de Software</h2>
+    <ul>
+        <li>Exemplo de padrão de design Singleton</li>
+        <li>Aplicação do padrão para garantir uma única instância de uma classe</li>
+    </ul>
+
+
+
+
+
+
 
     <h2>Conceitos Básicos</h2>
+
     <h3>Variáveis e Tipos de Dados:</h3>
     <pre><code class="python">
 nome = <span class="string">"João"</span>  <span class="comment"># String</span>
@@ -95,7 +158,8 @@ resultado = soma(<span class="number">2</span>, <span class="number">3</span>)
     <span class="built_in">print</span>(conteudo)
     </code></pre>
 
-    <h2>Conceitos Avançados</h2>
+    <h2>Conceitos Intermediários</h2>
+
     <h3>List Comprehensions:</h3>
     <pre><code class="python">
 quadrados = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]
@@ -150,40 +214,165 @@ diz_oi()
 <span class="comment"># Saindo do contexto</span>
     </code></pre>
 
-    <h2>Bibliotecas Comuns</h2>
-    <h3>Requests: Para realizar requisições HTTP &#8203;:citation[oaicite:0]{index=0}&#8203;
-        <pre><code class="python">
-            import requests
-            response = requests.get(<span class="string">'https://api.github.com'</span>)
-            <span class="built_in">print</span>(response.status_code)
-                </code></pre>
-            
-                <h3>Pandas: Para manipulação de dados</h3>
-                <pre><code class="python">
-            import pandas as pd
-            df = pd.DataFrame({<span class="string">'Coluna1'</span>: [<span class="number">1</span>, <span class="number">2</span>], <span class="string">'Coluna2'</span>: [<span class="number">3</span>, <span class="number">4</span>]})
-            <span class="built_in">print</span>(df)
-                </code></pre>
-            
-                <h3>NumPy: Para computação numérica</h3>
-                <pre><code class="python">
-            import numpy as np
-            array = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])
-            <span class="built_in">print</span>(array * <span class="number">2</span>)
-                </code></pre>
-            
-                <h3>Django/Flask: Para desenvolvimento web</h3>
-                <pre><code class="python">
-            <span class="comment"># Flask</span>
-            <span class="keyword">from</span> flask <span class="keyword">import</span> Flask
-            app = Flask(__name__)
-            
-            @app.route(<span class="string">'/'</span>)
-            <span class="keyword">def</span> hello():
-                <span class="keyword">return</span> <span class="string">"Hello, World!"</span>
-            
-            <span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
-                app.run()
-                </code></pre>
-            </body>
-            </html>
+    <h2>Conceitos Avançados</h2>
+
+    <h3>Programação Orientada a Objetos (POO):</h3>
+    <pre><code class="python">
+<span class="keyword">class</span> <span class="built_in">Animal</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self, nome):
+        self.nome = nome
+
+    <span class="keyword">def</span> fazer_som(self):
+        <span class="built_in">print</span>(<span class="string">"Som genérico"</span>)
+
+<span class="keyword">class</span> <span class="built_in">Cachorro</span>(<span class="built_in">Animal</span>):
+    <span class="keyword">def</span> fazer_som(self):
+        <span class="built_in">print</span>(<span class="string">"Au au!"</span>)
+
+animal = <span class="built_in">Animal</span>(<span class="string">"Genérico"</span>)
+cachorro = <span class="built_in">Cachorro</span>(<span class="string">"Rex"</span>)
+animal.fazer_som()  <span class="comment"># Saída: Som genérico</span>
+cachorro.fazer_som()  <span class="comment"># Saída: Au au!</span>
+    </code></pre>
+
+    <h3>Manipulação Avançada de Arquivos:</h3>
+    <pre><code class="python">
+<span class="comment"># Trabalhar com CSV</span>
+import csv
+
+<span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'dados.csv'</span>, <span class="string">'w'</span>, newline=<span class="string">' '</span>) <span class="keyword">as</span> csvfile:
+    escritor = csv.writer(csvfile)
+    escritor.writerow([<span class="string">'Nome'</span>, <span class="string">'Idade'</span>])
+    escritor.writerow([<span class="string">'João'</span>, <span class="number">25</span>])
+
+<span class="comment"># Trabalhar com JSON</span>
+import json
+
+dados = {<span class="string">'nome'</span>: <span class="string">'Maria'</span>, <span class="string">'idade'</span>: <span class="number">30</span>}
+<span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'dados.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> jsonfile:
+    json.dump(dados, jsonfile, indent=<span class="number">4</span>)
+    </code></pre>
+
+    <h3>Conceitos de Concorrência:</h3>
+    <pre><code class="python">
+import threading
+
+<span class="keyword">def</span> minha_funcao():
+    <span class="built_in">print</span>(<span class="string">"Executando em uma thread"</span>)
+
+t = threading.Thread(target=minha_funcao)
+t.start()
+t.join()
+
+import asyncio
+
+<span class="keyword">async</span> <span class="keyword">def</span> minha_corrotina():
+    <span class="built_in">print</span>(<span class="string">"Executando assíncronamente"</span>)
+
+<span class="built_in">asyncio</span>.<span class="built_in">run</span>(minha_corrotina())
+    </code></pre>
+
+    <h3>Desenvolvimento e Deployment de Aplicações:</h3>
+    <pre><code class="python">
+<span class="comment"># Criar ambiente virtual</span>
+<span class="keyword">python -m venv</span> <span class="string">"meu_ambiente"</span>
+
+<span class="comment"># Usar Docker</span>
+<span class="keyword">FROM</span> python:<span class="string">'3.9'</span>
+<span class="keyword">WORKDIR</span> /app
+<span class="keyword">COPY</span> . /app
+<span class="keyword">RUN</span> pip install -r requirements.txt
+<span class="keyword">CMD</span> [<span class="string">'python'</span>, <span class="string">'app.py'</span>]
+    </code></pre>
+
+    <h3>Segurança:</h3>
+    <pre><code class="python">
+from cryptography.fernet import Fernet
+
+chave = Fernet.generate_key()
+fernet = Fernet(chave)
+texto = <span class="string">"Texto secreto"</span>
+texto_criptografado = fernet.encrypt(texto.encode())
+texto_decifrado = fernet.decrypt(texto_criptografado).decode()
+
+<span class="built_in">print</span>(texto_criptografado)
+<span class="built_in">print</span>(texto_decifrado)
+    </code></pre>
+
+    <h3>Desenvolvimento de Interfaces Gráficas:</h3>
+    <pre><code class="python">
+import tkinter as tk
+
+root = tk.Tk()
+label = tk.Label(root, text=<span class="string">"Olá, Mundo!"</span>)
+label.pack()
+root.mainloop()
+    </code></pre>
+
+    <h3>Interação com Banco de Dados:</h3>
+    <pre><code class="python">
+import sqlite3
+
+<span class="keyword">def</span> criar_banco():
+    conexao = sqlite3.connect(<span class="string">'banco.db'</span>)
+    cursor = conexao.cursor()
+    cursor.execute(<span class="string">'CREATE TABLE IF NOT EXISTS pessoas (nome TEXT, idade INTEGER)'</span>)
+    conexao.commit()
+    conexao.close()
+
+<span class="keyword">def</span> inserir_pessoa(nome, idade):
+    conexao = sqlite3.connect(<span class="string">'banco.db'</span>)
+    cursor = conexao.cursor()
+    cursor.execute(<span class="string">'INSERT INTO pessoas (nome, idade) VALUES (?, ?)'</span>, (nome, idade))
+    conexao.commit()
+    conexao.close()
+    </code></pre>
+
+    <h3>Automação e Scripts:</h3>
+    <pre><code class="python">
+import os
+
+<span class="keyword">def</span> listar_arquivos():
+    arquivos = os.listdir(<span class="string">'.'</span>)
+    <span class="built_in">print</span>(arquivos)
+
+listar_arquivos()
+    </code></pre>
+
+    <h3>Análise de Dados e Machine Learning:</h3>
+    <pre><code class="python">
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Criar DataFrame
+dados = pd.DataFrame({
+    <span class="string">'Nome'</span>: [<span class="string">'Ana'</span>, <span class="string">'Pedro'</span>],
+    <span class="string">'Idade'</span>: [<span class="number">22</span>, <span class="number">30</span>]
+})
+
+<span class="built_in">print</span>(dados)
+
+# Plotar gráfico
+dados.plot(x=<span class="string">'Nome'</span>, y=<span class="string">'Idade'</span>, kind=<span class="string">'bar'</span>)
+plt.show()
+    </code></pre>
+
+    <h3>Princípios de Design de Software:</h3>
+    <pre><code class="python">
+<span class="comment"># Exemplo de Padrão Singleton</span>
+class Singleton:
+    _instancia = <span class="keyword">None</span>
+
+    <span class="keyword">def</span> <span class="function">__new__</span>(cls):
+        <span class="keyword">if</span> cls._instancia <span class="keyword">is</span> <span class="keyword">None</span>:
+            cls._instancia = super(Singleton, cls).__new__(cls)
+        <span class="keyword">return</span> cls._instancia
+
+singleton1 = Singleton()
+singleton2 = Singleton()
+<span class="built_in">print</span>(singleton1 <span class="keyword">is</span> singleton2)  <span class="comment"># Saída: True</span>
+    </code></pre>
+
+</body>
+</html>
