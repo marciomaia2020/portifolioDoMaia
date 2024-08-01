@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Estudo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #333;
+            color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .output {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .note {
+            background-color: #f0f0a1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        footer{text-align: right}
+        .index {
+            margin-bottom: 20px;
+        }
+        .index ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .index li {
+            margin: 5px 0;
+        }
+        .index a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .index a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cronograma de Estudo com Exemplos Práticos</h1>
+
+    <div class="index">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#semana1">Semana 1: Fundamentos</a></li>
+            <li><a href="#semana2">Semana 2: Aplicação Prática</a></li>
+            <li><a href="#semana3">Semana 3: Desenvolvimento e Integração</a></li>
+            <li><a href="#semana4">Semana 4: Avaliação e Revisão</a></li>
+        </ul>
+    </div>
+
+    <h2 id="semana1">Semana 1: Fundamentos</h2>
+
+    <h3>Banco de Dados: SQL Básico</h3>
+    <p>Comece revisando conceitos básicos de SQL, como SELECT, INSERT, UPDATE e DELETE.</p>
+    <p><strong>Exemplo 1: SELECT básico</strong></p>
+    <pre>
+SELECT * FROM clientes WHERE cidade = 'São Paulo';
+    </pre>
+    <p><strong>Exemplo 2: INSERT em uma tabela</strong></p>
+    <pre>
+INSERT INTO clientes (nome, cidade, idade) VALUES ('João Silva', 'São Paulo', 30);
+    </pre>
+
+    <h3>Estrutura de Dados e Arquitetura de Software</h3>
+    <p>Estude as principais estruturas de dados como arrays, listas, pilhas, filas, e a importância da arquitetura de software.</p>
+    <p><strong>Exemplo 1: Array em Python</strong></p>
+    <pre>
+array = [1, 2, 3, 4, 5]
+print(array[0])  # Saída: 1
+    </pre>
+    <div class="output">Saída: 1</div>
+
+    <p><strong>Exemplo 2: Padrão Singleton em Python</strong></p>
+    <pre>
+class Singleton:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super().__new__(cls, *args, **kwargs)
+        return cls._instance
+
+# Testando Singleton
+obj1 = Singleton()
+obj2 = Singleton()
+print(obj1 == obj2)  # Saída: True
+    </pre>
+    <div class="output">Saída: True</div>
+
+    <h3>Inglês Técnico</h3>
+    <p>Familiarize-se com termos técnicos em inglês, pois a maioria das documentações e recursos estão nesse idioma.</p>
+    <p><strong>Exemplo: Tradução de termo técnico</strong></p>
+    <p>Termo: "Inheritance" - Tradução: "Herança"</p>
+
+    <h3>Metodologias Ágeis de Desenvolvimento</h3>
+    <p>Aprenda sobre Scrum, Kanban e outros métodos ágeis usados em equipes de desenvolvimento.</p>
+    <p><strong>Exemplo: Estrutura de um User Story</strong></p>
+    <pre>
+Como [tipo de usuário], quero [funcionalidade] para [benefício esperado].
+    </pre>
+
+    <h3>Orientação a Objetos</h3>
+    <p>Revise os princípios de orientação a objetos, como encapsulamento, herança, polimorfismo e abstração.</p>
+    <p><strong>Exemplo: Definição de uma classe em Python</strong></p>
+    <pre>
+class Carro:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+    def acelerar(self):
+        print(f"O {self.modelo} está acelerando!")
+    </pre>
+
+    <h3>Python</h3>
+    <p>Pratique conceitos básicos de Python, incluindo sintaxe, controle de fluxo e manipulação de dados.</p>
+    <p><strong>Exemplo: Estrutura básica de um programa Python</strong></p>
+    <pre>
+nome = input("Digite seu nome: ")
+print(f"Olá, {nome}!")
+    </pre>
+
+    <h2 id="semana2">Semana 2: Aplicação Prática</h2>
+
+    <h3>Banco de Dados: Joins e Subqueries</h3>
+    <p>Explore consultas mais complexas usando JOINs para combinar dados de várias tabelas e subqueries para consultas aninhadas.</p>
+    <p><strong>Exemplo: INNER JOIN</strong></p>
+    <pre>
+SELECT clientes.nome, pedidos.data 
+FROM clientes 
+INNER JOIN pedidos ON clientes.id = pedidos.cliente_id;
+    </pre>
+
+    <h3>Estrutura de Dados: Árvores Binárias</h3>
+    <p>Entenda como árvores binárias funcionam e como implementá-las.</p>
+    <p><strong>Exemplo: Implementação básica de árvore binária em Python</strong></p>
+    <pre>
+class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.value = key
+
+def inorder_traversal(root):
+    if root:
+        inorder_traversal(root.left)
+        print(root.value)
+        inorder_traversal(root.right)
+
+# Exemplo de uso
+root = Node(10)
+root.left = Node(5)
+root.right = Node(20)
+inorder_traversal(root)
+    </pre>
+    <div class="output">
+        Saída:<br>
+        5<br>
+        10<br>
+        20
+    </div>
+
+    <h3>Inglês Técnico</h3>
+    <p>Traduza pequenos trechos de documentações de bibliotecas populares como a do Django ou Flask.</p>
+    <p><strong>Exemplo: Tradução de documentação técnica</strong></p>
+    <p>"Middleware provides a hook to process requests globally before they reach the view or after the view has processed the request."</p>
+    <p>Tradução: "Middleware fornece um gancho para processar requisições globalmente antes de chegarem à view ou após a view ter processado a requisição."</p>
+
+    <h3>Metodologias Ágeis</h3>
+    <p>Entenda como planejar e realizar sprints, gerenciar backlog, e realizar retrospectivas.</p>
+    <p><strong>Exemplo: Planejamento de Sprint</strong></p>
+    <pre>
+Sprint 1:
+- Tarefa 1: Implementar login do usuário.
+- Tarefa 2: Configurar banco de dados.
+    </pre>
+
+    <h3>Orientação a Objetos</h3>
+    <p>Explore a aplicação de herança, onde uma classe pode herdar atributos e métodos de outra classe.</p>
+    <p><strong>Exemplo: Aplicação de Herança</strong></p>
+    <pre>
+class Veiculo:
+    def __init__(self, marca):
+        self.marca = marca
+
+class Carro(Veiculo):
+    def __init__(self, marca, modelo):
+        super().__init__(marca)
+        self.modelo = modelo
+
+carro = Carro('Toyota', 'Corolla')
+print(carro.marca, carro.modelo)
+    </pre>
+    <div class="output">Saída: Toyota Corolla</div>
+
+    <h3>Python: Programação Funcional</h3>
+    <p>Estude funções de ordem superior e como usar lambda functions.</p>
+    <p><strong>Exemplo: Uso de lambda functions</strong></p>
+    <pre>
+soma = lambda x, y: x + y
+print(soma(5, 3))  # Saída: 8
+    </pre>
+    <div class="output">Saída: 8</div>
+
+    <h2 id="semana3">Semana 3: Desenvolvimento e Integração</h2>
+
+    <h3>Banco de Dados: Procedimentos Armazenados</h3>
+    <p>Aprenda a criar e utilizar procedimentos armazenados em SQL.</p>
+    <p><strong>Exemplo: Procedimento Armazenado</strong></p>
+    <pre>
+CREATE PROCEDURE GetClientInfo
+    @ClientID INT
+AS
+BEGIN
+    SELECT * FROM clientes WHERE id = @ClientID;
+END;
+    </pre>
+
+    <h3>Estrutura de Dados: Grafos</h3>
+    <p>Compreenda a representação e algoritmos para grafos, como busca em profundidade e largura.</p>
+    <p><strong>Exemplo: Representação de grafo</strong></p>
+    <pre>
+# Grafo representado por uma lista de adjacência
+grafo = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
+    </pre>
+
+    <h3>Inglês Técnico</h3>
+    <p>Traduza tutoriais e artigos técnicos.</p>
+    <p><strong>Exemplo: Tradução de tutorial</strong></p>
+    <p>"To connect to a database in Python, you need to use a database adapter library like sqlite3 or psycopg2."</p>
+    <p>Tradução: "Para conectar a um banco de dados em Python, você precisa usar uma biblioteca adaptadora de banco de dados, como sqlite3 ou psycopg2."</p>
+
+    <h3>Metodologias Ágeis</h3>
+    <p>Pratique a criação de User Stories e definição de critérios de aceitação.</p>
+    <p><strong>Exemplo: User Story com critérios de aceitação</strong></p>
+    <pre>
+Como [usuário],
+Quero [funcionalidade],
+Para [benefício].
+
+Critérios de aceitação:
+- A funcionalidade deve estar disponível na página inicial.
+- O usuário deve receber uma notificação ao completar a tarefa.
+    </pre>
+
+    <h3>Orientação a Objetos</h3>
+    <p>Pratique o conceito de polimorfismo e como diferentes classes podem implementar a mesma interface.</p>
+    <p><strong>Exemplo: Polimorfismo</strong></p>
+    <pre>
+class Animal:
+    def fazer_som(self):
+        pass
+
+class Cachorro(Animal):
+    def fazer_som(self):
+        print("Latido")
+
+class Gato(Animal):
+    def fazer_som(self):
+        print("Miau")
+
+def emitir_som(animal):
+    animal.fazer_som()
+
+# Testando polimorfismo
+emitir_som(Cachorro())  # Saída: Latido
+emitir_som(Gato())      # Saída: Miau
+    </pre>
+    <div class="output">Saída:<br>Latido<br>Miau</div>
+
+    <h3>Python: Manipulação de Arquivos</h3>
+    <p>Aprenda a ler e escrever arquivos em Python.</p>
+    <p><strong>Exemplo: Leitura e escrita de arquivos</strong></p>
+    <pre>
+# Escrita em arquivo
+with open('arquivo.txt', 'w') as file:
+    file.write("Olá, Mundo!")
+
+# Leitura de arquivo
+with open('arquivo.txt', 'r') as file:
+    print(file.read())  # Saída: Olá, Mundo!
+    </pre>
+    <div class="output">Saída: Olá, Mundo!</div>
+
+    <h2 id="semana4">Semana 4: Avaliação e Revisão</h2>
+
+    <h3>Banco de Dados: Índices e Performance</h3>
+    <p>Estude como índices podem melhorar a performance das consultas.</p>
+    <p><strong>Exemplo: Criação de índice</strong></p>
+    <pre>
+CREATE INDEX idx_cliente_nome ON clientes (nome);
+    </pre>
+
+    <h3>Estrutura de Dados: Algoritmos de Ordenação</h3>
+    <p>Compare diferentes algoritmos de ordenação, como QuickSort e MergeSort.</p>
+    <p><strong>Exemplo: QuickSort em Python</strong></p>
+    <pre>
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
+
+print(quicksort([3,6,8,10,1,2,1]))  # Saída: [1, 1, 2, 3, 6, 8, 10]
+    </pre>
+    <div class="output">Saída: [1, 1, 2, 3, 6, 8, 10]</div>
+
+    <h3>Inglês Técnico</h3>
+    <p>Reveja e pratique a tradução de textos técnicos mais complexos.</p>
+    <p><strong>Exemplo: Tradução de artigo técnico</strong></p>
+    <p>"The concept of a closure allows a function to access variables from its lexical scope even after the function has finished executing."</p>
+    <p>Tradução: "O conceito de closure permite que uma função acesse variáveis do seu escopo léxico mesmo depois que a função tenha terminado de executar."</p>
+
+    <h3>Metodologias Ágeis</h3>
+    <p>Revise as lições aprendidas e prepare-se para um exame ou avaliação.</p>
+    <p><strong>Exemplo: Retrospectiva de Sprint</strong></p>
+    <pre>
+O que foi bem:
+- A equipe conseguiu completar todas as histórias de usuário.
+
+O que pode ser melhorado:
+- Melhorar a comunicação entre os membros da equipe.
+
+Ações para o próximo Sprint:
+- Implementar reuniões diárias de sincronização.
+    </pre>
+
+    <h3>Orientação a Objetos</h3>
+    <p>Revise os conceitos aprendidos e prepare exemplos finais para demonstração.</p>
+    <p><strong>Exemplo: Projeto Final</strong></p>
+    <pre>
+class Biblioteca:
+    def __init__(self):
+        self.livros = []
+
+    def adicionar_livro(self, livro):
+        self.livros.append(livro)
+
+    def listar_livros(self):
+        for livro in self.livros:
+            print(livro)
+
+# Testando a biblioteca
+biblioteca = Biblioteca()
+biblioteca.adicionar_livro("Python para Iniciantes")
+biblioteca.adicionar_livro("Estruturas de Dados em Python")
+biblioteca.listar_livros()
+    </pre>
+    <div class="output">Saída:<br>Python para Iniciantes<br>Estruturas de Dados em Python</div>
+
+    <h3>Python: Projeto Final</h3>
+    <p>Desenvolva um projeto final utilizando todos os conceitos aprendidos.</p>
+
+    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+</body>
+</html>
