@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostila do Desenvolvedor Python</title>
     <style>
-		* {line-height: 1.7em}
+		* {
+            line-height: 1.9em;
+            font-size: 25px;
+        }
         body {
 			color: white;
 			background-color: black;
@@ -27,8 +30,8 @@
         .string { color: #a3be8c; }
         .comment { color: #616e88; }
         .function { color: #88c0d0; }
-		.center{text-align: center}
-        li{font-size: 12px;}
+		.center{text-align: left}
+        li{font-size: 14px;}
 		h2 {
             border-bottom: 2px solid #4c566a;
             padding-bottom: 5px;
@@ -61,22 +64,116 @@
 <body>
 
     <h1>Apostila do Desenvolvedor Python</h1>
-	
-	
 	<h3>Resumo da Instalação do Python</h3>
-
-    <p>Para instalar o Python, siga estes passos:</p>
-	<div class="center">
+	
+    
+    <div class="center">
+        <p>**********| Itens resumidos |**********</p>
 		<ol>
-			<li><strong>Baixar o Instalador:</strong>  Acesse o site oficial do Python em <a href="https://www.python.org/downloads/" target="_blank" style="color: #81a1c1;">python.org</a> e baixe a versão mais recente do Python para o seu sistema operacional.</li>
-			<li><strong>Executar o Instalador:</strong>  Abra o arquivo de instalação baixado e execute-o. Certifique-se de marcar a opção <code>Add Python to PATH</code> antes de clicar em <code>Install Now</code>.</li>
-			<li><strong>Verificar a Instalação:</strong>  Após a instalação, abra o terminal ou prompt de comando e digite <code>python --version</code> ou <code>python3 --version</code> para verificar se o Python foi instalado corretamente.</li>
-			<li><strong>Instalar Pacotes Adicionais:</strong>  Para gerenciar pacotes adicionais, use o <code>pip</code>, que é o gerenciador de pacotes do Python. Por exemplo, para instalar a biblioteca <code>requests</code>, digite <code>pip install requests</code>.</li>
-		</ol>
+            <li>Instalar Python</li>
+            <li>Verificar Instalação</li>
+            <li>Configurar Variável de Ambiente</li>
+            <li>Instalar um IDE/Editor de Código</li>
+            <li>Criar e Executar um Script Python</li>
+            <li>Instalar Pacotes Adicionais</li>
+            <li>Configurar um Ambiente Virtual</li>
+            <li>Atualizar pip e Pacotes</li>
+            <li>Usar um Gerenciador de Pacotes Adicionais</li>
+            <li>Aprender Conceitos Básicos de Python</li>		
+        </ol>
+
+        <p>**********| Itens detalhados |**********</p>
+        <ol>
+            <li>Instalar Python:
+                <ul>
+                  <li>Baixe o instalador do Python do site oficial.</li>
+                  <li>Execute o instalador e marque "Add Python to PATH" antes de clicar em "Install Now".</li>
+                </ul>
+              </li>
+              <li>Verificar Instalação:
+                <ul>
+                  <li>Abra o Prompt de Comando (Windows) ou Terminal (macOS/Linux).</li>
+                  <li>Digite <code>python --version</code> ou <code>python3 --version</code> para verificar a versão instalada.</li>
+                </ul>
+              </li>
+              <li>Configurar Variável de Ambiente (se necessário):
+                <ul>
+                  <li>Windows: Adicione o caminho do Python (<code>C:\PythonXX</code>) e Scripts à variável PATH:
+                    <ul>
+                      <li>Vá para "Configurações do Sistema" > "Avançado" > "Variáveis de Ambiente".</li>
+                      <li>Adicione o caminho às variáveis PATH.</li>
+                    </ul>
+                  </li>
+                  <li>macOS/Linux: Normalmente, o Python é configurado automaticamente. Para alterar, adicione o caminho ao seu arquivo de perfil (.bashrc, .zshrc, etc.).</li>
+                </ul>
+              </li>
+              <li>Instalar um IDE/Editor de Código:
+                <ul>
+                  <li>Recomendação: Instale VS Code ou PyCharm.</li>
+                  <li>Configure o editor para usar o Python instalado.</li>
+                </ul>
+              </li>
+              <li>Criar e Executar um Script Python:
+                <ul>
+                  <li>Crie um arquivo com a extensão .py (ex.: <code>script.py</code>).</li>
+                  <li>Escreva seu código Python no arquivo.</li>
+                  <li>Execute o script com <code>python script.py</code> ou <code>python3 script.py</code>.</li>
+                </ul>
+              </li>
+              <li>Instalar Pacotes Adicionais:
+                <ul>
+                  <li>Use o gerenciador de pacotes pip para instalar bibliotecas. Exemplo: <code>pip install nome_do_pacote</code>.</li>
+                </ul>
+              </li>
+              <li>Configurar um Ambiente Virtual (opcional, mas recomendado):
+                <ul>
+                  <li>Crie um ambiente virtual para gerenciar dependências:</li>
+                  <li>No Prompt de Comando ou Terminal: <code>python -m venv nome_do_ambiente</code>.</li>
+                  <li>Ative o ambiente:
+                    <ul>
+                      <li>Windows: <code>nome_do_ambiente\Scripts\activate</code></li>
+                      <li>macOS/Linux: <code>source nome_do_ambiente/bin/activate</code></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Atualizar pip e Pacotes:
+                <ul>
+                  <li>Mantenha o pip e pacotes atualizados:</li>
+                  <li>Atualizar pip: <code>python -m pip install --upgrade pip</code></li>
+                  <li>Atualizar pacotes: <code>pip list --outdated</code> e <code>pip install --upgrade nome_do_pacote</code></li>
+                </ul>
+              </li>
+              <li>Usar um Gerenciador de Pacotes Adicionais (opcional):
+                <ul>
+                  <li>Para projetos mais complexos, considere usar ferramentas como Poetry ou Conda para gerenciamento de dependências e ambientes.</li>
+                </ul>
+              </li>
+              <li>Aprender Conceitos Básicos de Python:
+                <ul>
+                  <li>Familiarize-se com conceitos básicos, como variáveis, tipos de dados, estruturas de controle (if, loops), funções, e classes.</li>
+                </ul>
+              </li>
+
+        </ol>
 	</div>
-	
-	
-	
+
+
+    <p>**********| Para começar com Python, aprenda estes conceitos básicos. |**********</p>
+<ul>
+    <li>Tipos de Variáveis: Inteiros (<code>int</code>), números de ponto flutuante (<code>float</code>), strings (<code>str</code>), e booleanos (<code>bool</code>).</li>
+    <li>Estruturas de Controle: Condicionais (<code>if</code>, <code>else</code>, <code>elif</code>), e loops (<code>for</code>, <code>while</code>).</li>
+    <li>Funções: Definição e chamada de funções com <code>def</code>, passando parâmetros e retornando valores.</li>
+    <li>Listas e Tuplas: Manipulação de sequências, como listas (<code>list</code>) e tuplas (<code>tuple</code>), para armazenar múltiplos valores.</li>
+    <li>Dicionários: Armazenamento de pares chave-valor usando dicionários (<code>dict</code>).</li>
+    <li>Módulos e Pacotes: Importação e utilização de módulos externos e pacotes com <code>import</code>.</li>
+    <li>Tratamento de Erros: Uso de <code>try</code>, <code>except</code>, <code>finally</code> para capturar e tratar exceções.</li>
+    <li>Manipulação de Arquivos: Leitura e escrita em arquivos usando <code>open()</code>, <code>read()</code>, e <code>write()</code>.</li>
+</ul>
+
+
+
+
 
 <h3>Indice</h3>
 
