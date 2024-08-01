@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!----======== Font Awesome 5 JAVASCRIPT  ENTRE NO SITE E PEGUE O CÓDIGO (afb02bf9ac)======== -->
-	<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
-	<!--Márciofernando.maia@yahoo.com.br-->
-	<script src="https://kit.fontawesome.com/2fa2c650ed.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
     <title>Problemas Resolvidos em Python</title>
     <style>
         body {
@@ -44,48 +40,41 @@
 <body>
     <h1>Problemas Resolvidos em Python</h1>
 
-
-<section>
-			<th><h3>Método 5 Q´s, <small>para montar um algoritimo. | Analise criticamente o problema, compreenda o COMPLETAENTE.</small></h3></th>
-		<ul>
-				<li>Quais são os dados de entrada nescessários?</li>
-				<li>Que devo fazer com estes dados?</li>
-				<li>Quais são as restrições deste problema?</li>
-				<li>Qual o resultado esperado?</li>
-				<li>Qual é a sequencia de passos a ser feitos para chegar ao resultado esperado?</li>
-		</ul>
-		
-		<p>Para as <b>restrições</b> observe os if´s da vida.
-			<pre>
-				<code>
-					if len(numeros) == 0:
-						return "A lista de números não pode estar vazia"
-					
-					if numero % 2 == 0:
-						return "Par"
-					else:
-						return "Ímpar"
-					
-					if numero < 0:
-						return "O número deve ser maior ou igual a zero"
-					
-					
-					if horas_trabalhadas == 0:
-						return "O valor das horas trabalhadas não pode ser igual a zero"
-				
-				</code>
-			</pre>
-		</p>
-</section>
-
-
-<section align="center">
-	<a href="https://www.youtube.com/@VideosKaraoke2023/videos/" target="_blank">
-	<i class="fa-brands fa-youtube"></i></a> 
-</section>
-
-
+    <!-- Índice -->
     <section>
+        <h3>Índice</h3>
+        <ul>
+            <li><a href="#problema1">Problema 1: Calcular a média de uma lista de números</a></li>
+            <li><a href="#problema2">Problema 2: Verificar se um número é par ou ímpar</a></li>
+            <li><a href="#problema3">Problema 3: Calcular o fatorial de um número</a></li>
+            <li><a href="#problema4">Problema 4: Converter graus Celsius para Fahrenheit</a></li>
+            <li><a href="#problema5">Problema 5: Verificar se uma string é um palíndromo</a></li>
+            <li><a href="#problema6">Problema 6: Calcular o valor hora de um funcionário</a></li>
+            <li><a href="#problema7">Problema 7: Verificar se um número é positivo, negativo ou zero</a></li>
+            <li><a href="#problema8">Problema 8: Encontrar o maior número em uma lista</a></li>
+            <li><a href="#problema9">Problema 9: Ordenar uma lista em ordem crescente</a></li>
+            <li><a href="#problema10">Problema 10: Calcular a soma dos números de 1 a N</a></li>
+            <li><a href="#problema11">Problema 11: Contar o número de vogais em uma string</a></li>
+            <li><a href="#problema12">Problema 12: Verificar se um número é primo</a></li>
+            <li><a href="#problema13">Problema 13: Converter Fahrenheit para Celsius</a></li>
+            <li><a href="#problema14">Problema 14: Encontrar o menor número em uma lista</a></li>
+            <li><a href="#problema15">Problema 15: Verificar se um ano é bissexto</a></li>
+            <li><a href="#problema16">Problema 16: Encontrar o N-ésimo número da sequência de Fibonacci</a></li>
+            <li><a href="#problema17">Problema 17: Calcular a soma dos dígitos de um número</a></li>
+            <li><a href="#problema18">Problema 18: Encontrar todos os números pares em uma lista</a></li>
+            <li><a href="#problema19">Problema 19: Calcular o quadrado de cada número em uma lista</a></li>
+            <li><a href="#problema20">Problema 20: Remover duplicatas de uma lista</a></li>
+            <li><a href="#problema21">Problema 21: Encontrar o menor e o maior número em uma lista</a></li>
+            <li><a href="#problema22">Problema 22: Contar o número de caracteres em uma string</a></li>
+            <li><a href="#problema23">Problema 23: Verificar se uma string contém uma substring</a></li>
+            <li><a href="#problema24">Problema 24: Inverter uma string</a></li>
+            <li><a href="#problema25">Problema 25: Calcular o fatorial de um número</a></li>
+            <li><a href="#problema26">Problema 26: Criar uma lista com 50 números e ordená-la em ordem crescente</a></li>
+        </ul>
+    </section>
+
+    <!-- Problemas e soluções -->
+    <section id="problema1">
         <h3><span class="problema">Problema 1:</span> Calcular a média de uma lista de números</h3>
         <pre>
 def calcular_media(numeros):
@@ -95,10 +84,7 @@ def calcular_media(numeros):
     media = soma / len(numeros)
     return media
 
-# Caso de uso
 numeros = [10, 20, 30, 40, 50]
-
-# Chamando a função
 media = calcular_media(numeros)
 print(f"A média é: {media:.2f}")
 
@@ -107,7 +93,7 @@ print(f"A média é: {media:.2f}")
         </pre>
     </section>
 
-    <section>
+    <section id="problema2">
         <h3><span class="problema">Problema 2:</span> Verificar se um número é par ou ímpar</h3>
         <pre>
 def verificar_par_ou_impar(numero):
@@ -116,10 +102,7 @@ def verificar_par_ou_impar(numero):
     else:
         return "Ímpar"
 
-# Caso de uso
 numero = 15
-
-# Chamando a função
 resultado = verificar_par_ou_impar(numero)
 print(f"O número {numero} é {resultado}.")
 
@@ -128,7 +111,7 @@ print(f"O número {numero} é {resultado}.")
         </pre>
     </section>
 
-    <section>
+    <section id="problema3">
         <h3><span class="problema">Problema 3:</span> Calcular o fatorial de um número</h3>
         <pre>
 def calcular_fatorial(numero):
@@ -139,10 +122,7 @@ def calcular_fatorial(numero):
         fatorial *= i
     return fatorial
 
-# Caso de uso
 numero = 5
-
-# Chamando a função
 fatorial = calcular_fatorial(numero)
 print(f"O fatorial de {numero} é {fatorial}.")
 
@@ -151,17 +131,14 @@ print(f"O fatorial de {numero} é {fatorial}.")
         </pre>
     </section>
 
-    <section>
+    <section id="problema4">
         <h3><span class="problema">Problema 4:</span> Converter graus Celsius para Fahrenheit</h3>
         <pre>
 def celsius_para_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 
-# Caso de uso
 celsius = 25
-
-# Chamando a função
 fahrenheit = celsius_para_fahrenheit(celsius)
 print(f"{celsius}°C é equivalente a {fahrenheit:.2f}°F.")
 
@@ -170,17 +147,14 @@ print(f"{celsius}°C é equivalente a {fahrenheit:.2f}°F.")
         </pre>
     </section>
 
-    <section>
+    <section id="problema5">
         <h3><span class="problema">Problema 5:</span> Verificar se uma string é um palíndromo</h3>
         <pre>
 def verificar_palindromo(texto):
     texto = texto.replace(" ", "").lower()
     return texto == texto[::-1]
 
-# Caso de uso
 texto = "arara"
-
-# Chamando a função
 eh_palindromo = verificar_palindromo(texto)
 if eh_palindromo:
     print(f"A palavra '{texto}' é um palíndromo.")
@@ -192,21 +166,17 @@ else:
         </pre>
     </section>
 
-    <section>
+    <section id="problema6">
         <h3><span class="problema">Problema 6:</span> Calcular o valor hora de um funcionário</h3>
         <pre>
 def calcular_valor_hora(salario_mensal, horas_trabalhadas):
-    # Tratando o erro
     if horas_trabalhadas == 0:
         return "O valor das horas trabalhadas não pode ser igual a zero"
     valor_hora = salario_mensal / horas_trabalhadas
     return valor_hora
 
-# Caso de uso
 salario_mensal = 3000.00
 horas_trabalhadas = 160
-
-# Chamando a função
 valor_hora = calcular_valor_hora(salario_mensal, horas_trabalhadas)
 print(f"R$: {valor_hora:.2f} é o valor hora.")
 
@@ -214,5 +184,353 @@ print(f"R$: {valor_hora:.2f} é o valor hora.")
 # R$: 18.75 é o valor hora.
         </pre>
     </section>
+
+    <section id="problema7">
+        <h3><span class="problema">Problema 7:</span> Verificar se um número é positivo, negativo ou zero</h3>
+        <pre>
+def verificar_numero(numero):
+    if numero > 0:
+        return "Positivo"
+    elif numero < 0:
+        return "Negativo"
+    else:
+        return "Zero"
+
+numero = -8
+resultado = verificar_numero(numero)
+print(f"O número {numero} é {resultado}.")
+
+# Saída esperada
+# O número -8 é Negativo.
+        </pre>
+    </section>
+
+    <section id="problema8">
+        <h3><span class="problema">Problema 8:</span> Encontrar o maior número em uma lista</h3>
+        <pre>
+def encontrar_maior(lista):
+    if len(lista) == 0:
+        return "A lista está vazia"
+    maior = lista[0]
+    for numero in lista:
+        if numero > maior:
+            maior = numero
+    return maior
+
+lista = [3, 7, 2, 8, 5]
+maior = encontrar_maior(lista)
+print(f"O maior número da lista é {maior}.")
+
+# Saída esperada
+# O maior número da lista é 8.
+        </pre>
+    </section>
+
+    <section id="problema9">
+        <h3><span class="problema">Problema 9:</span> Ordenar uma lista em ordem crescente</h3>
+        <pre>
+def ordenar_lista(lista):
+    return sorted(lista)
+
+lista = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+lista_ordenada = ordenar_lista(lista)
+print(f"A lista ordenada é {lista_ordenada}.")
+
+# Saída esperada
+# A lista ordenada é [1, 1, 2, 3, 4, 5, 5, 6, 9].
+        </pre>
+    </section>
+
+    <section id="problema10">
+        <h3><span class="problema">Problema 10:</span> Calcular a soma dos números de 1 a N</h3>
+        <pre>
+def soma_1_a_n(n):
+    return sum(range(1, n + 1))
+
+n = 10
+soma = soma_1_a_n(n)
+print(f"A soma dos números de 1 a {n} é {soma}.")
+
+# Saída esperada
+# A soma dos números de 1 a 10 é 55.
+        </pre>
+    </section>
+
+    <section id="problema11">
+        <h3><span class="problema">Problema 11:</span> Contar o número de vogais em uma string</h3>
+        <pre>
+def contar_vogais(texto):
+    vogais = "aeiou"
+    contador = sum(1 for letra in texto.lower() if letra in vogais)
+    return contador
+
+texto = "Olá, Mundo!"
+numero_vogais = contar_vogais(texto)
+print(f"O número de vogais na string é {numero_vogais}.")
+
+# Saída esperada
+# O número de vogais na string é 4.
+        </pre>
+    </section>
+
+    <section id="problema12">
+        <h3><span class="problema">Problema 12:</span> Verificar se um número é primo</h3>
+        <pre>
+def verificar_primo(numero):
+    if numero <= 1:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+numero = 29
+eh_primo = verificar_primo(numero)
+print(f"O número {numero} é {'primo' if eh_primo else 'não primo'}.")
+
+# Saída esperada
+# O número 29 é primo.
+        </pre>
+    </section>
+
+    <section id="problema13">
+        <h3><span class="problema">Problema 13:</span> Converter Fahrenheit para Celsius</h3>
+        <pre>
+def fahrenheit_para_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5/9
+    return celsius
+
+fahrenheit = 77
+celsius = fahrenheit_para_celsius(fahrenheit)
+print(f"{fahrenheit}°F é equivalente a {celsius:.2f}°C.")
+
+# Saída esperada
+# 77°F é equivalente a 25.00°C.
+        </pre>
+    </section>
+
+    <section id="problema14">
+        <h3><span class="problema">Problema 14:</span> Encontrar o menor número em uma lista</h3>
+        <pre>
+def encontrar_menor(lista):
+    if len(lista) == 0:
+        return "A lista está vazia"
+    menor = lista[0]
+    for numero in lista:
+        if numero < menor:
+            menor = numero
+    return menor
+
+lista = [3, 7, 2, 8, 5]
+menor = encontrar_menor(lista)
+print(f"O menor número da lista é {menor}.")
+
+# Saída esperada
+# O menor número da lista é 2.
+        </pre>
+    </section>
+
+    <section id="problema15">
+        <h3><span class="problema">Problema 15:</span> Verificar se um ano é bissexto</h3>
+        <pre>
+def verificar_bissexto(ano):
+    return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)
+
+ano = 2024
+eh_bissexto = verificar_bissexto(ano)
+print(f"O ano {ano} é {'bissexto' if eh_bissexto else 'não bissexto'}.")
+
+# Saída esperada
+# O ano 2024 é bissexto.
+        </pre>
+    </section>
+
+    <section id="problema16">
+        <h3><span class="problema">Problema 16:</span> Encontrar o N-ésimo número da sequência de Fibonacci</h3>
+        <pre>
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+
+n = 10
+numero_fibonacci = fibonacci(n)
+print(f"O {n}-ésimo número da sequência de Fibonacci é {numero_fibonacci}.")
+
+# Saída esperada
+# O 10-ésimo número da sequência de Fibonacci é 55.
+        </pre>
+    </section>
+
+    <section id="problema17">
+        <h3><span class="problema">Problema 17:</span> Calcular a soma dos dígitos de um número</h3>
+        <pre>
+def soma_digitos(numero):
+    return sum(int(digito) for digito in str(numero))
+
+numero = 12345
+soma = soma_digitos(numero)
+print(f"A soma dos dígitos do número {numero} é {soma}.")
+
+# Saída esperada
+# A soma dos dígitos do número 12345 é 15.
+        </pre>
+    </section>
+
+    <section id="problema18">
+        <h3><span class="problema">Problema 18:</span> Encontrar todos os números pares em uma lista</h3>
+        <pre>
+def encontrar_pares(lista):
+    return [numero for numero in lista if numero % 2 == 0]
+
+lista = [1, 2, 3, 4, 5, 6]
+pares = encontrar_pares(lista)
+print(f"Os números pares na lista são {pares}.")
+
+# Saída esperada
+# Os números pares na lista são [2, 4, 6].
+        </pre>
+    </section>
+
+    <section id="problema19">
+        <h3><span class="problema">Problema 19:</span> Calcular o quadrado de cada número em uma lista</h3>
+        <pre>
+def calcular_quadrados(lista):
+    return [numero ** 2 for numero in lista]
+
+lista = [1, 2, 3, 4]
+quadrados = calcular_quadrados(lista)
+print(f"O quadrado dos números da lista é {quadrados}.")
+
+# Saída esperada
+# O quadrado dos números da lista é [1, 4, 9, 16].
+        </pre>
+    </section>
+
+    <section id="problema20">
+        <h3><span class="problema">Problema 20:</span> Remover duplicatas de uma lista</h3>
+        <pre>
+def remover_duplicatas(lista):
+    return list(set(lista))
+
+lista = [1, 2, 2, 3, 4, 4, 5]
+lista_sem_duplicatas = remover_duplicatas(lista)
+print(f"A lista sem duplicatas é {lista_sem_duplicatas}.")
+
+# Saída esperada
+# A lista sem duplicatas é [1, 2, 3, 4, 5].
+        </pre>
+    </section>
+
+    <section id="problema21">
+        <h3><span class="problema">Problema 21:</span> Encontrar o menor e o maior número em uma lista</h3>
+        <pre>
+def encontrar_menor_maior(lista):
+    if len(lista) == 0:
+        return "A lista está vazia"
+    menor = min(lista)
+    maior = max(lista)
+    return menor, maior
+
+lista = [3, 7, 2, 8, 5]
+menor, maior = encontrar_menor_maior(lista)
+print(f"O menor número da lista é {menor} e o maior é {maior}.")
+
+# Saída esperada
+# O menor número da lista é 2 e o maior é 8.
+        </pre>
+    </section>
+
+    <section id="problema22">
+        <h3><span class="problema">Problema 22:</span> Verificar se uma string é um palíndromo</h3>
+        <pre>
+def verificar_palindromo(texto):
+    texto = texto.lower().replace(" ", "")
+    return texto == texto[::-1]
+
+texto = "A man a plan a canal Panama"
+eh_palindromo = verificar_palindromo(texto)
+print(f"A string '{texto}' é {'um palíndromo' if eh_palindromo else 'não um palíndromo'}.")
+
+# Saída esperada
+# A string 'A man a plan a canal Panama' é um palíndromo.
+        </pre>
+    </section>
+
+    <section id="problema23">
+        <h3><span class="problema">Problema 23:</span> Contar o número de palavras em uma string</h3>
+        <pre>
+def contar_palavras(texto):
+    return len(texto.split())
+
+texto = "Esta é uma string com várias palavras."
+numero_palavras = contar_palavras(texto)
+print(f"O número de palavras na string é {numero_palavras}.")
+
+# Saída esperada
+# O número de palavras na string é 6.
+        </pre>
+    </section>
+
+    <section id="problema24">
+        <h3><span class="problema">Problema 24:</span> Verificar se dois números são iguais</h3>
+        <pre>
+def verificar_igualdade(numero1, numero2):
+    return numero1 == numero2
+
+numero1 = 5
+numero2 = 5
+sao_iguais = verificar_igualdade(numero1, numero2)
+print(f"Os números {numero1} e {numero2} são {'iguais' if sao_iguais else 'diferentes'}.")
+
+# Saída esperada
+# Os números 5 e 5 são iguais.
+        </pre>
+    </section>
+
+    <section id="problema25">
+        <h3><span class="problema">Problema 25:</span> Calcular o fatorial de um número</h3>
+        <pre>
+import math
+
+def calcular_fatorial(numero):
+    return math.factorial(numero)
+
+numero = 5
+fatorial = calcular_fatorial(numero)
+print(f"O fatorial de {numero} é {fatorial}.")
+
+# Saída esperada
+# O fatorial de 5 é 120.
+        </pre>
+    </section>
+    <section id="problema26">
+        <h3><span class="problema">Problema 26:</span> Criar uma lista com 50 números e ordená-la em ordem crescente</h3>
+        <pre>
+import random
+
+# Gerar uma lista com 50 números aleatórios entre 1 e 100
+lista_numeros = [random.randint(1, 100) for _ in range(50)]
+            
+# Ordenar a lista em ordem crescente
+lista_ordenada = sorted(lista_numeros)
+         
+print("Lista original:")
+print(lista_numeros)
+            
+print("\nLista ordenada:")
+print(lista_ordenada)
+        </pre>
+    </section>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
