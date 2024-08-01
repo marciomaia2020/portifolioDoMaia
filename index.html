@@ -27,6 +27,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://kit.fontawesome.com/afb02bf9ac.js" crossorigin="anonymous"></script>
 
+
+		<!--MEUS STILOS E MEUS SCRIPT-->
 		<link rel="stylesheet" href="css/stilo.css">
 		<link rel="stylesheet" href="css/stilogradecss.css">
 		<script defer src="js/script.js"></script>
@@ -3132,7 +3134,7 @@
 		</div>
 
 
- <!-- Contact Section -->
+ <!-- Contact Section 
  <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contato"><b>Contato</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
@@ -3166,7 +3168,50 @@
       </div>
       <button type="submit" class="w3-button w3-green w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Enviar Mensagem</button>
     </form>
-  </div><br />
+  </div><br />-->
+
+ <!-- Contact Section -->
+ <div class="w3-container w3-padding-large w3-grey">
+	<h4 id="contato"><b>Contato</b></h4>
+	<div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+		<div class="w3-third w3-dark-grey">
+			<p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+			<p>marciofernando.maia@yahoo.com.br</p>
+		</div>
+		<div class="w3-third w3-teal">
+			<p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+			<p>Cosmópolis-SP</p>
+		</div>
+		<div class="w3-third w3-dark-grey">
+			<p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+			<p>+55 (19) 99624-9545</p>
+		</div>
+	</div>
+	<hr class="w3-opacity">
+
+	<form action="https://formspree.io/f/xovaaanz" method="post">
+		<div class="w3-section">
+			<label>Nome</label>
+			<input class="w3-input w3-border" type="text" name="Nome" id="nome" required>
+			<div id="nomeError" class="error"></div>
+		</div>
+		<div class="w3-section">
+			<label>Email</label>
+			<input class="w3-input w3-border" type="text" name="Email" id="email" required>
+			<div id="emailError" class="error"></div>
+		</div>
+		<div class="w3-section">
+			<label>Mensagem</label>
+			<input class="w3-input w3-border" type="text" name="Mensagem" id="mensagem" required>
+			<div id="mensagemError" class="error"></div>
+		</div>
+		<button type="submit" class="w3-button w3-green w3-margin-bottom">
+			<i class="fa fa-paper-plane w3-margin-right"></i>Enviar Mensagem
+		</button>
+	</form>
+</div><br />
+
+
 
 <!--Contact Form
 		<div class="container">
@@ -18415,6 +18460,69 @@
 					}
 		</script>
 
+<script>
+		//INICIO DAS FUNÇÕES PARA VALIDAÇÃO DO FORMULARIO
+		document.getElementById('nome').addEventListener('input', function() {
+		const nomeInput = this;
+		const nomeError = document.getElementById('nomeError');
+		
+		if (nomeInput.value.trim() === '') {
+			nomeError.textContent = 'O nome é obrigatório.';
+			nomeInput.setCustomValidity('O nome é obrigatório.');
+		} else if (nomeInput.value.length < 3) {
+			nomeError.textContent = 'O nome deve ter pelo menos 3 caracteres.';
+			nomeInput.setCustomValidity('O nome deve ter pelo menos 3 caracteres.');
+		} else {
+			nomeError.textContent = '';
+			nomeInput.setCustomValidity('');
+		}
+		});
+
+		document.getElementById('email').addEventListener('input', function() {
+		const emailInput = this;
+		const emailError = document.getElementById('emailError');
+		
+		const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+		
+		if (emailInput.value.trim() === '') {
+			emailError.textContent = 'O email é obrigatório.';
+			emailInput.setCustomValidity('O email é obrigatório.');
+		} else if (!emailPattern.test(emailInput.value)) {
+			emailError.textContent = 'Por favor, insira um email válido.';
+			emailInput.setCustomValidity('Por favor, insira um email válido.');
+		} else {
+			emailError.textContent = '';
+			emailInput.setCustomValidity('');
+		}
+		});
+
+		document.getElementById('mensagem').addEventListener('input', function() {
+		const mensagemInput = this;
+		const mensagemError = document.getElementById('mensagemError');
+		
+		if (mensagemInput.value.trim() === '') {
+			mensagemError.textContent = 'A mensagem é obrigatória.';
+			mensagemInput.setCustomValidity('A mensagem é obrigatória.');
+		} else if (mensagemInput.value.length < 10) {
+			mensagemError.textContent = 'A mensagem deve ter pelo menos 10 caracteres.';
+			mensagemInput.setCustomValidity('A mensagem deve ter pelo menos 10 caracteres.');
+		} else {
+			mensagemError.textContent = '';
+			mensagemInput.setCustomValidity('');
+		}
+		});
+
+		document.querySelector('form').addEventListener('submit', function(event) {
+		const nomeInput = document.getElementById('nome');
+		const emailInput = document.getElementById('email');
+		const mensagemInput = document.getElementById('mensagem');
+		
+		if (!nomeInput.checkValidity() || !emailInput.checkValidity() || !mensagemInput.checkValidity()) {
+			event.preventDefault();
+		}
+		});
+		//FINAL DAS FUNÇÕES PARA A VALIDAÇÃO DO FORMULARIO
+</script>
 								<!--
 
 							<div class="w3-container w3-center">
