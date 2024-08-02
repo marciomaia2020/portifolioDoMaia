@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Assuntos Avançados em Desenvolvimento Web com Python - Códigos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h3 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            display: block;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Resumo de Assuntos Avançados em Desenvolvimento Web com Python - Códigos</h1>
+
+	
+
+    <h3>Exemplo de Script de Deploy com Docker</h3>
+    <pre>
+<code>
+# Dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+CMD ["python", "app.py"]
+</code>
+    </pre>
+
+    <h3>Exemplo de Uso de MVC (Model-View-Controller) em Flask</h3>
+    <pre>
+<code>
+# app.py (Controller)
+from flask import Flask, render_template
+from models import get_data
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    data = get_data()
+    return render_template('index.html', data=data)
+    
+if __name__ == '__main__':
+    app.run()
+
+# models.py (Model)
+def get_data():
+    return {"key": "value"}
+
+# index.html (View)
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;{{ data['key'] }}&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+    </pre>
+
+    <h3>Exemplo de Uso de React para um Componente de Botão</h3>
+    <pre>
+<code>
+// Button.js
+import React from 'react';
+
+function Button() {
+    return (
+        &lt;button&gt;Clique Aqui&lt;/button&gt;
+    );
+}
+
+export default Button;
+</code>
+    </pre>
+
+    <h3>Exemplo de Rota com Node.js e Express</h3>
+    <pre>
+<code>
+// server.js
+const express = require('express');
+const app = express();
+
+app.get('/api/data', (req, res) => {
+    res.json({ key: 'value' });
+});
+
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
+</code>
+    </pre>
+
+    <h3>Exemplo de Consulta SQL para União de Tabelas</h3>
+    <pre>
+<code>
+-- Consulta SQL com JOIN
+SELECT users.name, orders.total
+FROM users
+JOIN orders ON users.id = orders.user_id
+WHERE orders.total > 100;
+</code>
+    </pre>
+
+    <h3>Exemplo de Hashing de Senha com Bcrypt em Python</h3>
+    <pre>
+<code>
+# password_hashing.py
+import bcrypt
+
+password = 'mysecretpassword'
+hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
+# Verificação de senha
+if bcrypt.checkpw(password.encode('utf-8'), hashed):
+    print("A senha está correta")
+else:
+    print("A senha está incorreta")
+</code>
+    </pre>
+
+    <h3>Exemplo de Micro Serviço com Flask</h3>
+    <pre>
+<code>
+# microservice.py
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/service1')
+def service1():
+    return jsonify({'response': 'Service 1 Response'})
+
+if __name__ == '__main__':
+    app.run(port=5001)
+</code>
+    </pre>
+
+    <h3>Exemplo de Chamada de API com Fetch em JavaScript</h3>
+    <pre>
+<code>
+&lt;script&gt;
+fetch('https://api.exemplo.com/data')
+    .then(response =&gt; response.json())
+    .then(data =&gt; console.log(data))
+    .catch(error =&gt; console.error('Erro:', error));
+&lt;/script&gt;
+</code>
+    </pre>
+
+    <h3>Exemplo de Pipeline CI/CD com YAML no GitLab</h3>
+    <pre>
+<code>
+# .gitlab-ci.yml
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+test:
+  stage: test
+  script:
+    - npm run test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy realizado com sucesso"
+</code>
+    </pre>
+
+    <h3>Exemplo de Teste Unitário com PyTest</h3>
+    <pre>
+<code>
+# test_sample.py
+def add(x, y):
+    return x + y
+
+def test_add():
+    assert add(2, 3) == 5
+    assert add(-1, 1) == 0
+</code>
+    </pre>
+
+    <h3>Exemplo de Design Pattern Singleton em Python</h3>
+    <pre>
+<code>
+# singleton.py
+class Singleton:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+
+singleton1 = Singleton()
+singleton2 = Singleton()
+
+assert singleton1 is singleton2
+</code>
+    </pre>
+
+</body>
+</html>
