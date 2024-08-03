@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Assuntos Avançados em Desenvolvimento Web com Python - Explicação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+		footer{text-align: right}
+    </style>
+</head>
+<body>
+    <h1>Resumo de Assuntos Avançados em Desenvolvimento Web com Python - Explicação</h1>
+
+    <h2>Exemplo de Script de Deploy com Docker</h2>
+    <pre><code>FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+CMD ["python", "app.py"]</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>FROM python:3.9-slim</code>: Define a imagem base do Docker, que é uma versão mínima do Python 3.9, para economizar espaço.</li>
+        <li><code>WORKDIR /app</code>: Define o diretório de trabalho dentro do contêiner como <code>/app</code>.</li>
+        <li><code>COPY . /app</code>: Copia todos os arquivos do diretório atual do host para o diretório <code>/app</code> no contêiner.</li>
+        <li><code>RUN pip install -r requirements.txt</code>: Instala as dependências listadas no arquivo <code>requirements.txt</code> usando o pip.</li>
+        <li><code>CMD ["python", "app.py"]</code>: Especifica o comando que será executado quando o contêiner for iniciado, que neste caso é rodar o aplicativo Python <code>app.py</code>.</li>
+    </ul>
+
+    <h2>Exemplo de Uso de MVC (Model-View-Controller) em Flask</h2>
+
+    <h3>app.py (Controller)</h3>
+    <pre><code>from flask import Flask, render_template
+from models import get_data
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    data = get_data()
+    return render_template('index.html', data=data)
+
+if __name__ == '__main__':
+    app.run()</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>from flask import Flask, render_template</code>: Importa o framework Flask e a função <code>render_template</code> para renderizar templates HTML.</li>
+        <li><code>from models import get_data</code>: Importa a função <code>get_data</code> do módulo <code>models</code>.</li>
+        <li><code>app = Flask(__name__)</code>: Cria uma instância do aplicativo Flask.</li>
+        <li><code>@app.route('/')</code>: Define uma rota para a URL base (<code>/</code>), associando-a à função <code>home</code>.</li>
+        <li><code>def home()</code>: Define a função <code>home</code>, que age como um controlador.</li>
+        <li><code>data = get_data()</code>: Chama a função <code>get_data</code> do modelo para obter dados.</li>
+        <li><code>return render_template('index.html', data=data)</code>: Renderiza o template <code>index.html</code>, passando os dados obtidos como contexto.</li>
+        <li><code>if __name__ == '__main__': app.run()</code>: Inicia o servidor Flask se o script for executado diretamente.</li>
+    </ul>
+
+    <h3>models.py (Model)</h3>
+    <pre><code>def get_data():
+    return {"key": "value"}</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>def get_data()</code>: Define uma função <code>get_data</code> que simula a obtenção de dados do modelo.</li>
+        <li><code>return {"key": "value"}</code>: Retorna um dicionário com dados que serão usados na view.</li>
+    </ul>
+
+    <h3>index.html (View)</h3>
+    <pre><code>&lt;html&gt;
+&lt;body&gt;
+ &lt;h1&gt;{{ data['key'] }}&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>{{ data['key'] }}</code>: Utiliza a sintaxe de template do Jinja2 para exibir o valor associado à chave <code>key</code> do dicionário <code>data</code> passado pelo controlador.</li>
+    </ul>
+
+    <h2>Exemplo de Uso de React para um Componente de Botão</h2>
+    <h3>Button.js</h3>
+    <pre><code>import React from 'react';
+
+function Button() {
+    return (
+        &lt;button&gt;Clique Aqui&lt;/button&gt;
+    );
+}
+
+export default Button;</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>import React from 'react';</code>: Importa a biblioteca React necessária para criar componentes.</li>
+        <li><code>function Button()</code>: Define um componente funcional chamado <code>Button</code>.</li>
+        <li><code>return (&lt;button&gt;Clique Aqui&lt;/button&gt;);</code>: O componente retorna um botão HTML com o texto "Clique Aqui".</li>
+        <li><code>export default Button;</code>: Exporta o componente <code>Button</code> para que possa ser usado em outros arquivos.</li>
+    </ul>
+
+    <h2>Exemplo de Rota com Node.js e Express</h2>
+    <h3>server.js</h3>
+    <pre><code>const express = require('express');
+const app = express();
+
+app.get('/api/data', (req, res) => {
+    res.json({ key: 'value' });
+});
+
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>const express = require('express');</code>: Importa o framework Express.</li>
+        <li><code>const app = express();</code>: Cria uma instância do aplicativo Express.</li>
+        <li><code>app.get('/api/data', (req, res) => { ... })</code>: Define uma rota GET para <code>/api/data</code>, que envia um objeto JSON como resposta.</li>
+        <li><code>app.listen(3000, () => { ... });</code>: Inicia o servidor na porta 3000 e exibe uma mensagem de log.</li>
+    </ul>
+
+    <h2>Exemplo de Consulta SQL para União de Tabelas</h2>
+    <h3>Consulta SQL com JOIN</h3>
+    <pre><code>SELECT users.name, orders.total
+FROM users
+JOIN orders ON users.id = orders.user_id
+WHERE orders.total &gt; 100;</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>SELECT users.name, orders.total</code>: Seleciona as colunas <code>name</code> da tabela <code>users</code> e <code>total</code> da tabela <code>orders</code>.</li>
+        <li><code>FROM users</code>: Especifica a tabela <code>users</code> como a tabela principal da consulta.</li>
+        <li><code>JOIN orders ON users.id = orders.user_id</code>: Realiza um JOIN (união) entre as tabelas <code>users</code> e <code>orders</code> onde <code>users.id</code> corresponde a <code>orders.user_id</code>.</li>
+        <li><code>WHERE orders.total &gt; 100</code>: Filtra os resultados para incluir apenas as linhas onde o valor total dos pedidos (<code>orders.total</code>) é maior que 100.</li>
+    </ul>
+
+    <h2>Exemplo de Hashing de Senha com Bcrypt em Python</h2>
+    <h3>password_hashing.py</h3>
+    <pre><code>import bcrypt
+
+password = 'mysecretpassword'
+hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
+# Verificação de senha
+if bcrypt.checkpw(password.encode('utf-8'), hashed):
+    print("A senha está correta")
+else:
+    print("A senha está incorreta")</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>import bcrypt</code>: Importa a biblioteca Bcrypt, usada para hashing de senhas.</li>
+        <li><code>password = 'mysecretpassword'</code>: Define a senha que será hashada.</li>
+        <li><code>hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())</code>: Gera o hash da senha usando Bcrypt, com um salt aleatório.</li>
+        <li><code>if bcrypt.checkpw(password.encode('utf-8'), hashed):</code>: Verifica se a senha fornecida corresponde ao hash gerado.</li>
+        <li><code>print("A senha está correta")</code>: Imprime uma mensagem confirmando que a senha está correta.</li>
+    </ul>
+
+    <h2>Exemplo de Micro Serviço com Flask</h2>
+    <h3>microservice.py</h3>
+    <pre><code>from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/service1')
+def service1():
+    return jsonify({'response': 'Service 1 Response'})
+
+if __name__ == '__main__':
+    app.run(port=5001)</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>from flask import Flask, jsonify</code>: Importa o framework Flask e a função <code>jsonify</code> para retornar respostas JSON.</li>
+        <li><code>app = Flask(__name__)</code>: Cria uma instância do aplicativo Flask.</li>
+        <li><code>@app.route('/api/service1')</code>: Define uma rota para o endpoint <code>/api/service1</code>.</li>
+        <li><code>def service1()</code>: Define a função <code>service1</code> que será chamada quando o endpoint for acessado.</li>
+        <li><code>return jsonify({'response': 'Service 1 Response'})</code>: Retorna uma resposta JSON com uma chave <code>response</code> e o valor <code>'Service 1 Response'</code>.</li>
+        <li><code>if __name__ == '__main__': app.run(port=5001)</code>: Inicia o servidor Flask na porta 5001 se o script for executado diretamente.</li>
+    </ul>
+
+    <h2>Exemplo de Chamada de API com Fetch em JavaScript</h2>
+    <pre><code>&lt;script&gt;
+fetch('https://api.exemplo.com/data')
+    .then(response =&gt; response.json())
+    .then(data =&gt; console.log(data))
+    .catch(error =&gt; console.error('Erro:', error));
+&lt;/script&gt;</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>fetch('https://api.exemplo.com/data')</code>: Realiza uma requisição GET para o endpoint da API fornecido.</li>
+        <li><code>.then(response =&gt; response.json())</code>: Converte a resposta da API para JSON.</li>
+        <li><code>.then(data =&gt; console.log(data))</code>: Imprime os dados da API no console.</li>
+        <li><code>.catch(error =&gt; console.error('Erro:', error))</code>: Captura e exibe qualquer erro que ocorrer durante a requisição.</li>
+    </ul>
+
+    <h2>Exemplo de Pipeline CI/CD com YAML no GitLab</h2>
+    <pre><code># .gitlab-ci.yml</code></pre>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>.gitlab-ci.yml</code>: Este arquivo define o pipeline de CI/CD para automação de testes, builds e deploys em um projeto hospedado no GitLab.</li>
+    </ul>
+
+
+<h2>Exemplo de Arquivo .github/workflows/ci.yml</h2>
+<p>Aqui está um exemplo de um arquivo <code>.yml</code> para configurar um pipeline de CI/CD no GitHub Actions. Esse pipeline executa um conjunto básico de etapas, como build, testes e deploy.</p>
+
+<pre><code class="language-yaml">
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the application
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: dist/
+
+  test:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run test
+        env:
+          CI: true
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: test-results.xml
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: test
+
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Deploy to production
+        run: ./deploy.sh
+        env:
+          DEPLOY_ENV: production
+</code></pre>
+
+<h3>Estrutura e Explicação</h3>
+<ul>
+  <li><strong>Nome do Pipeline:</strong>
+    <ul>
+      <li><code>name: CI/CD Pipeline</code>: Nomeia o pipeline para fácil identificação no GitHub Actions.</li>
+    </ul>
+  </li>
+  <li><strong>Eventos que Disparam o Pipeline:</strong>
+    <ul>
+      <li><code>on:</code> Especifica quando o pipeline deve ser acionado.</li>
+      <li><code>push:</code> O pipeline é disparado quando há um push para a branch <code>main</code>.</li>
+      <li><code>pull_request:</code> Também é disparado ao abrir ou atualizar um pull request na branch <code>main</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Jobs:</strong>
+    <ul>
+      <li><strong>Build:</strong>
+        <ul>
+          <li><code>runs-on: ubuntu-latest</code>: Define o ambiente de execução como uma máquina virtual Ubuntu.</li>
+          <li>Passos:
+            <ul>
+              <li><code>actions/checkout@v3</code>: Faz checkout do código-fonte do repositório.</li>
+              <li><code>actions/setup-node@v3</code>: Configura o Node.js na versão especificada (neste caso, 14).</li>
+              <li><code>npm install</code>: Instala as dependências do projeto.</li>
+              <li><code>npm run build</code>: Compila a aplicação.</li>
+              <li><code>actions/upload-artifact@v3</code>: Faz upload dos artefatos gerados no diretório <code>dist/</code>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Test:</strong>
+        <ul>
+          <li><code>needs: build</code>: Depende do job de build ser executado com sucesso antes de rodar.</li>
+          <li>Passos:
+            <ul>
+              <li>Parecidos com os do job de build, mas focam em rodar os testes com <code>npm run test</code>.</li>
+              <li><code>env: CI: true</code>: Configura a variável de ambiente para rodar testes em modo contínuo.</li>
+              <li>Upload dos resultados dos testes como artefato.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Deploy:</strong>
+        <ul>
+          <li><code>needs: test</code>: Só roda se os testes passarem.</li>
+          <li><code>if: github.ref == 'refs/heads/main'</code>: Só é executado se a branch for <code>main</code>.</li>
+          <li>Passos:
+            <ul>
+              <li>Faz o checkout do código e executa o script de deploy (<code>./deploy.sh</code>), que é responsável por implantar a aplicação em produção.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Informações Importantes</h3>
+<ul>
+  <li><strong>Controlando o Fluxo com needs:</strong> O uso de <code>needs</code> entre jobs permite criar dependências, garantindo que certos jobs rodem somente se outros forem concluídos com sucesso.</li>
+  <li><strong>Condicionais com if:</strong> <code>if: github.ref == 'refs/heads/main'</code> permite que o job de deploy seja executado apenas quando os commits são feitos na branch principal, ajudando a proteger contra deploys acidentais de branches de feature.</li>
+  <li><strong>Uso de Artefatos:</strong> Artefatos são usados para armazenar os resultados do build e testes. Eles podem ser compartilhados entre jobs ou baixados para análise.</li>
+  <li><strong>Configuração do Ambiente:</strong> Usar o <code>actions/setup-node@v3</code> permite configurar o Node.js de forma fácil. Isso pode ser estendido para outras linguagens e ambientes.</li>
+  <li><strong>Script de Deploy:</strong> O script <code>deploy.sh</code> é chamado durante o deploy. Este script pode conter qualquer lógica necessária para a implantação da aplicação, como transferir arquivos para um servidor ou acionar uma API de deploy.</li>
+</ul>
+
+<p>Esse exemplo cobre um cenário típico de CI/CD para aplicações Node.js, mas pode ser adaptado para outras linguagens e frameworks conforme necessário.</p>
+
+
+
+<footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+
+</body>
+</html>
