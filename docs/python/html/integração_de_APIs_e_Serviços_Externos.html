@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação de Integração de APIs com Flask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #706060;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+       p{
+        text-align: justify;
+       }
+       footer{text-align: right}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aplicação de Integração de APIs com Flask</h1>
+        <p>Este exemplo de aplicação demonstra como integrar a API do GitHub usando Python e Flask. A aplicação permite que o usuário insira um nome de usuário do GitHub e veja a lista de repositórios públicos desse usuário.</p>
+
+        <ol>
+            <li>INSTALAR <b>python</b></li>
+            <p><pre><code>Baixar do site oficial <a href="https://www.python.org/downloads/" target="_blank">aqui</a></code></pre></p>
+            <li>Adicionar <b>VARIÁVEIS</b></li>
+            <p><pre><code>Adicionar nas variáveis de ambiente</code></pre></p>
+            <p><pre><code>C:\Users\Marcio Fernando Maia\AppData\Local\Programs\Python\Python312\Scripts\</code></pre></p>
+            <p><pre><code>C:\Users\Marcio Fernando Maia\AppData\Local\Programs\Python\Python312\</code></pre></p>
+            <p><pre><code>C:\Users\Marcio Fernando Maia\AppData\Local\Programs\Python\Launcher\</code></pre></p>
+            <p><small>Ou simplemente rermita executar Python e pip a partir de qualquer diretório no prompt de comando.</small></p>
+            <p><pre><code>set PATH=%PATH%;C:\Python39\Scripts;C:\Python39</code></pre></p>
+            <li>Instalar <b>DEPENDÊNCIAS</b> <small>(Depende para aqual uso.)</small></li>
+            <p><pre><code>pip install Flask requests</code></pre></p>
+            <li><b>ATUALIZAR</b> o python </li>
+            <p><pre><code>python -m pip install --upgrade pip</code></pre></p>
+            <li><b>VERIFICAR Instalação</b> do python </li>
+            <p><pre><code>python --version</code></pre></p>    
+            <li><b>Ambiente VIRTUAL</b> no python </li>
+            <p><pre><code>Veja o arquivo <a href="docs/python/html/ambientes_virtuais_python.html">ambientes_virtuais_python.html</a></code></pre></p>    
+     
+<h1>MÃO NA MASSA</h1>
+        <h2>Estrutura do Projeto</h2>
+        <pre>
+github_integration/
+├── app.py
+├── templates/
+│   └── index.html
+└── requirements.txt
+        </pre>
+
+        <h2>Código HTML para <code>index.html</code></h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;GitHub Repositories&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type=&quot;text&quot;] {
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            color: red;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Buscar Repositórios do GitHub&lt;/h1&gt;
+    &lt;form method=&quot;post&quot;&gt;
+        &lt;label for=&quot;username&quot;&gt;Nome de Usuário:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required&gt;
+        &lt;button type=&quot;submit&quot;&gt;Buscar&lt;/button&gt;
+    &lt;/form&gt;
+    {% if error %}
+        &lt;p&gt;{{ error }}&lt;/p&gt;
+    {% endif %}
+    {% if repos %}
+        &lt;h2&gt;Repositórios de {{ repos[0].owner.login }}&lt;/h2&gt;
+        &lt;ul&gt;
+            {% for repo in repos %}
+                &lt;li&gt;&lt;a href=&quot;{{ repo.html_url }}&quot; target=&quot;_blank&quot;&gt;{{ repo.name }}&lt;/a&gt;&lt;/li&gt;
+            {% endfor %}
+        &lt;/ul&gt;
+    {% endif %}
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>Código Python para <code>app.py</code></h2>
+        <pre><code>from flask import Flask, render_template, request
+import requests
+
+app = Flask(__name__)
+
+@app.route(&quot;/&quot;, methods=[&quot;GET&quot;, &quot;POST&quot;])
+def index():
+    repos = []
+    error = None
+    if request.method == &quot;POST&quot;:
+        username = request.form.get(&quot;username&quot;)
+        url = f&quot;https://api.github.com/users/{username}/repos&quot;
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            repos = response.json()
+        else:
+            error = f&quot;Não foi possível encontrar repositórios para o usuário {username}.&quot;
+
+    return render_template(&quot;index.html&quot;, repos=repos, error=error)
+
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+
+        <h2>Arquivo <code>requirements.txt</code></h2>
+        <pre><code>Flask
+requests</code></pre>
+
+        <h2>Como Executar a Aplicação</h2>
+        <p>Siga os passos abaixo para executar a aplicação:</p>
+        <ol>
+            <li>Crie a estrutura de arquivos conforme mostrado acima.</li>
+            <li>Adicione os códigos fornecidos nos arquivos correspondentes.</li>
+            <li>Execute a aplicação com o comando:</li>
+            <pre><code>python app.py</code></pre>
+            <li>Acesse <code>http://127.0.0.1:5000/</code> no seu navegador para ver a aplicação em funcionamento.</li>
+        </ol>
+
+        <p>Esse exemplo cria uma interface simples para buscar repositórios de um usuário no GitHub e exibir os resultados na página.</p>
+    </div>
+
+    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+</body>
+</html>
