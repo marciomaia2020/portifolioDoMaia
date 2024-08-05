@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Planilhas Excel e HTML com Python</title>
+</head>
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f4;}
+        h1 {color: #333;}
+        h2 {color: #555;}
+        pre {background: #333; color: red; padding: 10px; overflow-x: auto;}
+        code {background: #e4e4e4; padding: 2px 4px; font-size: 90%;}
+		footer {text-align: right;}
+    </style>
+<body>
+    <h1>Manipulação de Planilhas Excel com Python</h1>
+    <p>Manipular planilhas do Excel usando Python é uma tarefa bastante comum e pode ser feita com bibliotecas como 
+        <strong>openpyxl</strong>, <strong>pandas</strong>, ou <strong>xlrd</strong> para leitura, e <strong>openpyxl</strong> 
+        ou <strong>xlsxwriter</strong> para escrita. Abaixo, vou te mostrar como fazer isso usando a biblioteca <em>openpyxl</em>, 
+        que é uma das mais populares para este propósito.
+    </p>
+
+    <h2>1. Instalação da Biblioteca</h2>
+    <p>Primeiro, você precisa instalar a biblioteca <em>openpyxl</em>:</p>
+    <pre><code>pip install openpyxl</code></pre>
+
+    <h2>2. Abrindo uma Planilha do Excel</h2>
+    <p>Para abrir uma planilha, você usa o método <code>load_workbook</code>:</p>
+    <pre><code>from openpyxl import load_workbook
+
+# Carregar a planilha
+workbook = load_workbook('caminho/para/sua/planilha.xlsx')
+
+# Selecionar uma aba específica
+sheet = workbook['NomeDaAba']</code></pre>
+
+    <h2>3. Lendo Dados de uma Célula</h2>
+    <p>Você pode ler dados de uma célula específica acessando-a pelo endereço da célula:</p>
+    <pre><code># Ler o valor de uma célula específica
+valor = sheet['A1'].value
+print(valor)</code></pre>
+
+    <h2>4. Escrevendo Dados em uma Célula</h2>
+    <p>Para inserir dados em uma célula, basta atribuir um valor a ela:</p>
+    <pre><code># Escrever um valor em uma célula específica
+sheet['B2'].value = 'Novo Valor'</code></pre>
+
+    <h2>5. Salvando as Alterações</h2>
+    <p>Após modificar os dados, você deve salvar o arquivo:</p>
+    <pre><code># Salvar o arquivo
+workbook.save('caminho/para/sua/planilha_modificada.xlsx')</code></pre>
+
+    <h2>6. Iterando Sobre Células</h2>
+    <p>Você também pode iterar sobre linhas ou colunas:</p>
+    <pre><code># Iterar sobre as linhas de uma coluna específica
+for row in sheet['A']:
+    print(row.value)
+
+# Iterar sobre todas as células de uma planilha
+for row in sheet.iter_rows(min_row=1, max_row=10, min_col=1, max_col=5):
+    for cell in row:
+        print(cell.value)</code></pre>
+
+    <h2>7. Criando uma Nova Planilha</h2>
+    <p>Você pode criar uma nova planilha dentro do mesmo arquivo:</p>
+    <pre><code>new_sheet = workbook.create_sheet(title='NovaAba')
+
+# Escrever em uma célula da nova aba
+new_sheet['A1'].value = 'Hello, World!'</code></pre>
+
+    <h2>8. Excluindo uma Planilha</h2>
+    <p>Para excluir uma planilha:</p>
+    <pre><code># Excluir uma aba do workbook
+workbook.remove(workbook['NomeDaAba'])</code></pre>
+
+    <h2>9. Fechando o Arquivo</h2>
+    <p>Embora o <em>openpyxl</em> não exija explicitamente que você feche o arquivo, você pode fazê-lo para garantir que os 
+        recursos sejam liberados:</p>
+    <pre><code># Fechar o workbook (opcional)
+workbook.close()</code></pre>
+
+    <h2>Resumo</h2>
+    <p>Com <em>openpyxl</em>, você pode realizar uma ampla gama de operações em planilhas do Excel, desde abrir e ler dados, 
+        até modificar células, salvar arquivos e até mesmo criar novas planilhas. Se você precisa trabalhar com grandes volumes 
+        de dados ou realizar operações mais complexas, a integração com <em>pandas</em> também é uma boa opção para facilitar a 
+        manipulação dos dados.</p>
+
+    <hr>
+
+    <h1>Manipulação de Tags HTML com Python</h1>
+    <p>Manipular tags HTML com Python pode ser feito usando bibliotecas como <strong>BeautifulSoup</strong> (parte do pacote 
+        <code>bs4</code>) ou <strong>lxml</strong>. Essas bibliotecas permitem analisar, modificar, e navegar por documentos 
+        HTML e XML. Aqui está um guia sobre como manipular tags HTML com Python usando <em>BeautifulSoup</em>:
+    </p>
+
+    <h2>1. Instalando a Biblioteca</h2>
+    <p>Primeiro, você precisa instalar o BeautifulSoup e o parser <code>lxml</code> (opcional):</p>
+    <pre><code>pip install beautifulsoup4 lxml</code></pre>
+
+    <h2>2. Carregando e Analisando HTML</h2>
+    <p>Aqui está um exemplo básico de como carregar e analisar um arquivo HTML:</p>
+    <pre><code>from bs4 import BeautifulSoup
+
+# Exemplo de HTML
+html_doc = """
+<html><head><title>Título da Página</title></head>
+<body>
+<p class="title"><b>Aqui é um título</b></p>
+<p class="story">Era uma vez uma história curta.</p>
+<a href="http://example.com/story1" class="link">Primeira história</a>
+<a href="http://example.com/story2" class="link">Segunda história</a>
+</body></html>
+"""
+
+# Criando um objeto BeautifulSoup
+soup = BeautifulSoup(html_doc, 'lxml')
+
+# Imprimindo o HTML formatado
+print(soup.prettify())</code></pre>
+
+    <h2>3. Navegando pelo Documento</h2>
+    <p>Você pode navegar pelo documento HTML usando métodos e atributos do BeautifulSoup:</p>
+    <pre><code># Acessando o título da página
+print(soup.title.string)
+
+# Acessando o primeiro parágrafo com classe "title"
+print(soup.find('p', class_='title'))
+
+# Acessando todos os links (tags <a>)
+for link in soup.find_all('a'):
+    print(link.get('href'))</code></pre>
+
+    <h2>4. Modificando o HTML</h2>
+    <p>Você pode modificar o HTML adicionando, removendo ou alterando tags e atributos:</p>
+    <pre><code># Adicionando um novo link
+new_link = soup.new_tag('a', href='http://example.com/story3', class_='link')
+new_link.string = 'Terceira história'
+soup.body.append(new_link)
+
+# Modificando o texto de um parágrafo
+p = soup.find('p', class_='story')
+p.string = 'Era uma vez uma história diferente.'
+
+# Removendo uma tag
+soup.a.decompose()  # Remove o primeiro link <a></code></pre>
+
+    <h2>5. Salvando as Modificações</h2>
+    <p>Após modificar o HTML, você pode salvar as alterações em um novo arquivo:</p>
+    <pre><code>with open('novo_arquivo.html', 'w', encoding='utf-8') as file:
+    file.write(str(soup))</code></pre>
+
+    <h2>6. Exemplos Avançados</h2>
+    <p><strong>Adicionar atributos a uma tag:</strong></p>
+    <pre><code>tag = soup.find('a')
+tag['style'] = 'color:red;'</code></pre>
+
+    <p><strong>Inserir nova tag em um lugar específico:</strong></p>
+    <pre><code># Inserir antes de uma tag existente
+soup.body.insert(1, new_link)</code></pre>
+
+    <p><strong>Remover todas as tags de um tipo específico:</strong></p>
+    <pre><code>for tag in soup.find_all('a'):
+    tag.decompose()</code></pre>
+
+    <h2>Resumo</h2>
+    <p>Com o <em>BeautifulSoup</em>, você pode facilmente acessar e manipular qualquer parte de um documento HTML, permitindo 
+        automatizar tarefas como web scraping, geração de HTML dinâmico, e muito mais.</p>
+		
+		    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+</body>
+</html>
