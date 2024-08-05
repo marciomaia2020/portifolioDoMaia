@@ -1,0 +1,54 @@
+#Token - Netlify 
+#Acesse User Settings > Applications > Personal access tokens.
+
+#Site ID - Netlify 
+#Site settings e procure o Site ID
+
+#Secrets ao GitHub
+#Settings Secrets and variables - Actions
+
+#Adicione os Secrets:
+#NETLIFY_AUTH_TOKEN: Adicione o token de autenticação que você copiou do Netlify.
+#NETLIFY_SITE_ID: Adicione o ID do site que você copiou do Netlify.
+
+#My token
+#nfp_uyZc8ukmpQfzZgTaqAwMLWYpbYp1d6Biff96
+
+#Site id 
+#29bc93f0-8d7f-4f86-b28c-3106a3738780
+#portifoliodomaia
+
+
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main  # Altere para o branch que você usa para deploys
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'  # Use a versão do Node.js adequada para o seu projeto
+
+    - name: Install dependencies
+      run: npm install  # Ou yarn install se estiver usando Yarn
+
+    - name: Build project
+      run: npm run build  # Ou o comando apropriado para construir seu projeto
+
+    - name: Deploy to Netlify
+      uses: netlify/actions/cli@v1
+      with:
+        args: deploy --prod
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
