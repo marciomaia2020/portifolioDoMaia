@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extração de Dados em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+		footer {text-align: right;}
+
+    </style>
+</head>
+<body>
+    <h1>Extração de Dados em Python</h1>
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#csv">CSV</a></li>
+        <li><a href="#excel">Excel</a></li>
+        <li><a href="#json">JSON</a></li>
+        <li><a href="#xml">XML</a></li>
+        <li><a href="#txt">TXT</a></li>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#sql">SQL</a></li>
+        <li><a href="#pdf">PDF</a></li>
+        <li><a href="#parquet">Parquet</a></li>
+        <li><a href="#hdf5">HDF5</a></li>
+    </ul>
+
+    <h2 id="csv">CSV</h2>
+    <p>Arquivos CSV (Comma-Separated Values) são usados para armazenar dados tabulares. Exemplo de leitura de um arquivo CSV usando a biblioteca <code>pandas</code>:</p>
+    <pre><code>import pandas as pd
+
+# Lendo o arquivo CSV
+df = pd.read_csv('dados.csv')
+
+# Exibindo as primeiras linhas do DataFrame
+print(df.head())</code></pre>
+
+    <h2 id="excel">Excel</h2>
+    <p>Arquivos Excel (.xlsx, .xls) são amplamente utilizados para armazenar dados em formato de planilha. Exemplo de leitura de um arquivo Excel usando a biblioteca <code>pandas</code>:</p>
+    <pre><code>import pandas as pd
+
+# Lendo o arquivo Excel
+df = pd.read_excel('dados.xlsx')
+
+# Exibindo as primeiras linhas do DataFrame
+print(df.head())</code></pre>
+
+    <h2 id="json">JSON</h2>
+    <p>Arquivos JSON (JavaScript Object Notation) são usados para armazenar dados estruturados. Exemplo de leitura de um arquivo JSON:</p>
+    <pre><code>import json
+
+# Lendo o arquivo JSON
+with open('dados.json') as file:
+    data = json.load(file)
+
+# Exibindo os dados
+print(data)</code></pre>
+
+    <h2 id="xml">XML</h2>
+    <p>Arquivos XML (eXtensible Markup Language) são usados para armazenar dados hierárquicos. Exemplo de leitura de um arquivo XML usando <code>ElementTree</code>:</p>
+    <pre><code>import xml.etree.ElementTree as ET
+
+# Lendo o arquivo XML
+tree = ET.parse('dados.xml')
+root = tree.getroot()
+
+# Exibindo os dados
+for elem in root:
+    print(elem.tag, elem.attrib)</code></pre>
+
+    <h2 id="txt">TXT</h2>
+    <p>Arquivos TXT são usados para armazenar dados em texto plano. Exemplo de leitura de um arquivo TXT:</p>
+    <pre><code># Lendo o arquivo TXT
+with open('dados.txt') as file:
+    lines = file.readlines()
+
+# Exibindo as linhas do arquivo
+for line in lines:
+    print(line.strip())</code></pre>
+
+    <h2 id="html">HTML</h2>
+    <p>Arquivos HTML são usados para armazenar dados estruturados em páginas web. Exemplo de extração de dados de um arquivo HTML usando <code>BeautifulSoup</code>:</p>
+    <pre><code>from bs4 import BeautifulSoup
+
+# Lendo o arquivo HTML
+with open('dados.html') as file:
+    soup = BeautifulSoup(file, 'html.parser')
+
+# Exibindo todos os links da página
+for link in soup.find_all('a'):
+    print(link.get('href'))</code></pre>
+
+    <h2 id="sql">SQL</h2>
+    <p>Arquivos SQL podem ser usados para armazenar comandos de banco de dados. Exemplo de execução de uma consulta SQL usando <code>sqlite3</code>:</p>
+    <pre><code>import sqlite3
+
+# Conectando ao banco de dados
+conn = sqlite3.connect('banco_de_dados.db')
+cursor = conn.cursor()
+
+# Executando uma consulta SQL
+cursor.execute("SELECT * FROM tabela")
+
+# Exibindo os resultados
+for row in cursor.fetchall():
+    print(row)
+
+# Fechando a conexão
+conn.close()</code></pre>
+
+    <h2 id="pdf">PDF</h2>
+    <p>Arquivos PDF são frequentemente utilizados para relatórios. Exemplo de extração de texto de um PDF usando <code>PyPDF2</code>:</p>
+    <pre><code>import PyPDF2
+
+# Lendo o arquivo PDF
+with open('documento.pdf', 'rb') as file:
+    reader = PyPDF2.PdfReader(file)
+    page = reader.pages[0]
+    text = page.extract_text()
+
+# Exibindo o texto extraído
+print(text)</code></pre>
+
+    <h2 id="parquet">Parquet</h2>
+    <p>Arquivos Parquet são usados para armazenar dados em formato colunar. Exemplo de leitura de um arquivo Parquet usando <code>pandas</code>:</p>
+    <pre><code>import pandas as pd
+
+# Lendo o arquivo Parquet
+df = pd.read_parquet('dados.parquet')
+
+# Exibindo as primeiras linhas do DataFrame
+print(df.head())</code></pre>
+
+    <h2 id="hdf5">HDF5</h2>
+    <p>Arquivos HDF5 (Hierarchical Data Format) são usados para armazenar grandes volumes de dados numéricos. Exemplo de leitura de um arquivo HDF5 usando <code>h5py</code>:</p>
+    <pre><code>import h5py
+
+# Lendo o arquivo HDF5
+with h5py.File('dados.h5', 'r') as file:
+    data = file['dataset_name'][:]
+
+# Exibindo os dados
+print(data)</code></pre>
+
+
+    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+</body>
+</html>

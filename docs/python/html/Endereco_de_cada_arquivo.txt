@@ -10,6 +10,8 @@ file:///D:/MEUSSITESEPROJETOS/Sites/portifolioDoMaia/docs/python/html/resumo_web
 file:///D:/MEUSSITESEPROJETOS/Sites/portifolioDoMaia/docs/python/html/resumo_web_python_explicacao.html
 file:///D:/MEUSSITESEPROJETOS/Sites/portifolioDoMaia/docs/python/html/resumo_web_python_explicacao.html
 
+file:///D:/MEUSSITESEPROJETOS/Sites/portifolioDoMaia/docs/python/html/extracao_de_Dados_em_Python.html
+file:///D:/MEUSSITESEPROJETOS/Sites/portifolioDoMaia/docs/python/html/guia_extracao_de_dados_python.html
 
 
 <li><a href="docs/python/html/apostilas_python.html" target="_blank">Apostila Python</a> |	<a href="docs/python/pdf/separados/Apostila_do_Desenvolvedor_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>

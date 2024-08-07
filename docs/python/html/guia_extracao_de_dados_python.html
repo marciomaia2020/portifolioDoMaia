@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extração de Dados com Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        footer {text-align: right;}
+ 
+    </style>
+</head>
+<body>
+    <h1>Guia de Extração de Dados com Python</h1>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#basico">1. Extração Básica de Dados</a></li>
+        <li><a href="#autenticacao">2. Autenticação</a></li>
+        <li><a href="#pagizacao">3. Paginação</a></li>
+        <li><a href="#javascript">4. Manipulação de JavaScript Dinâmico</a></li>
+        <li><a href="#dados-complexos">5. Tratamento de Dados Complexos</a></li>
+        <li><a href="#erros">6. Manejo de Erros e Exceções</a></li>
+        <li><a href="#exportacao">7. Exportação Avançada</a></li>
+        <li><a href="#requisitos">8. Requisitos Legais e Éticos</a></li>
+    </ul>
+
+    <h2 id="basico">1. Extração Básica de Dados</h2>
+    <p>Para acessar um site, extrair informações e salvar em uma planilha, você pode usar as bibliotecas <code>requests</code>, <code>BeautifulSoup</code> e <code>pandas</code>. Aqui está um exemplo básico:</p>
+    <pre><code>import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Passo 1: Acessar o site
+url = 'https://exemplo.com'
+response = requests.get(url)
+
+# Verifica se a requisição foi bem-sucedida
+if response.status_code == 200:
+    # Passo 2: Extrair as informações usando BeautifulSoup
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    # Exemplo de extração de dados: Encontrando todas as tags &lt;h2&gt;
+    titles = soup.find_all('h2')
+    data = []
+    
+    for title in titles:
+        data.append(title.get_text())
+    
+    # Passo 3: Organizar os dados em um DataFrame
+    df = pd.DataFrame(data, columns=['Titles'])
+
+    # Passo 4: Salvar os dados em uma planilha Excel
+    df.to_excel('dados_extraidos.xlsx', index=False)
+
+    print("Dados extraídos e salvos em 'dados_extraidos.xlsx'")
+else:
+    print(f"Erro ao acessar o site: {response.status_code}")</code></pre>
+
+    <h2 id="autenticacao">2. Autenticação</h2>
+    <p>Para sites que exigem autenticação, você pode usar <code>requests.Session()</code> para gerenciar a sessão. Exemplo:</p>
+    <pre><code>login_url = 'https://exemplo.com/login'
+session = requests.Session()
+payload = {'username': 'seu_usuario', 'password': 'sua_senha'}
+session.post(login_url, data=payload)</code></pre>
+
+    <h2 id="pagizacao">3. Paginação</h2>
+    <p>Se os dados estão em várias páginas, você pode iterar sobre as páginas. Exemplo:</p>
+    <pre><code>for page in range(1, total_pages+1):
+    url = f'https://exemplo.com/page={page}'
+    response = session.get(url)
+    # Processar cada página</code></pre>
+
+    <h2 id="javascript">4. Manipulação de JavaScript Dinâmico</h2>
+    <p>Para sites que carregam dados via JavaScript, você pode usar <code>Selenium</code>. Exemplo:</p>
+    <pre><code>from selenium import webdriver
+driver = webdriver.Chrome()
+driver.get('https://exemplo.com')
+# Interagir com a página e extrair dados</code></pre>
+
+    <h2 id="dados-complexos">5. Tratamento de Dados Complexos</h2>
+    <p>Se os dados são complexos, você pode precisar navegar na estrutura HTML. Exemplo:</p>
+    <pre><code>soup = BeautifulSoup(response.content, 'html.parser')
+complex_data = soup.find('div', {'class': 'complex-structure'})</code></pre>
+
+    <h2 id="erros">6. Manejo de Erros e Exceções</h2>
+    <p>Para lidar com erros, implemente tratamento de exceções. Exemplo:</p>
+    <pre><code>try:
+    response = requests.get(url)
+    response.raise_for_status()
+except requests.exceptions.HTTPError as err:
+    print(f"HTTP error occurred: {err}")</code></pre>
+
+    <h2 id="exportacao">7. Exportação Avançada</h2>
+    <p>Para exportar dados em formatos avançados:</p>
+    <pre><code>with pd.ExcelWriter('dados.xlsx') as writer:
+    df1.to_excel(writer, sheet_name='Aba1')
+    df2.to_excel(writer, sheet_name='Aba2')</code></pre>
+
+    <h2 id="requisitos">8. Requisitos Legais e Éticos</h2>
+    <p>Respeite os Termos de Serviço do site e considere pedir permissão ou usar APIs públicas.</p>
+
+
+    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+</body>
+</html>
