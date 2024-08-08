@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos de POO em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .indice {
+            margin-bottom: 20px;
+        }
+        .indice ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .indice ul li {
+            margin-bottom: 5px;
+        }
+        .indice ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .indice ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conceitos de Programação Orientada a Objetos (POO) em Python</h1>
+
+    <div class="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#classe-objeto">Classe e Objeto</a></li>
+            <li><a href="#heranca">Herança</a></li>
+            <li><a href="#polimorfismo">Polimorfismo</a></li>
+            <li><a href="#abstracao">Abstração</a></li>
+            <li><a href="#encapsulamento">Encapsulamento</a></li>
+        </ul>
+    </div>
+
+    <h2 id="classe-objeto">Seção 1: Definição de Classe e Objeto</h2>
+    <pre><code>class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def emitir_som(self):
+        pass
+
+gato = Animal("Gato")
+print(gato.nome)  # Saída: Gato
+</code></pre>
+    <p><strong>Definição da Classe <code>Animal</code>:</strong></p>
+    <ul>
+        <li>A classe <code>Animal</code> é criada. Dentro dela, há um método especial chamado <code>__init__</code>, que é o construtor da classe. Este método é chamado automaticamente quando um novo objeto é instanciado a partir da classe.</li>
+        <li><code>__init__(self, nome)</code> recebe dois parâmetros: <code>self</code> (que representa a instância atual do objeto) e <code>nome</code> (o nome do animal).</li>
+        <li><code>self.nome = nome</code> atribui o valor do parâmetro <code>nome</code> ao atributo <code>nome</code> da instância.</li>
+    </ul>
+
+    <p><strong>Definição do Método <code>emitir_som</code>:</strong></p>
+    <ul>
+        <li>O método <code>emitir_som</code> é definido, mas ele não faz nada (a instrução <code>pass</code> indica que nenhuma ação é realizada). Esse método é um espaço reservado para ser potencialmente sobrescrito em subclasses.</li>
+    </ul>
+
+    <p><strong>Criação de um Objeto:</strong></p>
+    <ul>
+        <li><code>gato = Animal("Gato")</code> cria uma instância da classe <code>Animal</code> chamada <code>gato</code>, passando o argumento "Gato" para o construtor. Isso define o atributo <code>nome</code> do objeto <code>gato</code> como "Gato".</li>
+    </ul>
+
+    <p><strong>Impressão do Nome:</strong></p>
+    <ul>
+        <li><code>print(gato.nome)</code> imprime o valor do atributo <code>nome</code> do objeto <code>gato</code>, que é "Gato".</li>
+    </ul>
+
+    <h2 id="heranca">Seção 2: Herança</h2>
+    <pre><code>class Gato(Animal):
+    def emitir_som(self):
+        return "Miau"
+
+gato = Gato("Bichano")
+print(gato.nome)  # Saída: Bichano
+print(gato.emitir_som())  # Saída: Miau
+</code></pre>
+    <p><strong>Definição da Subclasse <code>Gato</code>:</strong></p>
+    <ul>
+        <li>A classe <code>Gato</code> é criada como uma subclasse da classe <code>Animal</code>. Isso é indicado pelo fato de <code>Gato</code> herdar de <code>Animal</code> (<code>class Gato(Animal)</code>).</li>
+    </ul>
+
+    <p><strong>Sobrescrita do Método <code>emitir_som</code>:</strong></p>
+    <ul>
+        <li>A classe <code>Gato</code> sobrescreve o método <code>emitir_som</code> da classe <code>Animal</code>, de modo que agora ele retorna "Miau".</li>
+    </ul>
+
+    <p><strong>Criação de um Objeto <code>Gato</code>:</strong></p>
+    <ul>
+        <li><code>gato = Gato("Bichano")</code> cria uma instância da classe <code>Gato</code>, passando "Bichano" como o nome. A classe <code>Gato</code> herda o construtor da classe <code>Animal</code>, então <code>nome</code> é definido como "Bichano".</li>
+    </ul>
+
+    <p><strong>Impressão do Nome e Som:</strong></p>
+    <ul>
+        <li><code>print(gato.nome)</code> imprime "Bichano".</li>
+        <li><code>print(gato.emitir_som())</code> chama o método <code>emitir_som</code> da instância <code>gato</code>, que agora retorna "Miau".</li>
+    </ul>
+
+    <h2 id="polimorfismo">Seção 3: Polimorfismo</h2>
+    <pre><code>class Animal:
+    def emitir_som(self):
+        pass
+
+class Gato(Animal):
+    def emitir_som(self):
+        return "Miau"
+
+class Cachorro(Animal):
+    def emitir_som(self):
+        return "Au Au"
+
+animais = [Gato(), Cachorro()]
+
+for animal in animais:
+    print(animal.emitir_som())
+</code></pre>
+    <p><strong>Classes <code>Gato</code> e <code>Cachorro</code>:</strong></p>
+    <ul>
+        <li><code>Gato</code> e <code>Cachorro</code> são subclasses de <code>Animal</code>, e ambos sobrescrevem o método <code>emitir_som</code> para retornar sons diferentes: "Miau" e "Au Au", respectivamente.</li>
+    </ul>
+
+    <p><strong>Lista de Animais:</strong></p>
+    <ul>
+        <li><code>animais = [Gato(), Cachorro()]</code> cria uma lista contendo instâncias das classes <code>Gato</code> e <code>Cachorro</code>.</li>
+    </ul>
+
+    <p><strong>Iteração e Polimorfismo:</strong></p>
+    <ul>
+        <li>O loop <code>for animal in animais</code> percorre cada objeto na lista <code>animais</code>. Mesmo que <code>animal</code> possa ser um <code>Gato</code> ou um <code>Cachorro</code>, Python chama o método <code>emitir_som</code> correto, mostrando o comportamento polimórfico.</li>
+    </ul>
+
+    <p><strong>A saída será:</strong></p>
+    <ul>
+        <li>"Miau" para o objeto <code>Gato</code>.</li>
+        <li>"Au Au" para o objeto <code>Cachorro</code>.</li>
+    </ul>
+
+    <h2 id="abstracao">Seção 4: Abstração</h2>
+    <pre><code>from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def emitir_som(self):
+        pass
+
+class Gato(Animal):
+    def emitir_som(self):
+        return "Miau"
+
+gato = Gato()
+print(gato.emitir_som())  # Saída: Miau
+</code></pre>
+    <p><strong>Uso da Classe Abstrata <code>Animal</code>:</strong></p>
+    <ul>
+        <li><code>Animal</code> é uma classe abstrata, definida usando <code>ABC</code> (Abstract Base Class). O método <code>emitir_som</code> é decorado com <code>@abstractmethod</code>, o que significa que qualquer subclasse de <code>Animal</code> deve implementar esse método.</li>
+    </ul>
+
+    <p><strong>Subclasse <code>Gato</code>:</strong></p>
+    <ul>
+        <li><code>Gato</code> herda de <code>Animal</code> e implementa o método <code>emitir_som</code>, retornando "Miau".</li>
+    </ul>
+
+    <p><strong>Criação de um Objeto e Chamada do Método:</strong></p>
+    <ul>
+        <li><code>gato = Gato()</code> cria uma instância de <code>Gato</code>, e <code>print(gato.emitir_som())</code> imprime "Miau".</li>
+    </ul>
+
+    <h2 id="encapsulamento">Seção 5: Encapsulamento</h2>
+    <pre><code>class ContaBancaria:
+    def __init__(self, saldo_inicial):
+        self.__saldo = saldo_inicial
+
+    def depositar(self, quantia):
+        self.__saldo += quantia
+
+    def sacar(self, quantia):
+        if quantia <= self.__saldo:
+            self.__saldo -= quantia
+            return True
+        return False
+
+    def obter_saldo(self):
+        return self.__saldo
+
+conta = ContaBancaria(100)
+conta.depositar(50)
+print(conta.obter_saldo())  # Saída: 150
+conta.sacar(75)
+print(conta.obter_saldo())  # Saída: 75
+</code></pre>
+    <p><strong>Atributos Privados:</strong></p>
+    <ul>
+        <li><code>__saldo</code> é um atributo privado da classe <code>ContaBancaria</code>, indicado pelos dois underscores no início do nome. Isso significa que ele não pode ser acessado diretamente fora da classe.</li>
+    </ul>
+
+    <p><strong>Métodos Públicos:</strong></p>
+    <ul>
+        <li><code>depositar</code>, <code>sacar</code> e <code>obter_saldo</code> são métodos públicos que permitem manipular e acessar o saldo da conta de forma controlada.</li>
+    </ul>
+
+    <p><strong>Exemplo de Uso:</strong></p>
+    <ul>
+        <li>Uma instância de <code>ContaBancaria</code> é criada com um saldo inicial de 100. Em seguida, 50 são depositados, e o saldo é verificado (150). Após um saque de 75, o saldo é verificado novamente (75).</li>
+    </ul>
+
+</body>
+</html>
