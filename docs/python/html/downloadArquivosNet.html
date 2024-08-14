@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Código Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentação do Código Python</h1>
+
+    <h2>Descrição do Código</h2>
+    <p>
+        O código abaixo realiza o download de um arquivo de uma URL e salva-o em um diretório especificado no sistema local. 
+        O código também tenta extrair o nome do arquivo do cabeçalho da resposta HTTP. Se o cabeçalho não estiver presente, 
+        um nome padrão é utilizado.
+    </p>
+
+    <h2>Código Python</h2>
+    <pre><code>
+import requests
+import os
+
+# URL do arquivo para download
+url = 'https://servicebus2.caixa.gov.br/portaldeloterias/api/resultados/download?modalidade=Mega-Sena'
+
+# Fazer uma requisição GET para a URL
+response = requests.get(url)
+
+# Verificar se a requisição foi bem-sucedida
+if response.status_code == 200:
+    # Tentar extrair o nome do arquivo a partir do cabeçalho Content-Disposition
+    content_disposition = response.headers.get('content-disposition')
+    if content_disposition:
+        # Exemplo de valor Content-Disposition: 'attachment; filename="resultados_mega_sena.zip"'
+        file_name = content_disposition.split('filename=')[-1].strip('"')
+    else:
+        # Se não houver cabeçalho Content-Disposition, usar um nome padrão
+        file_name = 'resultados_mega_sena.zip'
+    
+    # Definir o diretório de destino
+    dest_dir = 'C:/Users/Marcio Fernando Maia/Downloads'
+
+    # Criar o caminho completo para o arquivo
+    file_path = os.path.join(dest_dir, file_name)
+
+    # Salvar o conteúdo da resposta em um arquivo local
+    with open(file_path, 'wb') as file:
+        file.write(response.content)
+    
+    print(f"Download concluído com sucesso! Arquivo salvo como {file_name}.")
+else:
+    print(f"Erro ao fazer download. Código de status: {response.status_code}")
+    </code></pre>
+
+    <h2>Detalhes do Código</h2>
+    <h3>1. Importação de Módulos</h3>
+    <p>
+        O código começa importando dois módulos essenciais:
+    </p>
+    <ul>
+        <li><code>requests</code>: Módulo para fazer requisições HTTP, simplificando o processo de enviar e receber dados da web.</li>
+        <li><code>os</code>: Módulo para interagir com o sistema operacional, como manipulação de caminhos e diretórios.</li>
+    </ul>
+
+    <h3>2. URL de Download</h3>
+    <p>
+        Define a URL de onde o arquivo será baixado. No caso, é um endpoint de download da Caixa Econômica Federal.
+    </p>
+
+    <h3>3. Requisição HTTP GET</h3>
+    <p>
+        Envia uma requisição GET para a URL fornecida para recuperar o arquivo.
+    </p>
+
+    <h3>4. Verificação do Status da Requisição</h3>
+    <p>
+        O código verifica se a resposta da requisição tem o código de status 200, indicando sucesso. 
+        Se não for o caso, exibe uma mensagem de erro.
+    </p>
+
+    <h3>5. Extração do Nome do Arquivo</h3>
+    <p>
+        O código tenta extrair o nome do arquivo a partir do cabeçalho <code>Content-Disposition</code> da resposta HTTP.
+        Se o cabeçalho não estiver presente, um nome padrão é utilizado.
+    </p>
+
+    <h3>6. Definição do Diretório de Destino</h3>
+    <p>
+        Define o diretório onde o arquivo será salvo. Este caminho deve ser válido no sistema onde o código está sendo executado.
+    </p>
+
+    <h3>7. Construção do Caminho do Arquivo</h3>
+    <p>
+        Usa a função <code>os.path.join</code> para criar um caminho completo para o arquivo, combinando o diretório e o nome do arquivo.
+    </p>
+
+    <h3>8. Salvamento do Arquivo</h3>
+    <p>
+        Abre um arquivo no caminho especificado em modo binário e escreve o conteúdo da resposta no arquivo. 
+        Após a escrita, o arquivo é fechado automaticamente com o uso do bloco <code>with</code>.
+    </p>
+
+    <h3>9. Mensagem de Sucesso</h3>
+    <p>
+        Exibe uma mensagem confirmando que o download foi concluído com sucesso e indicando o nome do arquivo salvo.
+    </p>
+
+    <h3>10. Tratamento de Erros</h3>
+    <p>
+        Se a requisição não for bem-sucedida, uma mensagem de erro é exibida com o código de status da resposta.
+    </p>
+
+    <h2>Pontos Adicionais</h2>
+    <ul>
+        <li><strong>Segurança:</strong> Certifique-se de que a URL é segura e confiável antes de baixar arquivos.</li>
+        <li><strong>Exceções e Erros:</strong> Considere adicionar tratamento de exceções para capturar erros de rede ou problemas ao abrir o arquivo.</li>
+        <li><strong>Verificação de Existência do Diretório:</strong> Verifique se o diretório de destino existe e crie-o se necessário.</li>
+    </ul>
+</body>
+</html>
