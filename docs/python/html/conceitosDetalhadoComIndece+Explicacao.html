@@ -51,7 +51,7 @@
             <li><a href="#tipos-de-variaveis">1. Tipos de Variáveis</a></li>
             <li><a href="#estruturas-de-controle">2. Estruturas de Controle</a></li>
             <li><a href="#funcoes">3. Funções</a></li>
-            <li><a href="#listas-e-tuplas">4. Listas e Tuplas</a></li>
+            <li><a href="#listas-e-tuplas">4. Listas,  Tuplas e Sets</a></li>
             <li><a href="#dicionarios">5. Dicionários</a></li>
             <li><a href="#modulos-e-pacotes">6. Módulos e Pacotes</a></li>
             <li><a href="#tratamento-de-erros">7. Tratamento de Erros</a></li>
@@ -129,23 +129,43 @@ mensagem = saudacao("Alice")
 print(mensagem)
     </code></pre>
 
-    <h2 id="listas-e-tuplas">4. Listas e Tuplas</h2>
-    <p>Listas e tuplas são tipos de dados em Python usados para armazenar coleções de itens.</p>
-    <ul>
-        <li><b>Listas:</b> São sequências mutáveis, o que significa que você pode modificar seus elementos (adicionar, remover ou alterar itens). Listas são definidas usando colchetes <code>[]</code>.</li>
-        <li><b>Tuplas:</b> São sequências imutáveis, o que significa que, uma vez criadas, seus elementos não podem ser alterados. Tuplas são definidas usando parênteses <code>()</code>.</li>
-    </ul>
-    <pre><code># Exemplo de listas e tuplas em Python
+<h2 id="listas-e-tuplas">4. Listas, Tuplas e Sets</h2>
+<p>Listas, tuplas e sets são tipos de dados em Python usados para armazenar coleções de itens.</p>
+<ul>
+    <li><b>Listas:</b> São sequências mutáveis, o que significa que você pode modificar seus elementos (adicionar, remover ou alterar itens). Listas são definidas usando colchetes <code>[]</code>.</li>
+    <li><b>Tuplas:</b> São sequências imutáveis, o que significa que, uma vez criadas, seus elementos não podem ser alterados. Tuplas são definidas usando parênteses <code>()</code>.</li>
+    <li><b>Sets:</b> São coleções não ordenadas de elementos únicos. Sets são úteis quando você precisa garantir que não há duplicatas e não se importa com a ordem dos elementos. Sets são definidos usando chaves <code>{}</code>.</li>
+</ul>
+<pre><code># Exemplo de listas, tuplas e sets em Python
 minha_lista = [1, 2, 3, 4, 5]  # Lista: Uma sequência mutável
 minha_tupla = (1, 2, 3, 4, 5)  # Tupla: Uma sequência imutável
+meu_set = {1, 2, 3, 4, 5}     # Set: Uma coleção não ordenada de elementos únicos
 
 print(minha_lista)
 print(minha_tupla)
+print(meu_set)
 
 # Acessando elementos
 print(minha_lista[0])
 print(minha_tupla[0])
-    </code></pre>
+
+# Adicionando elementos a um set
+meu_set.add(6)
+print(meu_set)
+
+# Tentando adicionar um elemento duplicado a um set
+meu_set.add(3)
+print(meu_set)  # O set não muda, pois 3 já está presente
+</code></pre>
+
+<pre>
+Lista	[Mu]
+Tupla	(Imu)
+Set	{EleUni}
+</pre>
+
+
+
 
     <h2 id="dicionarios">5. Dicionários</h2>
     <p>Dicionários são usados para armazenar dados em pares chave-valor. Isso significa que cada valor armazenado em um dicionário está associado a uma chave única, que é usada para acessar esse valor. Dicionários em Python são definidos usando chaves <code>{}</code>.</p>
