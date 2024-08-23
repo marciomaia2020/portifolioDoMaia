@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macetes em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #dcdcdc;
+        }
+        h3 {
+            color: #f4f4f4;
+            background-color: #333;
+            padding: 10px;
+            border-left: 5px solid #dcdcdc;
+            font-weight: normal;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #444;
+            color: #f8f8f2;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        pre {
+            background-color: #444;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: "Courier New", Courier, monospace;
+        }
+		footer{text-align: right}
+
+    </style>
+</head>
+<body>
+
+    <h1>Macetes em Python</h1>
+
+    <ol>
+        <li>
+            <h3>Troca de Variáveis:</h3>
+            <p>Troque os valores de duas variáveis sem uma variável temporária.</p>
+            <pre><code>a, b = 1, 2
+a, b = b, a
+print(a, b)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>2 1</code></pre>
+        </li>
+
+        <li>
+            <h3>List Comprehension:</h3>
+            <p>Crie listas de forma concisa e eficiente.</p>
+            <pre><code>squares = [x**2 for x in range(5)]
+print(squares)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>[0, 1, 4, 9, 16]</code></pre>
+        </li>
+
+        <li>
+            <h3>Unpacking de Listas e Tuplas:</h3>
+            <p>Desempacote elementos diretamente em variáveis.</p>
+            <pre><code>a, b, c = [1, 2, 3]
+print(a, b, c)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>1 2 3</code></pre>
+        </li>
+
+        <li>
+            <h3>Verificar Substrings em Strings:</h3>
+            <p>Use <code>in</code> para verificar se uma substring está em uma string.</p>
+            <pre><code>if "py" in "python":
+    print("Found!")</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Found!</code></pre>
+        </li>
+
+        <li>
+            <h3>Concatenar Strings:</h3>
+            <p>Use <code>join()</code> para concatenar strings em uma lista.</p>
+            <pre><code>words = ["Hello", "World"]
+sentence = " ".join(words)
+print(sentence)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Hello World</code></pre>
+        </li>
+
+        <li>
+            <h3>Dicionário com Valores Padrão:</h3>
+            <p>Use <code>defaultdict</code> do módulo <code>collections</code> para evitar <code>KeyError</code>.</p>
+            <pre><code>from collections import defaultdict
+d = defaultdict(int)
+d["key"] += 1
+print(d["key"])</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>1</code></pre>
+        </li>
+
+        <li>
+            <h3>Expressões Ternárias:</h3>
+            <p>Simplifique declarações <code>if-else</code> em uma única linha.</p>
+            <pre><code>x = 4
+result = "Even" if x % 2 == 0 else "Odd"
+print(result)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Even</code></pre>
+        </li>
+
+        <li>
+            <h3>Iterando com Enumerate:</h3>
+            <p>Use <code>enumerate()</code> para obter o índice e o valor ao iterar sobre uma lista.</p>
+            <pre><code>for index, value in enumerate(["a", "b", "c"]):
+    print(index, value)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>0 a
+1 b
+2 c</code></pre>
+        </li>
+
+        <li>
+            <h3>Contando Elementos em uma Lista:</h3>
+            <p>Use <code>Counter</code> do módulo <code>collections</code> para contar a frequência de elementos.</p>
+            <pre><code>from collections import Counter
+counts = Counter([1, 2, 2, 3, 3, 3])
+print(counts)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Counter({3: 3, 2: 2, 1: 1})</code></pre>
+        </li>
+
+        <li>
+            <h3>Função Lambda:</h3>
+            <p>Use funções anônimas para tarefas rápidas.</p>
+            <pre><code>square = lambda x: x ** 2
+print(square(5))</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>25</code></pre>
+        </li>
+
+        <li>
+            <h3>Operador de Desempacotamento <code>*</code>:</h3>
+            <p>Use <code>*</code> para desempacotar listas ou tuplas ao passar para funções.</p>
+            <pre><code>def add(x, y):
+    return x + y
+
+numbers = [1, 2]
+result = add(*numbers)
+print(result)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>3</code></pre>
+        </li>
+
+        <li>
+            <h3>Operador de Desempacotamento de Dicionários <code>**</code>:</h3>
+            <p>Use <code>**</code> para passar argumentos de um dicionário para uma função.</p>
+            <pre><code>def greet(name, age):
+    return f"Hello, {name}. You are {age} years old."
+
+person = {"name": "Alice", "age": 30}
+message = greet(**person)
+print(message)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Hello, Alice. You are 30 years old.</code></pre>
+        </li>
+
+        <li>
+            <h3>Manuseio de Arquivos Contextualizado:</h3>
+            <p>Use <code>with</code> para manusear arquivos sem se preocupar com o fechamento explícito.</p>
+            <pre><code>with open("file.txt", "w") as file:
+    file.write("Hello, World!")
+
+with open("file.txt", "r") as file:
+    data = file.read()
+print(data)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Hello, World!</code></pre>
+        </li>
+
+        <li>
+            <h3>Geradores com <code>yield</code>:</h3>
+            <p>Use <code>yield</code> para criar geradores que economizam memória.</p>
+            <pre><code>def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for number in countdown(5):
+    print(number)</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>5
+4
+3
+2
+1</code></pre>
+        </li>
+
+        <li>
+            <h3>Funções Decoradoras:</h3>
+            <p>Use decoradores para adicionar funcionalidades extras às funções.</p>
+            <pre><code>def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()</code></pre>
+            <p><strong>Saída Esperada:</strong></p>
+            <pre><code>Something is happening before the function is called.
+Hello!
+Something is happening after the function is called.</code></pre>
+        </li>
+    </ol>
+		<footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+	</body>
+</html>
