@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário de Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #FFC107;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        code {
+            display: block;
+            background-color: #2C2C2C;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        pre {
+            background-color: #2C2C2C;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .example {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .example code {
+            color: #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Glossário de Python</h1>
+        
+        <h2>Indentação</h2>
+        <p>Indentação refere-se aos espaços no início de uma linha de código. Em Python, a indentação é usada para definir blocos de código.</p>
+        <pre><code>if True:
+    print("Indentação correta")</code></pre>
+
+        <h2>Comentários</h2>
+        <p>Comentários são linhas de código que não serão executadas. Usam o caractere <code>#</code>.</p>
+        <pre><code># Este é um comentário</code></pre>
+
+        <h2>Comentários Multilinha</h2>
+        <p>Comentários multilinha são feitos usando três aspas duplas ou simples.</p>
+        <pre><code>"""
+Este é um comentário
+multilinha em Python
+"""</code></pre>
+
+        <h2>Criando Variáveis</h2>
+        <p>Variáveis são contêineres para armazenar valores de dados.</p>
+        <pre><code>nome = "Maria"
+idade = 30</code></pre>
+
+        <h2>Nomes de Variáveis</h2>
+        <p>Como nomear suas variáveis: use letras, números e sublinhados. Não comece com números.</p>
+        <pre><code>nome_usuario = "Ana"
+idade_usuario = 25</code></pre>
+
+        <h2>Atribuir Valores a Múltiplas Variáveis</h2>
+        <p>Como atribuir valores a várias variáveis de uma vez.</p>
+        <pre><code>x, y, z = 1, 2, 3</code></pre>
+
+        <h2>Saída de Variáveis</h2>
+        <p>Use a função <code>print()</code> para exibir variáveis.</p>
+        <pre><code>nome = "Carlos"
+print(nome)</code></pre>
+
+        <h2>Concatenação de Strings</h2>
+        <p>Como combinar strings usando o operador <code>+</code>.</p>
+        <pre><code>nome = "João"
+saudacao = "Olá, " + nome
+print(saudacao)</code></pre>
+
+        <h2>Variáveis Globais</h2>
+        <p>Variáveis que pertencem ao escopo global.</p>
+        <pre><code>nome = "Global"
+
+def mostrar_nome():
+    print(nome)
+
+mostrar_nome()</code></pre>
+
+        <h2>Tipos de Dados Incorporados</h2>
+        <p>Python tem um conjunto de tipos de dados incorporados, como <code>int</code>, <code>float</code>, e <code>str</code>.</p>
+
+        <h2>Obter Tipo de Dados</h2>
+        <p>Use <code>type()</code> para obter o tipo de um objeto.</p>
+        <pre><code>x = 5
+print(type(x))</code></pre>
+
+        <h2>Definir Tipo de Dados</h2>
+        <p>Python é uma linguagem tipada dinamicamente, então o tipo é definido automaticamente.</p>
+
+        <h2>Números</h2>
+        <p>Existem três tipos numéricos em Python: <code>int</code>, <code>float</code>, e <code>complex</code>.</p>
+
+        <h2>Int</h2>
+        <p>Tipo de número inteiro.</p>
+        <pre><code>num = 10</code></pre>
+
+        <h2>Float</h2>
+        <p>Tipo de número flutuante.</p>
+        <pre><code>num = 10.5</code></pre>
+
+        <h2>Complex</h2>
+        <p>Tipo de número complexo.</p>
+        <pre><code>num = 3 + 4j</code></pre>
+
+        <h2>Conversão de Tipo</h2>
+        <p>Como converter de um tipo numérico para outro.</p>
+        <pre><code>num = 10
+num_float = float(num)</code></pre>
+
+        <h2>Número Aleatório</h2>
+        <p>Como criar um número aleatório usando o módulo <code>random</code>.</p>
+        <pre><code>import random
+num = random.randint(1, 100)
+print(num)</code></pre>
+
+        <h2>Especificar um Tipo de Variável</h2>
+        <p>Como especificar um tipo de dado para uma variável (em Python, isso é feito automaticamente).</p>
+
+        <h2>Literais de String</h2>
+        <p>Como criar literais de string.</p>
+        <pre><code>string = "Olá, mundo!"</code></pre>
+
+        <h2>Atribuindo uma String a uma Variável</h2>
+        <p>Como atribuir uma string a uma variável.</p>
+        <pre><code>mensagem = "Bem-vindo!"</code></pre>
+
+        <h2>Strings Multilinha</h2>
+        <p>Como criar uma string multilinha usando aspas triplas.</p>
+        <pre><code>texto = """Esta é uma
+string multilinha"""
+print(texto)</code></pre>
+
+        <h2>Strings são Arrays</h2>
+        <p>Strings em Python são arrays de bytes representando caracteres Unicode.</p>
+
+        <h2>Fatiamento de String</h2>
+        <p>Como fatiar uma string.</p>
+        <pre><code>texto = "Python"
+print(texto[0:3])  # "Pyt"</code></pre>
+
+        <h2>Indexação Negativa em String</h2>
+        <p>Como usar indexação negativa para acessar caracteres da string.</p>
+        <pre><code>texto = "Python"
+print(texto[-1])  # "n"</code></pre>
+
+        <h2>Comprimento da String</h2>
+        <p>Como obter o comprimento de uma string.</p>
+        <pre><code>texto = "Python"
+print(len(texto))  # 6</code></pre>
+
+        <h2>Verificar na String</h2>
+        <p>Como verificar se uma string contém uma frase especificada.</p>
+        <pre><code>texto = "Python"
+print("Py" in texto)  # True</code></pre>
+
+        <h2>Formatar String</h2>
+        <p>Como combinar duas strings.</p>
+        <pre><code>nome = "Ana"
+saudacao = f"Olá, {nome}!"
+print(saudacao)</code></pre>
+
+        <h2>Caracteres de Escape</h2>
+        <p>Como usar caracteres de escape em strings.</p>
+        <pre><code>texto = "Linha 1\nLinha 2"
+print(texto)</code></pre>
+
+        <h2>Valores Booleanos</h2>
+        <p>Os valores <code>True</code> ou <code>False</code>.</p>
+
+        <h2>Avaliar Booleanos</h2>
+        <p>Avalie um valor ou expressão para retornar <code>True</code> ou <code>False</code>.</p>
+        <pre><code>valor = 5 > 3
+print(valor)  # True</code></pre>
+
+        <h2>Retornar Valor Booleano</h2>
+        <p>Funções podem retornar valores booleanos.</p>
+        <pre><code>def é_maior(x, y):
+    return x > y
+
+print(é_maior(10, 5))  # True</code></pre>
+
+        <h2>Operadores Booleanos</h2>
+        <p>Operadores para combinar valores booleanos: <code>and</code>, <code>or</code>, e <code>not</code>.</p>
+
+        <h2>Operadores Lógicos</h2>
+        <p>Como usar <code>and</code>, <code>or</code>, e <code>not</code> para combinar expressões booleanas.</p>
+        <pre><code>a = True
+b = False
+print(a and b)  # False</code></pre>
+
+        <h2>Funções Built-in</h2>
+        <p>Funções integradas como <code>print()</code>, <code>len()</code>, etc.</p>
+
+        <h2>Função <code>len()</code></h2>
+        <p>Retorna o comprimento de um objeto.</p>
+        <pre><code>texto = "Python"
+print(len(texto))  # 6</code></pre>
+
+        <h2>Função <code>type()</code></h2>
+        <p>Retorna o tipo de um objeto.</p>
+        <pre><code>numero = 10
+print(type(numero))  # <class 'int'></code></pre>
+
+        <h2>Função <code>isinstance()</code></h2>
+        <p>Verifica se um objeto é uma instância de uma classe ou tipo específico.</p>
+        <pre><code>numero = 10
+print(isinstance(numero, int))  # True</code></pre>
+
+        <h2>Função <code>isinstance()</code> com Vários Tipos</h2>
+        <p>Verifica se um objeto é uma instância de um dos vários tipos.</p>
+        <pre><code>valor = "texto"
+print(isinstance(valor, (int, str)))  # True</code></pre>
+
+        <h2>Funções Built-in Personalizadas</h2>
+        <p>Como criar suas próprias funções e utilizá-las.</p>
+        <pre><code>def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Lucas"))  # Olá, Lucas!</code></pre>
+
+        <h2>Definir Funções</h2>
+        <p>Como definir uma função usando <code>def</code>.</p>
+        <pre><code>def adicionar(a, b):
+    return a + b
+
+print(adicionar(5, 3))  # 8</code></pre>
+
+        <h2>Função Sem Parâmetros</h2>
+        <p>Função que não recebe parâmetros.</p>
+        <pre><code>def mensagem():
+    print("Olá, mundo!")
+
+mensagem()</code></pre>
+
+        <h2>Função com Parâmetros</h2>
+        <p>Função que recebe parâmetros.</p>
+        <pre><code>def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Ana"))</code></pre>
+
+        <h2>Funções e Variáveis Locais</h2>
+        <p>Como usar variáveis locais dentro de uma função.</p>
+        <pre><code>def exemplo():
+    x = 10  # variável local
+    print(x)
+
+exemplo()
+# print(x)  # Isso gerará um erro</code></pre>
+
+        <h2>Funções e Variáveis Globais</h2>
+        <p>Como usar variáveis globais dentro de uma função.</p>
+        <pre><code>x = 20  # variável global
+
+def exemplo():
+    global x
+    x = 10  # altera a variável global
+
+exemplo()
+print(x)  # 10</code></pre>
+
+        <h2>Parâmetros e Argumentos</h2>
+        <p>Como passar parâmetros e argumentos para funções.</p>
+        <pre><code>def saudacao(nome, idade):
+    return f"Olá, {nome}. Você tem {idade} anos."
+
+print(saudacao("Carlos", 30))</code></pre>
+
+        <h2>Funções Anônimas (Lambdas)</h2>
+        <p>Funções que não têm um nome, criadas usando <code>lambda</code>.</p>
+        <pre><code>soma = lambda a, b: a + b
+print(soma(5, 3))  # 8</code></pre>
+
+        <h2>Funções de Ordem Superior</h2>
+        <p>Funções que recebem outras funções como parâmetros.</p>
+        <pre><code>def aplicar_funcao(func, valor):
+    return func(valor)
+
+print(aplicar_funcao(lambda x: x * 2, 5))  # 10</code></pre>
+
+        <h2>Modularização e Importação de Módulos</h2>
+        <p>Como dividir seu código em vários módulos e importá-los.</p>
+        <pre><code># módulo exemplo.py
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+# main.py
+import exemplo
+print(exemplo.saudacao("Ana"))</code></pre>
+
+        <h2>Importar Módulos</h2>
+        <p>Como importar módulos em seu código.</p>
+        <pre><code>import math
+print(math.sqrt(16))  # 4.0</code></pre>
+
+        <h2>Importar Funções Específicas de um Módulo</h2>
+        <p>Como importar funções específicas de um módulo.</p>
+        <pre><code>from math import sqrt
+print(sqrt(25))  # 5.0</code></pre>
+
+        <h2>Importar Tudo de um Módulo</h2>
+        <p>Como importar tudo de um módulo.</p>
+        <pre><code>from math import *
+print(sqrt(36))  # 6.0</code></pre>
+
+        <h2>Tratamento de Exceções</h2>
+        <p>Como tratar exceções usando <code>try</code> e <code>except</code>.</p>
+        <pre><code>try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Não é possível dividir por zero!")</code></pre>
+
+        <h2>Leitura de Arquivo</h2>
+        <p>Como ler dados de um arquivo.</p>
+        <pre><code>with open('arquivo.txt', 'r') as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)</code></pre>
+
+        <h2>Escrita em Arquivo</h2>
+        <p>Como escrever dados em um arquivo.</p>
+        <pre><code>with open('arquivo.txt', 'w') as arquivo:
+    arquivo.write("Escrevendo no arquivo.")</code></pre>
+
+        <h2>Manipulação de Arquivo</h2>
+        <p>Como manipular arquivos, incluindo leitura e escrita.</p>
+
+        <h2>Leitura de Dados do Usuário</h2>
+        <p>Como obter dados do usuário usando <code>input()</code>.</p>
+        <pre><code>nome = input("Qual é o seu nome? ")
+print(f"Olá, {nome}!")</code></pre>
+
+        <h2>Criação de Listas</h2>
+        <p>Como criar e manipular listas.</p>
+        <pre><code>lista = [1, 2, 3, 4, 5]
+print(lista)</code></pre>
+
+        <h2>Adicionar Itens a Listas</h2>
+        <p>Como adicionar itens a uma lista.</p>
+        <pre><code>lista = [1, 2, 3]
+lista.append(4)
+print(lista)</code></pre>
+
+        <h2>Remover Itens de Listas</h2>
+        <p>Como remover itens de uma lista.</p>
+        <pre><code>lista = [1, 2, 3, 4]
+lista.remove(2)
+print(lista)</code></pre>
+
+        <h2>Acessar Itens de Listas</h2>
+        <p>Como acessar itens individuais de uma lista.</p>
+        <pre><code>lista = [1, 2, 3, 4]
+print(lista[2])  # 3</code></pre>
+
+        <h2>Ordenar Listas</h2>
+        <p>Como ordenar uma lista.</p>
+        <pre><code>lista = [3, 1, 4, 2]
+lista.sort()
+print(lista)</code></pre>
+
+        <h2>Listas Aninhadas</h2>
+        <p>Listas dentro de listas.</p>
+        <pre><code>matriz = [[1, 2], [3, 4]]
+print(matriz[0][1])  # 2</code></pre>
+
+        <h2>Iterar Sobre Listas</h2>
+        <p>Como percorrer uma lista usando um loop.</p>
+        <pre><code>lista = [1, 2, 3, 4]
+for item in lista:
+    print(item)</code></pre>
+
+        <h2>List Comprehensions</h2>
+        <p>Como criar listas de maneira compacta.</p>
+        <pre><code>quadrados = [x ** 2 for x in range(10)]
+print(quadrados)</code></pre>
+
+        <h2>Criação de Dicionários</h2>
+        <p>Como criar e manipular dicionários.</p>
+        <pre><code>dicionario = {'chave1': 'valor1', 'chave2': 'valor2'}
+print(dicionario)</code></pre>
+
+        <h2>Acessar Valores de Dicionários</h2>
+        <p>Como acessar valores a partir das chaves de um dicionário.</p>
+        <pre><code>dicionario = {'chave1': 'valor1', 'chave2': 'valor2'}
+print(dicionario['chave1'])  # valor1</code></pre>
+
+        <h2>Adicionar Itens a Dicionários</h2>
+        <p>Como adicionar novos itens a um dicionário.</p>
+        <pre><code>dicionario = {'chave1': 'valor1'}
+dicionario['chave2'] = 'valor2'
+print(dicionario)</code></pre>
+
+        <h2>Remover Itens de Dicionários</h2>
+        <p>Como remover itens de um dicionário.</p>
+        <pre><code>dicionario = {'chave1': 'valor1', 'chave2': 'valor2'}
+del dicionario['chave1']
+print(dicionario)</code></pre>
+
+        <h2>Iterar Sobre Dicionários</h2>
+        <p>Como percorrer um dicionário usando um loop.</p>
+        <pre><code>dicionario = {'chave1': 'valor1', 'chave2': 'valor2'}
+for chave, valor in dicionario.items():
+    print(chave, valor)</code></pre>
+
+        <h2>Manipulação de Conjuntos</h2>
+        <p>Como trabalhar com conjuntos.</p>
+        <pre><code>conjunto = {1, 2, 3, 4}
+conjunto.add(5)
+print(conjunto)</code></pre>
+
+        <h2>Operações com Conjuntos</h2>
+        <p>Operações como união, interseção e diferença entre conjuntos.</p>
+        <pre><code>conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+print(conjunto1 & conjunto2)  # Interseção: {3}
+print(conjunto1 | conjunto2)  # União: {1, 2, 3, 4, 5}
+print(conjunto1 - conjunto2)  # Diferença: {1, 2}</code></pre>
+
+        <h2>Manipulação de Strings</h2>
+        <p>Como manipular e formatar strings.</p>
+        <pre><code>texto = "Olá, mundo!"
+print(texto.upper())  # OLÁ, MUNDO!
+print(texto.lower())  # olá, mundo!</code></pre>
+
+        <h2>Formatar Strings</h2>
+        <p>Como formatar strings usando <code>f-strings</code>.</p>
+        <pre><code>nome = "João"
+idade = 30
+print(f"Meu nome é {nome} e tenho {idade} anos.")</code></pre>
+
+        <h2>Dividir Strings</h2>
+        <p>Como dividir uma string em partes.</p>
+        <pre><code>texto = "Python é ótimo"
+partes = texto.split()
+print(partes)  # ['Python', 'é', 'ótimo']</code></pre>
+
+        <h2>Substituir Substrings</h2>
+        <p>Como substituir partes de uma string.</p>
+        <pre><code>texto = "Olá, mundo!"
+novo_texto = texto.replace("mundo", "Python")
+print(novo_texto)  # Olá, Python!</code></pre>
+
+        <h2>Remover Espaços em Branco</h2>
+        <p>Como remover espaços em branco de uma string.</p>
+        <pre><code>texto = "   Python   "
+print(texto.strip())  # "Python"</code></pre>
+
+        <h2>Dados em Lista</h2>
+        <p>Como trabalhar com listas em Python.</p>
+        <pre><code>lista = [1, 2, 3]
+lista.append(4)
+print(lista)  # [1, 2, 3, 4]</code></pre>
+
+        <h2>Criação de Funções</h2>
+        <p>Como criar suas próprias funções em Python.</p>
+        <pre><code>def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Ana"))  # Olá, Ana!</code></pre>
+
+        <h2>Trabalhando com Arquivos</h2>
+        <p>Como ler e escrever em arquivos.</p>
+        <pre><code>with open('arquivo.txt', 'w') as arquivo:
+    arquivo.write("Exemplo de escrita em arquivo.")</code></pre>
+
+        <h2>Tratamento de Erros</h2>
+        <p>Como usar <code>try</code> e <code>except</code> para tratamento de erros.</p>
+        <pre><code>try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Erro: Divisão por zero!")</code></pre>
+    </div>
+</body>
+</html>

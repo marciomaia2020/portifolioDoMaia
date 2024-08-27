@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Saída em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Métodos de Saída em Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#print">Console (print)</a>
+            <a href="#alert">Alertas (Tkinter)</a>
+            <a href="#terminal">Terminal (Sistema Operacional)</a>
+            <a href="#network">Rede (Sockets)</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Console (print):</strong> Exibe dados no console ou terminal.</li>
+                <li><strong>Alertas (Tkinter):</strong> Exibe mensagens em caixas de diálogo usando Tkinter.</li>
+                <li><strong>Terminal (Sistema Operacional):</strong> Envia mensagens para o terminal do sistema operacional.</li>
+                <li><strong>Rede (Sockets):</strong> Envia dados através de uma conexão de rede.</li>
+            </ul>
+        </div>
+
+        <h2 id="print">Console (print)</h2>
+        <p>A função <code>print()</code> é usada para exibir dados no console ou terminal. É a forma mais básica e direta de saída em Python.</p>
+        <pre><code># Código
+mensagem = "Olá, Mundo!"
+print(mensagem)
+</code></pre>
+        <p>O código acima exibe a mensagem "Olá, Mundo!" no console.</p>
+
+        <h2 id="alert">Alertas (Tkinter)</h2>
+        <p>Para exibir alertas gráficos, você pode usar a biblioteca <code>Tkinter</code>, que é uma biblioteca padrão para criar interfaces gráficas.</p>
+        <pre><code># Código
+import tkinter as tk
+from tkinter import messagebox
+
+def mostrar_alerta():
+    messagebox.showinfo("Alerta", "Esta é uma mensagem de alerta!")
+
+root = tk.Tk()
+root.withdraw()  # Oculta a janela principal
+mostrar_alerta()
+</code></pre>
+        <p>O código acima cria uma janela de alerta com a mensagem "Esta é uma mensagem de alerta!" usando o Tkinter.</p>
+
+        <h2 id="terminal">Terminal (Sistema Operacional)</h2>
+        <p>Você pode usar o módulo <code>subprocess</code> para enviar comandos para o terminal do sistema operacional e capturar a saída.</p>
+        <pre><code># Código
+import subprocess
+
+resultado = subprocess.run(["echo", "Olá, Terminal!"], capture_output=True, text=True)
+print(resultado.stdout)
+</code></pre>
+        <p>O código acima executa o comando <code>echo</code> no terminal e exibe a saída "Olá, Terminal!" no console Python.</p>
+
+        <h2 id="network">Rede (Sockets)</h2>
+        <p>Para enviar dados através de uma rede, você pode usar a biblioteca <code>socket</code> para criar conexões de rede e enviar dados.</p>
+        <pre><code># Código
+import socket
+
+# Configura o socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(("localhost", 65432))
+s.sendall(b"Mensagem para a rede")
+s.close()
+</code></pre>
+        <p>O código acima cria um socket para enviar uma mensagem para um servidor na porta 65432. O servidor deve estar configurado para receber a mensagem.</p>
+    </div>
+</body>
+</html>

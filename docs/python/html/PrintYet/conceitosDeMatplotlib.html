@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matplotlib em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Matplotlib em Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#installation">Instalação</a>
+            <a href="#basic_usage">Uso Básico</a>
+            <a href="#creating_plots">Criando Gráficos</a>
+            <a href="#customization">Personalização</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Instalação:</strong> Como instalar o Matplotlib.</li>
+                <li><strong>Uso Básico:</strong> Uso básico da biblioteca para criar gráficos.</li>
+                <li><strong>Criando Gráficos:</strong> Criação de gráficos diferentes.</li>
+                <li><strong>Personalização:</strong> Como personalizar gráficos com Matplotlib.</li>
+            </ul>
+        </div>
+
+        <h2 id="installation">Instalação</h2>
+        <p>Você pode instalar o Matplotlib usando o gerenciador de pacotes <code>pip</code>. Abra seu terminal e digite:</p>
+        <pre><code># Código
+pip install matplotlib
+</code></pre>
+
+        <h2 id="basic_usage">Uso Básico</h2>
+        <p>Para começar a usar o Matplotlib, você precisa importá-lo. A biblioteca principal é <code>matplotlib.pyplot</code>.</p>
+        <pre><code># Código
+import matplotlib.pyplot as plt
+
+# Dados para o gráfico
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Criando o gráfico
+plt.plot(x, y)
+
+# Adicionando título e rótulos
+plt.title('Exemplo de Gráfico')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+
+# Mostrando o gráfico
+plt.show()
+</code></pre>
+
+        <h2 id="creating_plots">Criando Gráficos</h2>
+        <p>Matplotlib permite criar vários tipos de gráficos, como gráficos de linha, barras, dispersão e histogramas.</p>
+
+        <h3>Gráfico de Linha</h3>
+        <pre><code># Código
+plt.plot(x, y, marker='o', linestyle='-', color='b')
+plt.title('Gráfico de Linha')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.show()
+</code></pre>
+
+        <h3>Gráfico de Barras</h3>
+        <pre><code># Código
+plt.bar(x, y, color='green')
+plt.title('Gráfico de Barras')
+plt.xlabel('Categorias')
+plt.ylabel('Valores')
+plt.show()
+</code></pre>
+
+        <h3>Gráfico de Dispersão</h3>
+        <pre><code># Código
+plt.scatter(x, y, color='red')
+plt.title('Gráfico de Dispersão')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.show()
+</code></pre>
+
+        <h3>Histograma</h3>
+        <pre><code># Código
+plt.hist(y, bins=5, color='purple', edgecolor='black')
+plt.title('Histograma')
+plt.xlabel('Intervalos')
+plt.ylabel('Frequência')
+plt.show()
+</code></pre>
+
+        <h2 id="customization">Personalização</h2>
+        <p>Você pode personalizar gráficos ajustando aspectos como cores, estilos de linha, tamanhos de fonte e mais.</p>
+
+        <h3>Alterando Cores e Estilos</h3>
+        <pre><code># Código
+plt.plot(x, y, marker='o', linestyle='--', color='magenta', linewidth=2, markersize=8)
+plt.title('Personalização de Gráfico')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.show()
+</code></pre>
+
+        <h3>Adicionando Anotações</h3>
+        <pre><code># Código
+plt.plot(x, y)
+plt.title('Gráfico com Anotações')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+
+# Adicionando uma anotação
+plt.annotate('Ponto Importante', xy=(3, 5), xytext=(4, 6),
+             arrowprops=dict(facecolor='black', shrink=0.05))
+
+plt.show()
+</code></pre>
+    </div>
+</body>
+</html>
+

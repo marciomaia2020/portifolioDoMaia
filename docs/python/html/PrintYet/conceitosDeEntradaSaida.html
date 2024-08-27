@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e Saída em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entrada e Saída em Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#input">Entrada (Input)</a>
+            <a href="#output">Saída (Output)</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Entrada (Input):</strong> Método para capturar dados do usuário.</li>
+                <li><strong>Saída (Output):</strong> Método para exibir dados ao usuário.</li>
+            </ul>
+        </div>
+
+        <h2 id="input">Entrada (Input)</h2>
+        <p>Em Python, a função <code>input()</code> é usada para capturar dados do usuário. O texto passado para <code>input()</code> é exibido como um prompt, e o usuário pode inserir um valor que é retornado como uma string.</p>
+        <pre><code># Código
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+
+print(f"Olá, {nome}! Você tem {idade} anos.")
+</code></pre>
+        <p>O código acima solicita ao usuário que insira seu nome e idade. Os valores são armazenados nas variáveis <code>nome</code> e <code>idade</code> e, em seguida, são exibidos na tela.</p>
+
+        <h2 id="output">Saída (Output)</h2>
+        <p>Para exibir dados ao usuário, utilizamos a função <code>print()</code>. Esta função imprime o conteúdo passado para ela no console.</p>
+        <pre><code># Código
+mensagem = "Olá, Mundo!"
+print(mensagem)
+</code></pre>
+        <p>O código acima define uma variável <code>mensagem</code> e usa <code>print()</code> para exibir seu conteúdo. A saída será:</p>
+        <pre><code>Olá, Mundo!</code></pre>
+
+        <p>Você também pode exibir múltiplas variáveis e textos concatenados usando a função <code>print()</code>:</p>
+        <pre><code># Código
+nome = "Ana"
+idade = 30
+print("Nome:", nome, "- Idade:", idade)
+</code></pre>
+        <p>A saída será:</p>
+        <pre><code>Nome: Ana - Idade: 30</code></pre>
+    </div>
+</body>
+</html>

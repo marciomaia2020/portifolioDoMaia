@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Módulos em Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#importing">Importando Módulos</a>
+            <a href="#creating">Criando Módulos</a>
+            <a href="#using">Usando Funções de Módulos</a>
+            <a href="#built_in">Módulos Embutidos</a>
+            <a href="#third_party">Módulos de Terceiros</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Importando Módulos:</strong> A maneira de trazer módulos existentes para seu código.</li>
+                <li><strong>Criando Módulos:</strong> Como criar seus próprios módulos para reutilização de código.</li>
+                <li><strong>Usando Funções de Módulos:</strong> Acesso e uso de funções e variáveis de módulos.</li>
+                <li><strong>Módulos Embutidos:</strong> Módulos que já vêm com Python.</li>
+                <li><strong>Módulos de Terceiros:</strong> Módulos adicionais instalados via gerenciadores de pacotes como pip.</li>
+            </ul>
+        </div>
+
+        <h2 id="importing">Importando Módulos</h2>
+        <p>Para importar um módulo em Python, você usa a palavra-chave <code>import</code>. Você pode importar módulos inteiros ou partes específicas deles.</p>
+        <pre><code># Código
+# Importando um módulo inteiro
+import math
+
+# Importando uma função específica de um módulo
+from math import sqrt
+
+# Importando um módulo e dando um apelido
+import math as m
+</code></pre>
+
+        <h2 id="creating">Criando Módulos</h2>
+        <p>Você pode criar seus próprios módulos salvando um arquivo Python com a extensão <code>.py</code>. O nome do arquivo será o nome do módulo.</p>
+        <pre><code># Criando um módulo chamado meu_modulo.py
+
+# meu_modulo.py
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+def soma(a, b):
+    return a + b
+</code></pre>
+
+        <p>Para usar este módulo em outro arquivo Python:</p>
+        <pre><code># Código
+import meu_modulo
+
+print(meu_modulo.saudacao("Maria"))
+print(meu_modulo.soma(3, 4))
+</code></pre>
+
+        <h2 id="using">Usando Funções de Módulos</h2>
+        <p>Uma vez que um módulo é importado, você pode usar suas funções e variáveis como se fossem parte do seu próprio código.</p>
+        <pre><code># Código
+import datetime
+
+# Usando uma função do módulo datetime
+hoje = datetime.date.today()
+print("Hoje é:", hoje)
+</code></pre>
+
+        <h2 id="built_in">Módulos Embutidos</h2>
+        <p>Python inclui muitos módulos embutidos que você pode usar sem instalar nada adicionalmente, como <code>os</code>, <code>sys</code>, e <code>math</code>.</p>
+        <pre><code># Código
+import os
+
+# Usando uma função do módulo os
+diretorio_atual = os.getcwd()
+print("Diretório atual:", diretorio_atual)
+</code></pre>
+
+        <h2 id="third_party">Módulos de Terceiros</h2>
+        <p>Você pode instalar módulos de terceiros usando o gerenciador de pacotes <code>pip</code>. Esses módulos podem ser encontrados no Python Package Index (PyPI).</p>
+        <pre><code># Código
+# Instalar um módulo de terceiros usando pip
+# pip install requests
+
+import requests
+
+# Usando uma função do módulo requests
+resposta = requests.get('https://api.github.com')
+print("Status da resposta:", resposta.status_code)
+</code></pre>
+    </div>
+</body>
+</html>

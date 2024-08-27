@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+			line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            color: #F5F5F5;
+        }
+		h2 {
+            color: red;
+        }
+		h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+		.index h2{
+			color: #ffffff;
+		}
+		.explanations h2{
+			color: #ffffff;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lists em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#access">Access List Items (Acessar Itens da Lista)</a>
+            <a href="#change">Change List Items (Alterar Itens da Lista)</a>
+            <a href="#add">Add List Items (Adicionar Itens à Lista)</a>
+            <a href="#remove">Remove List Items (Remover Itens da Lista)</a>
+            <a href="#loop">Loop Lists (Iterar Listas)</a>
+            <a href="#comprehension">List Comprehension (Compreensão de Listas)</a>
+            <a href="#sort">Sort Lists (Ordenar Listas)</a>
+            <a href="#copy">Copy Lists (Copiar Listas)</a>
+            <a href="#join">Join Lists (Unir Listas)</a>
+            <a href="#methods">List Methods (Métodos de Listas)</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Access List Items</strong> Acessa itens individuais da lista usando índices.</li>
+                <li><strong>Change List Items</strong> Modifica itens existentes em uma lista.</li>
+                <li><strong>Add List Items</strong> Adiciona novos itens à lista.</li>
+                <li><strong>Remove List Items</strong> Remove itens específicos de uma lista.</li>
+                <li><strong>Loop Lists</strong> Percorre todos os itens de uma lista usando loops.</li>
+                <li><strong>List Comprehension</strong> Cria novas listas aplicando uma expressão a cada item de uma lista existente.</li>
+                <li><strong>Sort Lists</strong> Ordena os itens da lista em ordem crescente ou decrescente.</li>
+                <li><strong>Copy Lists</strong> Cria uma cópia da lista.</li>
+                <li><strong>Join Lists</strong> Une duas ou mais listas em uma única lista.</li>
+                <li><strong>List Methods</strong> Utiliza métodos incorporados para manipular e processar listas.</li>
+            </ul>
+        </div>
+
+        <h2 id="access">Access List Items (Acessar Itens da Lista)</h2>
+        <p>Você pode acessar itens individuais de uma lista usando índices. O índice começa em 0.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana', 'cherry']
+item = my_list[1]   # Acessa 'banana'
+
+print(item)
+
+# Saída
+# banana
+</code></pre>
+
+        <h2 id="change">Change List Items (Alterar Itens da Lista)</h2>
+        <p>É possível alterar itens existentes em uma lista acessando o índice do item e atribuindo um novo valor.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana', 'cherry']
+my_list[1] = 'blueberry'   # Altera 'banana' para 'blueberry'
+
+print(my_list)
+
+# Saída
+# ['apple', 'blueberry', 'cherry']
+</code></pre>
+
+        <h2 id="add">Add List Items (Adicionar Itens à Lista)</h2>
+        <p>Você pode adicionar itens a uma lista usando os métodos <code>append()</code> ou <code>extend()</code>.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana']
+my_list.append('cherry')   # Adiciona 'cherry' ao final da lista
+my_list.extend(['date', 'elderberry'])   # Adiciona vários itens ao final da lista
+
+print(my_list)
+
+# Saída
+# ['apple', 'banana', 'cherry', 'date', 'elderberry']
+</code></pre>
+
+        <h2 id="remove">Remove List Items (Remover Itens da Lista)</h2>
+        <p>Para remover itens da lista, você pode usar os métodos <code>remove()</code> ou <code>pop()</code>.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana', 'cherry']
+my_list.remove('banana')   # Remove 'banana'
+popped_item = my_list.pop()   # Remove o último item e retorna 'cherry'
+
+print(my_list)
+print(popped_item)
+
+# Saída
+# ['apple']
+# cherry
+</code></pre>
+
+        <h2 id="loop">Loop Lists (Iterar Listas)</h2>
+        <p>Você pode iterar sobre todos os itens de uma lista usando um loop <code>for</code>.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana', 'cherry']
+
+for item in my_list:
+    print(item)
+
+# Saída
+# apple
+# banana
+# cherry
+</code></pre>
+
+        <h2 id="comprehension">List Comprehension (Compreensão de Listas)</h2>
+        <p>A compreensão de listas permite criar novas listas aplicando uma expressão a cada item de uma lista existente.</p>
+        <pre><code># Código
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [x ** 2 for x in numbers]
+
+print(squared_numbers)
+
+# Saída
+# [1, 4, 9, 16, 25]
+</code></pre>
+
+        <h2 id="sort">Sort Lists (Ordenar Listas)</h2>
+        <p>Você pode ordenar uma lista usando o método <code>sort()</code> para ordenar in-place ou <code>sorted()</code> para criar uma nova lista ordenada.</p>
+        <pre><code># Código
+my_list = [3, 1, 4, 1, 5, 9]
+my_list.sort()   # Ordena a lista em ordem crescente
+sorted_list = sorted(my_list, reverse=True)   # Cria uma nova lista ordenada em ordem decrescente
+
+print(my_list)
+print(sorted_list)
+
+# Saída
+# [1, 1, 3, 4, 5, 9]
+# [9, 5, 4, 3, 1, 1]
+</code></pre>
+
+        <h2 id="copy">Copy Lists (Copiar Listas)</h2>
+        <p>Para copiar uma lista, você pode usar a notação de fatiamento ou o método <code>copy()</code>.</p>
+        <pre><code># Código
+original_list = ['apple', 'banana', 'cherry']
+copied_list = original_list.copy()   # Cria uma cópia rasa da lista
+# Alternativamente: copied_list = original_list[:]
+
+print(copied_list)
+
+# Saída
+# ['apple', 'banana', 'cherry']
+</code></pre>
+
+        <h2 id="join">Join Lists (Unir Listas)</h2>
+        <p>Você pode unir duas ou mais listas usando o operador <code>+</code>.</p>
+        <pre><code># Código
+list1 = ['apple', 'banana']
+list2 = ['cherry', 'date']
+joined_list = list1 + list2
+
+print(joined_list)
+
+# Saída
+# ['apple', 'banana', 'cherry', 'date']
+</code></pre>
+
+        <h2 id="methods">List Methods (Métodos de Listas)</h2>
+        <p>Listas em Python possuem diversos métodos úteis, como <code>append()</code>, <code>remove()</code>, <code>pop()</code>, entre outros.</p>
+        <pre><code># Código
+my_list = ['apple', 'banana', 'cherry']
+my_list.append('date')   # Adiciona 'date'
+print(my_list.count('banana'))   # Conta quantas vezes 'banana' aparece
+
+# Saída
+# ['apple', 'banana', 'cherry', 'date']
+# 1
+</code></pre>
+
+    </div>
+</body>
+</html>

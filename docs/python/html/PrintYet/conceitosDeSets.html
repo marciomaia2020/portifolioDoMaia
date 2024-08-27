@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos (Sets) em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conjuntos (Sets) em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#creation">Creation (Criação)</a>
+            <a href="#access">Access Elements (Acessar Elementos)</a>
+            <a href="#add">Add Elements (Adicionar Elementos)</a>
+            <a href="#remove">Remove Elements (Remover Elementos)</a>
+            <a href="#operations">Set Operations (Operações com Sets)</a>
+            <a href="#methods">Set Methods (Métodos de Sets)</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Creation</strong> Cria conjuntos a partir de listas ou diretamente.</li>
+                <li><strong>Access Elements</strong> Conjuntos não suportam indexação; os elementos são acessados de forma diferente.</li>
+                <li><strong>Add Elements</strong> Adiciona novos elementos a um conjunto.</li>
+                <li><strong>Remove Elements</strong> Remove elementos específicos de um conjunto.</li>
+                <li><strong>Set Operations</strong> Realiza operações matemáticas como união, interseção e diferença.</li>
+                <li><strong>Set Methods</strong> Utiliza métodos incorporados para manipular e processar conjuntos.</li>
+            </ul>
+        </div>
+
+        <h2 id="creation">Creation (Criação)</h2>
+        <p>Você pode criar conjuntos a partir de listas ou diretamente usando chaves.</p>
+        <pre><code># Código
+my_set = {1, 2, 3, 4}
+another_set = set([5, 6, 7, 8])
+
+print(my_set)
+print(another_set)
+
+# Saída
+# {1, 2, 3, 4}
+# {5, 6, 7, 8}
+</code></pre>
+
+        <h2 id="access">Access Elements (Acessar Elementos)</h2>
+        <p>Conjuntos não suportam indexação. Você pode verificar a presença de um elemento usando o operador <code>in</code>.</p>
+        <pre><code># Código
+my_set = {1, 2, 3, 4}
+
+print(2 in my_set)  # Verifica se 2 está no conjunto
+print(5 in my_set)  # Verifica se 5 está no conjunto
+
+# Saída
+# True
+# False
+</code></pre>
+
+        <h2 id="add">Add Elements (Adicionar Elementos)</h2>
+        <p>Para adicionar elementos a um conjunto, use o método <code>add()</code>.</p>
+        <pre><code># Código
+my_set = {1, 2, 3}
+my_set.add(4)  # Adiciona 4 ao conjunto
+
+print(my_set)
+
+# Saída
+# {1, 2, 3, 4}
+</code></pre>
+
+        <h2 id="remove">Remove Elements (Remover Elementos)</h2>
+        <p>Para remover elementos, use os métodos <code>remove()</code> ou <code>discard()</code>. O método <code>discard()</code> não lança erro se o elemento não existir.</p>
+        <pre><code># Código
+my_set = {1, 2, 3, 4}
+my_set.remove(3)  # Remove 3
+my_set.discard(5)  # Não lança erro, mesmo que 5 não esteja no conjunto
+
+print(my_set)
+
+# Saída
+# {1, 2, 4}
+</code></pre>
+
+        <h2 id="operations">Set Operations (Operações com Sets)</h2>
+        <p>Conjuntos suportam operações matemáticas como união, interseção e diferença.</p>
+        <pre><code># Código
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+union_set = set1 | set2  # União
+intersection_set = set1 & set2  # Interseção
+difference_set = set1 - set2  # Diferença
+
+print(union_set)
+print(intersection_set)
+print(difference_set)
+
+# Saída
+# {1, 2, 3, 4, 5}
+# {3}
+# {1, 2}
+</code></pre>
+
+        <h2 id="methods">Set Methods (Métodos de Sets)</h2>
+        <p>Sets possuem diversos métodos úteis, como <code>clear()</code>, <code>copy()</code>, e <code>update()</code>.</p>
+        <pre><code># Código
+my_set = {1, 2, 3}
+my_set.add(4)
+my_set.remove(2)
+
+copied_set = my_set.copy()  # Cria uma cópia do conjunto
+my_set.clear()  # Remove todos os elementos do conjunto
+
+print(copied_set)
+print(my_set)
+
+# Saída
+# {1, 3, 4}
+# set()
+</code></pre>
+
+    </div>
+</body>
+</html>

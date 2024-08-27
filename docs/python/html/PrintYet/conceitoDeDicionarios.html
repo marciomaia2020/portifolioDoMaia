@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionários em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dicionários em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#create">Criar Dicionários</a>
+            <a href="#access">Acessar Itens do Dicionário</a>
+            <a href="#change">Alterar Itens do Dicionário</a>
+            <a href="#add">Adicionar Itens ao Dicionário</a>
+            <a href="#remove">Remover Itens do Dicionário</a>
+            <a href="#loop">Iterar sobre Dicionários</a>
+            <a href="#methods">Métodos de Dicionários</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Criar Dicionários</strong> Define um novo dicionário com pares chave-valor.</li>
+                <li><strong>Acessar Itens do Dicionário</strong> Obtém valores usando as chaves.</li>
+                <li><strong>Alterar Itens do Dicionário</strong> Modifica valores associados às chaves.</li>
+                <li><strong>Adicionar Itens ao Dicionário</strong> Insere novos pares chave-valor.</li>
+                <li><strong>Remover Itens do Dicionário</strong> Exclui pares chave-valor.</li>
+                <li><strong>Iterar sobre Dicionários</strong> Percorre chaves e valores.</li>
+                <li><strong>Métodos de Dicionários</strong> Utiliza métodos embutidos para manipulação.</li>
+            </ul>
+        </div>
+
+        <h2 id="create">Criar Dicionários</h2>
+        <p>Você pode criar um dicionário em Python usando chaves e valores.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+
+print(my_dict)
+
+# Saída
+# {'name': 'Alice', 'age': 25}
+</code></pre>
+
+        <h2 id="access">Acessar Itens do Dicionário</h2>
+        <p>Acessa valores do dicionário usando as chaves.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+name = my_dict['name']  # Acessa 'Alice'
+
+print(name)
+
+# Saída
+# Alice
+</code></pre>
+
+        <h2 id="change">Alterar Itens do Dicionário</h2>
+        <p>Modifica valores de chaves específicas.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+my_dict['age'] = 26  # Altera a idade para 26
+
+print(my_dict)
+
+# Saída
+# {'name': 'Alice', 'age': 26}
+</code></pre>
+
+        <h2 id="add">Adicionar Itens ao Dicionário</h2>
+        <p>Adiciona novos pares chave-valor.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice'}
+my_dict['age'] = 25  # Adiciona a chave 'age'
+
+print(my_dict)
+
+# Saída
+# {'name': 'Alice', 'age': 25}
+</code></pre>
+
+        <h2 id="remove">Remover Itens do Dicionário</h2>
+        <p>Remove pares chave-valor.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+del my_dict['age']  # Remove a chave 'age'
+
+print(my_dict)
+
+# Saída
+# {'name': 'Alice'}
+</code></pre>
+
+        <h2 id="loop">Iterar sobre Dicionários</h2>
+        <p>Itera sobre as chaves e valores do dicionário.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+
+for key, value in my_dict.items():
+    print(key, value)
+
+# Saída
+# name Alice
+# age 25
+</code></pre>
+
+        <h2 id="methods">Métodos de Dicionários</h2>
+        <p>Dicionários têm vários métodos úteis como <code>keys()</code>, <code>values()</code>, e <code>items()</code>.</p>
+        <pre><code># Código
+my_dict = {'name': 'Alice', 'age': 25}
+keys = my_dict.keys()   # Obtém as chaves
+values = my_dict.values()   # Obtém os valores
+
+print(keys)
+print(values)
+
+# Saída
+# dict_keys(['name', 'age'])
+# dict_values(['Alice', 25])
+</code></pre>
+
+    </div>
+</body>
+</html>

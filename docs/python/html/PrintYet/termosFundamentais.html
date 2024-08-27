@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos Fundamentais em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Termos Fundamentais em Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#function">Função</a>
+            <a href="#method">Método</a>
+            <a href="#variable">Variável</a>
+            <a href="#class">Classe</a>
+            <a href="#object">Objeto</a>
+            <a href="#module">Módulo</a>
+            <a href="#package">Pacote</a>
+            <a href="#exception">Exceção</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Função:</strong> Bloco de código reutilizável que realiza uma tarefa específica.</li>
+                <li><strong>Método:</strong> Função definida dentro de uma classe que opera em instâncias dessa classe.</li>
+                <li><strong>Variável:</strong> Local onde dados são armazenados e manipulados.</li>
+                <li><strong>Classe:</strong> Estrutura que define um tipo de dado, encapsulando dados e comportamentos.</li>
+                <li><strong>Objeto:</strong> Instância de uma classe com atributos e métodos específicos.</li>
+                <li><strong>Módulo:</strong> Arquivo Python que contém definições e implementações de funções e classes.</li>
+                <li><strong>Pacote:</strong> Coleção de módulos organizados em uma estrutura de diretórios.</li>
+                <li><strong>Exceção:</strong> Evento que ocorre durante a execução do programa e que altera o fluxo normal do controle.</li>
+            </ul>
+        </div>
+
+        <h2 id="function">Função</h2>
+        <p>Uma função é um bloco de código reutilizável que realiza uma tarefa específica. As funções ajudam a tornar o código mais modular e organizado.</p>
+        <pre><code># Código
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Maria"))  # Saída: Olá, Maria!
+</code></pre>
+
+        <h2 id="method">Método</h2>
+        <p>Um método é uma função definida dentro de uma classe e que opera em instâncias dessa classe. Métodos são usados para definir comportamentos específicos dos objetos.</p>
+        <pre><code># Código
+class Pessoa:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def dizer_ola(self):
+        return f"Olá, eu sou {self.nome}!"
+
+pessoa = Pessoa("João")
+print(pessoa.dizer_ola())  # Saída: Olá, eu sou João!
+</code></pre>
+
+        <h2 id="variable">Variável</h2>
+        <p>Uma variável é um espaço na memória onde você pode armazenar dados. O valor de uma variável pode ser alterado ao longo do tempo.</p>
+        <pre><code># Código
+idade = 30
+nome = "Ana"
+print(idade)  # Saída: 30
+print(nome)   # Saída: Ana
+</code></pre>
+
+        <h2 id="class">Classe</h2>
+        <p>Uma classe é um modelo que define a estrutura e o comportamento dos objetos. Ela encapsula dados (atributos) e métodos que operam sobre esses dados.</p>
+        <pre><code># Código
+class Carro:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+    def descricao(self):
+        return f"{self.marca} {self.modelo}"
+
+carro = Carro("Ford", "Fusion")
+print(carro.descricao())  # Saída: Ford Fusion
+</code></pre>
+
+        <h2 id="object">Objeto</h2>
+        <p>Um objeto é uma instância de uma classe. Ele possui atributos e métodos definidos pela classe a que pertence.</p>
+        <pre><code># Código
+carro = Carro("Toyota", "Corolla")
+print(carro.marca)  # Saída: Toyota
+</code></pre>
+
+        <h2 id="module">Módulo</h2>
+        <p>Um módulo é um arquivo Python que contém definições de funções, classes e variáveis. Ele permite organizar o código e reutilizar componentes em diferentes partes do programa.</p>
+        <pre><code># Código
+# Arquivo meu_modulo.py
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+# Arquivo principal.py
+import meu_modulo
+print(meu_modulo.saudacao("Carlos"))  # Saída: Olá, Carlos!
+</code></pre>
+
+        <h2 id="package">Pacote</h2>
+        <p>Um pacote é uma coleção de módulos organizados em um diretório. Cada pacote contém um arquivo __init__.py que define o pacote e pode incluir outros módulos e subpacotes.</p>
+        <pre><code># Estrutura de diretórios
+pacote/
+    __init__.py
+    modulo1.py
+    modulo2.py
+
+# Uso em código
+from pacote import modulo1
+</code></pre>
+
+        <h2 id="exception">Exceção</h2>
+        <p>Uma exceção é um evento que ocorre durante a execução do programa e que altera o fluxo normal do controle. O tratamento de exceções permite lidar com erros de forma controlada.</p>
+        <pre><code># Código
+try:
+    resultado = 10 / 0
+except ZeroDivisionError:
+    print("Erro: Divisão por zero!")
+</code></pre>
+    </div>
+</body>
+</html>

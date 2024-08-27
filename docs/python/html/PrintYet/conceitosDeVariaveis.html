@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Variáveis em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#introduction">Introdução</a>
+            <a href="#types">Tipos de Dados</a>
+            <a href="#assignment">Atribuição de Valores</a>
+            <a href="#reassignment">Reatribuição de Valores</a>
+            <a href="#naming">Nomenclatura de Variáveis</a>
+            <a href="#scope">Escopo de Variáveis</a>
+            <a href="#local_global">Variáveis Locais e Globais</a>
+            <a href="#type_conversion">Conversão de Tipos</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Introdução:</strong> Explica o que são variáveis e seu papel em Python.</li>
+                <li><strong>Tipos de Dados:</strong> Detalha os diferentes tipos de dados que uma variável pode ter.</li>
+                <li><strong>Atribuição de Valores:</strong> Mostra como atribuir valores a variáveis.</li>
+                <li><strong>Reatribuição de Valores:</strong> Explica como reatribuir valores a variáveis.</li>
+                <li><strong>Nomenclatura de Variáveis:</strong> Fornece diretrizes para nomear variáveis em Python.</li>
+                <li><strong>Escopo de Variáveis:</strong> Discute o conceito de escopo e visibilidade das variáveis.</li>
+                <li><strong>Variáveis Locais e Globais:</strong> Explica a diferença entre variáveis locais e globais.</li>
+                <li><strong>Conversão de Tipos:</strong> Demonstra como converter entre diferentes tipos de dados.</li>
+            </ul>
+        </div>
+
+        <h2 id="introduction">Introdução</h2>
+        <p>Em Python, uma variável é um espaço de armazenamento que tem um nome simbólico e é associado a um valor. As variáveis permitem que você armazene, modifique e recupere dados durante a execução de um programa.</p>
+
+        <h2 id="types">Tipos de Dados</h2>
+        <p>As variáveis em Python podem armazenar diferentes tipos de dados, incluindo:</p>
+        <ul>
+            <li><strong>Inteiros:</strong> Números inteiros, como <code>5</code> ou <code>-3</code>.</li>
+            <li><strong>Float:</strong> Números de ponto flutuante, como <code>3.14</code> ou <code>-0.001</code>.</li>
+            <li><strong>Strings:</strong> Sequências de caracteres, como <code>"Olá, Mundo!"</code>.</li>
+            <li><strong>Booleanos:</strong> Valores <code>True</code> ou <code>False</code>.</li>
+            <li><strong>Listas:</strong> Sequências de valores, que podem ser de diferentes tipos, como <code>[1, 2, 3]</code> ou <code>["a", "b", "c"]</code>.</li>
+            <li><strong>Dicionários:</strong> Estruturas de dados que armazenam pares chave-valor, como <code>{"nome": "João", "idade": 30}</code>.</li>
+            <li><strong>Sets:</strong> Coleções de valores únicos e não ordenados, como <code>{1, 2, 3}</code>.</li>
+        </ul>
+
+        <h2 id="assignment">Atribuição de Valores</h2>
+        <p>Para atribuir um valor a uma variável, você usa o operador de atribuição <code>=</code>.</p>
+        <pre><code># Código
+nome = "Maria"  # Atribui uma string à variável 'nome'
+idade = 25       # Atribui um inteiro à variável 'idade'
+altura = 1.70    # Atribui um float à variável 'altura'
+
+print(nome)
+print(idade)
+print(altura)
+
+# Saída
+# Maria
+# 25
+# 1.70
+</code></pre>
+
+        <h2 id="reassignment">Reatribuição de Valores</h2>
+        <p>Você pode reatribuir um novo valor a uma variável a qualquer momento. A reatribuição altera o valor armazenado na variável.</p>
+        <pre><code># Código
+valor = 10
+print(valor)  # Saída: 10
+
+valor = 20
+print(valor)  # Saída: 20
+</code></pre>
+
+        <h2 id="naming">Nomenclatura de Variáveis</h2>
+        <p>Os nomes das variáveis devem seguir algumas regras:</p>
+        <ul>
+            <li>Devem começar com uma letra ou sublinhado.</li>
+            <li>Podem conter letras, números e sublinhados.</li>
+            <li>Não podem ser palavras reservadas.</li>
+        </ul>
+        <pre><code># Código
+nome_usuario = "Ana"  # Nome de variável válido
+usuario1 = "Carlos"   # Nome de variável válido
+1usuario = "João"     # Nome de variável inválido (não pode começar com um número)
+</code></pre>
+
+        <h2 id="scope">Escopo de Variáveis</h2>
+        <p>O escopo de uma variável determina onde ela pode ser acessada. Variáveis definidas dentro de uma função são locais a essa função, enquanto variáveis definidas fora de funções são globais.</p>
+        <pre><code># Código
+variavel_global = "Eu sou global"
+
+def funcao():
+    variavel_local = "Eu sou local"
+    print(variavel_global)  # Acessa variável global
+    print(variavel_local)   # Acessa variável local
+
+funcao()
+print(variavel_global)  # Acessa variável global
+# print(variavel_local)  # Gera um erro, pois 'variavel_local' não está definida fora da função
+
+# Saída
+# Eu sou global
+# Eu sou local
+# Eu sou global
+</code></pre>
+
+        <h2 id="local_global">Variáveis Locais e Globais</h2>
+        <p>Em Python, o escopo de uma variável pode ser local ou global. Entender a diferença é crucial para evitar erros e garantir que seu código funcione conforme o esperado.</p>
+        <h3>Variáveis Globais</h3>
+        <p>Variáveis globais são definidas fora de qualquer função e podem ser acessadas de qualquer lugar no código. Elas têm um escopo global e são úteis quando você precisa de uma variável acessível em múltiplas funções.</p>
+        <pre><code># Código
+variavel_global = "Eu sou global"
+
+def mostra_variavel():
+    print(variavel_global)  # Acessa a variável global
+
+mostra_variavel()
+print(variavel_global)  # Também acessa a variável global
+
+# Saída
+# Eu sou global
+# Eu sou global
+</code></pre>
+
+        <h3>Variáveis Locais</h3>
+        <p>Variáveis locais são definidas dentro de uma função e só podem ser acessadas dentro dessa função. Elas são úteis para armazenar valores temporários e específicos para a função.</p>
+        <pre><code># Código
+def funcao_local():
+    variavel_local = "Eu sou local"
+    print(variavel_local)  # Acessa a variável local
+
+funcao_local()
+# print(variavel_local)  # Gera um erro, pois 'variavel_local' não está definida fora da função
+
+# Saída
+# Eu sou local
+</code></pre>
+
+        <h3>Variáveis Locais e Globais no Mesmo Contexto</h3>
+        <p>Se você tentar modificar uma variável global dentro de uma função, deve usar a palavra-chave <code>global</code> para indicar que está se referindo à variável global.</p>
+        <pre><code># Código
+variavel_global = "Valor inicial"
+
+def modificar_global():
+    global variavel_global
+    variavel_global = "Valor modificado"
+
+modificar_global()
+print(variavel_global)  # Saída: Valor modificado
+
+# Saída
+# Valor modificado
+</code></pre>
+
+        <h2 id="type_conversion">Conversão de Tipos</h2>
+        <p>Você pode converter uma variável de um tipo de dado para outro usando funções de conversão.</p>
+        <pre><code># Código
+numero = "42"         # String
+numero_inteiro = int(numero)  # Converte para inteiro
+print(numero_inteiro)  # Saída: 42
+
+decimal = 3.14        # Float
+decimal_str = str(decimal)  # Converte para string
+print(decimal_str)    # Saída: 3.14
+</code></pre>
+
+    </div>
+</body>
+</html>

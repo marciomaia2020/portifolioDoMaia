@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Funções em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#introduction">Introdução</a>
+            <a href="#definition">Definição de Funções</a>
+            <a href="#calling">Chamando Funções</a>
+            <a href="#parameters">Parâmetros e Argumentos</a>
+            <a href="#return">Valor de Retorno</a>
+            <a href="#scope">Escopo das Funções</a>
+            <a href="#lambda">Funções Lambda</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Introdução:</strong> Explica o conceito básico de funções e seu uso em Python.</li>
+                <li><strong>Definição de Funções:</strong> Detalha como criar funções em Python.</li>
+                <li><strong>Chamando Funções:</strong> Mostra como chamar funções definidas.</li>
+                <li><strong>Parâmetros e Argumentos:</strong> Explica como passar parâmetros para funções e como os argumentos são usados.</li>
+                <li><strong>Valor de Retorno:</strong> Discute como as funções podem retornar valores e como usar esses valores.</li>
+                <li><strong>Escopo das Funções:</strong> Explica o escopo das variáveis dentro das funções e como elas interagem com variáveis globais.</li>
+                <li><strong>Funções Lambda:</strong> Introduz funções lambda e como usá-las.</li>
+            </ul>
+        </div>
+
+        <h2 id="introduction">Introdução</h2>
+        <p>Funções em Python são blocos de código reutilizáveis que realizam uma tarefa específica. Elas ajudam a modularizar o código, tornando-o mais organizado e reutilizável.</p>
+
+        <h2 id="definition">Definição de Funções</h2>
+        <p>Para definir uma função em Python, você usa a palavra-chave <code>def</code> seguida pelo nome da função e parênteses. O corpo da função é definido por um bloco indentado.</p>
+        <pre><code># Código
+def saudacao(nome):
+    """Exibe uma saudação personalizada."""
+    print(f"Olá, {nome}!")
+
+# Exemplo de chamada da função
+saudacao("Maria")  # Saída: Olá, Maria!
+</code></pre>
+
+        <h2 id="calling">Chamando Funções</h2>
+        <p>Após definir uma função, você pode chamá-la em qualquer lugar do seu código. Para chamar uma função, use seu nome seguido por parênteses. Se a função requer parâmetros, passe-os dentro dos parênteses.</p>
+        <pre><code># Código
+def somar(a, b):
+    """Retorna a soma de dois números."""
+    return a + b
+
+resultado = somar(5, 3)
+print(resultado)  # Saída: 8
+</code></pre>
+
+        <h2 id="parameters">Parâmetros e Argumentos</h2>
+        <p>Parâmetros são variáveis listadas entre parênteses na definição da função. Argumentos são os valores que você passa para esses parâmetros quando chama a função.</p>
+        <pre><code># Código
+def saudacao(nome, idade):
+    """Exibe uma saudação com nome e idade."""
+    print(f"Olá, {nome}! Você tem {idade} anos.")
+
+saudacao("Pedro", 25)  # Saída: Olá, Pedro! Você tem 25 anos.
+</code></pre>
+
+        <h2 id="return">Valor de Retorno</h2>
+        <p>Funções podem retornar valores usando a palavra-chave <code>return</code>. Se uma função não tiver uma instrução <code>return</code>, ela retorna <code>None</code> por padrão.</p>
+        <pre><code># Código
+def multiplicar(x, y):
+    """Retorna o produto de dois números."""
+    return x * y
+
+produto = multiplicar(4, 5)
+print(produto)  # Saída: 20
+</code></pre>
+
+        <h2 id="scope">Escopo das Funções</h2>
+        <p>Dentro de uma função, variáveis definidas são locais e só podem ser acessadas dentro dessa função. No entanto, uma função pode acessar variáveis globais definidas fora dela.</p>
+        <pre><code># Código
+variavel_global = "Eu sou global"
+
+def mostrar_variavel():
+    variavel_local = "Eu sou local"
+    print(variavel_global)  # Acessa variável global
+    print(variavel_local)   # Acessa variável local
+
+mostrar_variavel()
+print(variavel_global)  # Acessa variável global
+# print(variavel_local)  # Gera um erro, pois 'variavel_local' não está definida fora da função
+
+# Saída
+# Eu sou global
+# Eu sou local
+# Eu sou global
+</code></pre>
+
+        <h2 id="lambda">Funções Lambda</h2>
+        <p>Funções lambda são pequenas funções anônimas definidas com a palavra-chave <code>lambda</code>. Elas são usadas para criar funções de uma única linha e são úteis em casos onde uma função simples é necessária temporariamente.</p>
+        <pre><code># Código
+# Função lambda para somar dois números
+soma = lambda x, y: x + y
+
+print(soma(10, 5))  # Saída: 15
+</code></pre>
+
+    </div>
+</body>
+</html>

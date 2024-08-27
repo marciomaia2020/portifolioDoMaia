@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuplas em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tuplas em Python</h1>
+        
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#create">Criar Tuplas</a>
+            <a href="#access">Acessar Itens da Tupla</a>
+            <a href="#change">Alterar Itens da Tupla</a>
+            <a href="#add">Adicionar Itens à Tupla</a>
+            <a href="#remove">Remover Itens da Tupla</a>
+            <a href="#loop">Iterar sobre Tuplas</a>
+            <a href="#methods">Métodos de Tuplas</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>Criar Tuplas</strong> Define uma nova tupla com elementos.</li>
+                <li><strong>Acessar Itens da Tupla</strong> Obtém valores usando os índices.</li>
+                <li><strong>Alterar Itens da Tupla</strong> Tuplas são imutáveis, então não é possível alterar itens.</li>
+                <li><strong>Adicionar Itens à Tupla</strong> Tuplas são imutáveis, então não é possível adicionar itens diretamente.</li>
+                <li><strong>Remover Itens da Tupla</strong> Tuplas são imutáveis, então não é possível remover itens diretamente.</li>
+                <li><strong>Iterar sobre Tuplas</strong> Percorre os elementos da tupla usando loops.</li>
+                <li><strong>Métodos de Tuplas</strong> Utiliza métodos incorporados como <code>count()</code> e <code>index()</code>.</li>
+            </ul>
+        </div>
+
+        <h2 id="create">Criar Tuplas</h2>
+        <p>Você pode criar uma tupla em Python usando parênteses e separando os elementos por vírgulas.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana', 'cherry')
+
+print(my_tuple)
+
+# Saída
+# ('apple', 'banana', 'cherry')
+</code></pre>
+
+        <h2 id="access">Acessar Itens da Tupla</h2>
+        <p>Acessa valores da tupla usando índices. O índice começa em 0.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana', 'cherry')
+item = my_tuple[1]   # Acessa 'banana'
+
+print(item)
+
+# Saída
+# banana
+</code></pre>
+
+        <h2 id="change">Alterar Itens da Tupla</h2>
+        <p>Tuplas são imutáveis, o que significa que não é possível alterar os itens uma vez que a tupla é criada.</p>
+        <pre><code># Código
+# Isto causará um erro
+my_tuple = ('apple', 'banana', 'cherry')
+# my_tuple[1] = 'blueberry'   # Gera um erro
+
+# Saída
+# TypeError: 'tuple' object does not support item assignment
+</code></pre>
+
+        <h2 id="add">Adicionar Itens à Tupla</h2>
+        <p>Para "adicionar" itens, você deve criar uma nova tupla que combine a tupla original com novos elementos.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana')
+new_tuple = my_tuple + ('cherry', 'date')
+
+print(new_tuple)
+
+# Saída
+# ('apple', 'banana', 'cherry', 'date')
+</code></pre>
+
+        <h2 id="remove">Remover Itens da Tupla</h2>
+        <p>Não é possível remover itens diretamente de uma tupla. Você pode criar uma nova tupla sem os itens indesejados.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana', 'cherry')
+new_tuple = tuple(item for item in my_tuple if item != 'banana')
+
+print(new_tuple)
+
+# Saída
+# ('apple', 'cherry')
+</code></pre>
+
+        <h2 id="loop">Iterar sobre Tuplas</h2>
+        <p>Você pode iterar sobre os itens da tupla usando um loop <code>for</code>.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana', 'cherry')
+
+for item in my_tuple:
+    print(item)
+
+# Saída
+# apple
+# banana
+# cherry
+</code></pre>
+
+        <h2 id="methods">Métodos de Tuplas</h2>
+        <p>Tuplas possuem alguns métodos úteis como <code>count()</code> e <code>index()</code>.</p>
+        <pre><code># Código
+my_tuple = ('apple', 'banana', 'cherry', 'apple')
+count_apple = my_tuple.count('apple')  # Conta quantas vezes 'apple' aparece
+index_banana = my_tuple.index('banana')  # Obtém o índice de 'banana'
+
+print(count_apple)
+print(index_banana)
+
+# Saída
+# 2
+# 1
+</code></pre>
+
+    </div>
+</body>
+</html>
