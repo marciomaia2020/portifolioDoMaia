@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Avançados em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5; /* Espaçamento entre linhas */
+        }
+        h2 {
+            color: red;
+        }
+        a {
+            color: #dcdcdc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+        .index {
+            background-color: #2e2e2e;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .code-section {
+            background-color: #2e2e2e;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #3e3e3e;
+            color: #dcdcdc;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #3e3e3e;
+            color: #dcdcdc;
+        }
+        .summary {
+            background-color: #2e2e2e;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .summary p strong{
+            color: red;
+            font-style: italic;
+        }
+        #iterables h2{
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conceitos Avançados em Python</h1>
+
+    <div class="index">
+        <h1>Índice</h1>
+        <ul>
+            <li><a href="#multiprocessing">Multiprocessing</a></li>
+            <li><a href="#threads">Threads</a></li>
+            <li><a href="#singleton">Singleton</a></li>
+            <li><a href="#decorators">Decorators</a></li>
+            <li><a href="#context-managers">Context Managers</a></li>
+            <li><a href="#metaclasses">Metaclasses</a></li>
+            <li><a href="#generators">Generators</a></li>
+            <li><a href="#asyncio">Asyncio</a></li>
+            <li><a href="#comprehensions">Comprehensions</a></li>
+        </ul>
+    </div>
+
+    <div id="multiprocessing" class="code-section">
+        <h2>Multiprocessing</h2>
+        <p>O módulo <code>multiprocessing</code> permite a execução paralela de processos em Python, melhorando o desempenho em tarefas CPU-bound.</p>
+        <pre><code>from multiprocessing import Process
+
+def worker():
+    print("Processo em execução")
+
+if __name__ == "__main__":
+    process = Process(target=worker)
+    process.start()
+    process.join()
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Processo em execução</code></pre>
+    </div>
+
+    <div id="threads" class="code-section">
+        <h2>Threads</h2>
+        <p>Threads permitem a execução paralela dentro de um único processo, ideal para tarefas I/O-bound.</p>
+        <pre><code>import threading
+
+def worker():
+    print("Thread em execução")
+
+thread = threading.Thread(target=worker)
+thread.start()
+thread.join()
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Thread em execução</code></pre>
+    </div>
+
+    <div id="singleton" class="code-section">
+        <h2>Singleton</h2>
+        <p>O padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a essa instância.</p>
+        <pre><code>class Singleton:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(Singleton, cls).__new__(cls, *args, **kwargs)
+        return cls._instance
+
+singleton1 = Singleton()
+singleton2 = Singleton()
+
+print(singleton1 is singleton2)  # True
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>True</code></pre>
+    </div>
+
+    <div id="decorators" class="code-section">
+        <h2>Decorators</h2>
+        <p>Decorators são uma forma de modificar o comportamento de funções ou métodos em Python, sem alterar seu código fonte.</p>
+        <pre><code>def my_decorator(func):
+    def wrapper():
+        print("Algo acontece antes da função.")
+        func()
+        print("Algo acontece depois da função.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Olá!")
+
+say_hello()
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Algo acontece antes da função.
+Olá!
+Algo acontece depois da função.
+        </code></pre>
+    </div>
+
+    <div id="context-managers" class="code-section">
+        <h2>Context Managers</h2>
+        <p>Context Managers permitem a alocação e liberação de recursos de forma eficiente, utilizando as palavras-chave <code>with</code> e <code>__enter__</code>/<code>__exit__</code>.</p>
+        <pre><code>class MyContextManager:
+    def __enter__(self):
+        print("Entrando no contexto")
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Saindo do contexto")
+
+with MyContextManager():
+    print("Dentro do bloco de contexto")
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Entrando no contexto
+Dentro do bloco de contexto
+Saindo do contexto
+        </code></pre>
+    </div>
+
+    <div id="metaclasses" class="code-section">
+        <h2>Metaclasses</h2>
+        <p>Metaclasses são classes de classes que definem como classes se comportam. Elas permitem modificar a criação de classes de uma maneira controlada.</p>
+        <pre><code>class Meta(type):
+    def __new__(cls, name, bases, dct):
+        print(f"Metaclasse criando a classe: {name}")
+        return super().__new__(cls, name, bases, dct)
+
+class MyClass(metaclass=Meta):
+    pass
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Metaclasse criando a classe: MyClass
+        </code></pre>
+    </div>
+
+    <div id="generators" class="code-section">
+        <h2>Generators</h2>
+        <p>Generators são uma forma de criar iteradores de maneira fácil e eficiente, utilizando a palavra-chave <code>yield</code>.</p>
+        <pre><code>def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+for value in my_generator():
+    print(value)
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>1
+2
+3
+        </code></pre>
+    </div>
+
+    <div id="asyncio" class="code-section">
+        <h2>Asyncio</h2>
+        <p>O módulo <code>asyncio</code> permite escrever código assíncrono, facilitando a execução de operações I/O-bound sem bloquear o loop de eventos.</p>
+        <pre><code>import asyncio
+
+async def say_hello():
+    print("Olá!")
+    await asyncio.sleep(1)
+    print("Adeus!")
+
+asyncio.run(say_hello())
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>Olá!
+Adeus!
+        </code></pre>
+    </div>
+
+    <div id="comprehensions" class="code-section">
+        <h2>Comprehensions</h2>
+        <p>Comprehensions são uma maneira concisa e eficiente de criar listas, conjuntos e dicionários a partir de <span style="color: blue; font-style: italic;">iteráveis</span>. *</p>
+        <pre><code># List comprehension
+squares = [x**2 for x in range(5)]
+print(squares)
+
+# Dict comprehension
+square_dict = {x: x**2 for x in range(5)}
+print(square_dict)
+        </code></pre>
+        <p><strong>Saída esperada:</strong></p>
+        <pre><code>[0, 1, 4, 9, 16]
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+        </code></pre>
+    </div>
+
+    <div class="summary">
+        <h3>Explicações Resumidas</h3>
+        <p><strong>Multiprocessing:</strong> Executa tarefas em paralelo utilizando múltiplos processos, útil para tarefas que exigem muito da CPU.</p>
+        <p><strong>Threads:</strong> Executa tarefas simultâneas dentro de um processo, útil para tarefas de I/O.</p>
+        <p><strong>Singleton:</strong> Padrão que garante uma única instância de uma classe.</p>
+        <p><strong>Decorators:</strong> Modifica o comportamento de funções ou métodos sem alterar o código original.</p>
+        <p><strong>Context Managers:</strong> Gerencia recursos (como arquivos ou conexões) de forma automática com <code>with</code>.</p>
+        <p><strong>Metaclasses:</strong> Define o comportamento de classes, permitindo controle sobre a criação de classes.</p>
+        <p><strong>Generators:</strong> Funções que produzem uma sequência de valores de forma eficiente, utilizando <code>yield</code>.</p>
+        <p><strong>Asyncio:</strong> Permite execução assíncrona, ideal para operações I/O que não bloqueiam o programa.</p>
+        <p><strong>Comprehensions:</strong> Sintaxe concisa para criar listas, dicionários ou conjuntos.</p>
+    </div>
+
+
+    <div id="iterables" class="code-section">
+        <h2>Iteráveis<span style="color: white;"> *</span></h2>
+        <p>Em Python, um <strong>iterável</strong> é um objeto que pode ser percorrido em um loop, como um <code>for</code>. Iteráveis são objetos que implementam o método especial <code>__iter__()</code>, que retorna um iterador. Um iterador, por sua vez, implementa o método <code>__next__()</code>, que retorna o próximo item do iterável ou levanta uma exceção <code>StopIteration</code> quando não há mais itens.</p>
+        <p><strong>Conceitos importantes sobre iteráveis:</strong></p>
+        <ul>
+            <li><strong>Iteráveis:</strong> São objetos que suportam iteração e possuem um método <code>__iter__()</code> que retorna um iterador. Exemplos comuns de iteráveis incluem listas, tuplas, dicionários, conjuntos e strings.</li>
+            <li><strong>Iteradores:</strong> São objetos que realizam a iteração sobre um iterável. Eles implementam o método <code>__next__()</code> e, em Python 3, também podem implementar o método <code>__iter__()</code> que retorna o próprio iterador.</li>
+        </ul>
+        <p><strong>Exemplo de Iterável:</strong> Um exemplo clássico é uma lista. Quando você faz um loop sobre uma lista, está utilizando um iterador interno que percorre os elementos da lista.</p>
+        <pre><code># Exemplo de um iterável (uma lista)
+    numbers = [1, 2, 3, 4, 5]
+    
+    for number in numbers:
+        print(number)
+        </code></pre>
+        <p><strong>Implementando um Iterável Personalizado:</strong> Você pode criar seu próprio iterável definindo uma classe que implementa o método <code>__iter__()</code> e retorna um iterador. Aqui está um exemplo simples:</p>
+        <pre><code>class MyIterable:
+        def __init__(self, limit):
+            self.limit = limit
+        
+        def __iter__(self):
+            self.current = 0
+            return self
+        
+        def __next__(self):
+            if self.current &lt; self.limit:
+                self.current += 1
+                return self.current - 1
+            else:
+                raise StopIteration
+    
+    # Usando o iterável personalizado
+    for num in MyIterable(5):
+        print(num)
+        </code></pre>
+        <p><strong>Explicação do Exemplo:</strong></p>
+        <ul>
+            <li><strong>Classe MyIterable:</strong> Define um iterável que produz números de 0 até <code>limit - 1</code>.</li>
+            <li><strong>Método <code>__iter__</code>:</strong> Inicializa o iterador e retorna o próprio objeto.</li>
+            <li><strong>Método <code>__next__</code>:</strong> Retorna o próximo número e levanta <code>StopIteration</code> quando todos os números forem retornados.</li>
+        </ul>
+        <p>Dessa forma, você pode criar objetos personalizados que podem ser percorridos em loops, o que é muito útil para criar coleções de dados que se comportam como iteráveis.</p>
+    </div>
+    
+
+
+
+
+
+</body>
+</html>
