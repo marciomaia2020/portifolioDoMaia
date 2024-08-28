@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribuição de Múltiplos Valores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 20px;
+			line-height: 1,5;
+        }
+        h1 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+			color: #f0f0f0;
+        }
+        h2 {
+            margin-top: 40px;
+			color: red;
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #76c7c0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d1d1d1;
+        }
+        .output {
+            color: #76c7c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atribuição de Múltiplos Valores</h1>
+
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#ex1">Atribuição Simples</a></li>
+        <li><a href="#ex2">Troca de Valores entre Variáveis</a></li>
+        <li><a href="#ex3">Atribuição com Listas ou Tuplas</a></li>
+        <li><a href="#ex4">Atribuição com Desempacotamento de Funções</a></li>
+        <li><a href="#ex5">Atribuição com Valor Comum</a></li>
+        <li><a href="#ex6">Ignorando Valores</a></li>
+    </ul>
+
+    <h2 id="ex1">Atribuição Simples</h2>
+    <pre><code># Atribuindo valores a múltiplas variáveis
+a, b, c = 1, 2, 3
+print(a)  # Saída: <span class="output">1</span>
+print(b)  # Saída: <span class="output">2</span>
+print(c)  # Saída: <span class="output">3</span></code></pre>
+
+    <h2 id="ex2">Troca de Valores entre Variáveis</h2>
+    <pre><code># Trocando valores entre variáveis
+a, b = 5, 10
+a, b = b, a
+print(a)  # Saída: <span class="output">10</span>
+print(b)  # Saída: <span class="output">5</span></code></pre>
+
+    <h2 id="ex3">Atribuição com Listas ou Tuplas</h2>
+    <pre><code># Atribuindo valores de uma lista ou tupla
+valores = [7, 8, 9]
+x, y, z = valores
+print(x)  # Saída: <span class="output">7</span>
+print(y)  # Saída: <span class="output">8</span>
+print(z)  # Saída: <span class="output">9</span></code></pre>
+
+    <h2 id="ex4">Atribuição com Desempacotamento de Funções</h2>
+    <pre><code># Desempacotando valores retornados por uma função
+def coordenadas():
+    return 4, 5
+
+x, y = coordenadas()
+print(x)  # Saída: <span class="output">4</span>
+print(y)  # Saída: <span class="output">5</span></code></pre>
+
+    <h2 id="ex5">Atribuição com Valor Comum</h2>
+    <pre><code># Atribuindo o mesmo valor a várias variáveis
+a = b = c = 0
+print(a)  # Saída: <span class="output">0</span>
+print(b)  # Saída: <span class="output">0</span>
+print(c)  # Saída: <span class="output">0</span></code></pre>
+
+    <h2 id="ex6">Ignorando Valores</h2>
+    <pre><code># Ignorando valores usando _
+valores = (1, 2, 3, 4)
+a, b, _, d = valores
+print(a)  # Saída: <span class="output">1</span>
+print(b)  # Saída: <span class="output">2</span>
+print(d)  # Saída: <span class="output">4</span></code></pre>
+</body>
+</html>

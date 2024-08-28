@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Dados no MySQL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #2C2C2C;
+            color: #E0E0E0;
+        }
+        input[type="submit"] {
+            background-color: #FFC107;
+            border: none;
+            color: #121212;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #FFA000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inserir Dados na Tabela Pessoas</h1>
+        <form action="insert.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+            <input type="submit" value="Inserir Dados">
+        </form>
+    </div>
+</body>
+</html>

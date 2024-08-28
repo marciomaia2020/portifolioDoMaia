@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL com Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #F5F5F5;
+        }
+        h2 {
+            color: red;
+        }
+        h3 {
+            color: #F5F5F5;
+        }
+        a {
+            color: #9E9E9E;
+        }
+        a:hover {
+            color: #E0E0E0;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #FFC107;
+        }
+        .index {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border-radius: 5px;
+        }
+        .index a {
+            display: block;
+            padding: 5px;
+            color: #9E9E9E;
+        }
+        .index a:hover {
+            color: #E0E0E0;
+        }
+        .explanations {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .index h2 {
+            color: #ffffff;
+        }
+        .explanations h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MySQL com Python</h1>
+
+        <div class="index">
+            <h2>Índice</h2>
+            <a href="#get_started">MySQL Get Started</a>
+            <a href="#create_database">MySQL Create Database</a>
+            <a href="#create_table">MySQL Create Table</a>
+            <a href="#insert">MySQL Insert</a>
+            <a href="#select">MySQL Select</a>
+            <a href="#where">MySQL Where</a>
+            <a href="#order_by">MySQL Order By</a>
+            <a href="#delete">MySQL Delete</a>
+            <a href="#drop_table">MySQL Drop Table</a>
+            <a href="#update">MySQL Update</a>
+            <a href="#limit">MySQL Limit</a>
+            <a href="#join">MySQL Join</a>
+        </div>
+
+        <div class="explanations">
+            <h2>Explicações Adicionais</h2>
+            <ul>
+                <li><strong>MySQL Get Started:</strong> Introdução ao MySQL e como conectar com Python.</li>
+                <li><strong>MySQL Create Database:</strong> Como criar um banco de dados.</li>
+                <li><strong>MySQL Create Table:</strong> Como criar tabelas no banco de dados.</li>
+                <li><strong>MySQL Insert:</strong> Como inserir dados em tabelas.</li>
+                <li><strong>MySQL Select:</strong> Como consultar dados.</li>
+                <li><strong>MySQL Where:</strong> Como aplicar filtros nas consultas.</li>
+                <li><strong>MySQL Order By:</strong> Como ordenar os resultados das consultas.</li>
+                <li><strong>MySQL Delete:</strong> Como excluir dados de tabelas.</li>
+                <li><strong>MySQL Drop Table:</strong> Como excluir tabelas.</li>
+                <li><strong>MySQL Update:</strong> Como atualizar dados nas tabelas.</li>
+                <li><strong>MySQL Limit:</strong> Como limitar o número de resultados retornados.</li>
+                <li><strong>MySQL Join:</strong> Como combinar dados de várias tabelas.</li>
+            </ul>
+        </div>
+
+        <h2 id="get_started">MySQL Get Started</h2>
+        <p>Para começar a usar o MySQL com Python, você precisa instalar o pacote <code>mysql-connector-python</code>. Você pode instalar usando o <code>pip</code>:</p>
+        <pre><code># Código
+pip install mysql-connector-python
+</code></pre>
+        <p>Em seguida, você pode conectar-se ao MySQL usando o seguinte código:</p>
+        <pre><code># Código
+import mysql.connector
+
+# Conectar ao MySQL
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha"
+)
+
+# Criar um cursor
+cursor = conn.cursor()
+
+# Fechar a conexão
+conn.close()
+</code></pre>
+
+        <h2 id="create_database">MySQL Create Database</h2>
+        <p>Para criar um novo banco de dados, use o seguinte comando:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha"
+)
+cursor = conn.cursor()
+cursor.execute("CREATE DATABASE meu_banco_de_dados")
+conn.close()
+</code></pre>
+
+        <h2 id="create_table">MySQL Create Table</h2>
+        <p>Para criar uma nova tabela dentro de um banco de dados:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("""
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    endereco VARCHAR(255)
+)
+""")
+conn.close()
+</code></pre>
+
+        <h2 id="insert">MySQL Insert</h2>
+        <p>Para inserir dados em uma tabela:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+sql = "INSERT INTO clientes (nome, endereco) VALUES (%s, %s)"
+val = ("João", "Rua A, 123")
+cursor.execute(sql, val)
+conn.commit()
+conn.close()
+</code></pre>
+
+        <h2 id="select">MySQL Select</h2>
+        <p>Para consultar dados de uma tabela:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM clientes")
+result = cursor.fetchall()
+for row in result:
+    print(row)
+conn.close()
+</code></pre>
+
+        <h2 id="where">MySQL Where</h2>
+        <p>Para aplicar filtros nas consultas:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM clientes WHERE nome = 'João'")
+result = cursor.fetchall()
+for row in result:
+    print(row)
+conn.close()
+</code></pre>
+
+        <h2 id="order_by">MySQL Order By</h2>
+        <p>Para ordenar os resultados das consultas:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM clientes ORDER BY nome ASC")
+result = cursor.fetchall()
+for row in result:
+    print(row)
+conn.close()
+</code></pre>
+
+        <h2 id="delete">MySQL Delete</h2>
+        <p>Para excluir dados de uma tabela:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("DELETE FROM clientes WHERE nome = 'João'")
+conn.commit()
+conn.close()
+</code></pre>
+
+        <h2 id="drop_table">MySQL Drop Table</h2>
+        <p>Para excluir uma tabela:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("DROP TABLE clientes")
+conn.close()
+</code></pre>
+
+        <h2 id="update">MySQL Update</h2>
+        <p>Para atualizar dados em uma tabela:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("UPDATE clientes SET endereco = 'Rua B, 456' WHERE nome = 'João'")
+conn.commit()
+conn.close()
+</code></pre>
+
+        <h2 id="limit">MySQL Limit</h2>
+        <p>Para limitar o número de resultados retornados:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM clientes LIMIT 5")
+result = cursor.fetchall()
+for row in result:
+    print(row)
+conn.close()
+</code></pre>
+
+        <h2 id="join">MySQL Join</h2>
+        <p>Para combinar dados de várias tabelas, você pode usar joins. Exemplo de <code>INNER JOIN</code>:</p>
+        <pre><code># Código
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="seu_usuario",
+    password="sua_senha",
+    database="meu_banco_de_dados"
+)
+cursor = conn.cursor()
+cursor.execute("""
+SELECT clientes.nome, pedidos.produto
+FROM clientes
+INNER JOIN pedidos ON clientes.id = pedidos.cliente_id
+""")
+result = cursor.fetchall()
+for row in result:
+    print(row)
+conn.close()
+</code></pre>
+    </div>
+</body>
+</html>
