@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatizando Interação com Selenium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        a {
+            color: #00327e;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Automatizando Interação com Selenium</h1>
+    <p>
+        Para automatizar a interação com uma página web, como clicar em um botão após abrir um site, você pode usar uma biblioteca de automação de navegadores como o Selenium. O Selenium permite que você controle um navegador (como o Firefox ou Chrome) e interaja com elementos na página, como botões.
+    </p>
+    <p>
+        Aqui está um exemplo de como você pode abrir a página <strong>cmspweb</strong>, esperar que ela carregue, e então clicar no botão com o <code>id</code> <strong>access-teacher</strong>:
+    </p>
+
+    <h2 class="section-title">1. Instalar as Dependências</h2>
+    <p>
+        Primeiro, você precisará instalar o Selenium e baixar o WebDriver apropriado para o seu navegador (por exemplo, <code>geckodriver</code> para Firefox ou <code>chromedriver</code> para Chrome).
+    </p>
+    <pre><code>pip install selenium</code></pre>
+
+    <h2 class="section-title">2. Código para Abrir o Site e Clicar no Botão</h2>
+    <pre><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.firefox.options import Options
+import time
+
+# Configurações para o navegador Firefox
+firefox_options = Options()
+firefox_options.add_argument("--start-maximized")  # Abre o navegador maximizado
+
+# Caminho para o geckodriver (ajuste para o seu ambiente)
+geckodriver_path = r"C:\caminho\para\geckodriver.exe"  # Altere para o local onde você baixou o geckodriver
+
+# Inicia o navegador
+service = FirefoxService(executable_path=geckodriver_path)
+driver = webdriver.Firefox(service=service, options=firefox_options)
+
+# Abre o site
+url = "https://cmspweb.ip.tv/"
+driver.get(url)
+
+# Espera o site carregar completamente
+time.sleep(5)  # Ajuste o tempo se necessário
+
+# Clica no botão com o id "access-teacher"
+button = driver.find_element(By.ID, "access-teacher")
+button.click()
+
+# Fecha o navegador após um tempo (opcional)
+time.sleep(5)  # Espera um pouco para que a ação ocorra
+driver.quit()</code></pre>
+
+    <h2 class="section-title">Explicação:</h2>
+    <ul>
+        <li><strong>selenium.webdriver.common.by.By</strong>: Fornece uma maneira conveniente de localizar elementos na página, como por <code>ID</code>, <code>NAME</code>, <code>CLASS_NAME</code>, etc.</li>
+        <li><strong>driver.find_element(By.ID, "access-teacher")</strong>: Localiza o elemento com o <code>id</code> <code>access-teacher</code> e retorna uma referência a esse elemento.</li>
+        <li><strong>button.click()</strong>: Clica no botão localizado.</li>
+        <li><strong>time.sleep(5)</strong>: Dá tempo para o site carregar antes de interagir com o elemento. Você pode ajustar o tempo conforme necessário.</li>
+        <li><strong>driver.quit()</strong>: Fecha o navegador após a interação.</li>
+    </ul>
+
+    <h2 class="section-title">Geckodriver (Firefox):</h2>
+    <p>
+        Para usar o Firefox, você precisará do <strong>geckodriver</strong>, que deve ser baixado e colocado em um local acessível no seu sistema. Você pode baixar o <strong>geckodriver</strong> <a href="https://github.com/mozilla/geckodriver/releases" target="_blank">aqui</a>.
+    </p>
+
+    <h2 class="section-title">Chromedriver (Chrome):</h2>
+    <p>
+        Se preferir usar o Chrome, substitua <code>webdriver.Firefox</code> por <code>webdriver.Chrome</code> e configure o <strong>chromedriver</strong> de maneira similar ao <strong>geckodriver</strong>.
+    </p>
+
+    <p>
+        Com esse código, você pode abrir a página desejada e interagir com os elementos dela, como clicar em botões, preencher formulários, etc.
+    </p>
+</body>
+</html>
