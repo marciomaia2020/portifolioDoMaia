@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila Selenium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        pre, code {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .output {
+            background-color: #e6e6e6;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .note {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        .note a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apostila Selenium</h1>
+
+    <div class="section">
+        <h2>1. Introdução ao Selenium</h2>
+        <p>
+            O Selenium é uma ferramenta poderosa para automação de navegadores web. Com ele, você pode automatizar tarefas repetitivas, realizar testes de ponta a ponta em aplicações web e até mesmo coletar dados de sites.
+            Para mais informações, você pode acessar o site oficial do Selenium: 
+            <a href="https://www.selenium.dev/" target="_blank">selenium.dev</a>.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. Instalando o Selenium</h2>
+        <p>Para instalar o Selenium, basta usar o pip:</p>
+        <pre><code>pip install selenium</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>3. Configurando o WebDriver</h2>
+        <p>
+            O WebDriver é o componente do Selenium que interage diretamente com o navegador. Aqui está como configurar o WebDriver para o Chrome:
+        </p>
+        <pre><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+# Caminho para o ChromeDriver
+driver = webdriver.Chrome(executable_path='caminho/para/chromedriver')
+
+# Navegar para uma URL
+driver.get('https://www.google.com')
+
+# Fechar o navegador
+driver.quit()</code></pre>
+        <p class="output">Saída Esperada: O navegador Chrome deve abrir, navegar até o Google e então fechar.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Localizando Elementos</h2>
+        <p>Você pode localizar elementos na página de várias maneiras:</p>
+        <pre><code># Localizando pelo ID
+element = driver.find_element(By.ID, 'element_id')
+
+# Localizando pelo Nome
+element = driver.find_element(By.NAME, 'element_name')
+
+# Localizando pelo XPath
+element = driver.find_element(By.XPATH, '//*[@id="element_id"]')
+
+# Localizando pelo CSS Selector
+element = driver.find_element(By.CSS_SELECTOR, '.class_name')</code></pre>
+        <p class="output">Saída Esperada: Dependendo do método de localização, o Selenium irá interagir com o elemento correspondente na página.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Interagindo com Elementos</h2>
+        <p>Aqui estão alguns exemplos de como interagir com os elementos localizados:</p>
+        <pre><code># Clicar em um botão
+button = driver.find_element(By.ID, 'submit')
+button.click()
+
+# Escrever texto em um campo de entrada
+input_field = driver.find_element(By.NAME, 'q')
+input_field.send_keys('Selenium Python')
+
+# Submeter um formulário
+input_field.submit()</code></pre>
+        <p class="output">Saída Esperada: O Selenium deve clicar em botões, preencher campos de entrada e submeter formulários conforme programado.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Manipulando Clques e Interagindo com Tags HTML</h2>
+        <p>
+            O Selenium permite interagir com diversos elementos HTML, como links, botões, caixas de seleção e mais. Aqui estão algumas formas comuns de manipular cliques e interagir com diferentes tags:
+        </p>
+        <h3>Clicando em Links</h3>
+        <pre><code># Clicar em um link pelo texto do link
+link = driver.find_element(By.LINK_TEXT, 'Clique aqui')
+link.click()
+
+# Clicar em um link pelo link parcial
+partial_link = driver.find_element(By.PARTIAL_LINK_TEXT, 'Clique')
+partial_link.click()</code></pre>
+
+        <h3>Selecionando Caixas de Seleção e Botões de Rádio</h3>
+        <pre><code># Selecionar uma caixa de seleção
+checkbox = driver.find_element(By.ID, 'checkbox_id')
+checkbox.click()
+
+# Selecionar um botão de rádio
+radio_button = driver.find_element(By.ID, 'radio_button_id')
+radio_button.click()</code></pre>
+
+        <h3>Interagindo com Dropdowns</h3>
+        <pre><code>from selenium.webdriver.support.ui import Select
+
+# Selecionar um item de um dropdown
+dropdown = Select(driver.find_element(By.ID, 'dropdown_id'))
+dropdown.select_by_visible_text('Opção 1')
+
+# Selecionar por valor
+dropdown.select_by_value('opcao1')
+
+# Selecionar por índice
+dropdown.select_by_index(0)</code></pre>
+        <p class="output">Saída Esperada: Dependendo da interação, o Selenium deve realizar as ações conforme especificado, como clicar em links, selecionar checkboxes e dropdowns.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Esperas Implícitas e Explícitas</h2>
+        <p>As esperas são fundamentais para garantir que o Selenium aguarde o carregamento de elementos antes de interagir com eles:</p>
+        <h3>Espera Implícita</h3>
+        <pre><code>driver.implicitly_wait(10)  # Espera implícita de 10 segundos</code></pre>
+
+        <h3>Espera Explícita</h3>
+        <pre><code>from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# Espera explícita de até 10 segundos para que o elemento seja clicável
+element = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.ID, 'some_id'))
+)
+element.click()</code></pre>
+        <p class="output">Saída Esperada: O Selenium deve aguardar o tempo especificado até que o elemento esteja presente e interagir com ele.</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Lidando com Janelas e Alertas</h2>
+        <h3>Alternando entre Janelas</h3>
+        <pre><code># Captura o ID da janela atual
+main_window = driver.current_window_handle
+
+# Abre uma nova aba/janela
+driver.execute_script("window.open('https://www.example.com');")
+
+# Alterna para a nova aba/janela
+driver.switch_to.window(driver.window_handles[1])</code></pre>
+
+        <h3>Lidando com Alertas</h3>
+        <pre><code># Aceitar um alerta
+alert = driver.switch_to.alert
+alert.accept()
+
+# Rejeitar um alerta
+alert.dismiss()</code></pre>
+        <p class="output">Saída Esperada: O Selenium deve alternar entre janelas e lidar com alertas conforme necessário.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Capturando Screenshots</h2>
+        <p>Você pode capturar screenshots da página atual:</p>
+        <pre><code># Capturar screenshot
+driver.save_screenshot('screenshot.png')</code></pre>
+        <p class="output">Saída Esperada: Um arquivo de imagem chamado 'screenshot.png' deve ser criado no diretório especificado.</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Fechando o Navegador</h2>
+        <p>É importante fechar o navegador corretamente após os testes:</p>
+        <pre><code># Fecha a aba atual
+driver.close()
+
+# Fecha todas as abas e encerra o WebDriver
+driver.quit()</code></pre>
+    </div>
+
+    <div class="note">
+        <h3>Nota:</h3>
+        <p>
+            Cada navegador requer um WebDriver específico para funcionar com o Selenium:
+            <ul>
+                <li><a href="https://sites.google.com/chromium.org/driver/" target="_blank">ChromeDriver</a> (para Google Chrome)</li>
+                <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/" target="_blank">EdgeDriver</a> (para Microsoft Edge)</li>
+                <li><a href="https://github.com/mozilla/geckodriver" target="_blank">GeckoDriver</a> (para Mozilla Firefox)</li>
+                <li><a href="https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari" target="_blank">SafariDriver</a> (para Safari)</li>
+            </ul>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Apostila Selenium - Criado para fins educativos</p>
+    </footer>
+
+</body>
+</html>

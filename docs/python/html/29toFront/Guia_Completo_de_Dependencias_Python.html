@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Dependências Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            overflow-x: auto;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .library {
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #ff0000;
+        }
+        h4 {
+            color: #ff8080;
+            font-style: italic;
+        }
+        .highlight {
+            color: #ff8080;
+            font-style: italic;
+        }
+        p{
+            font-style: justfy;   
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #eee;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 90%;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            color: #ff8080;
+            font-style: italic;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guia Completo de Dependências Python</h1>
+    </header>
+    <nav>
+        <a href="#automacao-web">Automação Web (Selenium)</a>
+        <a href="#manipulacao-dados">Manipulação de Dados (Pandas, NumPy)</a>
+        <a href="#aprendizado-maquina">Aprendizado de Máquina (scikit-learn, TensorFlow)</a>
+        <a href="#visualizacao-dados">Visualização de Dados (Matplotlib, Seaborn)</a>
+        <a href="#desenvolvimento-web">Desenvolvimento Web (Django, Flask)</a>
+        <a href="#redes-protocolos">Redes e Protocolos (Requests, Socket)</a>
+        <a href="#automacao-utilitarios">Automação e Utilitários (PyAutoGUI, Celery)</a>
+        <a href="#testes">Testes (pytest, unittest)</a>
+    </nav>
+    <div class="container">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#automacao-web">Automação Web <span class="highlight">(Selenium)</span></a></li>
+            <li><a href="#manipulacao-dados">Manipulação de Dados <span class="highlight">(Pandas, NumPy)</span></a></li>
+            <li><a href="#aprendizado-maquina">Aprendizado de Máquina <span class="highlight">(scikit-learn, TensorFlow)</span></a></li>
+            <li><a href="#visualizacao-dados">Visualização de Dados <span class="highlight">(Matplotlib, Seaborn)</span></a></li>
+            <li><a href="#desenvolvimento-web">Desenvolvimento Web <span class="highlight">(Django, Flask)</span></a></li>
+            <li><a href="#redes-protocolos">Redes e Protocolos <span class="highlight">(Requests, Socket)</span></a></li>
+            <li><a href="#automacao-utilitarios">Automação e Utilitários <span class="highlight">(PyAutoGUI, Celery)</span></a></li>
+            <li><a href="#testes">Testes <span class="highlight">(pytest, unittest)</span></a></li>
+        </ul>
+
+        <div id="automacao-web" class="library">
+            <h3>****Automação Web</h3>
+
+            <h4>Selenium</h4>
+            <p>
+                Selenium é uma ferramenta poderosa para automação de navegadores web. Ele permite o controle e a interação com navegadores de forma programática.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Automação de testes de interfaces web, scraping web, controle de navegadores.</li>
+                <li><strong>Instalação:</strong> Para instalar o Selenium, use o comando <code>pip install selenium</code>.</li>
+                <li><strong>Link:</strong> <a href="https://www.selenium.dev/" target="_blank">https://www.selenium.dev/</a></li>
+            </ul>
+        </div>
+
+        <div id="manipulacao-dados" class="library">
+            <h3>****Manipulação de Dados</h3>
+
+            <h4>Pandas</h4>
+            <p>
+                Pandas é uma biblioteca essencial para manipulação e análise de dados em Python. Ela fornece estruturas de dados flexíveis e operações para trabalhar com dados tabulares.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Manipulação de dados, análise estatística, operações em tabelas.</li>
+                <li><strong>Instalação:</strong> Para instalar o Pandas, use o comando <code>pip install pandas</code>.</li>
+                <li><strong>Link:</strong> <a href="https://pandas.pydata.org/" target="_blank">https://pandas.pydata.org/</a></li>
+            </ul>
+
+            <h4>NumPy</h4>
+            <p>
+                NumPy é uma biblioteca fundamental para computação científica com Python. Ela fornece suporte para arrays multidimensionais e operações matemáticas.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Computação numérica, operações em arrays, álgebra linear.</li>
+                <li><strong>Instalação:</strong> Para instalar o NumPy, use o comando <code>pip install numpy</code>.</li>
+                <li><strong>Link:</strong> <a href="https://numpy.org/" target="_blank">https://numpy.org/</a></li>
+            </ul>
+        </div>
+
+        <div id="aprendizado-maquina" class="library">
+            <h3>****Aprendizado de Máquina</h3>
+
+            <h4>scikit-learn</h4>
+            <p>
+                scikit-learn é uma biblioteca para aprendizado de máquina e modelagem preditiva. Ela fornece ferramentas simples e eficientes para mineração e análise de dados.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Modelagem preditiva, aprendizado supervisionado e não supervisionado.</li>
+                <li><strong>Instalação:</strong> Para instalar o scikit-learn, use o comando <code>pip install scikit-learn</code>.</li>
+                <li><strong>Link:</strong> <a href="https://scikit-learn.org/" target="_blank">https://scikit-learn.org/</a></li>
+            </ul>
+
+            <h4>TensorFlow</h4>
+            <p>
+                TensorFlow é uma biblioteca de aprendizado profundo desenvolvida pelo Google. Ela permite a criação e treinamento de redes neurais complexas e modelos de aprendizado profundo.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Aprendizado profundo, redes neurais, modelos complexos.</li>
+                <li><strong>Instalação:</strong> Para instalar o TensorFlow, use o comando <code>pip install tensorflow</code>.</li>
+                <li><strong>Link:</strong> <a href="https://www.tensorflow.org/" target="_blank">https://www.tensorflow.org/</a></li>
+            </ul>
+        </div>
+
+        <div id="visualizacao-dados" class="library">
+            <h3>****Visualização de Dados</h3>
+
+            <h4>Matplotlib</h4>
+            <p>
+                Matplotlib é uma biblioteca de visualização em 2D para Python. Ela permite a criação de gráficos estáticos, animados e interativos de alta qualidade.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Criação de gráficos e plots, visualização de dados científicos.</li>
+                <li><strong>Instalação:</strong> Para instalar o Matplotlib, use o comando <code>pip install matplotlib</code>.</li>
+                <li><strong>Link:</strong> <a href="https://matplotlib.org/" target="_blank">https://matplotlib.org/</a></li>
+            </ul>
+
+            <h4>Seaborn</h4>
+            <p>
+                Seaborn é uma biblioteca para visualização estatística baseada em Matplotlib. Ela fornece uma interface de alto nível para desenhar gráficos informativos e atraentes.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Visualização estatística, gráficos informativos e estéticos.</li>
+                <li><strong>Instalação:</strong> Para instalar o Seaborn, use o comando <code>pip install seaborn</code>.</li>
+                <li><strong>Link:</strong> <a href="https://seaborn.pydata.org/" target="_blank">https://seaborn.pydata.org/</a></li>
+            </ul>
+        </div>
+
+        <div id="desenvolvimento-web" class="library">
+            <h3>****Desenvolvimento Web</h3>
+
+            <h4>Django</h4>
+            <p>
+                Django é um framework web de alto nível que incentiva o desenvolvimento rápido e o design limpo e pragmático. Ele inclui uma ampla gama de ferramentas para criar aplicações web.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Desenvolvimento de aplicações web, gerenciamento de banco de dados, autenticação de usuários.</li>
+                <li><strong>Instalação:</strong> Para instalar o Django, use o comando <code>pip install django</code>.</li>
+                <li><strong>Link:</strong> <a href="https://www.djangoproject.com/" target="_blank">https://www.djangoproject.com/</a></li>
+            </ul>
+
+            <h4>Flask</h4>
+            <p>
+                Flask é um micro framework web para Python. Ele é leve e modular, facilitando o desenvolvimento de pequenas aplicações web e APIs.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Desenvolvimento de aplicações web pequenas e APIs.</li>
+                <li><strong>Instalação:</strong> Para instalar o Flask, use o comando <code>pip install flask</code>.</li>
+                <li><strong>Link:</strong> <a href="https://flask.palletsprojects.com/" target="_blank">https://flask.palletsprojects.com/</a></li>
+            </ul>
+        </div>
+
+        <div id="redes-protocolos" class="library">
+            <h3>****Redes e Protocolos</h3>
+
+            <h4>Requests</h4>
+            <p>
+                Requests é uma biblioteca simples e elegante para fazer requisições HTTP. Ela facilita a comunicação com APIs e sites web.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Fazer requisições HTTP, comunicação com APIs, scraping.</li>
+                <li><strong>Instalação:</strong> Para instalar o Requests, use o comando <code>pip install requests</code>.</li>
+                <li><strong>Link:</strong> <a href="https://requests.readthedocs.io/" target="_blank">https://requests.readthedocs.io/</a></li>
+            </ul>
+
+            <h4>Socket</h4>
+            <p>
+                Socket é uma biblioteca padrão para a comunicação de rede em Python. Ela permite a criação de conexões de rede e a comunicação entre aplicações.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Comunicação de rede, criação de servidores e clientes.</li>
+                <li><strong>Instalação:</strong> Incluído na biblioteca padrão do Python.</li>
+                <li><strong>Link:</strong> <a href="https://docs.python.org/3/library/socket.html" target="_blank">https://docs.python.org/3/library/socket.html</a></li>
+            </ul>
+        </div>
+
+        <div id="automacao-utilitarios" class="library">
+            <h3>****Automação e Utilitários</h3>
+
+            <h4>PyAutoGUI</h4>
+            <p>
+                PyAutoGUI é uma biblioteca para automação da interface gráfica. Ela permite controlar o mouse e o teclado para realizar ações automáticas no desktop.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Automação da interface gráfica, controle do mouse e teclado.</li>
+                <li><strong>Instalação:</strong> Para instalar o PyAutoGUI, use o comando <code>pip install pyautogui</code>.</li>
+                <li><strong>Link:</strong> <a href="https://pyautogui.readthedocs.io/" target="_blank">https://pyautogui.readthedocs.io/</a></li>
+            </ul>
+
+            <h4>Celery</h4>
+            <p>
+                Celery é uma biblioteca para a execução de tarefas assíncronas e gerenciamento de filas de tarefas. Ela é útil para aplicações distribuídas e tarefas em background.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Gerenciamento de tarefas assíncronas, processamento em background.</li>
+                <li><strong>Instalação:</strong> Para instalar o Celery, use o comando <code>pip install celery</code>.</li>
+                <li><strong>Link:</strong> <a href="https://docs.celeryproject.org/" target="_blank">https://docs.celeryproject.org/</a></li>
+            </ul>
+        </div>
+
+        <div id="testes" class="library">
+            <h3>****Testes</h3>
+
+            <h4>pytest</h4>
+            <p>
+                pytest é uma biblioteca para escrita de testes em Python. Ela oferece uma maneira simples e poderosa de escrever testes e tem suporte para fixtures e plugins.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Escrita e execução de testes, organização de casos de teste, suporte a fixtures.</li>
+                <li><strong>Instalação:</strong> Para instalar o pytest, use o comando <code>pip install pytest</code>.</li>
+                <li><strong>Link:</strong> <a href="https://pytest.org/" target="_blank">https://pytest.org/</a></li>
+            </ul>
+
+            <h4>unittest</h4>
+            <p>
+                unittest é a biblioteca padrão para testes em Python, baseada no framework xUnit. Ela fornece uma maneira estruturada de escrever e executar testes unitários.
+            </p>
+            <ul>
+                <li><strong>Uso:</strong> Escrita e execução de testes, organização de casos de teste.</li>
+                <li><strong>Instalação:</strong> Incluído na biblioteca padrão do Python.</li>
+                <li><strong>Link:</strong> <a href="https://docs.python.org/3/library/unittest.html" target="_blank">https://docs.python.org/3/library/unittest.html</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+</body>
+</html>
