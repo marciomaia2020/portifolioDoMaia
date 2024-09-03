@@ -11,7 +11,7 @@
             line-height: 1.6;
         }
         h1 {
-            color: #333;
+            color: red;
         }
         h2 {
             color: #555;
@@ -92,6 +92,41 @@
     <h2>Conclusão</h2>
 
     <p>Usar ambientes virtuais no Python é uma prática recomendada para garantir que seus projetos sejam gerenciáveis, independentes, e livres de conflitos de dependências. Eles são simples de configurar e oferecem uma solução poderosa para isolar pacotes e versões específicas de cada projeto.</p>
+
+
+
+    <h1>RESUMÃO</h1>
+
+    <h2>1. Instalar o virtualenv (se necessário)</h2><hr />
+    <pre><code>pip install virtualenv</code></pre>
+
+    <h2>2. Criar um ambiente virtual chamado "ExeToAPK"</h2><hr />
+    <pre><code>virtualenv ExeToAPK</code></pre>
+
+    <h2>3. Ativar o ambiente virtual</h2><hr />
+    <p><strong>Windows:</strong></p>
+    <pre><code>ExeToAPK\Scripts\activate</code></pre>
+    <p><strong>macOS/Linux:</strong></p>
+    <pre><code>source ExeToAPK/bin/activate</code></pre>
+
+    <h2>4. Resolução de Erros no PowerShell</h2><hr />
+    <p>1 - Verificar a política de execução:</p>
+    <pre><code>Get-ExecutionPolicy</code></pre>
+    <p>2 - Alterar a política temporariamente:</p>
+    <pre><code>Set-ExecutionPolicy RemoteSigned</code></pre>
+    <p>3 - Reverter a política de execução (opcional):</p>
+    <pre><code>Set-ExecutionPolicy Restricted</code></pre>
+
+    <h2>5. Instalar pacotes necessários</h2><hr />
+    <pre><code>pip install requests</code></pre>
+
+    <h2>6. (Opcional) Gerar e instalar pacotes a partir de um arquivo requirements.txt</h2><hr />
+    <pre><code>pip freeze > requirements.txt</code></pre>
+    <pre><code>pip install -r requirements.txt</code></pre>
+
+    <h2>7. Desativar o ambiente virtual</h2><hr />
+    <pre><code>deactivate</code></pre>
+
 
     <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
 
