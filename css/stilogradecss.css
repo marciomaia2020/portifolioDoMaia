@@ -70,3 +70,11 @@ input:invalid {
 input:valid {
   border-color: green;
 }
+.downloads {
+  text-align: center; /* Alinha o texto dentro do elemento ao centro */
+  border: 2px solid black; /* Define uma borda preta de 2px ao redor do elemento */
+  border-radius: 8px; /* Arredonda os cantos da borda com um raio de 8px */
+}
+.downloads p {
+  color: red;
+}
