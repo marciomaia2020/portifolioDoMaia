@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes (Cabeamento, Topologias, IP, TCPIP, etc.)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #0066cc;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redes (Cabeamento, Topologias, IP, TCPIP, etc.)</h1>
+
+        <h2>1. O que é uma topologia de rede?</h2>
+        <p>Topologia de rede é a forma como os dispositivos estão fisicamente ou logicamente conectados, como estrela, anel, barramento e malha.</p>
+
+        <h2>2. O que é uma rede LAN?</h2>
+        <p>LAN (Local Area Network) é uma rede local restrita a uma pequena área, como uma casa ou escritório.</p>
+
+        <h2>3. O que é uma rede WAN?</h2>
+        <p>WAN (Wide Area Network) é uma rede de longa distância que conecta várias redes locais, como a Internet.</p>
+
+        <h2>4. Qual é a função de um switch?</h2>
+        <p>O switch conecta dispositivos em uma rede local e direciona pacotes de dados para o destino correto.</p>
+
+        <h2>5. O que é um roteador?</h2>
+        <p>O roteador conecta diferentes redes e define a melhor rota para o tráfego de dados.</p>
+
+        <h2>6. O que é IP?</h2>
+        <p>IP (Internet Protocol) é o protocolo que define como os pacotes de dados são endereçados e roteados na Internet.</p>
+
+        <h2>7. Qual a diferença entre IPv4 e IPv6?</h2>
+        <p>IPv4 usa endereços de 32 bits, enquanto IPv6 utiliza endereços de 128 bits, permitindo mais dispositivos conectados.</p>
+
+        <h2>8. O que é máscara de sub-rede?</h2>
+        <p>Máscara de sub-rede define quais bits do endereço IP representam a rede e quais identificam os dispositivos.</p>
+
+        <h2>9. O que é gateway padrão?</h2>
+        <p>É o dispositivo que encaminha o tráfego de uma rede local para outras redes, geralmente um roteador.</p>
+
+        <h2>10. Qual é a função do protocolo DHCP?</h2>
+        <p>DHCP (Dynamic Host Configuration Protocol) atribui automaticamente endereços IP aos dispositivos na rede.</p>
+
+        <h2>11. O que é DNS?</h2>
+        <p>DNS (Domain Name System) traduz nomes de domínio em endereços IP.</p>
+
+        <h2>12. O que é TCP/IP?</h2>
+        <p>TCP/IP é um conjunto de protocolos usados na comunicação entre dispositivos na Internet.</p>
+
+        <h2>13. Qual é a diferença entre TCP e UDP?</h2>
+        <p>TCP é orientado a conexão e garante entrega, enquanto UDP é mais rápido, mas não garante a entrega.</p>
+
+        <h2>14. O que é MAC Address?</h2>
+        <p>É o endereço físico único de uma interface de rede, atribuído ao dispositivo pelo fabricante.</p>
+
+        <h2>15. O que é um firewall?</h2>
+        <p>Firewall é um sistema de segurança que monitora e controla o tráfego de rede com base em regras predefinidas.</p>
+
+        <h2>16. Como funciona o protocolo FTP?</h2>
+        <p>FTP (File Transfer Protocol) é usado para transferir arquivos entre dispositivos em uma rede.</p>
+
+        <h2>17. O que é ping?</h2>
+        <p>Ping é uma ferramenta que envia pacotes ICMP para verificar a conectividade entre dispositivos.</p>
+
+        <h2>18. O que é NAT?</h2>
+        <p>NAT (Network Address Translation) permite que vários dispositivos usem um único endereço IP público.</p>
+
+        <h2>19. O que é VLAN?</h2>
+        <p>VLAN (Virtual Local Area Network) é uma rede lógica criada dentro de uma rede física.</p>
+
+        <h2>20. Qual é a função do protocolo ARP?</h2>
+        <p>ARP (Address Resolution Protocol) traduz endereços IP em endereços MAC.</p>
+
+        <h2>21. O que é uma rede peer-to-peer?</h2>
+        <p>É uma rede onde todos os dispositivos têm responsabilidades iguais e podem compartilhar recursos entre si.</p>
+
+        <h2>22. O que é um servidor proxy?</h2>
+        <p>Proxy é um servidor intermediário entre o cliente e a Internet, usado para controle e segurança.</p>
+
+        <h2>23. O que é uma VPN?</h2>
+        <p>VPN (Virtual Private Network) cria uma conexão segura entre redes através da Internet.</p>
+
+        <h2>24. Como funciona o protocolo HTTPS?</h2>
+        <p>HTTPS (HyperText Transfer Protocol Secure) criptografa a comunicação entre cliente e servidor para segurança.</p>
+
+        <h2>25. O que é um endereço IP público?</h2>
+        <p>É um endereço IP acessível pela Internet, atribuído a dispositivos que precisam de acesso externo.</p>
+
+        <h2>26. O que é um endereço IP privado?</h2>
+        <p>É um endereço IP usado dentro de uma rede local, não acessível diretamente pela Internet.</p>
+
+        <h2>27. O que é o modelo OSI?</h2>
+        <p>O modelo OSI define sete camadas para padronizar a comunicação entre dispositivos de rede.</p>
+
+        <h2>28. O que é a camada de enlace do modelo OSI?</h2>
+        <p>Essa camada é responsável pela comunicação entre dispositivos na mesma rede local.</p>
+
+        <h2>29. O que é um ataque DDoS?</h2>
+        <p>DDoS (Distributed Denial of Service) é um ataque que sobrecarrega um servidor com tráfego para tirá-lo do ar.</p>
+
+        <h2>30. Como se mede a velocidade de uma rede?</h2>
+        <p>A velocidade de uma rede é medida em bits por segundo (bps), como Mbps ou Gbps.</p>
+    </div>
+</body>
+</html>
