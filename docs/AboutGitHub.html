@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Erros de Clonagem no GitHub</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: #f6f8fa;
+            color: #24292f;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0366d6;
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        code {
+            background-color: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 90%;
+            color: #e36209;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 10px;
+            overflow: auto;
+            font-size: 90%;
+            color: #24292f;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+		    footer {
+            color: #546e7d;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolução de Erros de Clonagem no GitHub</h1>
+    <ol>
+        <li>
+            <strong>Verificar Espaço em Disco</strong>
+            <p>Certifique-se de que há espaço suficiente disponível no disco <code>D:</code> para clonar o repositório. Repositórios grandes podem exigir muito espaço.</p>
+        </li>
+        <li>
+            <strong>Aumentar o Buffer de Transferência do Git</strong>
+            <p>O erro pode ocorrer devido ao limite padrão do buffer de transferência. Aumente esse limite com o comando:</p>
+            <pre><code>git config --global http.postBuffer 524288000</code></pre>
+            <p>Em seguida, tente clonar novamente:</p>
+            <pre><code>git clone https://github.com/marciomaia2020/Projetos-Python.git "D:\Projetos\Celio\Marcio_Fernando_Maia\Projetos-Python"</code></pre>
+        </li>
+        <li>
+            <strong>Clonar Apenas Parte do Histórico (Shallow Clone)</strong>
+            <p>Se o repositório for muito grande, você pode tentar clonar apenas os commits mais recentes:</p>
+            <pre><code>git clone --depth 1 https://github.com/marciomaia2020/Projetos-Python.git "D:\Projetos\Celio\Marcio_Fernando_Maia\Projetos-Python"</code></pre>
+            <p>Após o clone inicial, você pode obter o restante do histórico mais tarde com:</p>
+            <pre><code>git fetch --unshallow</code></pre>
+        </li>
+        <li>
+            <strong>Usar Protocolo SSH</strong>
+            <p>Se estiver usando HTTPS, tente clonar usando o protocolo SSH, que pode ser mais estável:</p>
+            <pre><code>git clone git@github.com:marciomaia2020/Projetos-Python.git "D:\Projetos\Celio\Marcio_Fernando_Maia\Projetos-Python"</code></pre>
+            <p>Certifique-se de ter configurado sua chave SSH no GitHub seguindo <a href="https://docs.github.com/pt/authentication/connecting-to-github-with-ssh">essas instruções</a>.</p>
+        </li>
+        <li>
+            <strong>Forçar a Versão do Protocolo HTTP</strong>
+            <p>O problema pode ser causado por incompatibilidades com o HTTP/2. Você pode forçar o Git a usar HTTP/1.1:</p>
+            <pre><code>git config --global http.version HTTP/1.1</code></pre>
+            <p>Depois, tente novamente o comando de clone.</p>
+        </li>
+        <li>
+            <strong>Verificar Estabilidade da Conexão</strong>
+            <p>Certifique-se de que sua conexão com a internet está estável e rápida. Uma conexão instável pode levar a interrupções no processo de clonagem.</p>
+        </li>
+        <li>
+            <strong>Desabilitar Compressão</strong>
+            <p>A compressão de dados pode estar causando o problema. Desabilite-a temporariamente:</p>
+            <pre><code>git config --global core.compression 0</code></pre>
+            <p>Tente clonar novamente:</p>
+            <pre><code>git clone https://github.com/marciomaia2020/Projetos-Python.git "D:\Projetos\Celio\Marcio_Fernando_Maia\Projetos-Python"</code></pre>
+        </li>
+        <li>
+            <strong>Baixar o Repositório Manualmente</strong>
+            <p>Caso o problema persista, você pode baixar o repositório diretamente do GitHub como um arquivo <code>.zip</code>:</p>
+            <ul>
+                <li>Acesse a página do repositório.</li>
+                <li>Clique no botão <strong>Code</strong> e selecione <strong>Download ZIP</strong>.</li>
+                <li>Extraia o conteúdo para <code>D:\Projetos\Celio\Marcio_Fernando_Maia\Projetos-Python</code>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Atualizar o Git</strong>
+            <p>Certifique-se de que você está usando a versão mais recente do Git, pois versões antigas podem ter problemas de compatibilidade. Atualize o Git <a href="https://git-scm.com/downloads">aqui</a>.</p>
+        </li>
+    </ol>
+	
+	    <footer>Todos os direitos reservado - 2024 - Márcio Fernando Maia</footer>
+
+</body>
+</html>
