@@ -147,7 +147,7 @@ origin  https://github.com/usuario/nome-repositorio.git (push)
   <div class="step">
     <h2>Passo 3: Sincronize a Outra Máquina</h2>
     <p>Na outra máquina, antes de começar a trabalhar, sincronize novamente para obter as mudanças feitas:</p>
-    <pre><code>git pull origin &lt;branch&gt;</code></pre>
+    <pre><code>git pull origin &lt;branch&gt;</code><span style="color: red; font-weight: bold;">(GITHUB DESKTOP)</span></pre>
   </div>
 
   <div class="step">
@@ -155,7 +155,7 @@ origin  https://github.com/usuario/nome-repositorio.git (push)
     <p><strong>Evite trabalhar na mesma branch ao mesmo tempo:</strong></p>
     <p>Se ambos os computadores editarem a mesma branch simultaneamente, podem surgir conflitos. Para minimizar isso:</p>
     <ul>
-      <li>Use branches separadas para cada conjunto de alterações (por exemplo, <code>veronica-machine1</code> e <code>veronica-machine2</code>).</li>
+      <li>Use branches separadas para cada conjunto de alterações (por exemplo, <code>veronica-machine1</code> e <code>veronica-machine2</code>).</li></ul><br />
       <li>Após concluir o trabalho, mescle essas branches no remoto com <code>git merge</code> ou por meio de Pull Requests (em plataformas como GitHub).</li>
     </ul>
     <p><strong>Resolva conflitos rapidamente:</strong> Se ocorrerem conflitos, o Git mostrará os arquivos com problemas. Resolva manualmente, teste o código e finalize o processo:</p>
