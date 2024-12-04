@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Contínuo com Git</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f8fa;
+      color: #24292e;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0366d6;
+    }
+
+    h2 {
+      color: #22863a;
+    }
+
+    pre {
+      background-color: #eaecef;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      background-color: #f3f4f6;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, "Courier New", Courier, monospace;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .step {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #d1d5da;
+      border-radius: 5px;
+    }
+
+    .step h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #586069;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Trabalho Contínuo com Git</h1>
+
+  <div class="step">
+    <h2>Passo 1: Configure o Repositório Remoto em Ambas as Máquinas</h2>
+    <p>Clone o repositório remoto nas duas máquinas:</p>
+    <p><strong>No computador 1:</strong></p>
+    <pre><code>git clone &lt;URL-do-repositório&gt;</code></pre>
+    <p><strong>No computador 2:</strong></p>
+    <pre><code>git clone &lt;URL-do-repositório&gt;</code></pre>
+    <p>Isso garante que ambas as máquinas estão sincronizadas com a versão inicial do repositório remoto.</p>
+    <p>Confirme a URL remota configurada: Em ambos os computadores, use:</p>
+    <pre><code>git remote -v</code></pre>
+	<pre><code>git status</code></pre>
+	<pre><code>git remote add origin <URL_DO_REPOSITORIO_REMOTO></code></pre>
+    <pre><code>git remote -v</code></pre>
+    <p>Isso deve mostrar a URL do repositório remoto (como no GitHub ou GitLab). Certifique-se de que seja o mesmo em ambas as máquinas.</p>
+
+
+<br /><hr />
+<section style="font-family: Arial, sans-serif; line-height: 1.6; color: #24292e; background-color: #ffffff; margin: 20px auto; padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px;">
+    <h2 style="color: #0366d6;">Passos para Vincular um Repositório Remoto</h2>
+    <p>Se o comando <code>git remote -v</code> não exibiu nada, significa que o repositório local não está vinculado a um repositório remoto. Para resolver isso:</p>
+    <h3 style="color: #24292e;">1. Verifique se você está no diretório correto:</h3>
+    <p>Certifique-se de que está no diretório do projeto que contém o repositório Git. Use:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git status</code>
+    </pre>
+    <p>Se a resposta for algo como <em>"fatal: not a git repository,"</em> você precisa inicializar ou navegar até o repositório correto.</p>
+    <h3 style="color: #24292e;">2. Adicione o repositório remoto:</h3>
+    <p>Se você já possui a URL do repositório remoto, use o comando abaixo:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git remote add origin &lt;URL_DO_REPOSITORIO_REMOTO&gt;</code>
+    </pre>
+    <p><strong>Exemplo para GitHub:</strong></p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git remote add origin https://github.com/usuario/nome-repositorio.git</code>
+    </pre>
+    <h3 style="color: #24292e;">3. Confirme que o repositório remoto foi adicionado:</h3>
+    <p>Execute novamente:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git remote -v</code>
+    </pre>
+    <p>Agora, o comando deve mostrar algo como:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>
+origin  https://github.com/usuario/nome-repositorio.git (fetch)
+origin  https://github.com/usuario/nome-repositorio.git (push)
+</code>
+    </pre>
+    <h3 style="color: #24292e;">4. Empurre o código para o repositório remoto (se necessário):</h3>
+    <p>Caso o repositório remoto esteja vazio, envie o código:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git push -u origin main</code>
+    </pre>
+    <p><strong>Nota:</strong> Substitua <code>main</code> pelo nome do branch principal do seu repositório, se for diferente.</p>
+</section>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="step">
+    <h2>Passo 2: Trabalhe Localmente e Sincronize com o Repositório Remoto</h2>
+    <p><strong>Antes de começar a trabalhar, sincronize com o remoto: </strong> (GITHUB DESKTOP)</p>
+    <pre><code>git pull origin &lt;branch&gt;</code></pre>
+    <p>Isso garante que você está trabalhando com a versão mais atualizada.</p>
+    <p><strong>Faça suas alterações normalmente:</strong></p>
+    <pre><code>
+	git add .
+             git commit -m "Descrição das alterações"
+    </code> (GITHUB DESKTOP)</pre>
+    <p><strong>Envie as alterações para o repositório remoto:</strong> (GITHUB DESKTOP)</p>
+    <pre><code>git push origin &lt;branch&gt;</code></pre>
+  </div>
+
+  <div class="step">
+    <h2>Passo 3: Sincronize a Outra Máquina</h2>
+    <p>Na outra máquina, antes de começar a trabalhar, sincronize novamente para obter as mudanças feitas:</p>
+    <pre><code>git pull origin &lt;branch&gt;</code></pre>
+  </div>
+
+  <div class="step">
+    <h2>Passo 4: Evite Conflitos</h2>
+    <p><strong>Evite trabalhar na mesma branch ao mesmo tempo:</strong></p>
+    <p>Se ambos os computadores editarem a mesma branch simultaneamente, podem surgir conflitos. Para minimizar isso:</p>
+    <ul>
+      <li>Use branches separadas para cada conjunto de alterações (por exemplo, <code>veronica-machine1</code> e <code>veronica-machine2</code>).</li>
+      <li>Após concluir o trabalho, mescle essas branches no remoto com <code>git merge</code> ou por meio de Pull Requests (em plataformas como GitHub).</li>
+    </ul>
+    <p><strong>Resolva conflitos rapidamente:</strong> Se ocorrerem conflitos, o Git mostrará os arquivos com problemas. Resolva manualmente, teste o código e finalize o processo:</p>
+    <pre><code>
+git add &lt;arquivo-com-resolucao&gt;
+git commit -m "Resolvido conflito"
+git push origin &lt;branch&gt;
+    </code></pre>
+  </div>
+
+  <div class="step">
+    <h2>Resumo: Fluxo Geral</h2>
+    <p>Antes de começar: Sempre execute <code>git pull</code>.</p>
+    <p>Depois de trabalhar: Faça <code>git add</code>, <code>git commit</code> e <code>git push</code>.</p>
+    <p>Sincronize frequentemente para minimizar conflitos.</p>
+  </div>
+</div>
+
+<section style="font-family: Arial, sans-serif; line-height: 1.6; color: #24292e; background-color: #ffffff; margin: 20px auto; padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px;">
+    <h2 style="color: #0366d6;">1. Criar ou Renomear Branches na Máquina Local</h2>
+    <h3 style="color: #24292e;">Criar uma nova branch:</h3>
+    <p>Certifique-se de estar no repositório local.</p>
+    <p>Use o comando abaixo para criar e alternar para uma nova branch:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git checkout -b nome-da-branch</code>
+    </pre>
+    <p><strong>Exemplo:</strong></p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git checkout -b veronica-machine1</code>
+    </pre>
+    <p>Envie a nova branch para o GitHub:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git push origin nome-da-branch</code>
+    </pre>
+    <h3 style="color: #24292e;">Renomear uma branch existente:</h3>
+    <p>Primeiro, certifique-se de estar na branch que deseja renomear:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git checkout nome-antigo</code>
+    </pre>
+    <p>Renomeie a branch:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git branch -m nome-novo</code>
+    </pre>
+    <p><strong>Exemplo:</strong></p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git branch -m veronica-machine1</code>
+    </pre>
+    <p>Atualize o nome da branch no repositório remoto:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git push origin nome-novo</code>
+    </pre>
+    <p>Remova a branch antiga no remoto:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git push origin --delete nome-antigo</code>
+    </pre>
+    <h2 style="color: #0366d6;">2. Criar Branches Direto no GitHub</h2>
+    <p>Se preferir, você pode criar uma branch diretamente na interface do GitHub:</p>
+    <ol>
+        <li>Acesse o repositório no GitHub.</li>
+        <li>Clique no menu suspenso de branches, normalmente localizado perto de onde está escrito <em>"main"</em> ou o nome da branch atual.</li>
+        <li>No campo de texto, digite o nome da nova branch (ex.: <code>veronica-machine1</code>).</li>
+        <li>Clique em <strong>Create branch</strong>.</li>
+    </ol>
+    <h3 style="color: #24292e;">Sincronize com a máquina local:</h3>
+    <p>Depois de criar a branch no GitHub, você precisará trazê-la para sua máquina:</p>
+    <p>Atualize os dados do repositório local:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git fetch</code>
+    </pre>
+    <p>Altere para a branch recém-criada:</p>
+    <pre style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; padding: 10px;">
+<code>git checkout nome-da-branch</code>
+    </pre>
+    <h3 style="color: #24292e;">Recomendações:</h3>
+    <ul>
+        <li><strong>Criação local:</strong> é mais prática quando você já está trabalhando no código e deseja controle total sobre as branches.</li>
+        <li><strong>Criação no GitHub:</strong> pode ser útil para equipes, já que a branch estará visível no repositório remoto imediatamente.</li>
+    </ul>
+    <p>Ambos os métodos funcionam bem, mas sempre sincronize suas alterações para evitar conflitos!</p>
+</section>
+
+
+
+<footer>
+  <p>Guia desenvolvido para facilitar o trabalho contínuo entre máquinas usando Git.</p>
+</footer>
+
+
+<p>Clonar os repositórios em ambas as máquinas.</p>
+
+
+
+
+
+</body>
+</html>

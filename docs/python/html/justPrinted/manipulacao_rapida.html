@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Manipulação Rápida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #306998; /* Azul Python */
+            color: #FFD43B; /* Amarelo Python */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4B8BBE; /* Azul mais claro */
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff4cc; /* Amarelo Python */
+            color: #306998; /* Azul Python */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3 {
+            color: red;
+        }
+        pre {
+            background-color: #282C34; /* Fundo escuro para código */
+            color: #61DAFB; /* Azul claro */
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4B8BBE;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python - Manipulação Rápida</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Acessando um Diretório</h2>
+            <pre>
+C:\Windows\system32>d:
+D:\>cd D:\MEUSSITESEPROJETOS\Projetos\Projetos-Python\Downloads
+            </pre>
+        </section>
+        <section>
+            <h2>Criando uma Máquina Virtual</h2>
+            <pre>
+python -m venv venv
+.\venv\Scripts\Activate
+            </pre>
+        </section>
+        <section>
+            <h2>Instalando e Gerenciando Módulos</h2>
+            <p>Instale os módulos necessários e faça backup:</p>
+            <pre>
+pip list
+pip freeze > requirements.txt
+pip install -r requirements.txt
+            </pre>
+        </section>
+        <section>
+            <h2>Executando Scripts</h2>
+            <pre>
+python d:/Projetos/Celio/Marcio_Fernando_Maia/Projetos-Python/MerginDocs/Docx/merge_docx_xlsx_pptx_app.py
+            </pre>
+        </section>
+        <section>
+            <h2>Estrutura de Pasta</h2>
+            <p>Exemplo de script para listar arquivos em um diretório:</p>
+            <pre>
+import os
+print("Arquivos estáticos na pasta 'static':")
+print(os.listdir('static'))
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Python Manipulação Rápida</p>
+    </footer>
+</body>
+</html>
