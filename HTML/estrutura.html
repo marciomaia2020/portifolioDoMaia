@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Diretórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .directory {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .directory h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #007BFF;
+        }
+        pre {
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .warning {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .success {
+            color: #5cb85c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura de Diretórios e Status do Script</h1>
+
+    <div class="directory">
+        <h2>Comando inicial:</h2>
+        <pre>PS H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf> .\script.ps1</pre>
+    </div>
+
+    <div class="directory">
+        <h2>Mensagem do PowerShell:</h2>
+        <pre>
+Aviso de segurança
+Execute apenas scripts confiáveis. Embora os scripts da Internet possam ser úteis, eles podem danificar seu
+computador. Se você confia nesse script, use o cmdlet Unblock-File para permitir que o script seja executado
+sem esta mensagem de aviso. Deseja executar H:\Meu
+Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf\script.ps1?
+[N] Não executar  [R] Executar uma vez  [U] Suspender  [?] Ajuda (o padrão é "N"): r
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Diretório principal:</h2>
+        <pre>H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf</pre>
+    </div>
+
+    <div class="directory">
+        <h2>Estrutura inicial de diretórios:</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/01/2025     13:13                Requisitos
+------        11/01/2025     13:31           1409 script.ps1
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Após executar o script:</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/01/2025     13:13                Requisitos
+d-----        11/01/2025     13:32                static
+d-----        11/01/2025     13:32                templates
+d-----        11/01/2025     13:32                venv
+------        11/01/2025     13:31           1409 script.ps1
+------        11/01/2025     13:32              0 app.py
+------        11/01/2025     13:32              0 requirements.txt
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Conteúdo do diretório 'static':</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf\static
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/01/2025     13:32                css
+d-----        11/01/2025     13:32                js
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Conteúdo do diretório 'css':</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf\static\css
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+------        11/01/2025     13:32              0 style.css
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Conteúdo do diretório 'js':</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf\static\js
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+------        11/01/2025     13:32              0 main.js
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Conteúdo do diretório 'templates':</h2>
+        <pre>
+Diretório: H:\Meu Drive\ProjetosPython\Loterias\Conferidores\LotofacilConf\templates
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+------        11/01/2025     13:32              0 index.html
+        </pre>
+    </div>
+
+    <div class="directory">
+        <h2>Status do script:</h2>
+        <pre>
+Carregando o perfil do PowerShell...
+Ativando o ambiente virtual...
+        </pre>
+        <p class="success">(venv) Ambiente virtual ativado com sucesso!</p>
+    </div>
+</body>
+</html>
