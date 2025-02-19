@@ -4124,8 +4124,8 @@
 			<!--BARS - BARRA-->
 <div class="w3-container w3-center">
 	<h2>Cursos gratis de TI</h2>
-	<button id="btn46" class="fa-solid fa-plus"></button>
-	<button id="btn45" class="fa-solid fa-minus"></button>
+	<button id="btn45" class="fa-solid fa-plus"></button>
+	<button id="btn46" class="fa-solid fa-minus"></button>
 </div><br />
 <div class="w3-container"> 
 	<div class="w3-bar w3-blue"> 
