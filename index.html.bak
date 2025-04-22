@@ -1436,7 +1436,7 @@
 			<div class="w3-text-gray w3-panel w3-border-bottom w3-border-blue">
 				<p class="w3-text-grey">Consultas Online</p>
 				<p><a href="docs/consultasOnline.html" target="_blank"><i
-							class="fa fa-cloud"></i></a> Certidões, Declarações & Serviços</p>
+							class="fa fa-cloud"></i></a> Certidões & Declarações</p>
 			</div>
 			<div class="w3-text-gray w3-panel w3-border-bottom w3-border-blue">
 				<p class="w3-text-grey">Extensão de arquivos</p>
@@ -3124,39 +3124,6 @@
 			</p>
 
 			<h4>Baixar:</h4>
-			<div class="download-container">
-				<div class="download-item">
-					<button class="w3-button w3-blue w3-padding-large">
-						<a href="docs/curriculo-marcio-fernando-maia.pdf" target="_blank">
-							<i class="fa fa-download w3-margin-right"></i>
-						</a>
-						<a href="https://curriculodomarcio.netlify.app" target="_blank">
-							<i class="fa-solid fa-cloud w3-margin-right"></i>Currículo
-						</a>
-					</button>
-				</div>
-				<div class="download-item">
-					<button class="w3-button w3-blue w3-padding-large">
-						<i class="fa fa-download w3-margin-right"></i>
-						<a href="docs/004_HIST_MARCIO_FERNANDO_MAIA.pdf" target="_blank">Histórico</a>
-					</button>
-				</div>
-				<div class="download-item">
-					<button class="w3-button w3-blue w3-padding-large">
-						<i class="fa fa-download w3-margin-right"></i>
-						<a href="docs/CertificadoParcial.pdf" target="_blank">Certificação</a>
-					</button>
-				</div>
-				<div class="download-item">
-					<button class="w3-button w3-blue w3-padding-large">
-						<a href="#" target="_blank"><i class="fa fa-download w3-margin-right"></i></a>
-						<a href="https://www.unicesumar.edu.br/valida-diploma" target="_blank">
-							<i class="fa-solid fa-check w3-margin-right"></i>Diploma
-						</a>
-					</button>
-				</div>
-			</div>
-			<!-- <h4>Baixar:</h4>
 			<table class="w3-content w3-display-container" style="margin-left:100% margin-rigth:100%">
 				<tr>
 					<td>
@@ -3189,9 +3156,7 @@
 					</td>
 
 				</tr>
-			</table> -->
-
-
+			</table>
 
 
 
@@ -4159,8 +4124,8 @@
 			<!--BARS - BARRA-->
 <div class="w3-container w3-center">
 	<h2>Cursos gratis de TI</h2>
-	<button id="btn46" class="fa-solid fa-plus"></button>
-	<button id="btn45" class="fa-solid fa-minus"></button>
+	<button id="btn45" class="fa-solid fa-plus"></button>
+	<button id="btn46" class="fa-solid fa-minus"></button>
 </div><br />
 <div class="w3-container"> 
 	<div class="w3-bar w3-blue"> 
@@ -16895,8 +16860,7 @@
 									<button class="w3-bar-item w3-button" onclick="openIA('Kotlin')">Kotlin</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('Assembly')">Assembly</button>
 								</div>
-								<div class="w3-container w3-border w3-large w3-justify">
-									<div21>
+								<div class="w3-container w3-border w3-large w3-justify"><div21>
 							
 									<div id="C" class="w3-container ia" style="display:none">
 										<h3>C</h3>
@@ -17099,8 +17063,7 @@
 										</code></pre></div>
 									</div>
 							
-								</div21>
-							</div>
+								</div21></div>
 							</div>
 							<br />
 							
@@ -17942,7 +17905,6 @@
 								</div>
 							</div>
 							<br />
-							
 							<div class="w3-container w3-center">
 								<h2 id="idtermoseabreviaturas">Tutoriais - Videos - Apostilas e Scripts sobre Python</h2>
 								<button id="btn43" class="fa-solid fa-plus"></button>
@@ -17957,213 +17919,518 @@
 									<button class="w3-bar-item w3-button" onclick="openIA('VideosTutoriaisPython')">Videos Tutoriais Python</button>
 									<button class="w3-bar-item w3-button" onclick="openIA('Scripts')">Scripts</button>
 								</div>
-							<div22>
 								<div class="w3-container w3-border w3-large w3-justify">
-									<!-- ApostilasPython Tab -->
-									<div id="ApostilasPython" class="w3-container ia">
-										<h3>Apostilas sobre Python</h3>
-										<h4>Veja as versões on-line das apostilas sobre Python, elas estão selecionadas para auxiliar no aprendizado da linguagem.</h4>
-										<ol>
-											<li><a href="docs/python/html/justPrinted/apostilas_python.html" target="_blank">Apostila Python</a> | <a href="docs/python/pdf/separados/Apostila_do_Desenvolvedor_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/cronograma_estudo_python.html" target="_blank">Cronograma de estudo Python</a> | <a href="docs/python/pdf/separados/Cronograma_de_Estudo.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/problemas_resolvidos_em_python.html" target="_blank">Problemas Pyhton</a> | <a href="docs/python/pdf/separados/Problemas_Resolvidos_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/mapa_do_python.html" target="_blank">Mapa do python</a> | <a href="docs/python/pdf/separados/Mapa_do_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/sites_para_deployment_python.html" target="_blank">Sites para Deployment</a> | <a href="docs/python/pdf/separados/Sites_para_Deployment.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/funcoes_especiais_python.html" target="_blank">Funções Especiais em Python</a> | <a href="docs/python/pdf/separados/Funcoes_Especiais_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/resumo_web_python_explicacao.html" target="_blank">Resumo desenvolvimento WEB Python - Explicação</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avançados_em_Desenvolvimento_Web_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/resumo_web_python_codigos.html" target="_blank">Resumo desenvolvimento WEB Python - Códigos</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avancados_em_Desenvolvimento_Web_com_Python_Codigos.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/resumo_web_python.html" target="_blank">Resumo desenvolvimento WEB Python</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avançados_em_Desenvolvimento_Web_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/integração_de_APIs_e_Serviços_Externos.html" target="_blank">Integração de APIs e Serviços Externos</a> | <a href="docs/python/pdf/separados/Aplicacao_de_Integracao_de_APIs_com_Flask.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/ambientes_virtuais_python.html" target="_blank">Ambientes Virtuais</a> | <a href="docs/python/pdf/separados/Ambientes_Virtuais_no_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/justPrinted/flask_extensions.html" target="_blank">Extensões Flask</a> | <a href="docs/python/pdf/separados/Extensoes_Populares_do_Flask.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/PrintYet//recursosAprenderPraticarPython.html" target="_blank">Recursos para aprender e praticar python</a> | <a href="docs/python/pdf/separados/Recursos_para_Aprender_e _raticar_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-										</ol>
-										<hr />
-										<div class="w3-container w3-border w3-large w3-justify small">
-											<p style="font-size:25px; color:red">RESUMO COMANDOS IMPORTANTES</p>
-											<ul>
-												<li><strong><code>Instalar o python do site oficial</code></strong></li>
-												<li><strong><code>python --version</code></strong></li>
-												<li><strong><code>python -m venv venv</code></strong></li>
-												<li><strong><code>.\venv\Scripts\Activate</code></strong></li>
-												<li><strong><code>pip list</code></strong></li>
-												<li><strong><code>pip show</code></strong></li>
-												<li><strong><code>pip check</code></strong></li>
-												<li><strong><code>pip freeze</code></strong></li>
-												<li><strong><code>pip freeze > requirements.txt</code></strong></li>
-												<li><strong><code>pip install -r requirements.txt</code></strong></li>
-												<li><strong><code>pw</code></strong></li>
-												<li><strong><code>Get-ExecutionPolicy</code></strong></li>
-												<li><strong><code>Set-ExecutionPolicy RemoteSigned</code></strong></li>
-												<li><strong><code>C:\> cd D:\MEUSSITESEPROJETOS\Projetos\Projetos-Python\Projetos-Python\Loterias\LotofaciL</code></strong></li>
-												<li><strong><code>.\Scripts\activate</code></strong></li>
-											</ul>
-										</div>
-							
-										<div class="w3-container w3-border w3-large w3-justify small">
-											<p style="font-size:25px; color:red">RESUMO OUTROS COMANDOS</p>
-											<ul>
-												<li><strong><code>python -m pip install --upgrade pip</code></strong> <span>(Atualiza o pip para a versão mais recente.)</span></li>
-												<li><strong><code>python -m venv <nome_do_ambiente></code></strong> <span>(Cria um novo ambiente virtual com o nome especificado.)</span></li>
-												<li><strong><code>python <script.py></code></strong> <span>(Executa um script Python diretamente do terminal.)</span></li>
-												<li><strong><code>python -m pip uninstall <pacote></code></strong> <span>(Desinstala um pacote Python específico.)</span></li>
-												<li><strong><code>python -m pip check</code></strong> <span>(Verifica a integridade das dependências instaladas.)</span></li>
-												<li><strong><code>python -m http.server</code></strong> <span>(Inicia um servidor HTTP simples para testar projetos localmente.)</span></li>
-												<li><strong><code>python -c "&lt;expressão&gt;"</code></strong> <span>(Executa uma expressão Python diretamente na linha de comando.)</span></li>
-												<li><strong><code>pip install --upgrade <pacote></code></strong> <span>(Atualiza um pacote Python para a versão mais recente disponível.)</span></li>
-												<li><strong><code>python -m pdb <script.py></code></strong> <span>(Executa um script Python no modo de depuração interativa.)</span></li>
-												<li><strong><code>python -m cProfile <script.py></code></strong> <span>(Analisa o desempenho de um script Python.)</span></li>
-												<li><strong><code>python -m ensurepip</code></strong> <span>(Garante que o pip esteja instalado para o ambiente Python.)</span></li>
-												<li><strong><code>python -m venv --help</code></strong> <span>(Exibe a ajuda sobre o módulo venv e suas opções.)</span></li>
-												<li><strong><code>python -m site</code></strong> <span>(Mostra as informações sobre o ambiente Python.)</span></li>
-												<li><strong><code>pip install <pacote>==<versão></code></strong> <span>(Instala uma versão específica de um pacote Python.)</span></li>
-											</ul>
+									<div22>
+									
+											<div id="ApostilasPython" class="w3-container ia" style="display:yes">
+													<h3>Apostilas sobre Python</h3>
+													<h4>
+														Veja as versões on-line das apostilas sobre Python, 
+														elas estão selecionadas para auxiliar no aprendizado da linguagem.
+													</h4>
+													<ol>
+														<li><a href="docs/python/html/justPrinted/apostilas_python.html" target="_blank">Apostila Python</a> |	<a href="docs/python/pdf/separados/Apostila_do_Desenvolvedor_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/cronograma_estudo_python.html" target="_blank">Cronograma de estudo Python</a> | <a href="docs/python/pdf/separados/Cronograma_de_Estudo.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/problemas_resolvidos_em_python.html" target="_blank">Problemas Pyhton</a> |	<a href="docs/python/pdf/separados/Problemas_Resolvidos_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/mapa_do_python.html" target="_blank">Mapa do python</a></button> | <a href="docs/python/pdf/separados/Mapa_do_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/sites_para_deployment_python.html" target="_blank">Sites para Deployment</a> | <a href="docs/python/pdf/separados/Sites_para_Deployment.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/funcoes_especiais_python.html" target="_blank">Funções Especiais em Python</a> |	<a href="docs/python/pdf/separados/Funcoes_Especiais_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/resumo_web_python_explicacao.html" target="_blank">Resumo desenvolvimento WEB Python - Explicação</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avançados_em_Desenvolvimento_Web_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/resumo_web_python_codigos.html" target="_blank">Resumo desenvolvimento WEB Python - Códigos</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avancados_em_Desenvolvimento_Web_com_Python_Codigos.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/resumo_web_python.html" target="_blank">Resumo desenvolvimento WEB Python</a> | <a href="docs/python/pdf/separados/Resumo_de_Assuntos_Avançados_em_Desenvolvimento_Web_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/integração_de_APIs_e_Serviços_Externos.html" target="_blank">Integração de APIs e Serviços Externos</a> | <a href="docs/python/pdf/separados/Aplicacao_de_Integracao_de_APIs_com_Flask.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/ambientes_virtuais_python.html" target="_blank">Ambientes Virtuais</a> | <a href="docs/python/pdf/separados/Ambientes_Virtuais_no_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/justPrinted/flask_extensions.html" target="_blank">Extensões Flask</a> | <a href="docs/python/pdf/separados/Extensoes_Populares_do_Flask.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet//recursosAprenderPraticarPython.html" target="_blank">Recursos para aprender e praticar python</a> | <a href="docs/python/pdf/separados/Recursos_para_Aprender_e _raticar_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													</ol>
+													<!--<p>Todas <a href="docs/python/pdf/mesclados/ilovepdf_merged.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></p>-->
+													<hr />		
+													<div class="w3-container w3-border w3-large w3-justify small">
+														<p style="font-size:25px; color:red">RESUMO  COMANDOS INPORTANTES</p>
+															<ul>
+																<li><strong><code>Instalar o python do site oficial</code></strong> <!-- Baixa e instala a versão mais recente do Python diretamente do site oficial. --></li>
+																<li><strong><code>python --version</code></strong> <!-- Verifica a versão do Python instalada no sistema. --></li>
+																<li><strong><code>python -m venv venv</code></strong> <!-- Cria um ambiente virtual chamado "venv" para isolar dependências do projeto. --></li>
+																<li><strong><code>.\venv\Scripts\Activate</code></strong> <!-- Ativa o ambiente virtual no sistema, permitindo o uso das dependências isoladas. --></li>
+																<li><strong><code>pip list</code></strong> <!-- Lista todos os pacotes Python instalados no ambiente atual. --></li>
+																<li><strong><code>pip show</code></strong> <!-- Exibe detalhes sobre um pacote instalado (como versão e dependências). --></li>
+																<li><strong><code>pip check</code></strong> <!-- Verifica se há pacotes com dependências faltantes ou conflitantes. --></li>
+																<li><strong><code>pip freeze</code></strong> <!-- Mostra todos os pacotes e suas versões no formato que pode ser copiado para um arquivo de requisitos. --></li>
+																<li><strong><code>pip freeze > requirements.txt</code></strong> <!-- Salva a lista de pacotes e suas versões em um arquivo "requirements.txt" para instalação futura. --></li>
+																<li><strong><code>pip install -r requirements.txt</code></strong> <!-- Instala todos os pacotes listados no arquivo "requirements.txt". --></li>
+																<li><strong><code>pw</code></strong> <!-- Pode ser uma abreviação para algum comando ou ferramenta, dependendo do contexto (não claro). --></li>
+																<li><strong><code>Get-ExecutionPolicy</code></strong> <!-- Exibe a política de execução do PowerShell (permissões de scripts). --></li>
+																<li><strong><code>Set-ExecutionPolicy RemoteSigned</code></strong> <!-- Define a política de execução para permitir scripts locais e scripts remotos assinados. --></li>
+																<li><strong><code>C:\> cd D:\MEUSSITESEPROJETOS\Projetos\Projetos-Python\Projetos-Python\Loterias\LotofaciL</code></strong> <!-- Navega até o diretório do projeto no sistema. --></li>
+																<li><strong><code>.\Scripts\activate</code></strong> <!-- Ativa novamente o ambiente virtual dentro do diretório de projeto. --></li>
+															</ul>
+													</div>
+													<div class="w3-container w3-border w3-large w3-justify small">
+														<p style="font-size:25px; color:red">RESUMO  OUTROS COMANDOS</p>
+															<ul>
+																<li><strong><code>python -m pip install --upgrade pip</code></strong> <span>(Atualiza o pip para a versão mais recente.)</span></li>
+																<li><strong><code>python -m venv <nome_do_ambiente></code></strong> <span>(Cria um novo ambiente virtual com o nome especificado.)</span></li>
+																<li><strong><code>python <script.py></code></strong> <span>(Executa um script Python diretamente do terminal.)</span></li>
+																<li><strong><code>python -m pip uninstall <pacote></code></strong> <span>(Desinstala um pacote Python específico.)</span></li>
+																<li><strong><code>python -m pip check</code></strong> <span>(Verifica a integridade das dependências instaladas, alertando para pacotes com versões conflitantes ou ausentes.)</span></li>
+																<li><strong><code>python -m http.server</code></strong> <span>(Inicia um servidor HTTP simples para testar projetos localmente.)</span></li>
+																<li><strong><code>python -c "&lt;expressão&gt;"</code></strong> <span>(Executa uma expressão Python diretamente na linha de comando.)</span></li>
+																<li><strong><code>pip install --upgrade <pacote></code></strong> <span>(Atualiza um pacote Python para a versão mais recente disponível.)</span></li>
+																<li><strong><code>python -m pdb <script.py></code></strong> <span>(Executa um script Python no modo de depuração interativa.)</span></li>
+																<li><strong><code>python -m cProfile <script.py></code></strong> <span>(Analisa o desempenho de um script Python (usado para otimização).)</span></li>
+																<li><strong><code>python -m ensurepip</code></strong> <span>(Garante que o pip esteja instalado para o ambiente Python.)</span></li>
+																<li><strong><code>python -m venv --help</code></strong> <span>(Exibe a ajuda sobre o módulo venv e suas opções.)</span></li>
+																<li><strong><code>python -m site</code></strong> <span>(Mostra as informações sobre o ambiente Python, incluindo diretórios de instalação e bibliotecas.)</span></li>
+																<li><strong><code>pip install <pacote>==<versão></code></strong> <span>(Instala uma versão específica de um pacote Python.)</span></li>
+															</ul>
+													<div class="w3-container w3-border w3-large w3-justify small">
+														<p style="font-size:25px; color:red"> PYTHON - MANIPULAÇÃO RÁPIDA </p>
+														<ul>
+															<b style="color:blue;">Acessando um diretório rapidamente</b>
+															<li><img src="/img/WindowsPowerShell.jpg" style="width:100%" alt="WPS"></li>
+														</ul>
+														<ul>
+															<b style="color:blue;">Criando uma máquina virtual</b>
+															<li>python -m venv venv</li>
+															<li>.\venv\Scripts\Activate</li>
+														</ul>
+														<ul>
+															<b style="color:blue;">Instale os módulos necessários (Veja as instalações)</b>
+															<li>pip list</li>
+														</ul>
+														<ul>
+															<b style="color:blue;">Faça backup dos requisitos - Instale os requisitos em outro pc</b>
+															<li>pip freeze > requirements.txt</li>
+															<li>pip install -r requirements.txt</li>
+														</ul>
+														<ul>
+															<b style="color:blue;">Execute o script (Tanto pelo cmd ou IDE)</b>
+															<li>python d:/Projetos/Celio/Marcio_Fernando_Maia/Projetos-Python/MerginDocs/Docx/merge_docx_xlsx_pptx_app.py</li>
+														</ul>
+														
+														<div class="w3-center">
+															<b style="color:blue;">Estrutura de pasta</b>
+															<a href="https://www.meliuz.com.br/i/ref_aff0e0d8?ref_source=81" target="_blank">
+																<img src="https://i.postimg.cc/YCVB0bY3/estrutur.jpg" alt="Estrutura" style="width:30%;height:30%;float: auto;">
+															</a>
+														</div>
+														<ul>
+															<b style="color:blue;">import os</b>
+															<li>print("Arquivos estáticos na pasta 'static':")</li>
+															<li>print(os.listdir('static'))</code></li>
+														</ul>
+														<p>Isso mostrará no console se os arquivos style.css e script.js estão na pasta correta.</p>
+													
+				
 
-											<a href="docs/python/html/mais_python.html" target="_blank">Tabela com comandos PW</a>
-										
-											</div>
-							
-										<div class="w3-container w3-border w3-large w3-justify small">
-											<p style="font-size:25px; color:red">PYTHON - MANIPULAÇÃO RÁPIDA</p>
-											<ul>
-												<b style="color:blue;">Acessando um diretório rapidamente</b>
-												<li><img src="/img/WindowsPowerShell.jpg" style="width:100%" alt="WPS"></li>
-											</ul>
-											<ul>
-												<b style="color:blue;">Criando uma máquina virtual</b>
-												<li>python -m venv venv</li>
-												<li>.\venv\Scripts\Activate</li>
-											</ul>
-											<ul>
-												<b style="color:blue;">Instale os módulos necessários (Veja as instalações)</b>
-												<li>pip list</li>
-											</ul>
-											<ul>
-												<b style="color:blue;">Faça backup dos requisitos - Instale os requisitos em outro pc</b>
-												<li>pip freeze > requirements.txt</li>
-												<li>pip install -r requirements.txt</li>
-											</ul>
-											<ul>
-												<b style="color:blue;">Execute o script (Tanto pelo cmd ou IDE)</b>
-												<li>python d:/Projetos/Celio/Marcio_Fernando_Maia/Projetos-Python/MerginDocs/Docx/merge_docx_xlsx_pptx_app.py</li>
-											</ul>
-							
-											<div class="w3-center">
-												<b style="color:blue;">Estrutura de pasta</b>
-												<a href="https://www.meliuz.com.br/i/ref_aff0e0d8?ref_source=81" target="_blank">
-													<img src="https://i.postimg.cc/YCVB0bY3/estrutur.jpg" alt="Estrutura" style="width:30%;height:30%;float: auto;">
-												</a>
-											</div>
-											<ul>
-												<b style="color:blue;">import os</b>
-												<li>print("Arquivos estáticos na pasta 'static':")</li>
-												<li>print(os.listdir('static'))</li>
-											</ul>
-											<p>Isso mostrará no console se os arquivos style.css e script.js estão na pasta correta.</p>
-										</div>
-							
-										<style>
-											/* Your existing styles here */
-										</style>
-							
-										<table>
-											<!-- Your existing table content here -->
-										</table>
-									</div>
-							
-									<!-- ApostilasPython1 Tab -->
-									<div id="ApostilasPython1" class="w3-container ia" style="display:none">
-										<h3>+ Apostilas sobre Python</h3>
-										<h4>Veja as versões on-line das apostilas sobre Python, elas estão selecionadas para auxiliar no aprendizado da linguagem.</h4>
-										<ol>
-											<li><a href="docs/python/html/PrintYet/tutorial_manipulacao_python.html" target="_blank">Tutorial manipulação python</a> | <a href="docs/python/pdf/separados/Manipulacao_de_Planilhas_Excel_e_HTML_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<li><a href="docs/python/html/PrintYet/dependencias_python.html" target="_blank">Dependências python</a> | <a href="docs/python/pdf/separados/Lista_de_Dependencias_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-											<!-- More list items -->
-										</ol>
-										<hr />
-									</div>
-							
-									<!-- Conceitos Tab -->
-									<!-- Conceitos Tab -->
-        <div id="Conceitos" class="w3-container ia" style="display:none">
-            <h3>Conceitos em Python</h3>
-            <h4>Nesta seção você encontrará conceitos sobre python.</h4>
-            <ol>
-                <li><a href="docs/python/html/PrintYet/Conceitos_de_Classes_em_Python.html" target="_blank">Conceitos de Classe em python</a> | <a href="docs/python/pdf/separados/Conceitos_de_POO_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/Conceitos_Avançados_em_Python.html" target="_blank">Conceitos Avançados em python</a> | <a href="docs/python/pdf/separados/Conceitos_Avancados_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDetalhadoComIndece+Explicacao.html" target="_blank">Conceitos detalhados sobre python</a> | <a href="docs/python/pdf/separados/Conceitos_Basicos_de_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/Conceitos_de_Classes_em_Python.html" target="_blank">Conceitos de Classe em python</a> | <a href="docs/python/pdf/separados/Conceitos_de_POO_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosGlossarios.html" target="_blank">Conceitos Glossarios em python</a> | <a href="docs/python/pdf/separados/conceitosGlossarios.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeInsercaoDadosMSQL.html" target="_blank">Conceitos de Insercao Dados MSQL</a> | <a href="docs/python/pdf/separados/conceitosDeInsercaoDadosMSQL.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceiosDeMSQL.html" target="_blank">Conceitos de MSQL em python</a> | <a href="docs/python/pdf/separados/conceiosDeMSQL.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeMatplotlib.html" target="_blank">Conceitos de Matplotlib em python</a> | <a href="docs/python/pdf/separados/conceitosDeMatplotlib.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeModulos.html" target="_blank">Conceitos de Modulos em python</a> | <a href="docs/python/pdf/separados/conceitosDeModulos.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/termosFundamentais.html" target="_blank">Termos Fundamentais em python</a> | <a href="docs/python/pdf/separados/termosFundamentais.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeEntradaSaida.html" target="_blank">Conceitos de Entrada Saidaem python</a> | <a href="docs/python/pdf/separados/conceitosDeEntradaSaida.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeSaida.html" target="_blank">Conceitos de Saida em python</a> | <a href="docs/python/pdf/separados/conceitosDeSaida.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeFuncoes.html" target="_blank">Conceitos de Funcoes em python</a> | <a href="docs/python/pdf/separados/conceitosDeFuncoes.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeVariaveis.html" target="_blank">Conceitos de Variaveis em python</a> | <a href="docs/python/pdf/separados/conceitosDeVariaveis.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeSets.html" target="_blank">Conceitos de Sets em python</a> | <a href="docs/python/pdf/separados/conceitosDeSets.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeTuplas.html" target="_blank">Conceitos de Tuplas em python</a> | <a href="docs/python/pdf/separados/conceitosDeTuplas.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitoDeDicionarios.html" target="_blank">Conceitos de Dicionarios em python</a> | <a href="docs/python/pdf/separados/conceitoDeDicionarios.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeListas.html" target="_blank">Conceitos de Listas em python</a> | <a href="docs/python/pdf/separados/conceitosDeListas.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-                <li><a href="docs/python/html/PrintYet/conceitosDeStrings.html" target="_blank">Conceitos de Strings em python</a> | <a href="docs/python/pdf/separados/conceitosdeStrings.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
-            </ol>
-            <hr />
-        </div>
-
-        <!-- VideosTutoriaisPython Tab -->
-        <div id="VideosTutoriaisPython" class="w3-container ia" style="display:none">
-            <h3>Videos Tutoriais Python</h3>
-            <h4>Videos turoriais direto do youtube e outros canais.</h4>
-            <ol>
-                <li><a href="https://youtu.be/NB9pdUDNAJ4" target="_blank"><i class="fa-brands fa-youtube"></i>Curso Lógica de Programação Completo 2024 [Iniciantes] + Desafios + Muita prática</a></li>
-                <li><a href="https://www.youtube.com/watch?v=iF2MdbrTiBM&t=5668s&pp=ygUGcHl0aG9u" target="_blank"><i class="fa-brands fa-youtube"></i>Domine essas 10 Funções Obrigatórias em Python</a></li>
-            </ol>
-            <hr />
-        </div>
-
-        <!-- Scripts Tab -->
-        <div id="Scripts" class="w3-container ia" style="display:none">
-            <h3>Scripts, para facilitar a usuabiliade sobre Python</h3>
-            <h4>Com script é possível criar uma estrutura em python em segundos...</h4>
-            <div class="w3-center">
-                <b style="color:blue;">Criando Estrutura de pasta rapidamente com script</b><br /><br />
-                <img src="https://i.postimg.cc/YqXLVKVn/Script-Para-Criar-Pastas-Python.jpg" alt="Estrutura" style="width:100%;height:100%;float: auto;">
-            </div>
-            <p>Clique para fazer o download do script | <a href="/downloads/pedir_para_criar_script.txt" target="_blank" download><i class="fa fa-download w3-margin-right"></i></a></p>
-
-            <div class="w3-center">
-                <b style="color:blue;">Arquivo de perfil no Power Shell, facilita para criar um ambiente virtual</b><br /><br />
-                <img src="https://i.postimg.cc/7PSgBZgq/Forcando-Criacaodo-Profile-PW.jpg" alt="Estrutura" style="width:100%;height:100%;float: auto;">
-            </div>
-            <p>Caso o arquivo não exista crie usando este comando</p>
-            <p><b>Cria o arquivo de perfil</b></p>
-            <pre>New-Item -ItemType File -Path $PROFILE -Force</pre>
-            <p><b>Local do arquivo de perfil</b></p>
-            <pre>C:\Users\<seu_usuário>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</pre>
-            <p><b>Editar o arquivo de perfil</b></p>
-            <pre>notepad $PROFILE</pre>
-            <p><b>Chamar o arquivo de perfil</b></p>
-            <pre>. $PROFILE</pre>
-            <p>Clique para fazer o download do código do script | <a href="/downloads/Microsoft.PowerShell_profile.ps1" target="_blank" download><i class="fa fa-download w3-margin-right"></i></a></p>
-        </div>
-    </div>
-	</div22>
-</div>
-
-
-<!-- Add JavaScript for tab functionality -->
-<script>
-	function openIA(iaName) {
-		var i;
-		var x = document.getElementsByClassName("ia");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
+<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			font-family: Arial, sans-serif;
 		}
-		document.getElementById(iaName).style.display = "block";
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 12px;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+		}
+
+		.section {
+			background-color: #e6e6e6;
+			font-weight: bold;
+		}
+
+		td:first-child {
+		width: auto;
+		font-size: 12px;
+		text-align: justify;
 	}
-</script>
+
+		td:nth-child(2) {
+		width: auto;
+		font-family: monospace;
+		font-size: 10px;
+		text-align: left;
+		}
+
+		td:nth-child(3) {
+		width: auto;
+		font-family: monospace;
+		font-size: 10px;
+		text-align: left;
+		}
+		/* Tablet */
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+				td:first-child {
+				width: 85%;
+				font-size: 11px;
+				text-align: justify;
+				line-height: 1.3;
+			}
+				td:nth-child(2), td:nth-child(3) {
+				width: 7.5%;
+				font-family: monospace;
+				font-size: 10px;
+				white-space: nowrap;
+			}
+		}
+    /* Estilos para Tablet */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            	td:first-child {
+                width: 85%;
+                font-size: 11px;
+                text-align: justify;
+                line-height: 1.3;
+            }
+            td:nth-child(2), td:nth-child(3) {
+                width: 7.5%;
+                font-family: monospace;
+                font-size: 10px;
+                white-space: nowrap;
+            }
+        }
+
+        /* Estilos para Mobile */
+        @media screen and (max-width: 767px) {
+            .table-container {
+                overflow-x: auto; /* Permite rolagem horizontal */
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            td:first-child {
+                min-width: 200px;
+                max-width: 300px;
+                font-size: 11px;
+                text-align: justify;
+                line-height: 1.2;
+                white-space: normal;
+            }
+
+            td:nth-child(2), td:nth-child(3) {
+                min-width: 100px;
+                font-family: monospace;
+                font-size: 10px;
+            }
+        }
+
+        /* Para evitar que textos longos quebrem o layout */
+        td {
+            word-wrap: break-word;
+            max-width: 0;
+        }
+
+        /* Efeito Hover para melhor leitura */
+        	tr:hover {
+        	background-color: #f8f8f8;
+        }
+</style>
+
+<table>
+    <tr>
+        <th>Descrição</th>
+        <th>Comando</th>
+    </tr>
+    <tr class="section">
+        <td colspan="2">Configuração do Perfil PowerShell</td>
+    </tr>
+    <tr colspan="2">
+        <td>Exibe o caminho do arquivo de perfil atual do PowerShell, onde são armazenadas as configurações personalizadas e funções do PowerShell.</td>
+        <td>echo $PROFILE</td>
+    </tr>
+    <tr>
+        <td>Caminho padrão onde o perfil do PowerShell é armazenado no sistema Windows. Este é o local onde todas as configurações e funções personalizadas são mantidas.</td>
+        <td>%SystemRoot%\Users\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</td>
+    </tr>
+    <tr>
+        <td>Cria um novo arquivo de perfil do PowerShell se ele ainda não existir. Usa o parâmetro -Force para garantir a criação mesmo se já existir.</td>
+        <td>New-Item -ItemType File -Path $PROFILE -Force</td>
+    </tr>
+    <tr>
+        <td>Abre o arquivo de perfil do PowerShell no Notepad para edição, permitindo adicionar ou modificar configurações.</td>
+        <td>notepad $PROFILE</td>
+    </tr>
+    <tr>
+        <td>Define uma função para ativar o ambiente virtual, verificando se o caminho existe antes de tentar a ativação. Se o caminho não for encontrado, exibe uma mensagem de erro em vermelho.</td>
+        <td>function activate { param([string]$path = ".\venv\Scripts\Activate") if (Test-Path $path) { & $path } else { Write-Host "O caminho para o ambiente virtual não foi encontrado: $path" -ForegroundColor Red }}</td>
+    </tr>
+    <tr>
+        <td>Recarrega o perfil do PowerShell para aplicar as alterações feitas, tornando as novas configurações e funções disponíveis na sessão atual.</td>
+        <td>. $PROFILE</td>
+    </tr>
+    <tr>
+        <td>Exibe a lista completa das políticas de execução no PowerShell, mostrando as configurações para cada escopo.</td>
+        <td>Get-ExecutionPolicy -List</td>
+        
+    </tr>
+    <tr>
+        <td>Altera a política de execução para permitir scripts não assinados no PowerShell, aplicando apenas para o usuário atual por questões de segurança.</td>
+        <td>Set-ExecutionPolicy Unrestricted -Scope CurrentUser</td>
+    </tr>
+    <tr class="section">
+        <td colspan="2">Ambiente Virtual Python</td>
+    </tr>
+    <tr>
+        <td>Cria um ambiente virtual Python padrão na pasta atual, isolando as dependências do projeto.</td>
+        <td>python -m venv venv</td>
+    </tr>
+    <tr>
+        <td>Cria um ambiente virtual específico para Python (CPython), permitindo separar claramente de outros ambientes.</td>
+        <td>python -m venv venv-python</td>
+    </tr>
+    <tr>
+        <td>Cria um ambiente virtual específico para PyPy3, otimizado para performance com o interpretador PyPy.</td>
+        <td>pypy3 -m venv venv-pypy</td>
+    </tr>
+    <tr>
+        <td>Ativa o ambiente virtual Python (CPython), tornando disponíveis os pacotes e configurações específicas deste ambiente.</td>
+        <td>.\venv-python\scripts\activate</td>
+		
+    </tr>
+    <tr>
+        <td>Ativa o ambiente virtual PyPy3, permitindo usar o interpretador PyPy e suas otimizações.</td>
+        <td>.\venv-pypy\scripts\activate</td>
+    </tr>
+    <tr>
+        <td>Remove completamente um ambiente virtual e todos seus arquivos de forma forçada, liberando espaço no disco.</td>
+        <td>Remove-Item -Recurse -Force .\venv</td>
+    </tr>
+    <tr class="section">
+        <td colspan="2">Configuração e Uso do Redis</td>
+    </tr>
+    <tr>
+        <td>Inicia o servidor Redis no Windows. É necessário estar no diretório de instalação ou ter o Redis configurado nas variáveis de ambiente do sistema.</td>
+        <td>redis-server.exe</td>
+    </tr>
+    <tr>
+        <td>Testa a conexão com o servidor Redis. Se a conexão estiver funcionando corretamente, o comando retornará "PONG".</td>
+        <td>redis-cli ping</td>
+    </tr>
+    <tr class="section">
+        <td colspan="2">Configuração de Logging em Python</td>
+    </tr>
+    <tr>
+        <td>Importa o módulo de logging no Python para configurar o sistema de registro de eventos e mensagens do aplicativo.</td>
+        <td>import logging</td>
+    </tr>
+    <tr>
+        <td>Configura as opções básicas do logging, incluindo nível, formato da mensagem e handlers para arquivo e console.</td>
+        <td>logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("app.log"), logging.StreamHandler()])</td>
+		
+    </tr>
+    <tr>
+        <td>Registra uma mensagem informativa no log, útil para acompanhar o fluxo normal do programa.</td>
+        <td>logging.info()</td>
+    </tr>
+    <tr>
+        <td>Registra uma mensagem de aviso no log, indicando situações potencialmente problemáticas.</td>
+        <td>logging.warning()</td>
+		
+    </tr>
+    <tr>
+        <td>Registra uma mensagem de erro no log, utilizada quando ocorrem problemas que precisam de atenção.</td>
+        <td>logging.error()</td>
+		
+    </tr>
+    <tr class="section">
+        <td colspan="2">Git e Controle de Versão</td>
+    </tr>
+    <tr>
+        <td>Verifica se um arquivo específico está sendo ignorado pelo Git e mostra qual regra do .gitignore está causando isso, útil para debug de configurações do Git.</td>
+        <td>git check-ignore -v [arquivo]</td>
+		
+    </tr>
+    <tr>
+        <td>Remove um arquivo específico do cache do Git mantendo-o no sistema de arquivos, útil para começar a ignorar um arquivo que já estava sendo rastreado.</td>
+        <td>git rm --cached [arquivo]</td>
+		
+    </tr>
+    <tr class="section">
+        <td colspan="2">Gerenciamento de Pacotes Python</td>
+    </tr>
+    <tr>
+        <td>Garante que o pip está instalado no sistema Python atual. Se não estiver instalado, realiza a instalação automaticamente.</td>
+        <td>python -m ensurepip</td>
+		
+    </tr>
+    <tr>
+        <td>Atualiza o pip para a versão mais recente, garantindo acesso às últimas funcionalidades e correções de segurança.</td>
+        <td>python -m pip install --upgrade pip</td>
+		
+    </tr>
+    <tr>
+        <td>Instala o pacote python-dotenv para gerenciamento de variáveis de ambiente através de arquivos .env, útil para configurações sensíveis.</td>
+        <td>pip install python-dotenv</td>
+		
+    </tr>
+    <tr class="section">
+        <td colspan="2">Comandos do Terminal</td>
+	</tr>
+    <tr>
+        <td>Interrompe a execução de um processo no terminal (como um servidor em execução), enviando um sinal de interrupção.</td>
+        <td>Ctrl + C</td>
+		
+    </tr><br/> <hr/>
+    <tr>
+      <th>Descrição</th>
+      <th>Operador</th>
+      <th>Exemplo</th>
+    </tr>
+    <tr>
+      <td>Versão maior que a especificada. Útil quando você precisa de uma versão mais nova que determinado ponto.</td>
+      <td>&gt;</td>
+      <td>&gt;3.1</td>
+    </tr>
+    <tr>
+      <td>Versão menor que a especificada. Use quando precisa garantir compatibilidade com versões anteriores.</td>
+      <td>&lt;</td>
+      <td>&lt;3.1</td>
+    </tr>
+    <tr>
+      <td>Versão maior ou igual à especificada. Bom para garantir funcionalidades mínimas necessárias.</td>
+      <td>&gt;=</td>
+      <td>&gt;=3.1</td>
+    </tr>
+    <tr>
+      <td>Versão menor ou igual à especificada. Útil para evitar breaking changes em versões mais novas.</td>
+      <td>&lt;=</td>
+      <td>&lt;=3.1</td>
+    </tr>
+    <tr>
+      <td>Exatamente a versão especificada. Use quando precisa garantir total compatibilidade com uma versão específica.</td>
+      <td>==</td>
+      <td>==3.1</td>
+    </tr>
+    <tr>
+      <td>Versão diferente da especificada. Útil quando uma versão específica tem um bug conhecido.</td>
+      <td>!=</td>
+      <td>!=3.1</td>
+    </tr>
+    <tr>
+      <td>Versão compatível (permite atualizações do último segmento). Similar ao >=3.1,==3.1.*</td>
+      <td>~=</td>
+      <td>~=3.1.2</td>
+    </tr>
+    <tr>
+      <td>Coringa, corresponde a qualquer versão. Permite qualquer versão no segmento especificado.</td>
+      <td>*</td>
+      <td>==3.1.*</td>
+    </tr>
+</table>
+
+
+
+
+		
+
+
+
+														<p><a href="https://pt.wikipedia.org/wiki/Python" target="_blank">Mais sobre liguagem</a></p>
+													</div>
+											</div>
+											<div id="ApostilasPython1" class="w3-container ia" style="display:none">
+												<h3>+ Apostilas sobre Python</h3>
+												<h4>
+													Veja as versões on-line das apostilas sobre Python, 
+													elas estão selecionadas para auxiliar no aprendizado da linguagem.
+												</h4>
+												
+												<ol>
+													<li><a href="docs/python/html/PrintYet/tutorial_manipulacao_python.html" target="_blank">Tutorial manipulação python</a> |	<a href="docs/python/pdf/separados/Manipulacao_de_Planilhas_Excel_e_HTML_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/dependencias_python.html" target="_blank">Dependências python</a> |	<a href="docs/python/pdf/separados/Lista_de_Dependencias_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/extracao_de_Dados_em_Python.html" target="_blank">Extração de dados em python</a> |	<a href="docs/python/pdf/separados/Extracao_de_Dados_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/guia_extracao_de_dados_python.html" target="_blank">Guia extração de dados em python</a> |	<a href="docs/python/pdf/separados/Extracao_de_Dados_com_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/python_project_structure_with_explanation.html" target="_blank">Estrutura de projeto com explicação em python</a> |	<a href="docs/python/pdf/separados/Python_Project_Structure.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/downloadArquivosNet.html" target="_blank">Downloads Arquivos Net em python</a> |	<a href="docs/python/pdf/separados/downloadArquivosNet.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/Exemplos_de_Caminho_de_Arquivos_em_Python.html" target="_blank">Exemplos de Caminho de Arquivos em python.html</a> |	<a href="docs/python/pdf/separados/Exemplos_de_Caminho_de_Arquivoscem_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/requirementsxrailway.json.html" target="_blank">Arquivo Requirements e Arquivo Railway.json no python</a> |	<a href="docs/python/pdf/separados/Exemplo_de_requirements.txt_e_Explicacao_sobre_railway.json.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/provedoresPython.html" target="_blank">Provedores python</a> |	<a href="docs/python/pdf/separados/Principais_Provedores_de_Hospedagem_para_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/macetes_em_python.html" target="_blank">Macetes em python</a> |	<a href="docs/python/pdf/separados/Macetes_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/Atribuicao_de_Multiplos_Valores.html" target="_blank">Atribuição de Mútiplos Valores em python</a> |	<a href="docs/python/pdf/separados/Atribuicao_de_Multiplos_Valores.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/PrintYet/apostila_de_paythonI.html" target="_blank">Apostila de python I</a> |	<a href="docs/python/pdf/separados/apostila_de_paythonI.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													<li><a href="docs/python/html/29toFront/Guia_Completo_de_Dependencias_Python.html" target="_blank">Guia de Dependencia em python</a> |	<a href="docs/python/pdf/separados/Guia_Completo_de_Dependencias_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+												</ol>
+												<!--<p>Todas <a href="#" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></p>-->
+												<hr />
+											</div>	
+											<div id="Conceitos" class="w3-container ia" style="display:none">
+														<h3>Conceitos em Python</h3>
+														<h4>Nesta seção você encontrará conceitos sobre python.</h4>
+													<ol>
+														<li><a href="docs/python/html/PrintYet/Conceitos_de_Classes_em_Python.html" target="_blank">Conceitos de Classe em python</a> |	<a href="docs/python/pdf/separados/Conceitos_de_POO_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/Conceitos_Avançados_em_Python.html" target="_blank">Conceitos Avançados em python</a> |	<a href="docs/python/pdf/separados/Conceitos_Avancados_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDetalhadoComIndece+Explicacao.html" target="_blank">Conceitos detalhados sobre python</a> |	<a href="docs/python/pdf/separados/Conceitos_Basicos_de_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/Conceitos_de_Classes_em_Python.html" target="_blank">Conceitos de Classe em python</a> |	<a href="docs/python/pdf/separados/Conceitos_de_POO_em_Python.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosGlossarios.html" target="_blank">Conceitos Glossarios em python</a> | <a href="docs/python/pdf/separados/conceitosGlossarios.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeInsercaoDadosMSQL.html" target="_blank">Conceitos de Insercao Dados MSQL</a> | <a href="docs/python/pdf/separados/conceitosDeInsercaoDadosMSQL.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceiosDeMSQL.html" target="_blank">Conceitos de MSQL em python</a> |<a href="docs/python/pdf/separados/conceiosDeMSQL.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeMatplotlib.html" target="_blank">Conceitos de Matplotlib em python</a> | <a href="docs/python/pdf/separados/conceitosDeMatplotlib.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeModulos.html" target="_blank">Conceitos de Modulos em python</a> | <a href="docs/python/pdf/separados/conceitosDeModulos.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/termosFundamentais.html" target="_blank">Termos Fundamentais em python</a> | <a href="docs/python/pdf/separados/termosFundamentais.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeEntradaSaida.html" target="_blank">Conceitos de Entrada Saidaem python</a> | <a href="docs/python/pdf/separados/conceitosDeEntradaSaida.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeSaida.html" target="_blank">Conceitos de Saida em python</a> | <a href="docs/python/pdf/separados/conceitosDeSaida.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeFuncoes.html" target="_blank">Conceitos de Funcoes em python</a> | <a href="docs/python/pdf/separados/conceitosDeFuncoes.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeVariaveis.html" target="_blank">Conceitos de Variaveis em python</a> | <a href="docs/python/pdf/separados/conceitosDeVariaveis.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeSets.html" target="_blank">Conceitos de Sets em python</a> | <a href="docs/python/pdf/separados/conceitosDeSets.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeTuplas.html" target="_blank">Conceitos de Tuplas em python</a> | <a href="docs/python/pdf/separados/conceitosDeTuplas.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitoDeDicionarios.html" target="_blank">Conceitos de Dicionarios em python</a> | <a href="docs/python/pdf/separados/conceitoDeDicionarios.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeListas.html" target="_blank">Conceitos de Listas em python</a> | <a href="docs/python/pdf/separados/conceitosDeListas.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+														<li><a href="docs/python/html/PrintYet/conceitosDeStrings.html" target="_blank">Conceitos de Strings em python</a> | <a href="docs/python/pdf/separados/conceitosdeStrings.pdf" target="_blank"><i class="fa fa-download w3-margin-right"></i></a></li>
+													</ol>
+												<hr />	
+											</div>
+											<div id="VideosTutoriaisPython" class="w3-container ia" style="display:none">
+												<h3>Videos Tutoriais Python</h3>
+												<h4>Videos turoriais direto do youtube e outros canais.</h4>
+												
+												<ol>
+													<li> <a href="https://youtu.be/NB9pdUDNAJ4" target="_blank"><i class="fa-brands fa-youtube"></i>Curso Lógica de Programação Completo 2024 [Iniciantes] + Desafios + Muita prática</a></li>
+													<li> <a href="https://www.youtube.com/watch?v=iF2MdbrTiBM&t=5668s&pp=ygUGcHl0aG9u" target="_blank"><i class="fa-brands fa-youtube"></i>Domine essas 10 Funções Obrigatórias em Python</a></li>
+												</ol>
+												<hr />			
+											</div>
+								    </div22>
+								</div>
+							</div>
+							<div id="Scripts" class="w3-container ia" style="display:none">
+								<h3>Scripts, para facilitar a usuabiliade sobre Python</h3>
+								<h4>Com script é possível criar uma estrutura em python em segundos...</h4>
+								<div class="w3-center">
+									<b style="color:blue;">Criando Estrutura de pasta rapidamente com script</b><br /><br />
+										<img src="https://i.postimg.cc/YqXLVKVn/Script-Para-Criar-Pastas-Python.jpg" alt="Estrutura" style="width:100%;height:100%;float: auto;">
+								</div>
+									<p>Clique para fazer o download do script | <a href="/downloads/pedir_para_criar_script.txt" target="_blank" download><i class="fa fa-download w3-margin-right"></i></a></p>
+								
+									<div class="w3-center">
+									<b style="color:blue;">Arquivo de perfil no Power Shell, facilita para criar um ambiente virtual</b><br /><br />
+										<img src="https://i.postimg.cc/7PSgBZgq/Forcando-Criacaodo-Profile-PW.jpg" alt="Estrutura" style="width:100%;height:100%;float: auto;">
+								</div>
+									<p>Caso o arquivo não exista crie usando este comnado
+										<p><b>Cria o arquivo de perfil</b></p>
+										<pre>New-Item -ItemType File -Path $PROFILE -Force</pre>
+										<p><b>Local do arquivo de perfil</b></p>
+										<pre>C:\Users\<seu_usuário>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</pre>
+										<p><b>Editar o arquivo de perfil</b></p>
+										<pre>notepad $PROFILE</pre>
+										<p><b></b>Chamar o arquivo de perfil</b></p>
+										<pre>. $PROFILE</pre>
+									</p>
+									<p>Clique para fazer o download do código do script | <a href="/downloads/Microsoft.PowerShell_profile.ps1" target="_blank" download><i class="fa fa-download w3-margin-right"></i></a></p>
+
+							</div><br />
+						</div>
+
 
 					<div class="w3-container w3-border w3-large w3-justify">
 						<h3>Dicas para um bom TCC...</h3>
