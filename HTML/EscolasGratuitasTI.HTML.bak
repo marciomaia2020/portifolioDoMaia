@@ -1,0 +1,109 @@
+
+			<!--BARS - BARRA-->
+<div class="w3-container w3-center"> 
+	<p><i class="fa-solid fa-check"> </i><c class="configurado1"> Cursos gratis de TI</c> </p>
+		<button id="btn45" class="fa-solid fa-plus"> </button>
+		<button id="btn46" class="fa-solid fa-minus"> </button>
+</div> <br />
+<div class="w3-container"> 
+	<div class="w3-bar w3-green"> 
+		<button class="w3-bar-item w3-button" onclick="openIA('FuncacaoBrdesco')"> Fundação Bradesco <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('IFMG')"> Instituto Federal de Minas Gerais (IFMG) <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('SESTSENAT')"> Serviço Social do Transporte e Serviço Nacional de Aprendizagem do Transporte (SEST SENAT) <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('PRIMECURSOS')"> Prime Cursos <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('CURSAAPP')"> Cursa.app <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('ANGLOCURSOS')"> Anglo Cursos <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('PENSARCURSOS')"> Pensar Cursos <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('CERTIFICADOCURSOSONLINE')"> Certificado Cursos Online <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('VIACARREIRA')"> Via Carreira <i class="fa-solid fa-arrow-right"> </i></button>
+		<button class="w3-bar-item w3-button" onclick="openIA('GOVERNOFEDERAL')"> Governo Federal <i class="fa-solid fa-arrow-right"> </i></button>
+	</div>
+	<div23><!--DIV INICIO PARA O JQUERY-->
+		<div id="FuncacaoBrdesco" class="w3-container ia" style="display:yes"> 
+			<h3>Fundação Bradesco</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um Fundação Bradesco? </c><a href="https://www.ev.org.br/" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> Fundação Bradesco</c> - Refere-se à uma Escola Virtual, a Fundação Bradesco disponibiliza diversos cursos online gratuitos em áreas como Introdução à Informática, Pacote Office (Word, Excel, PowerPoint) e Programação (HTML, CSS e JavaScript)</p>
+			</div>
+		</div>
+		<div id="IFMG" class="w3-container ia" style="display:yes"> 
+			<h3>IFMG</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um IFMG? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> IFMG</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="SESTSENAT" class="w3-container ia" style="display:yes"> 
+			<h3>SEST SENAT</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um SEST SENAT? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> SEST SENAT</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="PRIMECURSOS" class="w3-container ia" style="display:yes"> 
+			<h3>PRIME CURSOS</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um PRIME CURSOS? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> PRIME CURSOS</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="CURSAAPP" class="w3-container ia" style="display:yes"> 
+			<h3>CURSA APP</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um CURSA APP? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> CURSA APP</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="ANGLOCURSOS" class="w3-container ia" style="display:yes"> 
+			<h3>ANGLO CURSOS</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um ANGLO CURSOS? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> ANGLO CURSOS</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="PENSARCURSOS" class="w3-container ia" style="display:yes"> 
+			<h3>PENSAR CURSOS</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um PENSAR CURSOS? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> PENSAR CURSOS</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="CERTIFICADOCURSOSONLINE" class="w3-container ia" style="display:yes"> 
+			<h3>CERTIFICADO CURSOS ONLINE</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um CERTIFICADOCURSOSONLINE? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> CERTIFICADO CURSOS ONLINE</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="VIACARREIRA" class="w3-container ia" style="display:yes"> 
+			<h3>VIA CARREIRA</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um VIA CARREIRA? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> VIA CARREIRA</c> - Refere-se ao </p>
+			</div>
+		</div>
+		<div id="GOVERNOFEDERAL" class="w3-container ia" style="display:yes"> 
+			<h3>GOVERNO FEDERAL</h3>
+			<p><i class="fa-solid fa-check"> </i><c class="configurado1">  O que é um GOVERNO FEDERAL? </c><a href="EDITAR" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+			<!--PAINEL VERDE CLARO DANDO O ENUNIADO DO TEMA-->
+			<div class="w3-panel w3-pale-green 33-bottombar w3-border-green w3-border"> 
+				<p><c class="configurado"> GOVERNO FEDERAL</c> - Refere-se ao </p>
+			</div>
+		</div>
+	</div23><!--DIV FIM PARA O JQUERY-->
+</div>
+
+
+
+
+
+
