@@ -18307,24 +18307,219 @@
 							<li><a href="hhttps://app.infography.in/" target="_blank">Infográficos</a>- Transforme seu texto em belos infográficos.</li>
 							<li><a href="https://claude.ai//" target="_blank">Códigos</a>- Tenha o código e tbm o exemplo no artefato</li>
 						</ul>
-						
-						<!--<h3>Juntar ao longo do tempo</h3>
-						<ul>
-							<li><a href="https://depositos-app.onrender.com/" target="_blank">200</a> depósitos para juntar 10 mil</li><br />
-							<li><a href="#" target="_blank" >20 mil</a> - 100 depósitos - 20 mil reais</li>
-							<li><a href="#" target="_blank">30 mil</a> - 150 depósitos - 30 mil reais</li>
-							<li><a href="#" target="_blank">40 mil</a> - 200 depósitos - 40mil reais</li>
-							<li><a href="#" target="_blank">100 mil</a> - 250 depósitos - 100 mil reais</li>
-							<li><a href="#" target="_blank">500 mil</a> - 300 depósitos - 500 mil reais</li>
-							<li><a href="#" target="_blank">1 milhão</a> - 600 depósitos - 1 milhão de reais</li>
-						</ul>
-					</div>-->
-					
-					
-						<button class="w3-button w3-blue">
-								<i class="fa fa-download w3-margin-right"></i>
-								<a href="docs/SONYSoundForgePro11.0build234.rar">Sound Forge</a>
-						</button>
+				</div>
+
+				<h2>Pré-requisitos para usar o Node.js</h2>
+<ul>
+  <li>Node.js (versão 18 ou superior)</li>
+  <li>npm ou yarn</li>
+  <li>Conta no Convex (gratuita)</li>
+</ul>
+
+<h2>Node.js</h2>
+<p>
+  Baixe e instale o Node.js (versão 18 ou superior) diretamente do site oficial:  
+  <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>
+</p>
+<p>
+  Essa parte é o que você precisa já ter instalado/configurado no seu computador antes de rodar o sistema.
+</p>
+
+<ul>
+  <li><strong>LTS (Long Term Support)</strong> → recomendado para a maioria dos projetos (mais estável).</li>
+  <li><strong>Current</strong> → versão mais nova, mas pode mudar rápido (boa para testes ou novos recursos).</li>
+</ul>
+
+
+<ol>
+  <li>
+    <h3>Node.js (versão 18 ou superior)</h3>
+    <p>
+      O <strong>Node.js</strong> é o ambiente que permite rodar JavaScript no servidor ou no seu PC.
+    </p>
+    <p>
+      Ele é necessário porque o frontend desse projeto usa <strong>Vite</strong> (um bundler moderno) e o backend usa ferramentas em <strong>Node</strong> (como o Convex).
+    </p>
+    <p>
+      Você precisa instalar no mínimo a versão <strong>18</strong> (se já tiver uma mais nova, melhor ainda).
+    </p>
+    <p>Para conferir sua versão instalada:</p>
+    <pre><code>node -v</code></pre>
+    <p>
+      Se aparecer algo como <code>v18.x.x</code> ou maior, está ok.
+    </p>
+  </li>
+
+  <li>
+    <h3>npm ou yarn</h3>
+    <p>
+      Tanto <strong>npm</strong> quanto <strong>yarn</strong> são <em>gerenciadores de pacotes</em> do Node.js.
+    </p>
+    <p>
+      Eles servem para instalar e atualizar as dependências do projeto (as bibliotecas que o sistema precisa para funcionar).
+    </p>
+    <p>
+      O <strong>npm</strong> já vem junto com o Node.js.
+    </p>
+    <p>
+      O <strong>yarn</strong> é uma alternativa, mas precisa ser instalado separadamente:
+    </p>
+    <pre><code>npm install -g yarn</code></pre>
+    <p>
+      No projeto, você pode usar <strong>um ou outro</strong>, mas geralmente se recomenda usar o <strong>npm</strong> por padrão.
+    </p>
+  </li>
+</ol>
+
+<h3>Em resumo:</h3>
+<ul>
+  <li><strong>Node.js</strong> → é o "motor" que faz o sistema rodar.</li>
+  <li><strong>npm/yarn</strong> → são "os instaladores" que trazem as ferramentas do projeto.</li>
+</ul>
+
+
+
+
+
+
+<h2></h2> Passo a Passo</h2>
+<ol>
+  <li>
+    <strong>Clone/Download do Projeto</strong>
+    <pre><code># Se você tem o código em um repositório
+git clone [URL_DO_REPOSITORIO]
+cd [NOME_DA_PASTA]
+
+# Ou se você tem os arquivos localmente, navegue até a pasta
+cd caminho/para/o/projeto</code></pre>
+  </li>
+
+  <li>
+    <strong>Instalar Dependências</strong>
+    <pre><code>npm install</code></pre>
+  </li>
+
+  <li>
+    <strong>Configurar o Convex</strong>
+    <ol>
+      <li>Instalar Convex CLI globalmente
+        <pre><code>npm install -g convex</code></pre>
+      </li>
+      <li>Fazer login no Convex
+        <pre><code>npx convex login</code></pre>
+      </li>
+      <li>Inicializar o projeto Convex
+        <pre><code>npx convex dev</code></pre>
+      </li>
+    </ol>
+  </li>
+
+  <li>
+    <strong>Configurar Variáveis de Ambiente</strong>
+    <pre><code>CONVEX_DEPLOYMENT=seu-deployment-url
+VITE_CONVEX_URL=https://seu-deployment.convex.cloud</code></pre>
+  </li>
+
+  <li>
+    <strong>Deploy do Backend</strong>
+    <pre><code>npx convex deploy</code></pre>
+  </li>
+
+  <li>
+    <strong>Inicializar Dados do Sistema</strong>
+    <pre><code>npx convex run users:initializeAdmin</code></pre>
+  </li>
+
+  <li>
+    <strong>Iniciar o Frontend</strong>
+    <pre><code>npm run dev</code></pre>
+  </li>
+</ol>
+
+<h2>Primeiro Acesso</h2>
+<p>Acesse <a href="http://localhost:5173" target="_blank">http://localhost:5173</a></p>
+<ul>
+  <li>Email: <code>admin@cosmopolis.sp.gov.br</code></li>
+  <li>Senha: Crie na primeira vez que acessar</li>
+</ul>
+
+<h2>Funcionalidades do Sistema</h2>
+<h3>Para Administradores:</h3>
+<ul>
+  <li>Gerenciar usuários (criar, editar, desativar)</li>
+  <li>Gerenciar pacientes</li>
+  <li>Gerenciar veículos</li>
+  <li>Gerenciar motoristas</li>
+  <li>Gerenciar agendamentos</li>
+  <li>Visualizar relatórios e dashboard</li>
+</ul>
+
+<h3>Para Supervisores:</h3>
+<ul>
+  <li>Gerenciar pacientes (criar, editar)</li>
+  <li>Gerenciar veículos (criar, editar)</li>
+  <li>Gerenciar motoristas (criar, editar)</li>
+  <li>Gerenciar agendamentos (criar, editar)</li>
+  <li>Visualizar relatórios e dashboard</li>
+</ul>
+
+<h3>Para Atendentes:</h3>
+<ul>
+  <li>Visualizar pacientes, veículos, motoristas</li>
+  <li>Criar novos registros</li>
+  <li>Visualizar agendamentos</li>
+  <li> Visualizar dashboard</li>
+</ul>
+
+<h2>Comandos Úteis</h2>
+<pre><code># Rodar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Deploy do backend
+npx convex deploy
+
+# Ver logs do Convex
+npx convex logs
+
+# Limpar dados de uma tabela (cuidado!)
+npx convex run --help</code></pre>
+
+<h2>Solução de Problemas</h2>
+<h3>Erro de Autenticação</h3>
+<pre><code>npx convex logout
+npx convex login</code></pre>
+
+<h3>Erro de Deploy</h3>
+<pre><code>npx convex dev --once</code></pre>
+
+<h3>Limpar Cache</h3>
+<pre><code>rm -rf node_modules
+npm install</code></pre>
+
+<h2>Estrutura do Sistema</h2>
+<ul>
+  <li>Dashboard: Visão geral com estatísticas</li>
+  <li>Pacientes: Cadastro completo com endereço via CEP</li>
+  <li>Veículos: Controle de frota com disponibilidade</li>
+  <li>Motoristas: Gestão com controle de CNH</li>
+  <li>Agendamentos: Sistema completo de transporte</li>
+  <li>Usuários: Controle de acesso por perfis</li>
+  <li>Relatórios: Estatísticas e gráficos</li>
+</ul>
+
+<h2>Próximos Passos</h2>
+<ul>
+  <li>Criar usuários para sua equipe</li>
+  <li>Cadastrar pacientes com dados completos</li>
+  <li>Registrar veículos da frota</li>
+  <li>Cadastrar motoristas com CNH</li>
+  <li>Fazer agendamentos de transporte</li>
+</ul>
+<p>O sistema está pronto para uso em produção na Prefeitura de Cosmópolis/SP!</p>
+
 
 						<script>window.lemonSqueezyAffiliateConfig = { store: "escolaseaulas" };</script>
 						<script src="https://lmsqueezy.com/affiliate.js" defer></script>
