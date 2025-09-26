@@ -18443,82 +18443,126 @@ VITE_CONVEX_URL=https://seu-deployment.convex.cloud</code></pre>
   <li>Senha: Crie na primeira vez que acessar</li>
 </ul>
 
-<h2>Funcionalidades do Sistema</h2>
-<h3>Para Administradores:</h3>
+
+<!-- Conteúdo HTML (apenas tags) para colar dentro do seu <body> -->
+<h1>Resumo técnico — Pré-requisitos e passo a passo (Node.js + Convex)</h1>
+
+<p><strong>Objetivo:</strong> ambiente mínimo para rodar frontend (Vite) e backend (Convex). Instruções compactas, orientadas a quem vai preparar/depurar o ambiente.</p>
+
+<h2>1) Pré-requisitos mínimos</h2>
 <ul>
-  <li>Gerenciar usuários (criar, editar, desativar)</li>
-  <li>Gerenciar pacientes</li>
-  <li>Gerenciar veículos</li>
-  <li>Gerenciar motoristas</li>
-  <li>Gerenciar agendamentos</li>
-  <li>Visualizar relatórios e dashboard</li>
+  <li>Node.js v18 ou superior (recomendado: LTS). Verificar com <code>node -v</code>.</li>
+  <li>npm (vem com Node) ou <code>yarn</code> (opcional). Verificar com <code>npm -v</code> ou <code>yarn -v</code>.</li>
+  <li>Conta no Convex (plano gratuito) e Convex CLI.</li>
+  <li>Git (se for clonar o repositório) e acesso à rede para instalação de dependências.</li>
 </ul>
 
-<h3>Para Supervisores:</h3>
+<h2>2) Recomendações rápidas</h2>
 <ul>
-  <li>Gerenciar pacientes (criar, editar)</li>
-  <li>Gerenciar veículos (criar, editar)</li>
-  <li>Gerenciar motoristas (criar, editar)</li>
-  <li>Gerenciar agendamentos (criar, editar)</li>
-  <li>Visualizar relatórios e dashboard</li>
+  <li>Use a versão LTS do Node para estabilidade.</li>
+  <li>Se usar <code>yarn</code>, não misture lockfiles com <code>npm</code>.</li>
+  <li>Variáveis do Vite devem começar com <code>VITE_</code> (ex.: <code>VITE_CONVEX_URL</code>).</li>
 </ul>
 
-<h3>Para Atendentes:</h3>
-<ul>
-  <li>Visualizar pacientes, veículos, motoristas</li>
-  <li>Criar novos registros</li>
-  <li>Visualizar agendamentos</li>
-  <li> Visualizar dashboard</li>
-</ul>
+<h2>3) Passo a passo — comandos (sequência mínima)</h2>
+<pre><code># (1) Clonar / entrar no diretório do projeto
+git clone [URL_DO_REPOSITORIO]
+cd [NOME_DA_PASTA]
 
-<h2>Comandos Úteis</h2>
-<pre><code># Rodar em desenvolvimento
-npm run dev
+# (2) Instalar dependências (npm ou yarn)
+npm install
+# ou
+# yarn install
 
-# Build para produção
-npm run build
+# (3) Instalar Convex CLI (global)
+npm install -g convex
 
-# Deploy do backend
+# (4) Autenticar no Convex
+npx convex login
+
+# (5) Inicializar ambiente de desenvolvimento Convex (local)
+npx convex dev
+
+# (6) Deploy do backend Convex (quando pronto)
 npx convex deploy
 
-# Ver logs do Convex
-npx convex logs
+# (7) Inicializar dados do sistema (ex.: criar admin)
+npx convex run users:initializeAdmin
 
-# Limpar dados de uma tabela (cuidado!)
-npx convex run --help</code></pre>
+# (8) Rodar frontend (Vite)
+npm run dev
+# Acesse: http://localhost:5173
+</code></pre>
 
-<h2>Solução de Problemas</h2>
-<h3>Erro de Autenticação</h3>
-<pre><code>npx convex logout
-npx convex login</code></pre>
+<h2>4) Configurar variáveis de ambiente</h2>
+<p>Crie um arquivo <code>.env</code> na raiz ou exporte variáveis no ambiente. Exemplo mínimo:</p>
+<pre><code># arquivo .env (exemplo)
+CONVEX_DEPLOYMENT=seu-deployment-url
+VITE_CONVEX_URL=https://seu-deployment.convex.cloud
+</code></pre>
 
-<h3>Erro de Deploy</h3>
-<pre><code>npx convex dev --once</code></pre>
+<p>Export temporário (Linux/macOS):</p>
+<pre><code>export CONVEX_DEPLOYMENT=seu-deployment-url
+export VITE_CONVEX_URL=https://seu-deployment.convex.cloud
+</code></pre>
 
-<h3>Limpar Cache</h3>
-<pre><code>rm -rf node_modules
-npm install</code></pre>
+<p>PowerShell (sessão atual):</p>
+<pre><code>$env:CONVEX_DEPLOYMENT = 'seu-deployment-url'
+$env:VITE_CONVEX_URL = 'https://seu-deployment.convex.cloud'
+</code></pre>
 
-<h2>Estrutura do Sistema</h2>
+<h2>5) Deploy e inicialização do backend</h2>
 <ul>
-  <li>Dashboard: Visão geral com estatísticas</li>
-  <li>Pacientes: Cadastro completo com endereço via CEP</li>
-  <li>Veículos: Controle de frota com disponibilidade</li>
-  <li>Motoristas: Gestão com controle de CNH</li>
-  <li>Agendamentos: Sistema completo de transporte</li>
-  <li>Usuários: Controle de acesso por perfis</li>
-  <li>Relatórios: Estatísticas e gráficos</li>
+  <li>Use <code>npx convex deploy</code> para publicar o backend — o comando retorna o URL do deployment.</li>
+  <li>Após deploy, atualize <code>VITE_CONVEX_URL</code> com o URL retornado ou configure via dashboard Convex.</li>
+  <li>Execute scripts de inicialização (seed data) com <code>npx convex run &lt;namespace&gt;:&lt;task&gt;</code>.</li>
 </ul>
 
-<h2>Próximos Passos</h2>
+<h2>6) Primeiro acesso</h2>
+<pre><code># Frontend em dev
+Acesse: http://localhost:5173
+
+# Credenciais iniciais (exemplo)
+Email: admin@cosmopolis.sp.gov.br
+Senha: criar na primeira vez que acessar (fluxo do app)
+</code></pre>
+
+<h2>7) Checklist rápido (antes de rodar)</h2>
+<table>
+  <tr><th>Item</th><th>Verificação</th></tr>
+  <tr><td>Node</td><td><code>node -v (>= v18)</code></td></tr>
+  <tr><td>npm/yarn</td><td><code>npm -v</code> ou <code>yarn -v</code></td></tr>
+  <tr><td>Convex CLI</td><td><code>npx convex --help</code></td></tr>
+  <tr><td>Variáveis</td><td><code>VITE_CONVEX_URL</code> presente</td></tr>
+  <tr><td>Porta frontend</td><td>5173 livre (ou ajustar Vite)</td></tr>
+</table>
+
+<h2>8) Erros comuns e soluções rápidas</h2>
 <ul>
-  <li>Criar usuários para sua equipe</li>
-  <li>Cadastrar pacientes com dados completos</li>
-  <li>Registrar veículos da frota</li>
-  <li>Cadastrar motoristas com CNH</li>
-  <li>Fazer agendamentos de transporte</li>
+  <li><strong>Node versão baixa:</strong> atualize para >=18 — pacotes nativos podem falhar.</li>
+  <li><strong>Convex login falha:</strong> checar rede/credenciais; refazer <code>npx convex login</code>.</li>
+  <li><strong>Vite não encontra <code>VITE_</code>:</strong> a variável deve começar com <code>VITE_</code> para ser injetada no bundle.</li>
+  <li><strong>Porta 5173 ocupada:</strong> mudar porta no script dev ou encerrar processo que usa a porta.</li>
 </ul>
-<p>O sistema está pronto para uso em produção na Prefeitura de Cosmópolis/SP!</p>
+
+<h2>9) Comandos úteis de debug</h2>
+<pre><code># checar versão do node e npm
+node -v && npm -v
+
+# listar processos na porta 5173 (Linux/mac)
+lsof -i :5173
+
+# matar processo (Linux)
+kill -9 &lt;PID&gt;
+
+# testar se o convex está acessível (após deploy)
+curl -I https://seu-deployment.convex.cloud
+</code></pre>
+
+<p><strong>Observação:</strong> este fragmento presume que o repositório contém os scripts npm e a configuração Convex esperada. Ajustes (nomes de tasks, namespaces, seed data) dependem do projeto — verifique <code>package.json</code> e a pasta de funções Convex.</p>
+
+<p style="font-size:12px;color:#666">Resumo técnico pronto para colar no seu arquivo HTML existente.</p>
+
 
 
 						<script>window.lemonSqueezyAffiliateConfig = { store: "escolaseaulas" };</script>
