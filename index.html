@@ -1579,7 +1579,10 @@
 			</div>
 			<div class="w3-text-gray w3-panel w3-border-bottom w3-border-blue">
 				<p class="w3-text-grey">Novidades - <b>IA</b></p>
-				<p><a href="./hubia.html" target="_blank"><i class="fa fa-cloud"></i></a>  Algumas IA interessante</a></p>
+				<p><a href="https://blog.pareto.io/melhores-ias/" target="_blank"><i class="fa fa-cloud"></i></a>  Algumas IA interessante</a></p>
+				<p><a href="https://blog.pareto.io/melhores-ias/" target="_blank"><i class="fa fa-cloud"></i></a>  Algumas IA interessante</a></p>
+				
+				<p><a href="https://create.wan.video/" target="_blank"><i class="fa fa-cloud"></i></a>  Rastrear Moviemntos</a></p>
 				<p><a href="https://gemini.google.com/" target="_blank"><i class="fa fa-cloud"></i></a>  Gemini</a></p>
 				<p><a href="https://guiadeti.com.br/conheca-45-inteligencia-artificial-e-o-chatgpt/" target="_blank"><i	class="fa fa-cloud"></i></a>  Dicas IA</a></p>
 				<p><a href="https://looka.com/" target="_blank"><i class="fa fa-cloud"></i></a> Looka</a></p>
@@ -18443,9 +18446,9 @@ VITE_CONVEX_URL=https://seu-deployment.convex.cloud</code></pre>
   <li>Senha: Crie na primeira vez que acessar</li>
 </ul>
 
-
+< hr />
 <!-- Conteúdo HTML (apenas tags) para colar dentro do seu <body> -->
-<h1>Resumo técnico — Pré-requisitos e passo a passo (Node.js + Convex)</h1>
+<h1 style="color: #cc0000 !important;">Resumo técnico — Pré-requisitos e passo a passo (Node.js + Convex)</h1>
 
 <p><strong>Objetivo:</strong> ambiente mínimo para rodar frontend (Vite) e backend (Convex). Instruções compactas, orientadas a quem vai preparar/depurar o ambiente.</p>
 
@@ -18561,7 +18564,109 @@ curl -I https://seu-deployment.convex.cloud
 
 <p><strong>Observação:</strong> este fragmento presume que o repositório contém os scripts npm e a configuração Convex esperada. Ajustes (nomes de tasks, namespaces, seed data) dependem do projeto — verifique <code>package.json</code> e a pasta de funções Convex.</p>
 
-<p style="font-size:12px;color:#666">Resumo técnico pronto para colar no seu arquivo HTML existente.</p>
+
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 6px;
+    text-align: left;
+	
+  }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comando</th>
+      <th>Função</th>
+      <th>Exemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- COMANDOS PRIMORDIAIS -->
+    <tr>
+      <td><code>node -v</code></td>
+      <td>Verificar versão do Node.js</td>
+      <td><code>PS C:\Windows\system32> node -v</code></td>
+    </tr>
+    <tr>
+      <td><code>npm -v</code></td>
+      <td>Verificar versão do npm</td>
+      <td><code>PS C:\Windows\system32> npm -v</code></td>
+    </tr>
+    <tr>
+      <td><code>where node</code> / <code>which node</code></td>
+      <td>Verificar localização do executável</td>
+      <td><code>PS C:\Windows\system32> where node</code></td>
+    </tr>
+
+    <!-- USO DIÁRIO -->
+    <tr>
+      <td><code>node arquivo.js</code></td>
+      <td>Executar um script</td>
+      <td><code>node server.js</code></td>
+    </tr>
+    <tr>
+      <td><code>node --watch app.js</code></td>
+      <td>Executar com recarga automática</td>
+      <td><code>node --watch index.js</code></td>
+    </tr>
+    <tr>
+      <td><code>npm init -y</code></td>
+      <td>Criar package.json rapidamente</td>
+      <td><code>npm init -y</code></td>
+    </tr>
+    <tr>
+      <td><code>npm install pacote</code></td>
+      <td>Instalar dependência</td>
+      <td><code>npm install express</code></td>
+    </tr>
+    <tr>
+      <td><code>npm uninstall pacote</code></td>
+      <td>Remover dependência</td>
+      <td><code>npm uninstall lodash</code></td>
+    </tr>
+    <tr>
+      <td><code>npm run script</code></td>
+      <td>Rodar script do package.json</td>
+      <td><code>npm run dev</code></td>
+    </tr>
+
+    <!-- MANUTENÇÃO -->
+    <tr>
+      <td><code>npm list --depth=0</code></td>
+      <td>Listar pacotes instalados</td>
+      <td><code>npm ls --depth=0</code></td>
+    </tr>
+    <tr>
+      <td><code>npm outdated</code></td>
+      <td>Ver pacotes desatualizados</td>
+      <td><code>npm outdated</code></td>
+    </tr>
+    <tr>
+      <td><code>npm update</code></td>
+      <td>Atualizar dependências</td>
+      <td><code>npm update</code></td>
+    </tr>
+    <tr>
+      <td><code>npm cache clean --force</code></td>
+      <td>Limpar cache</td>
+      <td><code>npm cache clean --force</code></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<p style="font-size:12px;color:#666">Resumo técnico feito por <u>Márcio Fernando Maia</u>.</p>
 
 
 
